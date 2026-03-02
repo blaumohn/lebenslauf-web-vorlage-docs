@@ -1,0 +1,13 @@
+title: Lebenslauf-Web-Vorlage
+description: Öffentliche Dokumentation (GitHub Pages)
+theme: minima
+markdown: kramdown
+header_pages:
+  - getting-started/index.md
+  - areas/index.md
+  - decisions/index.md
+  - operations/index.md
+  - mirror/index.md
+  - specs/index.md
+  - templates/index.md
+  - policies/index.md
