@@ -15,7 +15,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Status:** Zu erledigen
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-17T16:14:48.911+0100
-- **Parent:** [J01-7 — Production Deployment](/mirror/issues/J01-7/)
+- **Parent:** [J01-7 — Production Deployment]({{ "/mirror/issues/J01-7/" | relative_url }})
 
 ## Beschreibung
 

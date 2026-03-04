@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bereich: CLI / Build
+title: "Bereich: CLI / Build"
 permalink: /areas/cli-build/
 ---
 

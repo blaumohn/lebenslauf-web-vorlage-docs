@@ -15,7 +15,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Status:** Zu erledigen
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-25T00:37:17.442+0100
-- **Parent:** [J01-84 — Atlassian-System vorbereiten (SSOT)](/mirror/issues/J01-84/)
+- **Parent:** [J01-84 — Atlassian-System vorbereiten (SSOT)]({{ "/mirror/issues/J01-84/" | relative_url }})
 
 ## Beschreibung
 

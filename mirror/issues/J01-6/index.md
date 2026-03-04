@@ -18,8 +18,8 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Aufgaben
 
-- [J01-46 — i18n: CLI- und Runtime-Nachrichten](/mirror/issues/J01-46/)
-- [J01-49 — i18n: Template-Texte i18n-fähig machen](/mirror/issues/J01-49/)
+- [J01-46 — i18n: CLI- und Runtime-Nachrichten]({{ "/mirror/issues/J01-46/" | relative_url }})
+- [J01-49 — i18n: Template-Texte i18n-fähig machen]({{ "/mirror/issues/J01-49/" | relative_url }})
 
 ## Beschreibung
 

@@ -4,8 +4,8 @@ title: Vorlagen
 permalink: /templates/
 ---
 
-- [ADR-Vorlage](/templates/adr/)
-- [KEP-Lite-Vorlage](/templates/kep-lite/)
-- [Runbook-Vorlage](/templates/runbook/)
-- [Testmatrix-Vorlage](/templates/testmatrix/)
-- [Richtlinie/Überblick-Vorlage](/templates/richtlinie/)
+- [ADR-Vorlage]({{ "/templates/adr/" | relative_url }})
+- [KEP-Lite-Vorlage]({{ "/templates/kep-lite/" | relative_url }})
+- [Runbook-Vorlage]({{ "/templates/runbook/" | relative_url }})
+- [Testmatrix-Vorlage]({{ "/templates/testmatrix/" | relative_url }})
+- [Richtlinie/Überblick-Vorlage]({{ "/templates/richtlinie/" | relative_url }})

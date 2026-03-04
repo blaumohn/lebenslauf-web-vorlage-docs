@@ -15,7 +15,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Status:** Zu erledigen
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-17T16:15:09.400+0100
-- **Parent:** [J01-6 — i18n für Seitenvorlagen und Templates](/mirror/issues/J01-6/)
+- **Parent:** [J01-6 — i18n für Seitenvorlagen und Templates]({{ "/mirror/issues/J01-6/" | relative_url }})
 
 ## Beschreibung
 

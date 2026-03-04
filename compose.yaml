@@ -1,0 +1,24 @@
+x-ghpages-common: &ghpages-common
+  image: gh-pages
+  read_only: true
+  tmpfs:
+    - /tmp
+  volumes:
+    - ".:/src/site:rw"
+
+services:
+  ghpages-preview:
+    <<: *ghpages-common
+    ports:
+      - "4000:4000"
+    command:
+      - /src/site/scripts/ghpages-container.sh
+      - preview
+
+  ghpages-shell:
+    <<: *ghpages-common
+    stdin_open: true
+    tty: true
+    command:
+      - /src/site/scripts/ghpages-container.sh
+      - shell
