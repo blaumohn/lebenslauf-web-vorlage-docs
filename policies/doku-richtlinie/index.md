@@ -13,7 +13,7 @@ permalink: /policies/doku-richtlinie/
 ## Grundbegriffe
 
 - **Bereich** = Unterbetrieb/Teilgebiet (z. B. CLI/Build, HTTP-Runtime,
-  Atlassian-Tooling).
+  Jira- und Doku-Tooling).
 - **Querschnitt** = gilt für mehrere Bereiche oder repo-weit.
 
 ## Entscheidungsregel (5 Fragen)
@@ -49,7 +49,7 @@ Repo: lebenslauf-web-vorlage – Überblick (Startseite)
 1. Bereiche
 - Bereich: CLI / Build
 - Bereich: HTTP-Runtime
-- Bereich: Atlassian-Tooling
+- Bereich: Jira- und Doku-Tooling
 
 2. Querschnitt (repo-weit)
 - Richtlinien (Doku, Programmierleitlinien, ggf. Security)
@@ -59,7 +59,7 @@ Repo: lebenslauf-web-vorlage – Überblick (Startseite)
 - Qualität (Teststrategie, Testmatrix)
 - Planung & Veröffentlichung
   - Jira-Übersichten (intern)
-  - Jira-Spiegel (öffentlich, statisch)
+  - Jira-Übersicht (öffentlich, statisch)
 
 3. Vorlagen
 - ADR-Vorlage

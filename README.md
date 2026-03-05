@@ -7,6 +7,12 @@ Inhalte sind aus Confluence (J01) übernommen und strukturiert.
 
 Siehe Runbook: `operations/ghpages-preview/`.
 
+## Betrieb (Jira-Übersicht aktualisieren)
+
+```bash
+sh scripts/update-jira-mirror.sh
+```
+
 Kurzfassung:
 
 ```bash

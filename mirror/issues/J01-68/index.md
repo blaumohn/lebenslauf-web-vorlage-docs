@@ -4,7 +4,7 @@ title: "J01-68 — Production: Betriebsdoku und Runbook"
 permalink: /mirror/issues/J01-68/
 ---
 
-**Stand:** 2026-03-02 11:00 +0100
+**Stand:** 2026-03-04 17:34 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -19,11 +19,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Beschreibung
 
-```text
-Ziel: Production-Deployment dokumentieren und absichern.
-- Betriebsdoku erstellen
-- Rollback-/Notfallpfad skizzieren
-```
+-
 
 ## Unteraufgaben
 

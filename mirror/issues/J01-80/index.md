@@ -4,7 +4,7 @@ title: "J01-80 — Atlassian Tools: Refactor – AGENTS Coding-Standards durchge
 permalink: /mirror/issues/J01-80/
 ---
 
-**Stand:** 2026-03-02 11:00 +0100
+**Stand:** 2026-03-04 17:34 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -22,4 +22,4 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Unteraufgaben
 
-- -
+Keine Unteraufgaben.

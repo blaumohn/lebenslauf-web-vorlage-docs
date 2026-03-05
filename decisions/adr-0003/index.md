@@ -4,4 +4,29 @@ title: "ADR-0003 Schritt-Reihenfolge: Rank -> Schritt-Nr, Summary-Prefix"
 permalink: /decisions/adr-0003/
 ---
 
-<p><strong>Status:</strong> Akzeptiert</p><h2>Kontext</h2><p>Subtasks repr&auml;sentieren Schritte innerhalb eines Parent-Issues. In team-managed Boards ist das Anzeigen von Custom Fields auf Karten ggf. eingeschr&auml;nkt; au&szlig;erdem muss die Reihenfolge nach Umrankieren konsistent bleiben.</p><h2>Entscheidung</h2><p>Die Schritt-Reihenfolge wird aus Jira <em>Rank</em> abgeleitet. Der Backfill setzt pro Parent die numerische Schritt-Nummer in <code>customfield_10071</code> (&quot;Schritt-Nr&quot;) als 1..n. F&uuml;r Board-Lesbarkeit wird zus&auml;tzlich ein Summary-Prefix im Format <code>&lt;ParentNum&gt;-&lt;SchrittNum&gt; </code> gesetzt (Beispiel: <code>9-1 ...</code>).</p><h2>Konsequenzen</h2><ul><li>Nach Umrankieren gen&uuml;gt erneuter Backfill (optional mit Force), um Schritt-Nr und Prefix zu synchronisieren.</li><li>Summary wird maschinell ver&auml;ndert; das ist bewusst und kontrolliert (Scope: Subtasks der angegebenen Parents).</li></ul><h2>Alternativen</h2><ul><li>Nur Custom Field, kein Prefix (abgelehnt: Parent/Step nicht auf Karten sichtbar).</li><li>Eigener Issue-Key-&auml;hnlicher Identifier (nicht m&ouml;glich: Jira-Keys sind unver&auml;nderlich).</li></ul><h2>Links</h2><ul><li>Runbook: Backfill Schritt-Nr und Summary-Prefix (siehe Runbooks)</li></ul>
+**Status:** Akzeptiert
+
+## Kontext {#kontext}
+
+Subtasks repräsentieren Schritte innerhalb eines Parent-Issues. In team-managed Boards ist das Anzeigen von Custom Fields auf Karten ggf. eingeschränkt; außerdem muss die Reihenfolge nach Umrankieren konsistent bleiben.
+
+## Entscheidung {#entscheidung}
+
+Die Schritt-Reihenfolge wird aus Jira **Rank** abgeleitet:
+
+- Der Backfill setzt pro Parent die numerische Schritt-Nummer in `customfield_10071` („Schritt-Nr“) als 1..n.
+- Für Board-Lesbarkeit wird zusätzlich ein Summary-Prefix im Format `<ParentNum>-<SchrittNum> ` gesetzt (Beispiel: `9-1 …`).
+
+## Konsequenzen {#konsequenzen}
+
+- Nach Umrankieren genügt erneuter Backfill (optional mit Force), um Schritt-Nr und Prefix zu synchronisieren.
+- Summary wird maschinell verändert; das ist bewusst und kontrolliert (Scope: Subtasks der angegebenen Parents).
+
+## Alternativen {#alternativen}
+
+- Nur Custom Field, kein Prefix: abgelehnt (Parent/Step nicht auf Karten sichtbar).
+- Eigener Issue-Key-ähnlicher Identifier: nicht möglich (Jira-Keys sind unveränderlich).
+
+## Links {#links}
+
+- [Runbook: Backfill Schritt-Nr und Summary-Prefix]({{ "/operations/jira-backfill-schritt-nr/" | relative_url }})

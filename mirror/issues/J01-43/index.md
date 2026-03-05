@@ -4,7 +4,7 @@ title: "J01-43 — Preview: FTP/FTPS-Verwaltungsskripte"
 permalink: /mirror/issues/J01-43/
 ---
 
-**Stand:** 2026-03-02 11:00 +0100
+**Stand:** 2026-03-04 17:34 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -19,11 +19,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Beschreibung
 
-```text
-Ziel: Verwaltungsabläufe ohne SSH für Preview bereitstellen.
-- Marker/Signaldatei-Flow definieren
-- Doku und Tests ergänzen
-```
+-
 
 ## Unteraufgaben
 

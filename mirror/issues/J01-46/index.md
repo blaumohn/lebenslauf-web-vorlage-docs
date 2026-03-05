@@ -4,7 +4,7 @@ title: "J01-46 — i18n: CLI- und Runtime-Nachrichten"
 permalink: /mirror/issues/J01-46/
 ---
 
-**Stand:** 2026-03-02 11:00 +0100
+**Stand:** 2026-03-04 17:34 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -19,11 +19,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Beschreibung
 
-```text
-Ziel: i18n-fähige Nachrichten für CLI und Runtime.
-- Message-IDs und Katalogformat definieren
-- App + Config-Lib Ausgaben umstellen
-```
+-
 
 ## Unteraufgaben
 

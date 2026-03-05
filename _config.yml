@@ -4,12 +4,13 @@ url: https://blaumohn.github.io
 baseurl: /lebenslauf-web-vorlage-docs
 theme: minima
 markdown: kramdown
+kramdown:
+  auto_ids: true
 header_pages:
   - getting-started/index.md
   - areas/index.md
   - decisions/index.md
   - operations/index.md
   - mirror/index.md
-  - specs/index.md
   - templates/index.md
   - policies/index.md

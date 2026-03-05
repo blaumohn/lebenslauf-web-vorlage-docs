@@ -4,7 +4,7 @@ title: "J01-31 — Preview Readiness: System-Source-Verarbeitung"
 permalink: /mirror/issues/J01-31/
 ---
 
-**Stand:** 2026-03-02 11:00 +0100
+**Stand:** 2026-03-04 17:34 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -19,11 +19,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Beschreibung
 
-```text
-Ziel: Konsistente System-Source-Verarbeitung und klare Guard-Strategie.
-- Offene Hygiene/Guard-Strategie klären
-- Produktions-Pattern vergleichen und dokumentieren
-```
+-
 
 ## Unteraufgaben
 

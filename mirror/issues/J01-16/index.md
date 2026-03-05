@@ -4,7 +4,7 @@ title: "J01-16 — Runtime: Concurrency, Locking und atomare Zugriffe"
 permalink: /mirror/issues/J01-16/
 ---
 
-**Stand:** 2026-03-02 11:00 +0100
+**Stand:** 2026-03-04 17:34 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -19,12 +19,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Beschreibung
 
-```text
-Ziel: Kritische Runtime-Schreibpfade konsistent unter Parallelzugriff machen.
-- Locking-Rahmen auf weitere Module ausrollen
-- Atomare Writes vereinheitlichen
-- Race-nahe Tests ergänzen
-```
+-
 
 ## Unteraufgaben
 

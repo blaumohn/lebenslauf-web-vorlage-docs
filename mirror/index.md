@@ -1,10 +1,11 @@
 ---
 layout: page
-title: Roadmap / Spiegel (statisch)
+title: "Jira-Übersicht"
 permalink: /mirror/
 ---
 
-Der Spiegel zeigt einen statischen Snapshot (ohne öffentliches Jira).
+Die Jira-Übersicht zeigt einen statischen Snapshot (ohne öffentliches Jira).
 
-- [Sprint-Board (statisch)]({{ "/mirror/sprint-board/" | relative_url }})
-- [Vorgänge (statisch)]({{ "/mirror/vorgaenge/" | relative_url }})
+- [Sprint-Board]({{ "/mirror/sprint-board/" | relative_url }})
+- [Backlog]({{ "/mirror/backlog/" | relative_url }})
+- [Erledigt]({{ "/mirror/erledigt/" | relative_url }})

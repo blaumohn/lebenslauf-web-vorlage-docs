@@ -4,7 +4,7 @@ title: "J01-40 — Runtime: Technische Konstanten vereinheitlichen"
 permalink: /mirror/issues/J01-40/
 ---
 
-**Stand:** 2026-03-02 11:00 +0100
+**Stand:** 2026-03-04 17:34 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -19,11 +19,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Beschreibung
 
-```text
-Ziel: Pfad- und Schlüsselkonstanten konsistent bündeln.
-- Konstanten-Schnitt definieren
-- Pfad/Key-Duplikate abbauen
-```
+-
 
 ## Unteraufgaben
 

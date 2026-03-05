@@ -4,7 +4,7 @@ title: "J01-56 — Backlog: Bibliotheks-APIs konsequent ausschoepfen"
 permalink: /mirror/issues/J01-56/
 ---
 
-**Stand:** 2026-03-02 11:00 +0100
+**Stand:** 2026-03-04 17:34 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -19,10 +19,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Beschreibung
 
-```text
-Ziel: Kandidat scopen und priorisieren.
-- Scope skizzieren
-```
+-
 
 ## Unteraufgaben
 

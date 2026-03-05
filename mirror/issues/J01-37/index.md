@@ -4,7 +4,7 @@ title: "J01-37 — Config: Konditionelle Validierung"
 permalink: /mirror/issues/J01-37/
 ---
 
-**Stand:** 2026-03-02 11:00 +0100
+**Stand:** 2026-03-04 17:34 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -19,11 +19,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Beschreibung
 
-```text
-Ziel: Bedingungen für Required-Keys in der Config-Lib ermöglichen.
-- Manifest-Schema erweitern
-- Validierung und Doku ergänzen
-```
+-
 
 ## Unteraufgaben
 

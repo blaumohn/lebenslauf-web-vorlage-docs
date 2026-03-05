@@ -4,7 +4,7 @@ title: "J01-28 — Analyse: Risikomuster und Befundliste"
 permalink: /mirror/issues/J01-28/
 ---
 
-**Stand:** 2026-03-02 11:00 +0100
+**Stand:** 2026-03-04 17:34 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -19,11 +19,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Beschreibung
 
-```text
-Ziel: Repo-weite Befundliste für Risikomuster erstellen.
-- Befunde sammeln und priorisieren
-- Folge-Tickets ableiten
-```
+-
 
 ## Unteraufgaben
 

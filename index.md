@@ -21,10 +21,11 @@ wie z. B. Confluence-Seite 5832705 sofort einordbar sind.
 
 - [Entscheidungen (ADRs)]({{ "/decisions/" | relative_url }})
 - [Betrieb (Runbook)]({{ "/operations/" | relative_url }})
-- [Roadmap / Spiegel (statisch)]({{ "/mirror/" | relative_url }})
+- [Jira-Übersicht (öffentlich)]({{ "/mirror/" | relative_url }})
 - [Richtlinien]({{ "/policies/" | relative_url }})
 - [Vorlagen]({{ "/templates/" | relative_url }})
-- [Spezifikationen]({{ "/specs/" | relative_url }})
+- [Architektur]({{ "/architecture/" | relative_url }})
+- [Qualität]({{ "/quality/" | relative_url }})
 
 ## Grundsatz
 

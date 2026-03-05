@@ -4,7 +4,7 @@ title: "J01-7 — Production Deployment"
 permalink: /mirror/issues/J01-7/
 ---
 
-**Stand:** 2026-03-02 11:00 +0100
+**Stand:** 2026-03-04 17:34 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -18,19 +18,14 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Aufgaben
 
-- [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/mirror/issues/J01-62/" | relative_url }})
-- [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/mirror/issues/J01-65/" | relative_url }})
 - [J01-68 — Production: Betriebsdoku und Runbook]({{ "/mirror/issues/J01-68/" | relative_url }})
+- [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/mirror/issues/J01-65/" | relative_url }})
+- [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/mirror/issues/J01-62/" | relative_url }})
 
 ## Beschreibung
 
-```text
-Ziel: Production-Deployment-Workflow aktivieren und absichern.
-- Branch- und Environment-Regeln festziehen
-- Preflight- und Smoke-Checks definieren
-- Betriebsdoku und Runbook ergänzen
-```
+-
 
 ## Unteraufgaben
 
-- -
+Keine Unteraufgaben.

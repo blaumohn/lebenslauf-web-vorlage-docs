@@ -1,7 +1,49 @@
 ---
 layout: page
-title: "Runbook: Jira→Confluence-Spiegel aktualisieren"
+title: "Runbook: Jira-Übersicht aktualisieren"
 permalink: /operations/runbook/
 ---
 
-<h2>Zweck</h2><p>Statischen Jira&rarr;Confluence-Spiegel aktualisieren (Sprint-Board, Spiegel, Vorg&auml;nge).</p><h2>Voraussetzungen</h2><ul><li>Zugriff auf das atlassian CLI (Tool-Owner usr2) und jq.</li><li>Confluence Space J01, Spiegel-Seiten: Index /mirror/, Board /mirror/sprint-board/, Spiegel /mirror/, Vorg&auml;nge /mirror/vorgaenge/.</li><li>Regeln: keine Jira-Links, keine E-Mail-Adressen; Jira-Keys als Text.</li></ul><h2>Schritte</h2><ol><li>Nach Jira-&Auml;nderungen: Spiegel aktualisieren (Board, Spiegel, Vorg&auml;nge) und Stand setzen.</li><li>Spiegel-Hygiene pr&uuml;fen: keine Issues ohne Sprint in &bdquo;In Bearbeitung&ldquo;.</li><li>Stichprobe: Vorg&auml;nge-Seite enth&auml;lt keine Jira-Links und keine E-Mail-Adressen.</li></ol><h2>Rollback</h2><ol><li>In Confluence: auf die Vorversion der betroffenen Seite zur&uuml;ckgehen (Seitenversionen).</li></ol><h2>Monitoring</h2><ul><li>Board und Spiegel zeigen aktuelle Jira-Keys und Status.</li><li>Keine Jira-Links im Spiegel; Jira bleibt nicht-&ouml;ffentlich.</li></ul>
+## Zweck
+
+Die öffentliche, statische Jira-Übersicht in diesem Repo aktualisieren:
+
+- `/mirror/` (Landing)
+- `/mirror/sprint-board/`
+- `/mirror/backlog/`
+- `/mirror/erledigt/`
+- `/mirror/issues/J01-*/` (Epics/Tasks)
+- Schritt-Seiten nur bei Subtasks mit Angaben: `/mirror/issues/<PARENT>/steps/<PREFIX>/`
+
+## Voraussetzungen
+
+- Zugriff auf das `atlassian`-CLI (Tool-Eigentümer ist lokal konfiguriert) und `jq`
+- Schreibrechte im Repo
+- Regeln (öffentlich): keine Jira-Cloud-Links, keine E-Mail-Adressen
+
+## Schritte
+
+1) Änderungen in Jira durchführen (SSOT).
+
+2) Jira-Übersicht generieren:
+
+```bash
+sh scripts/update-jira-mirror.sh
+```
+
+3) Stichprobe (inhaltlich):
+   - Subtasks ohne Angaben haben **keine** eigene Seite (nur Schritt-Nr/Titel/Zustand beim Parent).
+   - Subtasks mit Angaben haben eine Schritt-Seite (ohne Subtask-Key).
+
+4) Hygiene (Policy):
+   - Keine `atlassian.net` Links im Output.
+   - Keine E-Mail-Adressen im Output.
+
+## Rollback
+
+- `git checkout -- mirror/` (oder gezielt einzelne Dateien) und erneut generieren.
+
+## Monitoring
+
+- `mirror/*` hat aktuellen **Stand**-Zeitstempel.
+- Sprint-Board/Backlog/Erledigt stimmen mit Jira-Statuskategorien überein.

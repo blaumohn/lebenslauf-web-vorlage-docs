@@ -1,7 +1,55 @@
 ---
 layout: page
-title: "ADR-0004 Öffentlich: Jira→Confluence-Spiegel (statt Jira-Board publizieren)"
+title: "ADR-0004 Öffentlich: Jira-Übersicht (statt Jira-Board publizieren)"
 permalink: /decisions/adr-0004/
 ---
 
-<p><strong>Status:</strong> Akzeptiert (2026-02-27)</p><h2>Kontext</h2><p>Wir wollen Sprint und Spiegel &ouml;ffentlich teilen, ohne Jira-Projekt oder Jira-Board &ouml;ffentlich zu machen.</p><p>Ein Confluence-Jira-Makro ist zwar read-only, aber die Daten werden trotzdem aus Jira gelesen; anonyme Nutzer sehen die Issues nur, wenn Jira/Projekt ebenfalls anonymes Browse erlaubt.</p><p>Direktes Ver&ouml;ffentlichen des Jira-Boards oder Spiegels hat daher nicht funktioniert (oder w&auml;re sicherheitlich zu teuer).</p><h2>Entscheidung</h2><p>Wir spiegeln den Jira-Zustand als statische Confluence-Seiten: Sprint-Board als Tabelle, Spiegel als Liste, zus&auml;tzlich Vorg&auml;nge mit Details. Aktualisierung erfolgt manuell nach Jira-&Auml;nderungen; sp&auml;ter optional periodisch oder per Webhook.</p><p>&Ouml;ffentliche Spiegel-Regeln: keine Jira-Links, keine E-Mail-Adressen; Jira-Keys werden als Text gezeigt.</p><h2>Konsequenzen</h2><ul><li>+ &Ouml;ffentlich teilbar, ohne Jira zu &ouml;ffnen; automatisch read-only.</li><li>+ Layout kontrollierbar (Board-Tabelle, Spiegel-Liste).</li><li>- Nicht live; Spiegel muss aktualisiert werden.</li><li>- Zus&auml;tzliche Pflege (Skript/Prozess) und potenzieller Drift.</li></ul><h2>Alternativen</h2><ul><li>Jira/Projekt &ouml;ffentlich machen: abgelehnt (Berechtigungen und Privatsph&auml;re).</li><li>Confluence-Jira-Makro direkt nutzen: abgelehnt (anonym sieht ohne Jira-Browse nichts).</li><li>Webhook oder Atlassian-App: vertagt (Endpoint und Deploy und mehr Aufwand).</li><li>Periodischer Batch-Refresh (Cron oder CI): sp&auml;ter m&ouml;glich.</li></ul><h2>Links</h2><ul><li>Confluence-Spiegel (Index): /mirror/</li><li>Sprint-Board: /mirror/sprint-board/</li><li>Spiegel: /mirror/</li><li>Vorg&auml;nge: /mirror/vorgaenge/</li><li>Jira: J01-72, J01-86, J01-87</li></ul>
+**Status:** Akzeptiert (2026-02-27)
+
+## Kontext {#kontext}
+
+Wir wollen Sprint und Projektzustand öffentlich teilen, ohne Jira-Projekt oder Jira-Board öffentlich zu machen.
+
+Ein Confluence-Jira-Makro ist zwar read-only, aber die Daten werden trotzdem aus Jira gelesen; anonyme Nutzer sehen die Issues nur, wenn Jira/Projekt ebenfalls anonymes Browse erlaubt.
+
+Direktes Veröffentlichen des Jira-Boards oder Jira-Projekts hat daher nicht funktioniert (oder wäre sicherheitlich zu teuer).
+
+## Entscheidung {#entscheidung}
+
+Wir veröffentlichen eine statische **Jira-Übersicht** als GitHub Pages in diesem Repo:
+
+- Sprint-Board als Tabelle
+- Backlog/Erledigt als Listen
+- Zusätzlich Detailseiten pro Vorgang
+
+Die Jira-Übersicht wird manuell aktualisiert (nach Jira-Änderungen); später optional periodisch oder per Webhook.
+
+## Regeln (öffentlich) {#regeln}
+
+- Keine Jira-Cloud-Links.
+- Keine E-Mail-Adressen.
+- Jira-Keys werden als Text gezeigt.
+- Subtasks werden standardmäßig **ohne Key** gezeigt (nur Schritt-Nr/Titel/Zustand).
+- Subtasks bekommen nur dann eine eigene Schritt-Seite, wenn sie zusätzliche Angaben enthalten.
+
+## Konsequenzen {#konsequenzen}
+
+- **+** Öffentlich teilbar, ohne Jira zu öffnen; automatisch read-only.
+- **+** Layout kontrollierbar (Board-Tabelle, Listen, Details).
+- **-** Nicht live; Jira-Übersicht muss aktualisiert werden.
+- **-** Zusätzliche Pflege (Skript/Prozess) und potenzieller Drift.
+
+## Alternativen {#alternativen}
+
+- Jira/Projekt öffentlich machen: abgelehnt (Berechtigungen und Privatsphäre).
+- Confluence-Jira-Makro direkt nutzen: abgelehnt (anonym sieht ohne Jira-Browse nichts).
+- Webhook oder Atlassian-App: vertagt (Endpoint und Deploy und mehr Aufwand).
+- Periodischer Batch-Refresh (Cron oder CI): später möglich.
+
+## Links {#links}
+
+- [Jira-Übersicht (Index)]({{ "/mirror/" | relative_url }})
+- [Sprint-Board]({{ "/mirror/sprint-board/" | relative_url }})
+- [Backlog]({{ "/mirror/backlog/" | relative_url }})
+- [Erledigt]({{ "/mirror/erledigt/" | relative_url }})
+- Vorgang (Beispiel): [J01-72]({{ "/mirror/issues/J01-72/" | relative_url }})

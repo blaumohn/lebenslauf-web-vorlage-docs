@@ -9,7 +9,7 @@ ADR-XXXX <Titel>
 
 Status: vorgeschlagen | akzeptiert | verworfen
 Datum: YYYY-MM-DD
-Bereich: <z. B. CLI/Build | HTTP-Runtime | Atlassian-Tooling | Querschnitt>
+Bereich: <z. B. CLI/Build | HTTP-Runtime | Jira- und Doku-Tooling | Querschnitt>
 
 Kontext
 - Problem / Ausgangslage

@@ -4,7 +4,7 @@ title: "J01-6 — i18n für Seitenvorlagen und Templates"
 permalink: /mirror/issues/J01-6/
 ---
 
-**Stand:** 2026-03-02 11:00 +0100
+**Stand:** 2026-03-04 17:34 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -18,18 +18,13 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Aufgaben
 
-- [J01-46 — i18n: CLI- und Runtime-Nachrichten]({{ "/mirror/issues/J01-46/" | relative_url }})
 - [J01-49 — i18n: Template-Texte i18n-fähig machen]({{ "/mirror/issues/J01-49/" | relative_url }})
+- [J01-46 — i18n: CLI- und Runtime-Nachrichten]({{ "/mirror/issues/J01-46/" | relative_url }})
 
 ## Beschreibung
 
-```text
-Ziel: Template- und UI-Texte i18n-fähig machen.
-- Mechanismus für Template-Text-Keys definieren
-- DE/EN als Mindestumfang festlegen
-- Fallback-Strategie dokumentieren
-```
+-
 
 ## Unteraufgaben
 
-- -
+Keine Unteraufgaben.
