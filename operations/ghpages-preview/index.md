@@ -30,8 +30,8 @@ docker compose run --rm ghpages-shell
 
 ## Hinweise
 
-- Der Preview-Server laeuft auf `http://localhost:4000/lebenslauf-web-vorlage-docs/`.
-- Interne Links sollen mit `relative_url` gebaut werden, damit `baseurl` korrekt greift.
+- Der Preview-Server laeuft auf `http://localhost:4000/`.
+- Interne Links sollen mit `relative_url` gebaut werden, damit `baseurl` korrekt greift (bei dieser Site leer).
 
 ## Troubleshooting
 

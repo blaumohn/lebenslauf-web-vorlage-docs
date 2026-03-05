@@ -1,7 +1,6 @@
 title: Lebenslauf-Web-Vorlage
 description: Öffentliche Dokumentation (GitHub Pages)
-url: https://blaumohn.github.io
-baseurl: /lebenslauf-web-vorlage-docs
+baseurl: ""
 theme: minima
 markdown: kramdown
 kramdown:

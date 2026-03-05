@@ -26,8 +26,7 @@ run_preview() {
     --source /src/site \
     --destination /tmp/_site \
     --host 0.0.0.0 \
-    --port 4000 \
-    --baseurl /lebenslauf-web-vorlage-docs
+    --port 4000
 }
 
 run_shell() {
