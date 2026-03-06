@@ -12,6 +12,14 @@ log() {
   printf '== %s ==\n' "$1" >&2
 }
 
+cleanup_steps_dirs() {
+  # Schritt-Seiten sind vollständig abgeleitet. Wir löschen sie vor dem
+  # Generieren, damit keine veralteten Pfade (z.B. nach Schemawechsel) bleiben.
+  if [ -d mirror/issues ]; then
+    find mirror/issues -mindepth 2 -maxdepth 2 -type d -name steps -exec rm -rf {} +
+  fi
+}
+
 sanitize_public_description_text() {
   awk '
     /Ausschlussliste/ { next }
@@ -60,6 +68,7 @@ main() {
   log "Mirror: Issue-Seiten"
   update_issue_pages "$issues_file" "$subtasks_file" "$stand"
   log "Mirror: Subtask-Seiten (mit Angaben)"
+  cleanup_steps_dirs
   update_subtask_pages_with_description "$subtasks_file" "$stand"
 }
 
@@ -252,7 +261,7 @@ render_vorgaenge_page() {
         if ($s.prefix == null) then
           "  - \($s.summary) — \($s.status)"
         elif ($s.hasDescription) then
-          "  - [**\($s.prefix) \($s.summaryNoPrefix)**]({{ \"/mirror/issues/\($s.parent)/steps/\($s.prefix)/\" | relative_url }}) — \($s.status)"
+          "  - [**\($s.prefix) \($s.summaryNoPrefix)**]({{ \"/mirror/issues/\($s.parent)/steps/\($s.key)/\" | relative_url }}) — \($s.status)"
         else
           "  - \($s.prefix) \($s.summaryNoPrefix) — \($s.status)"
         end;
@@ -432,6 +441,7 @@ EOF
         $st[0].issues
         | map(select(.fields.parent.key == $parent))
         | map({
+            key: .key,
             summary: .fields.summary,
             status: .fields.status.name,
             prefix: prefix_from_summary(.fields.summary),
@@ -444,7 +454,7 @@ EOF
             if .prefix == null then
               "- **" + .summary + "** — " + .status
             elif .hasDescription then
-              "- [**" + .prefix + " " + .summaryNoPrefix + "**]({{ \"/mirror/issues/" + $parent + "/steps/" + .prefix + "/\" | relative_url }}) — " + .status
+              "- [**" + .prefix + " " + .summaryNoPrefix + "**]({{ \"/mirror/issues/" + $parent + "/steps/" + .key + "/\" | relative_url }}) — " + .status
             else
               "- **" + .prefix + " " + .summaryNoPrefix + "** — " + .status
             end
@@ -508,6 +518,7 @@ update_subtask_pages_with_description() {
     | @base64
   ' <"$subtasks_file" | while read -r row; do
     subtask=$(printf '%s' "$row" | base64 -D 2>/dev/null || printf '%s' "$row" | base64 -d)
+    key=$(printf '%s' "$subtask" | jq -r '.key')
     parent=$(printf '%s' "$subtask" | jq -r '.parent')
     summary=$(printf '%s' "$subtask" | jq -r '.summary')
     status=$(printf '%s' "$subtask" | jq -r '.status')
@@ -520,7 +531,7 @@ update_subtask_pages_with_description() {
       continue
     fi
 
-    out_dir="mirror/issues/$parent/steps/$prefix"
+    out_dir="mirror/issues/$parent/steps/$key"
     mkdir -p "$out_dir"
     out_file="$out_dir/index.md"
 
@@ -536,7 +547,7 @@ update_subtask_pages_with_description() {
 ---
 layout: page
 title: "$prefix — $summary_no_prefix"
-permalink: /mirror/issues/$parent/steps/$prefix/
+permalink: /mirror/issues/$parent/steps/$key/
 ---
 
 **Stand:** $stand

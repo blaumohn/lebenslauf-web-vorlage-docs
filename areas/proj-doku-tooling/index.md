@@ -14,5 +14,5 @@ Dieser Bereich beschreibt die Projektverwaltung und öffentliche Dokumentation:
 
 - [Aufbau (Systemüberblick)]({{ "/areas/proj-doku-tooling/aufbau/" | relative_url }})
 - [API-Betriebe (Wrapper)]({{ "/areas/proj-doku-tooling/api-betriebe/" | relative_url }})
-- [Jira-Übersicht (öffentlich)]({{ "/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }})
+- [Jira‑Übersicht (öffentlich)]({{ "/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }})
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/operations/runbook/" | relative_url }})

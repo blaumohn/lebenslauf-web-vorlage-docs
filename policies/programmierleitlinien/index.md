@@ -23,3 +23,10 @@ Diese Leitlinien sollen Code für Review, Wartung und Betrieb klar machen.
 - Öffentliche Erklärungen in GitHub Pages.
 - Runbooks für Schrittfolgen (Betrieb/Wartung/Störung).
 - Entscheidungen als ADRs, Vorschläge als KEP-Lite.
+
+## Commits (Jira-Verknüpfung)
+
+- Commit-Messages enthalten einen Jira-Key (z. B. `J01-91`), damit Jira die
+  Änderung zuverlässig zuordnen kann.
+- Format: Conventional Commit + Jira-Key am Ende (empfohlen in Klammern).
+  Beispiel: `docs: drift-report strukturieren (J01-91)`

@@ -13,15 +13,20 @@ dem tatsächlich aktuellen Stand (Code, Konfiguration, Tooling, Betriebsablauf).
 
 - Scope: Menschen-geschriebene Seiten (kein `mirror/`).
 - Quellen: Repo-Code, Konfig-Dateien, Skripte, CLI-Hilfeausgaben.
-- Public-Doku: Keine Nennung lokaler Export-/Arbeitsartefakte und keine
-  internen Export-Bezeichner.
-  - Ausnahme: Explizite Umwandlungs-/Migrationsdokus dürfen die internen
-    Bezeichner nennen, wenn es für Nachvollziehbarkeit zwingend ist.
+- Public-Doku: Keine Nennung temporärer Export-/Umwandlungsartefakte und keine
+  internen Export-Bezeichner (z. B. Export-IDs) außerhalb expliziter
+  Umwandlungsdokus.
+  - Hinweis: Produktive lokale Projektdateien (z. B. lokale Runtime-Overrides)
+    sind davon nicht gemeint, solange sie keine Secrets enthalten.
+  - Ausnahme: Explizite Umwandlungs-/Migrationsdokus dürfen interne Bezeichner
+    nennen, wenn es für Nachvollziehbarkeit/Reproduktion nötig ist.
 
 ## Ablage
 
-- Reports liegen unter `quality/drift-reports/YYYY-MM-DD/`.
-- Pro Tag idealerweise ein Report (bei Bedarf mehrere, dann mit Suffix).
+- Reports liegen primär unter `quality/drift-reports/<JIRA-KEY>/`.
+- Das Datum steht im Titel/Stand (und optional als Abschnitt), nicht im Pfad.
+- Falls ein Ticket mehrere Reports braucht: Unterseiten oder ein Unterordner
+  `YYYY-MM-DD/` unterhalb des Jira-Keys.
 
 ## Format (Tabelle)
 
@@ -35,4 +40,3 @@ Spalten (empfohlen):
 - `Status`: `bestätigt`, `unklar`, `geplant`, `behoben`
 - `Fix`: 1 Satz, was konkret geändert werden soll
 - `Jira`: optional, nur Ticket-ID (z.B. `J01-123`)
-

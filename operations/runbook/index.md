@@ -13,7 +13,7 @@ Die öffentliche, statische Jira-Übersicht in diesem Repo aktualisieren:
 - `/mirror/backlog/`
 - `/mirror/erledigt/`
 - `/mirror/issues/J01-*/` (Epics/Tasks)
-- Schritt-Seiten nur bei Subtasks mit Angaben: `/mirror/issues/<PARENT>/steps/<PREFIX>/`
+- Schritt-Seiten nur bei Subtasks mit Angaben: `/mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/`
 
 ## Voraussetzungen
 

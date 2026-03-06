@@ -4,7 +4,7 @@ title: "Jira-Übersicht: Erledigt"
 permalink: /mirror/erledigt/
 ---
 
-**Stand:** 2026-03-04 17:34 +0100
+**Stand:** 2026-03-06 12:36 +0100
 
 Statische Jira-Übersicht (ohne Jira-Cloud-Links).
 

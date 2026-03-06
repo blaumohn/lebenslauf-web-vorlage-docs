@@ -4,7 +4,7 @@ title: "J01-37 — Config: Konditionelle Validierung"
 permalink: /mirror/issues/J01-37/
 ---
 
-**Stand:** 2026-03-04 17:34 +0100
+**Stand:** 2026-03-06 12:36 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

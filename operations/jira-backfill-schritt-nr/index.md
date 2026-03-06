@@ -35,3 +35,8 @@ Subtasks (Schritte) bekommen eine konsistente Reihenfolge:
 
 - API-Fehler (4xx/5xx) und Rate-Limits beachten.
 - Stichprobe: 1 Parent prüfen, bevor projektweit ausgeweitet wird.
+- Wenn sich Schritt-Nummern (Rank → Prefix) ändern:
+  - Die sichtbaren Schritt-Labels ändern sich.
+  - Die Jira-Übersicht muss neu generiert werden, damit alle Verweise konsistent sind.
+  - Hinweis: Wenn Schritt-Seiten per Subtask-Key adressiert sind, bleiben URLs stabil;
+    die Aktualisierung ist trotzdem nötig, damit Linktexte/Listen stimmen.

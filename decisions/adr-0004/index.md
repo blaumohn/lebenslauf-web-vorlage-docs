@@ -48,7 +48,7 @@ Die Jira-Übersicht wird manuell aktualisiert (nach Jira-Änderungen); später o
 
 ## Links {#links}
 
-- [Jira-Übersicht (Index)]({{ "/mirror/" | relative_url }})
+- [Jira‑Übersicht (Index)]({{ "/mirror/" | relative_url }})
 - [Sprint-Board]({{ "/mirror/sprint-board/" | relative_url }})
 - [Backlog]({{ "/mirror/backlog/" | relative_url }})
 - [Erledigt]({{ "/mirror/erledigt/" | relative_url }})

@@ -4,7 +4,7 @@ title: "J01-72 — Atlassian-System vorbereiten (SSOT) – Iteration 1: Umsetzun
 permalink: /mirror/issues/J01-72/
 ---
 
-**Stand:** 2026-03-04 17:34 +0100
+**Stand:** 2026-03-06 12:36 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -34,4 +34,4 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **72-9 Board-Sicht prüfen (Prefix-Format 9-1)** — Erledigt
 - **72-10 CLI-Cache: Public-only Policy + Output-Redaction + Endpoint-Allowlist** — Zu erledigen
 - **72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links)** — Erledigt
-- [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/mirror/issues/J01-72/steps/72-12/" | relative_url }}) — In Bearbeitung
+- [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — In Bearbeitung

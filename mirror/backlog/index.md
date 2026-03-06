@@ -4,7 +4,7 @@ title: "Jira-Übersicht: Backlog"
 permalink: /mirror/backlog/
 ---
 
-**Stand:** 2026-03-04 17:34 +0100
+**Stand:** 2026-03-06 12:36 +0100
 
 Statische Jira-Übersicht (ohne Jira-Cloud-Links).
 
@@ -95,7 +95,7 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
   - 72-9 Board-Sicht prüfen (Prefix-Format 9-1) — Erledigt
   - 72-10 CLI-Cache: Public-only Policy + Output-Redaction + Endpoint-Allowlist — Zu erledigen
   - 72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links) — Erledigt
-  - [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/mirror/issues/J01-72/steps/72-12/" | relative_url }}) — In Bearbeitung
+  - [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — In Bearbeitung
 - [J01-85 — Atlassian-System vorbereiten (SSOT) – Tooling-Backlog-Container]({{ "/mirror/issues/J01-85/" | relative_url }})
   - 85-1 Refactor: Coding-Standards durchgehend umsetzen — Zu erledigen
   - 85-2 API-Betriebe (Wrapper), http als Escape-Hatch — Zu erledigen
