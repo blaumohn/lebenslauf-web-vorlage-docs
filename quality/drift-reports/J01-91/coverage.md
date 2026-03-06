@@ -48,9 +48,11 @@ Status-Legende:
 | `templates/drift-report/index.md` | ok | Vorlage eingeführt; Regeltext präzisiert. |
 | `quality/drift-reports/index.md` | ok | Index konsistent. |
 | `quality/drift-reports/J01-91/index.md` | ok | Hauptreport. |
-| `quality/drift-reports/J01-91/area-inventory.md` | ok | Quellenabgleich vorhanden. |
-| `quality/drift-reports/J01-91/archive-topics.md` | ok | Themen extrahiert; offene Präzisierungen markiert. |
-| `quality/drift-reports/J01-91/policy-deltas.md` | ok | Vorschläge vorhanden (noch nicht in Policy übernommen). |
-| `quality/drift-reports/J01-91/phase-1-checklist.md` | ok | DoD/Checkliste vorhanden. |
 | `quality/drift-reports/J01-91/coverage.md` | ok | Diese Seite (Abdeckung). |
+| `work/jira/index.md` | ok | Jira-Key-first Ablage für Arbeitsdokus. |
+| `work/jira/J01-91/index.md` | ok | Kanonischer Zustand/Vorhaben (Snapshot). |
+| `work/jira/J01-91/area-inventory.md` | ok | Quellenabgleich vorhanden. |
+| `work/jira/J01-91/archive-topics.md` | ok | Themen extrahiert; offene Präzisierungen markiert. |
+| `work/jira/J01-91/policy-deltas.md` | ok | Vorschläge vorhanden (noch nicht in Policy übernommen). |
+| `work/jira/J01-91/phase-1-checklist.md` | ok | DoD/Checkliste vorhanden. |
 | `README.md` | ok | Historische Quelle neutralisiert („migriert/konsolidiert“). |

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Phase-1-Checkliste (Definition of Done) – 2026-03-06"
-permalink: /quality/drift-reports/J01-91/phase-1-checklist/
+title: "J01-91: Phase-1-Checkliste (Definition of Done) – 2026-03-06"
+permalink: /work/jira/J01-91/phase-1-checklist/
 ---
 
 Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
@@ -32,3 +32,4 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 - Eine klare Phase-2-Liste existiert (umsetzbar, priorisiert, mit Risiko/Impact).
 - Public-Doku erfüllt die aktuellen Sprach-/Nennungsregeln:
   - keine Nennung früherer interner Arbeitsorte/Ordnernamen in öffentlichen Seiten.
+

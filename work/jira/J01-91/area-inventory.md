@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Bereiche-Inventar (Quellenabgleich) – 2026-03-06"
-permalink: /quality/drift-reports/J01-91/area-inventory/
+title: "J01-91: Bereiche-Inventar (Quellenabgleich) – 2026-03-06"
+permalink: /work/jira/J01-91/area-inventory/
 ---
 
 Diese Seite zerlegt die tatsächlich vorhandenen „Bereiche“ in den Quell-Repos
@@ -74,3 +74,4 @@ Mapping in Doku:
 
 - aktuell kein eigener Bereich nötig, solange keine stabile Funktion/Komponente
   existiert, die in diesem Projekt SSOT ist.
+

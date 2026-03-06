@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Archiv-Auswertung (Themen, ohne IDs) – 2026-03-06"
-permalink: /quality/drift-reports/J01-91/archive-topics/
+title: "J01-91: Archiv-Auswertung (Themen, ohne IDs) – 2026-03-06"
+permalink: /work/jira/J01-91/archive-topics/
 ---
 
 Ziel: Aus archivierten Projektverwaltungs-Texten (lokal) nur die Themen
@@ -81,3 +81,4 @@ Aktuell wirken zwei zusätzliche Typen potenziell sinnvoll:
   interne IDs enthalten und ob diese bereits nach J01-xx überführt wurden.
   - Public-Doku bleibt ohne interne IDs; die Zuordnung (falls nötig) gehört in
     eine private Mapping-Notiz.
+

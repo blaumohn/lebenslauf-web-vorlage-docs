@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Policy-Delta-Vorschläge – 2026-03-06"
-permalink: /quality/drift-reports/J01-91/policy-deltas/
+title: "J01-91: Policy-Delta-Vorschläge – 2026-03-06"
+permalink: /work/jira/J01-91/policy-deltas/
 ---
 
 Diese Seite sammelt Vorschläge zur Anpassung von
@@ -47,7 +47,7 @@ Problem:
 
 Vorschlag:
 - Jira Remote Links dürfen nur auf kanonische Doku-Seiten zeigen:
-  - `areas/...`, `operations/...`, `decisions/...`, `policies/...`, `quality/...`
+  - `areas/...`, `operations/...`, `decisions/...`, `policies/...`, `quality/...`, `work/...`
   - keine Links auf `mirror/...` aus Jira.
 - `mirror/...` darf die gleichen Remote Links anzeigen, wenn sie aus Jira
   importiert werden (Filter/Allowlist: nur Doku-Domain zulassen).
@@ -66,3 +66,4 @@ Vorschlag:
 - Bereichs-IDs (Slugs) sind stabil (z.B. `proj-doku-tooling`).
 - Repo-Namen können sich ändern; Doku referenziert Repo-Namen nur als Fakten
   („Repo heißt aktuell …“) oder über neutrale Bezeichner („Tooling-Repo“).
+

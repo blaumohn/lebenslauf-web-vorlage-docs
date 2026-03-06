@@ -4,7 +4,7 @@ title: "J01-40 — Runtime: Technische Konstanten vereinheitlichen"
 permalink: /mirror/issues/J01-40/
 ---
 
-**Stand:** 2026-03-06 21:20 +0100
+**Stand:** 2026-03-06 22:48 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
