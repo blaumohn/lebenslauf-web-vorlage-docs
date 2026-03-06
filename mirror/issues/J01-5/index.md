@@ -4,7 +4,7 @@ title: "J01-5 — Qualitätsrahmen für App und Config-Lib"
 permalink: /mirror/issues/J01-5/
 ---
 
-**Stand:** 2026-03-06 12:52 +0100
+**Stand:** 2026-03-06 13:02 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -29,6 +29,10 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - [J01-16 — Runtime: Concurrency, Locking und atomare Zugriffe]({{ "/mirror/issues/J01-16/" | relative_url }})
 - [J01-13 — Preview: Testmatrix und Entscheidungen finalisieren]({{ "/mirror/issues/J01-13/" | relative_url }})
 - [J01-9 — Preview: Workflow wieder aktivieren]({{ "/mirror/issues/J01-9/" | relative_url }})
+
+## Links
+
+-
 
 ## Beschreibung
 

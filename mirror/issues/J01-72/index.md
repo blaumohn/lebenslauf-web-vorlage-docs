@@ -4,7 +4,7 @@ title: "J01-72 — Atlassian-System vorbereiten (SSOT) – Iteration 1: Umsetzun
 permalink: /mirror/issues/J01-72/
 ---
 
-**Stand:** 2026-03-06 12:52 +0100
+**Stand:** 2026-03-06 13:02 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -16,6 +16,10 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-28T21:52:05.804+0100
 - **Parent:** [J01-84 — Atlassian-System vorbereiten (SSOT)]({{ "/mirror/issues/J01-84/" | relative_url }})
+
+## Links
+
+-
 
 ## Beschreibung
 

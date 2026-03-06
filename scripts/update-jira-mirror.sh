@@ -12,6 +12,35 @@ log() {
   printf '== %s ==\n' "$1" >&2
 }
 
+render_public_remotelinks_md() {
+  issue_key=$1
+
+  # Jira Remote Links können alles Mögliche enthalten. Für Public Mirror zeigen
+  # wir nur eine harte Allowlist (Doku-Domain).
+  json=$(atlassian jira http get "/rest/api/3/issue/$issue_key/remotelink" 2>/dev/null || printf '[]')
+
+  printf '%s' "$json" | jq -r --arg base 'https://docs.template.ysdani.com/' '
+    [ .[]?
+      | .object?
+      | select(.url? != null)
+      | {
+          url: .url,
+          title: (.title // .url)
+        }
+      | select(.url | startswith($base))
+      | .title |= (gsub("\\n"; " ") | gsub("\\["; "(") | gsub("\\]"; ")"))
+      | select((.title | test("@")) | not)
+    ]
+    | unique_by(.url)
+    | sort_by(.url)
+    | if length == 0 then
+        "-"
+      else
+        map("- [" + .title + "](" + .url + ")") | join("\n")
+      end
+  ' 2>/dev/null || printf '%s\n' "-"
+}
+
 cleanup_steps_dirs() {
   # Schritt-Seiten sind vollständig abgeleitet. Wir löschen sie vor dem
   # Generieren, damit keine veralteten Pfade (z.B. nach Schemawechsel) bleiben.
@@ -374,6 +403,7 @@ update_issue_pages() {
     status=$(printf '%s' "$issue" | jq -r '.status')
     updated=$(printf '%s' "$issue" | jq -r '.updated')
     parent=$(printf '%s' "$issue" | jq -r '.parent // empty')
+    links_md=$(render_public_remotelinks_md "$key")
 
     mkdir -p "mirror/issues/$key"
     out_file="mirror/issues/$key/index.md"
@@ -411,6 +441,10 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 ## Aufgaben
 
 $tasks
+
+## Links
+
+$links_md
 
 ## Beschreibung
 
@@ -488,6 +522,10 @@ EOF
       fi
 
       cat >>"$out_file" <<EOF
+## Links
+
+$links_md
+
 ## Beschreibung
 
 -
@@ -523,6 +561,7 @@ update_subtask_pages_with_description() {
     summary=$(printf '%s' "$subtask" | jq -r '.summary')
     status=$(printf '%s' "$subtask" | jq -r '.status')
     updated=$(printf '%s' "$subtask" | jq -r '.updated')
+    links_md=$(render_public_remotelinks_md "$key")
 
     prefix=$(printf '%s' "$summary" | sed -nE 's/^([0-9]+-[0-9]+) .*/\1/p')
     summary_no_prefix=$(printf '%s' "$summary" | sed -E 's/^[0-9]+-[0-9]+[[:space:]]+//')
@@ -564,6 +603,10 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 ## Angaben
 
 $description_text
+
+## Links
+
+$links_md
 EOF
   done
 }

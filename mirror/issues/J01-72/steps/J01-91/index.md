@@ -4,7 +4,7 @@ title: "72-12 — Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen
 permalink: /mirror/issues/J01-72/steps/J01-91/
 ---
 
-**Stand:** 2026-03-06 12:52 +0100
+**Stand:** 2026-03-06 13:02 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -30,3 +30,12 @@ Die öffentliche Jira-Übersicht ist klar benannt und aufgeteilt: /mirror/ (Land
 Subtasks: ohne Angaben bleiben unlinked (nur Schritt-Nr/Titel/Zustand beim Parent). Subtasks mit Angaben bekommen eine eigene Schritt-Seite unter /mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/ (Linktext bleibt <ParentNr>-<SchrittNr>).
 
 Runbook 5832705 (Backfill Schritt-Nr + Summary-Prefix) ist Teil der öffentlichen Doku und ist migriert als /operations/jira-backfill-schritt-nr/.
+
+## Links
+
+- [Phase 1: Drift-Report & Teilberichte](https://docs.template.ysdani.com/quality/drift-reports/J01-91/)
+- [Phase 1: Archiv-Themen](https://docs.template.ysdani.com/quality/drift-reports/J01-91/archive-topics/)
+- [Phase 1: Bereiche-Inventar](https://docs.template.ysdani.com/quality/drift-reports/J01-91/area-inventory/)
+- [Phase 1: Abdeckung](https://docs.template.ysdani.com/quality/drift-reports/J01-91/coverage/)
+- [Phase 1: Checkliste](https://docs.template.ysdani.com/quality/drift-reports/J01-91/phase-1-checklist/)
+- [Phase 1: Policy-Deltas](https://docs.template.ysdani.com/quality/drift-reports/J01-91/policy-deltas/)

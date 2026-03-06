@@ -4,7 +4,7 @@ title: "J01-8 — Backlog-Kandidaten"
 permalink: /mirror/issues/J01-8/
 ---
 
-**Stand:** 2026-03-06 12:52 +0100
+**Stand:** 2026-03-06 13:02 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -23,6 +23,10 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - [J01-56 — Backlog: Bibliotheks-APIs konsequent ausschoepfen]({{ "/mirror/issues/J01-56/" | relative_url }})
 - [J01-54 — Backlog: Zentrales Fehlerkonzept]({{ "/mirror/issues/J01-54/" | relative_url }})
 - [J01-52 — Backlog: Typensicherheit statt Guards]({{ "/mirror/issues/J01-52/" | relative_url }})
+
+## Links
+
+-
 
 ## Beschreibung
 

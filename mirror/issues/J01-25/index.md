@@ -4,7 +4,7 @@ title: "J01-25 — Dev-Branch Baseline und Repo-Hygiene"
 permalink: /mirror/issues/J01-25/
 ---
 
-**Stand:** 2026-03-06 12:52 +0100
+**Stand:** 2026-03-06 13:02 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -16,6 +16,10 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-17T16:15:02.790+0100
 - **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/mirror/issues/J01-5/" | relative_url }})
+
+## Links
+
+-
 
 ## Beschreibung
 
