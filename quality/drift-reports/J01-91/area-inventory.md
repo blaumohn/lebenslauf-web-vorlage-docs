@@ -29,8 +29,8 @@ Faktisch vorhanden:
 Mapping in Doku:
 
 - passt zu `areas/proj-doku-tooling/aufbau/`
-- `areas/proj-doku-tooling/api-betriebe/` ist konzeptionell passend, aber die
-  Beispiele sind aktuell nicht synchron zum CLI-Ist-Stand (siehe Drift-Report).
+- `areas/proj-doku-tooling/api-betriebe/` ist konzeptionell passend; Beispiele
+  sind auf den CLI-Ist-Stand aktualisiert (Ist vs. geplant getrennt).
 
 ### `../lebenslauf-web-vorlage` (App)
 

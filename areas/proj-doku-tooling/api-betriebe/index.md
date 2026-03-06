@@ -4,4 +4,44 @@ title: "Jira- und Doku-Tooling: API-Betriebe (Wrapper)"
 permalink: /areas/proj-doku-tooling/api-betriebe/
 ---
 
-<p><strong>Ziel:</strong> Häufige Betriebsabläufe als eigene Befehle (API-Wrapper), damit Mensch/KI nicht jedes Mal Pfade, JQL und JSON manuell zusammensetzen muss.</p><h2>Leitlinien</h2><ul><li><code>atlassian &hellip; http &hellip;</code> bleibt als Escape-Hatch, nicht als Normalweg.</li><li>Jeder Betrieb ist klein, eindeutig und hat klare Eingaben/Outputs.</li><li>Output bevorzugt maschinenlesbar (JSON/TSV) und stabil.</li><li>Security-Policy bleibt unverändert (Allowlist, Tool-Owner, keine Secrets beim Aufrufer).</li></ul><h2>Heuristik</h2><ul><li>Wenn ein <code>http</code>-Aufruf mehrfach gebraucht wird: als Betrieb standardisieren.</li><li>Wenn ein Betrieb eine Fehlerklasse eliminiert (Encoding, Pagination, Feldtypen): priorisieren.</li></ul><h2>Beispiele</h2><ul><li><code>atlassian jira search jql &lt;JQL&gt;</code></li><li><code>atlassian jira subtasks list --parent J01-9</code></li><li><code>atlassian jira subtasks reorder --parent J01-9 --move J01-12 --after J01-11</code></li><li><code>atlassian jira issue transition --issue J01-12 --to done</code></li></ul><h2>Katalog (Start)</h2><p>Der Katalog wächst nur entlang realer Nutzung (kein Vollabdeckungs-Ziel).</p><ul><li><strong>Search:</strong> JQL suchen (Pagination + Felder).</li><li><strong>Subtasks:</strong> listen/reorder (Rank), Schritt-Nr pflegen.</li><li><strong>Workflow:</strong> Transition in definierte Ziel-Status.</li><li><strong>Erstellung:</strong> Subtask anlegen mit Standardfeldern.</li></ul><h2>Zwischenschritt: CLI-Cache</h2><p>Wenn API-Betriebe noch Backlog sind, kann ein CLI-Cache als Zwischenschritt Zeit sparen: ein kleiner Katalog aus benannten Rezepten (Befehlsschablonen + Beispielparameter + erwartete Felder), damit Mensch/KI ähnliche Befehle schnell bauen kann.</p><p><strong>Ziel des Caches:</strong> Ein KI-Agent soll schnell ein funktionierendes Beispiel finden und das Muster wiederverwenden, statt das Befehlsschema/Endpoint-Schema iterativ zu erraten.</p><p><strong>Artefakt-Typen (minimal):</strong></p><ul><li><strong>Rezept (Schema):</strong> benannter Use-Case + kopierbarer Beispielbefehl (mit Platzhaltern) + erwartete Felder/Output-Form + typische Fehlermodi.</li><li><strong>Snapshot (Beleg):</strong> optionaler, gekürzter Ergebnis-Ausschnitt + Zeitpunkt, um spätere Prüfungen und Reproduktion zu ermöglichen.</li></ul><p><strong>Skill statt Cache (optional):</strong> Ein Codex-Skill kann die Arbeitsweise definieren (wann welches Rezept genutzt wird) und die Ablage der Ergebnisse steuern; die harte Policy bleibt trotzdem im <code>atlassian-http-client</code>.</p><h3>Public-only Policy</h3><ul><li>Cache/Output nur für Inhalte, die als veröffentlicht/öffentlich gedacht sind.</li><li>Keine Secrets im Cache.</li></ul><h3>Einschränkung im atlassian-http-client</h3><p>Statt Maskierung: harte Einschränkung über Allowlist/Denylist (insbesondere User-, Gruppen- und Berechtigungs-Endpunkte nicht zulassen). Maskierung bleibt optional als Zusatzschutz.</p>
+Ziel: Häufige Betriebsabläufe als eigene Befehle („Betriebe“) kapseln, damit
+Mensch/KI nicht jedes Mal Pfade, JQL und JSON manuell zusammensetzen muss.
+
+## Leitlinien
+
+- `atlassian … http …` bleibt ein Escape-Hatch, nicht der Normalweg.
+- Jeder Betrieb ist klein, eindeutig und hat klare Eingaben/Outputs.
+- Output bevorzugt maschinenlesbar (JSON/TSV) und stabil.
+- Security-Policy bleibt unverändert (Allowlist, Tool-Owner, keine Secrets beim Aufrufer).
+
+## Ist (exponierte Betriebe im CLI)
+
+Die CLI ist im Repo `atlassian-tools` definiert. Verfügbare `jira ext`-Betriebe
+(Stand heute):
+
+- `atlassian jira ext sprint fill …`:
+  - Issues in einen Sprint setzen (optional mit `--dry-run`).
+- `atlassian jira ext remotelink add …`:
+  - Jira Remote Link setzen (Doku-URL + Titel; optional `--dry-run`).
+- `atlassian jira ext backfill schritt-nr …`:
+  - Subtasks: Schritt-Nr aus Rank ableiten + Summary-Prefix setzen (optional `--dry-run`).
+
+Beispiele (Ist):
+
+```bash
+atlassian jira ext backfill schritt-nr --parent J01-72 --dry-run
+atlassian jira ext remotelink add --issue J01-91 --url https://docs.template.ysdani.com/quality/drift-reports/J01-91/ --title "Phase 1: Drift-Report" --dry-run
+```
+
+## Geplant (Kandidaten)
+
+Wenn ein Muster mehrfach gebraucht wird (oder Encoding/Pagination/Fehlklasssen eliminiert),
+lohnt sich ein neuer `jira ext …` Betrieb, z.B.:
+
+- `jira ext search jql …` (Pagination + definierte Felder)
+- `jira ext issue transition …` (Workflow-Übergänge als sichere Abkürzung)
+- `jira ext subtasks reorder …` (wenn Rank-Steuerung wirklich nötig wird)
+
+Wichtig: Geplante Kommandos müssen in der Doku klar als „geplant“ markiert werden,
+bis sie im CLI existieren.
+

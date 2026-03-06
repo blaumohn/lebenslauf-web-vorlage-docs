@@ -4,7 +4,7 @@ title: "J01-85 — Atlassian-System vorbereiten (SSOT) – Tooling-Backlog-Conta
 permalink: /mirror/issues/J01-85/
 ---
 
-**Stand:** 2026-03-06 13:02 +0100
+**Stand:** 2026-03-06 21:20 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

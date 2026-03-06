@@ -14,6 +14,8 @@ Die öffentliche, statische Jira-Übersicht in diesem Repo aktualisieren:
 - `/mirror/erledigt/`
 - `/mirror/issues/J01-*/` (Epics/Tasks)
 - Schritt-Seiten nur bei Subtasks mit Angaben: `/mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/`
+- Zusätzlich: Jira Remote Links werden (gefiltert) als Linkliste im Mirror angezeigt
+  (nur Doku-Domain; als site-relative Links gerendert).
 
 ## Voraussetzungen
 
@@ -33,11 +35,12 @@ sh scripts/update-jira-mirror.sh
 
 3) Stichprobe (inhaltlich):
    - Subtasks ohne Angaben haben **keine** eigene Seite (nur Schritt-Nr/Titel/Zustand beim Parent).
-   - Subtasks mit Angaben haben eine Schritt-Seite (ohne Subtask-Key).
+   - Subtasks mit Angaben haben eine Schritt-Seite (URL enthält den Subtask-Key; Linktext bleibt ParentNr-SchrittNr).
 
 4) Hygiene (Policy):
    - Keine `atlassian.net` Links im Output.
    - Keine E-Mail-Adressen im Output.
+   - Remote Links zeigen nicht als absolute Doku-Domain, sondern als relative Site-Links.
 
 ## Rollback
 

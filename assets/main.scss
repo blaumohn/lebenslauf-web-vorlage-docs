@@ -1,0 +1,14 @@
+---
+---
+
+@import "minima";
+
+// Header-Navigation: Links sollen als Einheit umbrechen (zwischen Links),
+// nicht mitten im Linktext (z.B. "Betrieb (Runbook)").
+@media screen and (min-width: 600px) {
+  .site-nav .page-link {
+    display: inline-block;
+    white-space: nowrap;
+  }
+}
+

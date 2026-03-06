@@ -1,7 +1,8 @@
 # lebenslauf-web-vorlage-docs
 
 Öffentliche Dokumentation als GitHub Pages.
-Inhalte sind aus Confluence (J01) übernommen und strukturiert.
+Inhalte wurden aus früheren Quellen migriert und sind hier konsolidiert
+(öffentliche Doku + statische Jira-Übersicht).
 
 ## Betrieb (lokale Vorschau)
 

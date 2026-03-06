@@ -36,7 +36,14 @@ render_public_remotelinks_md() {
     | if length == 0 then
         "-"
       else
-        map("- [" + .title + "](" + .url + ")") | join("\n")
+        map(
+          "- ["
+          + .title
+          + "]({{ \""
+          + (.url | sub($base; "/"))
+          + "\" | relative_url }})"
+        )
+        | join("\n")
       end
   ' 2>/dev/null || printf '%s\n' "-"
 }
@@ -47,6 +54,34 @@ cleanup_steps_dirs() {
   if [ -d mirror/issues ]; then
     find mirror/issues -mindepth 2 -maxdepth 2 -type d -name steps -exec rm -rf {} +
   fi
+}
+
+cleanup_stale_issue_dirs() {
+  issues_file=$1
+
+  # Issue-Seiten sind vollständig abgeleitet. Wir löschen Issue-Ordner, die in
+  # Jira nicht mehr existieren, damit der Mirror "sauber voll gespiegelt" bleibt.
+  if [ ! -d mirror/issues ]; then
+    return
+  fi
+
+  tmp_dir=${TMPDIR:-/tmp}
+  keys_file="$tmp_dir/j01-issue-keys.txt"
+  jq -r '.issues[].key' <"$issues_file" | sort >"$keys_file"
+
+  find mirror/issues -mindepth 1 -maxdepth 1 -type d | while read -r dir; do
+    key=$(basename "$dir")
+    # Sicherheitsgurt: nur Projekt-Keys anrühren.
+    case "$key" in
+      J01-*)
+        if ! grep -Fxq "$key" "$keys_file"; then
+          rm -rf "$dir"
+        fi
+        ;;
+      *)
+        ;;
+    esac
+  done
 }
 
 sanitize_public_description_text() {
@@ -95,6 +130,7 @@ main() {
   update_sprint_board "$issues_file" "$sprint_file" "$stand"
 
   log "Mirror: Issue-Seiten"
+  cleanup_stale_issue_dirs "$issues_file"
   update_issue_pages "$issues_file" "$subtasks_file" "$stand"
   log "Mirror: Subtask-Seiten (mit Angaben)"
   cleanup_steps_dirs

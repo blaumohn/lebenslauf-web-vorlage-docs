@@ -13,7 +13,7 @@ Portfolio-Projekt: modulare Lebenslauf-Vorlage (PHP + Twig).
 ## Bereiche
 
 Die Dokumentation ist nach Projektbereichen strukturiert, damit Seiten
-wie z. B. Confluence-Seite 5832705 sofort einordbar sind.
+wie z. B. Runbooks/Entscheidungen sofort einordbar sind.
 
 - [Bereiche (Überblick)]({{ "/areas/" | relative_url }})
 
@@ -24,7 +24,6 @@ wie z. B. Confluence-Seite 5832705 sofort einordbar sind.
 - [Jira‑Übersicht (öffentlich)]({{ "/mirror/" | relative_url }})
 - [Richtlinien]({{ "/policies/" | relative_url }})
 - [Vorlagen]({{ "/templates/" | relative_url }})
-- [Architektur]({{ "/architecture/" | relative_url }})
 - [Qualität]({{ "/quality/" | relative_url }})
 
 ## Grundsatz

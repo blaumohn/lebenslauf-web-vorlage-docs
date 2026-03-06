@@ -15,30 +15,29 @@ Status-Legende:
 
 | Seite | Status | Notiz |
 | --- | --- | --- |
-| `index.md` | drift | Confluence-Beispieltext (siehe Haupttabelle). |
-| `getting-started/index.md` | drift | SSOT-Kontext (Confluence/Arbeitsnotizen) wirkt veraltet. |
+| `index.md` | ok | Startseite ist neutral formuliert (keine veralteten Quellen als aktuelles Beispiel). |
+| `getting-started/index.md` | ok | SSOT-Kontext aktualisiert (Jira + GitHub Pages + Notizrepo privat). |
 | `areas/index.md` | ok | Navigation ok; zwei Bereiche sind Stubs. |
-| `areas/proj-doku-tooling/index.md` | drift | Repo-Name `proj-doku-tools` (siehe Haupttabelle). |
+| `areas/proj-doku-tooling/index.md` | ok | Repo-Name korrigiert (`atlassian-tools`). |
 | `areas/proj-doku-tooling/aufbau/index.md` | ok | Modell konsistent zu Tooling-Repo. |
-| `areas/proj-doku-tooling/api-betriebe/index.md` | drift | CLI-Beispiele passen nicht zum Ist-Stand. |
+| `areas/proj-doku-tooling/api-betriebe/index.md` | ok | Beispiele auf Ist-Stand aktualisiert; geplant klar markiert. |
 | `areas/proj-doku-tooling/jira-uebersicht/index.md` | ok | Regeln/Links konsistent zu `mirror/` + Runbook. |
 | `areas/cli-build/index.md` | platzhalter | Inhalt fehlt. |
 | `areas/http-runtime/index.md` | platzhalter | Inhalt fehlt. |
-| `architecture/index.md` | platzhalter | Sehr dünn; de facto Stub. |
 | `decisions/index.md` | ok | Index konsistent. |
 | `decisions/adr-0001/index.md` | ok | Entscheidungskontext stimmig. |
-| `decisions/adr-0002/index.md` | drift | Repo-Link `proj-doku-tools` (siehe Haupttabelle). |
+| `decisions/adr-0002/index.md` | ok | Repo-Link korrigiert (`atlassian-tools`). |
 | `decisions/adr-0003/index.md` | ok | Abgleich mit Tooling-Code plausibel. |
 | `decisions/adr-0004/index.md` | ok | Öffentlichkeitsregeln konsistent. |
 | `operations/index.md` | ok | Index konsistent. |
 | `operations/ghpages-preview/index.md` | ok | Abgleich mit `compose.yaml` plausibel. |
 | `operations/jira-backfill-schritt-nr/index.md` | ok | Kommandos/Begriffe konsistent zu CLI. |
-| `operations/runbook/index.md` | ok | Generator-Regeln konsistent; Remote-Link-Import ist (noch) nicht Teil. |
+| `operations/runbook/index.md` | ok | Runbook entspricht Generator (inkl. Remote-Link-Import). |
 | `policies/index.md` | ok | Index konsistent. |
 | `policies/doku-richtlinie/index.md` | ok | Grundstruktur ok; Delta-Vorschläge separat. |
 | `policies/programmierleitlinien/index.md` | ok | Keine Quell-Claims, eher Leitlinie. |
 | `quality/index.md` | ok | Verlinkung ok. |
-| `quality/testmatrix/index.md` | drift | Claim „Jira verlinkt …“ derzeit nicht erfüllt. |
+| `quality/testmatrix/index.md` | ok | Text als Zielbild formuliert (kein Ist-Claim). |
 | `templates/index.md` | ok | Index konsistent. |
 | `templates/adr/index.md` | ok | Vorlage ok. |
 | `templates/kep-lite/index.md` | ok | Vorlage ok. |
@@ -49,4 +48,9 @@ Status-Legende:
 | `templates/drift-report/index.md` | ok | Vorlage eingeführt; Regeltext präzisiert. |
 | `quality/drift-reports/index.md` | ok | Index konsistent. |
 | `quality/drift-reports/J01-91/index.md` | ok | Hauptreport. |
-| `README.md` | drift | Confluence als aktuelle Quelle klingt zu stark. |
+| `quality/drift-reports/J01-91/area-inventory.md` | ok | Quellenabgleich vorhanden. |
+| `quality/drift-reports/J01-91/archive-topics.md` | ok | Themen extrahiert; offene Präzisierungen markiert. |
+| `quality/drift-reports/J01-91/policy-deltas.md` | ok | Vorschläge vorhanden (noch nicht in Policy übernommen). |
+| `quality/drift-reports/J01-91/phase-1-checklist.md` | ok | DoD/Checkliste vorhanden. |
+| `quality/drift-reports/J01-91/coverage.md` | ok | Diese Seite (Abdeckung). |
+| `README.md` | ok | Historische Quelle neutralisiert („migriert/konsolidiert“). |

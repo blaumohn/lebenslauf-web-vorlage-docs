@@ -21,4 +21,13 @@ Hinweis: vor dem ersten Start `.local/dev-runtime.yaml` anlegen
 
 ## Kontext (SSOT)
 
-<p>SSOT: Jira (J01). Kontext/Entscheidungen: Confluence (Space J01). Interne Arbeitsnotizen: zeitverwaltung-codex.</p>
+SSOT: Jira (Projekt `J01`).
+
+Öffentlich:
+
+- Formale Dokumente und Projektdoku: dieses GitHub-Pages-Repo.
+- Statische Jira-Übersicht (ohne Jira-Cloud-Links): `/mirror/`.
+
+Nicht öffentlich:
+
+- Interne Arbeitsnotizen: privates Notizrepo.

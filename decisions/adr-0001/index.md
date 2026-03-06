@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "ADR-0001 SSOT: Jira, docs/agile entfernt"
+title: "ADR-0001 SSOT: Jira, zweite Arbeitsquelle entfernt"
 permalink: /decisions/adr-0001/
 ---
 
@@ -8,12 +8,12 @@ permalink: /decisions/adr-0001/
 
 ## Kontext {#kontext}
 
-Es gab bisher eine zweite Arbeitsquelle (`docs/agile`) neben Jira. Das führte zu Drift und erschwerte die Synchronisation über Jira-IDs in Commits/PRs.
+Es gab bisher eine zweite Arbeitsquelle im App-Repo neben Jira. Das führte zu Drift und erschwerte die Synchronisation über Jira-IDs in Commits/PRs.
 
 ## Entscheidung {#entscheidung}
 
 - Jira ist die einzige Quelle der Wahrheit für Planung, Status und Arbeitspakete.
-- `docs/agile/` wird aus dem App-Repo entfernt.
+- Eine zweite Arbeitsquelle im App-Repo wird entfernt.
 - Formale Dokumente und öffentliche Projekt-Doku liegen in GitHub Pages (dieses Repo); Confluence-Inhalte wurden migriert bzw. ersetzt.
 - Interne Denkarbeit und Arbeitslog bleiben im privaten Notizrepo.
 
@@ -25,7 +25,7 @@ Es gab bisher eine zweite Arbeitsquelle (`docs/agile`) neben Jira. Das führte z
 
 ## Alternativen {#alternativen}
 
-- `docs/agile` im Repo behalten: abgelehnt (Drift-Risiko).
+- Zweite Arbeitsquelle im App-Repo behalten: abgelehnt (Drift-Risiko).
 - GitHub Projects als SSOT: abgelehnt.
 
 ## Links {#links}

@@ -17,8 +17,10 @@ Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als statische Jira-Übe
 
 - Keine Jira-Cloud-Links.
 - Keine E-Mail-Adressen.
-- Subtasks werden standardmäßig **ohne Key** gezeigt (nur Schritt-Nr/Title/Zustand).
+- Subtasks werden in Listen standardmäßig **ohne Key** gezeigt (nur Schritt-Nr/Titel/Zustand).
 - Subtasks bekommen nur dann eine eigene Seite, wenn sie zusätzliche Angaben enthalten.
+  - Hinweis: Die Schritt-Seiten sind stabil per Subtask-Key adressiert
+    (`/mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/`); nur die Anzeige/Linktexte bleiben key-frei.
 
 ## Aktualisieren
 

@@ -25,6 +25,25 @@ lokalen Export-/Umwandlungsartefakte (Ausnahme: explizite Umwandlungsdokus).
 - Teststrategie/Testmatrix: Abnahmechecks + Verlinkung zu konkreten Checks
 - Repo-Hygiene: Branch-Strategie, Commit-/PR-Konventionen
 
+## Arbeitsliste (Themen → Übernahme)
+
+Diese Tabelle ist bewusst grob. „Offen“ ist ok, aber muss explizit bleiben,
+bis eine Entscheidung getroffen ist.
+
+| Thema | Übernehmen | Dokutyp | Zielpfad | Jira-Bezug | Notiz |
+| --- | --- | --- | --- | --- | --- |
+| Pipeline/Phase-Terminologie | offen | Bereich / ggf. Glossar (neu) | `areas/cli-build/` | J01-91 | Klären, ob ein kleines Glossar wirklich nötig ist. |
+| Typisierung/Validierung | offen | Richtlinie | `policies/programmierleitlinien/` | J01-91 | Konkrete Regeln statt „Guard“-Sammlung. |
+| Fehlerkonzept | offen | Richtlinie | `policies/programmierleitlinien/` | J01-91 | Einheitliches Fehler-/Exit-Code-Konzept. |
+| Preview/Deployment-Readiness | offen | Runbook | `operations/` | J01-91 | Vorbedingungen/Checks/Rollback als Betrieb. |
+| CLI-UX | offen | Bereich | `areas/cli-build/` | J01-91 | Fehlermeldungen, fehlende Config, Phase-Konzept. |
+| Config-Policy (Sources/Validation) | offen | Bereich + Policy | `areas/cli-build/` | J01-91 | Schnitt: App ↔ Spec-Repo. |
+| i18n | offen | Bereich | `areas/http-runtime/` | J01-91 | Runtime-Meldungen, Templates, Pflege. |
+| Runtime-Concurrency/Locking | offen | Bereich | `areas/http-runtime/` | J01-91 | Atomare Zugriffe, Timeouts, Locking. |
+| Automations-Layer (Helper) | offen | Bereich | `areas/cli-build/` | J01-91 | Klein halten; nur wenn Nutzen klar. |
+| Teststrategie/Testmatrix | offen | Qualität + ggf. Abnahmechecks (neu) | `quality/testmatrix/` | J01-91 | Feinere Check-Seiten nur falls Jira wirklich darauf linken soll. |
+| Repo-Hygiene | offen | Richtlinie | `policies/programmierleitlinien/` | J01-91 | Branch-/Commit-/PR-Konventionen. |
+
 ## Empfohlene Ablage (wenn übernommen)
 
 - `areas/cli-build/`:
@@ -52,3 +71,13 @@ Aktuell wirken zwei zusätzliche Typen potenziell sinnvoll:
 - **Abnahmecheck-Seite** (pro Feature/Release):
   - Wenn „Testmatrix“ zu grob ist und Jira wirklich auf einzelne Checks
     verlinken soll.
+
+## Offen (Abstimmung / nächste Präzisierung)
+
+- Pro Thema fehlt aktuell die explizite Entscheidung:
+  - Übernehmen ja/nein/offen.
+  - Ziel-Dokutyp (ADR/KEP-Lite/Runbook/Policy/Glossar/Abnahmecheck) und Zielpfad.
+- Es ist noch nicht belegt, ob die Archivquellen überwiegend nur Referenzen auf
+  interne IDs enthalten und ob diese bereits nach J01-xx überführt wurden.
+  - Public-Doku bleibt ohne interne IDs; die Zuordnung (falls nötig) gehört in
+    eine private Mapping-Notiz.

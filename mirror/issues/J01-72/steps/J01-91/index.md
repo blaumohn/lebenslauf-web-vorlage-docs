@@ -4,7 +4,7 @@ title: "72-12 — Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen
 permalink: /mirror/issues/J01-72/steps/J01-91/
 ---
 
-**Stand:** 2026-03-06 13:02 +0100
+**Stand:** 2026-03-06 21:20 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -33,9 +33,9 @@ Runbook 5832705 (Backfill Schritt-Nr + Summary-Prefix) ist Teil der öffentliche
 
 ## Links
 
-- [Phase 1: Drift-Report & Teilberichte](https://docs.template.ysdani.com/quality/drift-reports/J01-91/)
-- [Phase 1: Archiv-Themen](https://docs.template.ysdani.com/quality/drift-reports/J01-91/archive-topics/)
-- [Phase 1: Bereiche-Inventar](https://docs.template.ysdani.com/quality/drift-reports/J01-91/area-inventory/)
-- [Phase 1: Abdeckung](https://docs.template.ysdani.com/quality/drift-reports/J01-91/coverage/)
-- [Phase 1: Checkliste](https://docs.template.ysdani.com/quality/drift-reports/J01-91/phase-1-checklist/)
-- [Phase 1: Policy-Deltas](https://docs.template.ysdani.com/quality/drift-reports/J01-91/policy-deltas/)
+- [Phase 1: Drift-Report & Teilberichte]({{ "/quality/drift-reports/J01-91/" | relative_url }})
+- [Phase 1: Archiv-Themen]({{ "/quality/drift-reports/J01-91/archive-topics/" | relative_url }})
+- [Phase 1: Bereiche-Inventar]({{ "/quality/drift-reports/J01-91/area-inventory/" | relative_url }})
+- [Phase 1: Abdeckung]({{ "/quality/drift-reports/J01-91/coverage/" | relative_url }})
+- [Phase 1: Checkliste]({{ "/quality/drift-reports/J01-91/phase-1-checklist/" | relative_url }})
+- [Phase 1: Policy-Deltas]({{ "/quality/drift-reports/J01-91/policy-deltas/" | relative_url }})

@@ -34,4 +34,4 @@ Die CLI baut nur URL-Templates mit `{CLOUD_ID}`/`{SITE_SUBDOMAIN}`; der http-cli
 
 ## Links {#links}
 
-- Tooling: `proj-doku-tools` (lokales Repo)
+- Tooling: `atlassian-tools` (lokales Repo)

@@ -10,7 +10,8 @@ Dieser Bereich beschreibt die Projektverwaltung und öffentliche Dokumentation:
 
 - Jira ist die SSOT für Vorgänge und Status.
 - Die öffentliche Doku und die öffentliche Jira-Übersicht liegen in diesem GitHub-Pages-Repo.
-- `proj-doku-tools` beschreibt das lokale Tooling (CLI/Wrapper), das Jira-Änderungen unterstützt.
+- Das lokale Tooling-Repo heißt aktuell `atlassian-tools` (CLI/Wrapper), das Jira-Änderungen unterstützt.
+  - Hinweis: Die Area-ID bleibt stabil als `proj-doku-tooling`, auch wenn sich Repo-Namen künftig ändern.
 
 - [Aufbau (Systemüberblick)]({{ "/areas/proj-doku-tooling/aufbau/" | relative_url }})
 - [API-Betriebe (Wrapper)]({{ "/areas/proj-doku-tooling/api-betriebe/" | relative_url }})

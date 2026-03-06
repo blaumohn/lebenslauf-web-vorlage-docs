@@ -4,7 +4,7 @@ title: "J01-62 — Production: Branch- und Environment-Regeln aktivieren"
 permalink: /mirror/issues/J01-62/
 ---
 
-**Stand:** 2026-03-06 13:02 +0100
+**Stand:** 2026-03-06 21:20 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
