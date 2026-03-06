@@ -4,7 +4,7 @@ title: "Jira-Übersicht: Backlog"
 permalink: /mirror/backlog/
 ---
 
-**Stand:** 2026-03-06 12:36 +0100
+**Stand:** 2026-03-06 12:52 +0100
 
 Statische Jira-Übersicht (ohne Jira-Cloud-Links).
 
