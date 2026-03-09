@@ -17,6 +17,8 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
 ## Artefakte
 
 - [Phase 1: Drift-Report]({{ "/quality/drift-reports/J01-91/" | relative_url }})
+- [Phase 1: Status]({{ "/work/jira/J01-91/phase-1-status/" | relative_url }})
+- [Phase 1: Entscheidungen (Abstimmung)]({{ "/work/jira/J01-91/phase-1-entscheidungen/" | relative_url }})
 - [Phase 1: Checkliste]({{ "/work/jira/J01-91/phase-1-checklist/" | relative_url }})
 - [Phase 1: Archiv-Themen]({{ "/work/jira/J01-91/archive-topics/" | relative_url }})
 - [Phase 1: Bereiche-Inventar]({{ "/work/jira/J01-91/area-inventory/" | relative_url }})
@@ -33,4 +35,3 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
 - Archiv-Auswertung präzisieren: Übernahmeentscheidungen pro Thema finalisieren.
 - Policy-Deltas (nach Abstimmung) in `policies/doku-richtlinie/` übernehmen.
 - Optional: neue Vorlagen/Seiten (Glossar, Abnahmechecks) nur wenn wirklich nötig.
-

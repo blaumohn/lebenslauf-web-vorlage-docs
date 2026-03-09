@@ -4,7 +4,7 @@ title: "J01-60 — Backlog: SMTP-Empfangsnachweis mit Konto-Beteiligung"
 permalink: /mirror/issues/J01-60/
 ---
 
-**Stand:** 2026-03-06 22:48 +0100
+**Stand:** 2026-03-09 10:26 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

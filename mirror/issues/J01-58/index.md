@@ -4,7 +4,7 @@ title: "J01-58 — Backlog: Pipeline-Phase Terminologie repo-weit"
 permalink: /mirror/issues/J01-58/
 ---
 
-**Stand:** 2026-03-06 22:48 +0100
+**Stand:** 2026-03-09 10:26 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
