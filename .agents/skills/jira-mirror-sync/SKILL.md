@@ -29,17 +29,27 @@ Arbeite nicht in:
 
 - optional: Git-Base-Ref für Diff-Key-Erkennung (z. B. `HEAD~1`)
 
+## Örtliche Werte / Ausführung von `..`
+
+Wenn du Codex aus einem gemeinsamen Basisverzeichnis (`..`) ausführen willst,
+nutze einen eindeutig gesetzten Repo-Pfad:
+
+- `DOCS_REPO=/pfad/zum/lebenslauf-web-vorlage-docs`
+
+Der Skill ist veröffentlichbar: er enthält keine festen Benutzerpfade und keine
+Secrets. Der konkrete Pfad kommt über Umgebung oder lokale Dateien.
+
 ## Vorgehen
 
 1. Wenn „touched keys“ nicht explizit bekannt sind:
    - Keys aus dem lokalen Diff ableiten:
-     - `sh scripts/detect-jira-keys-from-git-diff.sh <base-ref>`
+     - `DOCS_REPO=... sh .agents/skills/jira-mirror-sync/scripts/detect-jira-keys-from-git-diff.sh <base-ref>`
 
 2. Mirror inkrementell aktualisieren:
    - Standard:
-     - `sh scripts/update-jira-mirror.sh --touched-keys "<csv>"`
+     - `DOCS_REPO=... sh .agents/skills/jira-mirror-sync/scripts/run-update-jira-mirror.sh --touched-keys "<csv>"`
    - On demand (neu baselinen):
-     - `sh scripts/update-jira-mirror.sh --full`
+     - `DOCS_REPO=... sh .agents/skills/jira-mirror-sync/scripts/run-update-jira-mirror.sh --full`
 
 3. Abnahme (kurz):
    - keine Jira-Cloud-Links, keine E-Mail-Adressen
@@ -50,4 +60,3 @@ Arbeite nicht in:
 
 - aktualisierte Dateien unter `mirror/`
 - optional: Hinweis, welche Keys als „touched“ verwendet wurden
-
