@@ -4,8 +4,6 @@ title: "72-12 — Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen
 permalink: /mirror/issues/J01-72/steps/J01-91/
 ---
 
-**Stand:** 2026-03-09 11:03 +0100
-
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Metadaten

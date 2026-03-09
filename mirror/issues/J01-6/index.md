@@ -3,8 +3,7 @@ layout: page
 title: "J01-6 — i18n für Seitenvorlagen und Templates"
 permalink: /mirror/issues/J01-6/
 ---
-
-**Stand:** 2026-03-09 11:03 +0100
+<!-- mirror:child_tasks_cksum=2609825673 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

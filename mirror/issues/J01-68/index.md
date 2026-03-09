@@ -3,8 +3,7 @@ layout: page
 title: "J01-68 — Production: Betriebsdoku und Runbook"
 permalink: /mirror/issues/J01-68/
 ---
-
-**Stand:** 2026-03-09 11:03 +0100
+<!-- mirror:subtasks_cksum=970384144 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

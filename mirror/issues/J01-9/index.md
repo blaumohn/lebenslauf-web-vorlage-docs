@@ -3,8 +3,7 @@ layout: page
 title: "J01-9 — Preview: Workflow wieder aktivieren"
 permalink: /mirror/issues/J01-9/
 ---
-
-**Stand:** 2026-03-09 11:03 +0100
+<!-- mirror:subtasks_cksum=3237570055 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

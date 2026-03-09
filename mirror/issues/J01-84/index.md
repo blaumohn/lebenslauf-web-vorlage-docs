@@ -3,8 +3,7 @@ layout: page
 title: "J01-84 — Atlassian-System vorbereiten (SSOT: Jira)"
 permalink: /mirror/issues/J01-84/
 ---
-
-**Stand:** 2026-03-09 11:03 +0100
+<!-- mirror:child_tasks_cksum=494141705 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

@@ -3,8 +3,7 @@ layout: page
 title: "J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte"
 permalink: /mirror/issues/J01-72/
 ---
-
-**Stand:** 2026-03-09 11:03 +0100
+<!-- mirror:subtasks_cksum=2543398411 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

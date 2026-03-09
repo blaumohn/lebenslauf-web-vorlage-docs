@@ -3,8 +3,7 @@ layout: page
 title: "J01-52 — Backlog: Typensicherheit statt Guards"
 permalink: /mirror/issues/J01-52/
 ---
-
-**Stand:** 2026-03-09 11:03 +0100
+<!-- mirror:subtasks_cksum=1575738650 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

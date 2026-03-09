@@ -3,8 +3,7 @@ layout: page
 title: "J01-5 — Qualitätsrahmen für App und Config-Lib"
 permalink: /mirror/issues/J01-5/
 ---
-
-**Stand:** 2026-03-09 11:03 +0100
+<!-- mirror:child_tasks_cksum=4270845860 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

@@ -3,8 +3,7 @@ layout: page
 title: "J01-28 — Analyse: Risikomuster und Befundliste"
 permalink: /mirror/issues/J01-28/
 ---
-
-**Stand:** 2026-03-09 11:03 +0100
+<!-- mirror:subtasks_cksum=2491577805 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

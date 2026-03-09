@@ -3,8 +3,7 @@ layout: page
 title: "J01-25 — Dev-Branch Baseline und Repo-Hygiene"
 permalink: /mirror/issues/J01-25/
 ---
-
-**Stand:** 2026-03-09 11:03 +0100
+<!-- mirror:subtasks_cksum=2716186418 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

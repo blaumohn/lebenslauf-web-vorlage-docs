@@ -4,8 +4,6 @@ title: "Jira-Übersicht: Erledigt"
 permalink: /mirror/erledigt/
 ---
 
-**Stand:** 2026-03-09 11:03 +0100
-
 Statische Jira-Übersicht (ohne Jira-Cloud-Links).
 
 - [Sprint-Board]({{ "/mirror/sprint-board/" | relative_url }})

@@ -3,8 +3,7 @@ layout: page
 title: "J01-13 — Preview: Testmatrix und Entscheidungen finalisieren"
 permalink: /mirror/issues/J01-13/
 ---
-
-**Stand:** 2026-03-09 11:03 +0100
+<!-- mirror:subtasks_cksum=1338414301 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

@@ -3,8 +3,7 @@ layout: page
 title: "J01-8 — Backlog-Kandidaten"
 permalink: /mirror/issues/J01-8/
 ---
-
-**Stand:** 2026-03-09 11:03 +0100
+<!-- mirror:child_tasks_cksum=3515723269 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

@@ -3,8 +3,7 @@ layout: page
 title: "J01-54 — Backlog: Zentrales Fehlerkonzept"
 permalink: /mirror/issues/J01-54/
 ---
-
-**Stand:** 2026-03-09 11:03 +0100
+<!-- mirror:subtasks_cksum=1145657848 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

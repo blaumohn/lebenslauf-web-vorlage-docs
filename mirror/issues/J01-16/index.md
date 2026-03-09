@@ -3,8 +3,7 @@ layout: page
 title: "J01-16 — Runtime: Concurrency, Locking und atomare Zugriffe"
 permalink: /mirror/issues/J01-16/
 ---
-
-**Stand:** 2026-03-09 11:03 +0100
+<!-- mirror:subtasks_cksum=146997152 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

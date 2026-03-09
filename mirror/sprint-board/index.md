@@ -4,8 +4,6 @@ title: "Jira-Übersicht: Sprint-Board"
 permalink: /mirror/sprint-board/
 ---
 
-**Stand:** 2026-03-09 11:03 +0100
-
 Sprint-Board als statische Jira-Übersicht (ohne Jira-Cloud-Links).
 
 | Zu erledigen | In Bearbeitung | In Überprüfung | Erledigt |
