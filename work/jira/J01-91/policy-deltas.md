@@ -67,3 +67,68 @@ Vorschlag:
 - Repo-Namen können sich ändern; Doku referenziert Repo-Namen nur als Fakten
   („Repo heißt aktuell …“) oder über neutrale Bezeichner („Tooling-Repo“).
 
+## 6) Ziel-Doku-Genauigkeit: Vorgang vs. Drift vs. kanonische Seite
+
+Problem:
+- Der aktuelle Entscheidungsbaum wählt einen Dokutyp, aber noch nicht die
+  nötige Genauigkeit des Zielorts.
+- Dadurch vermischen sich vorgangsgebundene Arbeitsstände, Drift-Befunde und
+  stabile Fachdoku.
+
+Vorschlag:
+- `work/jira/J01-<KEY>/`:
+  - für öffentliche, vorgang-genaue Arbeitsartefakte:
+    Scope, offene Entscheidungen, Mapping, Nachweise, Zwischenstände.
+  - Kann auf spätere kanonische Seiten verweisen, ersetzt diese aber nicht.
+- `quality/drift-reports/J01-<KEY>/`:
+  - nur für Drift-Befunde:
+    dokumentierte Abweichung zwischen Behauptung, Quelle und aktuellem Stand.
+  - Erwartet Claim/Quelle/Status/Fix statt allgemeiner Fachbeschreibung.
+- Kanonische Fachseiten unter `areas/`, `operations/`, `policies/`,
+  `decisions/`, `quality/`:
+  - nur für Inhalte, die über einen einzelnen Vorgang hinaus stabil gelten
+    sollen.
+- Übergangsregel:
+  - vorgang-genaue oder drift-genaue Vorarbeit wird erst dann in die
+    kanonische Doku überführt, wenn Entscheidung bzw. Ist-Stand hinreichend
+    stabil ist.
+
+## 7) Jeder Dokutyp braucht eine Vorlage
+
+Problem:
+- Für mehrere naheliegende Dokutypen gibt es schon Vorlagen, aber die Policy
+  sagt noch nicht ausdrücklich, dass jede veröffentlichte Dokuklasse eine
+  Vorlage braucht.
+- Neue Typen wie Glossar oder Abnahmecheck würden sonst ad hoc entstehen.
+
+Vorschlag:
+- Standard-Dokutypen sind nur solche mit gepflegter Vorlage unter
+  `templates/`.
+- Bestehende, professionelle Basistypen im Repo:
+  - `ADR`
+  - `KEP-Lite`
+  - `Runbook`
+  - `Richtlinie/Überblick`
+  - `Testmatrix`
+  - `Drift-Report`
+  - `Postmortem`
+- Jede neue Dokuklasse braucht vor Nutzung:
+  - `templates/<typ>/`
+  - Eintrag im Vorlagenindex `templates/`
+  - Anpassung von `policies/doku-richtlinie/`
+  - kanonisches URI-/Pfadmuster
+
+## 8) Kanonische URI-Muster pro Dokutyp explizit festziehen
+
+Problem:
+- Für einige Typen ist die Vorlage vorhanden, aber das kanonische Zielmuster im
+  Repo ist nicht überall belegt.
+- Konkret ist `KEP-Lite` als Vorlage vorhanden, aber unter `decisions/` noch
+  kein tatsächlich verwendetes URI-Muster sichtbar.
+
+Vorschlag:
+- Für jeden freigegebenen Dokutyp wird in der Doku-Richtlinie auch das
+  kanonische URI-/Pfadmuster genannt.
+- Solange ein Typ kein festgezogenes URI-Muster hat, darf er in
+  `archive-topics/` nur als offener Kandidat erscheinen, nicht als feste
+  Zielablage.
