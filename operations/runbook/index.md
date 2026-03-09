@@ -33,6 +33,12 @@ Die öffentliche, statische Jira-Übersicht in diesem Repo aktualisieren:
 sh scripts/update-jira-mirror.sh
 ```
 
+Optional (on demand, „neu baselinen“):
+
+```bash
+sh scripts/update-jira-mirror.sh --full
+```
+
 3) Stichprobe (inhaltlich):
    - Subtasks ohne Angaben haben **keine** eigene Seite (nur Schritt-Nr/Titel/Zustand beim Parent).
    - Subtasks mit Angaben haben eine Schritt-Seite (URL enthält den Subtask-Key; Linktext bleibt ParentNr-SchrittNr).
@@ -48,5 +54,6 @@ sh scripts/update-jira-mirror.sh
 
 ## Monitoring
 
-- `mirror/*` hat aktuellen **Stand**-Zeitstempel.
 - Sprint-Board/Backlog/Erledigt stimmen mit Jira-Statuskategorien überein.
+- Issue-/Step-Seiten enthalten je Vorgang `**Aktualisiert:** …` (Jira-Quelle).
+- `git` ist die verlässliche Historie: Diffs entstehen nur bei Inhaltsänderung.

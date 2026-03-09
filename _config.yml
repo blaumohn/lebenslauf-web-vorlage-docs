@@ -5,6 +5,9 @@ theme: minima
 markdown: kramdown
 kramdown:
   auto_ids: true
+exclude:
+  - .local
+  - .agents
 header_pages:
   - getting-started/index.md
   - areas/index.md

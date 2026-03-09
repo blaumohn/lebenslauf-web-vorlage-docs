@@ -12,6 +12,82 @@ log() {
   printf '== %s ==\n' "$1" >&2
 }
 
+write_if_changed() {
+  target=$1
+  tmp=$2
+
+  if [ -f "$target" ] && cmp -s "$tmp" "$target"; then
+    rm -f "$tmp"
+    return 0
+  fi
+
+  mkdir -p "$(dirname "$target")"
+  mv "$tmp" "$target"
+}
+
+split_csv_keys() {
+  # Input: "J01-1,J01-2 , J01-3"
+  # Output: one key per line (trimmed), empty lines removed.
+  printf '%s' "${1:-}" \
+    | tr ',' '\n' \
+    | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//' \
+    | sed -E '/^$/d'
+}
+
+build_keys_file() {
+  csv=$1
+  file=$2
+  out=$3
+
+  {
+    split_csv_keys "$csv"
+    if [ -n "${file:-}" ] && [ -f "$file" ]; then
+      cat "$file"
+    fi
+  } \
+    | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//' \
+    | sed -E '/^$/d' \
+    | sort -u >"$out"
+}
+
+key_in_file() {
+  key=$1
+  file=$2
+  [ -n "${file:-}" ] && [ -f "$file" ] && grep -Fxq "$key" "$file"
+}
+
+extract_existing_meta_value() {
+  # Extract a generated meta marker from an existing file.
+  # Format: <!-- mirror:<name>=<value> -->
+  #
+  # Usage: extract_existing_meta_value path subtasks_cksum
+  path=$1
+  name=$2
+
+  if [ ! -f "$path" ]; then
+    return 0
+  fi
+
+  grep -E "^<!-- mirror:${name}=" "$path" 2>/dev/null \
+    | sed -E "s/^<!-- mirror:${name}=([^[:space:]]+) -->$/\\1/" \
+    | head -n 1 \
+    || true
+}
+
+extract_existing_updated() {
+  # Extract: "- **Aktualisiert:** <value>"
+  path=$1
+
+  if [ ! -f "$path" ]; then
+    return 0
+  fi
+
+  grep -E '^- \\*\\*Aktualisiert:\\*\\* ' "$path" 2>/dev/null \
+    | sed -E 's/^- \\*\\*Aktualisiert:\\*\\* (.+)$/\\1/' \
+    | head -n 1 \
+    || true
+}
+
 render_public_remotelinks_md() {
   issue_key=$1
 
@@ -49,11 +125,7 @@ render_public_remotelinks_md() {
 }
 
 cleanup_steps_dirs() {
-  # Schritt-Seiten sind vollständig abgeleitet. Wir löschen sie vor dem
-  # Generieren, damit keine veralteten Pfade (z.B. nach Schemawechsel) bleiben.
-  if [ -d mirror/issues ]; then
-    find mirror/issues -mindepth 2 -maxdepth 2 -type d -name steps -exec rm -rf {} +
-  fi
+  : # deprecated (ersetzt durch cleanup_stale_step_dirs)
 }
 
 cleanup_stale_issue_dirs() {
@@ -84,6 +156,33 @@ cleanup_stale_issue_dirs() {
   done
 }
 
+cleanup_stale_step_dirs() {
+  subtasks_file=$1
+
+  if [ ! -d mirror/issues ]; then
+    return
+  fi
+
+  tmp_dir=${TMPDIR:-/tmp}
+  allow_file="$tmp_dir/j01-step-allow.txt"
+
+  jq -r '
+    .issues[]
+    | select(.fields.description != null)
+    | .fields.summary as $s
+    | (if ($s | test("^[0-9]+-[0-9]+\\s")) then .fields.parent.key + "/" + .key else empty end)
+  ' <"$subtasks_file" | sort -u >"$allow_file"
+
+  find mirror/issues -mindepth 4 -maxdepth 4 -type d -path '*/steps/*' | while read -r dir; do
+    parent=$(printf '%s' "$dir" | awk -F/ '{print $(NF-2)}')
+    key=$(basename "$dir")
+    pair="$parent/$key"
+    if ! grep -Fxq "$pair" "$allow_file"; then
+      rm -rf "$dir"
+    fi
+  done
+}
+
 sanitize_public_description_text() {
   awk '
     /Ausschlussliste/ { next }
@@ -104,14 +203,54 @@ main() {
   require_bin jq
   require_bin sort
   require_bin mkdir
-  require_bin date
+  require_bin awk
+  require_bin sed
+  require_bin grep
+  require_bin head
+  require_bin cat
+  require_bin find
+  require_bin rm
+  require_bin mv
+  require_bin cmp
+  require_bin mktemp
+  require_bin cksum
 
-  stand=$(date '+%Y-%m-%d %H:%M %z')
+  full=0
+  touched_keys_csv=''
+  touched_keys_file=''
+
+  while [ $# -gt 0 ]; do
+    case "$1" in
+      --full)
+        full=1
+        shift
+        ;;
+      --touched-keys)
+        touched_keys_csv=${2:-}
+        shift 2
+        ;;
+      --touched-keys-file)
+        touched_keys_file=${2:-}
+        shift 2
+        ;;
+      -*)
+        printf 'Fehler: unbekanntes Argument: %s\n' "$1" >&2
+        exit 1
+        ;;
+      *)
+        printf 'Fehler: unerwartetes Argument: %s\n' "$1" >&2
+        exit 1
+        ;;
+    esac
+  done
 
   tmp_dir=${TMPDIR:-/tmp}
   issues_file="$tmp_dir/j01-non-subtasks.json"
   subtasks_file="$tmp_dir/j01-subtasks.json"
   sprint_file="$tmp_dir/j01-open-sprint.json"
+  touched_file="$tmp_dir/j01-touched-keys.txt"
+
+  build_keys_file "$touched_keys_csv" "$touched_keys_file" "$touched_file"
 
   log "Jira: Issues laden"
   fetch_issues "$issues_file"
@@ -121,20 +260,20 @@ main() {
   fetch_open_sprint "$sprint_file"
 
   log "Mirror: Index"
-  update_mirror_index "$stand"
+  update_mirror_index
   log "Mirror: Backlog"
-  update_backlog "$issues_file" "$subtasks_file" "$stand"
+  update_backlog "$issues_file" "$subtasks_file"
   log "Mirror: Erledigt"
-  update_erledigt "$issues_file" "$subtasks_file" "$stand"
+  update_erledigt "$issues_file" "$subtasks_file"
   log "Mirror: Sprint-Board"
-  update_sprint_board "$issues_file" "$sprint_file" "$stand"
+  update_sprint_board "$issues_file" "$sprint_file"
 
   log "Mirror: Issue-Seiten"
   cleanup_stale_issue_dirs "$issues_file"
-  update_issue_pages "$issues_file" "$subtasks_file" "$stand"
+  update_issue_pages "$issues_file" "$subtasks_file" "$full" "$touched_file"
   log "Mirror: Subtask-Seiten (mit Angaben)"
-  cleanup_steps_dirs
-  update_subtask_pages_with_description "$subtasks_file" "$stand"
+  cleanup_stale_step_dirs "$subtasks_file"
+  update_subtask_pages_with_description "$subtasks_file" "$full" "$touched_file"
 }
 
 fetch_issues() {
@@ -159,8 +298,8 @@ fetch_open_sprint() {
 }
 
 update_mirror_index() {
-  stand=$1
-  cat >mirror/index.md <<EOF
+  tmp=$(mktemp)
+  cat >"$tmp" <<EOF
 ---
 layout: page
 title: "Jira-Übersicht"
@@ -173,50 +312,50 @@ Die Jira-Übersicht zeigt einen statischen Snapshot (ohne öffentliches Jira).
 - [Backlog]({{ "/mirror/backlog/" | relative_url }})
 - [Erledigt]({{ "/mirror/erledigt/" | relative_url }})
 EOF
+  write_if_changed mirror/index.md "$tmp"
 }
 
 update_backlog() {
   issues_file=$1
   subtasks_file=$2
-  stand=$3
+  tmp=$(mktemp)
 
-  mkdir -p mirror/backlog
   render_vorgaenge_page \
     "Jira-Übersicht: Backlog" \
     "/mirror/backlog/" \
     "$issues_file" \
     "$subtasks_file" \
-    "$stand" \
     "select(.statusCategory != \"done\")" \
-    >mirror/backlog/index.md
+    >"$tmp"
+
+  write_if_changed mirror/backlog/index.md "$tmp"
 }
 
 update_erledigt() {
   issues_file=$1
   subtasks_file=$2
-  stand=$3
+  tmp=$(mktemp)
 
-  mkdir -p mirror/erledigt
   render_vorgaenge_page \
     "Jira-Übersicht: Erledigt" \
     "/mirror/erledigt/" \
     "$issues_file" \
     "$subtasks_file" \
-    "$stand" \
     "select(.statusCategory == \"done\")" \
-    >mirror/erledigt/index.md
+    >"$tmp"
+
+  write_if_changed mirror/erledigt/index.md "$tmp"
 }
 
 update_sprint_board() {
   issues_file=$1
   sprint_file=$2
-  stand=$3
+  tmp=$(mktemp)
 
   sprint_keys=$(jq -r '.issues[].key' <"$sprint_file" | sort | tr '\n' ' ')
 
   jq \
     --raw-output \
-    --arg stand "$stand" \
     --arg keys "$sprint_keys" \
     '
       def keyset:
@@ -250,14 +389,14 @@ update_sprint_board() {
       "permalink: /mirror/sprint-board/",
       "---",
       "",
-      "**Stand:** \($stand)",
-      "",
       "Sprint-Board als statische Jira-Übersicht (ohne Jira-Cloud-Links).",
       "",
       "| Zu erledigen | In Bearbeitung | In Überprüfung | Erledigt |",
       "|---|---|---|---|",
       "| \(bucket_or_dash("new")) | \(bucket_or_dash("indeterminate")) | - | \(bucket_or_dash("done")) |"
-    ' <"$issues_file" >mirror/sprint-board/index.md
+    ' <"$issues_file" >"$tmp"
+
+  write_if_changed mirror/sprint-board/index.md "$tmp"
 }
 
 render_vorgaenge_page() {
@@ -265,12 +404,10 @@ render_vorgaenge_page() {
   permalink=$2
   issues_file=$3
   subtasks_file=$4
-  stand=$5
-  issue_filter=$6
+  issue_filter=$5
 
   jq \
     --raw-output \
-    --arg stand "$stand" \
     --arg title "$title" \
     --arg permalink "$permalink" \
     --arg issue_filter "$issue_filter" \
@@ -395,8 +532,6 @@ render_vorgaenge_page() {
       "permalink: \($permalink)",
       "---",
       "",
-      "**Stand:** \($stand)",
-      "",
       "Statische Jira-Übersicht (ohne Jira-Cloud-Links).",
       "",
       "- [Sprint-Board]({{ \"/mirror/sprint-board/\" | relative_url }})",
@@ -421,7 +556,41 @@ render_vorgaenge_page() {
 update_issue_pages() {
   issues_file=$1
   subtasks_file=$2
-  stand=$3
+  full=$3
+  touched_file=$4
+
+  compute_child_tasks_cksum() {
+    local_issues_file=$1
+    epic_key=$2
+
+    sig=$(jq -r --arg epic "$epic_key" '
+      .issues[]
+      | select(.fields.parent.key? == $epic)
+      | .key
+    ' <"$local_issues_file" | sort || true)
+
+    printf '%s' "$sig" | cksum | awk '{print $1}'
+  }
+
+  compute_subtasks_cksum() {
+    local_subtasks_file=$1
+    parent_key=$2
+
+    sig=$(jq -r --arg parent "$parent_key" '
+      .issues[]
+      | select(.fields.parent.key == $parent)
+      | [
+          .key,
+          (.fields.updated // ""),
+          (.fields.status.name // ""),
+          (.fields.summary // ""),
+          (if .fields.description != null then "desc" else "-" end)
+        ]
+      | @tsv
+    ' <"$local_subtasks_file" | sort || true)
+
+    printf '%s' "$sig" | cksum | awk '{print $1}'
+  }
 
   jq -r '
     .issues[]
@@ -442,33 +611,66 @@ update_issue_pages() {
     status=$(printf '%s' "$issue" | jq -r '.status')
     updated=$(printf '%s' "$issue" | jq -r '.updated')
     parent=$(printf '%s' "$issue" | jq -r '.parent // empty')
-    links_md=$(render_public_remotelinks_md "$key")
 
-    mkdir -p "mirror/issues/$key"
     out_file="mirror/issues/$key/index.md"
 
-      if [ "$issuetype" = "Epic" ]; then
-        tasks=$(jq -r --arg epic "$key" '
-          def norm_summary($s):
-            ($s | gsub("\\(SSOT\\)"; "(SSOT: Jira)"));
+    dirty=0
+    if [ "$full" = "1" ] || [ ! -f "$out_file" ]; then
+      dirty=1
+    else
+      existing_updated=$(extract_existing_updated "$out_file")
+      if [ "$existing_updated" != "$updated" ]; then
+        dirty=1
+      elif key_in_file "$key" "$touched_file"; then
+        dirty=1
+      fi
+    fi
 
-          .issues[]
-          | select(.fields.parent.key? == $epic)
-          | "- [\(.key) — \(norm_summary(.fields.summary))]({{ \"/mirror/issues/\(.key)/\" | relative_url }})"
-        ' <"$issues_file" || true)
+    if [ "$dirty" = "0" ]; then
+      if [ "$issuetype" = "Epic" ]; then
+        new_cksum=$(compute_child_tasks_cksum "$issues_file" "$key")
+        old_cksum=$(extract_existing_meta_value "$out_file" child_tasks_cksum)
+        if [ "$new_cksum" != "$old_cksum" ]; then
+          dirty=1
+        fi
+      else
+        new_cksum=$(compute_subtasks_cksum "$subtasks_file" "$key")
+        old_cksum=$(extract_existing_meta_value "$out_file" subtasks_cksum)
+        if [ "$new_cksum" != "$old_cksum" ]; then
+          dirty=1
+        fi
+      fi
+    fi
+
+    if [ "$dirty" = "0" ]; then
+      continue
+    fi
+
+    links_md=$(render_public_remotelinks_md "$key")
+
+    tmp=$(mktemp)
+    if [ "$issuetype" = "Epic" ]; then
+      child_cksum=$(compute_child_tasks_cksum "$issues_file" "$key")
+      tasks=$(jq -r --arg epic "$key" '
+        def norm_summary($s):
+          ($s | gsub("\\(SSOT\\)"; "(SSOT: Jira)"));
+
+        .issues[]
+        | select(.fields.parent.key? == $epic)
+        | "- [\(.key) — \(norm_summary(.fields.summary))]({{ \"/mirror/issues/\(.key)/\" | relative_url }})"
+      ' <"$issues_file" || true)
 
       if [ -z "$tasks" ]; then
         tasks='Keine Aufgaben.'
       fi
 
-      cat >"$out_file" <<EOF
+      cat >"$tmp" <<EOF
 ---
 layout: page
 title: "$key — $summary"
 permalink: /mirror/issues/$key/
 ---
-
-**Stand:** $stand
+<!-- mirror:child_tasks_cksum=$child_cksum -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -496,56 +698,57 @@ $links_md
 
 Keine Unteraufgaben.
 EOF
-      else
-        parent_line=''
-        if [ -n "$parent" ]; then
-          parent_summary=$(jq -r --arg pk "$parent" '
-            .issues[]
-            | select(.key == $pk)
-            | (.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)"))
-          ' <"$issues_file" || true)
-          parent_line="- **Parent:** [$parent — $parent_summary]({{ \"/mirror/issues/$parent/\" | relative_url }})"
-        fi
+    else
+      subtasks_cksum=$(compute_subtasks_cksum "$subtasks_file" "$key")
 
-        subtasks_md=$(jq -r --arg parent "$key" --slurpfile st "$subtasks_file" '
+      parent_line=''
+      if [ -n "$parent" ]; then
+        parent_summary=$(jq -r --arg pk "$parent" '
+          .issues[]
+          | select(.key == $pk)
+          | (.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)"))
+        ' <"$issues_file" || true)
+        parent_line="- **Parent:** [$parent — $parent_summary]({{ \"/mirror/issues/$parent/\" | relative_url }})"
+      fi
+
+      subtasks_md=$(jq -r --arg parent "$key" --slurpfile st "$subtasks_file" '
         def prefix_from_summary($s):
           if ($s | test("^[0-9]+-[0-9]+\\s")) then ($s | capture("^(?<p>[0-9]+-[0-9]+)\\s").p) else null end;
         def prefix_parts($p):
           if $p == null then [999999, 999999] else ($p | capture("^(?<a>[0-9]+)-(?<b>[0-9]+)$") | [(.a | tonumber), (.b | tonumber)]) end;
         def strip_prefix($s):
           if ($s | test("^[0-9]+-[0-9]+\\s")) then ($s | sub("^[0-9]+-[0-9]+\\s+"; "")) else $s end;
-          $st[0].issues
-          | map(select(.fields.parent.key == $parent))
-          | map({
-              key: .key,
-              summary: (.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)")),
-              status: .fields.status.name,
-              prefix: prefix_from_summary(.fields.summary),
-              prefixParts: prefix_parts(prefix_from_summary(.fields.summary)),
-              summaryNoPrefix: strip_prefix(.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)")),
-              hasDescription: (.fields.description != null)
-            })
-          | sort_by(.prefixParts, .summary)
-          | map(
-            if .prefix == null then
-              "- **" + .summary + "** — " + .status
-            elif .hasDescription then
-              "- [**" + .prefix + " " + .summaryNoPrefix + "**]({{ \"/mirror/issues/" + $parent + "/steps/" + .key + "/\" | relative_url }}) — " + .status
-            else
-              "- **" + .prefix + " " + .summaryNoPrefix + "** — " + .status
-            end
-          )
+        $st[0].issues
+        | map(select(.fields.parent.key == $parent))
+        | map({
+            key: .key,
+            summary: (.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)")),
+            status: .fields.status.name,
+            prefix: prefix_from_summary(.fields.summary),
+            prefixParts: prefix_parts(prefix_from_summary(.fields.summary)),
+            summaryNoPrefix: strip_prefix(.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)")),
+            hasDescription: (.fields.description != null)
+          })
+        | sort_by(.prefixParts, .summary)
+        | map(
+          if .prefix == null then
+            "- **" + .summary + "** — " + .status
+          elif .hasDescription then
+            "- [**" + .prefix + " " + .summaryNoPrefix + "**]({{ \"/mirror/issues/" + $parent + "/steps/" + .key + "/\" | relative_url }}) — " + .status
+          else
+            "- **" + .prefix + " " + .summaryNoPrefix + "** — " + .status
+          end
+        )
         | if length == 0 then "Keine Unteraufgaben." else join("\n") end
       ' <"$issues_file" || true)
 
-      cat >"$out_file" <<EOF
+      cat >"$tmp" <<EOF
 ---
 layout: page
 title: "$key — $summary"
 permalink: /mirror/issues/$key/
 ---
-
-**Stand:** $stand
+<!-- mirror:subtasks_cksum=$subtasks_cksum -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -558,12 +761,12 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Aktualisiert:** $updated
 EOF
       if [ -n "$parent_line" ]; then
-        printf '%s\n\n' "$parent_line" >>"$out_file"
+        printf '%s\n\n' "$parent_line" >>"$tmp"
       else
-        printf '\n' >>"$out_file"
+        printf '\n' >>"$tmp"
       fi
 
-      cat >>"$out_file" <<EOF
+      cat >>"$tmp" <<EOF
 ## Links
 
 $links_md
@@ -577,12 +780,15 @@ $links_md
 $subtasks_md
 EOF
     fi
+
+    write_if_changed "$out_file" "$tmp"
   done
 }
 
 update_subtask_pages_with_description() {
   subtasks_file=$1
-  stand=$2
+  full=$2
+  touched_file=$3
 
   jq -r '
     .issues[]
@@ -603,7 +809,6 @@ update_subtask_pages_with_description() {
     summary=$(printf '%s' "$subtask" | jq -r '.summary')
     status=$(printf '%s' "$subtask" | jq -r '.status')
     updated=$(printf '%s' "$subtask" | jq -r '.updated')
-    links_md=$(render_public_remotelinks_md "$key")
 
     prefix=$(printf '%s' "$summary" | sed -nE 's/^([0-9]+-[0-9]+) .*/\1/p')
     summary_no_prefix=$(printf '%s' "$summary" | sed -E 's/^[0-9]+-[0-9]+[[:space:]]+//')
@@ -613,8 +818,25 @@ update_subtask_pages_with_description() {
     fi
 
     out_dir="mirror/issues/$parent/steps/$key"
-    mkdir -p "$out_dir"
     out_file="$out_dir/index.md"
+
+    dirty=0
+    if [ "$full" = "1" ] || [ ! -f "$out_file" ]; then
+      dirty=1
+    else
+      existing_updated=$(extract_existing_updated "$out_file")
+      if [ "$existing_updated" != "$updated" ]; then
+        dirty=1
+      elif key_in_file "$key" "$touched_file"; then
+        dirty=1
+      fi
+    fi
+
+    if [ "$dirty" = "0" ]; then
+      continue
+    fi
+
+    links_md=$(render_public_remotelinks_md "$key")
 
     description_text=$(printf '%s' "$subtask" | jq -r '.description' | jq -r -f scripts/jira-adf-to-text.jq || true)
     if [ -z "$description_text" ]; then
@@ -624,14 +846,13 @@ update_subtask_pages_with_description() {
       description_text=$(printf '%s\n' "$description_text" | sanitize_public_description_text)
     fi
 
-    cat >"$out_file" <<EOF
+    tmp=$(mktemp)
+    cat >"$tmp" <<EOF
 ---
 layout: page
 title: "$prefix — $summary_no_prefix"
 permalink: /mirror/issues/$parent/steps/$key/
 ---
-
-**Stand:** $stand
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -650,6 +871,8 @@ $description_text
 
 $links_md
 EOF
+
+    write_if_changed "$out_file" "$tmp"
   done
 }
 
