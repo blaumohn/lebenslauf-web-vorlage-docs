@@ -21,7 +21,9 @@ Hinweis: vor dem ersten Start `.local/dev-runtime.yaml` anlegen
 
 ## Kontext (SSOT)
 
-SSOT: Jira (Projekt `J01`).
+SSOT (Doku): GitHub Pages (dieses Repo).
+
+SSOT (Vorgänge/Status): Jira (Projekt `J01`, nicht öffentlich).
 
 Öffentlich:
 

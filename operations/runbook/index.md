@@ -25,7 +25,7 @@ Die öffentliche, statische Jira-Übersicht in diesem Repo aktualisieren:
 
 ## Schritte
 
-1) Änderungen in Jira durchführen (SSOT).
+1) Änderungen an Vorgängen/Status in Jira durchführen (SSOT für Vorgänge/Status).
 
 2) Jira-Übersicht generieren:
 

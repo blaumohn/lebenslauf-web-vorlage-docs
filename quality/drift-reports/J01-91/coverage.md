@@ -16,7 +16,7 @@ Status-Legende:
 | Seite | Status | Notiz |
 | --- | --- | --- |
 | `index.md` | ok | Startseite ist neutral formuliert (keine veralteten Quellen als aktuelles Beispiel). |
-| `getting-started/index.md` | ok | SSOT-Kontext aktualisiert (Jira + GitHub Pages + Notizrepo privat). |
+| `getting-started/index.md` | ok | SSOT-Kontext aktualisiert (Doku: GitHub Pages; Vorgänge/Status: Jira; Notizrepo privat). |
 | `areas/index.md` | ok | Navigation ok; zwei Bereiche sind Stubs. |
 | `areas/proj-doku-tooling/index.md` | ok | Repo-Name korrigiert (`atlassian-tools`). |
 | `areas/proj-doku-tooling/aufbau/index.md` | ok | Modell konsistent zu Tooling-Repo. |
@@ -50,9 +50,8 @@ Status-Legende:
 | `quality/drift-reports/J01-91/index.md` | ok | Hauptreport. |
 | `quality/drift-reports/J01-91/coverage.md` | ok | Diese Seite (Abdeckung). |
 | `work/jira/index.md` | ok | Jira-Key-first Ablage für Arbeitsdokus. |
-| `work/jira/J01-91/index.md` | ok | Kanonischer Zustand/Vorhaben (Snapshot). |
+| `work/jira/J01-91/index.md` | ok | Kanonischer Zustand/Vorhaben (Snapshot) inkl. DoD/Status/Entscheidungen. |
 | `work/jira/J01-91/area-inventory.md` | ok | Quellenabgleich vorhanden. |
 | `work/jira/J01-91/archive-topics.md` | ok | Themen extrahiert; offene Präzisierungen markiert. |
 | `work/jira/J01-91/policy-deltas.md` | ok | Vorschläge vorhanden (noch nicht in Policy übernommen). |
-| `work/jira/J01-91/phase-1-checklist.md` | ok | DoD/Checkliste vorhanden. |
 | `README.md` | ok | Historische Quelle neutralisiert („migriert/konsolidiert“). |
