@@ -4,7 +4,7 @@ title: "J01-6 — i18n für Seitenvorlagen und Templates"
 permalink: /mirror/issues/J01-6/
 ---
 
-**Stand:** 2026-03-09 10:26 +0100
+**Stand:** 2026-03-09 11:03 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

@@ -232,7 +232,7 @@ update_sprint_board() {
         [ .issues[]
           | {
               key: .key,
-              summary: .fields.summary,
+              summary: (.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)")),
               statusCategory: .fields.status.statusCategory.key
             }
           | select(in_sprint(.key))
@@ -276,6 +276,9 @@ render_vorgaenge_page() {
     --arg issue_filter "$issue_filter" \
     --slurpfile subtasks "$subtasks_file" \
     '
+      def norm_summary($s):
+        ($s | gsub("\\(SSOT\\)"; "(SSOT: Jira)"));
+
       def prefix_from_summary($s):
         if ($s | test("^[0-9]+-[0-9]+\\s")) then
           ($s | capture("^(?<p>[0-9]+-[0-9]+)\\s").p)
@@ -300,7 +303,7 @@ render_vorgaenge_page() {
       def norm_issue:
         {
           key: .key,
-          summary: .fields.summary,
+          summary: norm_summary(.fields.summary),
           issuetype: .fields.issuetype.name,
           status: .fields.status.name,
           statusCategory: .fields.status.statusCategory.key,
@@ -311,11 +314,11 @@ render_vorgaenge_page() {
         {
           key: .key,
           parent: .fields.parent.key,
-          summary: .fields.summary,
+          summary: norm_summary(.fields.summary),
           status: .fields.status.name,
           prefix: prefix_from_summary(.fields.summary),
           prefixParts: prefix_parts(prefix_from_summary(.fields.summary)),
-          summaryNoPrefix: strip_prefix(.fields.summary),
+          summaryNoPrefix: strip_prefix(norm_summary(.fields.summary)),
           hasDescription: (.fields.description != null)
         };
 
@@ -424,7 +427,7 @@ update_issue_pages() {
     .issues[]
     | {
         key: .key,
-        summary: .fields.summary,
+        summary: (.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)")),
         issuetype: .fields.issuetype.name,
         status: .fields.status.name,
         updated: .fields.updated,
@@ -444,12 +447,15 @@ update_issue_pages() {
     mkdir -p "mirror/issues/$key"
     out_file="mirror/issues/$key/index.md"
 
-    if [ "$issuetype" = "Epic" ]; then
-      tasks=$(jq -r --arg epic "$key" '
-        .issues[]
-        | select(.fields.parent.key? == $epic)
-        | "- [\(.key) — \(.fields.summary)]({{ \"/mirror/issues/\(.key)/\" | relative_url }})"
-      ' <"$issues_file" || true)
+      if [ "$issuetype" = "Epic" ]; then
+        tasks=$(jq -r --arg epic "$key" '
+          def norm_summary($s):
+            ($s | gsub("\\(SSOT\\)"; "(SSOT: Jira)"));
+
+          .issues[]
+          | select(.fields.parent.key? == $epic)
+          | "- [\(.key) — \(norm_summary(.fields.summary))]({{ \"/mirror/issues/\(.key)/\" | relative_url }})"
+        ' <"$issues_file" || true)
 
       if [ -z "$tasks" ]; then
         tasks='Keine Aufgaben.'
@@ -490,37 +496,37 @@ $links_md
 
 Keine Unteraufgaben.
 EOF
-    else
-      parent_line=''
-      if [ -n "$parent" ]; then
-        parent_summary=$(jq -r --arg pk "$parent" '
-          .issues[]
-          | select(.key == $pk)
-          | .fields.summary
-        ' <"$issues_file" || true)
-        parent_line="- **Parent:** [$parent — $parent_summary]({{ \"/mirror/issues/$parent/\" | relative_url }})"
-      fi
+      else
+        parent_line=''
+        if [ -n "$parent" ]; then
+          parent_summary=$(jq -r --arg pk "$parent" '
+            .issues[]
+            | select(.key == $pk)
+            | (.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)"))
+          ' <"$issues_file" || true)
+          parent_line="- **Parent:** [$parent — $parent_summary]({{ \"/mirror/issues/$parent/\" | relative_url }})"
+        fi
 
-      subtasks_md=$(jq -r --arg parent "$key" --slurpfile st "$subtasks_file" '
+        subtasks_md=$(jq -r --arg parent "$key" --slurpfile st "$subtasks_file" '
         def prefix_from_summary($s):
           if ($s | test("^[0-9]+-[0-9]+\\s")) then ($s | capture("^(?<p>[0-9]+-[0-9]+)\\s").p) else null end;
         def prefix_parts($p):
           if $p == null then [999999, 999999] else ($p | capture("^(?<a>[0-9]+)-(?<b>[0-9]+)$") | [(.a | tonumber), (.b | tonumber)]) end;
         def strip_prefix($s):
           if ($s | test("^[0-9]+-[0-9]+\\s")) then ($s | sub("^[0-9]+-[0-9]+\\s+"; "")) else $s end;
-        $st[0].issues
-        | map(select(.fields.parent.key == $parent))
-        | map({
-            key: .key,
-            summary: .fields.summary,
-            status: .fields.status.name,
-            prefix: prefix_from_summary(.fields.summary),
-            prefixParts: prefix_parts(prefix_from_summary(.fields.summary)),
-            summaryNoPrefix: strip_prefix(.fields.summary),
-            hasDescription: (.fields.description != null)
-          })
-        | sort_by(.prefixParts, .summary)
-        | map(
+          $st[0].issues
+          | map(select(.fields.parent.key == $parent))
+          | map({
+              key: .key,
+              summary: (.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)")),
+              status: .fields.status.name,
+              prefix: prefix_from_summary(.fields.summary),
+              prefixParts: prefix_parts(prefix_from_summary(.fields.summary)),
+              summaryNoPrefix: strip_prefix(.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)")),
+              hasDescription: (.fields.description != null)
+            })
+          | sort_by(.prefixParts, .summary)
+          | map(
             if .prefix == null then
               "- **" + .summary + "** — " + .status
             elif .hasDescription then
@@ -584,7 +590,7 @@ update_subtask_pages_with_description() {
     | {
         key: .key,
         parent: .fields.parent.key,
-        summary: .fields.summary,
+        summary: (.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)")),
         status: .fields.status.name,
         updated: .fields.updated,
         description: .fields.description

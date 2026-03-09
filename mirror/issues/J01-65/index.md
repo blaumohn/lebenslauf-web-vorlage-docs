@@ -4,7 +4,7 @@ title: "J01-65 — Production: Artefakt- und Smoke-Checks definieren"
 permalink: /mirror/issues/J01-65/
 ---
 
-**Stand:** 2026-03-09 10:26 +0100
+**Stand:** 2026-03-09 11:03 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

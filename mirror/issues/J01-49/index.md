@@ -4,7 +4,7 @@ title: "J01-49 — i18n: Template-Texte i18n-fähig machen"
 permalink: /mirror/issues/J01-49/
 ---
 
-**Stand:** 2026-03-09 10:26 +0100
+**Stand:** 2026-03-09 11:03 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 

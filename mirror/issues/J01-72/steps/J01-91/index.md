@@ -4,7 +4,7 @@ title: "72-12 — Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen
 permalink: /mirror/issues/J01-72/steps/J01-91/
 ---
 
-**Stand:** 2026-03-09 10:26 +0100
+**Stand:** 2026-03-09 11:03 +0100
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -13,7 +13,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Parent:** [J01-72]({{ "/mirror/issues/J01-72/" | relative_url }})
 - **Schritt:** 72-12
 - **Status:** In Bearbeitung
-- **Aktualisiert:** 2026-03-09T09:22:28.535+0100
+- **Aktualisiert:** 2026-03-09T10:48:48.437+0100
 
 ## Angaben
 
@@ -38,7 +38,4 @@ Runbook 5832705 (Backfill Schritt-Nr + Summary-Prefix) ist Teil der öffentliche
 - [Zustand/Vorhaben (Snapshot)]({{ "/work/jira/J01-91/" | relative_url }})
 - [Phase 1: Archiv-Themen]({{ "/work/jira/J01-91/archive-topics/" | relative_url }})
 - [Phase 1: Bereiche-Inventar]({{ "/work/jira/J01-91/area-inventory/" | relative_url }})
-- [Phase 1: Checkliste]({{ "/work/jira/J01-91/phase-1-checklist/" | relative_url }})
-- [Phase 1: Entscheidungen (Abstimmung)]({{ "/work/jira/J01-91/phase-1-entscheidungen/" | relative_url }})
-- [Phase 1: Status (Snapshot)]({{ "/work/jira/J01-91/phase-1-status/" | relative_url }})
 - [Phase 1: Policy-Deltas]({{ "/work/jira/J01-91/policy-deltas/" | relative_url }})

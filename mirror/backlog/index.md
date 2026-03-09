@@ -4,7 +4,7 @@ title: "Jira-Übersicht: Backlog"
 permalink: /mirror/backlog/
 ---
 
-**Stand:** 2026-03-09 10:26 +0100
+**Stand:** 2026-03-09 11:03 +0100
 
 Statische Jira-Übersicht (ohne Jira-Cloud-Links).
 
@@ -81,9 +81,9 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
 - [J01-60 — Backlog: SMTP-Empfangsnachweis mit Konto-Beteiligung]({{ "/mirror/issues/J01-60/" | relative_url }})
   - 60-1 Scope skizzieren — Zu erledigen
 
-### [J01-84 — Atlassian-System vorbereiten (SSOT)]({{ "/mirror/issues/J01-84/" | relative_url }})
+### [J01-84 — Atlassian-System vorbereiten (SSOT: Jira)]({{ "/mirror/issues/J01-84/" | relative_url }})
 
-- [J01-72 — Atlassian-System vorbereiten (SSOT) – Iteration 1: Umsetzungsschritte]({{ "/mirror/issues/J01-72/" | relative_url }})
+- [J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte]({{ "/mirror/issues/J01-72/" | relative_url }})
   - 72-1 Altlast: J01-3 Status klären — Erledigt
   - 72-2 Sprint 2: Backfill ausführen (Schritt-Nr + Prefix) — Erledigt
   - 72-3 Rank-Endpoint verifizieren (No-Op) — Erledigt
@@ -96,7 +96,7 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
   - 72-10 CLI-Cache: Public-only Policy + Output-Redaction + Endpoint-Allowlist — Zu erledigen
   - 72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links) — Erledigt
   - [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — In Bearbeitung
-- [J01-85 — Atlassian-System vorbereiten (SSOT) – Tooling-Backlog-Container]({{ "/mirror/issues/J01-85/" | relative_url }})
+- [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/mirror/issues/J01-85/" | relative_url }})
   - 85-1 Refactor: Coding-Standards durchgehend umsetzen — Zu erledigen
   - 85-2 API-Betriebe (Wrapper), http als Escape-Hatch — Zu erledigen
   - 85-3 Backlog: Confluence-Spiegel periodisch aktualisieren (Batch; optional Warteschlange) — Zu erledigen
