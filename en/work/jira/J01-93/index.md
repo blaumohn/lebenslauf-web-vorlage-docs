@@ -20,6 +20,8 @@ language switching on corresponding pages.
 
 - Language chooser on `/`
 - Language switcher on content pages as `Deutsch | English`
+- clear visual separation between site title, content navigation, and
+  language selector in the header
 - DE/EN structure for public pages
 - DE/EN structure for `mirror/`
 - Required EN follow-up whenever mirror content changes
@@ -36,6 +38,8 @@ language switching on corresponding pages.
 - `/` stays neutral without JavaScript.
 - The language selector shows the current language as text and the other
   language as a link.
+- The header keeps the home link, content navigation, and language selector
+  clearly separated.
 - Mirror changes without EN follow-up are visibly blocked.
 
 ## Links

@@ -20,6 +20,8 @@ Sprachwechsel direkt auf den jeweiligen Gegen-Seiten.
 
 - Sprachwahl auf `/`
 - Sprachwahl auf Inhaltsseiten als `Deutsch | English`
+- klare visuelle Trennung zwischen Site-Titel, Inhaltsnavigation und
+  Sprachauswahl im Header
 - DE/EN-Struktur für öffentliche Seiten
 - DE/EN-Struktur für `mirror/`
 - verpflichtende EN-Nachpflege bei Mirror-Änderungen
@@ -37,6 +39,8 @@ Sprachwechsel direkt auf den jeweiligen Gegen-Seiten.
 - `/` bleibt ohne JavaScript neutral.
 - Die Sprachwahl zeigt die aktuelle Sprache ohne Link und die andere Sprache
   als Link.
+- Header und Navigation lassen Hauptseite, Inhaltsnavigation und
+  Sprachauswahl klar getrennt erkennen.
 - Mirror-Änderungen ohne EN-Nachpflege werden sichtbar blockiert.
 
 ## Links

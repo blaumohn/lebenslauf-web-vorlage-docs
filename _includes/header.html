@@ -31,16 +31,20 @@
         </label>
 
         <div class="trigger">
-          {% for item in nav_items %}
-            <a class="page-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-          {% endfor %}
-          <span class="page-link page-link--lang-current" aria-current="true">
-            {{ ui.language_current }}
-          </span>
-          <span class="page-link page-link--lang-separator" aria-hidden="true">|</span>
-          <a class="page-link page-link--lang" href="{{ switch_target | relative_url }}">
-            {{ ui.language_other }}
-          </a>
+          <div class="trigger__pages">
+            {% for item in nav_items %}
+              <a class="page-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endfor %}
+          </div>
+          <div class="trigger__lang" aria-label="Sprachauswahl">
+            <span class="page-link page-link--lang-current" aria-current="true">
+              {{ ui.language_current }}
+            </span>
+            <span class="page-link page-link--lang-separator" aria-hidden="true">|</span>
+            <a class="page-link page-link--lang" href="{{ switch_target | relative_url }}">
+              {{ ui.language_other }}
+            </a>
+          </div>
         </div>
       </nav>
     {% endif %}
