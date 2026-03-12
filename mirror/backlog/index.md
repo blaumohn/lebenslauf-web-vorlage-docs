@@ -94,6 +94,7 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
   - 72-10 CLI-Cache: Public-only Policy + Output-Redaction + Endpoint-Allowlist — Zu erledigen
   - 72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links) — Erledigt
   - [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — In Bearbeitung
+  - [**72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern**]({{ "/mirror/issues/J01-72/steps/J01-92/" | relative_url }}) — Zu erledigen
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/mirror/issues/J01-85/" | relative_url }})
   - 85-1 Refactor: Coding-Standards durchgehend umsetzen — Zu erledigen
   - 85-2 API-Betriebe (Wrapper), http als Escape-Hatch — Zu erledigen
