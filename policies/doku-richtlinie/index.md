@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Doku-Richtlinie: lebenslauf-web-vorlage – Wo gehört welcher Inhalt hin?"
-permalink: /policies/doku-richtlinie/
+permalink: /de/policies/doku-richtlinie/
 ---
 
 ## Ziel

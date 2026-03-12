@@ -1,0 +1,18 @@
+de:
+  site_title: Lebenslauf-Web-Vorlage
+  language_label: Sprache
+  language_current: Deutsch
+  language_other: English
+  language_other_url: /en/
+  home_url: /de/
+  home_label: Start
+  mirror_label: Jira-Übersicht
+en:
+  site_title: CV Web Template
+  language_label: Language
+  language_current: English
+  language_other: Deutsch
+  language_other_url: /de/
+  home_url: /en/
+  home_label: Home
+  mirror_label: Jira Mirror

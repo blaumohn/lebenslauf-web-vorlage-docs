@@ -1,7 +1,7 @@
 ---
 layout: page
 title: KEP-Lite-Vorlage
-permalink: /templates/kep-lite/
+permalink: /de/templates/kep-lite/
 ---
 
 ```text

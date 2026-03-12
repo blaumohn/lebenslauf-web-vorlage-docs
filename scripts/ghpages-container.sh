@@ -22,6 +22,7 @@ main() {
 }
 
 run_preview() {
+  sh /src/site/scripts/prepare-site.sh
   exec jekyll serve \
     --source /src/site \
     --destination /tmp/_site \

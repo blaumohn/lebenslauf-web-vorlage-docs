@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Richtlinien
-permalink: /policies/
+permalink: /de/policies/
 ---
 
-- [Doku-Richtlinie: Wo gehört welcher Inhalt hin?]({{ "/policies/doku-richtlinie/" | relative_url }})
-- [Programmierleitlinien]({{ "/policies/programmierleitlinien/" | relative_url }})
+- [Doku-Richtlinie: Wo gehört welcher Inhalt hin?]({{ "/de/policies/doku-richtlinie/" | relative_url }})
+- [Programmierleitlinien]({{ "/de/policies/programmierleitlinien/" | relative_url }})

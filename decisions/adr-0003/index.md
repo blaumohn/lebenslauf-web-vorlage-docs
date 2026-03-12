@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "ADR-0003 Schritt-Reihenfolge: Rank -> Schritt-Nr, Summary-Prefix"
-permalink: /decisions/adr-0003/
+permalink: /de/decisions/adr-0003/
 ---
 
 **Status:** Akzeptiert
@@ -29,4 +29,4 @@ Die Schritt-Reihenfolge wird aus Jira **Rank** abgeleitet:
 
 ## Links {#links}
 
-- [Runbook: Backfill Schritt-Nr und Summary-Prefix]({{ "/operations/jira-backfill-schritt-nr/" | relative_url }})
+- [Runbook: Backfill Schritt-Nr und Summary-Prefix]({{ "/de/operations/jira-backfill-schritt-nr/" | relative_url }})

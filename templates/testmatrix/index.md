@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Testmatrix-Vorlage
-permalink: /templates/testmatrix/
+permalink: /de/templates/testmatrix/
 ---
 
 ```text

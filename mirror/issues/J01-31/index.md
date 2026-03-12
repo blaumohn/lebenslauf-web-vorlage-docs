@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-31 — Preview Readiness: System-Source-Verarbeitung"
-permalink: /mirror/issues/J01-31/
+permalink: /de/mirror/issues/J01-31/
 ---
 <!-- mirror:subtasks_cksum=1899156791 -->
 
@@ -14,7 +14,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Status:** Zu erledigen
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-24T14:05:26.150+0100
-- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/mirror/issues/J01-5/" | relative_url }})
+- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/de/mirror/issues/J01-5/" | relative_url }})
 
 ## Links
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-49 — i18n: Template-Texte i18n-fähig machen"
-permalink: /mirror/issues/J01-49/
+permalink: /de/mirror/issues/J01-49/
 ---
 <!-- mirror:subtasks_cksum=2173231041 -->
 
@@ -14,7 +14,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Status:** Zu erledigen
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-17T16:15:09.400+0100
-- **Parent:** [J01-6 — i18n für Seitenvorlagen und Templates]({{ "/mirror/issues/J01-6/" | relative_url }})
+- **Parent:** [J01-6 — i18n für Seitenvorlagen und Templates]({{ "/de/mirror/issues/J01-6/" | relative_url }})
 
 ## Links
 

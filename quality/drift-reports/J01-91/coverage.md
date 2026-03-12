@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Abdeckung: geprüfte Seiten (ohne mirror/) – 2026-03-06"
-permalink: /quality/drift-reports/J01-91/coverage/
+permalink: /de/quality/drift-reports/J01-91/coverage/
 ---
 
 Diese Liste zeigt, welche Seiten im Scope des Drift-Reports geprüft wurden

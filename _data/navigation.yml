@@ -1,0 +1,34 @@
+de:
+  - title: Einstieg
+    url: /de/getting-started/
+  - title: Bereiche
+    url: /de/areas/
+  - title: Entscheidungen
+    url: /de/decisions/
+  - title: Betrieb
+    url: /de/operations/
+  - title: Jira-Übersicht
+    url: /de/mirror/
+  - title: Richtlinien
+    url: /de/policies/
+  - title: Vorlagen
+    url: /de/templates/
+  - title: Qualität
+    url: /de/quality/
+en:
+  - title: Getting Started
+    url: /en/getting-started/
+  - title: Areas
+    url: /en/areas/
+  - title: Decisions
+    url: /en/decisions/
+  - title: Operations
+    url: /en/operations/
+  - title: Jira Mirror
+    url: /en/mirror/
+  - title: Policies
+    url: /en/policies/
+  - title: Templates
+    url: /en/templates/
+  - title: Quality
+    url: /en/quality/

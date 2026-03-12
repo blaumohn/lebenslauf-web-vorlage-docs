@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-25 — Dev-Branch Baseline und Repo-Hygiene"
-permalink: /mirror/issues/J01-25/
+permalink: /de/mirror/issues/J01-25/
 ---
 <!-- mirror:subtasks_cksum=2716186418 -->
 
@@ -14,7 +14,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Status:** Erledigt
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-17T16:15:02.790+0100
-- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/mirror/issues/J01-5/" | relative_url }})
+- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/de/mirror/issues/J01-5/" | relative_url }})
 
 ## Links
 

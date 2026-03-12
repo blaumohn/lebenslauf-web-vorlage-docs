@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-28 — Analyse: Risikomuster und Befundliste"
-permalink: /mirror/issues/J01-28/
+permalink: /de/mirror/issues/J01-28/
 ---
 <!-- mirror:subtasks_cksum=2491577805 -->
 
@@ -14,7 +14,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Status:** Zu erledigen
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-17T16:15:01.440+0100
-- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/mirror/issues/J01-5/" | relative_url }})
+- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/de/mirror/issues/J01-5/" | relative_url }})
 
 ## Links
 

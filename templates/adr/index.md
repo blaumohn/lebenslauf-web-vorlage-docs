@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ADR-Vorlage
-permalink: /templates/adr/
+permalink: /de/templates/adr/
 ---
 
 ```text

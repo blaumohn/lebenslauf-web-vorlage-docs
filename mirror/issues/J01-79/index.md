@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-79 — Atlassian CLI: API-Betriebe (Wrapper), http als Escape-Hatch"
-permalink: /mirror/issues/J01-79/
+permalink: /de/mirror/issues/J01-79/
 ---
 <!-- mirror:subtasks_cksum=4294967295 -->
 

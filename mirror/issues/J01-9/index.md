@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-9 — Preview: Workflow wieder aktivieren"
-permalink: /mirror/issues/J01-9/
+permalink: /de/mirror/issues/J01-9/
 ---
 <!-- mirror:subtasks_cksum=3237570055 -->
 
@@ -14,7 +14,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Status:** Zu erledigen
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-24T14:05:17.137+0100
-- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/mirror/issues/J01-5/" | relative_url }})
+- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/de/mirror/issues/J01-5/" | relative_url }})
 
 ## Links
 

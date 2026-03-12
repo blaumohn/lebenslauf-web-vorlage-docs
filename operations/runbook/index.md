@@ -1,19 +1,20 @@
 ---
 layout: page
 title: "Runbook: Jira-Übersicht aktualisieren"
-permalink: /operations/runbook/
+permalink: /de/operations/runbook/
 ---
 
 ## Zweck
 
 Die öffentliche, statische Jira-Übersicht in diesem Repo aktualisieren:
 
-- `/mirror/` (Landing)
-- `/mirror/sprint-board/`
-- `/mirror/backlog/`
-- `/mirror/erledigt/`
-- `/mirror/issues/J01-*/` (Epics/Tasks)
-- Schritt-Seiten nur bei Subtasks mit Angaben: `/mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/`
+- DE: `/de/mirror/`, `/de/mirror/sprint-board/`, `/de/mirror/backlog/`,
+  `/de/mirror/erledigt/`, `/de/mirror/issues/J01-*/`
+- EN: `/en/mirror/`, `/en/mirror/sprint-board/`, `/en/mirror/backlog/`,
+  `/en/mirror/erledigt/`, `/en/mirror/issues/J01-*/`
+- Schritt-Seiten nur bei Subtasks mit Angaben:
+  `/de/mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/` und
+  `/en/mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/`
 - Zusätzlich: Jira Remote Links werden (gefiltert) als Linkliste im Mirror angezeigt
   (nur Doku-Domain; als site-relative Links gerendert).
 
@@ -47,6 +48,7 @@ sh scripts/update-jira-mirror.sh --full
    - Keine `atlassian.net` Links im Output.
    - Keine E-Mail-Adressen im Output.
    - Remote Links zeigen nicht als absolute Doku-Domain, sondern als relative Site-Links.
+   - Nach dem DE-Render wird der EN-Mirror als abgeleitete Kopie synchronisiert.
 
 ## Rollback
 

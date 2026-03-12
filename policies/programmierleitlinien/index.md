@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Programmierleitlinien
-permalink: /policies/programmierleitlinien/
+permalink: /de/policies/programmierleitlinien/
 ---
 
 Diese Leitlinien sollen Code für Review, Wartung und Betrieb klar machen.

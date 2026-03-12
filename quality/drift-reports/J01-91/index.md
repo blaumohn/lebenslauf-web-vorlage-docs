@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Drift-Report: J01-91 (Stand 2026-03-06)"
-permalink: /quality/drift-reports/J01-91/
+permalink: /de/quality/drift-reports/J01-91/
 ---
 
 ## Scope
@@ -18,11 +18,11 @@ permalink: /quality/drift-reports/J01-91/
 
 ## Ergänzende Teilberichte
 
-- [J01-91: Zustand/Vorhaben (Snapshot)]({{ "/work/jira/J01-91/" | relative_url }})
-- [J01-91: Bereiche-Inventar]({{ "/work/jira/J01-91/area-inventory/" | relative_url }})
-- [J01-91: Archiv-Auswertung]({{ "/work/jira/J01-91/archive-topics/" | relative_url }})
-- [J01-91: Policy-Delta-Vorschläge]({{ "/work/jira/J01-91/policy-deltas/" | relative_url }})
-- [Abdeckung: geprüfte Seiten]({{ "/quality/drift-reports/J01-91/coverage/" | relative_url }})
+- [J01-91: Zustand/Vorhaben (Snapshot)]({{ "/de/work/jira/J01-91/" | relative_url }})
+- [J01-91: Bereiche-Inventar]({{ "/de/work/jira/J01-91/area-inventory/" | relative_url }})
+- [J01-91: Archiv-Auswertung]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }})
+- [J01-91: Policy-Delta-Vorschläge]({{ "/de/work/jira/J01-91/policy-deltas/" | relative_url }})
+- [Abdeckung: geprüfte Seiten]({{ "/de/quality/drift-reports/J01-91/coverage/" | relative_url }})
 
 ## Feststellungen
 

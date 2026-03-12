@@ -1,11 +1,11 @@
 ---
 layout: page
 title: Qualität
-permalink: /quality/
+permalink: /de/quality/
 ---
 
 ## Überblick
 
-- [Testmatrix]({{ "/quality/testmatrix/" | relative_url }})
-- [Drift-Reports]({{ "/quality/drift-reports/" | relative_url }})
-- [Testmatrix-Vorlage]({{ "/templates/testmatrix/" | relative_url }})
+- [Testmatrix]({{ "/de/quality/testmatrix/" | relative_url }})
+- [Drift-Reports]({{ "/de/quality/drift-reports/" | relative_url }})
+- [Testmatrix-Vorlage]({{ "/de/templates/testmatrix/" | relative_url }})

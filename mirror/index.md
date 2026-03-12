@@ -1,11 +1,11 @@
 ---
 layout: page
 title: "Jira-Übersicht"
-permalink: /mirror/
+permalink: /de/mirror/
 ---
 
 Die Jira-Übersicht zeigt einen statischen Snapshot (ohne öffentliches Jira).
 
-- [Sprint-Board]({{ "/mirror/sprint-board/" | relative_url }})
-- [Backlog]({{ "/mirror/backlog/" | relative_url }})
-- [Erledigt]({{ "/mirror/erledigt/" | relative_url }})
+- [Sprint-Board]({{ "/de/mirror/sprint-board/" | relative_url }})
+- [Backlog]({{ "/de/mirror/backlog/" | relative_url }})
+- [Erledigt]({{ "/de/mirror/erledigt/" | relative_url }})

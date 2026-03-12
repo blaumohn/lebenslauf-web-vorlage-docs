@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Vorlagen
-permalink: /templates/
+permalink: /de/templates/
 ---
 
-- [ADR-Vorlage]({{ "/templates/adr/" | relative_url }})
-- [KEP-Lite-Vorlage]({{ "/templates/kep-lite/" | relative_url }})
-- [Runbook-Vorlage]({{ "/templates/runbook/" | relative_url }})
-- [Postmortem-Vorlage]({{ "/templates/postmortem/" | relative_url }})
-- [Testmatrix-Vorlage]({{ "/templates/testmatrix/" | relative_url }})
-- [Drift-Report-Vorlage]({{ "/templates/drift-report/" | relative_url }})
-- [Richtlinie/Überblick-Vorlage]({{ "/templates/richtlinie/" | relative_url }})
+- [ADR-Vorlage]({{ "/de/templates/adr/" | relative_url }})
+- [KEP-Lite-Vorlage]({{ "/de/templates/kep-lite/" | relative_url }})
+- [Runbook-Vorlage]({{ "/de/templates/runbook/" | relative_url }})
+- [Postmortem-Vorlage]({{ "/de/templates/postmortem/" | relative_url }})
+- [Testmatrix-Vorlage]({{ "/de/templates/testmatrix/" | relative_url }})
+- [Drift-Report-Vorlage]({{ "/de/templates/drift-report/" | relative_url }})
+- [Richtlinie/Überblick-Vorlage]({{ "/de/templates/richtlinie/" | relative_url }})

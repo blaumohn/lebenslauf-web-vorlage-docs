@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-80 — Atlassian Tools: Refactor – AGENTS Coding-Standards durchgehend umsetzen"
-permalink: /mirror/issues/J01-80/
+permalink: /de/mirror/issues/J01-80/
 ---
 <!-- mirror:subtasks_cksum=4294967295 -->
 

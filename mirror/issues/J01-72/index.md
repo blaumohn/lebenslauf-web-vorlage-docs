@@ -1,9 +1,9 @@
 ---
 layout: page
 title: "J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte"
-permalink: /mirror/issues/J01-72/
+permalink: /de/mirror/issues/J01-72/
 ---
-<!-- mirror:subtasks_cksum=3555181477 -->
+<!-- mirror:subtasks_cksum=2570779518 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -14,7 +14,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Status:** In Bearbeitung
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-28T21:52:05.804+0100
-- **Parent:** [J01-84 — Atlassian-System vorbereiten (SSOT: Jira)]({{ "/mirror/issues/J01-84/" | relative_url }})
+- **Parent:** [J01-84 — Atlassian-System vorbereiten (SSOT: Jira)]({{ "/de/mirror/issues/J01-84/" | relative_url }})
 
 ## Links
 
@@ -37,5 +37,5 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **72-9 Board-Sicht prüfen (Prefix-Format 9-1)** — Erledigt
 - **72-10 CLI-Cache: Public-only Policy + Output-Redaction + Endpoint-Allowlist** — Zu erledigen
 - **72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links)** — Erledigt
-- [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — In Bearbeitung
-- [**72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern**]({{ "/mirror/issues/J01-72/steps/J01-92/" | relative_url }}) — Zu erledigen
+- [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/de/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — In Bearbeitung
+- [**72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern**]({{ "/de/mirror/issues/J01-72/steps/J01-92/" | relative_url }}) — In Bearbeitung

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Jira- und Doku-Tooling: API-Betriebe (Wrapper)"
-permalink: /areas/proj-doku-tooling/api-betriebe/
+permalink: /de/areas/proj-doku-tooling/api-betriebe/
 ---
 
 Ziel: Häufige Betriebsabläufe als eigene Befehle („Betriebe“) kapseln, damit

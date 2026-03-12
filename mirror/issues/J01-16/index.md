@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-16 — Runtime: Concurrency, Locking und atomare Zugriffe"
-permalink: /mirror/issues/J01-16/
+permalink: /de/mirror/issues/J01-16/
 ---
 <!-- mirror:subtasks_cksum=146997152 -->
 
@@ -14,7 +14,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Status:** Zu erledigen
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-24T14:05:23.844+0100
-- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/mirror/issues/J01-5/" | relative_url }})
+- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/de/mirror/issues/J01-5/" | relative_url }})
 
 ## Links
 

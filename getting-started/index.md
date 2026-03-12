@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Einstieg / Quickstart
-permalink: /getting-started/
+permalink: /de/getting-started/
 ---
 
 ```bash

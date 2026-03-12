@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Richtlinie/Überblick-Vorlage
-permalink: /templates/richtlinie/
+permalink: /de/templates/richtlinie/
 ---
 
 ```text

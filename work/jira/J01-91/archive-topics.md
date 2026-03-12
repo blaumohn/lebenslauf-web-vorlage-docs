@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-91: Archiv-Auswertung (Themen, ohne IDs) – 2026-03-06"
-permalink: /work/jira/J01-91/archive-topics/
+permalink: /de/work/jira/J01-91/archive-topics/
 ---
 
 Ziel: Aus archivierten Projektverwaltungs-Texten (lokal) nur die Themen

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Testmatrix
-permalink: /quality/testmatrix/
+permalink: /de/quality/testmatrix/
 ---
 
 Testmatrix und Abnahmechecks.

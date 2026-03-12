@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "ADR-0002 Tooling: atlassian-http-client Sicherheitsmodell"
-permalink: /decisions/adr-0002/
+permalink: /de/decisions/adr-0002/
 ---
 
 **Status:** Akzeptiert

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "ADR-0001 SSOT: Jira (Vorgänge/Status), Doku in GitHub Pages"
-permalink: /decisions/adr-0001/
+permalink: /de/decisions/adr-0001/
 ---
 
 **Status:** Akzeptiert

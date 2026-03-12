@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "ADR-0004 Öffentlich: Jira-Übersicht (statt Jira-Board publizieren)"
-permalink: /decisions/adr-0004/
+permalink: /de/decisions/adr-0004/
 ---
 
 **Status:** Akzeptiert (2026-02-27)
@@ -48,8 +48,8 @@ Die Jira-Übersicht wird manuell aktualisiert (nach Jira-Änderungen); später o
 
 ## Links {#links}
 
-- [Jira‑Übersicht (Index)]({{ "/mirror/" | relative_url }})
-- [Sprint-Board]({{ "/mirror/sprint-board/" | relative_url }})
-- [Backlog]({{ "/mirror/backlog/" | relative_url }})
-- [Erledigt]({{ "/mirror/erledigt/" | relative_url }})
-- Vorgang (Beispiel): [J01-72]({{ "/mirror/issues/J01-72/" | relative_url }})
+- [Jira‑Übersicht (Index)]({{ "/de/mirror/" | relative_url }})
+- [Sprint-Board]({{ "/de/mirror/sprint-board/" | relative_url }})
+- [Backlog]({{ "/de/mirror/backlog/" | relative_url }})
+- [Erledigt]({{ "/de/mirror/erledigt/" | relative_url }})
+- Vorgang (Beispiel): [J01-72]({{ "/de/mirror/issues/J01-72/" | relative_url }})

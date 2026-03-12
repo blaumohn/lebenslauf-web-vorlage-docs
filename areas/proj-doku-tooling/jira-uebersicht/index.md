@@ -1,17 +1,17 @@
 ---
 layout: page
 title: "Jira- und Doku-Tooling: Jira-Übersicht (öffentlich)"
-permalink: /areas/proj-doku-tooling/jira-uebersicht/
+permalink: /de/areas/proj-doku-tooling/jira-uebersicht/
 ---
 
 ## Ziel
 
 Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als statische Jira-Übersicht über GitHub Pages veröffentlicht:
 
-- [Jira‑Übersicht]({{ "/mirror/" | relative_url }})
-- [Sprint-Board]({{ "/mirror/sprint-board/" | relative_url }})
-- [Backlog]({{ "/mirror/backlog/" | relative_url }})
-- [Erledigt]({{ "/mirror/erledigt/" | relative_url }})
+- [Jira‑Übersicht]({{ "/de/mirror/" | relative_url }})
+- [Sprint-Board]({{ "/de/mirror/sprint-board/" | relative_url }})
+- [Backlog]({{ "/de/mirror/backlog/" | relative_url }})
+- [Erledigt]({{ "/de/mirror/erledigt/" | relative_url }})
 
 ## Regeln (öffentlich)
 
@@ -25,4 +25,4 @@ Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als statische Jira-Übe
 ## Aktualisieren
 
 Siehe Runbook:
-- [Jira-Übersicht aktualisieren]({{ "/operations/runbook/" | relative_url }})
+- [Jira-Übersicht aktualisieren]({{ "/de/operations/runbook/" | relative_url }})

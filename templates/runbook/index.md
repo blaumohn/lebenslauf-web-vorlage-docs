@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Runbook-Vorlage
-permalink: /templates/runbook/
+permalink: /de/templates/runbook/
 ---
 
 ```text

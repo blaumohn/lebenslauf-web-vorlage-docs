@@ -1,14 +1,14 @@
 ---
 layout: page
 title: "72-12 — Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen"
-permalink: /mirror/issues/J01-72/steps/J01-91/
+permalink: /de/mirror/issues/J01-72/steps/J01-91/
 ---
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Metadaten
 
-- **Parent:** [J01-72]({{ "/mirror/issues/J01-72/" | relative_url }})
+- **Parent:** [J01-72]({{ "/de/mirror/issues/J01-72/" | relative_url }})
 - **Schritt:** 72-12
 - **Status:** In Bearbeitung
 - **Aktualisiert:** 2026-03-09T10:48:48.437+0100
@@ -31,9 +31,9 @@ Runbook 5832705 (Backfill Schritt-Nr + Summary-Prefix) ist Teil der öffentliche
 
 ## Links
 
-- [Phase 1: Drift-Report & Teilberichte]({{ "/quality/drift-reports/J01-91/" | relative_url }})
-- [Phase 1: Abdeckung]({{ "/quality/drift-reports/J01-91/coverage/" | relative_url }})
-- [Zustand/Vorhaben (Snapshot)]({{ "/work/jira/J01-91/" | relative_url }})
-- [Phase 1: Archiv-Themen]({{ "/work/jira/J01-91/archive-topics/" | relative_url }})
-- [Phase 1: Bereiche-Inventar]({{ "/work/jira/J01-91/area-inventory/" | relative_url }})
-- [Phase 1: Policy-Deltas]({{ "/work/jira/J01-91/policy-deltas/" | relative_url }})
+- [Phase 1: Drift-Report & Teilberichte]({{ "/de/quality/drift-reports/J01-91/" | relative_url }})
+- [Phase 1: Abdeckung]({{ "/de/quality/drift-reports/J01-91/coverage/" | relative_url }})
+- [Zustand/Vorhaben (Snapshot)]({{ "/de/work/jira/J01-91/" | relative_url }})
+- [Phase 1: Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }})
+- [Phase 1: Bereiche-Inventar]({{ "/de/work/jira/J01-91/area-inventory/" | relative_url }})
+- [Phase 1: Policy-Deltas]({{ "/de/work/jira/J01-91/policy-deltas/" | relative_url }})

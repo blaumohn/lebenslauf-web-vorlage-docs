@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Drift-Report-Vorlage
-permalink: /templates/drift-report/
+permalink: /de/templates/drift-report/
 ---
 
 ## Zweck

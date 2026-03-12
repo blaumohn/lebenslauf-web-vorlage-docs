@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-65 — Production: Artefakt- und Smoke-Checks definieren"
-permalink: /mirror/issues/J01-65/
+permalink: /de/mirror/issues/J01-65/
 ---
 <!-- mirror:subtasks_cksum=2806356818 -->
 
@@ -14,7 +14,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Status:** Zu erledigen
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-17T16:14:48.911+0100
-- **Parent:** [J01-7 — Production Deployment]({{ "/mirror/issues/J01-7/" | relative_url }})
+- **Parent:** [J01-7 — Production Deployment]({{ "/de/mirror/issues/J01-7/" | relative_url }})
 
 ## Links
 

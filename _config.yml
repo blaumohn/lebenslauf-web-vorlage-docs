@@ -8,11 +8,3 @@ kramdown:
 exclude:
   - .local
   - .agents
-header_pages:
-  - getting-started/index.md
-  - areas/index.md
-  - decisions/index.md
-  - operations/index.md
-  - mirror/index.md
-  - templates/index.md
-  - policies/index.md

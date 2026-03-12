@@ -12,3 +12,67 @@
   }
 }
 
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-nav--custom {
+  margin-left: auto;
+}
+
+.page-link--lang {
+  font-weight: 600;
+}
+
+.page-link--lang-current {
+  color: #222;
+  font-weight: 600;
+}
+
+.page-link--lang-separator {
+  padding-left: 0.15rem;
+  padding-right: 0.15rem;
+  color: #666;
+}
+
+.lang-landing {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.lang-landing__lead {
+  max-width: 42rem;
+}
+
+.lang-landing__cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.lang-card {
+  display: block;
+  padding: 1.2rem 1.25rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #fff, #f7f7f7);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
+.lang-card strong,
+.lang-card span {
+  display: block;
+}
+
+.lang-card strong {
+  font-size: 1.1rem;
+}
+
+.lang-card span {
+  margin-top: 0.35rem;
+  color: #555;
+}

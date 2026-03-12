@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Runbook: GitHub Pages lokal previewen"
-permalink: /operations/ghpages-preview/
+permalink: /de/operations/ghpages-preview/
 ---
 
 ## Zweck
@@ -31,6 +31,7 @@ docker compose run --rm ghpages-shell
 ## Hinweise
 
 - Der Preview-Server laeuft auf `http://localhost:4000/`.
+- Vor dem Start wird der abgeleitete EN-Mirror aus dem DE-Mirror synchronisiert.
 - Interne Links sollen mit `relative_url` gebaut werden, damit `baseurl` korrekt greift (bei dieser Site leer).
 
 ## Troubleshooting

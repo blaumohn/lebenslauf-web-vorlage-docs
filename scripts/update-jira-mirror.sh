@@ -1,6 +1,10 @@
 #!/bin/sh
 set -eu
 
+script_dir=$(CDPATH= cd -- "$(dirname "$0")" && pwd)
+repo_root=$(CDPATH= cd -- "$script_dir/.." && pwd)
+cd "$repo_root"
+
 require_bin() {
   if ! command -v "$1" >/dev/null 2>&1; then
     printf 'Fehler: fehlendes Kommando: %s\n' "$1" >&2
@@ -209,6 +213,7 @@ main() {
   require_bin head
   require_bin cat
   require_bin find
+  require_bin cp
   require_bin rm
   require_bin mv
   require_bin cmp
@@ -274,6 +279,8 @@ main() {
   log "Mirror: Subtask-Seiten (mit Angaben)"
   cleanup_stale_step_dirs "$subtasks_file"
   update_subtask_pages_with_description "$subtasks_file" "$full" "$touched_file"
+  log "Mirror: EN-Spiegel ableiten"
+  sync_en_mirror_tree
 }
 
 fetch_issues() {
@@ -303,14 +310,14 @@ update_mirror_index() {
 ---
 layout: page
 title: "Jira-Übersicht"
-permalink: /mirror/
+permalink: /de/mirror/
 ---
 
 Die Jira-Übersicht zeigt einen statischen Snapshot (ohne öffentliches Jira).
 
-- [Sprint-Board]({{ "/mirror/sprint-board/" | relative_url }})
-- [Backlog]({{ "/mirror/backlog/" | relative_url }})
-- [Erledigt]({{ "/mirror/erledigt/" | relative_url }})
+- [Sprint-Board]({{ "/de/mirror/sprint-board/" | relative_url }})
+- [Backlog]({{ "/de/mirror/backlog/" | relative_url }})
+- [Erledigt]({{ "/de/mirror/erledigt/" | relative_url }})
 EOF
   write_if_changed mirror/index.md "$tmp"
 }
@@ -322,7 +329,7 @@ update_backlog() {
 
   render_vorgaenge_page \
     "Jira-Übersicht: Backlog" \
-    "/mirror/backlog/" \
+    "/de/mirror/backlog/" \
     "$issues_file" \
     "$subtasks_file" \
     "select(.statusCategory != \"done\")" \
@@ -338,7 +345,7 @@ update_erledigt() {
 
   render_vorgaenge_page \
     "Jira-Übersicht: Erledigt" \
-    "/mirror/erledigt/" \
+    "/de/mirror/erledigt/" \
     "$issues_file" \
     "$subtasks_file" \
     "select(.statusCategory == \"done\")" \
@@ -365,7 +372,7 @@ update_sprint_board() {
         (keyset | index($k)) != null;
 
       def issue_line:
-        "- [\(.key) — \(.summary)]({{ \"/mirror/issues/\(.key)/\" | relative_url }})";
+        "- [\(.key) — \(.summary)]({{ \"/de/mirror/issues/\(.key)/\" | relative_url }})";
 
       def issues:
         [ .issues[]
@@ -386,7 +393,7 @@ update_sprint_board() {
       "---",
       "layout: page",
       "title: \"Jira-Übersicht: Sprint-Board\"",
-      "permalink: /mirror/sprint-board/",
+      "permalink: /de/mirror/sprint-board/",
       "---",
       "",
       "Sprint-Board als statische Jira-Übersicht (ohne Jira-Cloud-Links).",
@@ -460,13 +467,13 @@ render_vorgaenge_page() {
         };
 
       def issue_link_line($i):
-        "- [\($i.key) — \($i.summary)]({{ \"/mirror/issues/\($i.key)/\" | relative_url }})";
+        "- [\($i.key) — \($i.summary)]({{ \"/de/mirror/issues/\($i.key)/\" | relative_url }})";
 
       def subtask_line($s):
         if ($s.prefix == null) then
           "  - \($s.summary) — \($s.status)"
         elif ($s.hasDescription) then
-          "  - [**\($s.prefix) \($s.summaryNoPrefix)**]({{ \"/mirror/issues/\($s.parent)/steps/\($s.key)/\" | relative_url }}) — \($s.status)"
+          "  - [**\($s.prefix) \($s.summaryNoPrefix)**]({{ \"/de/mirror/issues/\($s.parent)/steps/\($s.key)/\" | relative_url }}) — \($s.status)"
         else
           "  - \($s.prefix) \($s.summaryNoPrefix) — \($s.status)"
         end;
@@ -503,7 +510,7 @@ render_vorgaenge_page() {
                   | ($tasks | map(select(.parent == $e.key)) | sort_by(.key)) as $tasksForEpic
                   | [
                       "",
-                      "### [\($e.key) — \($e.summary)]({{ \"/mirror/issues/\($e.key)/\" | relative_url }})",
+                      "### [\($e.key) — \($e.summary)]({{ \"/de/mirror/issues/\($e.key)/\" | relative_url }})",
                       "",
                       ($tasksForEpic
                         | if length == 0 then
@@ -534,9 +541,9 @@ render_vorgaenge_page() {
       "",
       "Statische Jira-Übersicht (ohne Jira-Cloud-Links).",
       "",
-      "- [Sprint-Board]({{ \"/mirror/sprint-board/\" | relative_url }})",
-      "- [Backlog]({{ \"/mirror/backlog/\" | relative_url }})",
-      "- [Erledigt]({{ \"/mirror/erledigt/\" | relative_url }})",
+      "- [Sprint-Board]({{ \"/de/mirror/sprint-board/\" | relative_url }})",
+      "- [Backlog]({{ \"/de/mirror/backlog/\" | relative_url }})",
+      "- [Erledigt]({{ \"/de/mirror/erledigt/\" | relative_url }})",
       "",
       "## Epics",
       ($ctx.render_epics | if length == 0 then "Keine Vorgänge." else . end),
@@ -657,7 +664,7 @@ update_issue_pages() {
 
         .issues[]
         | select(.fields.parent.key? == $epic)
-        | "- [\(.key) — \(norm_summary(.fields.summary))]({{ \"/mirror/issues/\(.key)/\" | relative_url }})"
+        | "- [\(.key) — \(norm_summary(.fields.summary))]({{ \"/de/mirror/issues/\(.key)/\" | relative_url }})"
       ' <"$issues_file" || true)
 
       if [ -z "$tasks" ]; then
@@ -668,7 +675,7 @@ update_issue_pages() {
 ---
 layout: page
 title: "$key — $summary"
-permalink: /mirror/issues/$key/
+permalink: /de/mirror/issues/$key/
 ---
 <!-- mirror:child_tasks_cksum=$child_cksum -->
 
@@ -708,7 +715,7 @@ EOF
           | select(.key == $pk)
           | (.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)"))
         ' <"$issues_file" || true)
-        parent_line="- **Parent:** [$parent — $parent_summary]({{ \"/mirror/issues/$parent/\" | relative_url }})"
+        parent_line="- **Parent:** [$parent — $parent_summary]({{ \"/de/mirror/issues/$parent/\" | relative_url }})"
       fi
 
       subtasks_md=$(jq -r --arg parent "$key" --slurpfile st "$subtasks_file" '
@@ -734,7 +741,7 @@ EOF
           if .prefix == null then
             "- **" + .summary + "** — " + .status
           elif .hasDescription then
-            "- [**" + .prefix + " " + .summaryNoPrefix + "**]({{ \"/mirror/issues/" + $parent + "/steps/" + .key + "/\" | relative_url }}) — " + .status
+            "- [**" + .prefix + " " + .summaryNoPrefix + "**]({{ \"/de/mirror/issues/" + $parent + "/steps/" + .key + "/\" | relative_url }}) — " + .status
           else
             "- **" + .prefix + " " + .summaryNoPrefix + "** — " + .status
           end
@@ -746,7 +753,7 @@ EOF
 ---
 layout: page
 title: "$key — $summary"
-permalink: /mirror/issues/$key/
+permalink: /de/mirror/issues/$key/
 ---
 <!-- mirror:subtasks_cksum=$subtasks_cksum -->
 
@@ -838,7 +845,7 @@ update_subtask_pages_with_description() {
 
     links_md=$(render_public_remotelinks_md "$key")
 
-    description_text=$(printf '%s' "$subtask" | jq -r '.description' | jq -r -f scripts/jira-adf-to-text.jq || true)
+    description_text=$(printf '%s' "$subtask" | jq -r '.description' | jq -r -f "$script_dir/jira-adf-to-text.jq" || true)
     if [ -z "$description_text" ]; then
       description_text='-'
     fi
@@ -851,14 +858,14 @@ update_subtask_pages_with_description() {
 ---
 layout: page
 title: "$prefix — $summary_no_prefix"
-permalink: /mirror/issues/$parent/steps/$key/
+permalink: /de/mirror/issues/$parent/steps/$key/
 ---
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Metadaten
 
-- **Parent:** [$parent]({{ "/mirror/issues/$parent/" | relative_url }})
+- **Parent:** [$parent]({{ "/de/mirror/issues/$parent/" | relative_url }})
 - **Schritt:** $prefix
 - **Status:** $status
 - **Aktualisiert:** $updated
@@ -874,6 +881,10 @@ EOF
 
     write_if_changed "$out_file" "$tmp"
   done
+}
+
+sync_en_mirror_tree() {
+  sh "$script_dir/sync-en-mirror.sh"
 }
 
 main "$@"

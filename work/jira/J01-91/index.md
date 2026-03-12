@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-91: Zustand/Vorhaben (Snapshot)"
-permalink: /work/jira/J01-91/
+permalink: /de/work/jira/J01-91/
 ---
 
 **Stand:** 2026-03-09
@@ -40,11 +40,11 @@ Statuswerte:
 
 | Punkt (DoD) | Status | Beleg / Ort |
 | --- | --- | --- |
-| Drift-Report + Abdeckung (ohne `mirror/`) | erledigt | [Drift-Report]({{ "/quality/drift-reports/J01-91/" | relative_url }}) und [Abdeckung]({{ "/quality/drift-reports/J01-91/coverage/" | relative_url }}) |
-| Jira-Übersicht „sauber voll gespiegelt“ | erledigt | [Runbook]({{ "/operations/runbook/" | relative_url }}) und `scripts/update-jira-mirror.sh` |
-| Bereiche-Inventar konsistent | erledigt | [Bereiche-Inventar]({{ "/work/jira/J01-91/area-inventory/" | relative_url }}) |
-| Archiv-Auswertung liegt vor (Themen, ohne IDs) | teilweise | [Archiv-Themen]({{ "/work/jira/J01-91/archive-topics/" | relative_url }}) (Übernahme-Entscheidungen sind noch „offen“) |
-| Policy-Delta-Vorschläge formuliert | erledigt | [Policy-Deltas]({{ "/work/jira/J01-91/policy-deltas/" | relative_url }}) |
+| Drift-Report + Abdeckung (ohne `mirror/`) | erledigt | [Drift-Report]({{ "/de/quality/drift-reports/J01-91/" | relative_url }}) und [Abdeckung]({{ "/de/quality/drift-reports/J01-91/coverage/" | relative_url }}) |
+| Jira-Übersicht „sauber voll gespiegelt“ | erledigt | [Runbook]({{ "/de/operations/runbook/" | relative_url }}) und `scripts/update-jira-mirror.sh` |
+| Bereiche-Inventar konsistent | erledigt | [Bereiche-Inventar]({{ "/de/work/jira/J01-91/area-inventory/" | relative_url }}) |
+| Archiv-Auswertung liegt vor (Themen, ohne IDs) | teilweise | [Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }}) (Übernahme-Entscheidungen sind noch „offen“) |
+| Policy-Delta-Vorschläge formuliert | erledigt | [Policy-Deltas]({{ "/de/work/jira/J01-91/policy-deltas/" | relative_url }}) |
 | Klare Phase-2-Liste existiert | teilweise | Diese Seite („Phase 2“) + Drift-Report („Vorschlag: Nächste Schritte“). |
 | Public-Doku: Sprach-/Nennungsregeln eingehalten | erledigt | Stichprobe + aktuelle Seiten (keine Jira-Cloud-Links, keine personenbezogenen Daten) |
 
@@ -89,9 +89,9 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 | Thema | Status | Bezug / Ort |
 | --- | --- | --- |
 | Ablage von Archivmaterial (lokale Exporte, nicht veröffentlichen) | offen | (Entscheidung) |
-| Interne Referenzen aus Archivquellen: Mapping privat vs. öffentlich abstrakt | offen | [Archiv-Themen]({{ "/work/jira/J01-91/archive-topics/" | relative_url }}) |
-| Neue Doku-Typen: Glossar / Abnahmechecks wirklich nötig? | offen | [Archiv-Themen]({{ "/work/jira/J01-91/archive-topics/" | relative_url }}) |
-| Policy-Änderungen anwenden | offen | [Policy-Deltas]({{ "/work/jira/J01-91/policy-deltas/" | relative_url }}) |
+| Interne Referenzen aus Archivquellen: Mapping privat vs. öffentlich abstrakt | offen | [Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }}) |
+| Neue Doku-Typen: Glossar / Abnahmechecks wirklich nötig? | offen | [Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }}) |
+| Policy-Änderungen anwenden | offen | [Policy-Deltas]({{ "/de/work/jira/J01-91/policy-deltas/" | relative_url }}) |
 
 ### Details (für schnelle Abstimmung)
 
@@ -111,7 +111,7 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 - Entscheidung: einführen ja/nein; falls ja, dann Vorlagen + Policy-Anpassung.
 
 4) **Policy-Änderungen anwenden**
-- Grundlage: [Policy-Deltas]({{ "/work/jira/J01-91/policy-deltas/" | relative_url }})
+- Grundlage: [Policy-Deltas]({{ "/de/work/jira/J01-91/policy-deltas/" | relative_url }})
 - Entscheidung: welche Deltas werden tatsächlich in `policies/doku-richtlinie/` übernommen (und wann).
 
 ## Phase 2 (nach Abstimmung)
@@ -123,6 +123,6 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 
 ## Links (Sichtbarkeit)
 
-- [Mirror: J01-72 / Schritt J01-91]({{ "/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) (abgeleitet)
-- [Runbook: Jira-Übersicht aktualisieren]({{ "/operations/runbook/" | relative_url }})
-- [Drift-Report (Qualität)]({{ "/quality/drift-reports/J01-91/" | relative_url }})
+- [Mirror: J01-72 / Schritt J01-91]({{ "/de/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) (abgeleitet)
+- [Runbook: Jira-Übersicht aktualisieren]({{ "/de/operations/runbook/" | relative_url }})
+- [Drift-Report (Qualität)]({{ "/de/quality/drift-reports/J01-91/" | relative_url }})

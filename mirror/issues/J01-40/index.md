@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-40 — Runtime: Technische Konstanten vereinheitlichen"
-permalink: /mirror/issues/J01-40/
+permalink: /de/mirror/issues/J01-40/
 ---
 <!-- mirror:subtasks_cksum=1840377728 -->
 
@@ -14,7 +14,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Status:** Zu erledigen
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-17T16:15:07.626+0100
-- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/mirror/issues/J01-5/" | relative_url }})
+- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/de/mirror/issues/J01-5/" | relative_url }})
 
 ## Links
 

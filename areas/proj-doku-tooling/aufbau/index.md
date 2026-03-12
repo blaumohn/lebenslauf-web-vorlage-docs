@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Jira- und Doku-Tooling: Systemüberblick (Ziel & Ist)"
-permalink: /areas/proj-doku-tooling/aufbau/
+permalink: /de/areas/proj-doku-tooling/aufbau/
 ---
 
 **Zweck:** Minimal-sichere CLI-Brücke zu Atlassian Cloud (Jira + Confluence) über REST, ohne Secrets beim Aufrufer.
@@ -43,7 +43,7 @@ permalink: /areas/proj-doku-tooling/aufbau/
 
 Wiederkehrende Operationen werden als stabile Befehle modelliert. `http` bleibt als Escape-Hatch erhalten.
 
-- [API-Betriebe]({{ "/areas/proj-doku-tooling/api-betriebe/" | relative_url }})
+- [API-Betriebe]({{ "/de/areas/proj-doku-tooling/api-betriebe/" | relative_url }})
 
 ## CLI-Cache (Public-only) {#cli-cache}
 
@@ -51,6 +51,6 @@ Als Zwischenschritt kann ein CLI-Cache Rezepte (Befehlsschablonen) verwalten, da
 
 ## Verweise {#verweise}
 
-- [ADR-0002: Sicherheitsmodell]({{ "/decisions/adr-0002/" | relative_url }})
-- [Runbook: Backfill Schritt-Nr]({{ "/operations/jira-backfill-schritt-nr/" | relative_url }})
-- [Programmierstandards]({{ "/policies/programmierleitlinien/" | relative_url }})
+- [ADR-0002: Sicherheitsmodell]({{ "/de/decisions/adr-0002/" | relative_url }})
+- [Runbook: Backfill Schritt-Nr]({{ "/de/operations/jira-backfill-schritt-nr/" | relative_url }})
+- [Programmierstandards]({{ "/de/policies/programmierleitlinien/" | relative_url }})

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container"
-permalink: /mirror/issues/J01-85/
+permalink: /de/mirror/issues/J01-85/
 ---
 <!-- mirror:subtasks_cksum=22535007 -->
 
@@ -14,7 +14,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Status:** Zu erledigen
 - **Sprint:** -
 - **Aktualisiert:** 2026-02-25T00:37:17.442+0100
-- **Parent:** [J01-84 — Atlassian-System vorbereiten (SSOT: Jira)]({{ "/mirror/issues/J01-84/" | relative_url }})
+- **Parent:** [J01-84 — Atlassian-System vorbereiten (SSOT: Jira)]({{ "/de/mirror/issues/J01-84/" | relative_url }})
 
 ## Links
 
