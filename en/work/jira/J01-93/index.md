@@ -40,6 +40,8 @@ language switching on corresponding pages.
   language as a link.
 - The header keeps the home link, content navigation, and language selector
   clearly separated.
+- The multiline site title still reads as one single link without oversized
+  vertical spacing between wrapped lines.
 - Mirror changes without EN follow-up are visibly blocked.
 
 ## Links

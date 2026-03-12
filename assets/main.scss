@@ -50,7 +50,11 @@
 }
 
 .site-title {
+  display: inline-block;
   font-weight: 700;
+  line-height: 1.15;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
 }
 
 .page-link--lang {

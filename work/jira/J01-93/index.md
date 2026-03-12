@@ -41,6 +41,8 @@ Sprachwechsel direkt auf den jeweiligen Gegen-Seiten.
   als Link.
 - Header und Navigation lassen Hauptseite, Inhaltsnavigation und
   Sprachauswahl klar getrennt erkennen.
+- Der mehrzeilige Site-Titel wirkt auch bei Umbruch als ein einzelner Link
+  ohne übergroßen Leerraum zwischen den Zeilen.
 - Mirror-Änderungen ohne EN-Nachpflege werden sichtbar blockiert.
 
 ## Links
