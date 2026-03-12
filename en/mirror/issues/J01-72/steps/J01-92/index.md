@@ -1,19 +1,19 @@
 ---
 layout: page
 title: "72-13 — Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern"
-permalink: /de/mirror/issues/J01-72/steps/J01-92/
+permalink: /en/mirror/issues/J01-72/steps/J01-92/
 ---
 
-Keine Jira-Cloud-Links, keine E-Mail-Adressen.
+No Jira Cloud links, no email addresses.
 
-## Metadaten
+## Metadata
 
-- **Parent:** [J01-72]({{ "/de/mirror/issues/J01-72/" | relative_url }})
-- **Schritt:** 72-13
-- **Status:** In Bearbeitung
-- **Aktualisiert:** 2026-03-12T17:27:05.551+0100
+- **Parent:** [J01-72]({{ "/en/mirror/issues/J01-72/" | relative_url }})
+- **Step:** 72-13
+- **Status:** In Progress
+- **Updated:** 2026-03-12T17:27:05.551+0100
 
-## Angaben
+## Details
 
 Ziel: projektbezogene KI-Skills fuer den lebenslauf-web-vorlage-Zusammenhang versioniert fuehren und den wiederkehrenden Jira-/Mirror-Ablauf direkt im Skill festhalten.
 
@@ -27,7 +27,7 @@ atlassian-tools als Schreibpfad fuer Jira-Operationen im Skill festhalten.
 
 github-pages-jira-mirror-sync-Ablauf als projektbezogenen Skill-Baustein festhalten.
 
-Erledigte Betriebe in Skill, Spiegel und Notiz nachvollziehbar halten; wiederkehrende Schritte in den Skill zurueckfuehren.
+Completed operations in Skill, Spiegel und Notiz nachvollziehbar halten; wiederkehrende Schritte in den Skill zurueckfuehren.
 
 Zusammenhang: Folge-Schritt zu J01-91 im selben uebergeordneten Task J01-72.
 
