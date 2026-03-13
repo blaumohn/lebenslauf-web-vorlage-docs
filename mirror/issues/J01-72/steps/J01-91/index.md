@@ -31,9 +31,9 @@ Runbook 5832705 (Backfill Schritt-Nr + Summary-Prefix) ist Teil der öffentliche
 
 ## Links
 
-- [Phase 1: Drift-Report & Teilberichte]({{ "/de/quality/drift-reports/J01-91/" | relative_url }})
-- [Phase 1: Abdeckung]({{ "/de/quality/drift-reports/J01-91/coverage/" | relative_url }})
-- [Zustand/Vorhaben (Snapshot)]({{ "/de/work/jira/J01-91/" | relative_url }})
-- [Phase 1: Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }})
-- [Phase 1: Bereiche-Inventar]({{ "/de/work/jira/J01-91/area-inventory/" | relative_url }})
-- [Phase 1: Policy-Deltas]({{ "/de/work/jira/J01-91/policy-deltas/" | relative_url }})
+- [Phase 1: Drift-Report & Teilberichte]({{ "/quality/drift-reports/J01-91/" | relative_url }})
+- [Phase 1: Abdeckung]({{ "/quality/drift-reports/J01-91/coverage/" | relative_url }})
+- [Zustand/Vorhaben (Snapshot)]({{ "/work/jira/J01-91/" | relative_url }})
+- [Phase 1: Archiv-Themen]({{ "/work/jira/J01-91/archive-topics/" | relative_url }})
+- [Phase 1: Bereiche-Inventar]({{ "/work/jira/J01-91/area-inventory/" | relative_url }})
+- [Phase 1: Policy-Deltas]({{ "/work/jira/J01-91/policy-deltas/" | relative_url }})

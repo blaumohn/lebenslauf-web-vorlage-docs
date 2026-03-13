@@ -7,6 +7,8 @@ de:
     url: /de/decisions/
   - title: Betrieb
     url: /de/operations/
+  - title: Sprints
+    url: /de/work/sprints/
   - title: Jira-Übersicht
     url: /de/mirror/
   - title: Richtlinien
@@ -24,6 +26,8 @@ en:
     url: /en/decisions/
   - title: Operations
     url: /en/operations/
+  - title: Sprints
+    url: /en/work/sprints/
   - title: Jira Mirror
     url: /en/mirror/
   - title: Policies

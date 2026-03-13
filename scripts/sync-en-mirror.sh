@@ -27,8 +27,13 @@ find en/mirror -name '*.md' -print0 | xargs -0 perl -0pi -e '
   s/## Unteraufgaben/## Subtasks/g;
   s/## Angaben/## Details/g;
   s/## Ohne Epic/## Without Epic/g;
+  s/Sprint-Ziel/Sprint Goal/g;
+  s/Admin \/ Rahmen/Admin \/ Framework/g;
+  s/Ungeplant/Unplanned/g;
+  s/Unklassifiziert/Unclassified/g;
   s/- \*\*Typ:\*\*/- **Type:**/g;
   s/- \*\*Schritt:\*\*/- **Step:**/g;
+  s/- \*\*Sprint:\*\*/- **Sprint:**/g;
   s/- \*\*Aktualisiert:\*\*/- **Updated:**/g;
   s/Keine Vorgänge\./No issues\./g;
   s/Keine Aufgaben\./No tasks\./g;

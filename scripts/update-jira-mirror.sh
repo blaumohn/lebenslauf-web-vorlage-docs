@@ -271,7 +271,7 @@ main() {
   log "Mirror: Erledigt"
   update_erledigt "$issues_file" "$subtasks_file"
   log "Mirror: Sprint-Board"
-  update_sprint_board "$issues_file" "$sprint_file"
+  update_sprint_board "$issues_file" "$subtasks_file" "$sprint_file"
 
   log "Mirror: Issue-Seiten"
   cleanup_stale_issue_dirs "$issues_file"
@@ -286,21 +286,21 @@ main() {
 fetch_issues() {
   out_file=$1
   atlassian jira http get \
-    '/rest/api/3/search/jql?jql=project%3DJ01%20AND%20issuetype%20!%3D%20Subtask&maxResults=5000&fields=key,summary,issuetype,status,updated,parent' \
+    '/rest/api/3/search/jql?jql=project%3DJ01%20AND%20issuetype%20!%3D%20Subtask&maxResults=5000&fields=key,summary,issuetype,status,updated,parent,labels,customfield_10020' \
     >"$out_file"
 }
 
 fetch_subtasks() {
   out_file=$1
   atlassian jira http get \
-    '/rest/api/3/search/jql?jql=project%3DJ01%20AND%20issuetype%3DSubtask&maxResults=5000&fields=key,summary,status,updated,parent,description' \
+    '/rest/api/3/search/jql?jql=project%3DJ01%20AND%20issuetype%3DSubtask&maxResults=5000&fields=key,summary,status,updated,parent,description,labels' \
     >"$out_file"
 }
 
 fetch_open_sprint() {
   out_file=$1
   atlassian jira http get \
-    '/rest/api/3/search/jql?jql=project%3DJ01%20AND%20issuetype%20!%3D%20Subtask%20AND%20sprint%20in%20openSprints%28%29&maxResults=5000&fields=key' \
+    '/rest/api/3/search/jql?jql=project%3DJ01%20AND%20sprint%20in%20openSprints%28%29&maxResults=5000&fields=key' \
     >"$out_file"
 }
 
@@ -356,7 +356,8 @@ update_erledigt() {
 
 update_sprint_board() {
   issues_file=$1
-  sprint_file=$2
+  subtasks_file=$2
+  sprint_file=$3
   tmp=$(mktemp)
 
   sprint_keys=$(jq -r '.issues[].key' <"$sprint_file" | sort | tr '\n' ' ')
@@ -364,6 +365,7 @@ update_sprint_board() {
   jq \
     --raw-output \
     --arg keys "$sprint_keys" \
+    --slurpfile subtasks "$subtasks_file" \
     '
       def keyset:
         ($keys | split(" ") | map(select(length>0)) | {keys: .}) | .keys;
@@ -371,36 +373,120 @@ update_sprint_board() {
       def in_sprint($k):
         (keyset | index($k)) != null;
 
-      def issue_line:
-        "- [\(.key) — \(.summary)]({{ \"/de/mirror/issues/\(.key)/\" | relative_url }})";
+      def sprint_role:
+        if (.labels | index("sprint-goal")) != null then
+          "goal"
+        elif (.labels | index("sprint-support")) != null then
+          "support"
+        elif (.labels | index("sprint-admin")) != null then
+          "admin"
+        elif (.labels | index("sprint-unplanned")) != null then
+          "unplanned"
+        else
+          "unclassified"
+        end;
 
-      def issues:
-        [ .issues[]
+      def status_bucket:
+        if (.status | ascii_downcase | test("review|prüfung")) then
+          "review"
+        else
+          .statusCategory
+        end;
+
+      def issue_line:
+        if .kind == "subtask" and (.hasDescription | not) then
+          "- **\(.key) — \(.summary)**"
+        elif .kind == "subtask" then
+          "- [\(.key) — \(.summary)]({{ \"/de/mirror/issues/\(.parent)/steps/\(.key)/\" | relative_url }})"
+        else
+          "- [\(.key) — \(.summary)]({{ \"/de/mirror/issues/\(.key)/\" | relative_url }})"
+        end;
+
+      def sprint_items($root):
+        [ $root.issues[]
           | {
+              kind: "issue",
               key: .key,
               summary: (.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)")),
-              statusCategory: .fields.status.statusCategory.key
+              status: .fields.status.name,
+              statusCategory: .fields.status.statusCategory.key,
+              labels: (.fields.labels // [])
             }
           | select(in_sprint(.key))
+        ]
+        +
+        [ ($subtasks[0].issues // [])[]
+          | {
+              kind: "subtask",
+              key: .key,
+              parent: .fields.parent.key,
+              summary: (.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)")),
+              status: .fields.status.name,
+              statusCategory: .fields.status.statusCategory.key,
+              labels: (.fields.labels // []),
+              hasDescription: (.fields.description != null)
+            }
+          | select(
+              in_sprint(.key)
+              or (
+                in_sprint(.parent)
+                and ((.labels | map(select(startswith("sprint-")))) | length > 0)
+              )
+            )
         ];
 
-      def bucket($cat):
-        (issues | map(select(.statusCategory == $cat)) | map(issue_line) | join("<br>"));
+      def role_label($role):
+        if $role == "goal" then
+          "Sprint-Ziel"
+        elif $role == "support" then
+          "Support"
+        elif $role == "admin" then
+          "Admin / Rahmen"
+        elif $role == "unplanned" then
+          "Ungeplant"
+        else
+          "Unklassifiziert"
+        end;
 
-      def bucket_or_dash($cat):
-        (bucket($cat) | if length == 0 then "-" else . end);
+      def bucket($root; $role; $bucket):
+        (
+          sprint_items($root)
+          | map(select(sprint_role == $role and status_bucket == $bucket))
+          | map(issue_line)
+          | join("<br>")
+        );
 
-      "---",
-      "layout: page",
-      "title: \"Jira-Übersicht: Sprint-Board\"",
-      "permalink: /de/mirror/sprint-board/",
-      "---",
-      "",
-      "Sprint-Board als statische Jira-Übersicht (ohne Jira-Cloud-Links).",
-      "",
-      "| Zu erledigen | In Bearbeitung | In Überprüfung | Erledigt |",
-      "|---|---|---|---|",
-      "| \(bucket_or_dash("new")) | \(bucket_or_dash("indeterminate")) | - | \(bucket_or_dash("done")) |"
+      def bucket_or_dash($root; $role; $bucket):
+        (bucket($root; $role; $bucket) | if length == 0 then "-" else . end);
+
+      . as $root
+      | "---",
+        "layout: page",
+        "title: \"Jira-Übersicht: Sprint-Board\"",
+        "permalink: /de/mirror/sprint-board/",
+        "---",
+        "",
+        "Sprint-Board als statische Jira-Übersicht (ohne Jira-Cloud-Links).",
+        "",
+        "| Kategorie | Zu erledigen | In Bearbeitung | In Überprüfung | Erledigt |",
+        "|---|---|---|---|---|",
+        (
+          ["goal", "support", "admin", "unplanned", "unclassified"]
+          | map(
+              "| "
+              + role_label(.)
+              + " | "
+              + bucket_or_dash($root; .; "new")
+              + " | "
+              + bucket_or_dash($root; .; "indeterminate")
+              + " | "
+              + bucket_or_dash($root; .; "review")
+              + " | "
+              + bucket_or_dash($root; .; "done")
+              + " |"
+            )
+          | join("\n")
+        )
     ' <"$issues_file" >"$tmp"
 
   write_if_changed mirror/sprint-board/index.md "$tmp"
@@ -607,7 +693,8 @@ update_issue_pages() {
         issuetype: .fields.issuetype.name,
         status: .fields.status.name,
         updated: .fields.updated,
-        parent: (.fields.parent.key // null)
+        parent: (.fields.parent.key // null),
+        sprints: (.fields.customfield_10020 // [])
       }
     | @base64
   ' <"$issues_file" | while read -r row; do
@@ -618,6 +705,12 @@ update_issue_pages() {
     status=$(printf '%s' "$issue" | jq -r '.status')
     updated=$(printf '%s' "$issue" | jq -r '.updated')
     parent=$(printf '%s' "$issue" | jq -r '.parent // empty')
+    sprint_names=$(printf '%s' "$issue" | jq -r '
+      .sprints
+      | map(.name // empty)
+      | unique
+      | if length == 0 then "-" else join(", ") end
+    ')
 
     out_file="mirror/issues/$key/index.md"
 
@@ -686,7 +779,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Key:** \`$key\`
 - **Typ:** $issuetype
 - **Status:** $status
-- **Sprint:** -
+- **Sprint:** $sprint_names
 - **Aktualisiert:** $updated
 
 ## Aufgaben
@@ -764,7 +857,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Key:** \`$key\`
 - **Typ:** $issuetype
 - **Status:** $status
-- **Sprint:** -
+- **Sprint:** $sprint_names
 - **Aktualisiert:** $updated
 EOF
       if [ -n "$parent_line" ]; then

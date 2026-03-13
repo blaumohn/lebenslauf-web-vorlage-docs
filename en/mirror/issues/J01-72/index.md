@@ -3,7 +3,7 @@ layout: page
 title: "J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte"
 permalink: /en/mirror/issues/J01-72/
 ---
-<!-- mirror:subtasks_cksum=2570779518 -->
+<!-- mirror:subtasks_cksum=2184261560 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -12,8 +12,8 @@ No Jira Cloud links, no email addresses.
 - **Key:** `J01-72`
 - **Type:** Task
 - **Status:** In Progress
-- **Sprint:** -
-- **Updated:** 2026-02-28T21:52:05.804+0100
+- **Sprint:** SCRUM Sprint 0, SCRUM Sprint 1
+- **Updated:** 2026-03-13T12:49:59.540+0100
 - **Parent:** [J01-84 — Atlassian-System vorbereiten (SSOT: Jira)]({{ "/en/mirror/issues/J01-84/" | relative_url }})
 
 ## Links
@@ -39,3 +39,4 @@ No Jira Cloud links, no email addresses.
 - **72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links)** — Done
 - [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/en/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — In Progress
 - [**72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern**]({{ "/en/mirror/issues/J01-72/steps/J01-92/" | relative_url }}) — In Progress
+- [**72-14 Scrum-Sprint-Rahmen und öffentliche Sprint-Historie in GitHub Pages**]({{ "/en/mirror/issues/J01-72/steps/J01-94/" | relative_url }}) — In Progress

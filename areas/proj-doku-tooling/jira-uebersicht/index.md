@@ -12,11 +12,14 @@ Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als statische Jira-Übe
 - [Sprint-Board]({{ "/de/mirror/sprint-board/" | relative_url }})
 - [Backlog]({{ "/de/mirror/backlog/" | relative_url }})
 - [Erledigt]({{ "/de/mirror/erledigt/" | relative_url }})
+- [Sprint-Historie]({{ "/de/work/sprints/" | relative_url }})
 
 ## Regeln (öffentlich)
 
 - Keine Jira-Cloud-Links.
 - Keine E-Mail-Adressen.
+- Das Sprint-Board gruppiert aktuelle Sprint-Arbeit nach Sprint-Kategorie und
+  Status.
 - Subtasks werden in Listen standardmäßig **ohne Key** gezeigt (nur Schritt-Nr/Titel/Zustand).
 - Subtasks bekommen nur dann eine eigene Seite, wenn sie zusätzliche Angaben enthalten.
   - Hinweis: Die Schritt-Seiten sind stabil per Subtask-Key adressiert

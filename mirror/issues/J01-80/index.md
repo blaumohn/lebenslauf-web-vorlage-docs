@@ -12,7 +12,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Key:** `J01-80`
 - **Typ:** Task
 - **Status:** Erledigt
-- **Sprint:** -
+- **Sprint:** SCRUM Sprint 0
 - **Aktualisiert:** 2026-02-24T23:39:54.046+0100
 
 ## Links

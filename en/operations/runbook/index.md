@@ -26,6 +26,8 @@ Update the public static Jira mirror in this repo:
 ## Steps
 
 1) Update issues and statuses in Jira (SSOT for issue state).
+   - For sprint work, also verify the active sprint, set sprint labels, and
+     update the public sprint docs.
 
 2) Generate the Jira mirror:
 
@@ -44,10 +46,12 @@ sh scripts/update-jira-mirror.sh --full
    - Subtasks with public details do get a step page.
 
 4) Hygiene:
-   - No `atlassian.net` links in the output
-   - No email addresses in the output
-   - Remote links are rendered as relative site links
-   - The EN mirror is synchronized after the DE render
+  - No `atlassian.net` links in the output
+  - No email addresses in the output
+  - Remote links are rendered as relative site links
+  - The sprint board groups current sprint work by category labels
+    (`sprint-goal`, `sprint-support`, `sprint-admin`, `sprint-unplanned`)
+  - The EN mirror is synchronized after the DE render
 
 ## Rollback
 
@@ -56,5 +60,6 @@ sh scripts/update-jira-mirror.sh --full
 ## Monitoring
 
 - Sprint board, backlog, and done match Jira status categories.
+- The sprint board has dedicated row groups for sprint categories.
 - Issue and step pages carry an `Updated` timestamp from Jira.
 - `git` remains the reliable history: diffs only appear when content changes.

@@ -43,18 +43,23 @@ permalink: /de/policies/doku-richtlinie/
    - Typische Inhalte:
      Scope, offene Entscheidungen, Nachweise, Mapping, Zwischenstände.
 
-7) Ist der Inhalt ein Drift-Befund?
+7) Ist der Inhalt sprint-genau und öffentlich als Sprint-Artefakt gedacht?
+   - Ja: nach `work/sprints/<sprint-slug>/`.
+   - Typische Inhalte:
+     Planning, Review, Retro, Carry-over, Scope-Änderungen.
+
+8) Ist der Inhalt ein Drift-Befund?
    - Ja: nach `quality/drift-reports/J01-<KEY>/`.
    - Nur für Behauptung ↔ Quelle ↔ Status ↔ Fix, nicht für allgemeine
      Fachbeschreibung.
 
-8) Gilt der Inhalt über einen einzelnen Vorgang hinaus stabil?
+9) Gilt der Inhalt über einen einzelnen Vorgang hinaus stabil?
    - Ja: auf die kanonische Fachseite unter `areas/`, `operations/`,
      `policies/`, `decisions/` oder `quality/`.
    - Vorgangs- oder Drift-Seiten verlinken dorthin, sobald der Inhalt stabil
      genug ist.
 
-9) Gibt es für den Dokutyp eine gepflegte Vorlage?
+10) Gibt es für den Dokutyp eine gepflegte Vorlage?
    - Ja: Typ ist grundsätzlich freigegeben.
    - Nein: erst Policy-Delta + `templates/<typ>/` + kanonisches URI-Muster
      festziehen, dann nutzen.
@@ -85,11 +90,13 @@ Repo: lebenslauf-web-vorlage – Überblick (Startseite)
 - Planung & Veröffentlichung
   - Jira-Übersichten (intern)
   - Jira-Übersicht (öffentlich, statisch)
+  - Sprint-Historie (öffentlich)
 
 3. Vorlagen
 - ADR-Vorlage
 - KEP-Lite-Vorlage
 - Runbook-Vorlage
+- Sprint-Dossier-Vorlage
 - Testmatrix-Vorlage
 - Richtlinie/Überblick-Vorlage
 ```
@@ -124,13 +131,20 @@ G) **Drift-Reports sind nur für belegte Abweichungen**
 - `quality/drift-reports/` dokumentiert Claim/Quelle/Status/Fix.
 - Es ist kein Ersatz für Bereichsdoku, Richtlinie oder Vorgangsnotiz.
 
-H) **Jeder Dokutyp braucht eine Vorlage**
+H) **`work/sprints/` ist sprint-genau**
+- Dorthin gehören öffentliche, geglättete Sprint-Artefakte:
+  Planning, Review, Retro, Carry-over, Scope-Änderungen.
+- Jira bleibt operativer SSOT für Sprint-Zustand und Labels.
+- Das `tagebuch` liefert den feineren Rohstoff für Denk- und Arbeitsverlauf.
+
+I) **Jeder Dokutyp braucht eine Vorlage**
 - Standard-Dokutypen in diesem Repo sind nur Typen mit gepflegter Vorlage unter
   `templates/`.
 - Bevorzugt werden etablierte Typen wie `ADR`, `KEP-Lite`, `Runbook`,
-  `Richtlinie/Überblick`, `Testmatrix`, `Drift-Report`, `Postmortem`.
+  `Richtlinie/Überblick`, `Sprint-Dossier`, `Testmatrix`,
+  `Drift-Report`, `Postmortem`.
 
-I) **Neue Dokutypen brauchen Policy + URI-Muster**
+J) **Neue Dokutypen brauchen Policy + URI-Muster**
 - Ein neuer Typ (z. B. Glossar, Abnahmecheck) ist erst freigegeben, wenn
   Vorlage, Vorlagenindex, Policy-Regel und kanonisches URI-/Pfadmuster
   festgezogen sind.
