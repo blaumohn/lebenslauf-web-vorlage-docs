@@ -20,6 +20,9 @@ Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als statische Jira-Übe
 - Keine E-Mail-Adressen.
 - Das Sprint-Board gruppiert aktuelle Sprint-Arbeit nach Sprint-Kategorie und
   Status.
+- Im Sprint-Board erscheinen nur dieselben Top-Level-Vorgänge wie im
+  Jira-Board; Schritte bleiben beim Parent-Vorgang und in der Sprint-Doku
+  sichtbar.
 - Subtasks werden in Listen standardmäßig **ohne Key** gezeigt (nur Schritt-Nr/Titel/Zustand).
 - Subtasks bekommen nur dann eine eigene Seite, wenn sie zusätzliche Angaben enthalten.
   - Hinweis: Die Schritt-Seiten sind stabil per Subtask-Key adressiert

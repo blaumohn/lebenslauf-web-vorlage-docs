@@ -21,6 +21,9 @@ working style stays publicly understandable.
 - sprint category labels introduced
 - public sprint history added under `work/sprints/`
 - sprint board changed to categories × status
+- mirror board aligned with the Jira board:
+  `J01-94` remains a step under `J01-72` and no longer appears as its own
+  board item
 
 ## Next steps
 

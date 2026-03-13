@@ -51,6 +51,8 @@ sh scripts/update-jira-mirror.sh --full
   - Remote links are rendered as relative site links
   - The sprint board groups current sprint work by category labels
     (`sprint-goal`, `sprint-support`, `sprint-admin`, `sprint-unplanned`)
+  - The sprint board only shows the same top-level issues as the Jira board;
+    steps stay visible on parent and step pages.
   - The EN mirror is synchronized after the DE render
 
 ## Rollback

@@ -53,6 +53,8 @@ sh scripts/update-jira-mirror.sh --full
   - Remote Links zeigen nicht als absolute Doku-Domain, sondern als relative Site-Links.
   - Sprint-Board gruppiert die aktuelle Sprint-Arbeit nach Kategorie-Labels
     (`sprint-goal`, `sprint-support`, `sprint-admin`, `sprint-unplanned`).
+  - Im Sprint-Board erscheinen nur dieselben Top-Level-Vorgänge wie im
+    Jira-Board; Schritte bleiben auf Parent-/Step-Seiten sichtbar.
   - Nach dem DE-Render wird der EN-Mirror als abgeleitete Kopie synchronisiert.
 
 ## Rollback

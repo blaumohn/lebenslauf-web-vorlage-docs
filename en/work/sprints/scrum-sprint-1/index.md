@@ -33,7 +33,8 @@ Finish the preview deployment.
 ### Admin / framework
 
 - [J01-72]({{ "/en/mirror/issues/J01-72/" | relative_url }})
-- [J01-94]({{ "/en/work/jira/J01-94/" | relative_url }})
+- [J01-94]({{ "/en/work/jira/J01-94/" | relative_url }}) as a public
+  sprint/mirror step under `J01-72`, not as its own board entry
 
 ## Scope rules
 

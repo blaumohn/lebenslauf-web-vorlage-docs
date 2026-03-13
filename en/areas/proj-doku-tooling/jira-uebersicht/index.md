@@ -19,6 +19,8 @@ Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als statische Jira-Übe
 - Keine Jira-Cloud-Links.
 - Keine E-Mail-Adressen.
 - The sprint board groups current sprint work by sprint category and status.
+- The sprint board only shows the same top-level issues as the Jira board;
+  steps stay visible on the parent issue and in the sprint dossier.
 - Subtasks werden in Listen standardmäßig **ohne Key** gezeigt (nur Schritt-Nr/Titel/Zustand).
 - Subtasks bekommen nur dann eine eigene Seite, wenn sie zusätzliche Angaben enthalten.
   - Hinweis: Die Schritt-Seiten sind stabil per Subtask-Key adressiert

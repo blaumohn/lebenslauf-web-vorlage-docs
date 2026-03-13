@@ -22,6 +22,9 @@ vereinheitlichen, dass die Arbeitsweise öffentlich nachvollziehbar bleibt.
 - Sprint-Kategorien per Label eingeführt
 - öffentliche Sprint-Historie unter `work/sprints/` ergänzt
 - Sprint-Board im Mirror auf Kategorien × Status umgestellt
+- Mirror-Board an das Jira-Board angeglichen:
+  `J01-94` bleibt Schritt unter `J01-72` und erscheint dort nicht als eigener
+  Board-Vorgang
 
 ## Nächste Schritte
 

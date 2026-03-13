@@ -271,7 +271,7 @@ main() {
   log "Mirror: Erledigt"
   update_erledigt "$issues_file" "$subtasks_file"
   log "Mirror: Sprint-Board"
-  update_sprint_board "$issues_file" "$subtasks_file" "$sprint_file"
+  update_sprint_board "$issues_file" "$sprint_file"
 
   log "Mirror: Issue-Seiten"
   cleanup_stale_issue_dirs "$issues_file"
@@ -356,8 +356,7 @@ update_erledigt() {
 
 update_sprint_board() {
   issues_file=$1
-  subtasks_file=$2
-  sprint_file=$3
+  sprint_file=$2
   tmp=$(mktemp)
 
   sprint_keys=$(jq -r '.issues[].key' <"$sprint_file" | sort | tr '\n' ' ')
@@ -365,7 +364,6 @@ update_sprint_board() {
   jq \
     --raw-output \
     --arg keys "$sprint_keys" \
-    --slurpfile subtasks "$subtasks_file" \
     '
       def keyset:
         ($keys | split(" ") | map(select(length>0)) | {keys: .}) | .keys;
@@ -394,18 +392,11 @@ update_sprint_board() {
         end;
 
       def issue_line:
-        if .kind == "subtask" and (.hasDescription | not) then
-          "- **\(.key) — \(.summary)**"
-        elif .kind == "subtask" then
-          "- [\(.key) — \(.summary)]({{ \"/de/mirror/issues/\(.parent)/steps/\(.key)/\" | relative_url }})"
-        else
-          "- [\(.key) — \(.summary)]({{ \"/de/mirror/issues/\(.key)/\" | relative_url }})"
-        end;
+        "- [\(.key) — \(.summary)]({{ \"/de/mirror/issues/\(.key)/\" | relative_url }})";
 
       def sprint_items($root):
         [ $root.issues[]
           | {
-              kind: "issue",
               key: .key,
               summary: (.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)")),
               status: .fields.status.name,
@@ -413,26 +404,6 @@ update_sprint_board() {
               labels: (.fields.labels // [])
             }
           | select(in_sprint(.key))
-        ]
-        +
-        [ ($subtasks[0].issues // [])[]
-          | {
-              kind: "subtask",
-              key: .key,
-              parent: .fields.parent.key,
-              summary: (.fields.summary | gsub("\\(SSOT\\)"; "(SSOT: Jira)")),
-              status: .fields.status.name,
-              statusCategory: .fields.status.statusCategory.key,
-              labels: (.fields.labels // []),
-              hasDescription: (.fields.description != null)
-            }
-          | select(
-              in_sprint(.key)
-              or (
-                in_sprint(.parent)
-                and ((.labels | map(select(startswith("sprint-")))) | length > 0)
-              )
-            )
         ];
 
       def role_label($role):
