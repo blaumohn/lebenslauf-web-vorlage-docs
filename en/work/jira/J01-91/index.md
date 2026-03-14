@@ -23,6 +23,10 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
   repo and the docs repo.
 - The public entry path now states clearly:
   regular project docs do not live under `docs/` inside the app repo.
+- `#start` remains an intentional page anchor; duplicate quickstart commands
+  are avoided there.
+- Mirror links derived from Jira remote links are normalized to stable
+  language-specific public docs targets.
 
 ## Arbeitsprinzip (kurz)
 

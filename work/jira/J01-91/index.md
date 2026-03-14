@@ -23,6 +23,10 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
   auf App-Repo und Doku-Repo.
 - Der öffentliche Einstieg stellt klar:
   reguläre Projektdoku liegt nicht unter `docs/` im App-Repo.
+- `#start` bleibt als bewusster Seitenanker erhalten; doppelte
+  Quickstart-Befehle werden dort vermieden.
+- Mirror-Links aus Jira-Remote-Links werden für sprachgebundene Doku-Ziele
+  sprachstabil normalisiert.
 
 ## Arbeitsprinzip (kurz)
 

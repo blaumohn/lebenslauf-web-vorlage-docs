@@ -4,20 +4,10 @@ title: Einstieg / Quickstart
 permalink: /de/getting-started/
 ---
 
-```bash
-composer install
-```
+## Start
 
-```bash
-php bin/cli setup dev
-```
-
-```bash
-php bin/cli run dev
-```
-
-Hinweis: vor dem ersten Start `.local/dev-runtime.yaml` anlegen
-(siehe `src/resources/config/dev-runtime.yaml`).
+Die Quickstart-Befehle bleiben im `README.md` des App-Repos.
+Diese Seite erklärt den öffentlichen Doku-Ort und den SSOT-Kontext.
 
 ## Repos und Doku-Ort
 

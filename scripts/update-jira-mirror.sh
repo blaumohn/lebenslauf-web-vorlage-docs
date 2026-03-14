@@ -99,7 +99,32 @@ render_public_remotelinks_md() {
   # wir nur eine harte Allowlist (Doku-Domain).
   json=$(atlassian jira http get "/rest/api/3/issue/$issue_key/remotelink" 2>/dev/null || printf '[]')
 
-  printf '%s' "$json" | jq -r --arg base 'https://docs.template.ysdani.com/' '
+  printf '%s' "$json" | jq -r --arg base 'https://docs.template.ysdani.com/' --arg lang 'de' '
+    def docs_path:
+      (.url | sub($base; "/")) as $path
+      | if $path == "" then "/" else $path end;
+
+    def is_neutral_path($path):
+      ($path == "/" or $path == "/index.html");
+
+    def is_localized_path($path):
+      ($path | test("^/(de|en)(/|$)"));
+
+    def is_language_bound_path($path):
+      ($path | test("^/(areas|decisions|operations|policies|quality|templates|work|mirror)(/|$)"));
+
+    def public_path($lang):
+      docs_path as $path
+      | if is_neutral_path($path) then
+          $path
+        elif is_localized_path($path) then
+          $path
+        elif is_language_bound_path($path) then
+          "/" + $lang + $path
+        else
+          $path
+        end;
+
     [ .[]?
       | .object?
       | select(.url? != null)
@@ -120,7 +145,7 @@ render_public_remotelinks_md() {
           "- ["
           + .title
           + "]({{ \""
-          + (.url | sub($base; "/"))
+          + (public_path($lang))
           + "\" | relative_url }})"
         )
         | join("\n")
