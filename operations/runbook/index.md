@@ -43,14 +43,30 @@ Optional (on demand, „neu baselinen“):
 sh scripts/update-jira-mirror.sh --full
 ```
 
-3) Stichprobe (inhaltlich):
+3) GitHub-Pages-Ziele aus Jira lokal bestätigen:
+
+```bash
+sh scripts/verify-jira-ghpages-links.sh
+```
+
+Dabei gilt für die Umwandlung aus Jira-URLs:
+
+- `https://docs.template.ysdani.com/...` wird zu einer site-relativen URI.
+- neutrale Seiten bleiben nur `/` oder `/index.html`
+- sprachgebundene Seiten werden im DE-Kontext auf `/de/...` und im EN-Kontext
+  auf `/en/...` bestätigt
+- bestätigt wird lokal gegen dieses GitHub-Pages-Repo
+
+4) Stichprobe (inhaltlich):
    - Subtasks ohne Angaben haben **keine** eigene Seite (nur Schritt-Nr/Titel/Zustand beim Parent).
    - Subtasks mit Angaben haben eine Schritt-Seite (URL enthält den Subtask-Key; Linktext bleibt ParentNr-SchrittNr).
 
-4) Hygiene (Policy):
+5) Hygiene (Policy):
   - Keine `atlassian.net` Links im Output.
   - Keine E-Mail-Adressen im Output.
-  - Remote Links zeigen nicht als absolute Doku-Domain, sondern als relative Site-Links.
+- Remote Links zeigen nicht als absolute Doku-Domain, sondern als relative Site-Links.
+- Remote Links folgen im Mirror dem Sprachkontext der Seite
+  (`/de/...` auf DE-Seiten, `/en/...` auf EN-Seiten).
   - Sprint-Board gruppiert die aktuelle Sprint-Arbeit nach Kategorie-Labels
     (`sprint-goal`, `sprint-support`, `sprint-admin`, `sprint-unplanned`).
   - Im Sprint-Board erscheinen nur dieselben Top-Level-Vorgänge wie im
@@ -67,3 +83,5 @@ sh scripts/update-jira-mirror.sh --full
 - Das Sprint-Board zeigt die Sprint-Kategorien in eigener Zeilenstruktur.
 - Issue-/Step-Seiten enthalten je Vorgang `**Aktualisiert:** …` (Jira-Quelle).
 - `git` ist die verlässliche Historie: Diffs entstehen nur bei Inhaltsänderung.
+- `scripts/verify-jira-ghpages-links.sh` bestätigt die aus Jira importierten
+  GitHub-Pages-Ziele lokal für DE und EN.

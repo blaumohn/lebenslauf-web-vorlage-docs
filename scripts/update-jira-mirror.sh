@@ -118,7 +118,7 @@ render_public_remotelinks_md() {
       | if is_neutral_path($path) then
           $path
         elif is_localized_path($path) then
-          $path
+          ($path | sub("^/(de|en)(?=/|$)"; "/" + $lang))
         elif is_language_bound_path($path) then
           "/" + $lang + $path
         else

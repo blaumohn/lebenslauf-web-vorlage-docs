@@ -41,14 +41,30 @@ Optional (full refresh):
 sh scripts/update-jira-mirror.sh --full
 ```
 
-3) Spot check:
+3) Verify GitHub Pages targets from Jira locally:
+
+```bash
+sh scripts/verify-jira-ghpages-links.sh
+```
+
+The URL conversion from Jira follows these rules:
+
+- `https://docs.template.ysdani.com/...` becomes a site-relative URI
+- neutral pages remain only `/` or `/index.html`
+- language-bound pages are verified as `/de/...` in DE context and `/en/...`
+  in EN context
+- verification runs against this local GitHub Pages repo
+
+4) Spot check:
    - Subtasks without public details do **not** get their own page.
    - Subtasks with public details do get a step page.
 
-4) Hygiene:
+5) Hygiene:
   - No `atlassian.net` links in the output
   - No email addresses in the output
   - Remote links are rendered as relative site links
+  - Remote links follow the language context of the page
+    (`/de/...` on DE pages, `/en/...` on EN pages)
   - The sprint board groups current sprint work by category labels
     (`sprint-goal`, `sprint-support`, `sprint-admin`, `sprint-unplanned`)
   - The sprint board only shows the same top-level issues as the Jira board;
@@ -65,3 +81,5 @@ sh scripts/update-jira-mirror.sh --full
 - The sprint board has dedicated row groups for sprint categories.
 - Issue and step pages carry an `Updated` timestamp from Jira.
 - `git` remains the reliable history: diffs only appear when content changes.
+- `scripts/verify-jira-ghpages-links.sh` verifies imported GitHub Pages targets
+  locally for both DE and EN.

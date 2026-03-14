@@ -4,7 +4,7 @@ title: "J01-93: make GitHub Pages and the Jira mirror bilingual"
 permalink: /en/work/jira/J01-93/
 ---
 
-**Status date:** 2026-03-12
+**Status date:** 2026-03-14
 
 Canonical public work status for `J01-93`.
 This task introduces the public docs and Jira mirror as a neutral bilingual
@@ -25,13 +25,17 @@ language switching on corresponding pages.
 - DE/EN structure for public pages
 - DE/EN structure for `mirror/`
 - Required EN follow-up whenever mirror content changes
+- Jira remote links to GitHub Pages are verified in the mirror as relative site
+  links and follow the language context of the target page
 
-## Next steps
+## Current status
 
-1. Move the Jekyll structure to DE/EN URLs.
-2. Make the header and navigation language-aware.
-3. Extend the mirror generator to produce DE/EN output.
-4. Adjust preview so both language trees are available in one run.
+- GitHub Pages and the mirror run under `/de/...` and `/en/...`.
+- Jira remote links are converted to site-relative paths in the mirror.
+- Language-bound GitHub Pages targets are shown as `/de/...` in the DE mirror
+  and `/en/...` in the EN mirror.
+- A local verification step checks imported GitHub Pages targets directly
+  against this repo.
 
 ## Acceptance
 
@@ -43,6 +47,9 @@ language switching on corresponding pages.
 - The multiline site title still reads as one single link without oversized
   vertical spacing between wrapped lines.
 - Mirror changes without EN follow-up are visibly blocked.
+- Imported Jira links no longer show the absolute docs domain in the mirror.
+- Imported Jira links are verified locally against the available GitHub Pages
+  targets.
 
 ## Links
 
