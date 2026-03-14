@@ -17,9 +17,9 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Aufgaben
 
-- [J01-68 — Production: Betriebsdoku und Runbook]({{ "/de/mirror/issues/J01-68/" | relative_url }})
-- [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/de/mirror/issues/J01-65/" | relative_url }})
 - [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/de/mirror/issues/J01-62/" | relative_url }})
+- [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/de/mirror/issues/J01-65/" | relative_url }})
+- [J01-68 — Production: Betriebsdoku und Runbook]({{ "/de/mirror/issues/J01-68/" | relative_url }})
 
 ## Links
 

@@ -36,6 +36,16 @@ Sprachwechsel direkt auf den jeweiligen Gegen-Seiten.
   EN-Mirror auf `/en/...` gezeigt.
 - Eine lokale Prüfung bestätigt die aus Jira importierten GitHub-Pages-Ziele
   direkt gegen dieses Repo.
+- Der Vorgang ist in Jira auf `Erledigt` gesetzt; öffentlicher Stand und Mirror
+  sind nachgezogen.
+
+## Abschluss
+
+- Die zweisprachige GitHub-Pages-Struktur für Doku und Mirror ist umgesetzt.
+- Die Linknormalisierung und lokale Zielprüfung für importierte Jira-Links
+  laufen im aktuellen Betrieb mit.
+- Offene Restarbeit liegt nicht mehr in `J01-93`, sondern bei späteren
+  Folgeschritten.
 
 ## Abnahme
 

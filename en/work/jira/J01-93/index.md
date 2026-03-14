@@ -36,6 +36,15 @@ language switching on corresponding pages.
   and `/en/...` in the EN mirror.
 - A local verification step checks imported GitHub Pages targets directly
   against this repo.
+- The issue is now set to `Done` in Jira; the public status and mirror were
+  pulled forward accordingly.
+
+## Completion
+
+- The bilingual GitHub Pages structure for docs and mirror is in place.
+- Link normalization and local target verification for imported Jira links are
+  part of the current workflow.
+- Any remaining work now belongs to later follow-up steps, not to `J01-93`.
 
 ## Acceptance
 

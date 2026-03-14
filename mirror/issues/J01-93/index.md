@@ -11,9 +11,9 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 - **Key:** `J01-93`
 - **Typ:** Task
-- **Status:** In Bearbeitung
+- **Status:** Erledigt
 - **Sprint:** SCRUM Sprint 1
-- **Aktualisiert:** 2026-03-13T12:50:00.267+0100
+- **Aktualisiert:** 2026-03-14T10:39:42.291+0100
 - **Parent:** [J01-6 — i18n für Seitenvorlagen und Templates]({{ "/de/mirror/issues/J01-6/" | relative_url }})
 
 ## Links

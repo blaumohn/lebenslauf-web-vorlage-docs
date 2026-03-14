@@ -53,7 +53,6 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
 - [J01-49 — i18n: Template-Texte i18n-fähig machen]({{ "/de/mirror/issues/J01-49/" | relative_url }})
   - 49-1 Template-Text-Keys definieren — Zu erledigen
   - 49-2 DE/EN Mindestumfang liefern — Zu erledigen
-- [J01-93 — i18n: GitHub Pages und Jira-Spiegel zweisprachig machen]({{ "/de/mirror/issues/J01-93/" | relative_url }})
 
 ### [J01-7 — Production Deployment]({{ "/de/mirror/issues/J01-7/" | relative_url }})
 
@@ -96,8 +95,8 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
   - 72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links) — Erledigt
   - [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/de/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — In Bearbeitung
   - [**72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern**]({{ "/de/mirror/issues/J01-72/steps/J01-92/" | relative_url }}) — In Bearbeitung
-  - [**72-14 Scrum-Sprint-Rahmen und öffentliche Sprint-Historie in GitHub Pages**]({{ "/de/mirror/issues/J01-72/steps/J01-94/" | relative_url }}) — In Bearbeitung
-  - [**72-15 Journalisierten Jira-/Pages-Sync mit Resume aufbauen**]({{ "/de/mirror/issues/J01-72/steps/J01-95/" | relative_url }}) — In Bearbeitung
+  - [**72-14 Scrum-Sprint-Rahmen und öffentliche Sprint-Historie in GitHub Pages**]({{ "/de/mirror/issues/J01-72/steps/J01-94/" | relative_url }}) — Erledigt
+  - [**72-15 Journalisierten Jira-/Pages-Sync mit Resume aufbauen**]({{ "/de/mirror/issues/J01-72/steps/J01-95/" | relative_url }}) — Erledigt
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/de/mirror/issues/J01-85/" | relative_url }})
   - 85-1 Refactor: Coding-Standards durchgehend umsetzen — Zu erledigen
   - 85-2 API-Betriebe (Wrapper), http als Escape-Hatch — Zu erledigen

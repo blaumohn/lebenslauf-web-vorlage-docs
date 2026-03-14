@@ -27,6 +27,8 @@ Normalmodus jedes Mal projektweite Jira-Listenabfragen zu brauchen.
   - Link-Änderungen aus Git-Diff ableiten
   - betroffene Jira-Keys lokal aus `mirror/` rückwärts finden
 - `atlassian jira ext remotelink sync` für gezielte Docs-Link-Synchronisierung
+- Der Vorgang ist in Jira auf `Erledigt` gesetzt; gezielte Status- und
+  Remote-Link-Läufe für `J01-95` wurden erfolgreich nachgezogen.
 
 ## V1-Regeln
 
@@ -38,13 +40,14 @@ Normalmodus jedes Mal projektweite Jira-Listenabfragen zu brauchen.
   Jira; andere Jira-Inhalte bleiben außerhalb dieses Pfads.
 - Vollsync bleibt Reparaturmodus und nicht der Normalweg.
 
-## Nächste Schritte
+## Abschluss
 
-1. Journalpfad gegen reale Jira- und Pages-Änderungen trocken durchspielen.
-2. Resume-Verhalten auf Abbruchstellen schärfen und mit gezielten Fehlerfällen
-   prüfen.
-3. Nach stabiler Nutzung entscheiden, ob weitere Änderungsklassen oder ein
-   stärkerer Remote-Link-Abgleich nötig sind.
+- V1 liefert einen journalisierten Normalmodus für bekannte Jira- und
+  GitHub-Pages-Änderungen.
+- Resume, gezielte Verifikation und der Reparaturweg über Vollsync sind im
+  Betrieb verankert.
+- Weitere Schärfung betrifft nur spätere Erweiterungen, nicht mehr die
+  Grundfunktion.
 
 ## Links
 

@@ -27,6 +27,8 @@ project-wide Jira list queries in the normal mode.
   - derive link changes from Git diffs
   - find affected Jira keys locally from `mirror/`
 - `atlassian jira ext remotelink sync` for targeted docs link synchronization
+- The issue is now set to `Done` in Jira; targeted status and remote-link runs
+  for `J01-95` were pulled through successfully.
 
 ## V1 Rules
 
@@ -38,13 +40,12 @@ project-wide Jira list queries in the normal mode.
   imported from Jira; other Jira content stays outside this path.
 - Full sync remains a repair mode, not the default path.
 
-## Next steps
+## Completion
 
-1. Dry-run the journal path against real Jira and pages changes.
-2. Tighten resume behavior for interrupted runs and verify explicit failure
-   cases.
-3. Decide later whether extra change classes or a stronger remote-link
-   reconcile mode are needed.
+- V1 delivers a journaled normal mode for known Jira and GitHub Pages changes.
+- Resume, targeted verification, and the full-sync repair path are now part of
+  the workflow.
+- Any further work is about later extensions, not the core capability.
 
 ## Links
 

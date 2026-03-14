@@ -4,7 +4,7 @@ title: "J01-94: Scrum-Sprint-Rahmen und öffentliche Sprint-Historie"
 permalink: /de/work/jira/J01-94/
 ---
 
-**Stand:** 2026-03-13
+**Stand:** 2026-03-14
 
 Kanonischer öffentlicher Arbeitsstand für `J01-94`.
 Der Vorgang zieht den Sprint-Rahmen in Jira, GitHub Pages und Mirror auf eine
@@ -25,12 +25,15 @@ vereinheitlichen, dass die Arbeitsweise öffentlich nachvollziehbar bleibt.
 - Mirror-Board an das Jira-Board angeglichen:
   `J01-94` bleibt Schritt unter `J01-72` und erscheint dort nicht als eigener
   Board-Vorgang
+- Der Vorgang ist in Jira auf `Erledigt` gesetzt; öffentlicher Stand und Mirror
+  sind nachgezogen.
 
-## Nächste Schritte
+## Abschluss
 
-1. Sprint-Doku im laufenden Sprint aktuell halten.
-2. Öffentliche GitHub-Pages-Wirksamkeit für Zielgruppen weiter schärfen.
-3. Spiegel-/Sprint-Betrieb bei Bedarf weiter automatisieren.
+- Sprint-Zustand, öffentliche Historie und Sprint-Kategorien sind in Jira,
+  GitHub Pages und Mirror auf denselben Rahmen gebracht.
+- Weitere Pflege läuft als laufender Sprint-/Betriebsprozess, nicht mehr als
+  offener Kernschritt von `J01-94`.
 
 ## Links
 
