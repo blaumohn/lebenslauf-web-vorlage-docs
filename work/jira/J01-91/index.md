@@ -4,7 +4,7 @@ title: "J01-91: Zustand/Vorhaben (Snapshot)"
 permalink: /de/work/jira/J01-91/
 ---
 
-**Stand:** 2026-03-09
+**Stand:** 2026-03-14
 
 Kanonischer Ort für den öffentlichen Zustand/das Vorhaben zu `J01-91` (Snapshot).
 Die öffentliche Doku ist SSOT in GitHub Pages; `mirror/` ist abgeleitet.
@@ -14,6 +14,15 @@ Der lebende Vorgangsstatus bleibt in Jira (nicht öffentlich).
 
 Die Doku-Struktur konsolidieren und die öffentlich nutzbare Doku in GitHub Pages
 so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
+
+## Delta 2026-03-14
+
+- App-README und EN-README verweisen jetzt branch-neutral auf GitHub Pages und
+  das passende GitHub-Repo.
+- Die GitHub-Pages-Einstiegsseiten `/de/` und `/en/` verlinken jetzt sichtbar
+  auf App-Repo und Doku-Repo.
+- Der öffentliche Einstieg stellt klar:
+  reguläre Projektdoku liegt nicht unter `docs/` im App-Repo.
 
 ## Arbeitsprinzip (kurz)
 
@@ -27,7 +36,7 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
 1. Entscheidungen schließen (siehe „Entscheidungen (Abstimmung)“).
 2. Archiv-Themen finalisieren: pro Thema „übernehmen ja/nein/offen“ + Zielpfad.
 3. Policy-Deltas (nach Abstimmung) in `policies/doku-richtlinie/` übernehmen.
-4. Daraus ableiten: Phase 2 priorisieren und in Jira als konkrete Arbeitspakete führen.
+4. Weitere öffentliche Fachseiten nur noch von GitHub Pages aus verlinken.
 
 ## Phase 1: Status (DoD, Snapshot)
 

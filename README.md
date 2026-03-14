@@ -4,6 +4,13 @@
 Inhalte wurden aus früheren Quellen migriert und sind hier konsolidiert
 (öffentliche Doku + statische Jira-Übersicht).
 
+- Öffentliche Site: <https://docs.template.ysdani.com/de/>
+- App-Repo: <https://github.com/blaumohn/lebenslauf-web-vorlage>
+- Doku-Repo: <https://github.com/blaumohn/lebenslauf-web-vorlage-docs>
+
+Das App-Repo enthält den Quelltext.
+Reguläre Projektdoku liegt nicht unter `docs/` im App-Repo, sondern hier.
+
 ## Betrieb (lokale Vorschau)
 
 Siehe Runbook: `operations/ghpages-preview/`.

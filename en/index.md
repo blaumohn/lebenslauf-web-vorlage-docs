@@ -6,9 +6,17 @@ permalink: /en/
 
 Portfolio project: modular CV template (PHP + Twig).
 
-## Start
+## Entry
 
 - [Getting started / quickstart]({{ "/en/getting-started/" | relative_url }})
+
+## Repositories
+
+- [App repo](https://github.com/blaumohn/lebenslauf-web-vorlage)
+- [GitHub Pages repo](https://github.com/blaumohn/lebenslauf-web-vorlage-docs)
+
+Public docs live in GitHub Pages.
+The app repo contains source code, but no regular project docs under `docs/`.
 
 ## Areas
 

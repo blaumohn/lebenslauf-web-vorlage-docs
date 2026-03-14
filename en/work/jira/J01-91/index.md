@@ -4,7 +4,7 @@ title: "J01-91: Zustand/Vorhaben (Snapshot)"
 permalink: /en/work/jira/J01-91/
 ---
 
-**Stand:** 2026-03-09
+**Stand:** 2026-03-14
 
 Kanonischer Ort für den öffentlichen Zustand/das Vorhaben zu `J01-91` (Snapshot).
 Die öffentliche Doku ist SSOT in GitHub Pages; `mirror/` ist abgeleitet.
@@ -15,6 +15,15 @@ Der lebende Vorgangsstatus bleibt in Jira (nicht öffentlich).
 Die Doku-Struktur konsolidieren und die öffentlich nutzbare Doku in GitHub Pages
 so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
 
+## Delta 2026-03-14
+
+- The app README and EN README now link to GitHub Pages and the matching
+  GitHub repositories without pinning a branch URL.
+- The GitHub Pages entry pages `/de/` and `/en/` now link visibly to the app
+  repo and the docs repo.
+- The public entry path now states clearly:
+  regular project docs do not live under `docs/` inside the app repo.
+
 ## Arbeitsprinzip (kurz)
 
 - GitHub Pages ist SSOT für Doku (öffentlich, inkl. Seiten für Jira-Links).
@@ -24,10 +33,10 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
 
 ## Jetzt als Nächstes (konkret)
 
-1. Entscheidungen schließen (siehe „Entscheidungen (Abstimmung)“).
-2. Archiv-Themen finalisieren: pro Thema „übernehmen ja/nein/offen“ + Zielpfad.
-3. Policy-Deltas (nach Abstimmung) in `policies/doku-richtlinie/` übernehmen.
-4. Daraus ableiten: Phase 2 priorisieren und in Jira als konkrete Arbeitspakete führen.
+1. Close the remaining decisions (see "Entscheidungen (Abstimmung)").
+2. Finish the archive topics: decide "take over yes/no/open" and target path.
+3. Apply the policy deltas to `policies/doku-richtlinie/` after approval.
+4. Keep linking public domain content from GitHub Pages only.
 
 ## Phase 1: Status (DoD, Snapshot)
 

@@ -6,9 +6,17 @@ permalink: /de/
 
 Portfolio-Projekt: modulare Lebenslauf-Vorlage (PHP + Twig).
 
-## Start
+## Einstieg
 
 - [Einstieg / Quickstart]({{ "/de/getting-started/" | relative_url }})
+
+## Repos
+
+- [App-Repo](https://github.com/blaumohn/lebenslauf-web-vorlage)
+- [GitHub-Pages-Repo](https://github.com/blaumohn/lebenslauf-web-vorlage-docs)
+
+Die öffentliche Doku liegt in GitHub Pages.
+Das App-Repo enthält Quelltext, aber keine reguläre Projektdoku unter `docs/`.
 
 ## Bereiche
 
