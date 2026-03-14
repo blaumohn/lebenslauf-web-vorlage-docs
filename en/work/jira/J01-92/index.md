@@ -4,7 +4,7 @@ title: "J01-92: shared agent rules and skill versioning"
 permalink: /en/work/jira/J01-92/
 ---
 
-**Status date:** 2026-03-12
+**Status date:** 2026-03-14
 
 This page captures the public work status for `J01-92`.
 The task bundles versioned AI skills and recurring agent work rules.
@@ -22,11 +22,16 @@ rules, skills, and public docs.
 - Added the small-commit rule:
   Conventional Commits, small cohesive packages, no unnecessary lingering diffs
 - Moved Jira step `J01-92` into active work and added a status comment
+- Tightened shared skills to true project independence:
+  no fixed repo names, Jira project keys, or project paths in the shared target
+- Removed flat legacy entry points under `.agents/skills/` as canonical skill
+  locations
+- Kept project-bound mirror and coordination workflows in the project skill repo
 
 ## Next steps
 
 1. Align repo-local `AGENTS` files with the new shared rules.
-2. Hook project-specific skills into the new documentation duty.
+2. Move only genuinely decoupled workflow parts into `shared/`.
 3. Pull the updated Jira state into the public mirror.
 
 ## Links
@@ -38,3 +43,5 @@ rules, skills, and public docs.
 - The workspace `AGENTS` file only contains compact always-on rules.
 - Detailed recurring workflows stay in skills.
 - Repo-specific path and worktree rules stay in the respective repo `AGENTS.md`.
+- Shared means: no hard project binding; project specifics stay in the project
+  skill repo.
