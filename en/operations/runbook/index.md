@@ -41,6 +41,14 @@ Optional (full refresh):
 sh scripts/update-jira-mirror.sh --full
 ```
 
+Optional (journaled normal mode for known changes):
+
+```bash
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-jira-change.sh --change J01-95:summary
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-pages-change.sh HEAD~1
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/resume-open-syncs.sh
+```
+
 3) Verify GitHub Pages targets from Jira locally:
 
 ```bash
@@ -83,3 +91,5 @@ The URL conversion from Jira follows these rules:
 - `git` remains the reliable history: diffs only appear when content changes.
 - `scripts/verify-jira-ghpages-links.sh` verifies imported GitHub Pages targets
   locally for both DE and EN.
+- `.local/jira-sync-cache/` and `.local/jira-sync-journal/` keep the local
+  snapshot and resume state for the journaled normal mode.

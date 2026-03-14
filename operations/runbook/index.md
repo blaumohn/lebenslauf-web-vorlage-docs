@@ -43,6 +43,14 @@ Optional (on demand, „neu baselinen“):
 sh scripts/update-jira-mirror.sh --full
 ```
 
+Optional (journalisierter Normalmodus bei bekannten Änderungen):
+
+```bash
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-jira-change.sh --change J01-95:summary
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-pages-change.sh HEAD~1
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/resume-open-syncs.sh
+```
+
 3) GitHub-Pages-Ziele aus Jira lokal bestätigen:
 
 ```bash
@@ -85,3 +93,5 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
 - `git` ist die verlässliche Historie: Diffs entstehen nur bei Inhaltsänderung.
 - `scripts/verify-jira-ghpages-links.sh` bestätigt die aus Jira importierten
   GitHub-Pages-Ziele lokal für DE und EN.
+- `.local/jira-sync-cache/` und `.local/jira-sync-journal/` halten den
+  lokalen Snapshot- und Resume-Zustand für den journalisierten Normalmodus.

@@ -30,6 +30,17 @@ fetch_issue_keys() {
     | jq -r '.issues[].key'
 }
 
+read_issue_keys() {
+  key_file=$1
+
+  if [ -n "$key_file" ] && [ -f "$key_file" ]; then
+    cat "$key_file"
+    return
+  fi
+
+  fetch_issue_keys
+}
+
 fetch_remote_links() {
   issue_key=$1
   /Users/usr2/edv/werk/atlassian-tools/cli/bin/atlassian jira http get \
@@ -126,10 +137,24 @@ main() {
   require_bin sed
   require_bin grep
 
+  issue_keys_file=''
+  while [ $# -gt 0 ]; do
+    case "$1" in
+      --issue-keys-file)
+        issue_keys_file=${2:-}
+        shift 2
+        ;;
+      *)
+        printf 'Fehler: unbekanntes Argument: %s\n' "$1" >&2
+        exit 1
+        ;;
+    esac
+  done
+
   failed=0
   keys_file=$(mktemp)
   permalinks_file=$(mktemp)
-  fetch_issue_keys >"$keys_file"
+  read_issue_keys "$issue_keys_file" >"$keys_file"
   build_permalink_index "$permalinks_file"
 
   while read -r issue_key; do

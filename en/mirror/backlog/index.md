@@ -97,6 +97,7 @@ Static Jira mirror (ohne Jira-Cloud-Links).
   - [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/en/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — In Progress
   - [**72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern**]({{ "/en/mirror/issues/J01-72/steps/J01-92/" | relative_url }}) — In Progress
   - [**72-14 Scrum-Sprint-Rahmen und öffentliche Sprint-Historie in GitHub Pages**]({{ "/en/mirror/issues/J01-72/steps/J01-94/" | relative_url }}) — In Progress
+  - [**72-15 Journalisierten Jira-/Pages-Sync mit Resume aufbauen**]({{ "/en/mirror/issues/J01-72/steps/J01-95/" | relative_url }}) — In Progress
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/en/mirror/issues/J01-85/" | relative_url }})
   - 85-1 Refactor: Coding-Standards durchgehend umsetzen — To Do
   - 85-2 API-Betriebe (Wrapper), http als Escape-Hatch — To Do

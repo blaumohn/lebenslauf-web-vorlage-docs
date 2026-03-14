@@ -23,6 +23,8 @@ Die CLI ist im Repo `atlassian-tools` definiert. Verfügbare `jira ext`-Betriebe
   - Issues in einen Sprint setzen (optional mit `--dry-run`).
 - `atlassian jira ext remotelink add …`:
   - Jira Remote Link setzen (Doku-URL + Titel; optional `--dry-run`).
+- `atlassian jira ext remotelink sync …`:
+  - bekannte Docs-Link-Änderungen für genau einen Vorgang gezielt abgleichen.
 - `atlassian jira ext backfill schritt-nr …`:
   - Subtasks: Schritt-Nr aus Rank ableiten + Summary-Prefix setzen (optional `--dry-run`).
 
@@ -31,6 +33,7 @@ Beispiele (Ist):
 ```bash
 atlassian jira ext backfill schritt-nr --parent J01-72 --dry-run
 atlassian jira ext remotelink add --issue J01-91 --url https://docs.template.ysdani.com/quality/drift-reports/J01-91/ --title "Phase 1: Drift-Report" --dry-run
+atlassian jira ext remotelink sync --issue J01-91 --changes-file /tmp/jira-link-changes.json --dry-run
 ```
 
 ## Geplant (Kandidaten)
@@ -44,4 +47,3 @@ lohnt sich ein neuer `jira ext …` Betrieb, z.B.:
 
 Wichtig: Geplante Kommandos müssen in der Doku klar als „geplant“ markiert werden,
 bis sie im CLI existieren.
-

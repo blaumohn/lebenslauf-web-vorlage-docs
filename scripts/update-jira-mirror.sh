@@ -248,6 +248,9 @@ main() {
   full=0
   touched_keys_csv=''
   touched_keys_file=''
+  issues_input_file=''
+  subtasks_input_file=''
+  sprint_input_file=''
 
   while [ $# -gt 0 ]; do
     case "$1" in
@@ -261,6 +264,18 @@ main() {
         ;;
       --touched-keys-file)
         touched_keys_file=${2:-}
+        shift 2
+        ;;
+      --issues-file)
+        issues_input_file=${2:-}
+        shift 2
+        ;;
+      --subtasks-file)
+        subtasks_input_file=${2:-}
+        shift 2
+        ;;
+      --sprint-file)
+        sprint_input_file=${2:-}
         shift 2
         ;;
       -*)
@@ -282,12 +297,23 @@ main() {
 
   build_keys_file "$touched_keys_csv" "$touched_keys_file" "$touched_file"
 
-  log "Jira: Issues laden"
-  fetch_issues "$issues_file"
-  log "Jira: Subtasks laden"
-  fetch_subtasks "$subtasks_file"
-  log "Jira: Open Sprint laden"
-  fetch_open_sprint "$sprint_file"
+  if [ -n "$issues_input_file" ] || [ -n "$subtasks_input_file" ] || [ -n "$sprint_input_file" ]; then
+    if [ -z "$issues_input_file" ] || [ -z "$subtasks_input_file" ] || [ -z "$sprint_input_file" ]; then
+      printf 'Fehler: --issues-file, --subtasks-file und --sprint-file muessen zusammen gesetzt sein.\n' >&2
+      exit 1
+    fi
+
+    cp "$issues_input_file" "$issues_file"
+    cp "$subtasks_input_file" "$subtasks_file"
+    cp "$sprint_input_file" "$sprint_file"
+  else
+    log "Jira: Issues laden"
+    fetch_issues "$issues_file"
+    log "Jira: Subtasks laden"
+    fetch_subtasks "$subtasks_file"
+    log "Jira: Open Sprint laden"
+    fetch_open_sprint "$sprint_file"
+  fi
 
   log "Mirror: Index"
   update_mirror_index

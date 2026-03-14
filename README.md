@@ -21,6 +21,12 @@ Siehe Runbook: `operations/ghpages-preview/`.
 sh scripts/update-jira-mirror.sh
 ```
 
+Gezielter Normalmodus für bekannte Änderungen:
+
+```bash
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-jira-change.sh --change J01-95:summary
+```
+
 Kurzfassung:
 
 ```bash
