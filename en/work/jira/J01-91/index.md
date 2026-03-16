@@ -4,7 +4,7 @@ title: "J01-91: Zustand/Vorhaben (Snapshot)"
 permalink: /en/work/jira/J01-91/
 ---
 
-**Stand:** 2026-03-14
+**Stand:** 2026-03-16
 
 Kanonischer Ort für den öffentlichen Zustand/das Vorhaben zu `J01-91` (Snapshot).
 Die öffentliche Doku ist SSOT in GitHub Pages; `mirror/` ist abgeleitet.
@@ -28,6 +28,18 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
 - Mirror links derived from Jira remote links are normalized to stable
   language-specific public docs targets.
 
+## Delta 2026-03-16
+
+- The README change `docs: README auf GitHub Pages umstellen (J01-91)` was
+  moved out of `feature/iss-005-preview` onto a dedicated branch based on
+  `dev`; `dev` now carries that state directly.
+- The archive analysis now tracks operations- and workflow-related leftovers
+  from `docs/agile` in a dedicated table instead of only implying them through
+  topic lists.
+- The project skill and repo rules are being tightened to the same flow:
+  check branch context first, and route repo-local docs/rule work without a
+  feature scope through `dev`.
+
 ## Arbeitsprinzip (kurz)
 
 - GitHub Pages ist SSOT für Doku (öffentlich, inkl. Seiten für Jira-Links).
@@ -39,6 +51,8 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
 
 1. Close the remaining decisions (see "Entscheidungen (Abstimmung)").
 2. Finish the archive topics: decide "take over yes/no/open" and target path.
+   Review operations/workflow rules separately and either retire or migrate
+   them.
 3. Apply the policy deltas to `policies/doku-richtlinie/` after approval.
 4. Keep linking public domain content from GitHub Pages only.
 

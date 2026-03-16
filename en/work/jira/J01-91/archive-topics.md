@@ -52,6 +52,15 @@ ausdrücklich `offen`.
 | Teststrategie/Testmatrix | wahrscheinlich | zuerst vorgang-genau, danach kanonisch | `Testmatrix`, optional Abnahmecheck-Seiten | `Testmatrix` vorhanden; Abnahmecheck fehlt | `work/jira/J01-13/` oder später `quality/testmatrix/` | `J01-13` | Abnahmecheck als eigener Typ nur wenn eine feinere, direkt verlinkbare Einheit wirklich gebraucht wird. |
 | Repo-Hygiene | wahrscheinlich | zuerst vorgang-genau, danach kanonisch | Richtlinie + ggf. `Runbook` | vorhanden | `work/jira/J01-25/` oder später `policies/programmierleitlinien/`, ggf. `operations/<slug>/` | `J01-25` | Dauerregeln und konkrete Abläufe sollten getrennt werden. |
 
+## Operations and workflow rules from `docs/agile` (residual review)
+
+| Residual rule | Source in `docs/agile` | Still valid today? | Target | Status / next step | Note |
+| --- | --- | --- | --- | --- | --- |
+| Branch flow for preview work | `issues/ISS-004-dev-branch-foundation-and-repo-hygiene.md`, `issues/ISS-005-preview-workflow-reenable-from-dev.md`, `issues/README.md` | yes | project skill + repo `AGENTS.md` | in progress | The canonical flow remains `feature/*` -> `dev` -> `preview`. |
+| Repo-local docs/README work without a feature scope runs on a dedicated branch from `dev` | derived from `ISS-004`, `ISS-005`; became concrete at the README change `docs: README auf GitHub Pages umstellen (J01-91)` | yes | project skill + repo `AGENTS.md` | done | The README state was moved out of `feature/iss-005-preview` and is now carried via `dev`. |
+| Update `docs/agile` first, then start technical implementation on feature branches | `docs/agile/README.md` | no | none; mark as legacy or clean up later as archive context | open | This no longer fits the current SSOT split between GitHub Pages and Jira. |
+| Maintain `docs/agile` only through a dedicated worktree on `dev` | `docs/agile/README.md`, former repo `AGENTS.md` | no | none; remove from active repo rules | done | At most this remains relevant as archive context for older sources. |
+
 ## Dateiliste aus `docs/agile` (Kernquellen pro Thema)
 
 - **Pipeline/Phase-Terminologie**
