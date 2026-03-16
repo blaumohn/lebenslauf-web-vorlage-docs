@@ -48,11 +48,13 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
 
 ## Jetzt als Nächstes (konkret)
 
-1. Entscheidungen schließen (siehe „Entscheidungen (Abstimmung)“).
-2. Archiv-Themen finalisieren: pro Thema „übernehmen ja/nein/offen“ + Zielpfad.
-   Betriebs- und Ablaufregeln gesondert pruefen und ausmustern oder
-   ueberfuehren.
-3. Policy-Deltas (nach Abstimmung) in `policies/doku-richtlinie/` übernehmen.
+1. Die festgezogenen Entscheidungen in Folge-Vorgängen anwenden:
+   Terminologie in Bereichsseiten, Nachweise in `quality/testmatrix/`,
+   Detailarbeit in den jeweiligen `work/jira/J01-<KEY>/`.
+2. `archive-topics.md` bei neuen Quellen nur noch fortschreiben, nicht mehr als
+   Prüfstand offenlassen.
+3. Neue strukturelle Doku-Änderungen gegen die geschärfte
+   `doku-richtlinie` prüfen.
 4. Weitere öffentliche Fachseiten nur noch von GitHub Pages aus verlinken.
 
 ## Phase 1: Status (DoD, Snapshot)
@@ -69,9 +71,9 @@ Statuswerte:
 | Drift-Report + Abdeckung (ohne `mirror/`) | erledigt | [Drift-Report]({{ "/de/quality/drift-reports/J01-91/" | relative_url }}) und [Abdeckung]({{ "/de/quality/drift-reports/J01-91/coverage/" | relative_url }}) |
 | Jira-Übersicht „sauber voll gespiegelt“ | erledigt | [Runbook]({{ "/de/operations/runbook/" | relative_url }}) und `shared-tooling/jira-pages/update-jira-mirror.sh` |
 | Bereiche-Inventar konsistent | erledigt | [Bereiche-Inventar]({{ "/de/work/jira/J01-91/area-inventory/" | relative_url }}) |
-| Archiv-Auswertung liegt vor (Themen, ohne IDs) | teilweise | [Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }}) (Übernahme-Entscheidungen sind noch „offen“) |
+| Archiv-Auswertung liegt vor (Themen, ohne IDs) | erledigt | [Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }}) (Übernahme-Entscheidungen und Zielorte festgezogen) |
 | Policy-Delta-Vorschläge formuliert | erledigt | [Policy-Deltas]({{ "/de/work/jira/J01-91/policy-deltas/" | relative_url }}) |
-| Klare Phase-2-Liste existiert | teilweise | Diese Seite („Phase 2“) + Drift-Report („Vorschlag: Nächste Schritte“). |
+| Klare Phase-2-Liste existiert | erledigt | Diese Seite („Jetzt als Nächstes“) + festgezogene Zielorte in [Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }}) |
 | Public-Doku: Sprach-/Nennungsregeln eingehalten | erledigt | Stichprobe + aktuelle Seiten (keine Jira-Cloud-Links, keine personenbezogenen Daten) |
 
 ## Phase 1: Definition of Done (ausformuliert)
@@ -114,38 +116,48 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 
 | Thema | Status | Bezug / Ort |
 | --- | --- | --- |
-| Ablage von Archivmaterial (lokale Exporte, nicht veröffentlichen) | offen | (Entscheidung) |
-| Interne Referenzen aus Archivquellen: Mapping privat vs. öffentlich abstrakt | offen | [Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }}) |
-| Neue Doku-Typen: Glossar / Abnahmechecks wirklich nötig? | offen | [Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }}) |
-| Policy-Änderungen anwenden | offen | [Policy-Deltas]({{ "/de/work/jira/J01-91/policy-deltas/" | relative_url }}) |
+| Ablage von Archivmaterial (lokale Exporte, nicht veröffentlichen) | entschieden | `.local/` im Doku-Repo; lokal, nicht versioniert, nicht veröffentlicht |
+| Interne Referenzen aus Archivquellen: Mapping privat vs. öffentlich abstrakt | entschieden | Mapping nur privat; Public-Doku bleibt abstrahiert |
+| Neue Doku-Typen: Glossar / Abnahmechecks wirklich nötig? | entschieden | nein; bestehende Bereichsseiten und `quality/testmatrix/` genügen |
+| Policy-Änderungen anwenden | entschieden | in `policies/doku-richtlinie/` übernommen; keine separate neue Richtlinie nötig |
 
 ### Details (für schnelle Abstimmung)
 
 1) **Ablage von Archivmaterial (lokale Exporte)**
 - Ziel: lokal verfügbar, aber nicht als Public-Doku.
-- Vorschlag: im Doku-Repo unter `.local/` halten und technisch sicherstellen, dass es nicht veröffentlicht wird.
+- Entscheidung: im Doku-Repo unter `.local/` halten.
+- Konkret: repo-nah, per `.gitignore` unversioniert und per Jekyll-`exclude`
+  nicht veröffentlicht.
 
 2) **Interne Referenzen aus Archivquellen**
 - Frage: Sind Archivquellen überwiegend interne Referenzen (IDs), und wurden sie bereits in J01-Vorgänge überführt?
 - Public-Regel: keine internen IDs in Public-Doku.
-- Vorschlag: Zuordnung/Mapping nur im privaten Notizrepo pflegen; Public-Doku bleibt abstrakt.
+- Entscheidung: Zuordnung/Mapping nur im privaten Notizrepo pflegen;
+  Public-Doku bleibt abstrahiert.
 
 3) **Neue Doku-Typen wirklich nötig?**
 - Kandidaten aus der Archiv-Auswertung:
   - kleines Glossar (Begriffe)
   - Abnahmecheck-Seiten (feingranulare Checks, wenn Jira darauf linken soll)
-- Entscheidung: einführen ja/nein; falls ja, dann Vorlagen + Policy-Anpassung.
+- Entscheidung: nein.
+- Begründung: Begriffe werden auf Bereichs- und Richtlinienseiten geführt;
+  feingranulare Nachweise bleiben Teil von `quality/testmatrix/` oder der
+  vorgangsgenauen Arbeitsdoku.
 
 4) **Policy-Änderungen anwenden**
 - Grundlage: [Policy-Deltas]({{ "/de/work/jira/J01-91/policy-deltas/" | relative_url }})
-- Entscheidung: welche Deltas werden tatsächlich in `policies/doku-richtlinie/` übernommen (und wann).
+- Entscheidung: die freigegebenen Deltas werden direkt in
+  `policies/doku-richtlinie/` übernommen.
+- Zerlegung: Präzisierungen bleiben in der bestehenden Richtlinie; es wird keine
+  zusätzliche neue Richtlinie für `J01-91` eröffnet.
 
-## Phase 2 (nach Abstimmung)
+## Phase 2 (nach Abschluss der Abstimmung)
 
-- Status-/Vorhaben-Darstellung finalisieren (diese Seite bleibt „one pager“).
-- Archiv-Auswertung präzisieren: Übernahmeentscheidungen pro Thema finalisieren.
-- Policy-Deltas in `policies/doku-richtlinie/` übernehmen.
-- Optional: neue Vorlagen/Seiten (Glossar, Abnahmechecks) nur wenn wirklich nötig.
+- Status-/Vorhaben-Darstellung als One-Pager beibehalten.
+- Zielorte je Thema in den Folge-Vorgängen oder kanonischen Fachseiten
+  umsetzen.
+- Die Doku-Richtlinie als Gate für weitere Strukturänderungen verwenden.
+- Keine neuen Dokutypen aus `J01-91` ableiten.
 
 ## Links (Sichtbarkeit)
 

@@ -4,11 +4,13 @@ title: "J01-91: Policy-Delta-Vorschläge – 2026-03-06"
 permalink: /en/work/jira/J01-91/policy-deltas/
 ---
 
-Diese Seite sammelt Vorschläge zur Anpassung von
-`policies/doku-richtlinie/` (und ggf. angrenzenden Policies), ohne die Policy
-selbst schon umzuschreiben.
+This page records which `J01-91` proposals were applied to
+`policies/doku-richtlinie/` and which ones were intentionally not split into a
+separate new policy.
 
 ## 1) Ist vs. geplant (Markierungsregel)
+
+Status: **applied**
 
 Problem:
 - Mehrere Seiten beschreiben Zielzustände („soll“), ohne klar zu markieren,
@@ -20,6 +22,8 @@ Vorschlag:
   - **Geplant**: Zielzustand (mit Ticket/KEP-Lite/ADR-Referenz).
 
 ## 2) Export-/Umwandlungsartefakte vs. produktive lokale Dateien
+
+Status: **applied**
 
 Problem:
 - „Lokale Dateien“ ist zu unscharf: es gibt produktive lokale Dateien
@@ -41,6 +45,8 @@ Vorschlag:
 
 ## 3) Jira-Link-Policy (Remote Links)
 
+Status: **applied**
+
 Problem:
 - Jira soll auf kanonische GitHub-Pages-Dokuseiten linken; `mirror/` ist eine
   Ableitung und soll nicht das primäre Ziel in Jira sein.
@@ -54,6 +60,8 @@ Vorschlag:
 
 ## 4) Drift als Qualitäts-Gate (leichtgewichtig)
 
+Status: **applied**
+
 Vorschlag:
 - Bei strukturellen Änderungen (Betrieb/SSOT/Link-Policy) muss ein Drift-Report
   erstellt/aktualisiert werden.
@@ -62,12 +70,16 @@ Vorschlag:
 
 ## 5) Namensregeln: Area-ID vs. Repo-Name
 
+Status: **applied**
+
 Vorschlag:
 - Bereichs-IDs (Slugs) sind stabil (z.B. `proj-doku-tooling`).
 - Repo-Namen können sich ändern; Doku referenziert Repo-Namen nur als Fakten
   („Repo heißt aktuell …“) oder über neutrale Bezeichner („Tooling-Repo“).
 
 ## 6) Ziel-Doku-Genauigkeit: Vorgang vs. Drift vs. kanonische Seite
+
+Status: **applied**
 
 Problem:
 - Der aktuelle Entscheidungsbaum wählt einen Dokutyp, aber noch nicht die
@@ -95,6 +107,8 @@ Vorschlag:
 
 ## 7) Jeder Dokutyp braucht eine Vorlage
 
+Status: **applied**
+
 Problem:
 - Für mehrere naheliegende Dokutypen gibt es schon Vorlagen, aber die Policy
   sagt noch nicht ausdrücklich, dass jede veröffentlichte Dokuklasse eine
@@ -120,6 +134,8 @@ Vorschlag:
 
 ## 8) Kanonische URI-Muster pro Dokutyp explizit festziehen
 
+Status: **partially applied**
+
 Problem:
 - Für einige Typen ist die Vorlage vorhanden, aber das kanonische Zielmuster im
   Repo ist nicht überall belegt.
@@ -132,3 +148,20 @@ Vorschlag:
 - Solange ein Typ kein festgezogenes URI-Muster hat, darf er in
   `archive-topics/` nur als offener Kandidat erscheinen, nicht als feste
   Zielablage.
+
+Applied in `J01-91`:
+- `ADR` stays on `decisions/adr-xxxx/`.
+- `KEP-Lite` is fixed to `decisions/kep-xxxx/`.
+- `Runbook` stays on `operations/<slug>/`.
+- `Richtlinie/Überblick` stays on `policies/<slug>/`.
+- `Testmatrix` stays on `quality/testmatrix/` or
+  `quality/testmatrix/<slug>/`.
+- `Drift-Report` stays on `quality/drift-reports/J01-<KEY>/`.
+- `Feature-Matrix`, `Sprint-Dossier` and `Postmortem` keep their existing
+  families; `J01-91` does not need a separate new policy for them.
+
+## Not adopted as new doc types
+
+- `Glossar`: not needed; terms belong on area or policy pages.
+- `Abnahmecheck`: not needed; fine-grained evidence stays in
+  `quality/testmatrix/` or issue-specific work docs.

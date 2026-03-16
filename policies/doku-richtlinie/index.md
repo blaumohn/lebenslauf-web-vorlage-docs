@@ -17,6 +17,9 @@ permalink: /de/policies/doku-richtlinie/
 - **Bereich** = Unterbetrieb/Teilgebiet (z. B. CLI/Build, HTTP-Runtime,
   Jira- und Doku-Tooling).
 - **Querschnitt** = gilt für mehrere Bereiche oder repo-weit.
+- **Ist** = belegbarer aktueller Stand mit Quelle
+  (Datei, Befehl, Nachweis, Build-Artefakt).
+- **Geplant** = Zielzustand mit Vorgangs-, ADR- oder KEP-Bezug.
 
 ## Entscheidungsregel (5 Fragen)
 
@@ -67,6 +70,10 @@ permalink: /de/policies/doku-richtlinie/
    - Ja: Typ ist grundsätzlich freigegeben.
    - Nein: erst Policy-Delta + `templates/<typ>/` + kanonisches URI-Muster
      festziehen, dann nutzen.
+
+11) Enthält die Seite temporäre Export-/Umwandlungsartefakte oder interne IDs?
+   - Ja: nicht in Public-Doku übernehmen.
+   - Ausnahme: explizite Umwandlungs-/Migrationsdoku mit begründetem Bedarf.
 
 ---
 
@@ -124,6 +131,12 @@ D) **Leitlinie vs. Katalog vs. Runbook strikt trennen**
 - Katalog/Referenz: Liste der Befehle/Teile mit kurzen Angaben.
 - Runbook: Schrittfolge mit Prüfpunkten und Rückfallplan.
 
+D1) **Ist und Geplant sichtbar trennen**
+- Seiten mit System-, Betriebs- oder Strukturbehauptungen markieren
+  Zielzustand und aktuellen Stand ausdrücklich.
+- `Ist` braucht einen belegbaren Nachweis.
+- `Geplant` braucht einen Vorgangs-, ADR- oder KEP-Bezug.
+
 E) **KEP führt oft zu ADR**
 - KEP: Vorschlag + Abnahmekriterien.
 - ADR: Entscheidung + Begründung + Folgen.
@@ -153,3 +166,49 @@ J) **Neue Dokutypen brauchen Policy + URI-Muster**
 - Ein neuer Typ (z. B. Glossar, Abnahmecheck) ist erst freigegeben, wenn
   Vorlage, Vorlagenindex, Policy-Regel und kanonisches URI-/Pfadmuster
   festgezogen sind.
+
+K) **Temporäre lokale Artefakte bleiben privat**
+- `.local/` ist repo-nahe private Ablage für Exporte, Arbeitskopien und
+  nicht veröffentlichte Archivmaterialien.
+- `.local/` ist weder kanonische Public-Doku noch versionierter Normalfall.
+- Public-Doku nennt oder verlinkt keine temporären Exportpfade, Timestamps oder
+  lokalen Arbeitskopien.
+
+L) **Interne IDs bleiben aus Public-Doku heraus**
+- Interne Export-Bezeichner, frühere Arbeits-IDs und private Mapping-Tabellen
+  gehören nicht in öffentliche Seiten.
+- Falls eine Zuordnung für Nachvollziehbarkeit nötig ist, bleibt sie in privaten
+  Notizen oder Arbeitsmaterialien außerhalb der Public-Doku.
+
+M) **Jira verlinkt nur auf kanonische Doku-Ziele**
+- Jira-Remote-Links zeigen auf kanonische Seiten unter `areas/`, `operations/`,
+  `decisions/`, `policies/`, `quality/` oder `work/`.
+- `mirror/` bleibt eine abgeleitete Sicht und ist kein primäres Linkziel aus
+  Jira.
+
+N) **Drift ist ein leichtgewichtiges Qualitäts-Gate**
+- Bei strukturellen Änderungen an SSOT, Link-Policy oder Betriebsablauf wird ein
+  Drift-Report erstellt oder aktualisiert.
+- Drift-Reports dokumentieren Behauptung, Quelle, Status und Fix, nicht
+  allgemeine Fachbeschreibung.
+
+O) **Repo-Namen sind Fakten, Bereichs-IDs sind stabil**
+- Bereichs-IDs und Slugs bleiben stabil.
+- Repo-Namen werden nur als aktuelle Fakten oder neutrale Rollen beschrieben.
+
+P) **Kanonische URI-Muster sind Teil des Dokutyps**
+- `ADR`: `decisions/adr-xxxx/`
+- `KEP-Lite`: `decisions/kep-xxxx/`
+- `Runbook`: `operations/<slug>/`
+- `Richtlinie/Überblick`: `policies/<slug>/`
+- `Testmatrix`: `quality/testmatrix/` oder `quality/testmatrix/<slug>/`
+- `Feature-Matrix`: `quality/feature-matrix/` oder
+  `quality/feature-matrix/<slug>/`
+- `Drift-Report`: `quality/drift-reports/J01-<KEY>/`
+- `Sprint-Dossier`: `work/sprints/<sprint-slug>/`
+- `Postmortem`: `quality/postmortems/<slug>/`
+
+Q) **Kein eigener Glossar- oder Abnahmecheck-Typ ohne belegten Bedarf**
+- Begriffe werden auf Bereichs-, Richtlinien- oder Überblicksseiten gepflegt.
+- Feingranulare Abnahme- und Prüfnachweise bleiben Teil von `quality/testmatrix/`
+  oder vorgangsgenauer Arbeitsdoku.

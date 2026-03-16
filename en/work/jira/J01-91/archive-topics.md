@@ -27,30 +27,30 @@ lokalen Export-/Umwandlungsartefakte (Ausnahme: explizite Umwandlungsdokus).
 
 ## Arbeitsliste (Themen → Übernahme)
 
-Diese Tabelle ist eine **Bewertung auf Prüfstand**, keine Festlegung.
-Sie bewertet je Thema:
+This table is now the **J01-91 decision record**.
+For each topic it fixes:
 
-- welche Jira-Vorgänge **wahrscheinlich** betroffen sind,
-- welche Dokutypen nach `policies/doku-richtlinie/` **naheliegen**,
-- ob dafür schon eine passende Vorlage unter `templates/` existiert,
-- und welche URI-/Pfadfamilie **wahrscheinlich** passt.
+- the primary Jira follow-up issues,
+- the target doc type under `policies/doku-richtlinie/`,
+- whether a matching template or structure already exists,
+- and the next stable URI/path family.
 
-Genau dort, wo diese Punkte noch nicht belastbar sind, bleibt der Stand
-ausdrücklich `offen`.
+Remaining follow-up work moves into the target issues or canonical pages, not
+back into this table.
 
-| Thema | Übernahme-Stand | Genauigkeit (Bewertung) | Dokutyp(en) prüfen | Template-Stand | Möglicher Zielpfad / URI-Muster | Jira-Bezug (Kandidaten) | Notiz |
+| Topic | Take-over state | Target precision | Fixed doc type | Template/structure state | Target path / URI pattern | Jira links | Note |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Pipeline/Phase-Terminologie | wahrscheinlich | zuerst vorgang-genaue Vorarbeit, danach kanonisch | `KEP-Lite`, Bereichsseite, optional Glossar | `KEP-Lite` vorhanden; Glossar fehlt | `work/jira/J01-58/` oder später `areas/cli-build/` | `J01-58`, `J01-34` | Glossar nur wenn Bereichsseite die Begriffe nicht sauber trägt; neuer Typ bräuchte Policy-Delta + Vorlage. |
-| Typisierung/Validierung | wahrscheinlich | zuerst vorgang-genau, danach kanonisch | `KEP-Lite` + Richtlinie | vorhanden | `work/jira/J01-52/`, `work/jira/J01-37/` oder später `policies/programmierleitlinien/` | `J01-52`, `J01-37`, `J01-28` | Die Agile-Quellen wirken eher wie Umbau-/Trennungsvorschläge und sollten nicht 1:1 als End-Richtlinie übernommen werden. |
-| Fehlerkonzept | wahrscheinlich | zuerst vorgang-genau, danach kanonisch | `KEP-Lite` + Richtlinie, evtl. `ADR` | vorhanden | `work/jira/J01-54/` oder später `policies/programmierleitlinien/` bzw. `decisions/adr-xxxx/` | `J01-54` | Wenn Alternativen/Folgen explizit entschieden werden müssen, ist `ADR` wahrscheinlicher als nur Richtlinie. |
-| Preview/Deployment-Readiness | wahrscheinlich | mehrere Vorgänge, danach kanonisch | `Runbook` + `Testmatrix`, ggf. `KEP-Lite` | vorhanden | `work/jira/J01-31/`, `work/jira/J01-13/`, `work/jira/J01-9/`, `work/jira/J01-43/` oder später `operations/<slug>/`, `quality/testmatrix/` | `J01-31`, `J01-13`, `J01-9`, `J01-43` | Die Agile-Dokus wirken hier klar trennbar: Betriebsablauf, Nachweise und Änderungsplan sind nicht dieselbe Doku. |
-| CLI-UX | wahrscheinlich | zuerst vorgang-genau, danach kanonisch | `KEP-Lite` oder Bereichsseite | `KEP-Lite` vorhanden; Bereich nutzt vorhandene Überblicks-/Richtlinienvorlage | `work/jira/J01-34/` oder später `areas/cli-build/` | `J01-34` | Endzustand eher als Bereichsdoku; konkrete Umbauarbeit eher als `KEP-Lite`. |
-| Config-Policy (Sources/Validation) | wahrscheinlich | zuerst vorgang-genau, danach kanonisch | `KEP-Lite` + Bereichsseite + ggf. Richtlinie | vorhanden | `work/jira/J01-37/`, `work/jira/J01-31/` oder später `areas/cli-build/`, `policies/<slug>/` | `J01-37`, `J01-31`, `J01-40` | Hier ist die Trennung besonders wichtig: App-Sicht, Spec-/Policy-Regel und Umbauplan sind verschiedene Dokus. |
-| i18n | wahrscheinlich | mehrere Vorgänge, danach kanonisch | `KEP-Lite` + Bereichsseite | vorhanden | `work/jira/J01-46/`, `work/jira/J01-49/` oder später `areas/http-runtime/` | `J01-46`, `J01-49`, `J01-6` | Runtime-Messages und Template-Texte sollten vermutlich nicht in einer einzigen Endseite landen. |
-| Runtime-Concurrency/Locking | wahrscheinlich | zuerst vorgang-genau, danach kanonisch | `ADR` oder `KEP-Lite` + Bereichsseite | vorhanden | `work/jira/J01-16/`, `work/jira/J01-21/` oder später `areas/http-runtime/`, ggf. `decisions/adr-xxxx/` | `J01-16`, `J01-21` | Lock-Strategie/Guardrails riechen nach Entscheidungsdoku; Betriebs- und Architekturteil gehört getrennt. |
-| Automations-Layer (Helper) | eher nein | derzeit offen; kein kanonischer Zielort belegt | falls reaktiviert: `KEP-Lite` | vorhanden | vorerst kein Zielpfad festziehen | kein `J01-*` direkt belegt | Im Archiv ist das Thema da, im aktuellen Jira-Spiegel aber nicht als eigener Vorgang belegt; erst bei neuer Priorisierung wieder aufnehmen. |
-| Teststrategie/Testmatrix | wahrscheinlich | zuerst vorgang-genau, danach kanonisch | `Testmatrix`, optional Abnahmecheck-Seiten | `Testmatrix` vorhanden; Abnahmecheck fehlt | `work/jira/J01-13/` oder später `quality/testmatrix/` | `J01-13` | Abnahmecheck als eigener Typ nur wenn eine feinere, direkt verlinkbare Einheit wirklich gebraucht wird. |
-| Repo-Hygiene | wahrscheinlich | zuerst vorgang-genau, danach kanonisch | Richtlinie + ggf. `Runbook` | vorhanden | `work/jira/J01-25/` oder später `policies/programmierleitlinien/`, ggf. `operations/<slug>/` | `J01-25` | Dauerregeln und konkrete Abläufe sollten getrennt werden. |
+| Pipeline/Phase terminology | yes | issue-specific first, canonical later | `KEP-Lite` plus area page | available; no glossary type needed | `work/jira/J01-58/`, then `areas/cli-build/` | `J01-58`, `J01-34` | Terms belong on area pages; no separate glossary type is needed. |
+| Typing/validation | yes | issue-specific first, canonical later | `KEP-Lite` plus policy | available | `work/jira/J01-52/`, `work/jira/J01-37/`, then `policies/programmierleitlinien/` | `J01-52`, `J01-37`, `J01-28` | Agile material remains proposal input, not a direct end-state policy. |
+| Error model | yes | issue-specific first, canonical later | `KEP-Lite`; later `ADR` if alternatives matter | available | `work/jira/J01-54/`, then `policies/programmierleitlinien/` or `decisions/adr-xxxx/` | `J01-54` | Use ADR only once alternatives and consequences are explicitly decided. |
+| Preview/deployment readiness | yes | multiple issues, canonical later | `Runbook` plus `Testmatrix` | available | `work/jira/J01-31/`, `work/jira/J01-13/`, `work/jira/J01-9/`, `work/jira/J01-43/`, then `operations/<slug>/` and `quality/testmatrix/` | `J01-31`, `J01-13`, `J01-9`, `J01-43` | Operations flow and evidence stay separate; no dedicated acceptance-check type. |
+| CLI UX | yes | issue-specific first, canonical later | `KEP-Lite` or area page | available | `work/jira/J01-34/`, then `areas/cli-build/` | `J01-34` | The end state belongs in area docs, implementation work in the issue. |
+| Config policy (sources/validation) | yes | issue-specific first, canonical later | `KEP-Lite` plus area page or policy | available | `work/jira/J01-37/`, `work/jira/J01-31/`, then `areas/cli-build/` or `policies/<slug>/` | `J01-37`, `J01-31`, `J01-40` | App view, spec/policy rule and migration plan stay separate. |
+| i18n | yes | multiple issues, canonical later | `KEP-Lite` plus area page | available | `work/jira/J01-46/`, `work/jira/J01-49/`, then `areas/http-runtime/` | `J01-46`, `J01-49`, `J01-6` | Runtime messages and template texts remain separate follow-up topics. |
+| Runtime concurrency/locking | yes | issue-specific first, canonical later | `ADR` or `KEP-Lite` plus area page | available | `work/jira/J01-16/`, `work/jira/J01-21/`, then `areas/http-runtime/` or `decisions/adr-xxxx/` | `J01-16`, `J01-21` | Keep operations and architecture separate; ADR only for real direction decisions. |
+| Automation layer (helper) | no | no current target | none; `KEP-Lite` only if reactivated | available, but not needed | no target path for now | none directly mapped | Not represented as an active Jira issue right now; revisit only if reprioritized. |
+| Test strategy/test matrix | yes | issue-specific first, canonical later | `Testmatrix` | available; no separate acceptance-check type needed | `work/jira/J01-13/`, then `quality/testmatrix/` | `J01-13` | Fine-grained evidence stays inside the test matrix or issue-specific work docs. |
+| Repo hygiene | yes | issue-specific first, canonical later | policy plus optional `Runbook` | available | `work/jira/J01-25/`, then `policies/programmierleitlinien/` and optionally `operations/<slug>/` | `J01-25` | Long-lived rules and concrete procedures remain separate. |
 
 ## Operations and workflow rules from `docs/agile` (residual review)
 
@@ -146,43 +146,30 @@ Aktuell wirken zwei zusätzliche Typen potenziell sinnvoll:
 
 ## Präzisierung: Ziel-Dokutyp + Ziel-Genauigkeit
 
-- `work/jira/J01-<KEY>/`:
-  - wenn Scope, offene Entscheidungen, Mapping, Nachweise oder Zwischenstände
-    an genau einen Jira-Vorgang gebunden sind.
-- `quality/drift-reports/J01-<KEY>/`:
-  - nur wenn ein Drift-Befund dokumentiert wird
-    (Behauptung ↔ Quelle ↔ Status ↔ Fix).
-- Kanonische Fachseiten (`areas/`, `operations/`, `policies/`, `quality/`,
-  `decisions/`):
-  - wenn der Inhalt über einen einzelnen Vorgang hinaus stabil gelten soll.
-- Für die hier gelisteten Archiv-Themen ist aktuell **kein** Thema primär ein
-  Drift-Report; der offene Teil ist überwiegend vorgang-genaue Vorbereitung und
-  spätere kanonische Übernahme.
+`work/jira/J01-<KEY>/` remains the target when scope, evidence and open
+decisions belong to a single issue.
 
-## Offen (Restabstimmung)
+`quality/drift-reports/J01-<KEY>/` stays limited to real drift findings.
 
-- Pro Thema fehlt noch die belastbare Entscheidung, ob aus der Agile-Quelle
-  **eine** Zielseite oder **mehrere getrennte Dokus** entstehen.
-- Für `KEP-Lite` fehlt aktuell trotz vorhandener Vorlage ein im Repo belegtes
-  kanonisches URI-/Pfadmuster.
-- Zu prüfen bleibt, ob ein kleines Glossar für Begriffe wirklich nötig ist oder
-  ob die Terminologie auf Bereichsseiten ausreicht.
-- Zu prüfen bleibt, ob Abnahmecheck-Seiten wirklich gebraucht werden oder ob
-  `quality/testmatrix/` plus vorgang-genaue Nachweise genügt.
-- Es ist noch nicht belegt, ob die Archivquellen überwiegend nur Referenzen auf
-  interne IDs enthalten und ob diese bereits nach J01-xx überführt wurden.
-  - Public-Doku bleibt ohne interne IDs; die Zuordnung (falls nötig) gehört in
-    eine private Mapping-Notiz.
+Canonical pages under `areas/`, `operations/`, `policies/`, `quality/` and
+`decisions/` carry only the stable end state.
 
-## Was für diese Seite noch fehlt
+None of the topics listed here is primarily a drift report.
 
-- Pro Thema die `docs/agile`-Quelle(n) in getrennte Doku-Bausteine zerlegen:
-  Vorschlag, Entscheidung, Betrieb, Nachweis, Richtlinie nicht vermischen.
-- Pro Doku-Baustein den Dokutyp nach `policies/doku-richtlinie/` festziehen.
-- Pro gewähltem Dokutyp prüfen:
-  - Vorlage unter `templates/` vorhanden?
-  - kanonischer URI-/Pfad im Repo belegt?
-- Für neue Dokutypen zuerst Policy-Delta + Vorlage anlegen, erst danach in die
-  Tabelle als echte Empfehlung aufnehmen.
-- Erst nach dieser Klärung die Spalten „Übernahme-Stand“ und „Zielpfad“ von
-  Bewertung auf Festlegung heben.
+## Final outcome of the review
+
+- Each topic now has a fixed split into one or more target docs.
+- `KEP-Lite` will use the canonical pattern `decisions/kep-xxxx/`.
+- No dedicated glossary type is needed; terms belong on existing area or policy
+  pages.
+- No dedicated acceptance-check type is needed; evidence belongs in
+  `quality/testmatrix/` or issue-specific work docs.
+- Internal references stay out of public docs; mappings belong in private
+  notes.
+
+## What remains for this page
+
+- Only extend this page when new archive sources reveal new topics or target
+  locations.
+- Concrete implementation now belongs in the listed follow-up issues or
+  canonical pages.

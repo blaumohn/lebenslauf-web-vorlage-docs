@@ -4,9 +4,17 @@ title: Testmatrix
 permalink: /en/quality/testmatrix/
 ---
 
-Testmatrix und Abnahmechecks.
+Test matrix and related evidence.
 
 Zielbild:
 
-- Jira-Issues verlinken auf konkrete Test-/Abnahmeseiten in dieser Doku.
-- Der öffentliche Mirror zeigt diese Links als Referenz an (ohne Jira-Cloud-Links).
+- Jira issues link to concrete test-matrix pages or evidence sections in this
+  documentation.
+- The public mirror shows these links as reference targets without Jira Cloud
+  links.
+
+Guardrail:
+
+- There is currently no separate `Abnahmecheck` doc type.
+- Fine-grained checks remain part of the test matrix or issue-specific work
+  docs.
