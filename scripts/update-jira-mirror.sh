@@ -125,19 +125,36 @@ render_public_remotelinks_md() {
           $path
         end;
 
+    def source_lang_rank($lang; $url):
+      if ($url | test("^" + $base + $lang + "(/|$)")) then
+        0
+      elif ($url | test("^" + $base + "(de|en)(/|$)")) then
+        1
+      else
+        2
+      end;
+
     [ .[]?
       | .object?
       | select(.url? != null)
       | {
           url: .url,
-          title: (.title // .url)
+          title: (.title // .url),
+          public_url: (.url | sub($base; "/") | if . == "" then "/" else . end | if is_neutral_path(.) then .
+            elif is_localized_path(.) then sub("^/(de|en)(?=/|$)"; "/" + $lang)
+            elif is_language_bound_path(.) then "/" + $lang + .
+            else .
+            end),
+          rank: source_lang_rank($lang; .url)
         }
       | select(.url | startswith($base))
       | .title |= (gsub("\\n"; " ") | gsub("\\["; "(") | gsub("\\]"; ")"))
       | select((.title | test("@")) | not)
     ]
-    | unique_by(.url)
-    | sort_by(.url)
+    | sort_by(.public_url, .rank, .url)
+    | group_by(.public_url)
+    | map(sort_by(.rank, .url) | .[0])
+    | sort_by(.public_url)
     | if length == 0 then
         "-"
       else
@@ -145,7 +162,7 @@ render_public_remotelinks_md() {
           "- ["
           + .title
           + "]({{ \""
-          + (public_path($lang))
+          + .public_url
           + "\" | relative_url }})"
         )
         | join("\n")

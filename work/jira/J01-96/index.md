@@ -1,15 +1,15 @@
 ---
 layout: page
-title: "J01-96: Tagebuch-Register und rohe Chat-Eingaben verankern"
+title: "J01-96: Quellenregister und rohe Chat-Eingaben verankern"
 permalink: /de/work/jira/J01-96/
 ---
 
 **Stand:** 2026-03-16
 
 Kanonischer öffentlicher Arbeitsstand für `J01-96`.
-Der Vorgang ergänzt das Repo `tagebuch` um einen aktiven Register-Layer für
-Entwicklungslinien und verankert rohe Chat-Eingaben als eigene Provenienz-Ebene
-für Rundenprotokolle.
+Der Vorgang führt im Repo `tagebuch` ein kleines Quellenregister für Suchfälle
+ein und verankert rohe Chat-Eingaben als eigene Provenienz-Ebene für
+Rundenprotokolle.
 
 ## Ziel
 
@@ -19,7 +19,7 @@ Dafür werden drei Ebenen getrennt:
 
 - `notes/raw/` für rohe Eingaben
 - `notes/inbox/` für geglättete Rundenprotokolle
-- `notes/index/` für aktive Register und Entwicklungslinien
+- `notes/index/` für ein minimales Quellenregister zu Suchfällen
 
 ## Jetzt umgesetzt
 
@@ -27,22 +27,26 @@ Dafür werden drei Ebenen getrennt:
 - `tagebuch`-Rundenprotokoll zu dieser Entscheidungs- und Umsetzungsrunde
   ergänzt
 - Roh-Eingaben für den Themenstrang unter `notes/raw/2026-03-16.md` ergänzt
-- neues Register `notes/index/entwicklungslinien.md` als aktive Sicht angelegt
+- neues Register `notes/index/quellenregister.md` als aktive Sicht angelegt
 - Start-Index des `tagebuch` um das neue Register erweitert
 - `notes/meta/system.md` um die Regel ergänzt:
-  thematische Register sind abgeleitete Sichten, keine Quelle
+  Register sind abgeleitete Sichten für Suchfälle, keine Quelle
 - Projekt-Skill ergänzt:
-  Bei Herkunfts-, Entwicklungs- und Quellenfragen zuerst Register prüfen,
+  Bei Herkunfts- und Quellenfragen zuerst Register prüfen,
   dann gezielt im `tagebuch` suchen und bei neuen Funden das Register
   ergänzen
 
 ## Arbeitsmodell
 
 - Einzelne `tagebuch`-Notizen bleiben append-only.
-- Status und Einordnung liegen nur im Register.
-- Jede Quellenanfrage mit neuem Fund kann das Register erweitern.
+- Das Register enthält nur `Suchfall`, `Such-Notizen` und `Quellen`.
+- Ein Registereintrag wird geändert, wenn eine Anfrage den Suchstand
+  verändert.
+- Das geschieht in genau zwei Fällen:
+  - eine wichtige relevante Quelle hat bisher gefehlt
+  - eine Anfrage bringt neue relevante Quellen und neue Such-Notizen hervor
 - Skills verweisen auf das Register, führen aber keine doppelte
-  Themenhistorie.
+  Themenhistorie und kein Meta-Register.
 
 ## Quellenbezug
 
@@ -63,6 +67,7 @@ Dafür werden drei Ebenen getrennt:
 - Keine Statusfelder wie `aktuell`, `ersetzt` oder `gültig` in einzelnen
   Tagebuch-Notizen.
 - Keine täglichen Pflicht-Indizes.
+- Kein allgemeines Entwicklungslinien- oder Meta-Register.
 - Register nur dort, wo reale Fehlauffindbarkeit oder neue Quellenfunde
   entstehen.
 - Keine automatische Index-Generierung in V1.

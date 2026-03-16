@@ -1,15 +1,14 @@
 ---
 layout: page
-title: "J01-96: Add a journal register and raw chat inputs"
+title: "J01-96: Add a source register and raw chat inputs"
 permalink: /en/work/jira/J01-96/
 ---
 
 **Stand:** 2026-03-16
 
 Canonical public work status for `J01-96`.
-This issue adds an active register layer to the `tagebuch` repo for
-development lines and keeps raw chat inputs as a separate provenance layer for
-round notes.
+This issue adds a small source register for search cases to the `tagebuch`
+repo and keeps raw chat inputs as a separate provenance layer for round notes.
 
 ## Goal
 
@@ -19,27 +18,31 @@ The model separates three layers:
 
 - `notes/raw/` for raw inputs
 - `notes/inbox/` for smoothed round notes
-- `notes/index/` for active registers and development lines
+- `notes/index/` for a minimal source register for search cases
 
 ## Implemented now
 
 - created the new Jira issue `J01-96` for the journal/register topic
 - added a `tagebuch` round note for this decision and implementation line
 - added raw inputs for this topic under `notes/raw/2026-03-16.md`
-- created `notes/index/entwicklungslinien.md` as the first active register
+- created `notes/index/quellenregister.md` as the first active register
 - linked the new register from the `tagebuch` start index
 - updated `notes/meta/system.md`:
-  thematic registers are derived views, not the source
+  registers are derived views for search cases, not the source
 - updated the project skill:
-  for origin, development-line, and source questions, check the register
+  for origin and source questions, check the register
   first, then search `tagebuch`, and add new finds back into the register
 
 ## Working model
 
 - Individual `tagebuch` notes stay append-only.
-- Status and interpretation live only in the register.
-- Any source query with a new finding can extend the register.
-- Skills point to the register but do not duplicate the topic history.
+- The register contains only `search case`, `search notes`, and `sources`.
+- A register entry changes when a search request changes the search state.
+- This happens in exactly two cases:
+  - an important relevant source was previously missing
+  - a search request produces new relevant sources and new search notes
+- Skills point to the register but do not duplicate topic history or create a
+  meta-register.
 
 ## Source basis
 
@@ -60,6 +63,7 @@ The model separates three layers:
 - No fields like `current`, `superseded`, or `valid` inside individual
   journal notes.
 - No daily mandatory indexes.
+- No general development-line or meta-register.
 - Create registers only where real retrieval failures or new source findings
   occur.
 - No automatic index generation in V1.

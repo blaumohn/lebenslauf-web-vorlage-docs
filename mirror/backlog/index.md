@@ -104,4 +104,4 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
 
 ## Ohne Epic
 
-- [J01-96 — Tagebuch: Entwicklungslinien-Register und Roh-Eingaben verankern]({{ "/de/mirror/issues/J01-96/" | relative_url }})
+- [J01-96 — Tagebuch: Quellenregister und Roh-Eingaben verankern]({{ "/de/mirror/issues/J01-96/" | relative_url }})
