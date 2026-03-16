@@ -1,0 +1,69 @@
+---
+layout: page
+title: "J01-96: Add a journal register and raw chat inputs"
+permalink: /en/work/jira/J01-96/
+---
+
+**Stand:** 2026-03-16
+
+Canonical public work status for `J01-96`.
+This issue adds an active register layer to the `tagebuch` repo for
+development lines and keeps raw chat inputs as a separate provenance layer for
+round notes.
+
+## Goal
+
+Keep `tagebuch` as a sense-making and source repo without forcing single notes
+into normative status.
+The model separates three layers:
+
+- `notes/raw/` for raw inputs
+- `notes/inbox/` for smoothed round notes
+- `notes/index/` for active registers and development lines
+
+## Implemented now
+
+- created the new Jira issue `J01-96` for the journal/register topic
+- added a `tagebuch` round note for this decision and implementation line
+- added raw inputs for this topic under `notes/raw/2026-03-16.md`
+- created `notes/index/entwicklungslinien.md` as the first active register
+- linked the new register from the `tagebuch` start index
+- updated `notes/meta/system.md`:
+  thematic registers are derived views, not the source
+- updated the project skill:
+  for origin, development-line, and source questions, check the register
+  first, then search `tagebuch`, and add new finds back into the register
+
+## Working model
+
+- Individual `tagebuch` notes stay append-only.
+- Status and interpretation live only in the register.
+- Any source query with a new finding can extend the register.
+- Skills point to the register but do not duplicate the topic history.
+
+## Source basis
+
+- Local:
+  - `tagebuch/notes/meta/system.md`
+  - `tagebuch/notes/inbox/2026-02-25-dialektik-j01-83-cache-skill-notizsystem.md`
+  - `tagebuch/notes/inbox/idee-spiegelung-rueckmeldung.md`
+- External precedents:
+  - [IETF RFC 2223](https://www.rfc-editor.org/rfc/rfc2223) for
+    `Updates`/`Obsoletes` as a relationship model
+  - [GDS: Documenting architecture decisions](https://gds-way.digital.cabinet-office.gov.uk/standards/architecture-decisions.html)
+    for visible successor links in ADRs
+  - [HHS: Content Lifecycle Management and Archive Guidance](https://www.hhs.gov/web/building-and-managing-websites/managing-websites/content-management-lifecycle-and-archive-policy/index.html)
+    for separating historical records from the current entry point
+
+## V1 Rules
+
+- No fields like `current`, `superseded`, or `valid` inside individual
+  journal notes.
+- No daily mandatory indexes.
+- Create registers only where real retrieval failures or new source findings
+  occur.
+- No automatic index generation in V1.
+
+## Links
+
+- [Jira work docs]({{ "/en/work/jira/" | relative_url }})

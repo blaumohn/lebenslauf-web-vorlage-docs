@@ -1,0 +1,72 @@
+---
+layout: page
+title: "J01-96: Tagebuch-Register und rohe Chat-Eingaben verankern"
+permalink: /de/work/jira/J01-96/
+---
+
+**Stand:** 2026-03-16
+
+Kanonischer öffentlicher Arbeitsstand für `J01-96`.
+Der Vorgang ergänzt das Repo `tagebuch` um einen aktiven Register-Layer für
+Entwicklungslinien und verankert rohe Chat-Eingaben als eigene Provenienz-Ebene
+für Rundenprotokolle.
+
+## Ziel
+
+Das `tagebuch` als Sense-Making- und Quellen-Repo erhalten, ohne einzelne
+Notizen künstlich zu normieren.
+Dafür werden drei Ebenen getrennt:
+
+- `notes/raw/` für rohe Eingaben
+- `notes/inbox/` für geglättete Rundenprotokolle
+- `notes/index/` für aktive Register und Entwicklungslinien
+
+## Jetzt umgesetzt
+
+- neuer Jira-Vorgang `J01-96` für das Tagebuch-/Register-Thema angelegt
+- `tagebuch`-Rundenprotokoll zu dieser Entscheidungs- und Umsetzungsrunde
+  ergänzt
+- Roh-Eingaben für den Themenstrang unter `notes/raw/2026-03-16.md` ergänzt
+- neues Register `notes/index/entwicklungslinien.md` als aktive Sicht angelegt
+- Start-Index des `tagebuch` um das neue Register erweitert
+- `notes/meta/system.md` um die Regel ergänzt:
+  thematische Register sind abgeleitete Sichten, keine Quelle
+- Projekt-Skill ergänzt:
+  Bei Herkunfts-, Entwicklungs- und Quellenfragen zuerst Register prüfen,
+  dann gezielt im `tagebuch` suchen und bei neuen Funden das Register
+  ergänzen
+
+## Arbeitsmodell
+
+- Einzelne `tagebuch`-Notizen bleiben append-only.
+- Status und Einordnung liegen nur im Register.
+- Jede Quellenanfrage mit neuem Fund kann das Register erweitern.
+- Skills verweisen auf das Register, führen aber keine doppelte
+  Themenhistorie.
+
+## Quellenbezug
+
+- Lokal:
+  - `tagebuch/notes/meta/system.md`
+  - `tagebuch/notes/inbox/2026-02-25-dialektik-j01-83-cache-skill-notizsystem.md`
+  - `tagebuch/notes/inbox/idee-spiegelung-rueckmeldung.md`
+- Externe Vorbilder:
+  - [IETF RFC 2223](https://www.rfc-editor.org/rfc/rfc2223) für
+    `Updates`/`Obsoletes` als Beziehungsmodell
+  - [GDS: Documenting architecture decisions](https://gds-way.digital.cabinet-office.gov.uk/standards/architecture-decisions.html)
+    für sichtbare Nachfolger-Bezüge in ADRs
+  - [HHS: Content Lifecycle Management and Archive Guidance](https://www.hhs.gov/web/building-and-managing-websites/managing-websites/content-management-lifecycle-and-archive-policy/index.html)
+    für die Trennung von historischem Verlauf und aktuellem Einstieg
+
+## V1-Regeln
+
+- Keine Statusfelder wie `aktuell`, `ersetzt` oder `gültig` in einzelnen
+  Tagebuch-Notizen.
+- Keine täglichen Pflicht-Indizes.
+- Register nur dort, wo reale Fehlauffindbarkeit oder neue Quellenfunde
+  entstehen.
+- Keine automatische Index-Generierung in V1.
+
+## Links
+
+- [Jira-Arbeitsdokus]({{ "/de/work/jira/" | relative_url }})

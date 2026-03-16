@@ -17,8 +17,8 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Aufgaben
 
-- [J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte]({{ "/de/mirror/issues/J01-72/" | relative_url }})
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/de/mirror/issues/J01-85/" | relative_url }})
+- [J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte]({{ "/de/mirror/issues/J01-72/" | relative_url }})
 
 ## Links
 
