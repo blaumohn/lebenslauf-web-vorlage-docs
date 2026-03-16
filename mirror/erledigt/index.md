@@ -17,3 +17,4 @@ Keine Vorgänge.
 
 - [J01-79 — Atlassian CLI: API-Betriebe (Wrapper), http als Escape-Hatch]({{ "/de/mirror/issues/J01-79/" | relative_url }})
 - [J01-80 — Atlassian Tools: Refactor – AGENTS Coding-Standards durchgehend umsetzen]({{ "/de/mirror/issues/J01-80/" | relative_url }})
+- [J01-96 — Tagebuch: Quellenregister und Roh-Eingaben verankern]({{ "/de/mirror/issues/J01-96/" | relative_url }})

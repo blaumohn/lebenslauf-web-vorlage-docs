@@ -37,13 +37,13 @@ Regeln, Skills und öffentliche Doku zu vermischen.
   in das Projekt-Skill-Repo zurückgezogen
 - im Doku-Repo in diesem Themenblock nur die aktuell benötigten
   Container-/Build-Vorläufe belassen
+- Jira-Vorgang `J01-92` nach dem Umsetzungsstand auf `Erledigt` gezogen
 
 ## Nächste Schritte
 
 1. Spätere Ziel- oder Tooling-Reifung der markierten Kandidaten nur per
    separatem Folge-Vorgang entscheiden.
 2. Repo-AGENTS gegen die neuen Shared-Regeln abgleichen.
-3. Den aktualisierten Jira-Zustand in den öffentlichen Mirror nachziehen.
 
 ## Links
 

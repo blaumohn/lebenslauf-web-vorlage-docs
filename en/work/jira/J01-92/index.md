@@ -35,13 +35,13 @@ rules, skills, and public docs.
   `lebenslauf-web-vorlage-docs/scripts/` and back into the project skill repo
 - kept only the currently required container/build prereqs in the docs repo for
   this topic
+- moved Jira issue `J01-92` to `Done` after the implementation landed
 
 ## Next steps
 
 1. Decide any later target- or tooling-repo maturation for the marked
    candidates only in a separate follow-up task.
 2. Align repo-local `AGENTS` files with the new shared rules.
-3. Pull the updated Jira state into the public mirror.
 
 ## Links
 

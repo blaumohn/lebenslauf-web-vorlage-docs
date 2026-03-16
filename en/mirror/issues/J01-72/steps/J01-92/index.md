@@ -10,8 +10,8 @@ No Jira Cloud links, no email addresses.
 
 - **Parent:** [J01-72]({{ "/en/mirror/issues/J01-72/" | relative_url }})
 - **Step:** 72-13
-- **Status:** In Progress
-- **Updated:** 2026-03-12T18:00:20.602+0100
+- **Status:** Done
+- **Updated:** 2026-03-16T14:34:32.126+0100
 
 ## Details
 

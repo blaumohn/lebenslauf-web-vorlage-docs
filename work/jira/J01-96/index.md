@@ -35,6 +35,7 @@ Dafür werden drei Ebenen getrennt:
   Bei Herkunfts- und Quellenfragen zuerst Register prüfen,
   dann gezielt im `tagebuch` suchen und bei neuen Funden das Register
   ergänzen
+- Jira-Vorgang `J01-96` wurde auf `Erledigt` gesetzt
 
 ## Arbeitsmodell
 

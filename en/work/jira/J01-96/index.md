@@ -32,6 +32,7 @@ The model separates three layers:
 - updated the project skill:
   for origin and source questions, check the register
   first, then search `tagebuch`, and add new finds back into the register
+- moved Jira issue `J01-96` to `Done`
 
 ## Working model
 

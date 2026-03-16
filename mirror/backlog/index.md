@@ -94,7 +94,7 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
   - 72-10 CLI-Cache: Public-only Policy + Output-Redaction + Endpoint-Allowlist — Zu erledigen
   - 72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links) — Erledigt
   - [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/de/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — In Bearbeitung
-  - [**72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern**]({{ "/de/mirror/issues/J01-72/steps/J01-92/" | relative_url }}) — In Bearbeitung
+  - [**72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern**]({{ "/de/mirror/issues/J01-72/steps/J01-92/" | relative_url }}) — Erledigt
   - [**72-14 Scrum-Sprint-Rahmen und öffentliche Sprint-Historie in GitHub Pages**]({{ "/de/mirror/issues/J01-72/steps/J01-94/" | relative_url }}) — Erledigt
   - [**72-15 Journalisierten Jira-/Pages-Sync mit Resume aufbauen**]({{ "/de/mirror/issues/J01-72/steps/J01-95/" | relative_url }}) — Erledigt
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/de/mirror/issues/J01-85/" | relative_url }})
@@ -104,4 +104,4 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
 
 ## Ohne Epic
 
-- [J01-96 — Tagebuch: Quellenregister und Roh-Eingaben verankern]({{ "/de/mirror/issues/J01-96/" | relative_url }})
+Keine Vorgänge.
