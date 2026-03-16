@@ -30,6 +30,9 @@ Die öffentliche, statische Jira-Übersicht in diesem Repo aktualisieren:
    - Bei Sprint-Arbeit zusätzlich:
      aktiven Sprint prüfen, Sprint-Labels setzen und öffentliche Sprint-Doku
      aktualisieren.
+   - Für dieselbe öffentliche Arbeitsdoku in Jira nur einen kanonischen
+     Remote-Link pflegen; die DE/EN-Aufspaltung bleibt Aufgabe von GitHub
+     Pages und Mirror.
 
 2) Jira-Übersicht generieren:
 
@@ -75,6 +78,7 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
 - Remote Links zeigen nicht als absolute Doku-Domain, sondern als relative Site-Links.
 - Remote Links folgen im Mirror dem Sprachkontext der Seite
   (`/de/...` auf DE-Seiten, `/en/...` auf EN-Seiten).
+- Jira selbst hält für dieselbe Arbeitsdoku keine doppelten DE/EN-Remote-Links.
   - Sprint-Board gruppiert die aktuelle Sprint-Arbeit nach Kategorie-Labels
     (`sprint-goal`, `sprint-support`, `sprint-admin`, `sprint-unplanned`).
   - Im Sprint-Board erscheinen nur dieselben Top-Level-Vorgänge wie im

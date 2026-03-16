@@ -43,6 +43,8 @@ The model separates three layers:
   - a search request produces new relevant sources and new search notes
 - Skills point to the register but do not duplicate topic history or create a
   meta-register.
+- Jira keeps only one canonical remote link for the same public work doc; the
+  mirror and GitHub Pages still stay fully DE/EN.
 
 ## Source basis
 
@@ -67,6 +69,7 @@ The model separates three layers:
 - Create registers only where real retrieval failures or new source findings
   occur.
 - No automatic index generation in V1.
+- No duplicate DE/EN remote links in Jira for the same work doc.
 
 ## Links
 

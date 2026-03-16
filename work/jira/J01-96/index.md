@@ -47,6 +47,8 @@ Dafür werden drei Ebenen getrennt:
   - eine Anfrage bringt neue relevante Quellen und neue Such-Notizen hervor
 - Skills verweisen auf das Register, führen aber keine doppelte
   Themenhistorie und kein Meta-Register.
+- Jira hält für dieselbe öffentliche Arbeitsdoku nur einen kanonischen
+  Remote-Link; Mirror und GitHub Pages bleiben trotzdem vollständig DE/EN.
 
 ## Quellenbezug
 
@@ -71,6 +73,7 @@ Dafür werden drei Ebenen getrennt:
 - Register nur dort, wo reale Fehlauffindbarkeit oder neue Quellenfunde
   entstehen.
 - Keine automatische Index-Generierung in V1.
+- Keine doppelten DE/EN-Remote-Links in Jira für dieselbe Arbeitsdoku.
 
 ## Links
 
