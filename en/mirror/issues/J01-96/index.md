@@ -13,11 +13,11 @@ No Jira Cloud links, no email addresses.
 - **Type:** Task
 - **Status:** In Progress
 - **Sprint:** SCRUM Sprint 1
-- **Updated:** 2026-03-16T12:18:07.434+0100
+- **Updated:** 2026-03-16T12:19:57.413+0100
 
 ## Links
 
-- [J01-96: Tagebuch-Register und rohe Chat-Eingaben verankern]({{ "/en/work/jira/J01-96/" | relative_url }})
+- [J01-96: Quellenregister und rohe Chat-Eingaben verankern]({{ "/en/work/jira/J01-96/" | relative_url }})
 
 ## Description
 
