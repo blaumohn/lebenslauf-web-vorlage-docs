@@ -3,7 +3,7 @@ layout: page
 title: "J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte"
 permalink: /de/mirror/issues/J01-72/
 ---
-<!-- mirror:subtasks_cksum=1526117301 -->
+<!-- mirror:subtasks_cksum=2876264366 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -37,7 +37,8 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **72-9 Board-Sicht prüfen (Prefix-Format 9-1)** — Erledigt
 - **72-10 CLI-Cache: Public-only Policy + Output-Redaction + Endpoint-Allowlist** — Zu erledigen
 - **72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links)** — Erledigt
-- [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/de/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — In Bearbeitung
+- [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/de/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — Erledigt
 - [**72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern**]({{ "/de/mirror/issues/J01-72/steps/J01-92/" | relative_url }}) — Erledigt
 - [**72-14 Scrum-Sprint-Rahmen und öffentliche Sprint-Historie in GitHub Pages**]({{ "/de/mirror/issues/J01-72/steps/J01-94/" | relative_url }}) — Erledigt
 - [**72-15 Journalisierten Jira-/Pages-Sync mit Resume aufbauen**]({{ "/de/mirror/issues/J01-72/steps/J01-95/" | relative_url }}) — Erledigt
+- [**72-16 Alte Confluence-Remote-Links in Jira bereinigen und Guardrail verankern**]({{ "/de/mirror/issues/J01-72/steps/J01-99/" | relative_url }}) — Erledigt

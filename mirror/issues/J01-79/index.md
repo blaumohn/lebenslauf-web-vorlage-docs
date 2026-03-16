@@ -13,11 +13,11 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Typ:** Task
 - **Status:** Erledigt
 - **Sprint:** SCRUM Sprint 0
-- **Aktualisiert:** 2026-02-24T23:39:27.815+0100
+- **Aktualisiert:** 2026-03-16T16:43:59.122+0100
 
 ## Links
 
--
+- [Jira- und Doku-Tooling: API-Betriebe (Wrapper)]({{ "/de/areas/proj-doku-tooling/api-betriebe/" | relative_url }})
 
 ## Beschreibung
 

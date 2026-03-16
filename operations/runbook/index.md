@@ -60,6 +60,12 @@ DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-syn
 DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-jira-ghpages-links.sh
 ```
 
+Optional: alte Confluence-Ziele gezielt auditen:
+
+```bash
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-jira-ghpages-links.sh --legacy-confluence-audit
+```
+
 Dabei gilt für die Umwandlung aus Jira-URLs:
 
 - `https://docs.template.ysdani.com/...` wird zu einer site-relativen URI.
@@ -67,6 +73,8 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
 - sprachgebundene Seiten werden im DE-Kontext auf `/de/...` und im EN-Kontext
   auf `/en/...` bestätigt
 - bestätigt wird lokal gegen dieses GitHub-Pages-Repo
+- der Legacy-Audit meldet alte `atlassian.net/wiki`-Ziele als
+  `LEGACY_CONFLUENCE<TAB>KEY<TAB>LINK_ID<TAB>URL<TAB>TITEL`
 
 4) Stichprobe (inhaltlich):
    - Subtasks ohne Angaben haben **keine** eigene Seite (nur Schritt-Nr/Titel/Zustand beim Parent).
@@ -97,5 +105,7 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
 - `git` ist die verlässliche Historie: Diffs entstehen nur bei Inhaltsänderung.
 - `shared-tooling/jira-pages/verify-jira-ghpages-links.sh` bestätigt die aus Jira importierten
   GitHub-Pages-Ziele lokal für DE und EN.
+- `shared-tooling/jira-pages/verify-jira-ghpages-links.sh --legacy-confluence-audit`
+  meldet verbliebene alte Confluence-Remote-Links mit Jira-Key und Link-ID.
 - `.local/jira-sync-cache/` und `.local/jira-sync-journal/` halten den
   lokalen Snapshot- und Resume-Zustand für den journalisierten Normalmodus.

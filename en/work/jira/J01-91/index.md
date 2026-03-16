@@ -39,6 +39,10 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
 - The project skill and repo rules are being tightened to the same flow:
   check branch context first, and route repo-local docs/rule work without a
   feature scope through `dev`.
+- `J01-91` now moves to `Done` in Jira.
+- Phase 2 execution now continues in [J01-98]({{ "/en/work/jira/J01-98/" | relative_url }}).
+- Legacy Confluence remote-link cleanup and the new audit guardrail now continue
+  in [J01-99]({{ "/en/work/jira/J01-99/" | relative_url }}).
 
 ## Arbeitsprinzip (kurz)
 
@@ -47,16 +51,18 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
 - Diese Seite ist ein **öffentlicher Snapshot**: „Was ist der Stand, was ist als Nächstes zu tun?“
 - Detail-Artefakte hängen unter `work/jira/J01-91/` (öffentlich) oder bleiben privat.
 
-## Next steps (concrete)
+## Closure and follow-up work
 
-1. Apply the fixed decisions in follow-up issues:
-   terminology on area pages, evidence under `quality/testmatrix/`,
-   detailed work inside the matching `work/jira/J01-<KEY>/`.
-2. Keep `archive-topics.md` as maintained guidance for new source reviews,
-   not as an open evaluation board.
-3. Check future structural docs changes against the tightened
-   `doku-richtlinie`.
-4. Keep linking public domain content from GitHub Pages only.
+`J01-91` is closed as the structure and decision issue.
+The remaining work is now split deliberately:
+
+1. [J01-98]({{ "/en/work/jira/J01-98/" | relative_url }}) executes the fixed
+   phase-2 targets on canonical pages and in matching work docs.
+2. [J01-99]({{ "/en/work/jira/J01-99/" | relative_url }}) cleans up legacy
+   Confluence remote links in Jira and anchors the audit guardrail.
+3. `archive-topics.md` remains maintained guidance, not an open review board.
+4. Future structural docs changes stay bound to the tightened docs policy and
+   the drift path.
 
 ## Phase 1: Status (DoD, Snapshot)
 
@@ -151,10 +157,11 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 - Split: clarifications stay in the existing policy; `J01-91` does not create a
   separate new policy.
 
-## Phase 2 (after closing the decisions)
+## Phase 2 (moved out)
 
 - Keep the status/plan view as a one-pager.
-- Execute the fixed targets inside follow-up issues or canonical pages.
+- Execute the fixed targets in [J01-98]({{ "/en/work/jira/J01-98/" | relative_url }})
+  on canonical pages or in matching work docs.
 - Use the docs policy as the gate for future structural docs changes.
 - Do not derive new doc types from `J01-91`.
 
@@ -163,3 +170,5 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 - [Mirror: J01-72 / Schritt J01-91]({{ "/en/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) (abgeleitet)
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/en/operations/runbook/" | relative_url }})
 - [Drift-Report (Qualität)]({{ "/en/quality/drift-reports/J01-91/" | relative_url }})
+- [J01-98: execute phase 2]({{ "/en/work/jira/J01-98/" | relative_url }})
+- [J01-99: clean up legacy Confluence remote links]({{ "/en/work/jira/J01-99/" | relative_url }})

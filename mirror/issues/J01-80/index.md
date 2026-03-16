@@ -13,11 +13,11 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Typ:** Task
 - **Status:** Erledigt
 - **Sprint:** SCRUM Sprint 0
-- **Aktualisiert:** 2026-02-24T23:39:54.046+0100
+- **Aktualisiert:** 2026-03-16T16:44:00.460+0100
 
 ## Links
 
--
+- [Programmierleitlinien]({{ "/de/policies/programmierleitlinien/" | relative_url }})
 
 ## Beschreibung
 

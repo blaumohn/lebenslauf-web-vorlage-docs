@@ -13,7 +13,7 @@ No Jira Cloud links, no email addresses.
 - **Type:** Epic
 - **Status:** To Do
 - **Sprint:** -
-- **Updated:** 2026-02-27T14:07:25.337+0100
+- **Updated:** 2026-03-16T16:44:07.760+0100
 
 ## Tasks
 
@@ -22,7 +22,8 @@ No Jira Cloud links, no email addresses.
 
 ## Links
 
--
+- [Bereich: Jira- und Doku-Tooling]({{ "/en/areas/proj-doku-tooling/" | relative_url }})
+- [Jira- und Doku-Tooling: Systemüberblick (Ziel & Ist)]({{ "/en/areas/proj-doku-tooling/aufbau/" | relative_url }})
 
 ## Description
 

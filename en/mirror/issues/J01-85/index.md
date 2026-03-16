@@ -3,7 +3,7 @@ layout: page
 title: "J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container"
 permalink: /en/mirror/issues/J01-85/
 ---
-<!-- mirror:subtasks_cksum=537140312 -->
+<!-- mirror:subtasks_cksum=858544747 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -13,12 +13,13 @@ No Jira Cloud links, no email addresses.
 - **Type:** Task
 - **Status:** To Do
 - **Sprint:** -
-- **Updated:** 2026-02-25T00:37:17.442+0100
+- **Updated:** 2026-03-16T16:44:10.499+0100
 - **Parent:** [J01-84 — Atlassian-System vorbereiten (SSOT: Jira)]({{ "/en/mirror/issues/J01-84/" | relative_url }})
 
 ## Links
 
--
+- [Jira- und Doku-Tooling: API-Betriebe (Wrapper)]({{ "/en/areas/proj-doku-tooling/api-betriebe/" | relative_url }})
+- [Jira- und Doku-Tooling: Systemüberblick (Ziel & Ist)]({{ "/en/areas/proj-doku-tooling/aufbau/" | relative_url }})
 
 ## Description
 

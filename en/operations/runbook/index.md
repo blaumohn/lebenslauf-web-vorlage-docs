@@ -55,6 +55,12 @@ DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-syn
 DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-jira-ghpages-links.sh
 ```
 
+Optional: audit legacy Confluence targets directly:
+
+```bash
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-jira-ghpages-links.sh --legacy-confluence-audit
+```
+
 The URL conversion from Jira follows these rules:
 
 - `https://docs.template.ysdani.com/...` becomes a site-relative URI
@@ -62,6 +68,8 @@ The URL conversion from Jira follows these rules:
 - language-bound pages are verified as `/de/...` in DE context and `/en/...`
   in EN context
 - verification runs against this local GitHub Pages repo
+- the legacy audit reports old `atlassian.net/wiki` targets as
+  `LEGACY_CONFLUENCE<TAB>KEY<TAB>LINK_ID<TAB>URL<TAB>TITLE`
 
 4) Spot check:
    - Subtasks without public details do **not** get their own page.
@@ -91,5 +99,7 @@ The URL conversion from Jira follows these rules:
 - `git` remains the reliable history: diffs only appear when content changes.
 - `shared-tooling/jira-pages/verify-jira-ghpages-links.sh` verifies imported GitHub Pages targets
   locally for both DE and EN.
+- `shared-tooling/jira-pages/verify-jira-ghpages-links.sh --legacy-confluence-audit`
+  reports remaining legacy Confluence remote links with Jira key and link ID.
 - `.local/jira-sync-cache/` and `.local/jira-sync-journal/` keep the local
   snapshot and resume state for the journaled normal mode.

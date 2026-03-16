@@ -93,10 +93,11 @@ Static Jira mirror (ohne Jira-Cloud-Links).
   - 72-9 Board-Sicht prüfen (Prefix-Format 9-1) — Done
   - 72-10 CLI-Cache: Public-only Policy + Output-Redaction + Endpoint-Allowlist — To Do
   - 72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links) — Done
-  - [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/en/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — In Progress
+  - [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/en/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — Done
   - [**72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern**]({{ "/en/mirror/issues/J01-72/steps/J01-92/" | relative_url }}) — Done
   - [**72-14 Scrum-Sprint-Rahmen und öffentliche Sprint-Historie in GitHub Pages**]({{ "/en/mirror/issues/J01-72/steps/J01-94/" | relative_url }}) — Done
   - [**72-15 Journalisierten Jira-/Pages-Sync mit Resume aufbauen**]({{ "/en/mirror/issues/J01-72/steps/J01-95/" | relative_url }}) — Done
+  - [**72-16 Alte Confluence-Remote-Links in Jira bereinigen und Guardrail verankern**]({{ "/en/mirror/issues/J01-72/steps/J01-99/" | relative_url }}) — Done
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/en/mirror/issues/J01-85/" | relative_url }})
   - 85-1 Refactor: Coding-Standards durchgehend umsetzen — To Do
   - 85-2 API-Betriebe (Wrapper), http als Escape-Hatch — To Do
@@ -105,4 +106,4 @@ Static Jira mirror (ohne Jira-Cloud-Links).
 
 ## Without Epic
 
-No issues.
+- [J01-98 — J01-91 Phase 2: Zielorte auf kanonischen Seiten umsetzen]({{ "/en/mirror/issues/J01-98/" | relative_url }})

@@ -38,6 +38,10 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
 - Projekt-Skill und Repo-Regeln werden auf denselben Ablauf nachgeschaerft:
   Branch-Kontext zuerst pruefen, repo-nahe Doku-/Regelarbeit ohne
   Feature-Bezug ueber `dev` fuehren.
+- `J01-91` wechselt in Jira auf `Erledigt`.
+- Die Phase-2-Umsetzung laeuft ab jetzt ueber [J01-98]({{ "/de/work/jira/J01-98/" | relative_url }}).
+- Die Bereinigung alter Confluence-Remote-Links und der neue Audit-Guardrail
+  laufen ab jetzt ueber [J01-99]({{ "/de/work/jira/J01-99/" | relative_url }}).
 
 ## Arbeitsprinzip (kurz)
 
@@ -46,16 +50,20 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
 - Diese Seite ist ein **öffentlicher Snapshot**: „Was ist der Stand, was ist als Nächstes zu tun?“
 - Detail-Artefakte hängen unter `work/jira/J01-91/` (öffentlich) oder bleiben privat.
 
-## Jetzt als Nächstes (konkret)
+## Abschluss und Folgearbeit
 
-1. Die festgezogenen Entscheidungen in Folge-Vorgängen anwenden:
-   Terminologie in Bereichsseiten, Nachweise in `quality/testmatrix/`,
-   Detailarbeit in den jeweiligen `work/jira/J01-<KEY>/`.
-2. `archive-topics.md` bei neuen Quellen nur noch fortschreiben, nicht mehr als
-   Prüfstand offenlassen.
-3. Neue strukturelle Doku-Änderungen gegen die geschärfte
-   `doku-richtlinie` prüfen.
-4. Weitere öffentliche Fachseiten nur noch von GitHub Pages aus verlinken.
+`J01-91` ist als Struktur- und Entscheidungs-Vorgang abgeschlossen.
+Die verbleibende Folgearbeit wurde bewusst herausgezogen:
+
+1. [J01-98]({{ "/de/work/jira/J01-98/" | relative_url }}) setzt die
+   festgezogenen Phase-2-Zielorte in kanonischen Seiten und passender
+   Arbeitsdoku um.
+2. [J01-99]({{ "/de/work/jira/J01-99/" | relative_url }}) bereinigt alte
+   Confluence-Remote-Links in Jira und verankert den Audit-Guardrail.
+3. `archive-topics.md` bleibt nur noch fortgeschriebene Arbeitsgrundlage und
+   kein offener Pruefstand mehr.
+4. Weitere strukturelle Doku-Aenderungen bleiben an die geschaerfte
+   `doku-richtlinie` und den Drift-Pfad gebunden.
 
 ## Phase 1: Status (DoD, Snapshot)
 
@@ -151,16 +159,18 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 - Zerlegung: Präzisierungen bleiben in der bestehenden Richtlinie; es wird keine
   zusätzliche neue Richtlinie für `J01-91` eröffnet.
 
-## Phase 2 (nach Abschluss der Abstimmung)
+## Phase 2 (ausgelagert)
 
-- Status-/Vorhaben-Darstellung als One-Pager beibehalten.
-- Zielorte je Thema in den Folge-Vorgängen oder kanonischen Fachseiten
-  umsetzen.
-- Die Doku-Richtlinie als Gate für weitere Strukturänderungen verwenden.
-- Keine neuen Dokutypen aus `J01-91` ableiten.
+- Status-/Vorhaben-Darstellung bleibt als One-Pager erhalten.
+- Die in `J01-91` festgezogenen Zielorte werden in [J01-98]({{ "/de/work/jira/J01-98/" | relative_url }})
+  auf kanonischen Fachseiten oder in passender Arbeitsdoku umgesetzt.
+- Die Doku-Richtlinie bleibt Gate für weitere Strukturänderungen.
+- Es werden weiterhin keine neuen Dokutypen aus `J01-91` abgeleitet.
 
 ## Links (Sichtbarkeit)
 
 - [Mirror: J01-72 / Schritt J01-91]({{ "/de/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) (abgeleitet)
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/de/operations/runbook/" | relative_url }})
 - [Drift-Report (Qualität)]({{ "/de/quality/drift-reports/J01-91/" | relative_url }})
+- [J01-98: Phase 2 umsetzen]({{ "/de/work/jira/J01-98/" | relative_url }})
+- [J01-99: Alte Confluence-Remote-Links bereinigen]({{ "/de/work/jira/J01-99/" | relative_url }})

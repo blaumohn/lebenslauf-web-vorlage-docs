@@ -13,12 +13,12 @@ No Jira Cloud links, no email addresses.
 - **Type:** Task
 - **Status:** To Do
 - **Sprint:** SCRUM Sprint 0, SCRUM Sprint 1
-- **Updated:** 2026-03-13T12:49:58.884+0100
+- **Updated:** 2026-03-16T16:48:36.250+0100
 - **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/en/mirror/issues/J01-5/" | relative_url }})
 
 ## Links
 
--
+- [Projekt-Doku: Start]({{ "/en/" | relative_url }})
 
 ## Description
 
