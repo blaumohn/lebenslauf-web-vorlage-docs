@@ -4,7 +4,7 @@ title: "J01-92: shared agent rules and skill versioning"
 permalink: /en/work/jira/J01-92/
 ---
 
-**Status date:** 2026-03-14
+**Status date:** 2026-03-16
 
 This page captures the public work status for `J01-92`.
 The task bundles versioned AI skills and recurring agent work rules.
@@ -27,21 +27,33 @@ rules, skills, and public docs.
 - Removed flat legacy entry points under `.agents/skills/` as canonical skill
   locations
 - Kept project-bound mirror and coordination workflows in the project skill repo
+- introduced the new `feature-matrix` doc type with template, policy entry, and
+  canonical URI pattern
+- added the canonical Jira/docs tooling feature matrix under
+  `areas/proj-doku-tooling/feature-matrix/`
+- moved skill-facing Jira/pages helpers out of
+  `lebenslauf-web-vorlage-docs/scripts/` and back into the project skill repo
+- kept only the currently required container/build prereqs in the docs repo for
+  this topic
 
 ## Next steps
 
-1. Align repo-local `AGENTS` files with the new shared rules.
-2. Move only genuinely decoupled workflow parts into `shared/`.
+1. Decide any later target- or tooling-repo maturation for the marked
+   candidates only in a separate follow-up task.
+2. Align repo-local `AGENTS` files with the new shared rules.
 3. Pull the updated Jira state into the public mirror.
 
 ## Links
 
 - [Mirror: J01-72 / step J01-92]({{ "/en/mirror/issues/J01-72/steps/J01-92/" | relative_url }})
+- [Feature matrix: Jira and docs tooling]({{ "/en/areas/proj-doku-tooling/feature-matrix/" | relative_url }})
 
 ## Notes
 
 - The workspace `AGENTS` file only contains compact always-on rules.
 - Detailed recurring workflows stay in skills.
+- Skill-facing helpers start in the project skill repo; any move into target or
+  tooling repos needs its own decision.
 - Repo-specific path and worktree rules stay in the respective repo `AGENTS.md`.
 - Shared means: no hard project binding; project specifics stay in the project
   skill repo.

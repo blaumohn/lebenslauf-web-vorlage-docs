@@ -4,7 +4,7 @@ title: "J01-92: Shared-Agent-Regeln und Skill-Versionierung"
 permalink: /de/work/jira/J01-92/
 ---
 
-**Stand:** 2026-03-14
+**Stand:** 2026-03-16
 
 Diese Seite hält den öffentlichen Arbeitsstand zu `J01-92` fest.
 Der Vorgang bündelt die Versionierung projektbezogener KI-Skills und die
@@ -29,22 +29,33 @@ Regeln, Skills und öffentliche Doku zu vermischen.
   entfernt
 - Projektgebundene Mirror-/Koordinations-Betriebe im Projekt-Skill-Repo
   belassen
+- neuen Dokutyp `feature-matrix` mit Vorlage, Policy-Eintrag und kanonischem
+  URI-Muster eingeführt
+- kanonische Feature-Matrix für Jira- und Doku-Tooling unter
+  `areas/proj-doku-tooling/feature-matrix/` angelegt
+- skillnahe Jira-/Pages-Helfer aus `lebenslauf-web-vorlage-docs/scripts/`
+  in das Projekt-Skill-Repo zurückgezogen
+- im Doku-Repo in diesem Themenblock nur die aktuell benötigten
+  Container-/Build-Vorläufe belassen
 
 ## Nächste Schritte
 
-1. Repo-AGENTS gegen die neuen Shared-Regeln abgleichen.
-2. Weitere teilweise allgemeine Projektbetriebe nur nach echter Entkopplung
-   nach `shared/` ziehen.
+1. Spätere Ziel- oder Tooling-Reifung der markierten Kandidaten nur per
+   separatem Folge-Vorgang entscheiden.
+2. Repo-AGENTS gegen die neuen Shared-Regeln abgleichen.
 3. Den aktualisierten Jira-Zustand in den öffentlichen Mirror nachziehen.
 
 ## Links
 
 - [Mirror: J01-72 / Schritt J01-92]({{ "/de/mirror/issues/J01-72/steps/J01-92/" | relative_url }})
+- [Feature-Matrix: Jira- und Doku-Tooling]({{ "/de/areas/proj-doku-tooling/feature-matrix/" | relative_url }})
 
 ## Hinweise
 
 - Workspace-AGENTS enthält nur Always-on-Kurzregeln.
 - Detaillierte Fachabläufe bleiben in Skills.
+- Skillnahe Helfer starten im Projekt-Skill-Repo; ein Wechsel nach Ziel- oder
+  Tooling-Repo braucht eine eigene Abstimmung.
 - Repo-spezifische Pfad- und Worktree-Regeln bleiben in den jeweiligen
   Repo-`AGENTS.md`.
 - Shared heißt in diesem Kontext:

@@ -10,5 +10,6 @@ permalink: /de/templates/
 - [Postmortem-Vorlage]({{ "/de/templates/postmortem/" | relative_url }})
 - [Sprint-Dossier-Vorlage]({{ "/de/templates/sprint-dossier/" | relative_url }})
 - [Testmatrix-Vorlage]({{ "/de/templates/testmatrix/" | relative_url }})
+- [Feature-Matrix-Vorlage]({{ "/de/templates/feature-matrix/" | relative_url }})
 - [Drift-Report-Vorlage]({{ "/de/templates/drift-report/" | relative_url }})
 - [Richtlinie/Überblick-Vorlage]({{ "/de/templates/richtlinie/" | relative_url }})

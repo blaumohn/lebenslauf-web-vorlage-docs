@@ -18,7 +18,7 @@ Siehe Runbook: `operations/ghpages-preview/`.
 ## Betrieb (Jira-Übersicht aktualisieren)
 
 ```bash
-sh scripts/update-jira-mirror.sh
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-jira-mirror.sh
 ```
 
 Gezielter Normalmodus für bekannte Änderungen:

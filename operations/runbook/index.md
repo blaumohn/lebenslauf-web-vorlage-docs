@@ -37,13 +37,13 @@ Die öffentliche, statische Jira-Übersicht in diesem Repo aktualisieren:
 2) Jira-Übersicht generieren:
 
 ```bash
-sh scripts/update-jira-mirror.sh
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-jira-mirror.sh
 ```
 
 Optional (on demand, „neu baselinen“):
 
 ```bash
-sh scripts/update-jira-mirror.sh --full
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-jira-mirror.sh --full
 ```
 
 Optional (journalisierter Normalmodus bei bekannten Änderungen):
@@ -57,7 +57,7 @@ DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-syn
 3) GitHub-Pages-Ziele aus Jira lokal bestätigen:
 
 ```bash
-sh scripts/verify-jira-ghpages-links.sh
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-jira-ghpages-links.sh
 ```
 
 Dabei gilt für die Umwandlung aus Jira-URLs:
@@ -95,7 +95,7 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
 - Das Sprint-Board zeigt die Sprint-Kategorien in eigener Zeilenstruktur.
 - Issue-/Step-Seiten enthalten je Vorgang `**Aktualisiert:** …` (Jira-Quelle).
 - `git` ist die verlässliche Historie: Diffs entstehen nur bei Inhaltsänderung.
-- `scripts/verify-jira-ghpages-links.sh` bestätigt die aus Jira importierten
+- `shared-tooling/jira-pages/verify-jira-ghpages-links.sh` bestätigt die aus Jira importierten
   GitHub-Pages-Ziele lokal für DE und EN.
 - `.local/jira-sync-cache/` und `.local/jira-sync-journal/` halten den
   lokalen Snapshot- und Resume-Zustand für den journalisierten Normalmodus.

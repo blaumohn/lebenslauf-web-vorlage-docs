@@ -15,6 +15,7 @@ Dieser Bereich beschreibt die Projektverwaltung und öffentliche Dokumentation:
   - Hinweis: Die Area-ID bleibt stabil als `proj-doku-tooling`, auch wenn sich Repo-Namen künftig ändern.
 
 - [Aufbau (Systemüberblick)]({{ "/de/areas/proj-doku-tooling/aufbau/" | relative_url }})
+- [Feature-Matrix]({{ "/de/areas/proj-doku-tooling/feature-matrix/" | relative_url }})
 - [API-Betriebe (Wrapper)]({{ "/de/areas/proj-doku-tooling/api-betriebe/" | relative_url }})
 - [Jira‑Übersicht (öffentlich)]({{ "/de/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }})
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/de/operations/runbook/" | relative_url }})

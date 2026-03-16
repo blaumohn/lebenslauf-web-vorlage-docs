@@ -36,6 +36,10 @@ permalink: /de/policies/doku-richtlinie/
 5) Ist es „so arbeiten wir“ (Konventionen/Leitlinien)?
    - Richtlinie.
 
+4a) Ist es eine gleichförmige Feature- oder Zustandsübersicht mit
+    Pflichtspalten?
+   - Feature-Matrix.
+
 ## Genauigkeit des Zielorts (danach zusätzlich entscheiden)
 
 6) Ist der Inhalt an genau einen Jira-Vorgang gebunden?
@@ -98,6 +102,7 @@ Repo: lebenslauf-web-vorlage – Überblick (Startseite)
 - Runbook-Vorlage
 - Sprint-Dossier-Vorlage
 - Testmatrix-Vorlage
+- Feature-Matrix-Vorlage
 - Richtlinie/Überblick-Vorlage
 ```
 
@@ -141,7 +146,7 @@ I) **Jeder Dokutyp braucht eine Vorlage**
 - Standard-Dokutypen in diesem Repo sind nur Typen mit gepflegter Vorlage unter
   `templates/`.
 - Bevorzugt werden etablierte Typen wie `ADR`, `KEP-Lite`, `Runbook`,
-  `Richtlinie/Überblick`, `Sprint-Dossier`, `Testmatrix`,
+  `Richtlinie/Überblick`, `Sprint-Dossier`, `Testmatrix`, `Feature-Matrix`,
   `Drift-Report`, `Postmortem`.
 
 J) **Neue Dokutypen brauchen Policy + URI-Muster**

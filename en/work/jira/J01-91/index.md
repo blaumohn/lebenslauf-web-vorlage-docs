@@ -54,7 +54,7 @@ Statuswerte:
 | Punkt (DoD) | Status | Beleg / Ort |
 | --- | --- | --- |
 | Drift-Report + Abdeckung (ohne `mirror/`) | erledigt | [Drift-Report]({{ "/en/quality/drift-reports/J01-91/" | relative_url }}) und [Abdeckung]({{ "/en/quality/drift-reports/J01-91/coverage/" | relative_url }}) |
-| Jira-Übersicht „sauber voll gespiegelt“ | erledigt | [Runbook]({{ "/en/operations/runbook/" | relative_url }}) und `scripts/update-jira-mirror.sh` |
+| Jira-Übersicht „sauber voll gespiegelt“ | erledigt | [Runbook]({{ "/en/operations/runbook/" | relative_url }}) und `shared-tooling/jira-pages/update-jira-mirror.sh` |
 | Bereiche-Inventar konsistent | erledigt | [Bereiche-Inventar]({{ "/en/work/jira/J01-91/area-inventory/" | relative_url }}) |
 | Archiv-Auswertung liegt vor (Themen, ohne IDs) | teilweise | [Archiv-Themen]({{ "/en/work/jira/J01-91/archive-topics/" | relative_url }}) (Übernahme-Entscheidungen sind noch „offen“) |
 | Policy-Delta-Vorschläge formuliert | erledigt | [Policy-Deltas]({{ "/en/work/jira/J01-91/policy-deltas/" | relative_url }}) |

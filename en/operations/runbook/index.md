@@ -32,13 +32,13 @@ Update the public static Jira mirror in this repo:
 2) Generate the Jira mirror:
 
 ```bash
-sh scripts/update-jira-mirror.sh
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-jira-mirror.sh
 ```
 
 Optional (full refresh):
 
 ```bash
-sh scripts/update-jira-mirror.sh --full
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-jira-mirror.sh --full
 ```
 
 Optional (journaled normal mode for known changes):
@@ -52,7 +52,7 @@ DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-syn
 3) Verify GitHub Pages targets from Jira locally:
 
 ```bash
-sh scripts/verify-jira-ghpages-links.sh
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-jira-ghpages-links.sh
 ```
 
 The URL conversion from Jira follows these rules:
@@ -89,7 +89,7 @@ The URL conversion from Jira follows these rules:
 - The sprint board has dedicated row groups for sprint categories.
 - Issue and step pages carry an `Updated` timestamp from Jira.
 - `git` remains the reliable history: diffs only appear when content changes.
-- `scripts/verify-jira-ghpages-links.sh` verifies imported GitHub Pages targets
+- `shared-tooling/jira-pages/verify-jira-ghpages-links.sh` verifies imported GitHub Pages targets
   locally for both DE and EN.
 - `.local/jira-sync-cache/` and `.local/jira-sync-journal/` keep the local
   snapshot and resume state for the journaled normal mode.
