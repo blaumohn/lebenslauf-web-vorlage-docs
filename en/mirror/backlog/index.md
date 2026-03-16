@@ -101,6 +101,7 @@ Static Jira mirror (ohne Jira-Cloud-Links).
   - 85-1 Refactor: Coding-Standards durchgehend umsetzen — To Do
   - 85-2 API-Betriebe (Wrapper), http als Escape-Hatch — To Do
   - 85-3 Backlog: Confluence-Spiegel periodisch aktualisieren (Batch; optional Warteschlange) — To Do
+  - 85-4 Backlog: Feature-Matrix fuer Tooling-Betriebe vervollstaendigen — To Do
 
 ## Without Epic
 

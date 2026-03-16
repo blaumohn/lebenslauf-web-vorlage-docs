@@ -101,6 +101,7 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
   - 85-1 Refactor: Coding-Standards durchgehend umsetzen — Zu erledigen
   - 85-2 API-Betriebe (Wrapper), http als Escape-Hatch — Zu erledigen
   - 85-3 Backlog: Confluence-Spiegel periodisch aktualisieren (Batch; optional Warteschlange) — Zu erledigen
+  - 85-4 Backlog: Feature-Matrix fuer Tooling-Betriebe vervollstaendigen — Zu erledigen
 
 ## Ohne Epic
 
