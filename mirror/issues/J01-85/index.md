@@ -3,7 +3,7 @@ layout: page
 title: "J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container"
 permalink: /de/mirror/issues/J01-85/
 ---
-<!-- mirror:subtasks_cksum=858544747 -->
+<!-- mirror:subtasks_cksum=1989440177 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -30,4 +30,4 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **85-1 Refactor: Coding-Standards durchgehend umsetzen** — Zu erledigen
 - **85-2 API-Betriebe (Wrapper), http als Escape-Hatch** — Zu erledigen
 - **85-3 Backlog: Confluence-Spiegel periodisch aktualisieren (Batch; optional Warteschlange)** — Zu erledigen
-- **85-4 Backlog: Feature-Matrix fuer Tooling-Betriebe vervollstaendigen** — Zu erledigen
+- **85-4 Backlog: Feature-Matrix für Tooling-Betriebe vervollständigen** — Zu erledigen

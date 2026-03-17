@@ -3,7 +3,7 @@ layout: page
 title: "J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte"
 permalink: /de/mirror/issues/J01-72/
 ---
-<!-- mirror:subtasks_cksum=3234302175 -->
+<!-- mirror:subtasks_cksum=2021616265 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -11,14 +11,14 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 - **Key:** `J01-72`
 - **Typ:** Task
-- **Status:** In Bearbeitung
+- **Status:** Erledigt
 - **Sprint:** SCRUM Sprint 0, SCRUM Sprint 1
-- **Aktualisiert:** 2026-03-13T12:49:59.540+0100
+- **Aktualisiert:** 2026-03-17T13:49:24.019+0100
 - **Parent:** [J01-84 — Atlassian-System vorbereiten (SSOT: Jira)]({{ "/de/mirror/issues/J01-84/" | relative_url }})
 
 ## Links
 
--
+- [J01-72: Abschluss der Umsetzungsschritte]({{ "/de/work/jira/J01-72/" | relative_url }})
 
 ## Beschreibung
 
@@ -33,9 +33,9 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **72-5 Spiegel-Anzeige für Epics/Aufgaben: Vorgangsnummern + eigene Seiten** — Erledigt
 - **72-6 Spiegel-Links umstellen (nur Confluence-Spiegel-Links)** — Erledigt
 - **72-7 Spiegel-Anzeige für Unteraufgaben: nur Summary-Prefix** — Erledigt
-- **72-8 Projektweit: Subtask-Reihenfolge gegen Export prüfen** — Zu erledigen
+- **72-8 Projektweit: Subtask-Reihenfolge gegen Export prüfen** — Erledigt
 - **72-9 Board-Sicht prüfen (Prefix-Format 9-1)** — Erledigt
-- [**72-10 CLI-Cache: erste Cache-V1 vorbereiten (Policy getrennt)**]({{ "/de/mirror/issues/J01-72/steps/J01-83/" | relative_url }}) — In Bearbeitung
+- [**72-10 CLI-Cache: erste Cache-V1 vorbereiten (Policy getrennt)**]({{ "/de/mirror/issues/J01-72/steps/J01-83/" | relative_url }}) — Erledigt
 - **72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links)** — Erledigt
 - [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/de/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — Erledigt
 - [**72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern**]({{ "/de/mirror/issues/J01-72/steps/J01-92/" | relative_url }}) — Erledigt

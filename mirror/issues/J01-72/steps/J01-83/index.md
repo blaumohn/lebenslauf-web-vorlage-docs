@@ -10,8 +10,8 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 - **Parent:** [J01-72]({{ "/de/mirror/issues/J01-72/" | relative_url }})
 - **Schritt:** 72-10
-- **Status:** In Bearbeitung
-- **Aktualisiert:** 2026-03-17T12:40:36.883+0100
+- **Status:** Erledigt
+- **Aktualisiert:** 2026-03-17T13:49:00.196+0100
 
 ## Angaben
 
@@ -36,3 +36,4 @@ Die öffentliche Arbeitsdoku, das Tagebuch und der Mirror werden in derselben Ru
 ## Links
 
 - [ADR-0002 Tooling: atlassian-http-client Sicherheitsmodell]({{ "/de/decisions/adr-0002/" | relative_url }})
+- [J01-83: Erste Cache-V1 vorbereiten und Policy trennen]({{ "/de/work/jira/J01-83/" | relative_url }})

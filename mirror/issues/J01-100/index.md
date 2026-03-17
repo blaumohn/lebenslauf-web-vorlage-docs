@@ -13,7 +13,7 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 - **Typ:** Task
 - **Status:** Zu erledigen
 - **Sprint:** -
-- **Aktualisiert:** 2026-03-17T09:35:46.106+0100
+- **Aktualisiert:** 2026-03-17T10:55:25.772+0100
 
 ## Links
 
