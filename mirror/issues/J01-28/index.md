@@ -3,7 +3,7 @@ layout: page
 title: "J01-28 — Analyse: Risikomuster und Befundliste"
 permalink: /de/mirror/issues/J01-28/
 ---
-<!-- mirror:subtasks_cksum=2491577805 -->
+<!-- mirror:subtasks_cksum=3874033004 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -26,5 +26,5 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Unteraufgaben
 
-- **28-1 Befunde erfassen** — Zu erledigen
-- **28-2 Priorisierung und Folge-Tickets** — Zu erledigen
+- [**28-1 Befunde erfassen**]({{ "/de/mirror/issues/J01-28/steps/J01-29/" | relative_url }}) — Zu erledigen
+- [**28-2 Priorisierung und Folge-Tickets**]({{ "/de/mirror/issues/J01-28/steps/J01-30/" | relative_url }}) — Zu erledigen

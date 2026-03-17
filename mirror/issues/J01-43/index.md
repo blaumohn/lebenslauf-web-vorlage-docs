@@ -3,7 +3,7 @@ layout: page
 title: "J01-43 — Preview: FTP/FTPS-Verwaltungsskripte"
 permalink: /de/mirror/issues/J01-43/
 ---
-<!-- mirror:subtasks_cksum=1118503074 -->
+<!-- mirror:subtasks_cksum=1012928940 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -26,5 +26,5 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Unteraufgaben
 
-- **43-1 Marker/Signaldatei-Flow definieren** — Zu erledigen
-- **43-2 Doku + Tests ergänzen** — Zu erledigen
+- [**43-1 Marker/Signaldatei-Flow definieren**]({{ "/de/mirror/issues/J01-43/steps/J01-44/" | relative_url }}) — Zu erledigen
+- [**43-2 Doku + Tests ergänzen**]({{ "/de/mirror/issues/J01-43/steps/J01-45/" | relative_url }}) — Zu erledigen

@@ -78,7 +78,18 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
 
 4) Stichprobe (inhaltlich):
    - Subtasks ohne Angaben haben **keine** eigene Seite (nur Schritt-Nr/Titel/Zustand beim Parent).
-   - Subtasks mit Angaben haben eine Schritt-Seite (URL enthält den Subtask-Key; Linktext bleibt ParentNr-SchrittNr).
+   - Grundbestand eines Subtasks sind Schritt-Nr., Titel und Status.
+   - Reine Metadaten einer Schritt-Seite, etwa Parent, Schritt-Nr., Status,
+     Key oder Aktualisiert-Datum, zählen **nicht** als zusätzliche Angaben.
+   - Subtasks mit zusätzlichen Angaben haben eine Schritt-Seite
+     (URL enthält den Subtask-Key; Linktext bleibt ParentNr-SchrittNr).
+   - Zusätzliche Angaben sind eigene fachliche Inhalte oder eigene
+     kanonische Verweise des Subtasks, die über Grundbestand und Metadaten
+     hinausgehen.
+   - Dazu zählen insbesondere eine eigene öffentliche Arbeitsdoku unter
+     `work/jira/J01-<KEY>/`, ein kanonischer Jira-Remote-Link auf diese Doku,
+     eigene Nachweise, eigene Abschlussaussagen oder andere eigene
+     kanonische Zielseiten.
 
 5) Hygiene (Policy):
   - Keine `atlassian.net` Links im Output.

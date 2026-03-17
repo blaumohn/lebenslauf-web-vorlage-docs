@@ -3,7 +3,7 @@ layout: page
 title: "J01-13 — Preview: Testmatrix und Entscheidungen finalisieren"
 permalink: /de/mirror/issues/J01-13/
 ---
-<!-- mirror:subtasks_cksum=1338414301 -->
+<!-- mirror:subtasks_cksum=2744077055 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -26,5 +26,5 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Unteraufgaben
 
-- **13-1 Entscheidungstabelle finalisieren** — Zu erledigen
-- **13-2 Testmatrix-Nachweise verlinken** — Zu erledigen
+- [**13-1 Entscheidungstabelle finalisieren**]({{ "/de/mirror/issues/J01-13/steps/J01-14/" | relative_url }}) — Zu erledigen
+- [**13-2 Testmatrix-Nachweise verlinken**]({{ "/de/mirror/issues/J01-13/steps/J01-15/" | relative_url }}) — Zu erledigen

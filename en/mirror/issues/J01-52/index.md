@@ -3,7 +3,7 @@ layout: page
 title: "J01-52 — Backlog: Typensicherheit statt Guards"
 permalink: /en/mirror/issues/J01-52/
 ---
-<!-- mirror:subtasks_cksum=1575738650 -->
+<!-- mirror:subtasks_cksum=2195072242 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -26,4 +26,4 @@ No Jira Cloud links, no email addresses.
 
 ## Subtasks
 
-- **52-1 Scope skizzieren** — To Do
+- [**52-1 Scope skizzieren**]({{ "/en/mirror/issues/J01-52/steps/J01-53/" | relative_url }}) — To Do

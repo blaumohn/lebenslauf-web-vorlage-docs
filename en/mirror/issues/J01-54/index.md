@@ -3,7 +3,7 @@ layout: page
 title: "J01-54 — Backlog: Zentrales Fehlerkonzept"
 permalink: /en/mirror/issues/J01-54/
 ---
-<!-- mirror:subtasks_cksum=1145657848 -->
+<!-- mirror:subtasks_cksum=2608111632 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -26,4 +26,4 @@ No Jira Cloud links, no email addresses.
 
 ## Subtasks
 
-- **54-1 Scope skizzieren** — To Do
+- [**54-1 Scope skizzieren**]({{ "/en/mirror/issues/J01-54/steps/J01-55/" | relative_url }}) — To Do

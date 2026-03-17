@@ -3,7 +3,7 @@ layout: page
 title: "J01-34 — CLI-UX: Missing-Config und Pipeline-Phase"
 permalink: /en/mirror/issues/J01-34/
 ---
-<!-- mirror:subtasks_cksum=2674587659 -->
+<!-- mirror:subtasks_cksum=3593771070 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -26,5 +26,5 @@ No Jira Cloud links, no email addresses.
 
 ## Subtasks
 
-- **34-1 Pipeline-Phase-Syntax festlegen** — To Do
-- **34-2 Missing-Config-Befehl definieren** — To Do
+- [**34-1 Pipeline-Phase-Syntax festlegen**]({{ "/en/mirror/issues/J01-34/steps/J01-35/" | relative_url }}) — To Do
+- [**34-2 Missing-Config-Befehl definieren**]({{ "/en/mirror/issues/J01-34/steps/J01-36/" | relative_url }}) — To Do

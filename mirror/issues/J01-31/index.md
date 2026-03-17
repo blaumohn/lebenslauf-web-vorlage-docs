@@ -3,7 +3,7 @@ layout: page
 title: "J01-31 — Preview Readiness: System-Source-Verarbeitung"
 permalink: /de/mirror/issues/J01-31/
 ---
-<!-- mirror:subtasks_cksum=1899156791 -->
+<!-- mirror:subtasks_cksum=1561879826 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -26,5 +26,5 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Unteraufgaben
 
-- **31-1 Guard-Strategie finalisieren** — Zu erledigen
-- **31-2 Produktions-Pattern Vergleich dokumentieren** — Zu erledigen
+- [**31-1 Guard-Strategie finalisieren**]({{ "/de/mirror/issues/J01-31/steps/J01-32/" | relative_url }}) — Zu erledigen
+- [**31-2 Produktions-Pattern Vergleich dokumentieren**]({{ "/de/mirror/issues/J01-31/steps/J01-33/" | relative_url }}) — Zu erledigen

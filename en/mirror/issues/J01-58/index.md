@@ -3,7 +3,7 @@ layout: page
 title: "J01-58 — Backlog: Pipeline-Phase Terminologie repo-weit"
 permalink: /en/mirror/issues/J01-58/
 ---
-<!-- mirror:subtasks_cksum=2999774683 -->
+<!-- mirror:subtasks_cksum=1844515891 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -26,4 +26,4 @@ No Jira Cloud links, no email addresses.
 
 ## Subtasks
 
-- **58-1 Scope skizzieren** — To Do
+- [**58-1 Scope skizzieren**]({{ "/en/mirror/issues/J01-58/steps/J01-59/" | relative_url }}) — To Do

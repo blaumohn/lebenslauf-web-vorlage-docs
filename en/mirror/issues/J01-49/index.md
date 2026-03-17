@@ -3,7 +3,7 @@ layout: page
 title: "J01-49 — i18n: Template-Texte i18n-fähig machen"
 permalink: /en/mirror/issues/J01-49/
 ---
-<!-- mirror:subtasks_cksum=2173231041 -->
+<!-- mirror:subtasks_cksum=448548797 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -26,5 +26,5 @@ No Jira Cloud links, no email addresses.
 
 ## Subtasks
 
-- **49-1 Template-Text-Keys definieren** — To Do
-- **49-2 DE/EN Mindestumfang liefern** — To Do
+- [**49-1 Template-Text-Keys definieren**]({{ "/en/mirror/issues/J01-49/steps/J01-50/" | relative_url }}) — To Do
+- [**49-2 DE/EN Mindestumfang liefern**]({{ "/en/mirror/issues/J01-49/steps/J01-51/" | relative_url }}) — To Do

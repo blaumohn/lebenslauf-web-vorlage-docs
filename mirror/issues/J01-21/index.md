@@ -3,7 +3,7 @@ layout: page
 title: "J01-21 — Runtime: IP_SALT-Verwaltung und Guardrails"
 permalink: /de/mirror/issues/J01-21/
 ---
-<!-- mirror:subtasks_cksum=3520322599 -->
+<!-- mirror:subtasks_cksum=2095031605 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -26,6 +26,6 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Unteraufgaben
 
-- **21-1 Runtime-Verwaltung implementieren** — Zu erledigen
-- **21-2 CLI-Resetpfad etablieren** — Zu erledigen
-- **21-3 Paralleltests ergänzen** — Zu erledigen
+- [**21-1 Runtime-Verwaltung implementieren**]({{ "/de/mirror/issues/J01-21/steps/J01-22/" | relative_url }}) — Zu erledigen
+- [**21-2 CLI-Resetpfad etablieren**]({{ "/de/mirror/issues/J01-21/steps/J01-23/" | relative_url }}) — Zu erledigen
+- [**21-3 Paralleltests ergänzen**]({{ "/de/mirror/issues/J01-21/steps/J01-24/" | relative_url }}) — Zu erledigen

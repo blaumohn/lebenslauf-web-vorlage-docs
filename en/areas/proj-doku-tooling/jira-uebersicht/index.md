@@ -22,7 +22,13 @@ Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als statische Jira-Übe
 - The sprint board only shows the same top-level issues as the Jira board;
   steps stay visible on the parent issue and in the sprint dossier.
 - Subtasks werden in Listen standardmäßig **ohne Key** gezeigt (nur Schritt-Nr/Titel/Zustand).
-- Subtasks bekommen nur dann eine eigene Seite, wenn sie zusätzliche Angaben enthalten.
+- The base record of a subtask is step number, title, and status.
+- Pure step-page metadata does not count as additional details.
+- Subtasks only get their own page if they carry additional public details.
+  - Additional details are the subtask's own domain content or canonical
+    links beyond the base record and metadata.
+  - A dedicated `work/jira/J01-<KEY>/` page or a canonical Jira remote link
+    to that page counts as an additional detail.
   - Hinweis: Die Schritt-Seiten sind stabil per Subtask-Key adressiert
     (`/mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/`); nur die Anzeige/Linktexte bleiben key-frei.
 

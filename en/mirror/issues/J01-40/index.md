@@ -3,7 +3,7 @@ layout: page
 title: "J01-40 — Runtime: Technische Konstanten vereinheitlichen"
 permalink: /en/mirror/issues/J01-40/
 ---
-<!-- mirror:subtasks_cksum=1840377728 -->
+<!-- mirror:subtasks_cksum=2624029891 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -26,5 +26,5 @@ No Jira Cloud links, no email addresses.
 
 ## Subtasks
 
-- **40-1 Konstanten-Schnitt definieren** — To Do
-- **40-2 Pfad/Key-Duplikate entfernen** — To Do
+- [**40-1 Konstanten-Schnitt definieren**]({{ "/en/mirror/issues/J01-40/steps/J01-41/" | relative_url }}) — To Do
+- [**40-2 Pfad/Key-Duplikate entfernen**]({{ "/en/mirror/issues/J01-40/steps/J01-42/" | relative_url }}) — To Do

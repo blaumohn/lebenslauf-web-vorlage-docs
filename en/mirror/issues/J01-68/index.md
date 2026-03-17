@@ -3,7 +3,7 @@ layout: page
 title: "J01-68 — Production: Betriebsdoku und Runbook"
 permalink: /en/mirror/issues/J01-68/
 ---
-<!-- mirror:subtasks_cksum=970384144 -->
+<!-- mirror:subtasks_cksum=1270717361 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -26,5 +26,5 @@ No Jira Cloud links, no email addresses.
 
 ## Subtasks
 
-- **68-1 Betriebsdoku erstellen** — To Do
-- **68-2 Rollback/Notfallpfad skizzieren** — To Do
+- [**68-1 Betriebsdoku erstellen**]({{ "/en/mirror/issues/J01-68/steps/J01-69/" | relative_url }}) — To Do
+- [**68-2 Rollback/Notfallpfad skizzieren**]({{ "/en/mirror/issues/J01-68/steps/J01-70/" | relative_url }}) — To Do

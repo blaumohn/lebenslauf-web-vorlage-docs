@@ -24,7 +24,13 @@ Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als statische Jira-Übe
   Jira-Board; Schritte bleiben beim Parent-Vorgang und in der Sprint-Doku
   sichtbar.
 - Subtasks werden in Listen standardmäßig **ohne Key** gezeigt (nur Schritt-Nr/Titel/Zustand).
+- Grundbestand eines Subtasks sind Schritt-Nr., Titel und Status.
+- Reine Metadaten einer Schritt-Seite gelten nicht als zusätzliche Angaben.
 - Subtasks bekommen nur dann eine eigene Seite, wenn sie zusätzliche Angaben enthalten.
+  - Zusätzliche Angaben sind eigene fachliche Inhalte oder eigene kanonische
+    Verweise des Subtasks über Grundbestand und Metadaten hinaus.
+  - Eine eigene `work/jira/J01-<KEY>/`-Seite oder ein kanonischer
+    Jira-Remote-Link darauf zählt als zusätzliche Angabe.
   - Hinweis: Die Schritt-Seiten sind stabil per Subtask-Key adressiert
     (`/mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/`); nur die Anzeige/Linktexte bleiben key-frei.
 

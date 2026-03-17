@@ -5,5 +5,6 @@ permalink: /de/policies/
 ---
 
 - [Doku-Richtlinie: Wo gehört welcher Inhalt hin?]({{ "/de/policies/doku-richtlinie/" | relative_url }})
+- [KI-Projektkarte: Wo Skills Projektanforderungen finden]({{ "/de/policies/ki-projektkarte/" | relative_url }})
 - [Programmierleitlinien]({{ "/de/policies/programmierleitlinien/" | relative_url }})
 - [Sprint-Richtlinie]({{ "/de/policies/sprint-richtlinie/" | relative_url }})

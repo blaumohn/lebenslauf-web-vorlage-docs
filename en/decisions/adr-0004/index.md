@@ -30,7 +30,14 @@ Die Jira-Übersicht wird manuell aktualisiert (nach Jira-Änderungen); später o
 - Keine E-Mail-Adressen.
 - Jira-Keys werden als Text gezeigt.
 - Subtasks werden standardmäßig **ohne Key** gezeigt (nur Schritt-Nr/Titel/Zustand).
-- Subtasks bekommen nur dann eine eigene Schritt-Seite, wenn sie zusätzliche Angaben enthalten.
+- The base record of a subtask is step number, title, and status.
+- Pure step-page metadata such as parent, step number, status, key, or
+  updated timestamp do not count as additional details.
+- Subtasks only get their own step page if they contain additional details.
+  - Additional details are the subtask's own domain content or canonical
+    links beyond the base record and metadata.
+  - A dedicated `work/jira/J01-<KEY>/` page or a canonical Jira remote link
+    to that page counts as an additional detail.
 
 ## Konsequenzen {#konsequenzen}
 

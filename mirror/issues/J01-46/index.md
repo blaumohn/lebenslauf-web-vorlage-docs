@@ -3,7 +3,7 @@ layout: page
 title: "J01-46 — i18n: CLI- und Runtime-Nachrichten"
 permalink: /de/mirror/issues/J01-46/
 ---
-<!-- mirror:subtasks_cksum=2407098930 -->
+<!-- mirror:subtasks_cksum=1014703320 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -26,5 +26,5 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Unteraufgaben
 
-- **46-1 Message-IDs und Format definieren** — Zu erledigen
-- **46-2 Ausgaben in App + Config-Lib umstellen** — Zu erledigen
+- [**46-1 Message-IDs und Format definieren**]({{ "/de/mirror/issues/J01-46/steps/J01-47/" | relative_url }}) — Zu erledigen
+- [**46-2 Ausgaben in App + Config-Lib umstellen**]({{ "/de/mirror/issues/J01-46/steps/J01-48/" | relative_url }}) — Zu erledigen

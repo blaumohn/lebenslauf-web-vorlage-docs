@@ -3,7 +3,7 @@ layout: page
 title: "J01-62 — Production: Branch- und Environment-Regeln aktivieren"
 permalink: /de/mirror/issues/J01-62/
 ---
-<!-- mirror:subtasks_cksum=2992738108 -->
+<!-- mirror:subtasks_cksum=3433733682 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -26,5 +26,5 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Unteraufgaben
 
-- **62-1 Branch-Mapping festlegen** — Zu erledigen
-- **62-2 Environment aktivieren** — Zu erledigen
+- [**62-1 Branch-Mapping festlegen**]({{ "/de/mirror/issues/J01-62/steps/J01-63/" | relative_url }}) — Zu erledigen
+- [**62-2 Environment aktivieren**]({{ "/de/mirror/issues/J01-62/steps/J01-64/" | relative_url }}) — Zu erledigen

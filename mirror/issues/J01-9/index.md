@@ -3,7 +3,7 @@ layout: page
 title: "J01-9 — Preview: Workflow wieder aktivieren"
 permalink: /de/mirror/issues/J01-9/
 ---
-<!-- mirror:subtasks_cksum=3237570055 -->
+<!-- mirror:subtasks_cksum=1696410997 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
@@ -26,6 +26,6 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Unteraufgaben
 
-- **9-1 CI-Gates finalisieren** — Zu erledigen
-- **9-2 Deploy-Checks validieren** — Zu erledigen
-- **9-3 Branch-Flow dokumentieren** — Zu erledigen
+- [**9-1 CI-Gates finalisieren**]({{ "/de/mirror/issues/J01-9/steps/J01-10/" | relative_url }}) — Zu erledigen
+- [**9-2 Deploy-Checks validieren**]({{ "/de/mirror/issues/J01-9/steps/J01-11/" | relative_url }}) — Zu erledigen
+- [**9-3 Branch-Flow dokumentieren**]({{ "/de/mirror/issues/J01-9/steps/J01-12/" | relative_url }}) — Zu erledigen

@@ -3,7 +3,7 @@ layout: page
 title: "J01-25 — Dev-Branch Baseline und Repo-Hygiene"
 permalink: /en/mirror/issues/J01-25/
 ---
-<!-- mirror:subtasks_cksum=2716186418 -->
+<!-- mirror:subtasks_cksum=2111759203 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -26,5 +26,5 @@ No Jira Cloud links, no email addresses.
 
 ## Subtasks
 
-- **25-1 Dev-Baseline stabilisieren** — To Do
-- **25-2 Hygiene-Regeln umsetzen** — To Do
+- [**25-1 Dev-Baseline stabilisieren**]({{ "/en/mirror/issues/J01-25/steps/J01-26/" | relative_url }}) — To Do
+- [**25-2 Hygiene-Regeln umsetzen**]({{ "/en/mirror/issues/J01-25/steps/J01-27/" | relative_url }}) — To Do

@@ -3,7 +3,7 @@ layout: page
 title: "J01-16 — Runtime: Concurrency, Locking und atomare Zugriffe"
 permalink: /en/mirror/issues/J01-16/
 ---
-<!-- mirror:subtasks_cksum=146997152 -->
+<!-- mirror:subtasks_cksum=1626982732 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -26,7 +26,7 @@ No Jira Cloud links, no email addresses.
 
 ## Subtasks
 
-- **16-1 Locking für Rate-Limit und CAPTCHA ausrollen** — To Do
-- **16-2 Locking für Token-Rotation ausrollen** — To Do
-- **16-3 Race-nahe Tests ergänzen** — To Do
-- **16-4 Betriebsnotiz aktualisieren** — To Do
+- [**16-1 Locking für Rate-Limit und CAPTCHA ausrollen**]({{ "/en/mirror/issues/J01-16/steps/J01-17/" | relative_url }}) — To Do
+- [**16-2 Locking für Token-Rotation ausrollen**]({{ "/en/mirror/issues/J01-16/steps/J01-18/" | relative_url }}) — To Do
+- [**16-3 Race-nahe Tests ergänzen**]({{ "/en/mirror/issues/J01-16/steps/J01-19/" | relative_url }}) — To Do
+- [**16-4 Betriebsnotiz aktualisieren**]({{ "/en/mirror/issues/J01-16/steps/J01-20/" | relative_url }}) — To Do

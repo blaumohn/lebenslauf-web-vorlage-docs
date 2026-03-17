@@ -9,6 +9,7 @@ public status/snapshot notes and work artefacts that do not belong in the
 generated `mirror/`.
 
 - [J01-101]({{ "/en/work/jira/J01-101/" | relative_url }})
+- [J01-102]({{ "/en/work/jira/J01-102/" | relative_url }})
 - [J01-99]({{ "/en/work/jira/J01-99/" | relative_url }})
 - [J01-98]({{ "/en/work/jira/J01-98/" | relative_url }})
 - [J01-100]({{ "/en/work/jira/J01-100/" | relative_url }})

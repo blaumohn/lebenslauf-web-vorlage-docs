@@ -3,7 +3,7 @@ layout: page
 title: "J01-60 — Backlog: SMTP-Empfangsnachweis mit Konto-Beteiligung"
 permalink: /en/mirror/issues/J01-60/
 ---
-<!-- mirror:subtasks_cksum=3963179558 -->
+<!-- mirror:subtasks_cksum=855944142 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -26,4 +26,4 @@ No Jira Cloud links, no email addresses.
 
 ## Subtasks
 
-- **60-1 Scope skizzieren** — To Do
+- [**60-1 Scope skizzieren**]({{ "/en/mirror/issues/J01-60/steps/J01-61/" | relative_url }}) — To Do

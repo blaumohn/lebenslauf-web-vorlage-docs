@@ -73,7 +73,16 @@ The URL conversion from Jira follows these rules:
 
 4) Spot check:
    - Subtasks without public details do **not** get their own page.
-   - Subtasks with public details do get a step page.
+   - The base record of a subtask is step number, title, and status.
+   - Pure step-page metadata such as parent, step number, status, key, or
+     updated timestamp do **not** count as additional details.
+   - Subtasks with additional public details do get a step page.
+   - Additional public details are the subtask's own domain content or
+     canonical links beyond the base record and metadata.
+   - This includes, in particular, a public work doc under
+     `work/jira/J01-<KEY>/`, a canonical Jira remote link to that doc, the
+     subtask's own evidence, its own closure statement, or other canonical
+     target pages.
 
 5) Hygiene:
   - No `atlassian.net` links in the output

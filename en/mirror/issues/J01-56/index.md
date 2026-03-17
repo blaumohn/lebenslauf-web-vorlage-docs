@@ -3,7 +3,7 @@ layout: page
 title: "J01-56 — Backlog: Bibliotheks-APIs konsequent ausschoepfen"
 permalink: /en/mirror/issues/J01-56/
 ---
-<!-- mirror:subtasks_cksum=2680664763 -->
+<!-- mirror:subtasks_cksum=1090145107 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -26,4 +26,4 @@ No Jira Cloud links, no email addresses.
 
 ## Subtasks
 
-- **56-1 Scope skizzieren** — To Do
+- [**56-1 Scope skizzieren**]({{ "/en/mirror/issues/J01-56/steps/J01-57/" | relative_url }}) — To Do

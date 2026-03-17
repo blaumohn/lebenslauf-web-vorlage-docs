@@ -3,7 +3,7 @@ layout: page
 title: "J01-37 — Config: Konditionelle Validierung"
 permalink: /en/mirror/issues/J01-37/
 ---
-<!-- mirror:subtasks_cksum=2208357339 -->
+<!-- mirror:subtasks_cksum=1920381080 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -26,5 +26,5 @@ No Jira Cloud links, no email addresses.
 
 ## Subtasks
 
-- **37-1 Schema um Bedingungen erweitern** — To Do
-- **37-2 Validierung + Doku ergänzen** — To Do
+- [**37-1 Schema um Bedingungen erweitern**]({{ "/en/mirror/issues/J01-37/steps/J01-38/" | relative_url }}) — To Do
+- [**37-2 Validierung + Doku ergänzen**]({{ "/en/mirror/issues/J01-37/steps/J01-39/" | relative_url }}) — To Do
