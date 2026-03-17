@@ -3,7 +3,7 @@ layout: page
 title: "J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte"
 permalink: /en/mirror/issues/J01-72/
 ---
-<!-- mirror:subtasks_cksum=2876264366 -->
+<!-- mirror:subtasks_cksum=3234302175 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -35,7 +35,7 @@ No Jira Cloud links, no email addresses.
 - **72-7 Spiegel-Anzeige für Unteraufgaben: nur Summary-Prefix** — Done
 - **72-8 Projektweit: Subtask-Reihenfolge gegen Export prüfen** — To Do
 - **72-9 Board-Sicht prüfen (Prefix-Format 9-1)** — Done
-- **72-10 CLI-Cache: Public-only Policy + Output-Redaction + Endpoint-Allowlist** — To Do
+- [**72-10 CLI-Cache: erste Cache-V1 vorbereiten (Policy getrennt)**]({{ "/en/mirror/issues/J01-72/steps/J01-83/" | relative_url }}) — In Progress
 - **72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links)** — Done
 - [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/en/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — Done
 - [**72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern**]({{ "/en/mirror/issues/J01-72/steps/J01-92/" | relative_url }}) — Done

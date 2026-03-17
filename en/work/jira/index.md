@@ -8,9 +8,11 @@ These pages are organized by Jira key and serve as the canonical place for
 public status/snapshot notes and work artefacts that do not belong in the
 generated `mirror/`.
 
+- [J01-101]({{ "/en/work/jira/J01-101/" | relative_url }})
 - [J01-99]({{ "/en/work/jira/J01-99/" | relative_url }})
 - [J01-98]({{ "/en/work/jira/J01-98/" | relative_url }})
 - [J01-100]({{ "/en/work/jira/J01-100/" | relative_url }})
+- [J01-83]({{ "/en/work/jira/J01-83/" | relative_url }})
 - [J01-96]({{ "/en/work/jira/J01-96/" | relative_url }})
 - [J01-97]({{ "/en/work/jira/J01-97/" | relative_url }})
 - [J01-93]({{ "/en/work/jira/J01-93/" | relative_url }})
