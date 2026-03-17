@@ -29,6 +29,8 @@ Finish the preview deployment.
 
 - [J01-93]({{ "/en/mirror/issues/J01-93/" | relative_url }}) —
   public GitHub Pages and mirror i18n as visible, usable project docs
+- [J01-98]({{ "/en/work/jira/J01-98/" | relative_url }}) —
+  sprint-relevant preview migration only from `J01-91` phase 2
 
 ### Admin / framework
 

@@ -40,7 +40,10 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
   check branch context first, and route repo-local docs/rule work without a
   feature scope through `dev`.
 - `J01-91` now moves to `Done` in Jira.
-- Phase 2 execution now continues in [J01-98]({{ "/en/work/jira/J01-98/" | relative_url }}).
+- The sprint-relevant preview migration from phase 2 now continues in
+  [J01-98]({{ "/en/work/jira/J01-98/" | relative_url }}).
+- The non-sprint `docs/agile` leftovers from phase 2 now stay in the backlog
+  under [J01-100]({{ "/en/work/jira/J01-100/" | relative_url }}).
 - Legacy Confluence remote-link cleanup and the new audit guardrail now continue
   in [J01-99]({{ "/en/work/jira/J01-99/" | relative_url }}).
 
@@ -56,12 +59,15 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
 `J01-91` is closed as the structure and decision issue.
 The remaining work is now split deliberately:
 
-1. [J01-98]({{ "/en/work/jira/J01-98/" | relative_url }}) executes the fixed
-   phase-2 targets on canonical pages and in matching work docs.
-2. [J01-99]({{ "/en/work/jira/J01-99/" | relative_url }}) cleans up legacy
+1. [J01-98]({{ "/en/work/jira/J01-98/" | relative_url }}) covers only the
+   sprint-relevant preview migration for `J01-9`, `J01-13`, `J01-16`, and
+   `J01-31`.
+2. [J01-100]({{ "/en/work/jira/J01-100/" | relative_url }}) keeps the
+   remaining `docs/agile` migrations as a backlog candidate for a later sprint.
+3. [J01-99]({{ "/en/work/jira/J01-99/" | relative_url }}) cleans up legacy
    Confluence remote links in Jira and anchors the audit guardrail.
-3. `archive-topics.md` remains maintained guidance, not an open review board.
-4. Future structural docs changes stay bound to the tightened docs policy and
+4. `archive-topics.md` remains maintained guidance, not an open review board.
+5. Future structural docs changes stay bound to the tightened docs policy and
    the drift path.
 
 ## Phase 1: Status (DoD, Snapshot)
@@ -160,8 +166,9 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 ## Phase 2 (moved out)
 
 - Keep the status/plan view as a one-pager.
-- Execute the fixed targets in [J01-98]({{ "/en/work/jira/J01-98/" | relative_url }})
-  on canonical pages or in matching work docs.
+- Execute the sprint-relevant preview migration in [J01-98]({{ "/en/work/jira/J01-98/" | relative_url }}).
+- Keep the remaining `docs/agile` leftovers in [J01-100]({{ "/en/work/jira/J01-100/" | relative_url }})
+  deliberately out of the current sprint.
 - Use the docs policy as the gate for future structural docs changes.
 - Do not derive new doc types from `J01-91`.
 
@@ -170,5 +177,6 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 - [Mirror: J01-72 / Schritt J01-91]({{ "/en/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) (abgeleitet)
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/en/operations/runbook/" | relative_url }})
 - [Drift-Report (Qualität)]({{ "/en/quality/drift-reports/J01-91/" | relative_url }})
-- [J01-98: execute phase 2]({{ "/en/work/jira/J01-98/" | relative_url }})
+- [J01-98: sprint-relevant preview migration]({{ "/en/work/jira/J01-98/" | relative_url }})
+- [J01-100: docs/agile leftovers after sprint 1]({{ "/en/work/jira/J01-100/" | relative_url }})
 - [J01-99: clean up legacy Confluence remote links]({{ "/en/work/jira/J01-99/" | relative_url }})

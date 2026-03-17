@@ -39,7 +39,10 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
   Branch-Kontext zuerst pruefen, repo-nahe Doku-/Regelarbeit ohne
   Feature-Bezug ueber `dev` fuehren.
 - `J01-91` wechselt in Jira auf `Erledigt`.
-- Die Phase-2-Umsetzung laeuft ab jetzt ueber [J01-98]({{ "/de/work/jira/J01-98/" | relative_url }}).
+- Die sprintrelevante Preview-Migration aus Phase 2 laeuft ab jetzt ueber
+  [J01-98]({{ "/de/work/jira/J01-98/" | relative_url }}).
+- Die nicht sprintrelevanten `docs/agile`-Reste aus Phase 2 liegen jetzt im
+  Backlog unter [J01-100]({{ "/de/work/jira/J01-100/" | relative_url }}).
 - Die Bereinigung alter Confluence-Remote-Links und der neue Audit-Guardrail
   laufen ab jetzt ueber [J01-99]({{ "/de/work/jira/J01-99/" | relative_url }}).
 
@@ -55,14 +58,17 @@ so aufbauen, dass HR/Dev-Besucher sich schnell orientieren können.
 `J01-91` ist als Struktur- und Entscheidungs-Vorgang abgeschlossen.
 Die verbleibende Folgearbeit wurde bewusst herausgezogen:
 
-1. [J01-98]({{ "/de/work/jira/J01-98/" | relative_url }}) setzt die
-   festgezogenen Phase-2-Zielorte in kanonischen Seiten und passender
-   Arbeitsdoku um.
-2. [J01-99]({{ "/de/work/jira/J01-99/" | relative_url }}) bereinigt alte
+1. [J01-98]({{ "/de/work/jira/J01-98/" | relative_url }}) zieht nur die
+   sprintrelevante Preview-Migration fuer `J01-9`, `J01-13`, `J01-16` und
+   `J01-31` in den aktiven Sprint-Scope.
+2. [J01-100]({{ "/de/work/jira/J01-100/" | relative_url }}) haelt die
+   uebrigen `docs/agile`-Migrationen als Backlog-Kandidat fuer einen
+   spaeteren Sprint.
+3. [J01-99]({{ "/de/work/jira/J01-99/" | relative_url }}) bereinigt alte
    Confluence-Remote-Links in Jira und verankert den Audit-Guardrail.
-3. `archive-topics.md` bleibt nur noch fortgeschriebene Arbeitsgrundlage und
+4. `archive-topics.md` bleibt nur noch fortgeschriebene Arbeitsgrundlage und
    kein offener Pruefstand mehr.
-4. Weitere strukturelle Doku-Aenderungen bleiben an die geschaerfte
+5. Weitere strukturelle Doku-Aenderungen bleiben an die geschaerfte
    `doku-richtlinie` und den Drift-Pfad gebunden.
 
 ## Phase 1: Status (DoD, Snapshot)
@@ -162,8 +168,10 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 ## Phase 2 (ausgelagert)
 
 - Status-/Vorhaben-Darstellung bleibt als One-Pager erhalten.
-- Die in `J01-91` festgezogenen Zielorte werden in [J01-98]({{ "/de/work/jira/J01-98/" | relative_url }})
-  auf kanonischen Fachseiten oder in passender Arbeitsdoku umgesetzt.
+- Die sprintrelevanten Preview-Themen werden in [J01-98]({{ "/de/work/jira/J01-98/" | relative_url }})
+  umgesetzt.
+- Die uebrigen `docs/agile`-Reste bleiben in [J01-100]({{ "/de/work/jira/J01-100/" | relative_url }})
+  bewusst im Backlog.
 - Die Doku-Richtlinie bleibt Gate für weitere Strukturänderungen.
 - Es werden weiterhin keine neuen Dokutypen aus `J01-91` abgeleitet.
 
@@ -172,5 +180,6 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 - [Mirror: J01-72 / Schritt J01-91]({{ "/de/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) (abgeleitet)
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/de/operations/runbook/" | relative_url }})
 - [Drift-Report (Qualität)]({{ "/de/quality/drift-reports/J01-91/" | relative_url }})
-- [J01-98: Phase 2 umsetzen]({{ "/de/work/jira/J01-98/" | relative_url }})
+- [J01-98: sprintrelevante Preview-Migration]({{ "/de/work/jira/J01-98/" | relative_url }})
+- [J01-100: docs/agile-Reste nach Sprint 1]({{ "/de/work/jira/J01-100/" | relative_url }})
 - [J01-99: Alte Confluence-Remote-Links bereinigen]({{ "/de/work/jira/J01-99/" | relative_url }})

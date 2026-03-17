@@ -29,6 +29,8 @@ Preview-Deployment fertig machen.
 
 - [J01-93]({{ "/de/mirror/issues/J01-93/" | relative_url }}) —
   öffentliche GitHub-Pages-/Mirror-i18n als sichtbare, nutzbare Projektdoku
+- [J01-98]({{ "/de/work/jira/J01-98/" | relative_url }}) —
+  nur sprintrelevante Preview-Migration aus `J01-91` Phase 2
 
 ### Admin / Rahmen
 

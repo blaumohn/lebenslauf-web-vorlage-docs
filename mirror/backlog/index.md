@@ -106,4 +106,5 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
 
 ## Ohne Epic
 
-- [J01-98 — J01-91 Phase 2: Zielorte auf kanonischen Seiten umsetzen]({{ "/de/mirror/issues/J01-98/" | relative_url }})
+- [J01-100 — docs/agile-Reste nach Sprint 1 an kanonischen Zielorten migrieren]({{ "/de/mirror/issues/J01-100/" | relative_url }})
+- [J01-98 — J01-91 Phase 2: sprintrelevante Preview-Migration umsetzen]({{ "/de/mirror/issues/J01-98/" | relative_url }})
