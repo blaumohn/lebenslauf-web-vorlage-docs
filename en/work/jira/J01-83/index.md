@@ -44,12 +44,50 @@ hardening path.
 - added the new public work doc for `J01-83`
 - carried the source basis into the `tagebuch` as a dedicated search case and
   round note
+- implemented one small reference recipe in the skill repo:
+  `shared-tooling/jira-pages/cache-recipes/parent-subtasks.md`
+
+## Implemented reference recipe
+
+The V1 is now implemented as exactly one small cache artefact.
+That artefact covers the read case:
+read a Jira parent issue and derive the contained subtasks from it.
+
+The copyable core command is:
+
+```bash
+atlassian jira http get "/rest/api/3/issue/<PARENT_KEY>?fields=subtasks,summary,status"
+```
+
+The reference recipe contains only the fields needed for this V1:
+
+- purpose
+- copyable command
+- placeholders
+- expected output fields
+- success signals
+- failure signals and limits
+
+In V1, success means:
+
+- exit code `0`
+- parseable JSON
+- a present `fields.subtasks` field
+- readable subtask fields `key`, `fields.summary`, `fields.status.name`
+
+Explicitly not part of this V1:
+
+- saving the full response as a file
+- a local JSON snapshot cache
+- new CLI subcommands
+- new policy hardening in `atlassian-http-client`
 
 ## V1 scope
 
 - exactly one small reference recipe is enough
 - that recipe only describes:
-  purpose, copyable command, placeholders, expected output fields, and limits
+  purpose, copyable command, placeholders, expected output fields,
+  success signals, and limits
 - the solution stays intentionally small and quickly replaceable
 - the model is the V1 posture from `J01-95`, not its concrete feature set
 

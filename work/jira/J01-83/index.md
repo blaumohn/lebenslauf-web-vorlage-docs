@@ -45,12 +45,50 @@ Sicherheits- oder Curl-Reifung vorwegzunehmen.
 - neue öffentliche Arbeitsdoku für `J01-83` angelegt
 - Quellenlage im `tagebuch` als eigener Suchfall und als Rundenprotokoll
   nachgezogen
+- kleines Referenzrezept im Skill-Repo umgesetzt:
+  `shared-tooling/jira-pages/cache-recipes/parent-subtasks.md`
+
+## Umgesetztes Referenzrezept
+
+Die V1 ist jetzt als genau ein kleines Cache-Artefakt umgesetzt.
+Das Artefakt beschreibt den Lesefall:
+Jira-Parent lesen und daraus die enthaltenen Subtasks ableiten.
+
+Der kopierbare Kernaufruf lautet:
+
+```bash
+atlassian jira http get "/rest/api/3/issue/<PARENT_KEY>?fields=subtasks,summary,status"
+```
+
+Das Referenzrezept enthält nur die für diese V1 nötigen Felder:
+
+- Ziel
+- kopierbarer Befehl
+- Platzhalter
+- erwartete Output-Felder
+- Erfolgssignale
+- Fehlersignale und Grenzen
+
+Als Erfolg gilt in der V1:
+
+- Exit-Code `0`
+- parsebares JSON
+- vorhandenes Feld `fields.subtasks`
+- lesbare Subtask-Felder `key`, `fields.summary`, `fields.status.name`
+
+Ausdrücklich nicht Teil der V1:
+
+- vollständige Antwort als Datei speichern
+- lokaler JSON-Snapshot-Cache
+- neue CLI-Subcommands
+- neue Policy-Schärfung im `atlassian-http-client`
 
 ## V1-Zuschnitt
 
 - genau ein kleines Referenzrezept genügt
 - das Rezept beschreibt nur:
-  Zweck, kopierbaren Befehl, Platzhalter, erwartete Output-Felder und Grenzen
+  Zweck, kopierbaren Befehl, Platzhalter, erwartete Output-Felder,
+  Erfolgssignale und Grenzen
 - die Lösung bleibt bewusst klein und schnell austauschbar
 - Vorbild ist die V1-Haltung aus `J01-95`, nicht dessen konkreter Inhalt
 
