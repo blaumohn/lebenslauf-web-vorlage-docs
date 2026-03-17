@@ -13,3 +13,4 @@ permalink: /en/templates/
 - [Feature matrix template]({{ "/en/templates/feature-matrix/" | relative_url }})
 - [Drift report template]({{ "/en/templates/drift-report/" | relative_url }})
 - [Policy/overview template]({{ "/en/templates/richtlinie/" | relative_url }})
+- [Jira work doc template]({{ "/en/templates/jira-arbeitsdoku/" | relative_url }})

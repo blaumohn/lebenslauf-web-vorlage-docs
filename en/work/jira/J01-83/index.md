@@ -108,6 +108,15 @@ Explicitly not part of this V1:
 - the solution stays intentionally small and quickly replaceable
 - the model is the V1 posture from `J01-95`, not its concrete feature set
 
+## Verification plan
+
+| Check | Expectation | Evidence / Location | Status |
+| --- | --- | --- | --- |
+| First cache cell exists in the skill repo | `parent-subtasks.md` exists and covers exactly one recurring read case | `shared-tooling/jira-pages/cache-recipes/parent-subtasks.md` | done |
+| Command-using project skills treat the cache as the first search space | `koordination` and `jira-state-sync` mention cache lookup and recipe upkeep explicitly | project skill repo under `skills/` | done |
+| Canonical public work doc is reachable directly from Jira | Jira holds one remote link to `work/jira/J01-83/`; GitHub Pages and Mirror keep the DE/EN split | Jira remote links for `J01-83` | done |
+| Public mirror shows the same closure state | Mirror carries over status and public links from Jira without Jira Cloud links | `mirror/issues/J01-72/steps/J01-83/` | done |
+
 ## Not part of J01-83
 
 - no broad recipe library
@@ -129,6 +138,7 @@ Explicitly not part of this V1:
   "/en/work/jira/J01-95/" | relative_url }})
 - [J01-101: Prepare CLI-cache policy hardening as separate follow-up work]({{
   "/en/work/jira/J01-101/" | relative_url }})
+- [Mirror: J01-72 / step J01-83]({{ "/en/mirror/issues/J01-72/steps/J01-83/" | relative_url }})
 - [ADR-0002: atlassian-http-client security model]({{
   "/en/decisions/adr-0002/" | relative_url }})
 - [Jira work docs]({{ "/en/work/jira/" | relative_url }})

@@ -108,6 +108,15 @@ Ausdrücklich nicht Teil der V1:
 - die Lösung bleibt bewusst klein und schnell austauschbar
 - Vorbild ist die V1-Haltung aus `J01-95`, nicht dessen konkreter Inhalt
 
+## Überprüfungsplan
+
+| Prüfpunkt | Erwartung | Nachweis / Ort | Status |
+| --- | --- | --- | --- |
+| Erste Cache-Zelle liegt im Skill-Repo vor | `parent-subtasks.md` ist vorhanden und beschreibt genau einen wiederkehrenden Lesefall | `shared-tooling/jira-pages/cache-recipes/parent-subtasks.md` | erledigt |
+| Befehl-nutzende Projekt-Skills behandeln den Cache als ersten Suchraum | `koordination` und `jira-state-sync` nennen die Cache-Prüfung und das Nachziehen explizit | Projekt-Skill-Repo unter `skills/` | erledigt |
+| Kanonische öffentliche Arbeitsdoku ist direkt aus Jira erreichbar | Jira hält einen Remote-Link auf `work/jira/J01-83/`; DE/EN-Aufspaltung bleibt bei GitHub Pages und Mirror | Jira-Remote-Links für `J01-83` | erledigt |
+| Öffentlicher Spiegel zeigt denselben Abschlussstand | Mirror übernimmt Status und öffentliche Links aus Jira ohne Jira-Cloud-Links | `mirror/issues/J01-72/steps/J01-83/` | erledigt |
+
 ## Nicht Teil von J01-83
 
 - keine breite Rezeptbibliothek
@@ -129,6 +138,7 @@ Ausdrücklich nicht Teil der V1:
   "/de/work/jira/J01-95/" | relative_url }})
 - [J01-101: Policy-Schärfung für CLI-Cache getrennt vorbereiten]({{
   "/de/work/jira/J01-101/" | relative_url }})
+- [Mirror: J01-72 / Schritt J01-83]({{ "/de/mirror/issues/J01-72/steps/J01-83/" | relative_url }})
 - [ADR-0002: atlassian-http-client Sicherheitsmodell]({{
   "/de/decisions/adr-0002/" | relative_url }})
 - [Jira-Arbeitsdokus]({{ "/de/work/jira/" | relative_url }})
