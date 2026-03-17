@@ -52,14 +52,14 @@ Seiten, nicht mehr in dieser Tabelle.
 | Teststrategie/Testmatrix | ja | zuerst vorgang-genau, danach kanonisch | `Testmatrix` | vorhanden; kein eigener Abnahmecheck-Typ nötig | `work/jira/J01-13/`, danach `quality/testmatrix/` | `J01-13` | Feingranulare Nachweise werden innerhalb der Testmatrix oder vorgangsgenau geführt. |
 | Repo-Hygiene | ja | zuerst vorgang-genau, danach kanonisch | Richtlinie plus ggf. `Runbook` | vorhanden | `work/jira/J01-25/`, danach `policies/programmierleitlinien/` und ggf. `operations/<slug>/` | `J01-25` | Dauerregeln und konkrete Abläufe bleiben getrennt. |
 
-## Betriebs- und Ablaufregeln aus `docs/agile` (Restpruefung)
+## Betriebs- und Ablaufregeln aus `docs/agile` (Restprüfung)
 
-| Regelrest | Quelle in `docs/agile` | Gilt heute noch? | Zielort | Status / naechster Schritt | Notiz |
+| Regelrest | Quelle in `docs/agile` | Gilt heute noch? | Zielort | Status / nächster Schritt | Notiz |
 | --- | --- | --- | --- | --- | --- |
-| Branch-Flow fuer Preview-Arbeit | `issues/ISS-004-dev-branch-foundation-and-repo-hygiene.md`, `issues/ISS-005-preview-workflow-reenable-from-dev.md`, `issues/README.md` | ja | Projekt-Skill + Repo-`AGENTS.md` | in Arbeit | Kanonischer Fluss bleibt `feature/*` -> `dev` -> `preview`. |
-| Repo-nahe Doku-/README-Arbeit ohne Feature-Bezug auf separatem Branch aus `dev` | abgeleitet aus `ISS-004`, `ISS-005`; konkret sichtbar geworden am README-Commit `docs: README auf GitHub Pages umstellen (J01-91)` | ja | Projekt-Skill + Repo-`AGENTS.md` | umgesetzt | README-Stand aus `feature/iss-005-preview` herausgeloest und direkt ueber `dev` gefuehrt. |
-| `docs/agile` zuerst pflegen, danach technische Umsetzung in Feature-Branches | `docs/agile/README.md` | nein | keiner; als Legacy kenntlich lassen oder spaeter archivisch bereinigen | offen | Passt nicht mehr zur heutigen SSOT mit GitHub Pages + Jira. |
-| `docs/agile` nur ueber eigenen Worktree auf `dev` pflegen | `docs/agile/README.md`, frueheres Repo-`AGENTS.md` | nein | keiner; aus aktiven Repo-Regeln entfernen | umgesetzt | Die Regel bleibt hoechstens noch als Archivkontext fuer alte Quellen relevant. |
+| Branch-Flow für Preview-Arbeit | `issues/ISS-004-dev-branch-foundation-and-repo-hygiene.md`, `issues/ISS-005-preview-workflow-reenable-from-dev.md`, `issues/README.md` | ja | Projekt-Skill + Repo-`AGENTS.md` | in Arbeit | Kanonischer Fluss bleibt `feature/*` -> `dev` -> `preview`. |
+| Repo-nahe Doku-/README-Arbeit ohne Feature-Bezug auf separatem Branch aus `dev` | abgeleitet aus `ISS-004`, `ISS-005`; konkret sichtbar geworden am README-Commit `docs: README auf GitHub Pages umstellen (J01-91)` | ja | Projekt-Skill + Repo-`AGENTS.md` | umgesetzt | README-Stand aus `feature/iss-005-preview` herausgelöst und direkt über `dev` geführt. |
+| `docs/agile` zuerst pflegen, danach technische Umsetzung in Feature-Branches | `docs/agile/README.md` | nein | keiner; als Legacy kenntlich lassen oder später archivisch bereinigen | offen | Passt nicht mehr zur heutigen SSOT mit GitHub Pages + Jira. |
+| `docs/agile` nur über eigenen Worktree auf `dev` pflegen | `docs/agile/README.md`, früheres Repo-`AGENTS.md` | nein | keiner; aus aktiven Repo-Regeln entfernen | umgesetzt | Die Regel bleibt höchstens noch als Archivkontext für alte Quellen relevant. |
 
 ## Dateiliste aus `docs/agile` (Kernquellen pro Thema)
 

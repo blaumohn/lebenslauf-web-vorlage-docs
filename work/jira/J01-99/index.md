@@ -57,7 +57,7 @@ Der neue Legacy-Audit im Verifikationsskript hat im Projektbestand gefunden:
 - `verify-jira-ghpages-links.sh --legacy-confluence-audit` meldet alte
   `atlassian.net/wiki`-Ziele explizit mit Jira-Key, Link-ID, URL und Titel.
 - Der Audit wird im Runbook als fester Hygiene-Schritt dokumentiert.
-- Mirror- und Link-Sync laufen danach wie bisher ueber Jira als SSOT.
+- Mirror- und Link-Sync laufen danach wie bisher über Jira als SSOT.
 
 ## Links
 
