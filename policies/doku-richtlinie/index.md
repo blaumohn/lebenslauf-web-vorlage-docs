@@ -144,6 +144,13 @@ E) **KEP führt oft zu ADR**
 F) **`work/jira/` ist vorgang-genau**
 - Dorthin gehören öffentliche Arbeitsstände, Nachweise und offene Entscheidungen
   zu genau einem Jira-Vorgang.
+- Jede Seite unter `work/jira/J01-<KEY>/` nutzt dieselbe Grundstruktur:
+  Ziel, aktueller Stand oder Abschlussbild, Überprüfungsplan, Links.
+- Der Abschnitt `## Überprüfungsplan` ist Pflicht.
+- Der Überprüfungsplan enthält mindestens die Tabellenspalten:
+  `Prüfpunkt`, `Erwartung`, `Nachweis / Ort`, `Status`.
+- Die Tabelle dient als knapper Review- und Abschlussplan in
+  `In Überprüfung`; sie ersetzt keine breite `quality/testmatrix/`.
 
 G) **Drift-Reports sind nur für belegte Abweichungen**
 - `quality/drift-reports/` dokumentiert Claim/Quelle/Status/Fix.
@@ -160,7 +167,7 @@ I) **Jeder Dokutyp braucht eine Vorlage**
   `templates/`.
 - Bevorzugt werden etablierte Typen wie `ADR`, `KEP-Lite`, `Runbook`,
   `Richtlinie/Überblick`, `Sprint-Dossier`, `Testmatrix`, `Feature-Matrix`,
-  `Drift-Report`, `Postmortem`.
+  `Drift-Report`, `Postmortem`, `Jira-Arbeitsdoku`.
 
 J) **Neue Dokutypen brauchen Policy + URI-Muster**
 - Ein neuer Typ (z. B. Glossar, Abnahmecheck) ist erst freigegeben, wenn
@@ -173,6 +180,15 @@ K) **Temporäre lokale Artefakte bleiben privat**
 - `.local/` ist weder kanonische Public-Doku noch versionierter Normalfall.
 - Public-Doku nennt oder verlinkt keine temporären Exportpfade, Timestamps oder
   lokalen Arbeitskopien.
+
+K1) **Deutsche Fließtexte nutzen echte Umlaute**
+- Deutsche Fließtexte in öffentlichen Seiten, Jira-Arbeitsdokus und READMEs
+  nutzen `ä`, `ö`, `ü` und `ß` statt Umschriften wie `ae`, `oe`, `ue`, `ss`.
+- Diese Regel gilt für normale Doku-Sätze, Überschriften, Listen und
+  beschreibende Tabellenspalten.
+- Ausgenommen sind technische Schlüssel:
+  Variablennamen, Klassen, Funktionen, Dateinamen, Slugs, Permalinks, URLs,
+  Pfade, Commit-IDs, Befehle, Codebeispiele und andere Programmschlüssel.
 
 L) **Interne IDs bleiben aus Public-Doku heraus**
 - Interne Export-Bezeichner, frühere Arbeits-IDs und private Mapping-Tabellen
@@ -206,6 +222,7 @@ P) **Kanonische URI-Muster sind Teil des Dokutyps**
   `quality/feature-matrix/<slug>/`
 - `Drift-Report`: `quality/drift-reports/J01-<KEY>/`
 - `Sprint-Dossier`: `work/sprints/<sprint-slug>/`
+- `Jira-Arbeitsdoku`: `work/jira/J01-<KEY>/`
 - `Postmortem`: `quality/postmortems/<slug>/`
 
 Q) **Kein eigener Glossar- oder Abnahmecheck-Typ ohne belegten Bedarf**

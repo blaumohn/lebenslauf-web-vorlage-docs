@@ -4,7 +4,7 @@ title: "J01-98: Sprint-relevant preview migration from J01-91 phase 2"
 permalink: /en/work/jira/J01-98/
 ---
 
-**Stand:** 2026-03-16
+**Stand:** 2026-03-17
 
 Canonical public work status for `J01-98`.
 This issue narrows the phase-2 work from `J01-91` to the `docs/agile`
@@ -27,6 +27,23 @@ Implement only the sprint-relevant part of the phase-2 follow-up from `J01-91`:
   only the `docs/agile` migration that supports the current preview sprint
 - the remaining phase-2 leftovers were moved into the backlog follow-up
   [J01-100]({{ "/en/work/jira/J01-100/" | relative_url }})
+- the deeper work doc for the sprint-relevant topic blocks is now kept in
+  [migration map and public rationale]({{ "/en/work/jira/J01-98/migration-map/" | relative_url }})
+- the four canonical target locations from `J01-98` are now publicly filled:
+  preview runbook, test matrix, HTTP runtime, and CLI/build area
+- the local Pages preview path was checked on 2026-03-17 against `J01-98`
+  and the four target pages; all affected pages return `HTTP 200` in preview
+
+## Deeper work doc
+
+This page remains the compact public work status.
+The detailed rationale, target-location mapping, and the scope boundary against
+`J01-100` are written out in
+[migration map and public rationale]({{ "/en/work/jira/J01-98/migration-map/" | relative_url }}).
+Internal work notes are mentioned there only as provenance, never as public
+reading targets; the public statement itself always lives in the docs.
+That rationale additionally uses the commit history of the branches `preview`,
+`feature/iss-005-preview`, and `dev`.
 
 ## Working rules
 
@@ -37,17 +54,19 @@ Implement only the sprint-relevant part of the phase-2 follow-up from `J01-91`:
 - Move everything else into [J01-100]({{ "/en/work/jira/J01-100/" | relative_url }})
   and keep it in the backlog until after this sprint.
 
-## Next implementation blocks
+## Closure status
 
-1. Pull preview/deployment-related leftovers from `docs/agile` only for
-   `J01-9`, `J01-13`, `J01-16`, and `J01-31` into today's target locations.
-2. Anchor sprint-path evidence in matching work docs or `quality/testmatrix/`.
-3. Keep everything that does not directly support this sprint inside
-   [J01-100]({{ "/en/work/jira/J01-100/" | relative_url }}).
+- The sprint-relevant preview scope from `J01-91` is publicly implemented for
+  `J01-98` and locally verified in the Pages preview.
+- Further `docs/agile` leftovers no longer stay in this issue, but in
+  [J01-100]({{ "/en/work/jira/J01-100/" | relative_url }}).
+- Future additions belong to `J01-98` only if the sprint scope changes again;
+  in the current boundary, this issue is functionally complete.
 
 ## Links
 
 - [J01-91: status/snapshot (closure)]({{ "/en/work/jira/J01-91/" | relative_url }})
 - [J01-100: docs/agile leftovers after sprint 1]({{ "/en/work/jira/J01-100/" | relative_url }})
+- [J01-98: migration map and public rationale]({{ "/en/work/jira/J01-98/migration-map/" | relative_url }})
 - [Docs policy]({{ "/en/policies/doku-richtlinie/" | relative_url }})
 - [Jira work docs]({{ "/en/work/jira/" | relative_url }})

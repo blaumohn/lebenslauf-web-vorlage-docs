@@ -144,6 +144,13 @@ E) **KEP führt oft zu ADR**
 F) **`work/jira/` ist vorgang-genau**
 - Dorthin gehören öffentliche Arbeitsstände, Nachweise und offene Entscheidungen
   zu genau einem Jira-Vorgang.
+- Every page under `work/jira/J01-<KEY>/` uses the same base structure:
+  goal, current state or closure picture, verification plan, links.
+- The section `## Verification plan` is mandatory.
+- The verification plan contains at least the columns:
+  `Check`, `Expectation`, `Evidence / Location`, `Status`.
+- The table is the compact review and closure aid for
+  `In Überprüfung`; it does not replace a broader `quality/testmatrix/`.
 
 G) **Drift-Reports sind nur für belegte Abweichungen**
 - `quality/drift-reports/` dokumentiert Claim/Quelle/Status/Fix.
@@ -160,7 +167,7 @@ I) **Jeder Dokutyp braucht eine Vorlage**
   `templates/`.
 - Bevorzugt werden etablierte Typen wie `ADR`, `KEP-Lite`, `Runbook`,
   `Richtlinie/Überblick`, `Sprint-Dossier`, `Testmatrix`, `Feature-Matrix`,
-  `Drift-Report`, `Postmortem`.
+  `Drift-Report`, `Postmortem`, `Jira work doc`.
 
 J) **Neue Dokutypen brauchen Policy + URI-Muster**
 - Ein neuer Typ (z. B. Glossar, Abnahmecheck) ist erst freigegeben, wenn
@@ -205,6 +212,7 @@ P) **Canonical URI patterns are part of the doc type**
   `quality/feature-matrix/<slug>/`
 - `Drift-Report`: `quality/drift-reports/J01-<KEY>/`
 - `Sprint-Dossier`: `work/sprints/<sprint-slug>/`
+- `Jira work doc`: `work/jira/J01-<KEY>/`
 - `Postmortem`: `quality/postmortems/<slug>/`
 
 Q) **No dedicated glossary or acceptance-check type without proven need**
