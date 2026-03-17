@@ -91,7 +91,7 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
   - 72-7 Spiegel-Anzeige für Unteraufgaben: nur Summary-Prefix — Erledigt
   - 72-8 Projektweit: Subtask-Reihenfolge gegen Export prüfen — Zu erledigen
   - 72-9 Board-Sicht prüfen (Prefix-Format 9-1) — Erledigt
-  - 72-10 CLI-Cache: Public-only Policy + Output-Redaction + Endpoint-Allowlist — Zu erledigen
+  - [**72-10 CLI-Cache: erste Cache-V1 vorbereiten (Policy getrennt)**]({{ "/de/mirror/issues/J01-72/steps/J01-83/" | relative_url }}) — In Bearbeitung
   - 72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links) — Erledigt
   - [**72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen**]({{ "/de/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) — Erledigt
   - [**72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern**]({{ "/de/mirror/issues/J01-72/steps/J01-92/" | relative_url }}) — Erledigt
@@ -102,9 +102,9 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
   - 85-1 Refactor: Coding-Standards durchgehend umsetzen — Zu erledigen
   - 85-2 API-Betriebe (Wrapper), http als Escape-Hatch — Zu erledigen
   - 85-3 Backlog: Confluence-Spiegel periodisch aktualisieren (Batch; optional Warteschlange) — Zu erledigen
-  - 85-4 Backlog: Feature-Matrix fuer Tooling-Betriebe vervollstaendigen — Zu erledigen
+  - 85-4 Backlog: Feature-Matrix für Tooling-Betriebe vervollständigen — Zu erledigen
 
 ## Ohne Epic
 
 - [J01-100 — docs/agile-Reste nach Sprint 1 an kanonischen Zielorten migrieren]({{ "/de/mirror/issues/J01-100/" | relative_url }})
-- [J01-98 — J01-91 Phase 2: sprintrelevante Preview-Migration umsetzen]({{ "/de/mirror/issues/J01-98/" | relative_url }})
+- [J01-101 — CLI-Cache: Policy-Schärfung im curl-Wrapper als späteren Sprint-Kandidaten vorbereiten]({{ "/de/mirror/issues/J01-101/" | relative_url }})

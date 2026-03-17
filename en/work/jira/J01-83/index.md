@@ -13,9 +13,10 @@ hardening into its own follow-up item.
 
 ## Goal
 
-Prepare a small cache V1 that gives humans and agents one reliable recipe for
-recurring Jira work without prematurely pulling in the later security or curl
-hardening path.
+Prepare a small cache V1 that gives humans and agents reliable recipes for
+recurring Jira work and makes those recipes an active skill-side building
+block, without prematurely pulling in the later security or curl hardening
+path.
 
 ## Source and chronology basis
 
@@ -44,12 +45,13 @@ hardening path.
 - added the new public work doc for `J01-83`
 - carried the source basis into the `tagebuch` as a dedicated search case and
   round note
-- implemented one small reference recipe in the skill repo:
+- implemented the first cache cell in the skill repo:
   `shared-tooling/jira-pages/cache-recipes/parent-subtasks.md`
+- corrected the goal of `J01-83` toward active skill-side use of the cache path
 
-## Implemented reference recipe
+## First cache cell
 
-The V1 is now implemented as exactly one small cache artefact.
+The V1 is now implemented with one first small cache cell.
 That artefact covers the read case:
 read a Jira parent issue and derive the contained subtasks from it.
 
@@ -59,7 +61,7 @@ The copyable core command is:
 atlassian jira http get "/rest/api/3/issue/<PARENT_KEY>?fields=subtasks,summary,status"
 ```
 
-The reference recipe contains only the fields needed for this V1:
+The recipe contains only the fields needed for this V1:
 
 - purpose
 - copyable command
@@ -75,6 +77,19 @@ In V1, success means:
 - a present `fields.subtasks` field
 - readable subtask fields `key`, `fields.summary`, `fields.status.name`
 
+## Active skill-side use
+
+`J01-83` does not stop at a stored example.
+All project skills that use recurring commands are expected to use the cache
+path actively:
+
+- look for a matching recipe first
+- add a missing recipe in the same work round
+- update an existing recipe when fields, paths, or expectations drift
+
+The first cache cell is therefore the starting point and reference, not the
+full end state of the cache.
+
 Explicitly not part of this V1:
 
 - saving the full response as a file
@@ -84,10 +99,12 @@ Explicitly not part of this V1:
 
 ## V1 scope
 
-- exactly one small reference recipe is enough
-- that recipe only describes:
+- exactly one first cache cell is enough for this iteration
+- that first recipe only describes:
   purpose, copyable command, placeholders, expected output fields,
   success signals, and limits
+- but this V1 already makes command-using project skills rely on the cache
+  path `shared-tooling/jira-pages/cache-recipes/`
 - the solution stays intentionally small and quickly replaceable
 - the model is the V1 posture from `J01-95`, not its concrete feature set
 
@@ -95,6 +112,7 @@ Explicitly not part of this V1:
 
 - no broad recipe library
 - no mandatory snapshots
+- no new cache engine or persisted response store
 - no new policy hardening in `atlassian-tools/curl`
 - no new security or curl hardening as the DoD for this first iteration
 

@@ -13,9 +13,10 @@ Policy-Schärfung bewusst in einen eigenen Folgepunkt aus.
 
 ## Ziel
 
-Eine kleine Cache-V1 vorbereiten, die Mensch und KI schnell ein belastbares
-Rezept für wiederkehrende Jira-Arbeit gibt, ohne dafür schon die spätere
-Sicherheits- oder Curl-Reifung vorwegzunehmen.
+Eine kleine Cache-V1 vorbereiten, die Mensch und KI schnell belastbare
+Rezepte für wiederkehrende Jira-Arbeit gibt und diese Rezepte als aktiven
+Skill-Baustein nutzbar macht, ohne dafür schon die spätere Sicherheits- oder
+Curl-Reifung vorwegzunehmen.
 
 ## Quellen- und Chronologiebasis
 
@@ -45,13 +46,14 @@ Sicherheits- oder Curl-Reifung vorwegzunehmen.
 - neue öffentliche Arbeitsdoku für `J01-83` angelegt
 - Quellenlage im `tagebuch` als eigener Suchfall und als Rundenprotokoll
   nachgezogen
-- kleines Referenzrezept im Skill-Repo umgesetzt:
+- erste Cache-Zelle im Skill-Repo umgesetzt:
   `shared-tooling/jira-pages/cache-recipes/parent-subtasks.md`
+- Ziel von `J01-83` auf aktive Skill-Nutzung des Cache-Pfads korrigiert
 
-## Umgesetztes Referenzrezept
+## Erste Cache-Zelle
 
-Die V1 ist jetzt als genau ein kleines Cache-Artefakt umgesetzt.
-Das Artefakt beschreibt den Lesefall:
+Die V1 ist jetzt mit einer ersten kleinen Cache-Zelle umgesetzt.
+Dieses Artefakt beschreibt den Lesefall:
 Jira-Parent lesen und daraus die enthaltenen Subtasks ableiten.
 
 Der kopierbare Kernaufruf lautet:
@@ -60,7 +62,7 @@ Der kopierbare Kernaufruf lautet:
 atlassian jira http get "/rest/api/3/issue/<PARENT_KEY>?fields=subtasks,summary,status"
 ```
 
-Das Referenzrezept enthält nur die für diese V1 nötigen Felder:
+Das Rezept enthält nur die für diese V1 nötigen Felder:
 
 - Ziel
 - kopierbarer Befehl
@@ -76,6 +78,18 @@ Als Erfolg gilt in der V1:
 - vorhandenes Feld `fields.subtasks`
 - lesbare Subtask-Felder `key`, `fields.summary`, `fields.status.name`
 
+## Aktive Skill-Nutzung
+
+`J01-83` endet nicht bei einem abgelegten Beispiel.
+Alle befehl-nutzenden Projekt-Skills sollen den Cache-Pfad aktiv verwenden:
+
+- zuerst im Cache nach passendem Rezept suchen
+- fehlende Rezepte im selben Arbeitsgang anlegen
+- bestehende Rezepte bei Drift nachziehen
+
+Die erste Cache-Zelle ist damit Vorbild und Einstieg, nicht die gesamte
+Endform des Cache.
+
 Ausdrücklich nicht Teil der V1:
 
 - vollständige Antwort als Datei speichern
@@ -85,10 +99,12 @@ Ausdrücklich nicht Teil der V1:
 
 ## V1-Zuschnitt
 
-- genau ein kleines Referenzrezept genügt
-- das Rezept beschreibt nur:
+- genau eine erste Cache-Zelle genügt fuer diese Iteration
+- das erste Rezept beschreibt nur:
   Zweck, kopierbaren Befehl, Platzhalter, erwartete Output-Felder,
   Erfolgssignale und Grenzen
+- die V1 verpflichtet aber bereits die befehl-nutzenden Projekt-Skills auf
+  den Cache-Pfad `shared-tooling/jira-pages/cache-recipes/`
 - die Lösung bleibt bewusst klein und schnell austauschbar
 - Vorbild ist die V1-Haltung aus `J01-95`, nicht dessen konkreter Inhalt
 
@@ -96,6 +112,7 @@ Ausdrücklich nicht Teil der V1:
 
 - keine breite Rezeptbibliothek
 - keine Snapshot-Pflicht
+- keine neue Cache-Engine oder Antwortpersistenz
 - keine neue Policy-Schärfung im Bereich `atlassian-tools/curl`
 - keine neue Sicherheits- oder Curl-Härtung als DoD dieser ersten Iteration
 
