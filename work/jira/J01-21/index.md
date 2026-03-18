@@ -45,6 +45,28 @@ Runtime-Verwalter übertragen.
 Verbindlich als Vorbild sind nur der Locking-Rahmen, atomische Writes,
 deterministische Fehlerpfade und ein prüfbarer Lock-Key-Zuschnitt.
 
+## Wiederverwendbarer Rahmen für J01-16
+
+Der fachlich wiederverwendbare Kern aus `J01-21` ist bewusst schmal.
+Für die Ausrollung in `J01-16` sollen vor allem diese gemeinsamen Module und
+Regeln wiederverwendet werden:
+
+- `RuntimeLockRunner` als gemeinsamer Lock-Rahmen
+- `RuntimeAtomicWriter` als gemeinsamer atomischer Schreib-Helfer
+- `LockFactory` plus `symfony/lock` als einheitlicher Lock-Mechanismus
+- begrenzter Lock-Erwerb mit Polling und Timeout
+- Fail-Fast im kritischen Abschnitt mit sicherer Freigabe im Abschluss
+
+Nicht als gemeinsame Pflichtbausteine wiederzuverwenden sind dagegen:
+
+- die konkrete `IP_SALT`-Zustandsmaschine
+- globale Recovery-Schritte, die an `IP_SALT` gebunden sind
+- Marker wie `IN_PROGRESS` und `READY`, sofern ein anderer Verwalter nur
+  einfache Read-Modify-Write-Logik braucht
+
+Der Referenzwert von `J01-21` liegt damit im Rahmen, nicht in der vollständigen
+Kopie seines Fachverhaltens.
+
 ## Folgebezug zu J01-16
 
 [J01-16]({{ "/de/work/jira/J01-16/" | relative_url }}) zieht diesen Rahmen
@@ -57,6 +79,11 @@ auf weitere Runtime-Modelle:
 `J01-21` bleibt dabei der schmale Vorbildpfad.
 `J01-16` ist die breitere Ausrollung, nicht die Neuerfindung desselben
 Grundmusters.
+
+Der schrittspezifische Zuschnitt für `16-1` wird in der eigenen
+[16-1-Arbeitsdoku]({{ "/de/work/jira/J01-16/steps/J01-17/" | relative_url }})
+geführt, damit `J01-21` nur den wiederverwendbaren Rahmen und nicht die
+Detailplanung einzelner `16-*`-Schritte trägt.
 
 ## Provenienz
 

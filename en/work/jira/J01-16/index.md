@@ -43,6 +43,9 @@ other managers when their own domain flow truly requires the same transition.
 ## Open scope
 
 - roll out locking to rate-limit and CAPTCHA paths
+- roll out locking to rate-limit and CAPTCHA paths
+  via [16-1: Locking für Rate-Limit und CAPTCHA ausrollen]({{
+  "/en/work/jira/J01-16/steps/J01-17/" | relative_url }})
 - roll out locking to token rotation
 - add race-adjacent tests for the new target areas
 - update the public operating note for the locked runtime areas
@@ -67,6 +70,8 @@ through `J01-16` and the completed reference issue `J01-21`.
 
 - [J01-21: runtime IP_SALT management and guardrails]({{
   "/en/work/jira/J01-21/" | relative_url }})
+- [16-1: Locking für Rate-Limit und CAPTCHA ausrollen]({{
+  "/en/work/jira/J01-16/steps/J01-17/" | relative_url }})
 - [Area: HTTP runtime]({{ "/en/areas/http-runtime/" | relative_url }})
 - [J01-16 in the Jira mirror]({{ "/en/mirror/issues/J01-16/" | relative_url }})
 - [Sprint 1: Planning]({{ "/en/work/sprints/scrum-sprint-1/" | relative_url }})

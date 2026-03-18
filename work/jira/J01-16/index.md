@@ -44,6 +44,8 @@ andere Verwalter nur dann passend, wenn ihr eigenes Fachverhalten denselben
 ## Offener Zuschnitt
 
 - Locking für Rate-Limit- und CAPTCHA-Pfade ausrollen
+  über [16-1: Locking für Rate-Limit und CAPTCHA ausrollen]({{
+  "/de/work/jira/J01-16/steps/J01-17/" | relative_url }})
 - Locking für Token-Rotation ausrollen
 - race-nahe Tests für die neuen Zielbereiche ergänzen
 - öffentliche Betriebsnotiz zum gelockten Runtime-Bereich nachziehen
@@ -68,6 +70,8 @@ Im heutigen Jira-Zuschnitt werden diese beiden historischen Quellen über
 
 - [J01-21: Runtime-IP_SALT-Verwaltung und Guardrails]({{
   "/de/work/jira/J01-21/" | relative_url }})
+- [16-1: Locking für Rate-Limit und CAPTCHA ausrollen]({{
+  "/de/work/jira/J01-16/steps/J01-17/" | relative_url }})
 - [Bereich: HTTP-Runtime]({{ "/de/areas/http-runtime/" | relative_url }})
 - [J01-16 im Jira-Mirror]({{ "/de/mirror/issues/J01-16/" | relative_url }})
 - [Sprint 1: Planning]({{ "/de/work/sprints/scrum-sprint-1/" | relative_url }})
