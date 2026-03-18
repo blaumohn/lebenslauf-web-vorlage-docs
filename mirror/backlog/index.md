@@ -92,3 +92,4 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
 - [J01-100 — docs/agile-Reste nach Sprint 1 an kanonischen Zielorten migrieren]({{ "/de/mirror/issues/J01-100/" | relative_url }})
 - [J01-101 — CLI-Cache: Policy-Schärfung im curl-Wrapper als späteren Sprint-Kandidaten vorbereiten]({{ "/de/mirror/issues/J01-101/" | relative_url }})
 - [J01-102 — KI-Arbeit: Projektkarte und Skill-/Doku-Trennung schärfen]({{ "/de/mirror/issues/J01-102/" | relative_url }})
+- [J01-103 — J01-91: offene Zielerfüllung für Public-Doku und Übernahmestatus nachziehen]({{ "/de/mirror/issues/J01-103/" | relative_url }})
