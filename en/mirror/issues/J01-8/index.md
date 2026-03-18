@@ -17,11 +17,11 @@ No Jira Cloud links, no email addresses.
 
 ## Tasks
 
-- [J01-60 — Backlog: SMTP-Empfangsnachweis mit Konto-Beteiligung]({{ "/en/mirror/issues/J01-60/" | relative_url }})
-- [J01-58 — Backlog: Pipeline-Phase Terminologie repo-weit]({{ "/en/mirror/issues/J01-58/" | relative_url }})
-- [J01-56 — Backlog: Bibliotheks-APIs konsequent ausschoepfen]({{ "/en/mirror/issues/J01-56/" | relative_url }})
-- [J01-54 — Backlog: Zentrales Fehlerkonzept]({{ "/en/mirror/issues/J01-54/" | relative_url }})
 - [J01-52 — Backlog: Typensicherheit statt Guards]({{ "/en/mirror/issues/J01-52/" | relative_url }})
+- [J01-54 — Backlog: Zentrales Fehlerkonzept]({{ "/en/mirror/issues/J01-54/" | relative_url }})
+- [J01-56 — Backlog: Bibliotheks-APIs konsequent ausschoepfen]({{ "/en/mirror/issues/J01-56/" | relative_url }})
+- [J01-58 — Backlog: Pipeline-Phase Terminologie repo-weit]({{ "/en/mirror/issues/J01-58/" | relative_url }})
+- [J01-60 — Backlog: SMTP-Empfangsnachweis mit Konto-Beteiligung]({{ "/en/mirror/issues/J01-60/" | relative_url }})
 
 ## Links
 

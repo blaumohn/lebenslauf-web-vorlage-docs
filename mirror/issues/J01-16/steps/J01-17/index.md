@@ -10,8 +10,8 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 - **Parent:** [J01-16]({{ "/de/mirror/issues/J01-16/" | relative_url }})
 - **Schritt:** 16-1
-- **Status:** Zu erledigen
-- **Aktualisiert:** 2026-03-18T12:38:32.427+0100
+- **Status:** Erledigt
+- **Aktualisiert:** 2026-03-18T14:03:48.257+0100
 
 ## Angaben
 

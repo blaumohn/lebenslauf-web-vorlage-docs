@@ -3,7 +3,7 @@ layout: page
 title: "J01-84 — Atlassian-System vorbereiten (SSOT: Jira)"
 permalink: /en/mirror/issues/J01-84/
 ---
-<!-- mirror:child_tasks_cksum=3366067832 -->
+<!-- mirror:child_tasks_cksum=494141705 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -17,9 +17,8 @@ No Jira Cloud links, no email addresses.
 
 ## Tasks
 
-- [J01-104 — GitHub Pages: Link-Regel für öffentliche Schrittseiten]({{ "/en/mirror/issues/J01-104/" | relative_url }})
-- [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/en/mirror/issues/J01-85/" | relative_url }})
 - [J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte]({{ "/en/mirror/issues/J01-72/" | relative_url }})
+- [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/en/mirror/issues/J01-85/" | relative_url }})
 
 ## Links
 
