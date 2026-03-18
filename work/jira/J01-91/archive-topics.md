@@ -38,6 +38,25 @@ Sie hält je Thema fest:
 Offene Folgearbeit bleibt in den jeweiligen Zielvorgängen oder kanonischen
 Seiten, nicht mehr in dieser Tabelle.
 
+## Statuslogik ab 2026-03-18
+
+Diese Seite trennt ab jetzt bewusst zwischen **Entscheidung** und
+**Ausführung**.
+
+- `Übernahmeentscheidung` beschreibt das Soll:
+  - `soll übernommen werden`
+  - `noch offen`
+  - `derzeit kein Übernahmeziel`
+- `Umsetzungsstand` beschreibt das Ist:
+  - `nicht begonnen`
+  - `in Arbeit`
+  - `teilweise umgesetzt`
+  - `vollständig umgesetzt`
+  - `entfällt`
+
+Ein Gegenstand kann also `soll übernommen werden` und zugleich
+`nicht begonnen` sein.
+
 | Thema | Übernahme-Stand | Ziel-Genauigkeit | Festgezogener Dokutyp | Template-/Strukturstand | Zielpfad / URI-Muster | Jira-Bezug | Notiz |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Pipeline/Phase-Terminologie | ja | zuerst vorgang-genau, danach kanonisch | `KEP-Lite` plus Bereichsseite | vorhanden; kein Glossar-Typ nötig | `work/jira/J01-58/`, danach `areas/cli-build/` | `J01-58`, `J01-34` | Begriffe werden auf Bereichsseiten geklärt; ein eigener Glossar-Typ ist nicht nötig. |
@@ -51,6 +70,26 @@ Seiten, nicht mehr in dieser Tabelle.
 | Automations-Layer (Helper) | nein | derzeit kein Zielort | keiner; nur bei Reaktivierung `KEP-Lite` | vorhanden, aber nicht benötigt | vorerst kein Zielpfad | keiner direkt belegt | Im aktuellen Jira-Spiegel nicht als eigener Vorgang belegt; nur bei neuer Priorisierung wieder aufnehmen. |
 | Teststrategie/Testmatrix | ja | zuerst vorgang-genau, danach kanonisch | `Testmatrix` | vorhanden; kein eigener Abnahmecheck-Typ nötig | `work/jira/J01-13/`, danach `quality/testmatrix/` | `J01-13` | Feingranulare Nachweise werden innerhalb der Testmatrix oder vorgangsgenau geführt. |
 | Repo-Hygiene | ja | zuerst vorgang-genau, danach kanonisch | Richtlinie plus ggf. `Runbook` | vorhanden | `work/jira/J01-25/`, danach `policies/programmierleitlinien/` und ggf. `operations/<slug>/` | `J01-25` | Dauerregeln und konkrete Abläufe bleiben getrennt. |
+
+## Heutiger Umsetzungsabgleich
+
+Die folgende Tabelle bewertet den heutigen öffentlichen Stand. Sie sagt nicht
+nur, was `J01-91` festgezogen hat, sondern auch, was davon bereits wirklich
+sichtbar umgesetzt ist.
+
+| Thema | Übernahmeentscheidung | Umsetzungsstand | Wie heute öffentlich abgebildet | Nachweis / Ort | Offene Restarbeit / Folgearbeit |
+| --- | --- | --- | --- | --- | --- |
+| Pipeline/Phase-Terminologie | soll übernommen werden | teilweise umgesetzt | Modell und Begriffe sind im Bereich CLI/Build sichtbar, aber noch nicht als vollständiger Besucherpfad ausformuliert | [CLI / Build]({{ "/de/areas/cli-build/" | relative_url }}) | Weiterer Abgleich über `J01-58` und `J01-34` |
+| Typisierung/Validierung | soll übernommen werden | nicht begonnen | In `J01-91` nur als Zielort und Quellthema geführt | Diese Seite + Zielorte in der Arbeitsliste | Fachliche Übernahme bleibt Folgearbeit über `J01-52`, `J01-37`, `J01-28` |
+| Fehlerkonzept | soll übernommen werden | nicht begonnen | In `J01-91` nur als geplanter Themenstrang benannt | Diese Seite + Zielort `J01-54` | Öffentliche Fachübernahme steht noch aus |
+| Preview/Deployment-Readiness | soll übernommen werden | teilweise umgesetzt | Sprintrelevanter Ausschnitt ist öffentlich gefüllt; das Gesamtbild aus `J01-91` bleibt unvollständig | [J01-98]({{ "/de/work/jira/J01-98/" | relative_url }}), [Runbook: GitHub-Pages-Preview lokal]({{ "/de/operations/ghpages-preview/" | relative_url }}), [Testmatrix]({{ "/de/quality/testmatrix/" | relative_url }}) | Vollständigerer Zielabgleich jetzt in [J01-103]({{ "/de/work/jira/J01-103/" | relative_url }}) |
+| CLI-UX | soll übernommen werden | teilweise umgesetzt | Pipeline-/Phase-Modell und Preview-Pfad sind sichtbar, der vollständige UX-Abgleich fehlt | [CLI / Build]({{ "/de/areas/cli-build/" | relative_url }}) | Folgearbeit über `J01-34` |
+| Config-Policy (Sources/Validation) | soll übernommen werden | teilweise umgesetzt | Manifest- und Source-Grundzüge sind öffentlich erklärt, aber noch nicht als vollständiger Übernahmestatus aus den Altquellen ausgewiesen | [CLI / Build]({{ "/de/areas/cli-build/" | relative_url }}), [J01-31]({{ "/de/work/jira/J01-31/" | relative_url }}) | Weiterer Vollabgleich jetzt in [J01-103]({{ "/de/work/jira/J01-103/" | relative_url }}) |
+| i18n | soll übernommen werden | nicht begonnen | In `J01-91` nur als Folgethema und Zielort benannt | Diese Seite + Zielorte `J01-46`, `J01-49`, `J01-6` | Öffentliche Übernahme steht noch aus |
+| Runtime-Concurrency/Locking | soll übernommen werden | teilweise umgesetzt | Die Preview-relevante Runtime-Härtung ist öffentlich beschrieben, aber nicht als vollständige Übernahme aus `J01-91` abgeschlossen | [HTTP-Runtime]({{ "/de/areas/http-runtime/" | relative_url }}), [J01-16]({{ "/de/work/jira/J01-16/" | relative_url }}), [J01-21]({{ "/de/work/jira/J01-21/" | relative_url }}) | Weiterer Architektur-/Betriebsabgleich bleibt Folgearbeit |
+| Automations-Layer (Helper) | derzeit kein Übernahmeziel | entfällt | Kein aktiver öffentlicher Zielort festgezogen | Diese Seite | Nur bei neuer Priorisierung wieder aufnehmen |
+| Teststrategie/Testmatrix | soll übernommen werden | teilweise umgesetzt | Die Testmatrix ist öffentlich vorhanden, aber nicht als vollständiger Übernahmestatus aller Altquellen ausgewiesen | [Testmatrix]({{ "/de/quality/testmatrix/" | relative_url }}), [J01-13]({{ "/de/work/jira/J01-13/" | relative_url }}) | Offene Zielerfüllung läuft jetzt in [J01-103]({{ "/de/work/jira/J01-103/" | relative_url }}) |
+| Repo-Hygiene | soll übernommen werden | teilweise umgesetzt | Projekt-Skill und Repo-Regeln tragen Teile des Zielbilds, aber nicht als vollständige öffentliche Zielerfüllung von `J01-91` | Projekt-Skill + `AGENTS.md` + `J01-91` | Weitere Nachschärfung bleibt getrennte Folgearbeit |
 
 ## Betriebs- und Ablaufregeln aus `docs/agile` (Restprüfung)
 
@@ -105,8 +144,8 @@ Seiten, nicht mehr in dieser Tabelle.
 
 Leitplanke:
 - Die Dateiliste markiert nur die Kernquellen aus `docs/agile`.
-- Sie ist noch **keine** Aussage darüber, ob daraus je Thema eine oder mehrere
-  Ziel-Dokus entstehen.
+- Sie ist noch **keine** Aussage darüber, ob etwas bereits wirklich
+  übernommen wurde oder heute nur als Zielort/Folgearbeit sichtbar ist.
 
 ## Mögliche Zielorte / URI-Muster (nach Dokutyp)
 
