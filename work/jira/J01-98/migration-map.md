@@ -56,7 +56,7 @@ Die Herleitung stützt sich inhaltlich auf drei Quellfamilien:
 | --- | --- | --- | --- |
 | Preview-Workflow und Promotion-Pfad | Der Sprint braucht einen klaren Ablauf für `feature/* -> dev -> preview`, Pflichtprüfungen vor Promotion und Preview-spezifische Betriebsregeln. | `operations/<slug>/` | `J01-9` | `4b95d4e`, `9e9c2ff`, `2af9f95` |
 | Testmatrix und Nachweise | Der Sprint braucht sichtbare Nachweise für `config lint`, Setup, Build, Tests, Artefakt-Checks und Smoke-Pfad. | `quality/testmatrix/` | `J01-13` | `4b95d4e`, `2af9f95`, `e1daa6d` |
-| Runtime-Locking und atomare Zugriffe | Der Preview-Pfad braucht eine öffentlich erklärte Begründung für Locking, Timeout-/Polling-Regeln und atomische Schreibmuster. | `areas/http-runtime/` | `J01-16` | `b015e77`, `49d02fa`, `044e12d`, `cc42f0d`, `3fffdaa` |
+| Runtime-Locking und atomare Zugriffe | Der Preview-Pfad braucht eine öffentlich erklärte Begründung für Locking, Timeout-/Polling-Regeln und atomische Schreibmuster. Der schmale Referenzpfad liegt erledigt in `J01-21`, die breite Ausrollung offen in `J01-16`. | `areas/http-runtime/` | `J01-16`, `J01-21` | `b015e77`, `49d02fa`, `044e12d`, `cc42f0d`, `3fffdaa` |
 | System-Source und Config-Policy | Die Preview-relevante Config-Herleitung muss erklären, wie Quellen, Manifest-Regeln und Pipeline-/Phasenlogik zusammenspielen. | `areas/cli-build/` | `J01-31` | `4b95d4e`, `9b5c891`, `c3cef7a` |
 
 ## Commit-Historie als Quellenfamilie
@@ -104,7 +104,8 @@ Diese Commitgruppe ist die Hauptquelle für den öffentlichen Zusammenhang von
   die Runtime-Haertung wurde in `docs/ENVIRONMENTS.md` dokumentiert.
 
 Diese Commitgruppe ist die Hauptquelle für den öffentlichen Zusammenhang von
-`J01-16` mit dem Preview-Betrieb.
+`J01-21` als Referenzpfad und `J01-16` als breiterer Ausrollung im
+Preview-Betrieb.
 
 ### `dev`
 
@@ -146,6 +147,8 @@ inhaltlichen Rohstoff. Öffentlich führend sind heute aber die Jira-Zielträger
   Deploy-Smoke.
 - Der Themenblock für `J01-16` übernimmt die Begründung für Locking,
   atomische Writes und race-nahe Tests in der Runtime.
+- Der erledigte Vorbildpfad für `IP_SALT` liegt im heutigen Jira-Zuschnitt
+  unter `J01-21` und trägt den schmalen Referenzrahmen für diese Ausrollung.
 - Der Themenblock für `J01-31` übernimmt die System-Source-Verarbeitung und
   die Quellregeln, die den Preview-Pfad technisch begründen.
 

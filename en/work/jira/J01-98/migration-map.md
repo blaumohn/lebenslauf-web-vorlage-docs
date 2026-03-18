@@ -54,7 +54,7 @@ The rationale is based on three source families:
 | --- | --- | --- | --- |
 | Preview workflow and promotion path | The sprint needs a clear `feature/* -> dev -> preview` flow, required checks before promotion, and preview-specific operating rules. | `operations/<slug>/` | `J01-9` | `4b95d4e`, `9e9c2ff`, `2af9f95` |
 | Test matrix and evidence | The sprint needs visible evidence for `config lint`, setup, build, tests, artifact checks, and the smoke path. | `quality/testmatrix/` | `J01-13` | `4b95d4e`, `2af9f95`, `e1daa6d` |
-| Runtime locking and atomic access | The preview path needs a public explanation for locking, timeout/polling rules, and atomic write patterns. | `areas/http-runtime/` | `J01-16` | `b015e77`, `49d02fa`, `044e12d`, `cc42f0d`, `3fffdaa` |
+| Runtime locking and atomic access | The preview path needs a public explanation for locking, timeout/polling rules, and atomic write patterns. The narrow reference path is completed in `J01-21`, while the broader rollout remains open in `J01-16`. | `areas/http-runtime/` | `J01-16`, `J01-21` | `b015e77`, `49d02fa`, `044e12d`, `cc42f0d`, `3fffdaa` |
 | System source and config policy | The preview-relevant config rationale must explain how sources, manifest rules, and pipeline/phase logic work together. | `areas/cli-build/` | `J01-31` | `4b95d4e`, `9b5c891`, `c3cef7a` |
 
 ## Commit history as a source family
@@ -102,7 +102,8 @@ This commit group is the main source for the public relationship between
   the runtime hardening was documented in `docs/ENVIRONMENTS.md`.
 
 This commit group is the main source for the public relationship between
-`J01-16` and preview operations.
+`J01-21` as the reference path and `J01-16` as the broader rollout in preview
+operations.
 
 ### `dev`
 
@@ -141,6 +142,8 @@ Publicly, however, today's leading structure is the Jira target set
   smoke.
 - The topic block for `J01-16` takes over the rationale for locking, atomic
   writes, and race-adjacent runtime tests.
+- The completed model path for `IP_SALT` now sits in today's Jira framing
+  under `J01-21` and carries the narrow reference frame for this rollout.
 - The topic block for `J01-31` takes over system-source handling and the source
   rules that technically justify the preview path.
 
