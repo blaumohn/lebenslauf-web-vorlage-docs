@@ -2,10 +2,18 @@
 layout: page
 title: "J01-54 — Backlog: Zentrales Fehlerkonzept"
 permalink: /de/mirror/issues/J01-54/
+jira_key: J01-54
+jira_parent_key: J01-8
 ---
 <!-- mirror:subtasks_cksum=2608111632 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
+
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">Übergeordnet</span>
+    <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-8/" | relative_url }}">J01-8 im Jira-Mirror</a>  </span></div>
 
 ## Metadaten
 

@@ -2,10 +2,18 @@
 layout: page
 title: "J01-58 — Backlog: Pipeline-Phase Terminologie repo-weit"
 permalink: /de/mirror/issues/J01-58/
+jira_key: J01-58
+jira_parent_key: J01-8
 ---
 <!-- mirror:subtasks_cksum=1844515891 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
+
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">Übergeordnet</span>
+    <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-8/" | relative_url }}">J01-8 im Jira-Mirror</a>  </span></div>
 
 ## Metadaten
 

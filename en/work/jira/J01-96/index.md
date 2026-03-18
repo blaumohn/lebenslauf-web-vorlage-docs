@@ -6,10 +6,7 @@ permalink: /en/work/jira/J01-96/
 
 **Stand:** 2026-03-16
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Context</span>
-  <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-96/" | relative_url }}">J01-96 in the Jira mirror</a>
-</div>
+{% include jira-work-context.html %}
 
 Canonical public work status for `J01-96`.
 This issue adds a small source register for search cases to the `tagebuch`

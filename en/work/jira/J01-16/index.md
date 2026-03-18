@@ -6,10 +6,7 @@ permalink: /en/work/jira/J01-16/
 
 **Stand:** 2026-03-17
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Context</span>
-  <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-16/" | relative_url }}">J01-16 in the Jira mirror</a>
-</div>
+{% include jira-work-context.html %}
 
 Canonical public work status for `J01-16`.
 This issue extends the already proven runtime frame from

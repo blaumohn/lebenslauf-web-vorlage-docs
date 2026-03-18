@@ -6,6 +6,8 @@ permalink: /de/work/jira/J01-16/steps/J01-17/
 
 **Stand:** 2026-03-18
 
+{% include jira-work-context.html %}
+
 Schrittspezifischer öffentlicher Arbeitsstand für
 [16-1]({{ "/de/mirror/issues/J01-16/steps/J01-17/" | relative_url }}) unter
 [J01-16]({{ "/de/work/jira/J01-16/" | relative_url }}).
@@ -99,9 +101,9 @@ Offene Folgeschritte: `16-2` (Token-Rotation), `16-3` (Race-Tests),
 ## Links
 
 - [16-1 im Jira-Mirror]({{ "/de/mirror/issues/J01-16/steps/J01-17/" | relative_url }})
+- [J01-16 im Jira-Mirror]({{ "/de/mirror/issues/J01-16/" | relative_url }})
 - [J01-16: Runtime-Concurrency, Locking und atomare Zugriffe]({{
   "/de/work/jira/J01-16/" | relative_url }})
 - [J01-21: Runtime-IP_SALT-Verwaltung und Guardrails]({{
   "/de/work/jira/J01-21/" | relative_url }})
 - [Bereich: HTTP-Runtime]({{ "/de/areas/http-runtime/" | relative_url }})
-- [J01-16 im Jira-Mirror]({{ "/de/mirror/issues/J01-16/" | relative_url }})

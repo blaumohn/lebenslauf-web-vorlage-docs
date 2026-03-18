@@ -2,10 +2,14 @@
 layout: page
 title: "J01-80 — Atlassian Tools: Refactor – AGENTS Coding-Standards durchgehend umsetzen"
 permalink: /en/mirror/issues/J01-80/
+jira_key: J01-80
+
 ---
 <!-- mirror:subtasks_cksum=4294967295 -->
 
 No Jira Cloud links, no email addresses.
+
+
 
 ## Metadata
 

@@ -158,10 +158,16 @@ F) **`work/jira/` ist vorgang-genau**
 - Die Tabelle dient als knapper Review- und Abschlussplan in
   `In Überprüfung`; sie ersetzt keine breite `quality/testmatrix/`.
 - Für normale Jira-Arbeitsdokus gilt zusätzlich:
-  - direkt unter `Stand` steht eine kompakte Kontextleiste
-  - der eigene Vorgangs-Key in dieser Leiste linkt auf die eigene
-    Mirror-Issue-Seite, wenn diese existiert
+  - direkt unter `Stand` steht ein kurzer Kontextblock
+  - der Block zeigt die Gegenseite im `mirror`, wenn diese existiert
+  - wenn ein übergeordneter Vorgang öffentlich sichtbar ist, zeigt der Block
+    zusätzlich Parent-Arbeitsdoku und Parent-Mirror
+  - wenn öffentliche Schrittseiten unter dem Vorgang existieren, zeigt der
+    Block kurze Direktpfade zu deren Mirror-Seiten
 - Für Schrittseiten gilt zusätzlich:
+  - direkt unter `Stand` steht derselbe kurze Kontextblock
+  - der Block zeigt die eigene Mirror-Schrittseite, die Eltern-Arbeitsdoku und
+    das Eltern-Issue im Mirror, wenn diese Ziele existieren
   - die Schrittkennung im Einleitungssatz linkt auf die eigene
     Mirror-Schrittseite, wenn diese existiert
   - der Eltern-Key im Einleitungssatz linkt auf die Eltern-Arbeitsdoku

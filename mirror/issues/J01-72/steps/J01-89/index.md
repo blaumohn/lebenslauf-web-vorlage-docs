@@ -2,9 +2,17 @@
 layout: page
 title: "72-7 — Spiegel-Anzeige für Unteraufgaben: nur Summary-Prefix"
 permalink: /de/mirror/issues/J01-72/steps/J01-89/
+jira_key: J01-89
+jira_parent_key: J01-72
 ---
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
+
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">Übergeordnet</span>
+    <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-72/" | relative_url }}">J01-72 im Jira-Mirror</a>    <a class="jira-context-bar__link" href="{{ "/de/work/jira/J01-72/" | relative_url }}">J01-72 Arbeitsdoku</a>  </span></div>
 
 ## Metadaten
 

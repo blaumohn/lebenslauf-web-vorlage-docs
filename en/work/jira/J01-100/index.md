@@ -6,10 +6,7 @@ permalink: /en/work/jira/J01-100/
 
 **Stand:** 2026-03-17
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Context</span>
-  <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-100/" | relative_url }}">J01-100 in the Jira mirror</a>
-</div>
+{% include jira-work-context.html %}
 
 Canonical public work status for `J01-100`.
 This issue keeps the non-sprint `docs/agile` migrations from `J01-91`

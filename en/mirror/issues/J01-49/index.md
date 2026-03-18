@@ -2,10 +2,18 @@
 layout: page
 title: "J01-49 — i18n: Template-Texte i18n-fähig machen"
 permalink: /en/mirror/issues/J01-49/
+jira_key: J01-49
+jira_parent_key: J01-6
 ---
 <!-- mirror:subtasks_cksum=448548797 -->
 
 No Jira Cloud links, no email addresses.
+
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Context</span>
+  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">Parent</span>
+    <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-6/" | relative_url }}">J01-6 in the Jira mirror</a>  </span></div>
 
 ## Metadata
 

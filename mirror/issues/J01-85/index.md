@@ -2,10 +2,20 @@
 layout: page
 title: "J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container"
 permalink: /de/mirror/issues/J01-85/
+jira_key: J01-85
+jira_parent_key: J01-84
 ---
 <!-- mirror:subtasks_cksum=2246794048 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
+
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">Übergeordnet</span>
+    <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-84/" | relative_url }}">J01-84 im Jira-Mirror</a>  </span>  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">Öffentliche Schritte</span>
+    <a class="jira-context-bar__link" href="{{ "/de/work/jira/J01-97/" | relative_url }}">J01-97 Arbeitsdoku</a>  </span></div>
 
 ## Metadaten
 

@@ -6,10 +6,7 @@ permalink: /en/work/jira/J01-91/
 
 **Stand:** 2026-03-18
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Context</span>
-  <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-91/" | relative_url }}">J01-91 in the Jira mirror</a>
-</div>
+{% include jira-work-context.html %}
 
 Kanonischer Ort für den öffentlichen Zustand/das Vorhaben zu `J01-91` (Snapshot).
 Die öffentliche Doku ist SSOT in GitHub Pages; `mirror/` ist abgeleitet.

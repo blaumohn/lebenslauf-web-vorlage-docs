@@ -9,12 +9,7 @@ J01-<KEY>: <Title>
 
 Stand: YYYY-MM-DD
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Context</span>
-  <a class="jira-context-bar__link" href="<Mirror issue page>">
-    J01-<KEY> in the Jira mirror
-  </a>
-</div>
+{% include jira-work-context.html %}
 
 Short context
 - Canonical public work status for `J01-<KEY>`.
@@ -50,7 +45,9 @@ Short context
 
 Stand: YYYY-MM-DD
 
-Kurzkontext
+{% include jira-work-context.html %}
+
+Short context
 - Schrittspezifischer öffentlicher Arbeitsstand für
   [<PARENTNR>-<SCHRITTNR>](<Mirror-Schrittseite>) unter
   [J01-<PARENTKEY>](<Eltern-Arbeitsdoku>).
@@ -82,3 +79,12 @@ Kurzkontext
 - <Eltern-Issue im Mirror>
 - ...
 ```
+
+Optional for normal issue pages:
+
+```text
+jira_parent_key: J01-<PARENT>
+```
+
+This keeps the parent issue visible in the context block even if the page's
+own mirror target is not present locally yet.

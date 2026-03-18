@@ -9,12 +9,7 @@ J01-<KEY>: <Titel>
 
 Stand: YYYY-MM-DD
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Kontext</span>
-  <a class="jira-context-bar__link" href="<Mirror-Issue-Seite>">
-    J01-<KEY> im Jira-Mirror
-  </a>
-</div>
+{% include jira-work-context.html %}
 
 Kurzkontext
 - Kanonischer öffentlicher Arbeitsstand für `J01-<KEY>`.
@@ -50,6 +45,8 @@ Kurzkontext
 
 Stand: YYYY-MM-DD
 
+{% include jira-work-context.html %}
+
 Kurzkontext
 - Schrittspezifischer öffentlicher Arbeitsstand für
   [<PARENTNR>-<SCHRITTNR>](<Mirror-Schrittseite>) unter
@@ -82,3 +79,12 @@ Kurzkontext
 - <Eltern-Issue im Mirror>
 - ...
 ```
+
+Optional für normale Vorgangsseiten:
+
+```text
+jira_parent_key: J01-<PARENT>
+```
+
+Damit bleibt der übergeordnete Vorgang auch dann im Kontextblock sichtbar,
+wenn die eigene Mirror-Seite lokal noch nicht vorliegt.

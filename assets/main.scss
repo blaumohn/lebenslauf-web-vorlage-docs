@@ -137,6 +137,19 @@
   color: #444;
 }
 
+.jira-context-bar__section {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.jira-context-bar__section-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #666;
+}
+
 .jira-context-bar__link {
   display: inline-block;
   padding: 0.18rem 0.6rem;

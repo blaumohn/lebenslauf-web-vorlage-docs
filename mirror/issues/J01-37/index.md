@@ -2,10 +2,18 @@
 layout: page
 title: "J01-37 — Config: Konditionelle Validierung"
 permalink: /de/mirror/issues/J01-37/
+jira_key: J01-37
+jira_parent_key: J01-5
 ---
 <!-- mirror:subtasks_cksum=1920381080 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
+
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">Übergeordnet</span>
+    <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-5/" | relative_url }}">J01-5 im Jira-Mirror</a>  </span></div>
 
 ## Metadaten
 

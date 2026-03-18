@@ -6,6 +6,7 @@ permalink: /en/mirror/erledigt/
 
 Static Jira mirror (ohne Jira-Cloud-Links).
 
+- [Jira work docs]({{ "/en/work/jira/" | relative_url }})
 - [Sprint-Board]({{ "/en/mirror/sprint-board/" | relative_url }})
 - [Backlog]({{ "/en/mirror/backlog/" | relative_url }})
 - [Done]({{ "/en/mirror/erledigt/" | relative_url }})

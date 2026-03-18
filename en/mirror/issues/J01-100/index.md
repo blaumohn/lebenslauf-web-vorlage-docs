@@ -2,10 +2,18 @@
 layout: page
 title: "J01-100 — docs/agile-Reste nach Sprint 1 an kanonischen Zielorten migrieren"
 permalink: /en/mirror/issues/J01-100/
+jira_key: J01-100
+
 ---
 <!-- mirror:subtasks_cksum=4294967295 -->
 
 No Jira Cloud links, no email addresses.
+
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Context</span>
+  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">This page</span>
+    <a class="jira-context-bar__link" href="{{ "/en/work/jira/J01-100/" | relative_url }}">J01-100 work doc</a>  </span></div>
 
 ## Metadata
 

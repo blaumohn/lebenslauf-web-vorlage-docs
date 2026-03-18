@@ -158,17 +158,22 @@ F) **`work/jira/` ist vorgang-genau**
 - The table is the compact review and closure aid for
   `In Überprüfung`; it does not replace a broader `quality/testmatrix/`.
 - Normal Jira work docs additionally use:
-  - a compact context bar directly below `Stand`
-  - the issue key in that bar links to the page's own mirror issue page,
-    if that page exists
-- Für Schrittseiten gilt zusätzlich:
-  - die Schrittkennung im Einleitungssatz linkt auf die eigene
-    Mirror-Schrittseite, wenn diese existiert
-  - der Eltern-Key im Einleitungssatz linkt auf die Eltern-Arbeitsdoku
-  - wenn für eine bestehende Unteraufgabe neu eine öffentliche Schrittseite
-    entsteht, werden vorhandene Nennungen in der Public-Doku auf passende
-    Links nachgezogen, soweit diese Schrittseite oder ihren Elternvorgang
-    betreffen
+  - a short context block directly below `Stand`
+  - the block shows the counterpart in `mirror`, if that page exists
+  - if a public parent issue exists, the block also shows parent work doc and
+    parent mirror
+  - if public step pages exist below that issue, the block shows short direct
+    paths to their mirror pages
+- Public step pages additionally use:
+  - the same short context block directly below `Stand`
+  - the block shows the page's own mirror step page, the parent work doc and
+    the parent issue in the mirror, if those targets exist
+  - the step identifier in the intro links to the page's own mirror step page,
+    if it exists
+  - the parent key in the intro links to the parent work doc
+  - when a new public step page is introduced for an existing subtask,
+    existing public mentions are updated to matching links wherever they touch
+    that step page or its parent issue
 
 G) **Drift-Reports sind nur für belegte Abweichungen**
 - `quality/drift-reports/` dokumentiert Claim/Quelle/Status/Fix.

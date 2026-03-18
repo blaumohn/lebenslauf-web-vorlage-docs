@@ -6,10 +6,7 @@ permalink: /en/work/jira/J01-92/
 
 **Status date:** 2026-03-16
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Context</span>
-  <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-92/" | relative_url }}">J01-92 in the Jira mirror</a>
-</div>
+{% include jira-work-context.html %}
 
 This page captures the public work status for `J01-92`.
 The task bundles versioned AI skills and recurring agent work rules.

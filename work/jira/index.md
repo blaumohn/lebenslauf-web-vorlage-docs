@@ -8,6 +8,10 @@ Diese Seiten sind per Jira-Key organisiert und dienen als kanonischer Ort für
 Zustand/Vorhaben (Snapshot) und Arbeitsartefakte, die nicht in den generierten
 `mirror/` gehören.
 
+- [Zur Jira-Übersicht]({{ "/de/mirror/" | relative_url }})
+
+## Vorgangsseiten
+
 - [J01-101]({{ "/de/work/jira/J01-101/" | relative_url }})
 - [J01-102]({{ "/de/work/jira/J01-102/" | relative_url }})
 - [J01-99]({{ "/de/work/jira/J01-99/" | relative_url }})
@@ -23,3 +27,8 @@ Zustand/Vorhaben (Snapshot) und Arbeitsartefakte, die nicht in den generierten
 - [J01-94]({{ "/de/work/jira/J01-94/" | relative_url }})
 - [J01-92]({{ "/de/work/jira/J01-92/" | relative_url }})
 - [J01-91]({{ "/de/work/jira/J01-91/" | relative_url }})
+
+## Öffentliche Schrittseiten
+
+- [16-1: Locking für Rate-Limit und CAPTCHA ausrollen]({{ "/de/work/jira/J01-16/steps/J01-17/" | relative_url }})
+- [16-2: Locking für Token-Rotation ausrollen]({{ "/de/work/jira/J01-16/steps/J01-18/" | relative_url }})

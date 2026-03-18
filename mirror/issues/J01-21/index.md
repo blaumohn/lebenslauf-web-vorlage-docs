@@ -2,10 +2,20 @@
 layout: page
 title: "J01-21 — Runtime: IP_SALT-Verwaltung und Guardrails"
 permalink: /de/mirror/issues/J01-21/
+jira_key: J01-21
+jira_parent_key: J01-5
 ---
 <!-- mirror:subtasks_cksum=2095031605 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
+
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">Diese Seite</span>
+    <a class="jira-context-bar__link" href="{{ "/de/work/jira/J01-21/" | relative_url }}">J01-21 Arbeitsdoku</a>  </span>  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">Übergeordnet</span>
+    <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-5/" | relative_url }}">J01-5 im Jira-Mirror</a>  </span></div>
 
 ## Metadaten
 

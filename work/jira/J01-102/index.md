@@ -6,10 +6,7 @@ permalink: /de/work/jira/J01-102/
 
 **Stand:** 2026-03-17
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Kontext</span>
-  <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-102/" | relative_url }}">J01-102 im Jira-Mirror</a>
-</div>
+{% include jira-work-context.html %}
 
 Kanonischer öffentlicher Arbeitsstand für `J01-102`.
 Der Vorgang schärft die Trennung zwischen öffentlicher Projektdoku, `tagebuch`

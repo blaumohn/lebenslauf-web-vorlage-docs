@@ -2,10 +2,14 @@
 layout: page
 title: "J01-79 — Atlassian CLI: API-Betriebe (Wrapper), http als Escape-Hatch"
 permalink: /en/mirror/issues/J01-79/
+jira_key: J01-79
+
 ---
 <!-- mirror:subtasks_cksum=4294967295 -->
 
 No Jira Cloud links, no email addresses.
+
+
 
 ## Metadata
 

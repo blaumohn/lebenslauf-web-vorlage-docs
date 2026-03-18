@@ -2,9 +2,17 @@
 layout: page
 title: "85-3 — Backlog: Confluence-Spiegel periodisch aktualisieren (Batch; optional Warteschlange)"
 permalink: /en/mirror/issues/J01-85/steps/J01-87/
+jira_key: J01-87
+jira_parent_key: J01-85
 ---
 
 No Jira Cloud links, no email addresses.
+
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Context</span>
+  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">Parent</span>
+    <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-85/" | relative_url }}">J01-85 in the Jira mirror</a>  </span></div>
 
 ## Metadata
 

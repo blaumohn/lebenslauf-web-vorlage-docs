@@ -77,6 +77,8 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
   `LEGACY_CONFLUENCE<TAB>KEY<TAB>LINK_ID<TAB>URL<TAB>TITEL`
 
 4) Stichprobe (inhaltlich):
+   - `work/jira` und `mirror` zeigen für vorhandene Gegenstücke kurze,
+     sichtbare Querpfade in beide Richtungen.
    - Subtasks ohne Angaben haben **keine** eigene Seite (nur Schritt-Nr/Titel/Zustand beim Parent).
    - Grundbestand eines Subtasks sind Schritt-Nr., Titel und Status.
    - Reine Metadaten einer Schritt-Seite, etwa Parent, Schritt-Nr., Status,
@@ -96,6 +98,8 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
    - Bei neuen Schrittseiten für bereits bestehende Unteraufgaben werden
      vorhandene Public-Nennungen nachgezogen, soweit sie diese Schrittseite
      oder ihren Elternvorgang direkt betreffen.
+   - Wenn eine lokale Arbeitsdoku oder Schrittseite existiert, hat sie ein
+     lokales Gegenstück im Mirror; fehlende Paare meldet die Verifikation.
 
 5) Hygiene (Policy):
   - Keine `atlassian.net` Links im Output.
@@ -122,6 +126,8 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
 - `git` ist die verlässliche Historie: Diffs entstehen nur bei Inhaltsänderung.
 - `shared-tooling/jira-pages/verify-jira-ghpages-links.sh` bestätigt die aus Jira importierten
   GitHub-Pages-Ziele lokal für DE und EN.
+- `shared-tooling/jira-pages/verify-jira-ghpages-links.sh` bestätigt zusätzlich
+  die lokalen Paarungen zwischen `work/jira` und `mirror`.
 - `shared-tooling/jira-pages/verify-jira-ghpages-links.sh --legacy-confluence-audit`
   meldet verbliebene alte Confluence-Remote-Links mit Jira-Key und Link-ID.
 - `.local/jira-sync-cache/` und `.local/jira-sync-journal/` halten den

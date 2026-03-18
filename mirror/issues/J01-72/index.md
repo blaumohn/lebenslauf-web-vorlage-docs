@@ -2,10 +2,28 @@
 layout: page
 title: "J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte"
 permalink: /de/mirror/issues/J01-72/
+jira_key: J01-72
+jira_parent_key: J01-84
 ---
 <!-- mirror:subtasks_cksum=384505291 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
+
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">Diese Seite</span>
+    <a class="jira-context-bar__link" href="{{ "/de/work/jira/J01-72/" | relative_url }}">J01-72 Arbeitsdoku</a>  </span>  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">Übergeordnet</span>
+    <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-84/" | relative_url }}">J01-84 im Jira-Mirror</a>  </span>  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">Öffentliche Schritte</span>
+    <a class="jira-context-bar__link" href="{{ "/de/work/jira/J01-83/" | relative_url }}">J01-83 Arbeitsdoku</a>
+    <a class="jira-context-bar__link" href="{{ "/de/work/jira/J01-91/" | relative_url }}">J01-91 Arbeitsdoku</a>
+    <a class="jira-context-bar__link" href="{{ "/de/work/jira/J01-92/" | relative_url }}">J01-92 Arbeitsdoku</a>
+    <a class="jira-context-bar__link" href="{{ "/de/work/jira/J01-94/" | relative_url }}">J01-94 Arbeitsdoku</a>
+    <a class="jira-context-bar__link" href="{{ "/de/work/jira/J01-95/" | relative_url }}">J01-95 Arbeitsdoku</a>
+    <a class="jira-context-bar__link" href="{{ "/de/work/jira/J01-99/" | relative_url }}">J01-99 Arbeitsdoku</a>
+    <a class="jira-context-bar__link" href="{{ "/de/work/jira/J01-73/" | relative_url }}">J01-73 Arbeitsdoku</a>  </span></div>
 
 ## Metadaten
 

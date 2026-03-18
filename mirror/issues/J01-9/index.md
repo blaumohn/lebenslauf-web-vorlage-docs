@@ -2,10 +2,18 @@
 layout: page
 title: "J01-9 — Preview: Workflow wieder aktivieren"
 permalink: /de/mirror/issues/J01-9/
+jira_key: J01-9
+jira_parent_key: J01-5
 ---
 <!-- mirror:subtasks_cksum=1696410997 -->
 
 Keine Jira-Cloud-Links, keine E-Mail-Adressen.
+
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <span class="jira-context-bar__section">
+    <span class="jira-context-bar__section-label">Übergeordnet</span>
+    <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-5/" | relative_url }}">J01-5 im Jira-Mirror</a>  </span></div>
 
 ## Metadaten
 

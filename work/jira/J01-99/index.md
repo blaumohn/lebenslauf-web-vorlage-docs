@@ -6,10 +6,7 @@ permalink: /de/work/jira/J01-99/
 
 **Stand:** 2026-03-16
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Kontext</span>
-  <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-99/" | relative_url }}">J01-99 im Jira-Mirror</a>
-</div>
+{% include jira-work-context.html %}
 
 Kanonischer öffentlicher Arbeitsstand für `J01-99`.
 Der Schritt räumt verbliebene alte Confluence-Remote-Links in Jira auf und

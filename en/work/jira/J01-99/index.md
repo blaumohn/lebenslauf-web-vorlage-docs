@@ -6,10 +6,7 @@ permalink: /en/work/jira/J01-99/
 
 **Stand:** 2026-03-16
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Context</span>
-  <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-99/" | relative_url }}">J01-99 in the Jira mirror</a>
-</div>
+{% include jira-work-context.html %}
 
 Canonical public work status for `J01-99`.
 This step cleans up remaining legacy Confluence remote links in Jira and

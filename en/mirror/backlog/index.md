@@ -6,6 +6,7 @@ permalink: /en/mirror/backlog/
 
 Static Jira mirror (ohne Jira-Cloud-Links).
 
+- [Jira work docs]({{ "/en/work/jira/" | relative_url }})
 - [Sprint-Board]({{ "/en/mirror/sprint-board/" | relative_url }})
 - [Backlog]({{ "/en/mirror/backlog/" | relative_url }})
 - [Done]({{ "/en/mirror/erledigt/" | relative_url }})
@@ -19,7 +20,7 @@ Static Jira mirror (ohne Jira-Cloud-Links).
   - [**13-2 Testmatrix-Nachweise verlinken**]({{ "/en/mirror/issues/J01-13/steps/J01-15/" | relative_url }}) — To Do
 - [J01-16 — Runtime: Concurrency, Locking und atomare Zugriffe]({{ "/en/mirror/issues/J01-16/" | relative_url }})
   - [**16-1 Locking für Rate-Limit und CAPTCHA ausrollen**]({{ "/en/mirror/issues/J01-16/steps/J01-17/" | relative_url }}) — Done
-  - [**16-2 Locking für Token-Rotation ausrollen**]({{ "/en/mirror/issues/J01-16/steps/J01-18/" | relative_url }}) — To Do
+  - [**16-2 Locking für Token-Rotation ausrollen**]({{ "/en/mirror/issues/J01-16/steps/J01-18/" | relative_url }}) — Done
   - [**16-3 Race-nahe Tests ergänzen**]({{ "/en/mirror/issues/J01-16/steps/J01-19/" | relative_url }}) — To Do
   - [**16-4 Betriebsnotiz aktualisieren**]({{ "/en/mirror/issues/J01-16/steps/J01-20/" | relative_url }}) — To Do
 - [J01-28 — Analyse: Risikomuster und Befundliste]({{ "/en/mirror/issues/J01-28/" | relative_url }})
@@ -81,6 +82,7 @@ Static Jira mirror (ohne Jira-Cloud-Links).
 
 ### [J01-84 — Atlassian-System vorbereiten (SSOT: Jira)]({{ "/en/mirror/issues/J01-84/" | relative_url }})
 
+- [J01-104 — GitHub Pages: Link-Regel für öffentliche Schrittseiten]({{ "/en/mirror/issues/J01-104/" | relative_url }})
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/en/mirror/issues/J01-85/" | relative_url }})
   - [**85-1 Refactor: Coding-Standards durchgehend umsetzen**]({{ "/en/mirror/issues/J01-85/steps/J01-81/" | relative_url }}) — To Do
   - [**85-2 API-Betriebe (Wrapper), http als Escape-Hatch**]({{ "/en/mirror/issues/J01-85/steps/J01-82/" | relative_url }}) — To Do
@@ -91,3 +93,5 @@ Static Jira mirror (ohne Jira-Cloud-Links).
 
 - [J01-100 — docs/agile-Reste nach Sprint 1 an kanonischen Zielorten migrieren]({{ "/en/mirror/issues/J01-100/" | relative_url }})
 - [J01-101 — CLI-Cache: Policy-Schärfung im curl-Wrapper als späteren Sprint-Kandidaten vorbereiten]({{ "/en/mirror/issues/J01-101/" | relative_url }})
+- [J01-102 — KI-Arbeit: Projektkarte und Skill-/Doku-Trennung schärfen]({{ "/en/mirror/issues/J01-102/" | relative_url }})
+- [J01-103 — J01-91: offene Zielerfüllung für Public-Doku und Übernahmestatus nachziehen]({{ "/en/mirror/issues/J01-103/" | relative_url }})

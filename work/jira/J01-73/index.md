@@ -6,10 +6,7 @@ permalink: /de/work/jira/J01-73/
 
 **Stand:** 2026-03-17
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Kontext</span>
-  <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-73/" | relative_url }}">J01-73 im Jira-Mirror</a>
-</div>
+{% include jira-work-context.html %}
 
 Kanonischer öffentlicher Arbeitsstand für `J01-73`.
 Der Vorgang hielt die fachliche Prüfung fest, wie Unteraufgaben im Jira- und

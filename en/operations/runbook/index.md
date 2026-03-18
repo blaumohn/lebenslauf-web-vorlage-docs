@@ -72,6 +72,8 @@ The URL conversion from Jira follows these rules:
   `LEGACY_CONFLUENCE<TAB>KEY<TAB>LINK_ID<TAB>URL<TAB>TITLE`
 
 4) Spot check:
+   - `work/jira` and `mirror` expose short, visible cross-paths in both
+     directions whenever a local counterpart exists.
    - Subtasks without public details do **not** get their own page.
    - The base record of a subtask is step number, title, and status.
    - Pure step-page metadata such as parent, step number, status, key, or
@@ -83,12 +85,14 @@ The URL conversion from Jira follows these rules:
      `work/jira/J01-<KEY>/`, a canonical Jira remote link to that doc, the
      subtask's own evidence, its own closure statement, or other canonical
      target pages.
-   - Wenn statt `work/jira/J01-<KEY>/` eine öffentliche Schrittseite unter
-     `work/jira/<PARENT>/steps/<SUBTASK_KEY>/` genutzt wird, gilt dieselbe
-     Erwartung für kanonische Verlinkung und Mirror-Nachzug.
-   - Bei neuen Schrittseiten für bereits bestehende Unteraufgaben werden
-     vorhandene Public-Nennungen nachgezogen, soweit sie diese Schrittseite
-     oder ihren Elternvorgang direkt betreffen.
+   - If a public step page under `work/jira/<PARENT>/steps/<SUBTASK_KEY>/`
+     is used instead of `work/jira/J01-<KEY>/`, the same expectation applies
+     to canonical linking and mirror carry-over.
+   - When new step pages are introduced for existing subtasks, existing public
+     mentions are updated where they directly touch that step page or its
+     parent issue.
+   - If a local work doc or step page exists, it also has a local counterpart
+     in the mirror; missing pairs are reported by verification.
 
 5) Hygiene:
   - No `atlassian.net` links in the output
@@ -114,6 +118,8 @@ The URL conversion from Jira follows these rules:
 - `git` remains the reliable history: diffs only appear when content changes.
 - `shared-tooling/jira-pages/verify-jira-ghpages-links.sh` verifies imported GitHub Pages targets
   locally for both DE and EN.
+- `shared-tooling/jira-pages/verify-jira-ghpages-links.sh` also verifies the
+  local pairings between `work/jira` and `mirror`.
 - `shared-tooling/jira-pages/verify-jira-ghpages-links.sh --legacy-confluence-audit`
   reports remaining legacy Confluence remote links with Jira key and link ID.
 - `.local/jira-sync-cache/` and `.local/jira-sync-journal/` keep the local

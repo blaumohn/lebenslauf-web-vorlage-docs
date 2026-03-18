@@ -6,10 +6,7 @@ permalink: /de/work/jira/J01-21/
 
 **Stand:** 2026-03-17
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Kontext</span>
-  <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-21/" | relative_url }}">J01-21 im Jira-Mirror</a>
-</div>
+{% include jira-work-context.html %}
 
 Kanonischer öffentlicher Arbeitsstand für `J01-21`.
 Der Vorgang hält den bereits erledigten Referenzpfad für die Runtime-Verwaltung

@@ -6,6 +6,8 @@ permalink: /en/work/jira/J01-16/steps/J01-18/
 
 **Status:** 2026-03-18
 
+{% include jira-work-context.html %}
+
 Step-specific public work record for
 [16-2]({{ "/en/mirror/issues/J01-16/steps/J01-18/" | relative_url }}) under
 [J01-16]({{ "/en/work/jira/J01-16/" | relative_url }}).
@@ -39,6 +41,7 @@ The lock protects against two concurrent rotations of the same profile.
 ## Links
 
 - [16-2 in Jira mirror]({{ "/en/mirror/issues/J01-16/steps/J01-18/" | relative_url }})
+- [J01-16 in the Jira mirror]({{ "/en/mirror/issues/J01-16/" | relative_url }})
 - [J01-16: Runtime concurrency, locking and atomic access]({{
   "/en/work/jira/J01-16/" | relative_url }})
 - [Area: HTTP-Runtime]({{ "/en/areas/http-runtime/" | relative_url }})

@@ -1,0 +1,143 @@
+{% assign current_lang = "de" %}
+{% if page.url contains "/en/" %}
+  {% assign current_lang = "en" %}
+{% endif %}
+
+{% assign label_context = "Kontext" %}
+{% assign label_page = "Diese Seite" %}
+{% assign label_parent = "Übergeordnet" %}
+{% assign label_children = "Öffentliche Schritte" %}
+{% assign label_mirror_issue_suffix = "im Jira-Mirror" %}
+{% assign label_mirror_step_suffix = "als Schritt im Jira-Mirror" %}
+{% assign label_parent_work_suffix = "Arbeitsdoku" %}
+{% if current_lang == "en" %}
+  {% assign label_context = "Context" %}
+  {% assign label_page = "This page" %}
+  {% assign label_parent = "Parent" %}
+  {% assign label_children = "Public steps" %}
+  {% assign label_mirror_issue_suffix = "in the Jira mirror" %}
+  {% assign label_mirror_step_suffix = "as step in the Jira mirror" %}
+  {% assign label_parent_work_suffix = "work doc" %}
+{% endif %}
+
+{% assign url_parts = page.url | split: "/" %}
+{% assign current_key = "" %}
+{% assign parent_key = page.jira_parent_key | default: "" %}
+{% assign own_label = "" %}
+{% assign own_url = "" %}
+{% assign parent_work_url = "" %}
+{% assign parent_mirror_url = "" %}
+{% assign child_links = "" %}
+{% assign child_count = 0 %}
+
+{% if page.url contains "/work/jira/" %}
+  {% if page.url contains "/steps/" %}
+    {% assign parent_key = url_parts[4] %}
+    {% assign current_key = url_parts[6] %}
+    {% capture own_url %}/{{ current_lang }}/mirror/issues/{{ parent_key }}/steps/{{ current_key }}/{% endcapture %}
+    {% assign own_label = page.title | append: " " | append: label_mirror_issue_suffix %}
+    {% capture parent_work_url %}/{{ current_lang }}/work/jira/{{ parent_key }}/{% endcapture %}
+    {% capture parent_mirror_url %}/{{ current_lang }}/mirror/issues/{{ parent_key }}/{% endcapture %}
+  {% else %}
+    {% assign current_key = url_parts[4] %}
+    {% capture mirror_issue_url %}/{{ current_lang }}/mirror/issues/{{ current_key }}/{% endcapture %}
+    {% capture mirror_step_suffix %}/steps/{{ current_key }}/{% endcapture %}
+    {% capture mirror_prefix %}/{{ current_lang }}/mirror/issues/{% endcapture %}
+
+    {% for candidate in site.pages %}
+      {% if candidate.url == mirror_issue_url %}
+        {% assign own_url = candidate.url %}
+        {% assign own_label = current_key | append: " " | append: label_mirror_issue_suffix %}
+        {% assign parent_key = candidate.jira_parent_key | default: parent_key %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    {% if own_url == "" %}
+      {% for candidate in site.pages %}
+        {% if candidate.url contains mirror_prefix and candidate.url contains mirror_step_suffix %}
+          {% assign own_url = candidate.url %}
+          {% assign own_label = current_key | append: " " | append: label_mirror_step_suffix %}
+          {% assign parent_key = candidate.jira_parent_key | default: parent_key %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if parent_key != "" %}
+      {% capture parent_work_url %}/{{ current_lang }}/work/jira/{{ parent_key }}/{% endcapture %}
+      {% capture parent_mirror_url %}/{{ current_lang }}/mirror/issues/{{ parent_key }}/{% endcapture %}
+    {% endif %}
+
+    {% capture work_steps_prefix %}/{{ current_lang }}/work/jira/{{ current_key }}/steps/{% endcapture %}
+    {% capture mirror_steps_prefix %}/{{ current_lang }}/mirror/issues/{{ current_key }}/steps/{% endcapture %}
+    {% assign sorted_pages = site.pages | sort: "url" %}
+    {% for candidate in sorted_pages %}
+      {% if candidate.url contains work_steps_prefix %}
+        {% assign child_count = child_count | plus: 1 %}
+        {% capture mirror_step_url %}{{ candidate.url | replace_first: work_steps_prefix, mirror_steps_prefix }}{% endcapture %}
+        {% capture child_links %}{{ child_links }}<a class="jira-context-bar__link" href="{{ mirror_step_url | relative_url }}">{{ candidate.title }} {{ label_mirror_issue_suffix }}</a>{% endcapture %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endif %}
+
+{% assign own_exists = false %}
+{% if own_url != "" %}
+  {% for candidate in site.pages %}
+    {% if candidate.url == own_url %}
+      {% assign own_exists = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% assign parent_work_exists = false %}
+{% if parent_work_url != "" %}
+  {% for candidate in site.pages %}
+    {% if candidate.url == parent_work_url %}
+      {% assign parent_work_exists = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% assign parent_mirror_exists = false %}
+{% if parent_mirror_url != "" %}
+  {% for candidate in site.pages %}
+    {% if candidate.url == parent_mirror_url %}
+      {% assign parent_mirror_exists = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% assign show_context = own_exists or parent_work_exists or parent_mirror_exists or child_count > 0 %}
+{% if show_context %}
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">{{ label_context }}</span>
+  {% if own_exists %}
+    <span class="jira-context-bar__section">
+      <span class="jira-context-bar__section-label">{{ label_page }}</span>
+      <a class="jira-context-bar__link" href="{{ own_url | relative_url }}">{{ own_label }}</a>
+    </span>
+  {% endif %}
+  {% if parent_work_exists or parent_mirror_exists %}
+    <span class="jira-context-bar__section">
+      <span class="jira-context-bar__section-label">{{ label_parent }}</span>
+      {% if parent_work_exists %}
+        <a class="jira-context-bar__link" href="{{ parent_work_url | relative_url }}">{{ parent_key }} {{ label_parent_work_suffix }}</a>
+      {% endif %}
+      {% if parent_mirror_exists %}
+        <a class="jira-context-bar__link" href="{{ parent_mirror_url | relative_url }}">{{ parent_key }} {{ label_mirror_issue_suffix }}</a>
+      {% endif %}
+    </span>
+  {% endif %}
+  {% if child_count > 0 %}
+    <span class="jira-context-bar__section">
+      <span class="jira-context-bar__section-label">{{ label_children }}</span>
+      {{ child_links }}
+    </span>
+  {% endif %}
+</div>
+{% endif %}
