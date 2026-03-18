@@ -62,12 +62,12 @@ Alle zustandsverändernden Dateizugriffe im HTTP-Pfad laufen unter einem
 Der `ConcurrencyTest` belegt, dass jeder Schreibpfad tatsächlich unter
 dem erwarteten Lock-Key läuft und der Timeout greift, wenn der Key belegt
 ist. Hintergrund und Ergebnis:
-[16-3: Race-nahe Tests]({{ "/de/work/jira/J01-16/steps/J01-19/" | relative_url }}).
+[16-3: Race-nahe Tests]({{ "/de/jira/issues/J01-16/steps/J01-19/" | relative_url }}).
 
 ## Links
 
-- [J01-98: öffentlicher Arbeitsstand]({{ "/de/work/jira/J01-98/" | relative_url }})
+- [J01-98: öffentlicher Arbeitsstand]({{ "/de/jira/issues/J01-98/" | relative_url }})
 - [J01-16: Runtime-Concurrency, Locking und atomare Zugriffe]({{
-  "/de/work/jira/J01-16/" | relative_url }})
-- [16-3: Race-nahe Tests]({{ "/de/work/jira/J01-16/steps/J01-19/" | relative_url }})
-- [J01-16 im Jira-Mirror]({{ "/de/mirror/issues/J01-16/" | relative_url }})
+  "/de/jira/issues/J01-16/" | relative_url }})
+- [16-3: Race-nahe Tests]({{ "/de/jira/issues/J01-16/steps/J01-19/" | relative_url }})
+- [J01-16 im Jira-Mirror]({{ "/de/jira/issues/J01-16/" | relative_url }})

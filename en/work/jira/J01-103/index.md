@@ -1,10 +1,13 @@
 ---
 layout: page
 title: "J01-103: Offene Zielerfüllung aus J01-91 für Public-Doku und Übernahmestatus nachziehen"
-permalink: /en/work/jira/J01-103/
+jira_key: J01-103
+permalink: /en/jira/issues/J01-103/
 ---
 
 **Stand:** 2026-03-18
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -36,11 +39,11 @@ Die öffentliche Zielerfüllung aus `J01-91` belastbar nachziehen:
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Zielteile aus `J01-91` sind explizit bewertet | Orientierung, Migration, Transparenz, Struktur und Nachweis sind als getrennte Zielteile sichtbar | [J01-91]({{ "/en/work/jira/J01-91/" | relative_url }}) | teilweise |
-| `archive-topics` trennt Entscheidung und Ausführung | Die Seite mischt nicht mehr Soll und Ist in einem Einzelstatus | [Archiv-Themen]({{ "/en/work/jira/J01-91/archive-topics/" | relative_url }}) | teilweise |
-| Offene Zielerfüllung ist nicht in `J01-100` versteckt | `J01-103` ist als eigener Folgeort aus `J01-91` verlinkt und beschrieben | diese Seite + [J01-91]({{ "/en/work/jira/J01-91/" | relative_url }}) | teilweise |
+| Zielteile aus `J01-91` sind explizit bewertet | Orientierung, Migration, Transparenz, Struktur und Nachweis sind als getrennte Zielteile sichtbar | [J01-91]({{ "/en/jira/issues/J01-91/" | relative_url }}) | teilweise |
+| `archive-topics` trennt Entscheidung und Ausführung | Die Seite mischt nicht mehr Soll und Ist in einem Einzelstatus | [Archiv-Themen]({{ "/en/jira/issues/J01-91/archive-topics/" | relative_url }}) | teilweise |
+| Offene Zielerfüllung ist nicht in `J01-100` versteckt | `J01-103` ist als eigener Folgeort aus `J01-91` verlinkt und beschrieben | diese Seite + [J01-91]({{ "/en/jira/issues/J01-91/" | relative_url }}) | teilweise |
 | Restpfad für Konfig-/Preview-Doku ist benannt | Punkte wie `docs/ENVIRONMENTS.md` werden als Beleg- oder Restpunkte der größeren Zielarbeit eingeordnet | diese Seite + Folgearbeit in `J01-103` | offen |
-| Öffentliche Arbeitsdoku ist aus Jira erreichbar | Jira hält den kanonischen Link auf `work/jira/J01-103/` | Jira-Remote-Link für `J01-103` | erledigt |
+| Öffentliche Arbeitsdoku ist aus Jira erreichbar | Jira hält den kanonischen Link auf `/en/jira/issues/J01-103/` | Jira-Remote-Link für `J01-103` | erledigt |
 
 ## Abschlussbild oder offene Punkte
 
@@ -52,7 +55,7 @@ Die öffentliche Zielerfüllung aus `J01-91` belastbar nachziehen:
 
 ## Links
 
-- [J01-91: Zustand/Vorhaben (Snapshot)]({{ "/en/work/jira/J01-91/" | relative_url }})
-- [J01-98: sprintrelevante Preview-Migration]({{ "/en/work/jira/J01-98/" | relative_url }})
-- [J01-100: docs/agile-Reste nach Sprint 1]({{ "/en/work/jira/J01-100/" | relative_url }})
-- [Jira-Arbeitsdokus]({{ "/en/work/jira/" | relative_url }})
+- [J01-91: Zustand/Vorhaben (Snapshot)]({{ "/en/jira/issues/J01-91/" | relative_url }})
+- [J01-98: sprintrelevante Preview-Migration]({{ "/en/jira/issues/J01-98/" | relative_url }})
+- [J01-100: docs/agile-Reste nach Sprint 1]({{ "/en/jira/issues/J01-100/" | relative_url }})
+- [Jira-Arbeitsdokus]({{ "/en/jira/" | relative_url }})

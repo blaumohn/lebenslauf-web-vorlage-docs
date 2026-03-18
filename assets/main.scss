@@ -164,3 +164,49 @@
 .jira-context-bar__link:focus {
   text-decoration: underline;
 }
+
+.jira-state-head {
+  margin: 0.8rem 0 1rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #fffdf7, #f5f2e8);
+}
+
+.jira-state-head__title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+}
+
+.jira-state-head__key {
+  font-weight: 700;
+}
+
+.jira-state-head__summary {
+  color: #4f4b40;
+}
+
+.jira-state-head__meta {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  margin: 0;
+}
+
+.jira-state-head__item {
+  margin: 0;
+}
+
+.jira-state-head__item dt {
+  margin: 0 0 0.2rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #666;
+}
+
+.jira-state-head__item dd {
+  margin: 0;
+}

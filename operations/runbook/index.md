@@ -1,22 +1,22 @@
 ---
 layout: page
-title: "Runbook: Jira-Übersicht aktualisieren"
+title: "Runbook: öffentliche Jira-Fläche aktualisieren"
 permalink: /de/operations/runbook/
 ---
 
 ## Zweck
 
-Die öffentliche, statische Jira-Übersicht in diesem Repo aktualisieren:
+Die öffentliche Jira-Fläche in diesem Repo aktualisieren:
 
-- DE: `/de/mirror/`, `/de/mirror/sprint-board/`, `/de/mirror/backlog/`,
-  `/de/mirror/erledigt/`, `/de/mirror/issues/J01-*/`
-- EN: `/en/mirror/`, `/en/mirror/sprint-board/`, `/en/mirror/backlog/`,
-  `/en/mirror/erledigt/`, `/en/mirror/issues/J01-*/`
+- DE: `/de/jira/`, `/de/jira/sprint/`, `/de/jira/backlog/`,
+  `/de/jira/erledigt/`, `/de/jira/issues/J01-*/`
+- EN: `/en/jira/`, `/en/jira/sprint/`, `/en/jira/backlog/`,
+  `/en/jira/erledigt/`, `/en/jira/issues/J01-*/`
 - Schritt-Seiten nur bei Subtasks mit Angaben:
-  `/de/mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/` und
-  `/en/mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/`
-- Zusätzlich: Jira Remote Links werden (gefiltert) als Linkliste im Mirror angezeigt
-  (nur Doku-Domain; als site-relative Links gerendert).
+  `/de/jira/issues/<PARENT>/steps/<SUBTASK_KEY>/` und
+  `/en/jira/issues/<PARENT>/steps/<SUBTASK_KEY>/`
+- Zusätzlich: Jira-Remote-Links werden gefiltert als relative Links in der
+  öffentlichen Jira-Fläche angezeigt.
 
 ## Voraussetzungen
 
@@ -34,16 +34,16 @@ Die öffentliche, statische Jira-Übersicht in diesem Repo aktualisieren:
      Remote-Link pflegen; die DE/EN-Aufspaltung bleibt Aufgabe von GitHub
      Pages und Mirror.
 
-2) Jira-Übersicht generieren:
+2) Öffentliche Jira-Fläche generieren:
 
 ```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-jira-mirror.sh
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-public-jira-pages.sh
 ```
 
 Optional (on demand, „neu baselinen“):
 
 ```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-jira-mirror.sh --full
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-public-jira-pages.sh --full
 ```
 
 Optional (journalisierter Normalmodus bei bekannten Änderungen):
@@ -57,13 +57,13 @@ DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-syn
 3) GitHub-Pages-Ziele aus Jira lokal bestätigen:
 
 ```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-jira-ghpages-links.sh
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-public-jira-pages.sh
 ```
 
 Optional: alte Confluence-Ziele gezielt auditen:
 
 ```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-jira-ghpages-links.sh --legacy-confluence-audit
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-public-jira-pages.sh --legacy-confluence-audit
 ```
 
 Dabei gilt für die Umwandlung aus Jira-URLs:
@@ -77,8 +77,8 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
   `LEGACY_CONFLUENCE<TAB>KEY<TAB>LINK_ID<TAB>URL<TAB>TITEL`
 
 4) Stichprobe (inhaltlich):
-   - `work/jira` und `mirror` zeigen für vorhandene Gegenstücke kurze,
-     sichtbare Querpfade in beide Richtungen.
+   - Vorgangs- und Schrittseiten unter `jira/` zeigen kurze, sichtbare
+     Querpfade zu Übersichten, Parent und öffentlichen Schritten.
    - Subtasks ohne Angaben haben **keine** eigene Seite (nur Schritt-Nr/Titel/Zustand beim Parent).
    - Grundbestand eines Subtasks sind Schritt-Nr., Titel und Status.
    - Reine Metadaten einer Schritt-Seite, etwa Parent, Schritt-Nr., Status,
@@ -92,31 +92,34 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
      `work/jira/J01-<KEY>/`, ein kanonischer Jira-Remote-Link auf diese Doku,
      eigene Nachweise, eigene Abschlussaussagen oder andere eigene
      kanonische Zielseiten.
-   - Wenn statt `work/jira/J01-<KEY>/` eine öffentliche Schrittseite unter
-     `work/jira/<PARENT>/steps/<SUBTASK_KEY>/` genutzt wird, gilt dieselbe
-     Erwartung für kanonische Verlinkung und Mirror-Nachzug.
+   - Wenn statt einer öffentlichen Vorgangsseite eine öffentliche Schrittseite
+     unter `jira/issues/<PARENT>/steps/<SUBTASK_KEY>/` genutzt wird, gilt
+     dieselbe Erwartung für kanonische Verlinkung und Nachzug.
    - Bei neuen Schrittseiten für bereits bestehende Unteraufgaben werden
      vorhandene Public-Nennungen nachgezogen, soweit sie diese Schrittseite
      oder ihren Elternvorgang direkt betreffen.
-   - Wenn eine lokale Arbeitsdoku oder Schrittseite existiert, hat sie ein
-     lokales Gegenstück im Mirror; fehlende Paare meldet die Verifikation.
+   - Wenn eine öffentliche Vorgangs- oder Schrittseite existiert, wird sie
+     über die Verifikation gegen Jira-Remote-Links, Altpfade und
+     Doppelpunkte geprüft.
 
 5) Hygiene (Policy):
   - Keine `atlassian.net` Links im Output.
   - Keine E-Mail-Adressen im Output.
-- Remote Links zeigen nicht als absolute Doku-Domain, sondern als relative Site-Links.
-- Remote Links folgen im Mirror dem Sprachkontext der Seite
+- Remote Links zeigen nicht als absolute Doku-Domain, sondern als relative
+  Site-Links.
+- Remote Links folgen in der öffentlichen Jira-Fläche dem Sprachkontext der Seite
   (`/de/...` auf DE-Seiten, `/en/...` auf EN-Seiten).
 - Jira selbst hält für dieselbe Arbeitsdoku keine doppelten DE/EN-Remote-Links.
   - Sprint-Board gruppiert die aktuelle Sprint-Arbeit nach Kategorie-Labels
     (`sprint-goal`, `sprint-support`, `sprint-admin`, `sprint-unplanned`).
   - Im Sprint-Board erscheinen nur dieselben Top-Level-Vorgänge wie im
     Jira-Board; Schritte bleiben auf Parent-/Step-Seiten sichtbar.
-  - Nach dem DE-Render wird der EN-Mirror als abgeleitete Kopie synchronisiert.
+  - Nach dem DE-Render wird der EN-Jira-Baum als abgeleitete Kopie synchronisiert.
 
 ## Rollback
 
-- `git checkout -- mirror/` (oder gezielt einzelne Dateien) und erneut generieren.
+- Betroffene Dateien zurücksetzen und die öffentliche Jira-Fläche erneut
+  generieren.
 
 ## Monitoring
 
@@ -124,11 +127,11 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
 - Das Sprint-Board zeigt die Sprint-Kategorien in eigener Zeilenstruktur.
 - Issue-/Step-Seiten enthalten je Vorgang `**Aktualisiert:** …` (Jira-Quelle).
 - `git` ist die verlässliche Historie: Diffs entstehen nur bei Inhaltsänderung.
-- `shared-tooling/jira-pages/verify-jira-ghpages-links.sh` bestätigt die aus Jira importierten
-  GitHub-Pages-Ziele lokal für DE und EN.
-- `shared-tooling/jira-pages/verify-jira-ghpages-links.sh` bestätigt zusätzlich
-  die lokalen Paarungen zwischen `work/jira` und `mirror`.
-- `shared-tooling/jira-pages/verify-jira-ghpages-links.sh --legacy-confluence-audit`
+- `shared-tooling/jira-pages/verify-public-jira-pages.sh` bestätigt die aus
+  Jira importierten GitHub-Pages-Ziele lokal für DE und EN.
+- `shared-tooling/jira-pages/verify-public-jira-pages.sh` bestätigt zusätzlich
+  das Fehlen öffentlicher Altpfade und doppelter Detail-URLs.
+- `shared-tooling/jira-pages/verify-public-jira-pages.sh --legacy-confluence-audit`
   meldet verbliebene alte Confluence-Remote-Links mit Jira-Key und Link-ID.
 - `.local/jira-sync-cache/` und `.local/jira-sync-journal/` halten den
   lokalen Snapshot- und Resume-Zustand für den journalisierten Normalmodus.

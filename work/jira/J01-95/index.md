@@ -1,15 +1,19 @@
 ---
 layout: page
 title: "J01-95: Journalisierten Jira-/Pages-Sync mit Resume aufbauen"
-permalink: /de/work/jira/J01-95/
+jira_key: J01-95
+jira_parent_key: J01-72
+permalink: /de/jira/issues/J01-72/steps/J01-95/
 ---
 
 **Stand:** 2026-03-14
 
+{% include jira-state-head.html %}
+
 {% include jira-work-context.html %}
 
 Kanonischer öffentlicher Arbeitsstand für `J01-95`.
-Der Schritt ergänzt den Jira-/Mirror-Betrieb um einen lokalen Journal- und
+Der Schritt ergänzt den Jira-/Pages-Betrieb um einen lokalen Journal- und
 Resume-Pfad für bekannte Jira- und GitHub-Pages-Änderungen.
 
 ## Ziel
@@ -24,7 +28,7 @@ Normalmodus jedes Mal projektweite Jira-Listenabfragen zu brauchen.
 - lokales Laufjournal unter `.local/jira-sync-journal/`
 - Mirror-Generator akzeptiert jetzt lokale Snapshot-Dateien statt nur frischer
   Jira-Abfragen
-- `verify-jira-ghpages-links.sh` kann jetzt gezielt nur betroffene Keys prüfen
+- `verify-public-jira-pages.sh` kann jetzt gezielt nur betroffene Keys prüfen
 - neue Pages-Helfer:
   - Link-Änderungen aus Git-Diff ableiten
   - betroffene Jira-Keys lokal aus `mirror/` rückwärts finden
@@ -38,8 +42,8 @@ Normalmodus jedes Mal projektweite Jira-Listenabfragen zu brauchen.
 - V1-Klassen:
   `status`, `summary`, `description`, `step_meta`, `remote_links`
 - GitHub-Pages-Änderungen werden über einen Git-Base-Ref erkannt.
-- `mirror/` gilt in V1 als vollständige lokale Sicht auf Docs-Domain-Links aus
-  Jira; andere Jira-Inhalte bleiben außerhalb dieses Pfads.
+- `jira/` gilt in V1 als vollständige öffentliche Sicht auf Docs-Domain-Links
+  aus Jira; andere Jira-Inhalte bleiben außerhalb dieses Pfads.
 - Vollsync bleibt Reparaturmodus und nicht der Normalweg.
 
 ## Abschluss
@@ -53,5 +57,5 @@ Normalmodus jedes Mal projektweite Jira-Listenabfragen zu brauchen.
 
 ## Links
 
-- [Jira-Arbeitsdokus]({{ "/de/work/jira/" | relative_url }})
+- [Jira-Arbeitsdokus]({{ "/de/jira/" | relative_url }})
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/de/operations/runbook/" | relative_url }})

@@ -1,10 +1,13 @@
 ---
 layout: page
 title: "J01-72: Closure of the implementation steps"
-permalink: /en/work/jira/J01-72/
+jira_key: J01-72
+permalink: /en/jira/issues/J01-72/
 ---
 
 **Stand:** 2026-03-17
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -15,7 +18,8 @@ the public closure state of the parent issue.
 ## Goal
 
 Close the implementation steps under `J01-72` so that Jira, public work docs,
-and the mirror all carry the same end state and no hidden subtasks remain open.
+and the public Jira area all carry the same end state and no hidden subtasks
+remain open.
 
 ## Closure picture
 
@@ -30,19 +34,19 @@ and the mirror all carry the same end state and no hidden subtasks remain open.
 
 | Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| Subtasks no longer hide an open leftover | All subtasks under `J01-72` are done or publicly documented as replaced review/decision work | Jira subtask list for `J01-72` and [J01-73]({{ "/en/work/jira/J01-73/" | relative_url }}) | done |
-| Cache track is publicly closable | `J01-83` has a work doc, verification plan, and canonical Jira link | [J01-83]({{ "/en/work/jira/J01-83/" | relative_url }}) | done |
-| Parent can be traced from Jira to public docs directly | Jira holds a remote link to `work/jira/J01-72/` | Jira remote links for `J01-72` | done |
-| Mirror shows the same closure state | `mirror/issues/J01-72/` no longer lists open subtasks and carries the done status | [Mirror: J01-72]({{ "/en/mirror/issues/J01-72/" | relative_url }}) | done |
+| Subtasks no longer hide an open leftover | All subtasks under `J01-72` are done or publicly documented as replaced review/decision work | Jira subtask list for `J01-72` and [J01-73]({{ "/en/jira/issues/J01-73/" | relative_url }}) | done |
+| Cache track is publicly closable | `J01-83` has a work doc, verification plan, and canonical Jira link | [J01-83]({{ "/en/jira/issues/J01-83/" | relative_url }}) | done |
+| Parent can be traced from Jira to public docs directly | Jira holds a remote link to `/en/jira/issues/J01-72/` | Jira remote links for `J01-72` | done |
+| Public Jira page shows the same closure state | `/en/jira/issues/J01-72/` no longer lists open subtasks and carries the done status | [Jira: J01-72]({{ "/en/jira/issues/J01-72/" | relative_url }}) | done |
 
 ## Closure
 
-`J01-73` and `J01-83` are both `Done` in Jira, and the mirror reflects the
-same state.
+`J01-73` and `J01-83` are both `Done` in Jira, and the public Jira area
+reflects the same state.
 That also closes `J01-72` as the parent issue.
 
 ## Links
 
-- [J01-73: Verify subtask ordering against the export path]({{ "/en/work/jira/J01-73/" | relative_url }})
-- [J01-83: Prepare the first cache V1 and separate policy work]({{ "/en/work/jira/J01-83/" | relative_url }})
-- [Mirror: J01-72]({{ "/en/mirror/issues/J01-72/" | relative_url }})
+- [J01-73: Verify subtask ordering against the export path]({{ "/en/jira/issues/J01-73/" | relative_url }})
+- [J01-83: Prepare the first cache V1 and separate policy work]({{ "/en/jira/issues/J01-83/" | relative_url }})
+- [Jira: J01-72]({{ "/en/jira/issues/J01-72/" | relative_url }})

@@ -9,8 +9,8 @@ de:
     url: /de/operations/
   - title: Sprints
     url: /de/work/sprints/
-  - title: Jira-Übersicht
-    url: /de/mirror/
+  - title: Jira
+    url: /de/jira/
   - title: Richtlinien
     url: /de/policies/
   - title: Vorlagen
@@ -28,8 +28,8 @@ en:
     url: /en/operations/
   - title: Sprints
     url: /en/work/sprints/
-  - title: Jira Mirror
-    url: /en/mirror/
+  - title: Jira
+    url: /en/jira/
   - title: Policies
     url: /en/policies/
   - title: Templates

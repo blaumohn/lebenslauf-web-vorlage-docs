@@ -18,17 +18,17 @@ Move preview readiness and preview deployment forward in a visible way.
 
 ## Planned
 
-- [J01-9]({{ "/en/mirror/issues/J01-9/" | relative_url }})
-- [J01-13]({{ "/en/mirror/issues/J01-13/" | relative_url }})
-- [J01-16]({{ "/en/mirror/issues/J01-16/" | relative_url }})
-- [J01-31]({{ "/en/mirror/issues/J01-31/" | relative_url }})
+- [J01-9]({{ "/en/jira/issues/J01-9/" | relative_url }})
+- [J01-13]({{ "/en/jira/issues/J01-13/" | relative_url }})
+- [J01-16]({{ "/en/jira/issues/J01-16/" | relative_url }})
+- [J01-31]({{ "/en/jira/issues/J01-31/" | relative_url }})
 
 ## What actually happened
 
 - major Jira, SSOT, and mirror groundwork continued under
-  [J01-72]({{ "/en/mirror/issues/J01-72/" | relative_url }})
-- [J01-79]({{ "/en/mirror/issues/J01-79/" | relative_url }}) was completed
-- [J01-80]({{ "/en/mirror/issues/J01-80/" | relative_url }}) was completed
+  [J01-72]({{ "/en/jira/issues/J01-72/" | relative_url }})
+- [J01-79]({{ "/en/jira/issues/J01-79/" | relative_url }}) was completed
+- [J01-80]({{ "/en/jira/issues/J01-80/" | relative_url }}) was completed
 - later public docs, skill, and sprint work was prepared and then became
   visible in `J01-91`, `J01-92`, `J01-93`, and `J01-94`
 
@@ -56,8 +56,8 @@ Move preview readiness and preview deployment forward in a visible way.
 
 ## Carry-over
 
-- [J01-9]({{ "/en/mirror/issues/J01-9/" | relative_url }})
-- [J01-13]({{ "/en/mirror/issues/J01-13/" | relative_url }})
-- [J01-16]({{ "/en/mirror/issues/J01-16/" | relative_url }})
-- [J01-31]({{ "/en/mirror/issues/J01-31/" | relative_url }})
-- [J01-72]({{ "/en/mirror/issues/J01-72/" | relative_url }})
+- [J01-9]({{ "/en/jira/issues/J01-9/" | relative_url }})
+- [J01-13]({{ "/en/jira/issues/J01-13/" | relative_url }})
+- [J01-16]({{ "/en/jira/issues/J01-16/" | relative_url }})
+- [J01-31]({{ "/en/jira/issues/J01-31/" | relative_url }})
+- [J01-72]({{ "/en/jira/issues/J01-72/" | relative_url }})

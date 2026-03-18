@@ -1,7 +1,9 @@
 ---
 layout: page
 title: "J01-92: shared agent rules and skill versioning"
-permalink: /en/work/jira/J01-92/
+jira_key: J01-92
+jira_parent_key: J01-72
+permalink: /en/jira/issues/J01-72/steps/J01-92/
 ---
 
 **Status date:** 2026-03-16
@@ -47,7 +49,7 @@ rules, skills, and public docs.
 
 ## Links
 
-- [Mirror: J01-72 / step J01-92]({{ "/en/mirror/issues/J01-72/steps/J01-92/" | relative_url }})
+- [Mirror: J01-72 / step J01-92]({{ "/en/jira/issues/J01-72/steps/J01-92/" | relative_url }})
 - [Feature matrix: Jira and docs tooling]({{ "/en/areas/proj-doku-tooling/feature-matrix/" | relative_url }})
 
 ## Notes

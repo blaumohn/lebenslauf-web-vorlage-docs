@@ -1,10 +1,14 @@
 ---
 layout: page
 title: "J01-91: Zustand/Vorhaben (Snapshot)"
-permalink: /de/work/jira/J01-91/
+jira_key: J01-91
+jira_parent_key: J01-72
+permalink: /de/jira/issues/J01-72/steps/J01-91/
 ---
 
 **Stand:** 2026-03-18
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -26,9 +30,9 @@ formulierte Zielbild von `J01-91`.
 | --- | --- | --- | --- |
 | Orientierungsziel | HR und Dev finden klare Einstiege, Zielorte und Lesepfade in der Public-Doku | offen | GitHub-Pages-Einstiege und `J01-91` benennen Struktur, zerlegen den Besucherpfad aber nicht belastbar |
 | Migrationsziel | Relevante Altinhalte aus `docs/agile` sind fachlich in GitHub Pages angekommen | teilweise | `J01-98` füllt einen sprintrelevanten Ausschnitt; weitere Restarbeit bleibt offen |
-| Transparenzziel | Je größerem Alt-Thema ist sichtbar, was entschieden, umgesetzt, nur vorbereitet oder noch offen ist | teilweise | [Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }}) trennt jetzt Entscheidung und Ausführung; der Vollabgleich bleibt Folgearbeit |
-| Strukturziel | Haupt-Orte, Dokutypen und Zielpfade sind klar und stabil benannt | erfüllt | [Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }}), [Bereiche-Inventar]({{ "/de/work/jira/J01-91/area-inventory/" | relative_url }}) und [Policy-Deltas]({{ "/de/work/jira/J01-91/policy-deltas/" | relative_url }}) |
-| Nachweisziel | Die behauptete Erledigung ist öffentlich nachvollziehbar belegt | offen | Die bisherige Abschlussdarstellung war stärker als die belegte Zielerfüllung; Folgearbeit läuft jetzt über [J01-103]({{ "/de/work/jira/J01-103/" | relative_url }}) |
+| Transparenzziel | Je größerem Alt-Thema ist sichtbar, was entschieden, umgesetzt, nur vorbereitet oder noch offen ist | teilweise | [Archiv-Themen]({{ "/de/jira/issues/J01-91/archive-topics/" | relative_url }}) trennt jetzt Entscheidung und Ausführung; der Vollabgleich bleibt Folgearbeit |
+| Strukturziel | Haupt-Orte, Dokutypen und Zielpfade sind klar und stabil benannt | erfüllt | [Archiv-Themen]({{ "/de/jira/issues/J01-91/archive-topics/" | relative_url }}), [Bereiche-Inventar]({{ "/de/jira/issues/J01-91/area-inventory/" | relative_url }}) und [Policy-Deltas]({{ "/de/jira/issues/J01-91/policy-deltas/" | relative_url }}) |
+| Nachweisziel | Die behauptete Erledigung ist öffentlich nachvollziehbar belegt | offen | Die bisherige Abschlussdarstellung war stärker als die belegte Zielerfüllung; Folgearbeit läuft jetzt über [J01-103]({{ "/de/jira/issues/J01-103/" | relative_url }}) |
 
 ## Delta 2026-03-14
 
@@ -55,20 +59,20 @@ formulierte Zielbild von `J01-91`.
   Feature-Bezug über `dev` führen.
 - `J01-91` wechselt in Jira auf `Erledigt`.
 - Die sprintrelevante Preview-Migration aus Phase 2 läuft ab jetzt über
-  [J01-98]({{ "/de/work/jira/J01-98/" | relative_url }}).
+  [J01-98]({{ "/de/jira/issues/J01-98/" | relative_url }}).
 - Die nicht sprintrelevanten `docs/agile`-Reste aus Phase 2 liegen jetzt im
-  Backlog unter [J01-100]({{ "/de/work/jira/J01-100/" | relative_url }}).
+  Backlog unter [J01-100]({{ "/de/jira/issues/J01-100/" | relative_url }}).
 - Die Bereinigung alter Confluence-Remote-Links und der neue Audit-Guardrail
-  laufen ab jetzt über [J01-99]({{ "/de/work/jira/J01-99/" | relative_url }}).
+  laufen ab jetzt über [J01-99]({{ "/de/jira/issues/J01-99/" | relative_url }}).
 
 ## Delta 2026-03-18
 
 - `J01-91` trennt jetzt ausdrücklich zwischen erreichtem Strukturteil und
   offener Zielerfüllung des ursprünglichen öffentlichen Zielbilds.
-- [J01-103]({{ "/de/work/jira/J01-103/" | relative_url }}) ist als neue
+- [J01-103]({{ "/de/jira/issues/J01-103/" | relative_url }}) ist als neue
   Folgearbeit angelegt, damit die offene Zielerfüllung nicht implizit in
   `J01-100` oder `J01-98` verschwindet.
-- [Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }})
+- [Archiv-Themen]({{ "/de/jira/issues/J01-91/archive-topics/" | relative_url }})
   macht jetzt getrennt sichtbar, was übernommen werden soll und was heute
   bereits öffentlich umgesetzt ist.
 
@@ -77,7 +81,8 @@ formulierte Zielbild von `J01-91`.
 - GitHub Pages ist SSOT für Doku (öffentlich, inkl. Seiten für Jira-Links).
 - Jira ist SSOT für Vorgänge und Status (nicht öffentlich).
 - Diese Seite ist ein **öffentlicher Snapshot**: „Was ist der Stand, was ist als Nächstes zu tun?“
-- Detail-Artefakte hängen unter `work/jira/J01-91/` (öffentlich) oder bleiben privat.
+- Detail-Artefakte hängen unter `jira/issues/J01-91/` (öffentlich) oder
+  bleiben privat.
 
 ## Abschluss und Folgearbeit
 
@@ -86,18 +91,18 @@ Nicht abgeschlossen ist dagegen die vollständige Zielerfüllung des
 ursprünglichen öffentlichen Zielbilds. Diese Restarbeit wird jetzt offen als
 Folgearbeit geführt:
 
-1. [J01-98]({{ "/de/work/jira/J01-98/" | relative_url }}) zieht nur die
+1. [J01-98]({{ "/de/jira/issues/J01-98/" | relative_url }}) zieht nur die
    sprintrelevante Preview-Migration für `J01-9`, `J01-13`, `J01-16` und
    `J01-31` in den aktiven Sprint-Scope.
-2. [J01-103]({{ "/de/work/jira/J01-103/" | relative_url }}) zieht die offene
+2. [J01-103]({{ "/de/jira/issues/J01-103/" | relative_url }}) zieht die offene
    Zielerfüllung aus `J01-91` nach: Orientierung, Transparenz über
    Übernahmestatus und vollständigerer Nachweis der Public-Migration.
-3. [J01-100]({{ "/de/work/jira/J01-100/" | relative_url }}) hält die übrigen
+3. [J01-100]({{ "/de/jira/issues/J01-100/" | relative_url }}) hält die übrigen
    `docs/agile`-Migrationen als getrennten Backlog-Kandidaten für einen
    späteren Sprint; `J01-100` ersetzt nicht `J01-103`.
-4. [J01-99]({{ "/de/work/jira/J01-99/" | relative_url }}) bereinigt alte
+4. [J01-99]({{ "/de/jira/issues/J01-99/" | relative_url }}) bereinigt alte
    Confluence-Remote-Links in Jira und verankert den Audit-Guardrail.
-5. [Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }})
+5. [Archiv-Themen]({{ "/de/jira/issues/J01-91/archive-topics/" | relative_url }})
    bleibt öffentlicher Prüf- und Übergabeort dafür, was entschieden und was
    davon bereits umgesetzt ist.
 6. Weitere strukturelle Doku-Änderungen bleiben an die geschärfte
@@ -119,11 +124,11 @@ Statuswerte:
 | Punkt (DoD) | Status | Beleg / Ort |
 | --- | --- | --- |
 | Drift-Report + Abdeckung (ohne `mirror/`) | erledigt | [Drift-Report]({{ "/de/quality/drift-reports/J01-91/" | relative_url }}) und [Abdeckung]({{ "/de/quality/drift-reports/J01-91/coverage/" | relative_url }}) |
-| Jira-Übersicht „sauber voll gespiegelt“ | erledigt | [Runbook]({{ "/de/operations/runbook/" | relative_url }}) und `shared-tooling/jira-pages/update-jira-mirror.sh` |
-| Bereiche-Inventar konsistent | erledigt | [Bereiche-Inventar]({{ "/de/work/jira/J01-91/area-inventory/" | relative_url }}) |
-| Archiv-Auswertung liegt vor (Themen, ohne IDs) | erledigt | [Archiv-Themen]({{ "/de/work/jira/J01-91/archive-topics/" | relative_url }}) (Übernahme-Entscheidungen und Zielorte festgezogen) |
-| Policy-Delta-Vorschläge formuliert | erledigt | [Policy-Deltas]({{ "/de/work/jira/J01-91/policy-deltas/" | relative_url }}) |
-| Klare Phase-2-Liste existiert | erledigt | Diese Seite + [J01-103]({{ "/de/work/jira/J01-103/" | relative_url }}) + [J01-100]({{ "/de/work/jira/J01-100/" | relative_url }}) |
+| Öffentliche Jira-Fläche konsistent nachgezogen | erledigt | [Runbook]({{ "/de/operations/runbook/" | relative_url }}) und `shared-tooling/jira-pages/update-public-jira-pages.sh` |
+| Bereiche-Inventar konsistent | erledigt | [Bereiche-Inventar]({{ "/de/jira/issues/J01-91/area-inventory/" | relative_url }}) |
+| Archiv-Auswertung liegt vor (Themen, ohne IDs) | erledigt | [Archiv-Themen]({{ "/de/jira/issues/J01-91/archive-topics/" | relative_url }}) (Übernahme-Entscheidungen und Zielorte festgezogen) |
+| Policy-Delta-Vorschläge formuliert | erledigt | [Policy-Deltas]({{ "/de/jira/issues/J01-91/policy-deltas/" | relative_url }}) |
+| Klare Phase-2-Liste existiert | erledigt | Diese Seite + [J01-103]({{ "/de/jira/issues/J01-103/" | relative_url }}) + [J01-100]({{ "/de/jira/issues/J01-100/" | relative_url }}) |
 | Public-Doku: Sprach-/Nennungsregeln eingehalten | erledigt | Stichprobe + aktuelle Seiten (keine Jira-Cloud-Links, keine personenbezogenen Daten) |
 
 ## Phase 1: Definition of Done (ausformuliert)
@@ -136,10 +141,11 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 - Drift-Report deckt alle menschen-geschriebenen Seiten außerhalb `mirror/` ab:
   - pro Seite sind die relevanten „Ist“-Claims geprüft oder als „unklar/geplant“
     markiert.
-- Jira-Übersicht ist „sauber voll gespiegelt“:
-  - keine veralteten `mirror/issues/J01-*`-Ordner (gelöschte Jira-Vorgänge sind entfernt).
-  - Schritt-Seiten nutzen stabile URLs: `/mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/`.
-  - Remote Links werden im Mirror als site-relative Links gerendert (nicht als absolute Doku-Domain).
+- Öffentliche Jira-Fläche ist konsistent nachgezogen:
+  - keine veralteten öffentlichen Altpfade unter `mirror/` oder `work/jira/`.
+  - Schritt-Seiten nutzen stabile URLs: `/jira/issues/<PARENT>/steps/<SUBTASK_KEY>/`.
+  - Remote Links werden als site-relative Links gerendert (nicht als
+    absolute Doku-Domain).
 - Bereiche-Inventar existiert und ist konsistent:
   - Doku-Bereiche ↔ Quell-Repos sind grob gemappt.
   - Platzhalter-Bereiche sind bewusst (entweder „füllen“ oder „entfernen“ als
@@ -195,7 +201,7 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
   vorgangsgenauen Arbeitsdoku.
 
 4) **Policy-Änderungen anwenden**
-- Grundlage: [Policy-Deltas]({{ "/de/work/jira/J01-91/policy-deltas/" | relative_url }})
+- Grundlage: [Policy-Deltas]({{ "/de/jira/issues/J01-91/policy-deltas/" | relative_url }})
 - Entscheidung: die freigegebenen Deltas werden direkt in
   `policies/doku-richtlinie/` übernommen.
 - Zerlegung: Präzisierungen bleiben in der bestehenden Richtlinie; es wird keine
@@ -204,21 +210,21 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 ## Phase 2 (ausgelagert)
 
 - Status-/Vorhaben-Darstellung bleibt als One-Pager erhalten.
-- Die sprintrelevanten Preview-Themen werden in [J01-98]({{ "/de/work/jira/J01-98/" | relative_url }})
+- Die sprintrelevanten Preview-Themen werden in [J01-98]({{ "/de/jira/issues/J01-98/" | relative_url }})
   umgesetzt.
-- Die offene Zielerfüllung aus `J01-91` wird in [J01-103]({{ "/de/work/jira/J01-103/" | relative_url }})
+- Die offene Zielerfüllung aus `J01-91` wird in [J01-103]({{ "/de/jira/issues/J01-103/" | relative_url }})
   als eigener nächster Sprint-Kandidat geführt.
-- Die übrigen `docs/agile`-Reste bleiben in [J01-100]({{ "/de/work/jira/J01-100/" | relative_url }})
+- Die übrigen `docs/agile`-Reste bleiben in [J01-100]({{ "/de/jira/issues/J01-100/" | relative_url }})
   bewusst im Backlog.
 - Die Doku-Richtlinie bleibt Gate für weitere Strukturänderungen.
 - Es werden weiterhin keine neuen Dokutypen aus `J01-91` abgeleitet.
 
 ## Links (Sichtbarkeit)
 
-- [Mirror: J01-72 / Schritt J01-91]({{ "/de/mirror/issues/J01-72/steps/J01-91/" | relative_url }}) (abgeleitet)
+- [Jira: J01-72 / Schritt J01-91]({{ "/de/jira/issues/J01-72/steps/J01-91/" | relative_url }}) (abgeleitet)
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/de/operations/runbook/" | relative_url }})
 - [Drift-Report (Qualität)]({{ "/de/quality/drift-reports/J01-91/" | relative_url }})
-- [J01-98: sprintrelevante Preview-Migration]({{ "/de/work/jira/J01-98/" | relative_url }})
-- [J01-103: offene Zielerfüllung aus J01-91 nachziehen]({{ "/de/work/jira/J01-103/" | relative_url }})
-- [J01-100: docs/agile-Reste nach Sprint 1]({{ "/de/work/jira/J01-100/" | relative_url }})
-- [J01-99: Alte Confluence-Remote-Links bereinigen]({{ "/de/work/jira/J01-99/" | relative_url }})
+- [J01-98: sprintrelevante Preview-Migration]({{ "/de/jira/issues/J01-98/" | relative_url }})
+- [J01-103: offene Zielerfüllung aus J01-91 nachziehen]({{ "/de/jira/issues/J01-103/" | relative_url }})
+- [J01-100: docs/agile-Reste nach Sprint 1]({{ "/de/jira/issues/J01-100/" | relative_url }})
+- [J01-99: Alte Confluence-Remote-Links bereinigen]({{ "/de/jira/issues/J01-99/" | relative_url }})

@@ -1,10 +1,13 @@
 ---
 layout: page
 title: "J01-102: Projektkarte und Skill-/Doku-Trennung schärfen"
-permalink: /de/work/jira/J01-102/
+jira_key: J01-102
+permalink: /de/jira/issues/J01-102/
 ---
 
 **Stand:** 2026-03-17
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -35,7 +38,7 @@ skillinternen Hilfen.
 | --- | --- | --- | --- |
 | Kanonischer Projekteinstieg für Skills ist vorhanden | Die Projektkarte erklärt die Zuständigkeiten von `AGENTS.md`, öffentlicher Doku, `tagebuch` und Skills | [KI-Projektkarte]({{ "/de/policies/ki-projektkarte/" | relative_url }}) | erledigt |
 | Projekt-Skills verweisen auf kanonische Quellen | Betroffene Skills nennen die Projektkarte statt Projektregeln zu duplizieren | Projekt-Skill-Repo unter `skills/` | erledigt |
-| Öffentliche Arbeitsdoku ist direkt aus Jira erreichbar | Jira hält einen kanonischen Remote-Link auf `work/jira/J01-102/` | Jira-Remote-Links für `J01-102` | erledigt |
+| Öffentliche Arbeitsdoku ist direkt aus Jira erreichbar | Jira hält einen kanonischen Remote-Link auf `/de/jira/issues/J01-102/` | Jira-Remote-Links für `J01-102` | erledigt |
 
 ## Abschlussbild oder offene Punkte
 
@@ -46,5 +49,5 @@ skillinternen Hilfen.
 ## Links
 
 - [KI-Projektkarte]({{ "/de/policies/ki-projektkarte/" | relative_url }})
-- [J01-92: Shared-Agent-Regeln und Skill-Versionierung]({{ "/de/work/jira/J01-92/" | relative_url }})
-- [J01-96: Quellenregister und rohe Chat-Eingaben verankern]({{ "/de/work/jira/J01-96/" | relative_url }})
+- [J01-92: Shared-Agent-Regeln und Skill-Versionierung]({{ "/de/jira/issues/J01-92/" | relative_url }})
+- [J01-96: Quellenregister und rohe Chat-Eingaben verankern]({{ "/de/jira/issues/J01-96/" | relative_url }})

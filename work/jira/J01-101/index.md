@@ -1,10 +1,13 @@
 ---
 layout: page
 title: "J01-101: Policy-Schärfung für CLI-Cache getrennt vorbereiten"
-permalink: /de/work/jira/J01-101/
+jira_key: J01-101
+permalink: /de/jira/issues/J01-101/
 ---
 
 **Stand:** 2026-03-17
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -32,7 +35,7 @@ vorhalten, damit `J01-83` klein und austauschbar bleiben kann.
 
 ## Abgrenzung zu J01-83
 
-- [J01-83]({{ "/de/work/jira/J01-83/" | relative_url }}) bleibt auf die
+- [J01-83]({{ "/de/jira/issues/J01-83/" | relative_url }}) bleibt auf die
   kleine Cache-V1 beschränkt.
 - `J01-101` zieht nichts in die erste Iteration hinein, was breitere
   Sicherheits- oder Policy-Prüfung braucht.
@@ -40,7 +43,7 @@ vorhalten, damit `J01-83` klein und austauschbar bleiben kann.
 ## Links
 
 - [J01-83: Erste Cache-V1 vorbereiten und Policy trennen]({{
-  "/de/work/jira/J01-83/" | relative_url }})
+  "/de/jira/issues/J01-83/" | relative_url }})
 - [ADR-0002: atlassian-http-client Sicherheitsmodell]({{
   "/de/decisions/adr-0002/" | relative_url }})
-- [Jira-Arbeitsdokus]({{ "/de/work/jira/" | relative_url }})
+- [Jira-Arbeitsdokus]({{ "/de/jira/" | relative_url }})

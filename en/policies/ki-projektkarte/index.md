@@ -45,7 +45,7 @@ requirements do not need to be duplicated inside the skill itself.
 
 - [Docs policy]({{ "/en/policies/doku-richtlinie/" | relative_url }})
 - [Runbook: update the Jira mirror]({{ "/en/operations/runbook/" | relative_url }})
-- [Jira work docs]({{ "/en/work/jira/" | relative_url }})
+- [Jira work docs]({{ "/en/jira/" | relative_url }})
 - [Jira and docs tooling: public Jira overview]({{ "/en/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }})
 
 ## Sources and provenance

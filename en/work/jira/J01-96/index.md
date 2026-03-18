@@ -1,10 +1,13 @@
 ---
 layout: page
 title: "J01-96: Add a source register and raw chat inputs"
-permalink: /en/work/jira/J01-96/
+jira_key: J01-96
+permalink: /en/jira/issues/J01-96/
 ---
 
 **Stand:** 2026-03-16
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -76,4 +79,4 @@ The model separates three layers:
 
 ## Links
 
-- [Jira work docs]({{ "/en/work/jira/" | relative_url }})
+- [Jira work docs]({{ "/en/jira/" | relative_url }})

@@ -76,6 +76,6 @@ diese Seite.
 
 ## Links
 
-- [J01-98: öffentlicher Arbeitsstand]({{ "/de/work/jira/J01-98/" | relative_url }})
-- [J01-9 im Jira-Mirror]({{ "/de/mirror/issues/J01-9/" | relative_url }})
+- [J01-98: öffentlicher Arbeitsstand]({{ "/de/jira/issues/J01-98/" | relative_url }})
+- [J01-9 im Jira-Mirror]({{ "/de/jira/issues/J01-9/" | relative_url }})
 - [Testmatrix]({{ "/de/quality/testmatrix/" | relative_url }})

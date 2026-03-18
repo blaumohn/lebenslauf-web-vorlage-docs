@@ -1,28 +1,20 @@
 ---
 layout: page
 title: "J01-84 — Atlassian-System vorbereiten (SSOT: Jira)"
-permalink: /de/mirror/issues/J01-84/
+permalink: /de/jira/issues/J01-84/
 jira_key: J01-84
 ---
 <!-- mirror:child_tasks_cksum=3366067832 -->
 
-Keine Jira-Cloud-Links, keine E-Mail-Adressen.
+{% include jira-state-head.html %}
 
-
-
-## Metadaten
-
-- **Key:** `J01-84`
-- **Typ:** Epic
-- **Status:** Zu erledigen
-- **Sprint:** -
-- **Aktualisiert:** 2026-03-16T16:44:07.760+0100
+{% include jira-work-context.html %}
 
 ## Aufgaben
 
-- [J01-104 — GitHub Pages: Link-Regel für öffentliche Schrittseiten]({{ "/de/mirror/issues/J01-104/" | relative_url }})
-- [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/de/mirror/issues/J01-85/" | relative_url }})
-- [J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte]({{ "/de/mirror/issues/J01-72/" | relative_url }})
+- [J01-104 — GitHub Pages: Link-Regel für öffentliche Schrittseiten]({{ "/de/jira/issues/J01-104/" | relative_url }})
+- [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/de/jira/issues/J01-85/" | relative_url }})
+- [J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte]({{ "/de/jira/issues/J01-72/" | relative_url }})
 
 ## Links
 

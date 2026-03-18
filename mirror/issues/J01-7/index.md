@@ -1,28 +1,20 @@
 ---
 layout: page
 title: "J01-7 — Production Deployment"
-permalink: /de/mirror/issues/J01-7/
+permalink: /de/jira/issues/J01-7/
 jira_key: J01-7
 ---
 <!-- mirror:child_tasks_cksum=31409891 -->
 
-Keine Jira-Cloud-Links, keine E-Mail-Adressen.
+{% include jira-state-head.html %}
 
-
-
-## Metadaten
-
-- **Key:** `J01-7`
-- **Typ:** Epic
-- **Status:** Zu erledigen
-- **Sprint:** -
-- **Aktualisiert:** 2026-02-27T13:45:47.986+0100
+{% include jira-work-context.html %}
 
 ## Aufgaben
 
-- [J01-68 — Production: Betriebsdoku und Runbook]({{ "/de/mirror/issues/J01-68/" | relative_url }})
-- [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/de/mirror/issues/J01-65/" | relative_url }})
-- [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/de/mirror/issues/J01-62/" | relative_url }})
+- [J01-68 — Production: Betriebsdoku und Runbook]({{ "/de/jira/issues/J01-68/" | relative_url }})
+- [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/de/jira/issues/J01-65/" | relative_url }})
+- [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/de/jira/issues/J01-62/" | relative_url }})
 
 ## Links
 

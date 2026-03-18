@@ -1,10 +1,14 @@
 ---
 layout: page
 title: "J01-97: Complete the feature matrix for tooling operations"
-permalink: /en/work/jira/J01-97/
+jira_key: J01-97
+jira_parent_key: J01-85
+permalink: /en/jira/issues/J01-85/steps/J01-97/
 ---
 
 **Stand:** 2026-03-16
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -39,4 +43,4 @@ initial Jira/pages sync helpers.
 ## Links
 
 - [Feature matrix: Jira and docs tooling]({{ "/en/areas/proj-doku-tooling/feature-matrix/" | relative_url }})
-- [Jira work docs]({{ "/en/work/jira/" | relative_url }})
+- [Jira work docs]({{ "/en/jira/" | relative_url }})

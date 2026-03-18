@@ -1,28 +1,15 @@
 ---
 layout: page
 title: "J01-31 — Preview Readiness: System-Source-Verarbeitung"
-permalink: /en/mirror/issues/J01-31/
+permalink: /en/jira/issues/J01-31/
 jira_key: J01-31
-jira_parent_key: J01-5
+
 ---
 <!-- mirror:subtasks_cksum=1561879826 -->
 
-No Jira Cloud links, no email addresses.
+{% include jira-state-head.html %}
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Context</span>
-  <span class="jira-context-bar__section">
-    <span class="jira-context-bar__section-label">Parent</span>
-    <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-5/" | relative_url }}">J01-5 in the Jira mirror</a>  </span></div>
-
-## Metadata
-
-- **Key:** `J01-31`
-- **Type:** Task
-- **Status:** To Do
-- **Sprint:** SCRUM Sprint 0, SCRUM Sprint 1
-- **Updated:** 2026-03-16T16:48:36.250+0100
-- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/en/mirror/issues/J01-5/" | relative_url }})
+{% include jira-work-context.html %}
 
 ## Links
 
@@ -34,5 +21,5 @@ No Jira Cloud links, no email addresses.
 
 ## Subtasks
 
-- [**31-1 Guard-Strategie finalisieren**]({{ "/en/mirror/issues/J01-31/steps/J01-32/" | relative_url }}) — To Do
-- [**31-2 Produktions-Pattern Vergleich dokumentieren**]({{ "/en/mirror/issues/J01-31/steps/J01-33/" | relative_url }}) — To Do
+- [**31-1 Guard-Strategie finalisieren**]({{ "/en/jira/issues/J01-31/steps/J01-32/" | relative_url }}) — To Do
+- [**31-2 Produktions-Pattern Vergleich dokumentieren**]({{ "/en/jira/issues/J01-31/steps/J01-33/" | relative_url }}) — To Do

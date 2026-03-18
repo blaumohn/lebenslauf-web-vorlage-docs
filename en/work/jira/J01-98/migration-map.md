@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-98: Migration map and public rationale"
-permalink: /en/work/jira/J01-98/migration-map/
+permalink: /en/jira/issues/J01-98/migration-map/
 ---
 
 This page records the deeper public work doc for `J01-98`.
@@ -17,7 +17,7 @@ This page therefore answers three questions:
 - Which topic blocks from the earlier sources still matter for the sprint?
 - Which current public target locations should receive these topics?
 - Which leftovers explicitly do **not** belong in `J01-98`, but move to
-  [J01-100]({{ "/en/work/jira/J01-100/" | relative_url }})?
+  [J01-100]({{ "/en/jira/issues/J01-100/" | relative_url }})?
 
 ## Public rationale
 
@@ -173,10 +173,10 @@ they sharpen how the topics are used in the sprint:
 3. Continue the runtime and CLI/build pages for `J01-16` and `J01-31` only
    within the preview guardrails.
 4. Keep everything that does not directly support these four blocks inside
-   [J01-100]({{ "/en/work/jira/J01-100/" | relative_url }}).
+   [J01-100]({{ "/en/jira/issues/J01-100/" | relative_url }}).
 
 ## Links
 
-- [J01-98: public work status]({{ "/en/work/jira/J01-98/" | relative_url }})
-- [J01-91: status/snapshot (closure)]({{ "/en/work/jira/J01-91/" | relative_url }})
-- [J01-100: docs/agile leftovers after sprint 1]({{ "/en/work/jira/J01-100/" | relative_url }})
+- [J01-98: public work status]({{ "/en/jira/issues/J01-98/" | relative_url }})
+- [J01-91: status/snapshot (closure)]({{ "/en/jira/issues/J01-91/" | relative_url }})
+- [J01-100: docs/agile leftovers after sprint 1]({{ "/en/jira/issues/J01-100/" | relative_url }})

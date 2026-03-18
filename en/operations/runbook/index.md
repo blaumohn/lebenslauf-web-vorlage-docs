@@ -1,21 +1,21 @@
 ---
 layout: page
-title: "Runbook: update the Jira mirror"
+title: "Runbook: update the public Jira area"
 permalink: /en/operations/runbook/
 ---
 
 ## Purpose
 
-Update the public static Jira mirror in this repo:
+Update the public Jira area in this repo:
 
-- DE: `/de/mirror/`, `/de/mirror/sprint-board/`, `/de/mirror/backlog/`,
-  `/de/mirror/erledigt/`, `/de/mirror/issues/J01-*/`
-- EN: `/en/mirror/`, `/en/mirror/sprint-board/`, `/en/mirror/backlog/`,
-  `/en/mirror/erledigt/`, `/en/mirror/issues/J01-*/`
+- DE: `/de/jira/`, `/de/jira/sprint/`, `/de/jira/backlog/`,
+  `/de/jira/erledigt/`, `/de/jira/issues/J01-*/`
+- EN: `/en/jira/`, `/en/jira/sprint/`, `/en/jira/backlog/`,
+  `/en/jira/erledigt/`, `/en/jira/issues/J01-*/`
 - Step pages only for subtasks with public details:
-  `/de/mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/` and
-  `/en/mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/`
-- Filtered Jira remote links are shown as relative links in the mirror.
+  `/de/jira/issues/<PARENT>/steps/<SUBTASK_KEY>/` and
+  `/en/jira/issues/<PARENT>/steps/<SUBTASK_KEY>/`
+- Filtered Jira remote links are shown as relative links in the public Jira area.
 
 ## Requirements
 
@@ -29,16 +29,16 @@ Update the public static Jira mirror in this repo:
    - For sprint work, also verify the active sprint, set sprint labels, and
      update the public sprint docs.
 
-2) Generate the Jira mirror:
+2) Generate the public Jira area:
 
 ```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-jira-mirror.sh
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-public-jira-pages.sh
 ```
 
 Optional (full refresh):
 
 ```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-jira-mirror.sh --full
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-public-jira-pages.sh --full
 ```
 
 Optional (journaled normal mode for known changes):
@@ -52,13 +52,13 @@ DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-syn
 3) Verify GitHub Pages targets from Jira locally:
 
 ```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-jira-ghpages-links.sh
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-public-jira-pages.sh
 ```
 
 Optional: audit legacy Confluence targets directly:
 
 ```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-jira-ghpages-links.sh --legacy-confluence-audit
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-public-jira-pages.sh --legacy-confluence-audit
 ```
 
 The URL conversion from Jira follows these rules:
@@ -72,8 +72,8 @@ The URL conversion from Jira follows these rules:
   `LEGACY_CONFLUENCE<TAB>KEY<TAB>LINK_ID<TAB>URL<TAB>TITLE`
 
 4) Spot check:
-   - `work/jira` and `mirror` expose short, visible cross-paths in both
-     directions whenever a local counterpart exists.
+   - Issue and step pages under `jira/` expose short, visible cross-paths to
+     overviews, parent pages, and public steps.
    - Subtasks without public details do **not** get their own page.
    - The base record of a subtask is step number, title, and status.
    - Pure step-page metadata such as parent, step number, status, key, or
@@ -85,14 +85,14 @@ The URL conversion from Jira follows these rules:
      `work/jira/J01-<KEY>/`, a canonical Jira remote link to that doc, the
      subtask's own evidence, its own closure statement, or other canonical
      target pages.
-   - If a public step page under `work/jira/<PARENT>/steps/<SUBTASK_KEY>/`
-     is used instead of `work/jira/J01-<KEY>/`, the same expectation applies
-     to canonical linking and mirror carry-over.
+   - If a public step page under `jira/issues/<PARENT>/steps/<SUBTASK_KEY>/`
+     is used instead of a public issue page, the same expectation applies to
+     canonical linking and carry-over.
    - When new step pages are introduced for existing subtasks, existing public
      mentions are updated where they directly touch that step page or its
      parent issue.
-   - If a local work doc or step page exists, it also has a local counterpart
-     in the mirror; missing pairs are reported by verification.
+   - If a public issue or step page exists, verification checks it against
+     Jira remote links, legacy paths, and duplicate detail URLs.
 
 5) Hygiene:
   - No `atlassian.net` links in the output
@@ -104,11 +104,11 @@ The URL conversion from Jira follows these rules:
     (`sprint-goal`, `sprint-support`, `sprint-admin`, `sprint-unplanned`)
   - The sprint board only shows the same top-level issues as the Jira board;
     steps stay visible on parent and step pages.
-  - The EN mirror is synchronized after the DE render
+  - The EN Jira tree is synchronized after the DE render
 
 ## Rollback
 
-- Revert the affected mirror files and generate again.
+- Revert the affected files and generate the public Jira area again.
 
 ## Monitoring
 
@@ -116,11 +116,11 @@ The URL conversion from Jira follows these rules:
 - The sprint board has dedicated row groups for sprint categories.
 - Issue and step pages carry an `Updated` timestamp from Jira.
 - `git` remains the reliable history: diffs only appear when content changes.
-- `shared-tooling/jira-pages/verify-jira-ghpages-links.sh` verifies imported GitHub Pages targets
-  locally for both DE and EN.
-- `shared-tooling/jira-pages/verify-jira-ghpages-links.sh` also verifies the
-  local pairings between `work/jira` and `mirror`.
-- `shared-tooling/jira-pages/verify-jira-ghpages-links.sh --legacy-confluence-audit`
+- `shared-tooling/jira-pages/verify-public-jira-pages.sh` verifies imported
+  GitHub Pages targets locally for both DE and EN.
+- `shared-tooling/jira-pages/verify-public-jira-pages.sh` also verifies the
+  absence of public legacy paths and duplicate detail URLs.
+- `shared-tooling/jira-pages/verify-public-jira-pages.sh --legacy-confluence-audit`
   reports remaining legacy Confluence remote links with Jira key and link ID.
 - `.local/jira-sync-cache/` and `.local/jira-sync-journal/` keep the local
   snapshot and resume state for the journaled normal mode.

@@ -1,22 +1,22 @@
 ---
 layout: page
-title: "Jira-Übersicht: Erledigt"
-permalink: /de/mirror/erledigt/
+title: "Jira: Erledigt"
+permalink: /de/jira/erledigt/
 ---
 
-Statische Jira-Übersicht (ohne Jira-Cloud-Links).
+Öffentliche Jira-Fläche (ohne Jira-Cloud-Links).
 
-- [Jira-Arbeitsdokus]({{ "/de/work/jira/" | relative_url }})
-- [Sprint-Board]({{ "/de/mirror/sprint-board/" | relative_url }})
-- [Backlog]({{ "/de/mirror/backlog/" | relative_url }})
-- [Erledigt]({{ "/de/mirror/erledigt/" | relative_url }})
+- [Jira]({{ "/de/jira/" | relative_url }})
+- [Sprint]({{ "/de/jira/sprint/" | relative_url }})
+- [Backlog]({{ "/de/jira/backlog/" | relative_url }})
+- [Erledigt]({{ "/de/jira/erledigt/" | relative_url }})
 
 ## Epics
 Keine Vorgänge.
 
 ## Ohne Epic
 
-- [J01-79 — Atlassian CLI: API-Betriebe (Wrapper), http als Escape-Hatch]({{ "/de/mirror/issues/J01-79/" | relative_url }})
-- [J01-80 — Atlassian Tools: Refactor – AGENTS Coding-Standards durchgehend umsetzen]({{ "/de/mirror/issues/J01-80/" | relative_url }})
-- [J01-96 — Tagebuch: Quellenregister und Roh-Eingaben verankern]({{ "/de/mirror/issues/J01-96/" | relative_url }})
-- [J01-98 — J01-91 Phase 2: sprintrelevante Preview-Migration umsetzen]({{ "/de/mirror/issues/J01-98/" | relative_url }})
+- [J01-79 — Atlassian CLI: API-Betriebe (Wrapper), http als Escape-Hatch]({{ "/de/jira/issues/J01-79/" | relative_url }})
+- [J01-80 — Atlassian Tools: Refactor – AGENTS Coding-Standards durchgehend umsetzen]({{ "/de/jira/issues/J01-80/" | relative_url }})
+- [J01-96 — Tagebuch: Quellenregister und Roh-Eingaben verankern]({{ "/de/jira/issues/J01-96/" | relative_url }})
+- [J01-98 — J01-91 Phase 2: sprintrelevante Preview-Migration umsetzen]({{ "/de/jira/issues/J01-98/" | relative_url }})

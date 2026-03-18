@@ -1,10 +1,13 @@
 ---
 layout: page
 title: "J01-100: Migrate docs/agile leftovers after sprint 1"
-permalink: /en/work/jira/J01-100/
+jira_key: J01-100
+permalink: /en/jira/issues/J01-100/
 ---
 
 **Stand:** 2026-03-17
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -33,13 +36,13 @@ that the current sprint scope stays clearly focused on preview deployment.
 
 ## Boundary against J01-98
 
-- [J01-98]({{ "/en/work/jira/J01-98/" | relative_url }}) stays limited to the
+- [J01-98]({{ "/en/jira/issues/J01-98/" | relative_url }}) stays limited to the
   sprint-relevant preview migration.
 - `J01-100` stays out of the active sprint while preview deployment remains the
   focus.
 
 ## Links
 
-- [J01-91: closure snapshot]({{ "/en/work/jira/J01-91/" | relative_url }})
-- [J01-98: sprint-relevant preview migration]({{ "/en/work/jira/J01-98/" | relative_url }})
+- [J01-91: closure snapshot]({{ "/en/jira/issues/J01-91/" | relative_url }})
+- [J01-98: sprint-relevant preview migration]({{ "/en/jira/issues/J01-98/" | relative_url }})
 - [Sprint 1: planning]({{ "/en/work/sprints/scrum-sprint-1/" | relative_url }})

@@ -1,11 +1,14 @@
 ---
 layout: page
 title: "J01-104: GitHub Pages: Link-Regel für öffentliche Schrittseiten"
-permalink: /en/work/jira/J01-104/
+jira_key: J01-104
+permalink: /en/jira/issues/J01-104/
 jira_parent_key: J01-84
 ---
 
 **Stand:** 2026-03-18
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -62,4 +65,4 @@ the issue frame and not the domain home of the rule.
 - [Jira-Arbeitsdoku-Vorlage]({{ "/en/templates/jira-arbeitsdoku/" | relative_url }})
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/en/operations/runbook/" | relative_url }})
 - [Jira- und Doku-Tooling: Jira-Übersicht (öffentlich)]({{ "/en/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }})
-- [Jira work docs]({{ "/en/work/jira/" | relative_url }})
+- [Jira work docs]({{ "/en/jira/" | relative_url }})

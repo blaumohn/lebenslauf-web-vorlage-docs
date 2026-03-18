@@ -1,10 +1,14 @@
 ---
 layout: page
 title: "J01-99: Alte Confluence-Remote-Links in Jira bereinigen"
-permalink: /de/work/jira/J01-99/
+jira_key: J01-99
+jira_parent_key: J01-72
+permalink: /de/jira/issues/J01-72/steps/J01-99/
 ---
 
 **Stand:** 2026-03-16
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -56,13 +60,14 @@ Der neue Legacy-Audit im Verifikationsskript hat im Projektbestand gefunden:
 
 ## Guardrail
 
-- `verify-jira-ghpages-links.sh --legacy-confluence-audit` meldet alte
+- `verify-public-jira-pages.sh --legacy-confluence-audit` meldet alte
   `atlassian.net/wiki`-Ziele explizit mit Jira-Key, Link-ID, URL und Titel.
 - Der Audit wird im Runbook als fester Hygiene-Schritt dokumentiert.
-- Mirror- und Link-Sync laufen danach wie bisher über Jira als SSOT.
+- Öffentliche Jira-Fläche und Link-Sync laufen danach wie bisher über Jira
+  als SSOT.
 
 ## Links
 
-- [J01-91: Abschluss-Snapshot]({{ "/de/work/jira/J01-91/" | relative_url }})
+- [J01-91: Abschluss-Snapshot]({{ "/de/jira/issues/J01-91/" | relative_url }})
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/de/operations/runbook/" | relative_url }})
-- [Jira-Arbeitsdokus]({{ "/de/work/jira/" | relative_url }})
+- [Jira-Arbeitsdokus]({{ "/de/jira/" | relative_url }})

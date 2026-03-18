@@ -1,0 +1,87 @@
+{% assign current_lang = "de" %}
+{% if page.url contains "/en/" %}
+  {% assign current_lang = "en" %}
+{% endif %}
+
+{% assign current_key = page.jira_key | default: "" %}
+{% assign current_parent_key = page.jira_parent_key | default: "" %}
+{% assign data_issue = site.data.jira_pages.issues[current_key] %}
+
+{% if current_key == "" and page.url contains "/jira/issues/" %}
+  {% assign url_parts = page.url | split: "/" %}
+  {% if page.url contains "/steps/" %}
+    {% assign current_parent_key = url_parts[4] %}
+    {% assign current_key = url_parts[6] %}
+  {% else %}
+    {% assign current_key = url_parts[4] %}
+  {% endif %}
+  {% assign data_issue = site.data.jira_pages.issues[current_key] %}
+{% endif %}
+
+{% if data_issue %}
+  {% assign label_type = "Typ" %}
+  {% assign label_status = "Status" %}
+  {% assign label_sprint = "Sprint" %}
+  {% assign label_updated = "Aktualisiert" %}
+  {% assign label_parent = "Übergeordnet" %}
+  {% if current_lang == "en" %}
+    {% assign label_type = "Type" %}
+    {% assign label_status = "Status" %}
+    {% assign label_sprint = "Sprint" %}
+    {% assign label_updated = "Updated" %}
+    {% assign label_parent = "Parent" %}
+  {% endif %}
+
+  {% assign parent_target = "" %}
+  {% if current_parent_key != "" %}
+    {% capture parent_issue_target %}/{{ current_lang }}/jira/issues/{{ current_parent_key }}/{% endcapture %}
+    {% for candidate in site.pages %}
+      {% if candidate.url contains "/jira/issues/" and candidate.url contains "/steps/" and candidate.url contains current_parent_key %}
+        {% assign parent_target = candidate.url %}
+        {% break %}
+      {% endif %}
+      {% if candidate.url == parent_issue_target %}
+        {% assign parent_target = parent_issue_target %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+<div class="jira-state-head">
+  <div class="jira-state-head__title">
+    <span class="jira-state-head__key">{{ current_key }}</span>
+    {% if data_issue.summary %}
+      <span class="jira-state-head__summary">{{ data_issue.summary }}</span>
+    {% endif %}
+  </div>
+  <dl class="jira-state-head__meta">
+    <div class="jira-state-head__item">
+      <dt>{{ label_type }}</dt>
+      <dd>{{ data_issue.issuetype }}</dd>
+    </div>
+    <div class="jira-state-head__item">
+      <dt>{{ label_status }}</dt>
+      <dd>{{ data_issue.status }}</dd>
+    </div>
+    <div class="jira-state-head__item">
+      <dt>{{ label_sprint }}</dt>
+      <dd>{{ data_issue.sprint | default: "-" }}</dd>
+    </div>
+    <div class="jira-state-head__item">
+      <dt>{{ label_updated }}</dt>
+      <dd>{{ data_issue.updated }}</dd>
+    </div>
+    {% if current_parent_key != "" %}
+      <div class="jira-state-head__item">
+        <dt>{{ label_parent }}</dt>
+        <dd>
+          {% if parent_target != "" %}
+            <a href="{{ parent_target | relative_url }}">{{ current_parent_key }}</a>
+          {% else %}
+            {{ current_parent_key }}
+          {% endif %}
+        </dd>
+      </div>
+    {% endif %}
+  </dl>
+</div>
+{% endif %}

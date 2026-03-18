@@ -1,10 +1,14 @@
 ---
 layout: page
 title: "J01-99: Clean up legacy Confluence remote links in Jira"
-permalink: /en/work/jira/J01-99/
+jira_key: J01-99
+jira_parent_key: J01-72
+permalink: /en/jira/issues/J01-72/steps/J01-99/
 ---
 
 **Stand:** 2026-03-16
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -46,7 +50,7 @@ The new legacy audit in the verification script found in the project-wide set:
 | `J01-80`, `J01-81` | replace | [Programming guidelines]({{ "/en/policies/programmierleitlinien/" | relative_url }}) |
 | `J01-83` | replace | [ADR-0002]({{ "/en/decisions/adr-0002/" | relative_url }}) |
 | `J01-84` | replace | [Area: Jira and docs tooling]({{ "/en/areas/proj-doku-tooling/" | relative_url }}) and [System overview]({{ "/en/areas/proj-doku-tooling/aufbau/" | relative_url }}) |
-| `J01-86`, `J01-87` | replace | [Public Jira overview]({{ "/en/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }}), [Runbook: update the Jira mirror]({{ "/en/operations/runbook/" | relative_url }}) and [ADR-0004]({{ "/en/decisions/adr-0004/" | relative_url }}) |
+| `J01-86`, `J01-87` | replace | [Public Jira overview]({{ "/en/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }}), [Runbook: update the public Jira area]({{ "/en/operations/runbook/" | relative_url }}) and [ADR-0004]({{ "/en/decisions/adr-0004/" | relative_url }}) |
 | `J01-88`, `J01-89`, `J01-90` | replace | [Public Jira overview]({{ "/en/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }}) |
 | `J01-31` | replace | [Start page]({{ "/en/" | relative_url }}) |
 | `J01-16` | replace | [Area: HTTP runtime]({{ "/en/areas/http-runtime/" | relative_url }}) |
@@ -55,13 +59,13 @@ The new legacy audit in the verification script found in the project-wide set:
 
 ## Guardrail
 
-- `verify-jira-ghpages-links.sh --legacy-confluence-audit` reports legacy
+- `verify-public-jira-pages.sh --legacy-confluence-audit` reports legacy
   `atlassian.net/wiki` targets explicitly with Jira key, link ID, URL, and title.
 - The audit is documented as a regular hygiene step in the runbook.
-- Mirror and link sync continue to use Jira as the SSOT.
+- The public Jira area and link sync continue to use Jira as the SSOT.
 
 ## Links
 
-- [J01-91: closure snapshot]({{ "/en/work/jira/J01-91/" | relative_url }})
-- [Runbook: update the Jira mirror]({{ "/en/operations/runbook/" | relative_url }})
-- [Jira work docs]({{ "/en/work/jira/" | relative_url }})
+- [J01-91: closure snapshot]({{ "/en/jira/issues/J01-91/" | relative_url }})
+- [Runbook: update the public Jira area]({{ "/en/operations/runbook/" | relative_url }})
+- [Jira work docs]({{ "/en/jira/" | relative_url }})

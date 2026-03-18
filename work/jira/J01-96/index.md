@@ -1,10 +1,13 @@
 ---
 layout: page
 title: "J01-96: Quellenregister und rohe Chat-Eingaben verankern"
-permalink: /de/work/jira/J01-96/
+jira_key: J01-96
+permalink: /de/jira/issues/J01-96/
 ---
 
 **Stand:** 2026-03-16
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -80,4 +83,4 @@ Dafür werden drei Ebenen getrennt:
 
 ## Links
 
-- [Jira-Arbeitsdokus]({{ "/de/work/jira/" | relative_url }})
+- [Jira-Arbeitsdokus]({{ "/de/jira/" | relative_url }})

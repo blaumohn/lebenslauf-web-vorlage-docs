@@ -52,6 +52,6 @@ Der schmale Preview-Pfad für `J01-98` lautet:
 
 ## Links
 
-- [J01-98: öffentlicher Arbeitsstand]({{ "/de/work/jira/J01-98/" | relative_url }})
-- [J01-31 im Jira-Mirror]({{ "/de/mirror/issues/J01-31/" | relative_url }})
+- [J01-98: öffentlicher Arbeitsstand]({{ "/de/jira/issues/J01-98/" | relative_url }})
+- [J01-31 im Jira-Mirror]({{ "/de/jira/issues/J01-31/" | relative_url }})
 - [Testmatrix]({{ "/de/quality/testmatrix/" | relative_url }})

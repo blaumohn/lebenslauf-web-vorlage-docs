@@ -1,23 +1,27 @@
 ---
 layout: page
 title: "16-1: Locking für Rate-Limit und CAPTCHA ausrollen"
-permalink: /en/work/jira/J01-16/steps/J01-17/
+jira_key: J01-17
+jira_parent_key: J01-16
+permalink: /en/jira/issues/J01-16/steps/J01-17/
 ---
 
 **Stand:** 2026-03-18
 
+{% include jira-state-head.html %}
+
 {% include jira-work-context.html %}
 
 Schrittspezifischer öffentlicher Arbeitsstand für
-[16-1]({{ "/en/mirror/issues/J01-16/steps/J01-17/" | relative_url }}) unter
-[J01-16]({{ "/en/work/jira/J01-16/" | relative_url }}).
+[16-1]({{ "/en/jira/issues/J01-16/steps/J01-17/" | relative_url }}) unter
+[J01-16]({{ "/en/jira/issues/J01-16/" | relative_url }}).
 Diese Seite bündelt nur den Zuschnitt für Rate-Limit- und CAPTCHA-Locking und
 trennt ihn bewusst von den weiteren offenen Schritten `16-2` bis `16-4`.
 
 ## Ziel
 
 Den bewährten Runtime-Rahmen aus
-[J01-21]({{ "/en/work/jira/J01-21/" | relative_url }}) auf die noch offenen
+[J01-21]({{ "/en/jira/issues/J01-21/" | relative_url }}) auf die noch offenen
 Rate-Limit- und CAPTCHA-Pfade ausrollen, ohne die vollständige `IP_SALT`-
 Fachlogik zu kopieren.
 
@@ -51,7 +55,7 @@ Fachlogik zu kopieren.
 ## Wiederverwendung aus J01-21
 
 Für `16-1` wird der Referenzpfad aus
-[J01-21]({{ "/en/work/jira/J01-21/" | relative_url }}) nicht über komplette
+[J01-21]({{ "/en/jira/issues/J01-21/" | relative_url }}) nicht über komplette
 Fachschichten kopiert, sondern über einen gemeinsamen Runtime-Rahmen
 wiederverwendet:
 
@@ -98,10 +102,10 @@ Remaining sub-steps: `16-2` (token rotation), `16-3` (race tests), `16-4` (opera
 
 ## Links
 
-- [16-1 im Jira-Mirror]({{ "/en/mirror/issues/J01-16/steps/J01-17/" | relative_url }})
-- [J01-16 in the Jira mirror]({{ "/en/mirror/issues/J01-16/" | relative_url }})
+- [Jira: 16-1]({{ "/en/jira/issues/J01-16/steps/J01-17/" | relative_url }})
+- [Jira: J01-16]({{ "/en/jira/issues/J01-16/" | relative_url }})
 - [J01-16: Runtime-Concurrency, Locking und atomare Zugriffe]({{
-  "/en/work/jira/J01-16/" | relative_url }})
+  "/en/jira/issues/J01-16/" | relative_url }})
 - [J01-21: Runtime-IP_SALT-Verwaltung und Guardrails]({{
-  "/en/work/jira/J01-21/" | relative_url }})
+  "/en/jira/issues/J01-21/" | relative_url }})
 - [Bereich: HTTP-Runtime]({{ "/en/areas/http-runtime/" | relative_url }})

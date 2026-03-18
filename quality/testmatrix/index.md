@@ -55,7 +55,7 @@ unmittelbar absichern.
 
 ## Links
 
-- [J01-98: öffentlicher Arbeitsstand]({{ "/de/work/jira/J01-98/" | relative_url }})
-- [J01-13 im Jira-Mirror]({{ "/de/mirror/issues/J01-13/" | relative_url }})
+- [J01-98: öffentlicher Arbeitsstand]({{ "/de/jira/issues/J01-98/" | relative_url }})
+- [J01-13 im Jira-Mirror]({{ "/de/jira/issues/J01-13/" | relative_url }})
 - [Runbook: GitHub Pages lokal previewen]({{ "/de/operations/ghpages-preview/" | relative_url }})
 - [Bereich: HTTP-Runtime]({{ "/de/areas/http-runtime/" | relative_url }})

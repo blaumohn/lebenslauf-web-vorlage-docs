@@ -1,10 +1,13 @@
 ---
 layout: page
 title: "J01-21: Runtime-IP_SALT-Verwaltung und Guardrails"
-permalink: /de/work/jira/J01-21/
+jira_key: J01-21
+permalink: /de/jira/issues/J01-21/
 ---
 
 **Stand:** 2026-03-17
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -71,7 +74,7 @@ Kopie seines Fachverhaltens.
 
 ## Folgebezug zu J01-16
 
-[J01-16]({{ "/de/work/jira/J01-16/" | relative_url }}) zieht diesen Rahmen
+[J01-16]({{ "/de/jira/issues/J01-16/" | relative_url }}) zieht diesen Rahmen
 auf weitere Runtime-Modelle:
 
 - Rate-Limit unter `var/tmp/ratelimit`
@@ -83,7 +86,7 @@ auf weitere Runtime-Modelle:
 Grundmusters.
 
 Der schrittspezifische Zuschnitt für `16-1` wird in der eigenen
-[16-1-Arbeitsdoku]({{ "/de/work/jira/J01-16/steps/J01-17/" | relative_url }})
+[16-1-Arbeitsdoku]({{ "/de/jira/issues/J01-16/steps/J01-17/" | relative_url }})
 geführt, damit `J01-21` nur den wiederverwendbaren Rahmen und nicht die
 Detailplanung einzelner `16-*`-Schritte trägt.
 
@@ -97,7 +100,7 @@ nur noch als Herkunft und nicht mehr als Navigationsschlüssel.
 ## Links
 
 - [J01-16: Runtime-Concurrency, Locking und atomare Zugriffe]({{
-  "/de/work/jira/J01-16/" | relative_url }})
+  "/de/jira/issues/J01-16/" | relative_url }})
 - [Bereich: HTTP-Runtime]({{ "/de/areas/http-runtime/" | relative_url }})
-- [J01-21 im Jira-Mirror]({{ "/de/mirror/issues/J01-21/" | relative_url }})
-- [Jira-Arbeitsdokus]({{ "/de/work/jira/" | relative_url }})
+- [J01-21 im Jira-Mirror]({{ "/de/jira/issues/J01-21/" | relative_url }})
+- [Jira-Arbeitsdokus]({{ "/de/jira/" | relative_url }})

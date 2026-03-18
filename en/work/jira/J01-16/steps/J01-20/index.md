@@ -1,7 +1,9 @@
 ---
 layout: page
 title: "16-4: Update operational note"
-permalink: /en/work/jira/J01-16/steps/J01-20/
+jira_key: J01-20
+jira_parent_key: J01-16
+permalink: /en/jira/issues/J01-16/steps/J01-20/
 ---
 
 **Status:** 2026-03-18
@@ -9,8 +11,8 @@ permalink: /en/work/jira/J01-16/steps/J01-20/
 {% include jira-work-context.html %}
 
 Step-specific public work record for
-[16-4]({{ "/en/mirror/issues/J01-16/steps/J01-20/" | relative_url }}) under
-[J01-16]({{ "/en/work/jira/J01-16/" | relative_url }}).
+[16-4]({{ "/en/jira/issues/J01-16/steps/J01-20/" | relative_url }}) under
+[J01-16]({{ "/en/jira/issues/J01-16/" | relative_url }}).
 
 ## Goal
 
@@ -42,9 +44,9 @@ with a complete locking section.
 
 ## Links
 
-- [16-4 in the Jira mirror]({{ "/en/mirror/issues/J01-16/steps/J01-20/" | relative_url }})
-- [J01-16 in the Jira mirror]({{ "/en/mirror/issues/J01-16/" | relative_url }})
+- [Jira: 16-4]({{ "/en/jira/issues/J01-16/steps/J01-20/" | relative_url }})
+- [Jira: J01-16]({{ "/en/jira/issues/J01-16/" | relative_url }})
 - [J01-16: Runtime concurrency, locking and atomic access]({{
-  "/en/work/jira/J01-16/" | relative_url }})
+  "/en/jira/issues/J01-16/" | relative_url }})
 - [Area: HTTP-Runtime]({{ "/en/areas/http-runtime/" | relative_url }})
-- [16-3: Race-adjacent tests]({{ "/en/work/jira/J01-16/steps/J01-19/" | relative_url }})
+- [16-3: Race-adjacent tests]({{ "/en/jira/issues/J01-16/steps/J01-19/" | relative_url }})

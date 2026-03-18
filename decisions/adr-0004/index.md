@@ -56,8 +56,8 @@ Die Jira-Übersicht wird manuell aktualisiert (nach Jira-Änderungen); später o
 
 ## Links {#links}
 
-- [Jira‑Übersicht (Index)]({{ "/de/mirror/" | relative_url }})
-- [Sprint-Board]({{ "/de/mirror/sprint-board/" | relative_url }})
-- [Backlog]({{ "/de/mirror/backlog/" | relative_url }})
-- [Erledigt]({{ "/de/mirror/erledigt/" | relative_url }})
-- Vorgang (Beispiel): [J01-72]({{ "/de/mirror/issues/J01-72/" | relative_url }})
+- [Jira‑Übersicht (Index)]({{ "/de/jira/" | relative_url }})
+- [Sprint-Board]({{ "/de/jira/sprint/" | relative_url }})
+- [Backlog]({{ "/de/jira/backlog/" | relative_url }})
+- [Erledigt]({{ "/de/jira/erledigt/" | relative_url }})
+- Vorgang (Beispiel): [J01-72]({{ "/de/jira/issues/J01-72/" | relative_url }})

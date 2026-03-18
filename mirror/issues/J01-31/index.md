@@ -1,28 +1,15 @@
 ---
 layout: page
 title: "J01-31 — Preview Readiness: System-Source-Verarbeitung"
-permalink: /de/mirror/issues/J01-31/
+permalink: /de/jira/issues/J01-31/
 jira_key: J01-31
-jira_parent_key: J01-5
+
 ---
 <!-- mirror:subtasks_cksum=1561879826 -->
 
-Keine Jira-Cloud-Links, keine E-Mail-Adressen.
+{% include jira-state-head.html %}
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Kontext</span>
-  <span class="jira-context-bar__section">
-    <span class="jira-context-bar__section-label">Übergeordnet</span>
-    <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-5/" | relative_url }}">J01-5 im Jira-Mirror</a>  </span></div>
-
-## Metadaten
-
-- **Key:** `J01-31`
-- **Typ:** Task
-- **Status:** Zu erledigen
-- **Sprint:** SCRUM Sprint 0, SCRUM Sprint 1
-- **Aktualisiert:** 2026-03-16T16:48:36.250+0100
-- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/de/mirror/issues/J01-5/" | relative_url }})
+{% include jira-work-context.html %}
 
 ## Links
 
@@ -34,5 +21,5 @@ Keine Jira-Cloud-Links, keine E-Mail-Adressen.
 
 ## Unteraufgaben
 
-- [**31-1 Guard-Strategie finalisieren**]({{ "/de/mirror/issues/J01-31/steps/J01-32/" | relative_url }}) — Zu erledigen
-- [**31-2 Produktions-Pattern Vergleich dokumentieren**]({{ "/de/mirror/issues/J01-31/steps/J01-33/" | relative_url }}) — Zu erledigen
+- [**31-1 Guard-Strategie finalisieren**]({{ "/de/jira/issues/J01-31/steps/J01-32/" | relative_url }}) — Zu erledigen
+- [**31-2 Produktions-Pattern Vergleich dokumentieren**]({{ "/de/jira/issues/J01-31/steps/J01-33/" | relative_url }}) — Zu erledigen

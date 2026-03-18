@@ -1,16 +1,20 @@
 ---
 layout: page
 title: "16-2: Locking für Token-Rotation ausrollen"
-permalink: /de/work/jira/J01-16/steps/J01-18/
+jira_key: J01-18
+jira_parent_key: J01-16
+permalink: /de/jira/issues/J01-16/steps/J01-18/
 ---
 
 **Stand:** 2026-03-18
 
+{% include jira-state-head.html %}
+
 {% include jira-work-context.html %}
 
 Schrittspezifischer öffentlicher Arbeitsstand für
-[16-2]({{ "/de/mirror/issues/J01-16/steps/J01-18/" | relative_url }}) unter
-[J01-16]({{ "/de/work/jira/J01-16/" | relative_url }}).
+[16-2]({{ "/de/jira/issues/J01-16/steps/J01-18/" | relative_url }}) unter
+[J01-16]({{ "/de/jira/issues/J01-16/" | relative_url }}).
 
 ## Ziel
 
@@ -41,8 +45,8 @@ parallele `verify()`-Aufrufe.
 
 ## Links
 
-- [16-2 im Jira-Mirror]({{ "/de/mirror/issues/J01-16/steps/J01-18/" | relative_url }})
-- [J01-16 im Jira-Mirror]({{ "/de/mirror/issues/J01-16/" | relative_url }})
+- [16-2 im Jira-Mirror]({{ "/de/jira/issues/J01-16/steps/J01-18/" | relative_url }})
+- [J01-16 im Jira-Mirror]({{ "/de/jira/issues/J01-16/" | relative_url }})
 - [J01-16: Runtime-Concurrency, Locking und atomare Zugriffe]({{
-  "/de/work/jira/J01-16/" | relative_url }})
+  "/de/jira/issues/J01-16/" | relative_url }})
 - [Bereich: HTTP-Runtime]({{ "/de/areas/http-runtime/" | relative_url }})

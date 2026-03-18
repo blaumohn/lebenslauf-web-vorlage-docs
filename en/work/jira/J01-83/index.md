@@ -1,10 +1,14 @@
 ---
 layout: page
 title: "J01-83: Prepare the first cache V1 and separate policy work"
-permalink: /en/work/jira/J01-83/
+jira_key: J01-83
+jira_parent_key: J01-72
+permalink: /en/jira/issues/J01-72/steps/J01-83/
 ---
 
 **Stand:** 2026-03-17
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -33,7 +37,7 @@ path.
   The `tagebuch` refined the topic first as “cache vs. Codex skill” and then
   as “cache artefact vs. Codex skill”.
 - 2026-03-14:
-  [J01-95]({{ "/en/work/jira/J01-95/" | relative_url }}) provided the right
+  [J01-95]({{ "/en/jira/issues/J01-95/" | relative_url }}) provided the right
   pattern for this round:
   small local V1, quickly usable, replaceable later.
 - Negative finding:
@@ -116,8 +120,8 @@ Explicitly not part of this V1:
 | --- | --- | --- | --- |
 | First cache cell exists in the skill repo | `parent-subtasks.md` exists and covers exactly one recurring read case | `shared-tooling/jira-pages/cache-recipes/parent-subtasks.md` | done |
 | Command-using project skills treat the cache as the first search space | `koordination` and `jira-state-sync` mention cache lookup and recipe upkeep explicitly | project skill repo under `skills/` | done |
-| Canonical public work doc is reachable directly from Jira | Jira holds one remote link to `work/jira/J01-83/`; GitHub Pages and Mirror keep the DE/EN split | Jira remote links for `J01-83` | done |
-| Public mirror shows the same closure state | Mirror carries over status and public links from Jira without Jira Cloud links | `mirror/issues/J01-72/steps/J01-83/` | done |
+| Canonical public work doc is reachable directly from Jira | Jira holds one remote link to `/en/jira/issues/J01-72/steps/J01-83/`; GitHub Pages keeps the DE/EN split | Jira remote links for `J01-83` | done |
+| Public Jira page shows the same closure state | The public Jira area carries over status and public links from Jira without Jira Cloud links | `/en/jira/issues/J01-72/steps/J01-83/` | done |
 
 ## Not part of J01-83
 
@@ -129,7 +133,7 @@ Explicitly not part of this V1:
 
 ## Boundary to the policy track
 
-- [J01-101]({{ "/en/work/jira/J01-101/" | relative_url }}) carries the
+- [J01-101]({{ "/en/jira/issues/J01-101/" | relative_url }}) carries the
   separate policy follow-up work.
 - `J01-83` remains the cache track and does not pull that policy work back
   into scope implicitly.
@@ -137,10 +141,10 @@ Explicitly not part of this V1:
 ## Links
 
 - [J01-95: Build a journaled Jira/pages sync with resume]({{
-  "/en/work/jira/J01-95/" | relative_url }})
+  "/en/jira/issues/J01-95/" | relative_url }})
 - [J01-101: Prepare CLI-cache policy hardening as separate follow-up work]({{
-  "/en/work/jira/J01-101/" | relative_url }})
-- [Mirror: J01-72 / step J01-83]({{ "/en/mirror/issues/J01-72/steps/J01-83/" | relative_url }})
+  "/en/jira/issues/J01-101/" | relative_url }})
+- [Jira: J01-72 / step J01-83]({{ "/en/jira/issues/J01-72/steps/J01-83/" | relative_url }})
 - [ADR-0002: atlassian-http-client security model]({{
   "/en/decisions/adr-0002/" | relative_url }})
-- [Jira work docs]({{ "/en/work/jira/" | relative_url }})
+- [Jira work docs]({{ "/en/jira/" | relative_url }})

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-98: Migrationslandkarte und öffentliche Herleitung"
-permalink: /de/work/jira/J01-98/migration-map/
+permalink: /de/jira/issues/J01-98/migration-map/
 ---
 
 Diese Seite hält die vertiefende öffentliche Arbeitsdoku zu `J01-98` fest.
@@ -18,7 +18,7 @@ Die Seite beantwortet deshalb drei Fragen:
   relevant?
 - In welche heutigen öffentlichen Zielorte gehören diese Themen?
 - Welche Reste gehören ausdrücklich **nicht** mehr zu `J01-98`, sondern nach
-  [J01-100]({{ "/de/work/jira/J01-100/" | relative_url }})?
+  [J01-100]({{ "/de/jira/issues/J01-100/" | relative_url }})?
 
 ## Öffentliche Herleitung
 
@@ -180,10 +180,10 @@ Sachthemen, sondern schärfen ihren Einsatz im Sprint:
 3. Runtime- und CLI-/Build-Seiten für `J01-16` und `J01-31` nur im Rahmen der
    Preview-Guardrails fortschreiben.
 4. Alles, was diesen vier Blöcken nicht direkt dient, bewusst in
-   [J01-100]({{ "/de/work/jira/J01-100/" | relative_url }}) lassen.
+   [J01-100]({{ "/de/jira/issues/J01-100/" | relative_url }}) lassen.
 
 ## Links
 
-- [J01-98: öffentlicher Arbeitsstand]({{ "/de/work/jira/J01-98/" | relative_url }})
-- [J01-91: Zustand/Vorhaben (Abschluss-Snapshot)]({{ "/de/work/jira/J01-91/" | relative_url }})
-- [J01-100: docs/agile-Reste nach Sprint 1]({{ "/de/work/jira/J01-100/" | relative_url }})
+- [J01-98: öffentlicher Arbeitsstand]({{ "/de/jira/issues/J01-98/" | relative_url }})
+- [J01-91: Zustand/Vorhaben (Abschluss-Snapshot)]({{ "/de/jira/issues/J01-91/" | relative_url }})
+- [J01-100: docs/agile-Reste nach Sprint 1]({{ "/de/jira/issues/J01-100/" | relative_url }})

@@ -1,7 +1,9 @@
 ---
 layout: page
 title: "J01-94: Scrum sprint frame and public sprint history"
-permalink: /en/work/jira/J01-94/
+jira_key: J01-94
+jira_parent_key: J01-72
+permalink: /en/jira/issues/J01-72/steps/J01-94/
 ---
 
 **Status date:** 2026-03-14
@@ -38,5 +40,5 @@ working style stays publicly understandable.
 ## Links
 
 - [Sprint history]({{ "/en/work/sprints/" | relative_url }})
-- [Sprint board]({{ "/en/mirror/sprint-board/" | relative_url }})
-- [Mirror: J01-72 / step J01-94]({{ "/en/mirror/issues/J01-72/steps/J01-94/" | relative_url }})
+- [Sprint board]({{ "/en/jira/sprint/" | relative_url }})
+- [Mirror: J01-72 / step J01-94]({{ "/en/jira/issues/J01-72/steps/J01-94/" | relative_url }})

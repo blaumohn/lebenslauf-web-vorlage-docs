@@ -28,7 +28,7 @@ SSOT (Vorgänge/Status): Jira (Projekt `J01`, nicht öffentlich).
 
 - Formale Dokumente und Projektdoku: dieses GitHub-Pages-Repo.
 - Quellcode: App-Repo auf GitHub.
-- Statische Jira-Übersicht (ohne Jira-Cloud-Links): `/mirror/`.
+- Öffentliche Jira-Fläche (ohne Jira-Cloud-Links): `/de/jira/`.
 
 Nicht öffentlich:
 

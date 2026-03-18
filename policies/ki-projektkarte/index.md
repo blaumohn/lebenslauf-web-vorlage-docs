@@ -46,7 +46,7 @@ damit Projektanforderungen nicht im Skill dupliziert werden müssen.
 
 - [Doku-Richtlinie]({{ "/de/policies/doku-richtlinie/" | relative_url }})
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/de/operations/runbook/" | relative_url }})
-- [Jira-Arbeitsdokus]({{ "/de/work/jira/" | relative_url }})
+- [Jira-Arbeitsdokus]({{ "/de/jira/" | relative_url }})
 - [Jira- und Doku-Tooling: Jira-Übersicht]({{ "/de/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }})
 
 ## Quellen und Provenienz

@@ -28,7 +28,7 @@ Public:
 
 - Formal docs and public project docs: this GitHub Pages repo.
 - Source code: the app repo on GitHub.
-- Static Jira mirror (without Jira Cloud links): `/en/mirror/`.
+- Public Jira area (without Jira Cloud links): `/en/jira/`.
 
 Not public:
 

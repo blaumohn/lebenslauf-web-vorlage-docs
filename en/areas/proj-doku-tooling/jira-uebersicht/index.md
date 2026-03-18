@@ -8,10 +8,10 @@ permalink: /en/areas/proj-doku-tooling/jira-uebersicht/
 
 Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als statische Jira-Übersicht über GitHub Pages veröffentlicht:
 
-- [Jira‑Übersicht]({{ "/en/mirror/" | relative_url }})
-- [Sprint-Board]({{ "/en/mirror/sprint-board/" | relative_url }})
-- [Backlog]({{ "/en/mirror/backlog/" | relative_url }})
-- [Erledigt]({{ "/en/mirror/erledigt/" | relative_url }})
+- [Jira‑Übersicht]({{ "/en/jira/" | relative_url }})
+- [Sprint-Board]({{ "/en/jira/sprint/" | relative_url }})
+- [Backlog]({{ "/en/jira/backlog/" | relative_url }})
+- [Erledigt]({{ "/en/jira/erledigt/" | relative_url }})
 - [Sprint history]({{ "/en/work/sprints/" | relative_url }})
 
 ## Regeln (öffentlich)

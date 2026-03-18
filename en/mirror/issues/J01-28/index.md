@@ -1,28 +1,15 @@
 ---
 layout: page
 title: "J01-28 — Analyse: Risikomuster und Befundliste"
-permalink: /en/mirror/issues/J01-28/
+permalink: /en/jira/issues/J01-28/
 jira_key: J01-28
-jira_parent_key: J01-5
+
 ---
 <!-- mirror:subtasks_cksum=3874033004 -->
 
-No Jira Cloud links, no email addresses.
+{% include jira-state-head.html %}
 
-<div class="jira-context-bar">
-  <span class="jira-context-bar__label">Context</span>
-  <span class="jira-context-bar__section">
-    <span class="jira-context-bar__section-label">Parent</span>
-    <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-5/" | relative_url }}">J01-5 in the Jira mirror</a>  </span></div>
-
-## Metadata
-
-- **Key:** `J01-28`
-- **Type:** Task
-- **Status:** To Do
-- **Sprint:** -
-- **Updated:** 2026-02-17T16:15:01.440+0100
-- **Parent:** [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/en/mirror/issues/J01-5/" | relative_url }})
+{% include jira-work-context.html %}
 
 ## Links
 
@@ -34,5 +21,5 @@ No Jira Cloud links, no email addresses.
 
 ## Subtasks
 
-- [**28-1 Befunde erfassen**]({{ "/en/mirror/issues/J01-28/steps/J01-29/" | relative_url }}) — To Do
-- [**28-2 Priorisierung und Folge-Tickets**]({{ "/en/mirror/issues/J01-28/steps/J01-30/" | relative_url }}) — To Do
+- [**28-1 Befunde erfassen**]({{ "/en/jira/issues/J01-28/steps/J01-29/" | relative_url }}) — To Do
+- [**28-2 Priorisierung und Folge-Tickets**]({{ "/en/jira/issues/J01-28/steps/J01-30/" | relative_url }}) — To Do

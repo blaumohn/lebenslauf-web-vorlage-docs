@@ -2,7 +2,7 @@
 
 Öffentliche Dokumentation als GitHub Pages.
 Inhalte wurden aus früheren Quellen migriert und sind hier konsolidiert
-(öffentliche Doku + statische Jira-Übersicht).
+(öffentliche Doku + öffentliche Jira-Fläche).
 
 - Öffentliche Site: <https://docs.template.ysdani.com/de/>
 - App-Repo: <https://github.com/blaumohn/lebenslauf-web-vorlage>
@@ -15,10 +15,10 @@ Reguläre Projektdoku liegt nicht unter `docs/` im App-Repo, sondern hier.
 
 Siehe Runbook: `operations/ghpages-preview/`.
 
-## Betrieb (Jira-Übersicht aktualisieren)
+## Betrieb (öffentliche Jira-Fläche aktualisieren)
 
 ```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-jira-mirror.sh
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-public-jira-pages.sh
 ```
 
 Gezielter Normalmodus für bekannte Änderungen:

@@ -9,6 +9,8 @@ J01-<KEY>: <Titel>
 
 Stand: YYYY-MM-DD
 
+{% include jira-state-head.html %}
+
 {% include jira-work-context.html %}
 
 Kurzkontext
@@ -45,12 +47,14 @@ Kurzkontext
 
 Stand: YYYY-MM-DD
 
+{% include jira-state-head.html %}
+
 {% include jira-work-context.html %}
 
 Kurzkontext
 - Schrittspezifischer öffentlicher Arbeitsstand für
-  [<PARENTNR>-<SCHRITTNR>](<Mirror-Schrittseite>) unter
-  [J01-<PARENTKEY>](<Eltern-Arbeitsdoku>).
+  [<PARENTNR>-<SCHRITTNR>](<Öffentliche-Schrittseite>) unter
+  [J01-<PARENTKEY>](<Öffentliche-Elternseite>).
 - 1-2 Sätze: Worum geht es, warum braucht genau dieser Subtask eine eigene
   öffentliche Detailseite?
 
@@ -74,9 +78,8 @@ Kurzkontext
 
 ## Links
 
-- <Schritt im Jira-Mirror>
-- <Eltern-Arbeitsdoku>
-- <Eltern-Issue im Mirror>
+- <Schrittseite>
+- <Elternseite>
 - ...
 ```
 
@@ -87,4 +90,4 @@ jira_parent_key: J01-<PARENT>
 ```
 
 Damit bleibt der übergeordnete Vorgang auch dann im Kontextblock sichtbar,
-wenn die eigene Mirror-Seite lokal noch nicht vorliegt.
+wenn die Seite unter einem Epic oder Parent-Vorgang hängt.

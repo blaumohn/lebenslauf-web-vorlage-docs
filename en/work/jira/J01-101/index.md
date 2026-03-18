@@ -1,10 +1,13 @@
 ---
 layout: page
 title: "J01-101: Prepare CLI-cache policy hardening as separate follow-up work"
-permalink: /en/work/jira/J01-101/
+jira_key: J01-101
+permalink: /en/jira/issues/J01-101/
 ---
 
 **Stand:** 2026-03-17
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -32,7 +35,7 @@ so that `J01-83` can remain small and replaceable.
 
 ## Boundary to J01-83
 
-- [J01-83]({{ "/en/work/jira/J01-83/" | relative_url }}) stays limited to the
+- [J01-83]({{ "/en/jira/issues/J01-83/" | relative_url }}) stays limited to the
   small cache V1.
 - `J01-101` does not pull anything into the first iteration that still needs a
   broader security or policy review.
@@ -40,7 +43,7 @@ so that `J01-83` can remain small and replaceable.
 ## Links
 
 - [J01-83: Prepare the first cache V1 and separate policy work]({{
-  "/en/work/jira/J01-83/" | relative_url }})
+  "/en/jira/issues/J01-83/" | relative_url }})
 - [ADR-0002: atlassian-http-client security model]({{
   "/en/decisions/adr-0002/" | relative_url }})
-- [Jira work docs]({{ "/en/work/jira/" | relative_url }})
+- [Jira work docs]({{ "/en/jira/" | relative_url }})

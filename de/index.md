@@ -36,7 +36,7 @@ wie z. B. Runbooks oder Entscheidungen sofort einordbar sind.
 - [Entscheidungen (ADRs)]({{ "/de/decisions/" | relative_url }})
 - [Betrieb (Runbook)]({{ "/de/operations/" | relative_url }})
 - [Sprint-Historie (öffentlich)]({{ "/de/work/sprints/" | relative_url }})
-- [Jira‑Übersicht (öffentlich)]({{ "/de/mirror/" | relative_url }})
+- [Jira‑Übersicht (öffentlich)]({{ "/de/jira/" | relative_url }})
 - [Richtlinien]({{ "/de/policies/" | relative_url }})
 - [Vorlagen]({{ "/de/templates/" | relative_url }})
 - [Qualität]({{ "/de/quality/" | relative_url }})

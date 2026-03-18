@@ -1,10 +1,14 @@
 ---
 layout: page
 title: "J01-83: Erste Cache-V1 vorbereiten und Policy trennen"
-permalink: /de/work/jira/J01-83/
+jira_key: J01-83
+jira_parent_key: J01-72
+permalink: /de/jira/issues/J01-72/steps/J01-83/
 ---
 
 **Stand:** 2026-03-17
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -33,7 +37,7 @@ Curl-Reifung vorwegzunehmen.
   Im `tagebuch` wurde der Strang als „Cache vs. Codex-Skill“ und danach als
   „Cache-Artefakt vs. Codex-Skill“ geschärft.
 - 2026-03-14:
-  [J01-95]({{ "/de/work/jira/J01-95/" | relative_url }}) zeigte das passende
+  [J01-95]({{ "/de/jira/issues/J01-95/" | relative_url }}) zeigte das passende
   Muster für diese Runde:
   kleine lokale V1, schnell nutzbar, später ersetzbar.
 - Negativbefund:
@@ -116,8 +120,8 @@ Ausdrücklich nicht Teil der V1:
 | --- | --- | --- | --- |
 | Erste Cache-Zelle liegt im Skill-Repo vor | `parent-subtasks.md` ist vorhanden und beschreibt genau einen wiederkehrenden Lesefall | `shared-tooling/jira-pages/cache-recipes/parent-subtasks.md` | erledigt |
 | Befehl-nutzende Projekt-Skills behandeln den Cache als ersten Suchraum | `koordination` und `jira-state-sync` nennen die Cache-Prüfung und das Nachziehen explizit | Projekt-Skill-Repo unter `skills/` | erledigt |
-| Kanonische öffentliche Arbeitsdoku ist direkt aus Jira erreichbar | Jira hält einen Remote-Link auf `work/jira/J01-83/`; DE/EN-Aufspaltung bleibt bei GitHub Pages und Mirror | Jira-Remote-Links für `J01-83` | erledigt |
-| Öffentlicher Spiegel zeigt denselben Abschlussstand | Mirror übernimmt Status und öffentliche Links aus Jira ohne Jira-Cloud-Links | `mirror/issues/J01-72/steps/J01-83/` | erledigt |
+| Kanonische öffentliche Arbeitsdoku ist direkt aus Jira erreichbar | Jira hält einen Remote-Link auf `/de/jira/issues/J01-72/steps/J01-83/`; DE/EN-Aufspaltung bleibt bei GitHub Pages | Jira-Remote-Links für `J01-83` | erledigt |
+| Öffentliche Jira-Seite zeigt denselben Abschlussstand | Die öffentliche Jira-Fläche übernimmt Status und öffentliche Links aus Jira ohne Jira-Cloud-Links | `/de/jira/issues/J01-72/steps/J01-83/` | erledigt |
 
 ## Nicht Teil von J01-83
 
@@ -129,7 +133,7 @@ Ausdrücklich nicht Teil der V1:
 
 ## Abgrenzung zum Policy-Strang
 
-- [J01-101]({{ "/de/work/jira/J01-101/" | relative_url }}) trägt die
+- [J01-101]({{ "/de/jira/issues/J01-101/" | relative_url }}) trägt die
   getrennte Policy-Folgearbeit.
 - `J01-83` bleibt der Cache-Strang und zieht die Policy-Arbeit nicht wieder
   implizit in den Scope zurück.
@@ -137,10 +141,10 @@ Ausdrücklich nicht Teil der V1:
 ## Links
 
 - [J01-95: Journalisierten Jira-/Pages-Sync mit Resume aufbauen]({{
-  "/de/work/jira/J01-95/" | relative_url }})
+  "/de/jira/issues/J01-95/" | relative_url }})
 - [J01-101: Policy-Schärfung für CLI-Cache getrennt vorbereiten]({{
-  "/de/work/jira/J01-101/" | relative_url }})
-- [Mirror: J01-72 / Schritt J01-83]({{ "/de/mirror/issues/J01-72/steps/J01-83/" | relative_url }})
+  "/de/jira/issues/J01-101/" | relative_url }})
+- [Jira: J01-72 / Schritt J01-83]({{ "/de/jira/issues/J01-72/steps/J01-83/" | relative_url }})
 - [ADR-0002: atlassian-http-client Sicherheitsmodell]({{
   "/de/decisions/adr-0002/" | relative_url }})
-- [Jira-Arbeitsdokus]({{ "/de/work/jira/" | relative_url }})
+- [Jira-Arbeitsdokus]({{ "/de/jira/" | relative_url }})

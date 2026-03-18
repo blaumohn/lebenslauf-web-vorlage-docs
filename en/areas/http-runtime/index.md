@@ -61,12 +61,12 @@ All state-mutating file accesses in the HTTP path run under a
 `ConcurrencyTest` proves that every write path actually runs under its expected
 lock key and that the timeout fires when the key is already held.
 Background and outcome:
-[16-3: Race-adjacent tests]({{ "/en/work/jira/J01-16/steps/J01-19/" | relative_url }}).
+[16-3: Race-adjacent tests]({{ "/en/jira/issues/J01-16/steps/J01-19/" | relative_url }}).
 
 ## Links
 
-- [J01-98: public work status]({{ "/en/work/jira/J01-98/" | relative_url }})
+- [J01-98: public work status]({{ "/en/jira/issues/J01-98/" | relative_url }})
 - [J01-16: Runtime concurrency, locking and atomic access]({{
-  "/en/work/jira/J01-16/" | relative_url }})
-- [16-3: Race-adjacent tests]({{ "/en/work/jira/J01-16/steps/J01-19/" | relative_url }})
-- [J01-16 in the Jira mirror]({{ "/en/mirror/issues/J01-16/" | relative_url }})
+  "/en/jira/issues/J01-16/" | relative_url }})
+- [16-3: Race-adjacent tests]({{ "/en/jira/issues/J01-16/steps/J01-19/" | relative_url }})
+- [J01-16 in the Jira mirror]({{ "/en/jira/issues/J01-16/" | relative_url }})

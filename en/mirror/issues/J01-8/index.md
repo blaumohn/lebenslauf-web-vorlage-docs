@@ -1,30 +1,22 @@
 ---
 layout: page
 title: "J01-8 — Backlog-Kandidaten"
-permalink: /en/mirror/issues/J01-8/
+permalink: /en/jira/issues/J01-8/
 jira_key: J01-8
 ---
 <!-- mirror:child_tasks_cksum=3515723269 -->
 
-No Jira Cloud links, no email addresses.
+{% include jira-state-head.html %}
 
-
-
-## Metadata
-
-- **Key:** `J01-8`
-- **Type:** Epic
-- **Status:** To Do
-- **Sprint:** -
-- **Updated:** 2026-02-17T16:12:59.939+0100
+{% include jira-work-context.html %}
 
 ## Tasks
 
-- [J01-60 — Backlog: SMTP-Empfangsnachweis mit Konto-Beteiligung]({{ "/en/mirror/issues/J01-60/" | relative_url }})
-- [J01-58 — Backlog: Pipeline-Phase Terminologie repo-weit]({{ "/en/mirror/issues/J01-58/" | relative_url }})
-- [J01-56 — Backlog: Bibliotheks-APIs konsequent ausschoepfen]({{ "/en/mirror/issues/J01-56/" | relative_url }})
-- [J01-54 — Backlog: Zentrales Fehlerkonzept]({{ "/en/mirror/issues/J01-54/" | relative_url }})
-- [J01-52 — Backlog: Typensicherheit statt Guards]({{ "/en/mirror/issues/J01-52/" | relative_url }})
+- [J01-60 — Backlog: SMTP-Empfangsnachweis mit Konto-Beteiligung]({{ "/en/jira/issues/J01-60/" | relative_url }})
+- [J01-58 — Backlog: Pipeline-Phase Terminologie repo-weit]({{ "/en/jira/issues/J01-58/" | relative_url }})
+- [J01-56 — Backlog: Bibliotheks-APIs konsequent ausschoepfen]({{ "/en/jira/issues/J01-56/" | relative_url }})
+- [J01-54 — Backlog: Zentrales Fehlerkonzept]({{ "/en/jira/issues/J01-54/" | relative_url }})
+- [J01-52 — Backlog: Typensicherheit statt Guards]({{ "/en/jira/issues/J01-52/" | relative_url }})
 
 ## Links
 

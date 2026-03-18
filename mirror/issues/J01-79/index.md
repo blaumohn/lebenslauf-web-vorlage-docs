@@ -1,23 +1,15 @@
 ---
 layout: page
 title: "J01-79 — Atlassian CLI: API-Betriebe (Wrapper), http als Escape-Hatch"
-permalink: /de/mirror/issues/J01-79/
+permalink: /de/jira/issues/J01-79/
 jira_key: J01-79
 
 ---
 <!-- mirror:subtasks_cksum=4294967295 -->
 
-Keine Jira-Cloud-Links, keine E-Mail-Adressen.
+{% include jira-state-head.html %}
 
-
-
-## Metadaten
-
-- **Key:** `J01-79`
-- **Typ:** Task
-- **Status:** Erledigt
-- **Sprint:** SCRUM Sprint 0
-- **Aktualisiert:** 2026-03-16T16:43:59.122+0100
+{% include jira-work-context.html %}
 
 ## Links
 

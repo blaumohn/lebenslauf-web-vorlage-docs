@@ -74,6 +74,6 @@ General branch rules outside the preview sprint do not belong on this page.
 
 ## Links
 
-- [J01-98: public work status]({{ "/en/work/jira/J01-98/" | relative_url }})
-- [J01-9 in the Jira mirror]({{ "/en/mirror/issues/J01-9/" | relative_url }})
+- [J01-98: public work status]({{ "/en/jira/issues/J01-98/" | relative_url }})
+- [J01-9 in the Jira mirror]({{ "/en/jira/issues/J01-9/" | relative_url }})
 - [Test matrix]({{ "/en/quality/testmatrix/" | relative_url }})

@@ -1,16 +1,19 @@
 ---
 layout: page
 title: "J01-16: Runtime concurrency, locking, and atomic access"
-permalink: /en/work/jira/J01-16/
+jira_key: J01-16
+permalink: /en/jira/issues/J01-16/
 ---
 
 **Stand:** 2026-03-17
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
 Canonical public work status for `J01-16`.
 This issue extends the already proven runtime frame from
-[J01-21]({{ "/en/work/jira/J01-21/" | relative_url }}) to further critical
+[J01-21]({{ "/en/jira/issues/J01-21/" | relative_url }}) to further critical
 file accesses and bundles the still-open concurrency and locking remainder of
 the preview path.
 
@@ -28,7 +31,7 @@ where the domain behaviour actually supports that transfer.
 
 ## Reference path
 
-The completed issue [J01-21]({{ "/en/work/jira/J01-21/" | relative_url }}) is
+The completed issue [J01-21]({{ "/en/jira/issues/J01-21/" | relative_url }}) is
 the model for this track.
 For `J01-16`, the following parts are binding from that path:
 
@@ -47,7 +50,7 @@ other managers when their own domain flow truly requires the same transition.
 - roll out locking to rate-limit and CAPTCHA paths
 - roll out locking to rate-limit and CAPTCHA paths
   via [16-1: Locking für Rate-Limit und CAPTCHA ausrollen]({{
-  "/en/work/jira/J01-16/steps/J01-17/" | relative_url }})
+  "/en/jira/issues/J01-16/steps/J01-17/" | relative_url }})
 - roll out locking to token rotation
 - add race-adjacent tests for the new target areas
 - update the public operating note for the locked runtime areas
@@ -71,10 +74,10 @@ through `J01-16` and the completed reference issue `J01-21`.
 ## Links
 
 - [J01-21: runtime IP_SALT management and guardrails]({{
-  "/en/work/jira/J01-21/" | relative_url }})
+  "/en/jira/issues/J01-21/" | relative_url }})
 - [16-1: Locking für Rate-Limit und CAPTCHA ausrollen]({{
-  "/en/work/jira/J01-16/steps/J01-17/" | relative_url }})
+  "/en/jira/issues/J01-16/steps/J01-17/" | relative_url }})
 - [Area: HTTP runtime]({{ "/en/areas/http-runtime/" | relative_url }})
-- [J01-16 in the Jira mirror]({{ "/en/mirror/issues/J01-16/" | relative_url }})
+- [Jira: J01-16]({{ "/en/jira/issues/J01-16/" | relative_url }})
 - [Sprint 1: Planning]({{ "/en/work/sprints/scrum-sprint-1/" | relative_url }})
-- [Jira work docs]({{ "/en/work/jira/" | relative_url }})
+- [Jira work docs]({{ "/en/jira/" | relative_url }})

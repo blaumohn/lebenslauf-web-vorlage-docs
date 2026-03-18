@@ -36,7 +36,7 @@ other pages are easy to place and navigate.
 - [Decisions (ADRs)]({{ "/en/decisions/" | relative_url }})
 - [Operations (runbook)]({{ "/en/operations/" | relative_url }})
 - [Sprint history (public)]({{ "/en/work/sprints/" | relative_url }})
-- [Jira mirror (public)]({{ "/en/mirror/" | relative_url }})
+- [Jira mirror (public)]({{ "/en/jira/" | relative_url }})
 - [Policies]({{ "/en/policies/" | relative_url }})
 - [Templates]({{ "/en/templates/" | relative_url }})
 - [Quality]({{ "/en/quality/" | relative_url }})

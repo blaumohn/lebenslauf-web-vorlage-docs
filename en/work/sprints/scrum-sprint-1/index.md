@@ -20,22 +20,22 @@ Finish the preview deployment.
 
 ### Sprint goal
 
-- [J01-9]({{ "/en/mirror/issues/J01-9/" | relative_url }})
-- [J01-13]({{ "/en/mirror/issues/J01-13/" | relative_url }})
-- [J01-16]({{ "/en/mirror/issues/J01-16/" | relative_url }})
-- [J01-31]({{ "/en/mirror/issues/J01-31/" | relative_url }})
+- [J01-9]({{ "/en/jira/issues/J01-9/" | relative_url }})
+- [J01-13]({{ "/en/jira/issues/J01-13/" | relative_url }})
+- [J01-16]({{ "/en/jira/issues/J01-16/" | relative_url }})
+- [J01-31]({{ "/en/jira/issues/J01-31/" | relative_url }})
 
 ### Support
 
-- [J01-93]({{ "/en/mirror/issues/J01-93/" | relative_url }}) —
+- [J01-93]({{ "/en/jira/issues/J01-93/" | relative_url }}) —
   public GitHub Pages and mirror i18n as visible, usable project docs
-- [J01-98]({{ "/en/work/jira/J01-98/" | relative_url }}) —
+- [J01-98]({{ "/en/jira/issues/J01-98/" | relative_url }}) —
   sprint-relevant preview migration only from `J01-91` phase 2
 
 ### Admin / framework
 
-- [J01-72]({{ "/en/mirror/issues/J01-72/" | relative_url }})
-- [J01-94]({{ "/en/work/jira/J01-94/" | relative_url }}) as a public
+- [J01-72]({{ "/en/jira/issues/J01-72/" | relative_url }})
+- [J01-94]({{ "/en/jira/issues/J01-94/" | relative_url }}) as a public
   sprint/mirror step under `J01-72`, not as its own board entry
 
 ## Scope rules

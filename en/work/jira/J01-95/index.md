@@ -1,15 +1,19 @@
 ---
 layout: page
 title: "J01-95: Build a journaled Jira/pages sync with resume"
-permalink: /en/work/jira/J01-95/
+jira_key: J01-95
+jira_parent_key: J01-72
+permalink: /en/jira/issues/J01-72/steps/J01-95/
 ---
 
 **Stand:** 2026-03-14
 
+{% include jira-state-head.html %}
+
 {% include jira-work-context.html %}
 
 Canonical public work status for `J01-95`.
-This step adds a local journal and resume path to the Jira/mirror workflow for
+This step adds a local journal and resume path to the Jira/pages workflow for
 known Jira and GitHub Pages changes.
 
 ## Goal
@@ -24,7 +28,7 @@ project-wide Jira list queries in the normal mode.
 - local run journal under `.local/jira-sync-journal/`
 - the mirror generator now accepts local snapshot files instead of only fresh
   Jira list queries
-- `verify-jira-ghpages-links.sh` can now verify only affected keys
+- `verify-public-jira-pages.sh` can now verify only affected keys
 - new Pages helpers to:
   - derive link changes from Git diffs
   - find affected Jira keys locally from `mirror/`
@@ -38,7 +42,7 @@ project-wide Jira list queries in the normal mode.
 - V1 classes:
   `status`, `summary`, `description`, `step_meta`, `remote_links`
 - GitHub Pages changes are detected from a Git base ref.
-- In V1, `mirror/` is treated as the complete local view of docs-domain links
+- In V1, `jira/` is treated as the complete public view of docs-domain links
   imported from Jira; other Jira content stays outside this path.
 - Full sync remains a repair mode, not the default path.
 
@@ -51,5 +55,5 @@ project-wide Jira list queries in the normal mode.
 
 ## Links
 
-- [Jira work docs]({{ "/en/work/jira/" | relative_url }})
-- [Runbook: update the Jira mirror]({{ "/en/operations/runbook/" | relative_url }})
+- [Jira work docs]({{ "/en/jira/" | relative_url }})
+- [Runbook: update the public Jira area]({{ "/en/operations/runbook/" | relative_url }})

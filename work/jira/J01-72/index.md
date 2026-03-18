@@ -1,10 +1,13 @@
 ---
 layout: page
 title: "J01-72: Abschluss der Umsetzungsschritte"
-permalink: /de/work/jira/J01-72/
+jira_key: J01-72
+permalink: /de/jira/issues/J01-72/
 ---
 
 **Stand:** 2026-03-17
+
+{% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
@@ -15,7 +18,7 @@ den öffentlichen Abschlussstand des Parent-Vorgangs fest.
 ## Ziel
 
 Die Umsetzungsschritte unter `J01-72` so abschließen, dass Jira, öffentliche
-Arbeitsdoku und Mirror denselben Endstand tragen und keine versteckten
+Arbeitsdoku und öffentliche Jira-Fläche denselben Endstand tragen und keine versteckten
 Unteraufgaben offen bleiben.
 
 ## Abschlussbild
@@ -31,19 +34,19 @@ Unteraufgaben offen bleiben.
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Unteraufgaben haben keinen verdeckten offenen Rest mehr | Alle Subtasks unter `J01-72` sind erledigt oder öffentlich als ersetzte Prüf-/Entscheidungsarbeit dokumentiert | Jira-Subtask-Liste von `J01-72` und [J01-73]({{ "/de/work/jira/J01-73/" | relative_url }}) | erledigt |
-| Cache-Strang ist öffentlich abschließbar | `J01-83` hat Arbeitsdoku, Überprüfungsplan und kanonischen Jira-Link | [J01-83]({{ "/de/work/jira/J01-83/" | relative_url }}) | erledigt |
-| Parent ist direkt aus Jira auf öffentliche Doku rückführbar | Jira hält einen Remote-Link auf `work/jira/J01-72/` | Jira-Remote-Links für `J01-72` | erledigt |
-| Mirror zeigt denselben Abschlussstand | `mirror/issues/J01-72/` führt keine offenen Unteraufgaben mehr und trägt den Done-Status | [Mirror: J01-72]({{ "/de/mirror/issues/J01-72/" | relative_url }}) | erledigt |
+| Unteraufgaben haben keinen verdeckten offenen Rest mehr | Alle Subtasks unter `J01-72` sind erledigt oder öffentlich als ersetzte Prüf-/Entscheidungsarbeit dokumentiert | Jira-Subtask-Liste von `J01-72` und [J01-73]({{ "/de/jira/issues/J01-73/" | relative_url }}) | erledigt |
+| Cache-Strang ist öffentlich abschließbar | `J01-83` hat Arbeitsdoku, Überprüfungsplan und kanonischen Jira-Link | [J01-83]({{ "/de/jira/issues/J01-83/" | relative_url }}) | erledigt |
+| Parent ist direkt aus Jira auf öffentliche Doku rückführbar | Jira hält einen Remote-Link auf `/de/jira/issues/J01-72/` | Jira-Remote-Links für `J01-72` | erledigt |
+| Öffentliche Jira-Seite zeigt denselben Abschlussstand | `/de/jira/issues/J01-72/` führt keine offenen Unteraufgaben mehr und trägt den Done-Status | [Jira: J01-72]({{ "/de/jira/issues/J01-72/" | relative_url }}) | erledigt |
 
 ## Abschluss
 
-`J01-73` und `J01-83` sind in Jira auf `Erledigt` gesetzt, und der Mirror
-spiegelt denselben Stand.
+`J01-73` und `J01-83` sind in Jira auf `Erledigt` gesetzt, und die
+öffentliche Jira-Fläche zeigt denselben Stand.
 Damit ist auch `J01-72` als Parent-Vorgang abgeschlossen.
 
 ## Links
 
-- [J01-73: Subtask-Reihenfolge gegen Export prüfen]({{ "/de/work/jira/J01-73/" | relative_url }})
-- [J01-83: Erste Cache-V1 vorbereiten und Policy trennen]({{ "/de/work/jira/J01-83/" | relative_url }})
-- [Mirror: J01-72]({{ "/de/mirror/issues/J01-72/" | relative_url }})
+- [J01-73: Subtask-Reihenfolge gegen Export prüfen]({{ "/de/jira/issues/J01-73/" | relative_url }})
+- [J01-83: Erste Cache-V1 vorbereiten und Policy trennen]({{ "/de/jira/issues/J01-83/" | relative_url }})
+- [Jira: J01-72]({{ "/de/jira/issues/J01-72/" | relative_url }})

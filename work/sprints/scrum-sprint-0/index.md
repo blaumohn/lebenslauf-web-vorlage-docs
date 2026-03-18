@@ -18,17 +18,17 @@ Preview-Readiness und Preview-Deployment sichtbar voranbringen.
 
 ## Geplant
 
-- [J01-9]({{ "/de/mirror/issues/J01-9/" | relative_url }})
-- [J01-13]({{ "/de/mirror/issues/J01-13/" | relative_url }})
-- [J01-16]({{ "/de/mirror/issues/J01-16/" | relative_url }})
-- [J01-31]({{ "/de/mirror/issues/J01-31/" | relative_url }})
+- [J01-9]({{ "/de/jira/issues/J01-9/" | relative_url }})
+- [J01-13]({{ "/de/jira/issues/J01-13/" | relative_url }})
+- [J01-16]({{ "/de/jira/issues/J01-16/" | relative_url }})
+- [J01-31]({{ "/de/jira/issues/J01-31/" | relative_url }})
 
 ## Tatsächlich gemacht
 
 - wesentliche Jira-/SSOT-/Mirror-Grundlagen im Strang
-  [J01-72]({{ "/de/mirror/issues/J01-72/" | relative_url }}) weiter aufgebaut
-- [J01-79]({{ "/de/mirror/issues/J01-79/" | relative_url }}) abgeschlossen
-- [J01-80]({{ "/de/mirror/issues/J01-80/" | relative_url }}) abgeschlossen
+  [J01-72]({{ "/de/jira/issues/J01-72/" | relative_url }}) weiter aufgebaut
+- [J01-79]({{ "/de/jira/issues/J01-79/" | relative_url }}) abgeschlossen
+- [J01-80]({{ "/de/jira/issues/J01-80/" | relative_url }}) abgeschlossen
 - die spätere öffentliche Doku-/Skill-/Sprint-Arbeit vorbereitet, die dann in
   `J01-91`, `J01-92`, `J01-93` und `J01-94` sichtbar wurde
 
@@ -59,8 +59,8 @@ Preview-Readiness und Preview-Deployment sichtbar voranbringen.
 
 ## Carry-over
 
-- [J01-9]({{ "/de/mirror/issues/J01-9/" | relative_url }})
-- [J01-13]({{ "/de/mirror/issues/J01-13/" | relative_url }})
-- [J01-16]({{ "/de/mirror/issues/J01-16/" | relative_url }})
-- [J01-31]({{ "/de/mirror/issues/J01-31/" | relative_url }})
-- [J01-72]({{ "/de/mirror/issues/J01-72/" | relative_url }})
+- [J01-9]({{ "/de/jira/issues/J01-9/" | relative_url }})
+- [J01-13]({{ "/de/jira/issues/J01-13/" | relative_url }})
+- [J01-16]({{ "/de/jira/issues/J01-16/" | relative_url }})
+- [J01-31]({{ "/de/jira/issues/J01-31/" | relative_url }})
+- [J01-72]({{ "/de/jira/issues/J01-72/" | relative_url }})
