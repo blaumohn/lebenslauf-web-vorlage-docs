@@ -4,10 +4,9 @@ title: "Bereich: HTTP-Runtime"
 permalink: /de/areas/http-runtime/
 ---
 
-Dieser Bereich hält für `J01-98` nur die preview-relevanten
-Runtime-Guardrails fest.
-Er ersetzt keinen vollständigen Betriebsleitfaden, sondern dokumentiert die
-Stabilitätsbasis, die der aktuelle Sprint öffentlich nachweisbar braucht.
+Dieser Bereich dokumentiert die stabile Betriebsbasis des HTTP-Runtime-Pfads.
+Er hält fest, welche Dateibereiche, Locking-Strategien und Schreibmuster
+dauerhaft gelten — unabhängig vom jeweiligen Sprint.
 
 ## Preview-relevante Runtime-Bausteine
 
@@ -36,18 +35,39 @@ Stabilitätsbasis, die der aktuelle Sprint öffentlich nachweisbar braucht.
 - Damit bleibt entweder der alte oder der neue Zustand sichtbar;
   halbfertige Dateien sollen im aktiven Pfad nicht öffentlich wirksam werden.
 
-## Öffentliche Nachweise im Sprint
+## Locking
 
-- Die Feature-Tests prüfen Kontaktformular, CAPTCHA-Bildausgabe und den
-  benötigten Runtime-Kontext mit kompilierter Config.
-- Die Config-Herleitung für `IP_SALT`, `APP_BASE_PATH` und weitere
-  Laufzeitwerte liegt im
-  [Bereich: CLI / Build]({{ "/de/areas/cli-build/" | relative_url }}).
-- `J01-98` zieht hier nur die Runtime-Aspekte, die den Preview-Betrieb direkt
-  absichern.
+Alle zustandsverändernden Dateizugriffe im HTTP-Pfad laufen unter einem
+`symfony/lock`-basierten `FlockStore`-Lock über `RuntimeLockRunner`.
+
+### Lock-Keys je Dienst
+
+| Dienst | Lock-Key-Schema | Granularität |
+| --- | --- | --- |
+| `RateLimiter` | `ratelimit_{normalized_key}` | pro IP-Schlüssel |
+| `CaptchaService` | `captcha_{challenge_id}` | pro Challenge-ID |
+| `TokenService` (Schreiben) | `token_{normalized_profile}` | pro Profil |
+| `TokenService` (Lesen) | — (kein Lock) | lock-frei |
+
+### Timeout- und Polling-Regel
+
+- Maximale Wartezeit: **300 ms**
+- Polling-Intervall: **25 ms**
+- Bei Überschreitung: `RuntimeException("Lock-Timeout nach 300ms: {key}")`
+- Die Werte sind Standardwerte in `RuntimeLockRunner`; sie lassen sich
+  im Konstruktor überschreiben.
+
+### Race-Test-Nachweis
+
+Der `ConcurrencyTest` belegt, dass jeder Schreibpfad tatsächlich unter
+dem erwarteten Lock-Key läuft und der Timeout greift, wenn der Key belegt
+ist. Hintergrund und Ergebnis:
+[16-3: Race-nahe Tests]({{ "/de/work/jira/J01-16/steps/J01-19/" | relative_url }}).
 
 ## Links
 
 - [J01-98: öffentlicher Arbeitsstand]({{ "/de/work/jira/J01-98/" | relative_url }})
+- [J01-16: Runtime-Concurrency, Locking und atomare Zugriffe]({{
+  "/de/work/jira/J01-16/" | relative_url }})
+- [16-3: Race-nahe Tests]({{ "/de/work/jira/J01-16/steps/J01-19/" | relative_url }})
 - [J01-16 im Jira-Mirror]({{ "/de/mirror/issues/J01-16/" | relative_url }})
-- [Testmatrix]({{ "/de/quality/testmatrix/" | relative_url }})

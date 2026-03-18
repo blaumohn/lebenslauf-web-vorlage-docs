@@ -4,9 +4,9 @@ title: "Area: HTTP runtime"
 permalink: /en/areas/http-runtime/
 ---
 
-This area records only the preview-relevant runtime guardrails for `J01-98`.
-It does not replace a full operations guide; it documents the stability basis
-that the current sprint needs as public evidence.
+This area documents the stable operational basis of the HTTP runtime path.
+It captures which file areas, locking strategies, and write patterns apply
+permanently — independent of any specific sprint.
 
 ## Preview-Relevant Runtime Building Blocks
 
@@ -34,17 +34,39 @@ that the current sprint needs as public evidence.
 - This keeps either the old or the new state visible; half-written files should
   not become publicly effective in the active path.
 
-## Public Evidence in the Sprint
+## Locking
 
-- The feature tests cover the contact form, CAPTCHA image output, and the
-  required runtime context with compiled config.
-- The config rationale for `IP_SALT`, `APP_BASE_PATH`, and other runtime values
-  lives in [Area: CLI / Build]({{ "/en/areas/cli-build/" | relative_url }}).
-- `J01-98` pulls in only the runtime aspects that directly secure preview
-  operations.
+All state-mutating file accesses in the HTTP path run under a
+`symfony/lock`-based `FlockStore` lock via `RuntimeLockRunner`.
+
+### Lock keys per service
+
+| Service | Lock key schema | Granularity |
+| --- | --- | --- |
+| `RateLimiter` | `ratelimit_{normalized_key}` | per IP key |
+| `CaptchaService` | `captcha_{challenge_id}` | per challenge ID |
+| `TokenService` (write) | `token_{normalized_profile}` | per profile |
+| `TokenService` (read) | — (no lock) | lock-free |
+
+### Timeout and polling rule
+
+- Maximum wait time: **300 ms**
+- Polling interval: **25 ms**
+- On expiry: `RuntimeException("Lock-Timeout nach 300ms: {key}")`
+- These are the defaults in `RuntimeLockRunner`; they can be overridden in
+  the constructor.
+
+### Concurrency test evidence
+
+`ConcurrencyTest` proves that every write path actually runs under its expected
+lock key and that the timeout fires when the key is already held.
+Background and outcome:
+[16-3: Race-adjacent tests]({{ "/en/work/jira/J01-16/steps/J01-19/" | relative_url }}).
 
 ## Links
 
 - [J01-98: public work status]({{ "/en/work/jira/J01-98/" | relative_url }})
+- [J01-16: Runtime concurrency, locking and atomic access]({{
+  "/en/work/jira/J01-16/" | relative_url }})
+- [16-3: Race-adjacent tests]({{ "/en/work/jira/J01-16/steps/J01-19/" | relative_url }})
 - [J01-16 in the Jira mirror]({{ "/en/mirror/issues/J01-16/" | relative_url }})
-- [Test matrix]({{ "/en/quality/testmatrix/" | relative_url }})
