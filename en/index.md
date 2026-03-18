@@ -4,7 +4,13 @@ title: CV Web Template
 permalink: /en/
 ---
 
-Portfolio project: modular CV template (PHP + Twig).
+PHP template for a CV site on shared hosting.
+
+Three characteristics that go beyond a plain CV page: public and
+token-gated private variants with redacted contact details, a CLI
+build pipeline (YAML → validated → HTML), and a file-based security
+layer for the contact form (rate limiting, CAPTCHA, IP-salt rotation
+with `symfony/lock`).
 
 ## Entry
 

@@ -4,7 +4,13 @@ title: Lebenslauf-Web-Vorlage
 permalink: /de/
 ---
 
-Portfolio-Projekt: modulare Lebenslauf-Vorlage (PHP + Twig).
+PHP-Vorlage für eine Lebenslauf-Site auf Shared-Hosting.
+
+Drei Eigenschaften, die über eine einfache CV-Seite hinausgehen:
+öffentliche und token-gesicherte private Ansicht mit Schwärzung der
+Kontaktdaten, eine CLI-Build-Pipeline (YAML → validiert → HTML),
+und ein dateibasierter Sicherheitsrahmen für das Kontaktformular
+(Rate-Limit, CAPTCHA, IP-Salt-Rotation mit `symfony/lock`).
 
 ## Einstieg
 
