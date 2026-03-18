@@ -21,7 +21,7 @@ Static Jira mirror (ohne Jira-Cloud-Links).
 - [J01-16 — Runtime: Concurrency, Locking und atomare Zugriffe]({{ "/en/mirror/issues/J01-16/" | relative_url }})
   - [**16-1 Locking für Rate-Limit und CAPTCHA ausrollen**]({{ "/en/mirror/issues/J01-16/steps/J01-17/" | relative_url }}) — Done
   - [**16-2 Locking für Token-Rotation ausrollen**]({{ "/en/mirror/issues/J01-16/steps/J01-18/" | relative_url }}) — Done
-  - [**16-3 Race-nahe Tests ergänzen**]({{ "/en/mirror/issues/J01-16/steps/J01-19/" | relative_url }}) — To Do
+  - [**16-3 Race-nahe Tests ergänzen**]({{ "/en/mirror/issues/J01-16/steps/J01-19/" | relative_url }}) — Done
   - [**16-4 Betriebsnotiz aktualisieren**]({{ "/en/mirror/issues/J01-16/steps/J01-20/" | relative_url }}) — To Do
 - [J01-28 — Analyse: Risikomuster und Befundliste]({{ "/en/mirror/issues/J01-28/" | relative_url }})
   - [**28-1 Befunde erfassen**]({{ "/en/mirror/issues/J01-28/steps/J01-29/" | relative_url }}) — To Do

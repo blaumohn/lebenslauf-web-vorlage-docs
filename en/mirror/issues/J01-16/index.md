@@ -5,7 +5,7 @@ permalink: /en/mirror/issues/J01-16/
 jira_key: J01-16
 jira_parent_key: J01-5
 ---
-<!-- mirror:subtasks_cksum=2136750411 -->
+<!-- mirror:subtasks_cksum=2366035131 -->
 
 No Jira Cloud links, no email addresses.
 
@@ -18,7 +18,8 @@ No Jira Cloud links, no email addresses.
     <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-5/" | relative_url }}">J01-5 in the Jira mirror</a>  </span>  <span class="jira-context-bar__section">
     <span class="jira-context-bar__section-label">Public steps</span>
     <a class="jira-context-bar__link" href="{{ "/en/work/jira/J01-16/steps/J01-17/" | relative_url }}">16-1 work status</a>
-    <a class="jira-context-bar__link" href="{{ "/en/work/jira/J01-16/steps/J01-18/" | relative_url }}">16-2 work status</a>  </span></div>
+    <a class="jira-context-bar__link" href="{{ "/en/work/jira/J01-16/steps/J01-18/" | relative_url }}">16-2 work status</a>
+    <a class="jira-context-bar__link" href="{{ "/en/work/jira/J01-16/steps/J01-19/" | relative_url }}">16-3 work status</a>  </span></div>
 
 ## Metadata
 
@@ -41,5 +42,5 @@ No Jira Cloud links, no email addresses.
 
 - [**16-1 Locking für Rate-Limit und CAPTCHA ausrollen**]({{ "/en/mirror/issues/J01-16/steps/J01-17/" | relative_url }}) — Done
 - [**16-2 Locking für Token-Rotation ausrollen**]({{ "/en/mirror/issues/J01-16/steps/J01-18/" | relative_url }}) — Done
-- [**16-3 Race-nahe Tests ergänzen**]({{ "/en/mirror/issues/J01-16/steps/J01-19/" | relative_url }}) — To Do
+- [**16-3 Race-nahe Tests ergänzen**]({{ "/en/mirror/issues/J01-16/steps/J01-19/" | relative_url }}) — Done
 - [**16-4 Betriebsnotiz aktualisieren**]({{ "/en/mirror/issues/J01-16/steps/J01-20/" | relative_url }}) — To Do
