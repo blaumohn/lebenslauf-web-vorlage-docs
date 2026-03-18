@@ -1,15 +1,16 @@
 ---
 layout: page
-title: "J01-84: GitHub-Pages-Regel für öffentliche Schrittseiten"
-permalink: /en/work/jira/J01-84/
+title: "J01-104: GitHub Pages: Link-Regel für öffentliche Schrittseiten"
+permalink: /en/work/jira/J01-104/
 ---
 
 **Stand:** 2026-03-18
 
-Kanonischer öffentlicher Arbeitsstand für die GitHub-Pages-Seite dieses
-Themas unter dem bestehenden Jira-Rahmen `J01-84`.
-Dieser Arbeitsstand zieht nur die Public-Doku-Regel für öffentliche
-Schrittseiten nach und ändert Jira Cloud selbst bewusst nicht.
+Kanonischer öffentlicher Arbeitsstand für den Jira-Task `J01-104` unter dem
+Epic `J01-84`.
+Dieser Arbeitsstand zieht die GitHub-Pages-Regel für öffentliche
+Schrittseiten nach; Jira Cloud dient hier nur als Vorgangsrahmen und nicht
+als fachlicher Ablageort der Regel.
 
 ## Ziel
 
@@ -27,8 +28,8 @@ Schrittseiten nach und ändert Jira Cloud selbst bewusst nicht.
   jetzt der neuen Link-Regel im Einleitungssatz und im Link-Abschnitt.
 - Die Link-Regel ist in Richtlinie, Vorlage, Runbook und öffentlicher
   Jira-Übersicht kanonisch beschrieben.
-- Dieser Arbeitsstand blieb bewusst auf GitHub Pages beschränkt;
-  Jira-Cloud-Inhalte wurden nicht geändert.
+- Für diese Arbeit existiert jetzt ein echter Jira-Task; die Fachregel selbst
+  bleibt trotzdem nur in GitHub Pages dokumentiert.
 
 ## Überprüfungsplan
 
@@ -43,10 +44,9 @@ Schrittseiten nach und ändert Jira Cloud selbst bewusst nicht.
 
 - Der GitHub-Pages-Nachzug für öffentliche Schrittseiten ist in diesem
   Arbeitsstand erledigt.
-- Diese Seite dokumentiert bewusst nur den docs-only Nachzug unter `J01-84`.
-- Wenn später auch Jira-Struktur oder Epic-/Task-Zuschnitt geändert werden
-  sollen, braucht das einen eigenen Jira-Arbeitsschritt außerhalb dieses
-  abgeschlossenen Doku-Laufs.
+- Diese Seite dokumentiert den abgeschlossenen Docs-Nachzug unter `J01-104`.
+- Der Jira-Bezug ist damit wieder korrekt: eigener Task unter Epic `J01-84`,
+  aber keine fachliche Regelpflege in Jira Cloud.
 
 ## Links
 

@@ -81,6 +81,7 @@ Statische Jira-Übersicht (ohne Jira-Cloud-Links).
 
 ### [J01-84 — Atlassian-System vorbereiten (SSOT: Jira)]({{ "/de/mirror/issues/J01-84/" | relative_url }})
 
+- [J01-104 — GitHub Pages: Link-Regel für öffentliche Schrittseiten]({{ "/de/mirror/issues/J01-104/" | relative_url }})
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/de/mirror/issues/J01-85/" | relative_url }})
   - [**85-1 Refactor: Coding-Standards durchgehend umsetzen**]({{ "/de/mirror/issues/J01-85/steps/J01-81/" | relative_url }}) — Zu erledigen
   - [**85-2 API-Betriebe (Wrapper), http als Escape-Hatch**]({{ "/de/mirror/issues/J01-85/steps/J01-82/" | relative_url }}) — Zu erledigen
