@@ -6,7 +6,9 @@ permalink: /de/work/jira/J01-16/steps/J01-17/
 
 **Stand:** 2026-03-18
 
-Schrittspezifischer öffentlicher Arbeitsstand für `16-1` unter `J01-16`.
+Schrittspezifischer öffentlicher Arbeitsstand für
+[16-1]({{ "/de/mirror/issues/J01-16/steps/J01-17/" | relative_url }}) unter
+[J01-16]({{ "/de/work/jira/J01-16/" | relative_url }}).
 Diese Seite bündelt nur den Zuschnitt für Rate-Limit- und CAPTCHA-Locking und
 trennt ihn bewusst von den weiteren offenen Schritten `16-2` bis `16-4`.
 
@@ -70,8 +72,33 @@ nachvollziehbar ist:
 - welche Pfade nur atomisch schreiben, aber keinen Write-Lock brauchen
 - welche race-nahen Tests diese Zuschnitte später in `16-3` absichern
 
+## Ausführung
+
+Umgesetzt in zwei Commits auf `feature/j01-17` (Upstream: `feature/j01-9-preview`).
+
+**Commit 1 — Ordnerverschiebung:**
+`RuntimeLockRunner` und `RuntimeAtomicWriter` von `Http\Security` nach `Http\Runtime`
+verschoben; Namespace angepasst; alle Import-Stellen nachgezogen
+(ISS-012, Punkt 4). 26/26 Tests grün.
+
+**Commit 2 — Locking ausrollen:**
+
+| Zieloperation | Lock-Key | Write-Verhalten |
+| --- | --- | --- |
+| `RateLimiter.allow(key, ...)` | `ratelimit_{safeKey}` pro Key | atomar unter Lock |
+| `CaptchaService.verify(captchaId, ...)` | `captcha_{captchaId}` pro ID | `fail_count` oder `used_at` atomar unter Lock |
+| `CaptchaService.createChallenge(ipHash)` | kein Lock | neue Challenge-Datei atomar |
+| `CaptchaService.cleanupExpired()` | kein Lock | löscht nur abgelaufene / verbrauchte Dateien |
+
+`AppContext` teilt eine gemeinsame `lockRunner`- und `writer`-Instanz
+für alle drei Dienste. 26/26 Tests grün.
+
+Offene Folgeschritte: `16-2` (Token-Rotation), `16-3` (Race-Tests),
+`16-4` (Betriebsnotiz).
+
 ## Links
 
+- [16-1 im Jira-Mirror]({{ "/de/mirror/issues/J01-16/steps/J01-17/" | relative_url }})
 - [J01-16: Runtime-Concurrency, Locking und atomare Zugriffe]({{
   "/de/work/jira/J01-16/" | relative_url }})
 - [J01-21: Runtime-IP_SALT-Verwaltung und Guardrails]({{

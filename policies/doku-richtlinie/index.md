@@ -49,6 +49,9 @@ permalink: /de/policies/doku-richtlinie/
    - Ja: nach `work/jira/J01-<KEY>/`.
    - Typische Inhalte:
      Scope, offene Entscheidungen, Nachweise, Mapping, Zwischenstände.
+   - Für öffentliche Subtask-Details bleibt der Dokutyp derselbe, aber mit
+     Schritt-Variante:
+     `work/jira/<PARENT>/steps/<SUBTASK_KEY>/`.
 
 7) Ist der Inhalt sprint-genau und öffentlich als Sprint-Artefakt gedacht?
    - Ja: nach `work/sprints/<sprint-slug>/`.
@@ -146,11 +149,22 @@ F) **`work/jira/` ist vorgang-genau**
   zu genau einem Jira-Vorgang.
 - Jede Seite unter `work/jira/J01-<KEY>/` nutzt dieselbe Grundstruktur:
   Ziel, aktueller Stand oder Abschlussbild, Überprüfungsplan, Links.
+- Öffentliche Schrittseiten unter
+  `work/jira/<PARENT>/steps/<SUBTASK_KEY>/` sind eine Variante derselben
+  Jira-Arbeitsdoku für Subtasks mit eigener öffentlicher Detailaussage.
 - Der Abschnitt `## Überprüfungsplan` ist Pflicht.
 - Der Überprüfungsplan enthält mindestens die Tabellenspalten:
   `Prüfpunkt`, `Erwartung`, `Nachweis / Ort`, `Status`.
 - Die Tabelle dient als knapper Review- und Abschlussplan in
   `In Überprüfung`; sie ersetzt keine breite `quality/testmatrix/`.
+- Für Schrittseiten gilt zusätzlich:
+  - die Schrittkennung im Einleitungssatz linkt auf die eigene
+    Mirror-Schrittseite, wenn diese existiert
+  - der Eltern-Key im Einleitungssatz linkt auf die Eltern-Arbeitsdoku
+  - wenn für eine bestehende Unteraufgabe neu eine öffentliche Schrittseite
+    entsteht, werden vorhandene Nennungen in der Public-Doku auf passende
+    Links nachgezogen, soweit diese Schrittseite oder ihren Elternvorgang
+    betreffen
 
 G) **Drift-Reports sind nur für belegte Abweichungen**
 - `quality/drift-reports/` dokumentiert Claim/Quelle/Status/Fix.
@@ -223,6 +237,8 @@ P) **Kanonische URI-Muster sind Teil des Dokutyps**
 - `Drift-Report`: `quality/drift-reports/J01-<KEY>/`
 - `Sprint-Dossier`: `work/sprints/<sprint-slug>/`
 - `Jira-Arbeitsdoku`: `work/jira/J01-<KEY>/`
+- `Jira-Arbeitsdoku` (Schritt-Variante):
+  `work/jira/<PARENT>/steps/<SUBTASK_KEY>/`
 - `Postmortem`: `quality/postmortems/<slug>/`
 
 Q) **Kein eigener Glossar- oder Abnahmecheck-Typ ohne belegten Bedarf**

@@ -10,12 +10,21 @@ No Jira Cloud links, no email addresses.
 
 - **Parent:** [J01-16]({{ "/en/mirror/issues/J01-16/" | relative_url }})
 - **Step:** 16-1
-- **Status:** To Do
-- **Updated:** 2026-03-18T12:38:32.427+0100
+- **Status:** Done
+- **Updated:** 2026-03-18
 
-## Details
+## Execution record
 
--
+| Target operation | Lock key | Write behaviour |
+| --- | --- | --- |
+| `RateLimiter.allow(key, ...)` | `ratelimit_{safeKey}` per key | atomic under lock |
+| `CaptchaService.verify(captchaId, ...)` | `captcha_{captchaId}` per ID | `fail_count` or `used_at` atomic under lock |
+| `CaptchaService.createChallenge(ipHash)` | no lock | new challenge file written atomically |
+| `CaptchaService.cleanupExpired()` | no lock | deletes expired / used files only |
+
+`RuntimeLockRunner` and `RuntimeAtomicWriter` were moved to a shared,
+domain-neutral directory `Http\Runtime` (ISS-012, point 4).
+`AppContext` shares a single `lockRunner` and `writer` instance across all three services.
 
 ## Links
 

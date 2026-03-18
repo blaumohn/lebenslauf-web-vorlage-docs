@@ -83,6 +83,12 @@ The URL conversion from Jira follows these rules:
      `work/jira/J01-<KEY>/`, a canonical Jira remote link to that doc, the
      subtask's own evidence, its own closure statement, or other canonical
      target pages.
+   - Wenn statt `work/jira/J01-<KEY>/` eine öffentliche Schrittseite unter
+     `work/jira/<PARENT>/steps/<SUBTASK_KEY>/` genutzt wird, gilt dieselbe
+     Erwartung für kanonische Verlinkung und Mirror-Nachzug.
+   - Bei neuen Schrittseiten für bereits bestehende Unteraufgaben werden
+     vorhandene Public-Nennungen nachgezogen, soweit sie diese Schrittseite
+     oder ihren Elternvorgang direkt betreffen.
 
 5) Hygiene:
   - No `atlassian.net` links in the output

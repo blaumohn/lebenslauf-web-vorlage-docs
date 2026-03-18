@@ -49,6 +49,9 @@ permalink: /en/policies/doku-richtlinie/
    - Ja: nach `work/jira/J01-<KEY>/`.
    - Typische Inhalte:
      Scope, offene Entscheidungen, Nachweise, Mapping, Zwischenstände.
+   - Für öffentliche Subtask-Details bleibt der Dokutyp derselbe, aber mit
+     Schritt-Variante:
+     `work/jira/<PARENT>/steps/<SUBTASK_KEY>/`.
 
 7) Ist der Inhalt sprint-genau und öffentlich als Sprint-Artefakt gedacht?
    - Ja: nach `work/sprints/<sprint-slug>/`.
@@ -146,11 +149,22 @@ F) **`work/jira/` ist vorgang-genau**
   zu genau einem Jira-Vorgang.
 - Every page under `work/jira/J01-<KEY>/` uses the same base structure:
   goal, current state or closure picture, verification plan, links.
+- Öffentliche Schrittseiten unter
+  `work/jira/<PARENT>/steps/<SUBTASK_KEY>/` sind eine Variante derselben
+  Jira-Arbeitsdoku für Subtasks mit eigener öffentlicher Detailaussage.
 - The section `## Verification plan` is mandatory.
 - The verification plan contains at least the columns:
   `Check`, `Expectation`, `Evidence / Location`, `Status`.
 - The table is the compact review and closure aid for
   `In Überprüfung`; it does not replace a broader `quality/testmatrix/`.
+- Für Schrittseiten gilt zusätzlich:
+  - die Schrittkennung im Einleitungssatz linkt auf die eigene
+    Mirror-Schrittseite, wenn diese existiert
+  - der Eltern-Key im Einleitungssatz linkt auf die Eltern-Arbeitsdoku
+  - wenn für eine bestehende Unteraufgabe neu eine öffentliche Schrittseite
+    entsteht, werden vorhandene Nennungen in der Public-Doku auf passende
+    Links nachgezogen, soweit diese Schrittseite oder ihren Elternvorgang
+    betreffen
 
 G) **Drift-Reports sind nur für belegte Abweichungen**
 - `quality/drift-reports/` dokumentiert Claim/Quelle/Status/Fix.
@@ -213,6 +227,8 @@ P) **Canonical URI patterns are part of the doc type**
 - `Drift-Report`: `quality/drift-reports/J01-<KEY>/`
 - `Sprint-Dossier`: `work/sprints/<sprint-slug>/`
 - `Jira work doc`: `work/jira/J01-<KEY>/`
+- `Jira work doc` (Schritt-Variante):
+  `work/jira/<PARENT>/steps/<SUBTASK_KEY>/`
 - `Postmortem`: `quality/postmortems/<slug>/`
 
 Q) **No dedicated glossary or acceptance-check type without proven need**

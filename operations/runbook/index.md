@@ -90,6 +90,12 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
      `work/jira/J01-<KEY>/`, ein kanonischer Jira-Remote-Link auf diese Doku,
      eigene Nachweise, eigene Abschlussaussagen oder andere eigene
      kanonische Zielseiten.
+   - Wenn statt `work/jira/J01-<KEY>/` eine öffentliche Schrittseite unter
+     `work/jira/<PARENT>/steps/<SUBTASK_KEY>/` genutzt wird, gilt dieselbe
+     Erwartung für kanonische Verlinkung und Mirror-Nachzug.
+   - Bei neuen Schrittseiten für bereits bestehende Unteraufgaben werden
+     vorhandene Public-Nennungen nachgezogen, soweit sie diese Schrittseite
+     oder ihren Elternvorgang direkt betreffen.
 
 5) Hygiene (Policy):
   - Keine `atlassian.net` Links im Output.

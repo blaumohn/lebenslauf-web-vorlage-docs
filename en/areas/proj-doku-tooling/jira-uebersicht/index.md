@@ -29,8 +29,14 @@ Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als statische Jira-Übe
     links beyond the base record and metadata.
   - A dedicated `work/jira/J01-<KEY>/` page or a canonical Jira remote link
     to that page counts as an additional detail.
+  - Eine öffentliche Schrittseite unter
+    `work/jira/<PARENT>/steps/<SUBTASK_KEY>/` zählt ebenfalls als eigene
+    öffentliche Detailaussage.
   - Hinweis: Die Schritt-Seiten sind stabil per Subtask-Key adressiert
     (`/mirror/issues/<PARENT>/steps/<SUBTASK_KEY>/`); nur die Anzeige/Linktexte bleiben key-frei.
+  - Wenn eine solche Schrittseite existiert, linkt ihre Schrittkennung in der
+    Einleitung auf die eigene Mirror-Schrittseite und der Eltern-Key auf die
+    Eltern-Arbeitsdoku.
 
 ## Aktualisieren
 
