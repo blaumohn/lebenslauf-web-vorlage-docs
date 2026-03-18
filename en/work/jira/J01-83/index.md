@@ -6,6 +6,11 @@ permalink: /en/work/jira/J01-83/
 
 **Stand:** 2026-03-17
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Context</span>
+  <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-83/" | relative_url }}">J01-83 in the Jira mirror</a>
+</div>
+
 Canonical public work status for `J01-83`.
 This issue narrows the earlier, broader CLI-cache step down to a small, easily
 replaceable first cache iteration and explicitly separates the policy

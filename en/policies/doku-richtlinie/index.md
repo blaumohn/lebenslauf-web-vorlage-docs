@@ -157,6 +157,10 @@ F) **`work/jira/` ist vorgang-genau**
   `Check`, `Expectation`, `Evidence / Location`, `Status`.
 - The table is the compact review and closure aid for
   `In Überprüfung`; it does not replace a broader `quality/testmatrix/`.
+- Normal Jira work docs additionally use:
+  - a compact context bar directly below `Stand`
+  - the issue key in that bar links to the page's own mirror issue page,
+    if that page exists
 - Für Schrittseiten gilt zusätzlich:
   - die Schrittkennung im Einleitungssatz linkt auf die eigene
     Mirror-Schrittseite, wenn diese existiert

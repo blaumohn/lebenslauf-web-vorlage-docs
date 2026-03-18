@@ -9,6 +9,13 @@ J01-<KEY>: <Title>
 
 Stand: YYYY-MM-DD
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Context</span>
+  <a class="jira-context-bar__link" href="<Mirror issue page>">
+    J01-<KEY> in the Jira mirror
+  </a>
+</div>
+
 Short context
 - Canonical public work status for `J01-<KEY>`.
 - 1-2 sentences: what is this issue about, and why is it publicly relevant here?

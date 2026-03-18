@@ -6,6 +6,11 @@ permalink: /de/work/jira/J01-93/
 
 **Stand:** 2026-03-14
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-93/" | relative_url }}">J01-93 im Jira-Mirror</a>
+</div>
+
 Kanonischer öffentlicher Arbeitsstand für `J01-93`.
 Der Vorgang führt die öffentliche Doku und den Jira-Spiegel als neutrale,
 zweisprachige GitHub-Pages-Seite ein.

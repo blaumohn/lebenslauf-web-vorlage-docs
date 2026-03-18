@@ -6,6 +6,11 @@ permalink: /en/work/jira/J01-95/
 
 **Stand:** 2026-03-14
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Context</span>
+  <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-95/" | relative_url }}">J01-95 in the Jira mirror</a>
+</div>
+
 Canonical public work status for `J01-95`.
 This step adds a local journal and resume path to the Jira/mirror workflow for
 known Jira and GitHub Pages changes.

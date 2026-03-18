@@ -157,6 +157,10 @@ F) **`work/jira/` ist vorgang-genau**
   `Prüfpunkt`, `Erwartung`, `Nachweis / Ort`, `Status`.
 - Die Tabelle dient als knapper Review- und Abschlussplan in
   `In Überprüfung`; sie ersetzt keine breite `quality/testmatrix/`.
+- Für normale Jira-Arbeitsdokus gilt zusätzlich:
+  - direkt unter `Stand` steht eine kompakte Kontextleiste
+  - der eigene Vorgangs-Key in dieser Leiste linkt auf die eigene
+    Mirror-Issue-Seite, wenn diese existiert
 - Für Schrittseiten gilt zusätzlich:
   - die Schrittkennung im Einleitungssatz linkt auf die eigene
     Mirror-Schrittseite, wenn diese existiert

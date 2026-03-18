@@ -6,6 +6,11 @@ permalink: /de/work/jira/J01-103/
 
 **Stand:** 2026-03-18
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-103/" | relative_url }}">J01-103 im Jira-Mirror</a>
+</div>
+
 Kanonischer öffentlicher Arbeitsstand für `J01-103`.
 Der Vorgang zieht die offen gebliebene Zielerfüllung aus `J01-91` nach, ohne
 den bereits geschlossenen Strukturteil von `J01-91` rückwirkend umzudefinieren.

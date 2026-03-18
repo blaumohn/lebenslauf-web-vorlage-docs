@@ -6,6 +6,11 @@ permalink: /en/work/jira/J01-97/
 
 **Stand:** 2026-03-16
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Context</span>
+  <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-97/" | relative_url }}">J01-97 in the Jira mirror</a>
+</div>
+
 Canonical public work status for `J01-97`.
 This step extends the new Jira/docs tooling feature matrix with missing
 operations, especially from `atlassian-tools` and CLI/build-adjacent areas.

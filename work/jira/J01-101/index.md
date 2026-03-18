@@ -6,6 +6,11 @@ permalink: /de/work/jira/J01-101/
 
 **Stand:** 2026-03-17
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-101/" | relative_url }}">J01-101 im Jira-Mirror</a>
+</div>
+
 Kanonischer öffentlicher Arbeitsstand für `J01-101`.
 Der Vorgang trägt die vom Cache getrennte Policy-Folgearbeit für den
 CLI-Cache-Strang im Bereich `atlassian-tools/curl`.

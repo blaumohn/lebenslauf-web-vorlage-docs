@@ -119,3 +119,35 @@
   margin-top: 0.35rem;
   color: #555;
 }
+
+.jira-context-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0.8rem 0 1rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fbfbfb, #f3f3f3);
+}
+
+.jira-context-bar__label {
+  font-weight: 600;
+  color: #444;
+}
+
+.jira-context-bar__link {
+  display: inline-block;
+  padding: 0.18rem 0.6rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 999px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+}
+
+.jira-context-bar__link:hover,
+.jira-context-bar__link:focus {
+  text-decoration: underline;
+}

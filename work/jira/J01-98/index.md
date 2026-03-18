@@ -6,6 +6,11 @@ permalink: /de/work/jira/J01-98/
 
 **Stand:** 2026-03-17
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-98/" | relative_url }}">J01-98 im Jira-Mirror</a>
+</div>
+
 Kanonischer öffentlicher Arbeitsstand für `J01-98`.
 Der Vorgang begrenzt die Phase-2-Arbeit aus `J01-91` auf die
 `docs/agile`-Migration, die für `SCRUM Sprint 1` und das

@@ -29,6 +29,8 @@ Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als statische Jira-Übe
     links beyond the base record and metadata.
   - A dedicated `work/jira/J01-<KEY>/` page or a canonical Jira remote link
     to that page counts as an additional detail.
+  - Normal Jira work docs show a compact context bar at the top, where the
+    issue key links directly to the page's own mirror issue page.
   - Eine öffentliche Schrittseite unter
     `work/jira/<PARENT>/steps/<SUBTASK_KEY>/` zählt ebenfalls als eigene
     öffentliche Detailaussage.

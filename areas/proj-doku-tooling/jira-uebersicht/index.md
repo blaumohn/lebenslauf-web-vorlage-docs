@@ -31,6 +31,8 @@ Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als statische Jira-Übe
     Verweise des Subtasks über Grundbestand und Metadaten hinaus.
   - Eine eigene `work/jira/J01-<KEY>/`-Seite oder ein kanonischer
     Jira-Remote-Link darauf zählt als zusätzliche Angabe.
+  - Normale Jira-Arbeitsdokus zeigen oben eine kompakte Kontextleiste, in der
+    der eigene Vorgangs-Key direkt auf die eigene Mirror-Seite zeigt.
   - Eine öffentliche Schrittseite unter
     `work/jira/<PARENT>/steps/<SUBTASK_KEY>/` zählt ebenfalls als eigene
     öffentliche Detailaussage.

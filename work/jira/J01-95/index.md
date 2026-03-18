@@ -6,6 +6,11 @@ permalink: /de/work/jira/J01-95/
 
 **Stand:** 2026-03-14
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-95/" | relative_url }}">J01-95 im Jira-Mirror</a>
+</div>
+
 Kanonischer öffentlicher Arbeitsstand für `J01-95`.
 Der Schritt ergänzt den Jira-/Mirror-Betrieb um einen lokalen Journal- und
 Resume-Pfad für bekannte Jira- und GitHub-Pages-Änderungen.

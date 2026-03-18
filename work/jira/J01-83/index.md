@@ -6,6 +6,11 @@ permalink: /de/work/jira/J01-83/
 
 **Stand:** 2026-03-17
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-83/" | relative_url }}">J01-83 im Jira-Mirror</a>
+</div>
+
 Kanonischer öffentlicher Arbeitsstand für `J01-83`.
 Der Vorgang schneidet den früher breiter formulierten CLI-Cache-Schritt auf
 eine kleine, schnell ersetzbare erste Cache-Iteration zu und trennt die

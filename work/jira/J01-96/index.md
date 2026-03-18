@@ -6,6 +6,11 @@ permalink: /de/work/jira/J01-96/
 
 **Stand:** 2026-03-16
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-96/" | relative_url }}">J01-96 im Jira-Mirror</a>
+</div>
+
 Kanonischer öffentlicher Arbeitsstand für `J01-96`.
 Der Vorgang führt im Repo `tagebuch` ein kleines Quellenregister für Suchfälle
 ein und verankert rohe Chat-Eingaben als eigene Provenienz-Ebene für

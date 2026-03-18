@@ -6,6 +6,11 @@ permalink: /en/work/jira/J01-102/
 
 **Stand:** 2026-03-17
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Context</span>
+  <a class="jira-context-bar__link" href="{{ "/en/mirror/issues/J01-102/" | relative_url }}">J01-102 in the Jira mirror</a>
+</div>
+
 Canonical public work status for `J01-102`.
 This issue sharpens the split between public project docs, the `tagebuch`, and
 project-specific AI skills so skills can find project requirements from

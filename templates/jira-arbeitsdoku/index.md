@@ -9,6 +9,13 @@ J01-<KEY>: <Titel>
 
 Stand: YYYY-MM-DD
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <a class="jira-context-bar__link" href="<Mirror-Issue-Seite>">
+    J01-<KEY> im Jira-Mirror
+  </a>
+</div>
+
 Kurzkontext
 - Kanonischer öffentlicher Arbeitsstand für `J01-<KEY>`.
 - 1-2 Sätze: Worum geht es, warum ist der Vorgang hier öffentlich relevant?

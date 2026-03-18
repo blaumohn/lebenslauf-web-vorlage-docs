@@ -6,6 +6,11 @@ permalink: /de/work/jira/J01-100/
 
 **Stand:** 2026-03-17
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-100/" | relative_url }}">J01-100 im Jira-Mirror</a>
+</div>
+
 Kanonischer öffentlicher Arbeitsstand für `J01-100`.
 Der Vorgang hält die nicht sprintrelevanten `docs/agile`-Migrationen aus
 `J01-91` bewusst im Backlog und grenzt sie gegen den aktuellen

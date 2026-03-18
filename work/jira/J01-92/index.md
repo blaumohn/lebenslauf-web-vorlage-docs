@@ -6,6 +6,11 @@ permalink: /de/work/jira/J01-92/
 
 **Stand:** 2026-03-16
 
+<div class="jira-context-bar">
+  <span class="jira-context-bar__label">Kontext</span>
+  <a class="jira-context-bar__link" href="{{ "/de/mirror/issues/J01-92/" | relative_url }}">J01-92 im Jira-Mirror</a>
+</div>
+
 Diese Seite hält den öffentlichen Arbeitsstand zu `J01-92` fest.
 Der Vorgang bündelt die Versionierung projektbezogener KI-Skills und die
 Verankerung wiederkehrender Agent-Arbeitsweisen.
