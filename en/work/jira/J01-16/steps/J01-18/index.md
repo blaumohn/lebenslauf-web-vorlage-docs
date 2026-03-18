@@ -27,6 +27,15 @@ Only the write path is affected; read operations remain unchanged.
 The lock protects against two concurrent rotations of the same profile.
 `RuntimeAtomicWriter` protects against torn reads by parallel `verify()` calls.
 
+## Review plan
+
+| Check | Expected | Evidence / location | Status |
+| --- | --- | --- | --- |
+| `rotate()` runs under lock | Lock key `token_{profile}` per profile; concurrent rotation of the same profile is serialised | `TokenService::rotateLocked()` | Done |
+| File written atomically | `RuntimeAtomicWriter` via temp+rename; readers never see a partially written token file | `TokenService::rotateLocked()` | Done |
+| Read operations unchanged | `verify()`, `findProfileForToken()`, `readHashes()` without lock, no regression risk | `TokenService.php` | Done |
+| Tests green | 26/26 PHPUnit tests after change | `php vendor/bin/phpunit` | Done |
+
 ## Links
 
 - [16-2 in Jira mirror]({{ "/en/mirror/issues/J01-16/steps/J01-18/" | relative_url }})
