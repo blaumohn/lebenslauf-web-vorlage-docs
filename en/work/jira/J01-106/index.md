@@ -22,28 +22,36 @@ workflow.
   public Jira area.
 - `jira-pages-sync` is removed as a standalone skill and no longer creates a
   double-trigger risk.
-- Active skill and README references point only to the journaled sync path.
+- Active skill, README, and runbook references point only to the journaled
+  sync path.
+- Live operating docs distinguish clearly between filesystem paths and public
+  URI paths.
+- The docs repo and skill repo use direct `main` integration instead of a
+  generic `dev`-/`preview` path.
 
 ## Current status
 
 - Jira task created (`J01-106`).
-- Skill consolidation is in progress.
-- Public work docs in DE/EN are being added in parallel.
+- Skill consolidation implemented.
+- Public work docs in DE/EN added.
+- Live operating docs and skills aligned on path semantics and repo-class
+  Git flow.
 
 ## Verification plan
 
 | Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| Only one canonical sync skill remains | `jira-pages-sync` is removed, `jira-state-sync` covers the public Jira refresh path | Skill repo under `skills/` | open |
-| Legacy name still works as a pointer | `jira-mirror-sync` points directly to `jira-state-sync` | Skill repo under `skills/jira-mirror-sync/` | open |
-| Active references cleaned up | README and coordination skill no longer name an active `jira-pages-sync` | Skill repo | open |
-| Public work docs exist | `/de/jira/issues/J01-106/` and `/en/jira/issues/J01-106/` exist | GitHub Pages docs | open |
+| Only one canonical sync skill remains | `jira-pages-sync` is removed, `jira-state-sync` covers the public Jira refresh path | Skill repo under `skills/` | done |
+| Legacy name removed | `jira-mirror-sync` and old wrappers are no longer part of the live operating model | Skill repo | done |
+| Active references cleaned up | README, skills, and runbooks no longer name an active `jira-pages-sync` or `jira-mirror-sync` path | Skill repo + docs repo | done |
+| Path semantics are explicit | Live docs distinguish filesystem paths from public URI paths | Skill repo + docs repo | done |
+| Git flow is defined by repo class | Docs/skills use direct `main`; source repos keep their own stricter flows | Skill repo + docs repo | done |
+| Public work docs exist | `/de/jira/issues/J01-106/` and `/en/jira/issues/J01-106/` exist | GitHub Pages docs | done |
 
 ## Open points
 
-- Check whether any live references to `jira-pages-sync` remain outside
-  historical notes.
-- Merge the skill-repo edits cleanly with already open local changes.
+- Historical work docs and sprint retros that still carry older wording stay
+  intentionally unchanged.
 
 ## Links
 

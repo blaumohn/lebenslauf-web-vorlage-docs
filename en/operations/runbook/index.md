@@ -23,13 +23,33 @@ Update the public Jira area in this repo:
 - Write access in the repo
 - Public policy: no Jira Cloud links, no email addresses
 
+## Path Semantics
+
+- `work/...` and `mirror/...` are filesystem paths in this repo.
+- Public URI paths live under `/de/...` and `/en/...`.
+- A work doc can therefore live at the filesystem path
+  `work/jira/J01-106/index.md` while being published at the URI
+  `/de/jira/issues/J01-106/`.
+- The mapping is created by `permalink` and the generator/Jekyll flow, not by
+  a 1:1 folder mirror.
+
 ## Steps
 
 1) Update issues and statuses in Jira (SSOT for issue state).
    - For sprint work, also verify the active sprint, set sprint labels, and
      update the public sprint docs.
+   - Keep only one canonical Jira remote link per public work doc; DE/EN
+     language split stays a GitHub Pages concern.
 
-2) Generate the public Jira area:
+2) Normal mode for known changes:
+
+```bash
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-jira-change.sh --change J01-95:summary
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-pages-change.sh HEAD~1
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/resume-open-syncs.sh
+```
+
+3) Repair mode / full refresh:
 
 ```bash
 DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-public-jira-pages.sh
@@ -41,15 +61,7 @@ Optional (full refresh):
 DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-public-jira-pages.sh --full
 ```
 
-Optional (journaled normal mode for known changes):
-
-```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-jira-change.sh --change J01-95:summary
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-pages-change.sh HEAD~1
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/resume-open-syncs.sh
-```
-
-3) Verify GitHub Pages targets from Jira locally:
+4) Verify GitHub Pages targets from Jira locally:
 
 ```bash
 DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-public-jira-pages.sh
@@ -71,7 +83,7 @@ The URL conversion from Jira follows these rules:
 - the legacy audit reports old `atlassian.net/wiki` targets as
   `LEGACY_CONFLUENCE<TAB>KEY<TAB>LINK_ID<TAB>URL<TAB>TITLE`
 
-4) Spot check:
+5) Spot check:
    - The entry page under `jira/` points to backlog, history, and sprint
      board.
    - Backlog lists show each listed issue's status directly in the same line.
@@ -88,9 +100,9 @@ The URL conversion from Jira follows these rules:
    - Additional public details are the subtask's own domain content or
      canonical links beyond the base record and metadata.
    - This includes, in particular, a public work doc under
-     `work/jira/J01-<KEY>/`, a canonical Jira remote link to that doc, the
-     subtask's own evidence, its own closure statement, or other canonical
-     target pages.
+     the filesystem path `work/jira/J01-<KEY>/`, a canonical Jira remote link
+     to its public URI, the subtask's own evidence, its own closure
+     statement, or other canonical target pages.
    - If a public step page under `jira/issues/<PARENT>/steps/<SUBTASK_KEY>/`
      is used instead of a public issue page, the same expectation applies to
      canonical linking and carry-over.
@@ -100,7 +112,7 @@ The URL conversion from Jira follows these rules:
    - If a public issue or step page exists, verification checks it against
      Jira remote links, legacy paths, and duplicate detail URLs.
 
-5) Hygiene:
+6) Hygiene:
   - No `atlassian.net` links in the output
   - No email addresses in the output
   - Remote links are rendered as relative site links
@@ -135,3 +147,5 @@ The URL conversion from Jira follows these rules:
   reports remaining legacy Confluence remote links with Jira key and link ID.
 - `.local/jira-sync-cache/` and `.local/jira-sync-journal/` keep the local
   snapshot and resume state for the journaled normal mode.
+- This docs repo does not use a generic `dev`-/`preview` Git flow; after local
+  checks, changes are integrated directly into `main`.

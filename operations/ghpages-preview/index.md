@@ -31,21 +31,16 @@ Shell im Container (Debugging):
 docker compose run --rm ghpages-shell
 ```
 
-## Sprint-Pfad
+## Repo-Ablauf heute
 
-Für `SCRUM Sprint 1` zählt nur der schmale Promotionspfad:
+- Für das aktuelle Doku-Repo gilt kein generischer
+  `feature/*`-/`dev`-/`preview`-Pfad.
+- Änderungen werden nach lokaler Vorschau und Pflichtchecks direkt in `main`
+  integriert.
+- Der frühere Promotionspfad aus `J01-98` ist historischer Kontext, aber kein
+  aktiver Repo-Standard mehr.
 
-1. Auf `feature/*` arbeiten und den betroffenen Doku- oder Mirror-Inhalt lokal
-   fertigstellen.
-2. Den Stand nach `dev` übernehmen, sobald der Sprint-Pfad in sich stimmig ist.
-3. Nach `preview` erst dann weiterziehen, wenn die Pflichtchecks für den
-   öffentlichen Preview-Stand grün sind.
-
-`J01-98` migriert hier bewusst nur den Pfad `feature/* -> dev -> preview`.
-Allgemeine Branch-Regeln außerhalb des Preview-Sprints gehören nicht auf
-diese Seite.
-
-## Pflichtchecks vor Promotion
+## Pflichtchecks vor Integration
 
 - Sprachbäume in `de/` und `en/` gemeinsam pflegen.
 - Interne Links mit `relative_url` prüfen.
@@ -53,12 +48,13 @@ diese Seite.
   anklicken.
 - Sicherstellen, dass neue oder geänderte Jira-Arbeitsdoku in die passende
   öffentliche Seite verlinkt.
-- Erst danach den Stand in den sichtbaren Preview-Pfad übernehmen.
+- Erst danach den Stand in `main` integrieren.
 
 ## Hinweise
 
 - Der Preview-Server läuft auf `http://localhost:4000/`.
-- Vor dem Start wird der abgeleitete EN-Mirror aus dem DE-Mirror synchronisiert.
+- Vor dem Start werden die abgeleiteten EN-Seiten aus der DE-Basis
+  synchronisiert.
 - Interne Links sollen mit `relative_url` gebaut werden, damit `baseurl` korrekt greift (bei dieser Site leer).
 - Die lokale Vorschau prüft Inhalt, Navigation und Linkpfade.
   Sie ersetzt nicht die fachlichen Nachweise in der
@@ -77,5 +73,5 @@ diese Seite.
 ## Links
 
 - [J01-98: öffentlicher Arbeitsstand]({{ "/de/jira/issues/J01-98/" | relative_url }})
-- [J01-9 im Jira-Mirror]({{ "/de/jira/issues/J01-9/" | relative_url }})
+- [J01-9 in der öffentlichen Jira-Fläche]({{ "/de/jira/issues/J01-9/" | relative_url }})
 - [Testmatrix]({{ "/de/quality/testmatrix/" | relative_url }})

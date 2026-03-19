@@ -24,6 +24,16 @@ Die öffentliche Jira-Fläche in diesem Repo aktualisieren:
 - Schreibrechte im Repo
 - Regeln (öffentlich): keine Jira-Cloud-Links, keine E-Mail-Adressen
 
+## Pfadsemantik
+
+- `work/...` und `mirror/...` sind Dateisystem-Pfade in diesem Repo.
+- Öffentliche URI-Pfade laufen unter `/de/...` und `/en/...`.
+- Eine Arbeitsdoku kann also im Dateisystem unter
+  `work/jira/J01-106/index.md` liegen und gleichzeitig öffentlich unter
+  `/de/jira/issues/J01-106/` erscheinen.
+- Der Zusammenhang wird über `permalink` und die Generator-/Jekyll-Logik
+  hergestellt, nicht durch eine 1:1-Spiegelung der Ordnernamen.
+
 ## Schritte
 
 1) Änderungen an Vorgängen/Status in Jira durchführen (SSOT für Vorgänge/Status).
@@ -32,9 +42,17 @@ Die öffentliche Jira-Fläche in diesem Repo aktualisieren:
      aktualisieren.
    - Für dieselbe öffentliche Arbeitsdoku in Jira nur einen kanonischen
      Remote-Link pflegen; die DE/EN-Aufspaltung bleibt Aufgabe von GitHub
-     Pages und Mirror.
+     Pages und der öffentlichen Jira-Seiten.
 
-2) Öffentliche Jira-Fläche generieren:
+2) Normalweg bei bekannten Änderungen:
+
+```bash
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-jira-change.sh --change J01-95:summary
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-pages-change.sh HEAD~1
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/resume-open-syncs.sh
+```
+
+3) Reparaturmodus / Neu-Baselining:
 
 ```bash
 DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-public-jira-pages.sh
@@ -46,15 +64,7 @@ Optional (on demand, „neu baselinen“):
 DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-public-jira-pages.sh --full
 ```
 
-Optional (journalisierter Normalmodus bei bekannten Änderungen):
-
-```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-jira-change.sh --change J01-95:summary
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-pages-change.sh HEAD~1
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/resume-open-syncs.sh
-```
-
-3) GitHub-Pages-Ziele aus Jira lokal bestätigen:
+4) GitHub-Pages-Ziele aus Jira lokal bestätigen:
 
 ```bash
 DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/verify-public-jira-pages.sh
@@ -76,7 +86,7 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
 - der Legacy-Audit meldet alte `atlassian.net/wiki`-Ziele als
   `LEGACY_CONFLUENCE<TAB>KEY<TAB>LINK_ID<TAB>URL<TAB>TITEL`
 
-4) Stichprobe (inhaltlich):
+5) Stichprobe (inhaltlich):
    - Der Einstieg unter `jira/` verweist auf Backlog, Historie und Sprint
      Board.
    - Backlog-Listen zeigen den Status jedes gelisteten Vorgangs direkt in der
@@ -96,9 +106,9 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
      kanonische Verweise des Subtasks, die über Grundbestand und Metadaten
      hinausgehen.
    - Dazu zählen insbesondere eine eigene öffentliche Arbeitsdoku unter
-     `work/jira/J01-<KEY>/`, ein kanonischer Jira-Remote-Link auf diese Doku,
-     eigene Nachweise, eigene Abschlussaussagen oder andere eigene
-     kanonische Zielseiten.
+     dem Dateisystem-Pfad `work/jira/J01-<KEY>/`, ein kanonischer
+     Jira-Remote-Link auf deren öffentliche URI, eigene Nachweise, eigene
+     Abschlussaussagen oder andere eigene kanonische Zielseiten.
    - Wenn statt einer öffentlichen Vorgangsseite eine öffentliche Schrittseite
      unter `jira/issues/<PARENT>/steps/<SUBTASK_KEY>/` genutzt wird, gilt
      dieselbe Erwartung für kanonische Verlinkung und Nachzug.
@@ -109,7 +119,7 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
      über die Verifikation gegen Jira-Remote-Links, Altpfade und
      Doppelpunkte geprüft.
 
-5) Hygiene (Policy):
+6) Hygiene (Policy):
   - Keine `atlassian.net` Links im Output.
   - Keine E-Mail-Adressen im Output.
 - Remote Links zeigen nicht als absolute Doku-Domain, sondern als relative
@@ -147,3 +157,5 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
   meldet verbliebene alte Confluence-Remote-Links mit Jira-Key und Link-ID.
 - `.local/jira-sync-cache/` und `.local/jira-sync-journal/` halten den
   lokalen Snapshot- und Resume-Zustand für den journalisierten Normalmodus.
+- Für dieses Doku-Repo gilt kein generischer `dev`-/`preview`-Git-Ablauf;
+  Änderungen werden nach lokaler Prüfung direkt in `main` integriert.

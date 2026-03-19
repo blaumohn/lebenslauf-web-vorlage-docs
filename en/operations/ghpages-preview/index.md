@@ -31,30 +31,26 @@ Open a shell in the container (debugging):
 docker compose run --rm ghpages-shell
 ```
 
-## Sprint Path
+## Current Repo Flow
 
-For `SCRUM Sprint 1`, only the narrow promotion path matters:
+- This docs repo no longer uses a generic `feature/*`-/`dev`-/`preview` flow.
+- After local preview and required checks, changes are integrated directly
+  into `main`.
+- The earlier promotion path from `J01-98` remains historical context, not an
+  active repo standard.
 
-1. Work on `feature/*` and finish the affected docs or mirror content locally.
-2. Move the state to `dev` once the sprint path is internally coherent.
-3. Move on to `preview` only after the required checks for the public preview
-   state are green.
-
-`J01-98` deliberately migrates only the path `feature/* -> dev -> preview`.
-General branch rules outside the preview sprint do not belong on this page.
-
-## Required Checks Before Promotion
+## Required Checks Before Integration
 
 - Maintain `de/` and `en/` together.
 - Check internal links built with `relative_url`.
 - Start the local Pages preview and open the affected target pages directly.
 - Make sure new or updated Jira work docs link to the matching public page.
-- Only then move the state into the visible preview path.
+- Only then integrate the state into `main`.
 
 ## Notes
 
 - The preview server runs on `http://localhost:4000/`.
-- Before startup, the derived EN mirror is synchronized from the DE mirror.
+- Before startup, derived EN pages are synchronized from the DE base.
 - Internal links should use `relative_url` so `baseurl` is handled correctly
   (empty in this site).
 - The local preview checks content, navigation, and link paths.
@@ -75,5 +71,5 @@ General branch rules outside the preview sprint do not belong on this page.
 ## Links
 
 - [J01-98: public work status]({{ "/en/jira/issues/J01-98/" | relative_url }})
-- [J01-9 in the Jira mirror]({{ "/en/jira/issues/J01-9/" | relative_url }})
+- [J01-9 in the public Jira area]({{ "/en/jira/issues/J01-9/" | relative_url }})
 - [Test matrix]({{ "/en/quality/testmatrix/" | relative_url }})

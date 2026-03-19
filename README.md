@@ -17,15 +17,20 @@ Siehe Runbook: `operations/ghpages-preview/`.
 
 ## Betrieb (öffentliche Jira-Fläche aktualisieren)
 
-```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-public-jira-pages.sh
-```
-
-Gezielter Normalmodus für bekannte Änderungen:
+Normalweg für bekannte Änderungen:
 
 ```bash
 DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-jira-change.sh --change J01-95:summary
 ```
+
+Reparaturmodus / Neu-Baselining:
+
+```bash
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-public-jira-pages.sh
+```
+
+Für dieses Doku-Repo gilt aktuell kein generischer `dev`-/`preview`-Ablauf;
+Änderungen werden nach lokaler Prüfung direkt in `main` integriert.
 
 Kurzfassung:
 

@@ -22,30 +22,36 @@ einen kanonischen Skill-Ablauf hat.
   der öffentlichen Jira-Fläche.
 - `jira-pages-sync` entfällt als eigenständiger Skill und erzeugt kein
   Doppel-Trigger-Risiko mehr.
-- Aktive Skill- und README-Verweise zeigen nur noch auf den journalisierten
-  Sync-Weg.
+- Aktive Skill-, README- und Runbook-Verweise zeigen nur noch auf den
+  journalisierten Sync-Weg.
+- Live-Betriebsdoku unterscheidet klar zwischen Dateisystem-Pfad und
+  öffentlichem URI-Pfad.
+- Doku- und Skill-Repo folgen einem direkten `main`-Ablauf statt einem
+  generischen `dev`-/`preview`-Pfad.
 
 ## Aktueller Stand
 
 - Jira-Vorgang angelegt (`J01-106`).
-- Die Skill-Zusammenführung ist in Arbeit.
-- Öffentliche Arbeitsdoku in DE/EN wird parallel angelegt.
+- Skill-Zusammenführung umgesetzt.
+- Öffentliche Arbeitsdoku in DE/EN angelegt.
+- Live-Betriebsdoku und Skills auf Pfadsemantik und Repo-Klassen-Regel
+  nachgezogen.
 
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Nur noch ein kanonischer Sync-Skill | `jira-pages-sync` ist entfernt, `jira-state-sync` deckt den Pages-Nachzug ab | Skill-Repo unter `skills/` | offen |
-| Altname bleibt als Verweis nutzbar | `jira-mirror-sync` verweist direkt auf `jira-state-sync` | Skill-Repo unter `skills/jira-mirror-sync/` | offen |
-| Aktive Verweise bereinigt | README und Koordinations-Skill nennen keinen aktiven `jira-pages-sync` mehr | Skill-Repo | offen |
-| Öffentliche Arbeitsdoku vorhanden | `/de/jira/issues/J01-106/` und `/en/jira/issues/J01-106/` sind vorhanden | GitHub-Pages-Doku | offen |
+| Nur noch ein kanonischer Sync-Skill | `jira-pages-sync` ist entfernt, `jira-state-sync` deckt den Pages-Nachzug ab | Skill-Repo unter `skills/` | erledigt |
+| Altname entfernt | `jira-mirror-sync` und alte Wrapper sind nicht mehr Teil des Live-Betriebs | Skill-Repo | erledigt |
+| Aktive Verweise bereinigt | README, Skills und Runbooks nennen keinen aktiven `jira-pages-sync`- oder `jira-mirror-sync`-Weg mehr | Skill-Repo + Doku-Repo | erledigt |
+| Pfadsemantik ist klar | Live-Doku unterscheidet Dateisystem-Pfad und öffentlichen URI-Pfad explizit | Skill-Repo + Doku-Repo | erledigt |
+| Git-Regel nach Repo-Klasse dokumentiert | Docs-/Skill-Repos nutzen direkten `main`-Ablauf; Quell-Repos behalten eigene Flüsse | Skill-Repo + Doku-Repo | erledigt |
+| Öffentliche Arbeitsdoku vorhanden | `/de/jira/issues/J01-106/` und `/en/jira/issues/J01-106/` sind vorhanden | GitHub-Pages-Doku | erledigt |
 
 ## Offene Punkte
 
-- Prüfen, ob außerhalb historischer Notizen noch weitere Live-Verweise auf
-  `jira-pages-sync` bestehen.
-- Skill-Repo-Änderungen gegen bereits offene lokale Änderungen sauber
-  einmischen.
+- Historische Arbeitsdokus und Sprint-Retros mit alten Begriffen bleiben als
+  Historie bewusst unbereinigt.
 
 ## Links
 
