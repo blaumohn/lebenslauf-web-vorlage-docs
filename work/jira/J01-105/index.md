@@ -45,6 +45,26 @@ Phasengrenzen eindeutig und prüfbar sind.
 | Tests grün | Parameter-Vektor-Ansatz P_0 → P_n liefert echte Ergebnisse | Test-Lauf | offen |
 | Kein Blocker mehr für J01-9 | J01-105 als erledigt, J01-9 entsperrt | Jira | offen |
 
+## Lib-Repo-Änderungen und lokales Testen
+
+Die Anpassungen an der pipeline-spec-lib erfolgen im Lib-Repo
+(`pipeline-config-spec-php`).
+Um die lokale Lib-Fassung zusammen mit dem Hauptrepo zu testen, wird das
+Skript
+
+```
+lebenslauf-web-vorlage/.local/bin/set-config-spec-repo
+```
+
+verwendet. Es liest und schreibt eine JSON-Datei, über die der Hauptrepo auf
+die lokale Lib-Version zeigt statt auf die installierte Composer-Version.
+
+| Schritt | Befehl / Ort |
+| --- | --- |
+| Lokale Lib eintragen | `.local/bin/set-config-spec-repo` mit lokalem Pfad |
+| Testen | Tests im Hauptrepo laufen gegen lokale Lib |
+| Rücksetzen | `.local/bin/set-config-spec-repo` ohne Argument oder auf Published-Version |
+
 ## Offene Punkte
 
 - ISS-003: Code-Defaults entfernen (Voraussetzung).
