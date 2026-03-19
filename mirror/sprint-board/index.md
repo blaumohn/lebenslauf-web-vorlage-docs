@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Jira: Sprint"
+title: "Jira: Sprint Board"
 permalink: /de/jira/sprint/
 ---
 
-Sprint-Sicht der öffentlichen Jira-Fläche (ohne Jira-Cloud-Links).
+Sprint-Board der öffentlichen Jira-Fläche (ohne Jira-Cloud-Links).
 
 | Kategorie | Zu erledigen | In Bearbeitung | In Überprüfung | Erledigt |
 |---|---|---|---|---|

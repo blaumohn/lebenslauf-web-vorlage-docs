@@ -9,9 +9,9 @@ permalink: /de/operations/runbook/
 Die öffentliche Jira-Fläche in diesem Repo aktualisieren:
 
 - DE: `/de/jira/`, `/de/jira/sprint/`, `/de/jira/backlog/`,
-  `/de/jira/erledigt/`, `/de/jira/issues/J01-*/`
+  `/de/jira/historie/`, `/de/jira/erledigt/`, `/de/jira/issues/J01-*/`
 - EN: `/en/jira/`, `/en/jira/sprint/`, `/en/jira/backlog/`,
-  `/en/jira/erledigt/`, `/en/jira/issues/J01-*/`
+  `/en/jira/history/`, `/en/jira/erledigt/`, `/en/jira/issues/J01-*/`
 - Schritt-Seiten nur bei Subtasks mit Angaben:
   `/de/jira/issues/<PARENT>/steps/<SUBTASK_KEY>/` und
   `/en/jira/issues/<PARENT>/steps/<SUBTASK_KEY>/`
@@ -77,6 +77,13 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
   `LEGACY_CONFLUENCE<TAB>KEY<TAB>LINK_ID<TAB>URL<TAB>TITEL`
 
 4) Stichprobe (inhaltlich):
+   - Der Einstieg unter `jira/` verweist auf Backlog, Historie und Sprint
+     Board.
+   - Backlog-Listen zeigen den Status jedes gelisteten Vorgangs direkt in der
+     Zeile.
+   - Die Historie bündelt Sprint-Historie und global sichtbare erledigte
+     Top-Level-Vorgänge.
+   - `erledigt/` dient nur noch als Kompatibilitätspfad zur Historie.
    - Vorgangs- und Schrittseiten unter `jira/` zeigen kurze, sichtbare
      Querpfade zu Übersichten, Parent und öffentlichen Schritten.
    - Subtasks ohne Angaben haben **keine** eigene Seite (nur Schritt-Nr/Titel/Zustand beim Parent).
@@ -114,6 +121,7 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
     (`sprint-goal`, `sprint-support`, `sprint-admin`, `sprint-unplanned`).
   - Im Sprint-Board erscheinen nur dieselben Top-Level-Vorgänge wie im
     Jira-Board; Schritte bleiben auf Parent-/Step-Seiten sichtbar.
+  - Backlog und Historie zeigen Status je Vorgangszeile sichtbar an.
   - Nach dem DE-Render wird der EN-Jira-Baum als abgeleitete Kopie synchronisiert.
 
 ## Rollback
@@ -123,8 +131,12 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
 
 ## Monitoring
 
-- Sprint-Board/Backlog/Erledigt stimmen mit Jira-Statuskategorien überein.
+- Sprint Board, Backlog und Historie stimmen mit Jira-Statuskategorien und
+  Pfadzielen überein.
 - Das Sprint-Board zeigt die Sprint-Kategorien in eigener Zeilenstruktur.
+- Backlog-Listen zeigen pro gelistetem Vorgang den Status direkt in der Zeile.
+- `erledigt/` verweist nur auf die Historie und führt keine eigene Vollsicht
+  mehr.
 - Issue-/Step-Seiten enthalten je Vorgang `**Aktualisiert:** …` (Jira-Quelle).
 - `git` ist die verlässliche Historie: Diffs entstehen nur bei Inhaltsänderung.
 - `shared-tooling/jira-pages/verify-public-jira-pages.sh` bestätigt die aus

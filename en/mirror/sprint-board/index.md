@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Jira: Sprint"
+title: "Jira: Sprint Board"
 permalink: /en/jira/sprint/
 ---
 
-Sprint view of the public Jira area (without Jira Cloud links).
+Sprint board of the public Jira area (without Jira Cloud links).
 
 | Kategorie | To Do | In Progress | In Review | Done |
 |---|---|---|---|---|

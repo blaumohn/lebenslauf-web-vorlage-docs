@@ -7,7 +7,7 @@ de:
     url: /de/decisions/
   - title: Betrieb
     url: /de/operations/
-  - title: Sprints
+  - title: Sprint-Historie
     url: /de/work/sprints/
   - title: Jira
     url: /de/jira/
@@ -26,7 +26,7 @@ en:
     url: /en/decisions/
   - title: Operations
     url: /en/operations/
-  - title: Sprints
+  - title: Sprint History
     url: /en/work/sprints/
   - title: Jira
     url: /en/jira/

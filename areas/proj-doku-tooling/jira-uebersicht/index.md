@@ -10,15 +10,18 @@ Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als öffentliche
 Jira-Fläche über GitHub Pages veröffentlicht:
 
 - [Jira]({{ "/de/jira/" | relative_url }})
-- [Sprint]({{ "/de/jira/sprint/" | relative_url }})
+- [Sprint Board]({{ "/de/jira/sprint/" | relative_url }})
 - [Backlog]({{ "/de/jira/backlog/" | relative_url }})
-- [Erledigt]({{ "/de/jira/erledigt/" | relative_url }})
+- [Historie]({{ "/de/jira/historie/" | relative_url }})
 - [Sprint-Historie]({{ "/de/work/sprints/" | relative_url }})
 
 ## Regeln (öffentlich)
 
 - Keine Jira-Cloud-Links.
 - Keine E-Mail-Adressen.
+- Der Einstieg unter `jira/` trennt Backlog, Historie und Sprint Board.
+- Backlog-Listen zeigen den Status jedes gelisteten Vorgangs direkt in der
+  Zeile.
 - Die Sprint-Sicht gruppiert aktuelle Sprint-Arbeit nach Sprint-Kategorie und
   Status.
 - In der Sprint-Sicht erscheinen nur dieselben Top-Level-Vorgänge wie im

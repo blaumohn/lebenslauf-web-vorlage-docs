@@ -19,7 +19,7 @@ Direktes Veröffentlichen des Jira-Boards oder Jira-Projekts hat daher nicht fun
 Wir veröffentlichen eine statische **Jira-Übersicht** als GitHub Pages in diesem Repo:
 
 - Sprint-Board als Tabelle
-- Backlog/Erledigt als Listen
+- Backlog und Historie als Listen
 - Zusätzlich Detailseiten pro Vorgang
 
 Die Jira-Übersicht wird manuell aktualisiert (nach Jira-Änderungen); später optional periodisch oder per Webhook.
@@ -57,7 +57,7 @@ Die Jira-Übersicht wird manuell aktualisiert (nach Jira-Änderungen); später o
 ## Links {#links}
 
 - [Jira‑Übersicht (Index)]({{ "/de/jira/" | relative_url }})
-- [Sprint-Board]({{ "/de/jira/sprint/" | relative_url }})
+- [Sprint Board]({{ "/de/jira/sprint/" | relative_url }})
 - [Backlog]({{ "/de/jira/backlog/" | relative_url }})
-- [Erledigt]({{ "/de/jira/erledigt/" | relative_url }})
+- [Historie]({{ "/de/jira/historie/" | relative_url }})
 - Vorgang (Beispiel): [J01-72]({{ "/de/jira/issues/J01-72/" | relative_url }})

@@ -4,20 +4,23 @@ title: "Jira- und Doku-Tooling: Jira-Übersicht (öffentlich)"
 permalink: /en/areas/proj-doku-tooling/jira-uebersicht/
 ---
 
-## Ziel
+## Goal
 
-Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als statische Jira-Übersicht über GitHub Pages veröffentlicht:
+Jira stays non-public. The current state is published as a static public Jira
+area via GitHub Pages:
 
-- [Jira‑Übersicht]({{ "/en/jira/" | relative_url }})
-- [Sprint-Board]({{ "/en/jira/sprint/" | relative_url }})
+- [Jira]({{ "/en/jira/" | relative_url }})
+- [Sprint Board]({{ "/en/jira/sprint/" | relative_url }})
 - [Backlog]({{ "/en/jira/backlog/" | relative_url }})
-- [Erledigt]({{ "/en/jira/erledigt/" | relative_url }})
-- [Sprint history]({{ "/en/work/sprints/" | relative_url }})
+- [History]({{ "/en/jira/history/" | relative_url }})
+- [Sprint History]({{ "/en/work/sprints/" | relative_url }})
 
-## Regeln (öffentlich)
+## Public rules
 
 - Keine Jira-Cloud-Links.
 - Keine E-Mail-Adressen.
+- The entry point under `jira/` separates backlog, history, and sprint board.
+- Backlog lists show each listed issue's status directly in the same line.
 - The sprint board groups current sprint work by sprint category and status.
 - The sprint board only shows the same top-level issues as the Jira board;
   steps stay visible on the parent issue and in the sprint dossier.
@@ -40,7 +43,7 @@ Jira bleibt nicht-öffentlich. Der aktuelle Zustand wird als statische Jira-Übe
     short cross-paths to the step page, the parent work doc and the parent
     issue.
 
-## Aktualisieren
+## Update
 
-Siehe Runbook:
-- [Jira-Übersicht aktualisieren]({{ "/en/operations/runbook/" | relative_url }})
+See the runbook:
+- [Update the public Jira area]({{ "/en/operations/runbook/" | relative_url }})

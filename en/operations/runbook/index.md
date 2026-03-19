@@ -9,9 +9,9 @@ permalink: /en/operations/runbook/
 Update the public Jira area in this repo:
 
 - DE: `/de/jira/`, `/de/jira/sprint/`, `/de/jira/backlog/`,
-  `/de/jira/erledigt/`, `/de/jira/issues/J01-*/`
+  `/de/jira/historie/`, `/de/jira/erledigt/`, `/de/jira/issues/J01-*/`
 - EN: `/en/jira/`, `/en/jira/sprint/`, `/en/jira/backlog/`,
-  `/en/jira/erledigt/`, `/en/jira/issues/J01-*/`
+  `/en/jira/history/`, `/en/jira/erledigt/`, `/en/jira/issues/J01-*/`
 - Step pages only for subtasks with public details:
   `/de/jira/issues/<PARENT>/steps/<SUBTASK_KEY>/` and
   `/en/jira/issues/<PARENT>/steps/<SUBTASK_KEY>/`
@@ -72,6 +72,12 @@ The URL conversion from Jira follows these rules:
   `LEGACY_CONFLUENCE<TAB>KEY<TAB>LINK_ID<TAB>URL<TAB>TITLE`
 
 4) Spot check:
+   - The entry page under `jira/` points to backlog, history, and sprint
+     board.
+   - Backlog lists show each listed issue's status directly in the same line.
+   - The history view bundles sprint history and globally visible completed
+     top-level issues.
+   - `erledigt/` only remains as a compatibility path to the history view.
    - Issue and step pages under `jira/` expose short, visible cross-paths to
      overviews, parent pages, and public steps.
    - Subtasks without public details do **not** get their own page.
@@ -104,6 +110,7 @@ The URL conversion from Jira follows these rules:
     (`sprint-goal`, `sprint-support`, `sprint-admin`, `sprint-unplanned`)
   - The sprint board only shows the same top-level issues as the Jira board;
     steps stay visible on parent and step pages.
+  - Backlog and history show the status on every listed issue line.
   - The EN Jira tree is synchronized after the DE render
 
 ## Rollback
@@ -112,8 +119,12 @@ The URL conversion from Jira follows these rules:
 
 ## Monitoring
 
-- Sprint board, backlog, and done match Jira status categories.
+- Sprint board, backlog, and history match Jira status categories and target
+  paths.
 - The sprint board has dedicated row groups for sprint categories.
+- Backlog lists show each listed issue's status directly in the same line.
+- `erledigt/` only points to the history view and no longer carries its own
+  full listing.
 - Issue and step pages carry an `Updated` timestamp from Jira.
 - `git` remains the reliable history: diffs only appear when content changes.
 - `shared-tooling/jira-pages/verify-public-jira-pages.sh` verifies imported

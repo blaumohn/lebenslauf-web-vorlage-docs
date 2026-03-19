@@ -6,7 +6,7 @@ permalink: /de/jira/issues/J01-104/
 jira_parent_key: J01-84
 ---
 
-**Stand:** 2026-03-18
+**Stand:** 2026-03-19
 
 {% include jira-state-head.html %}
 
@@ -33,6 +33,9 @@ hier nur als Vorgangsrahmen und nicht als fachlicher Ablageort der Regel.
 - Wenn eine öffentliche Schrittseite oder ein öffentlicher Subtask-Arbeitsstand
   existiert, bleiben Elternvorgang, Gegenseite und Detailseite konsistent
   verlinkt.
+- Die öffentliche Jira-Fläche trennt Einstieg, Backlog, Historie und
+  Sprint-Board klarer; der Status bleibt in Backlog-Listen je Vorgangszeile
+  sichtbar.
 
 ## Jetzt umgesetzt
 
@@ -45,6 +48,11 @@ hier nur als Vorgangsrahmen und nicht als fachlicher Ablageort der Regel.
   Gegenstücke zwischen `work/jira` und `mirror`.
 - Richtlinie, Vorlage, Bereichsseite, Runbook und Mirror-Skill nennen dieselbe
   Regel.
+- Die öffentliche Jira-Fläche nutzt jetzt `Backlog`, `Historie` und
+  `Sprint Board` als klarere Hauptsichten; `erledigt/` bleibt nur noch als
+  Kompatibilitätspfad zur Historie erhalten.
+- Backlog-Listen zeigen den Status jedes gelisteten Vorgangs direkt in der
+  Zeile.
 
 ## Überprüfungsplan
 
@@ -55,6 +63,8 @@ hier nur als Vorgangsrahmen und nicht als fachlicher Ablageort der Regel.
 | Mirror erzeugt dieselbe Logik erneut | Ein Mirror-Neulauf rendert die kurzen Gegenpfade aus lokaler Struktur und Jira-Beziehungen | Mirror-Seiten + Generator | erledigt |
 | Verifikation prüft die Systemregel | Fehlende lokale Gegenstücke zwischen `work/jira` und `mirror` werden gemeldet | Verifikationsskript + Runbook | erledigt |
 | Skill-Ablauf trägt die Regel weiter | Mirror-Betrieb nennt die Paar- und Querpfad-Prüfung ausdrücklich | Mirror-Skill | erledigt |
+| Öffentliche Jira-Fläche bleibt klar lesbar | Einstieg trennt Backlog, Historie und Sprint Board; `erledigt/` ist nur noch Weiterleitungskontext | `jira/`, `backlog/`, `historie/`, `erledigt/` | erledigt |
+| Backlog zeigt Status je Vorgangszeile | Alle gelisteten Backlog-Vorgänge tragen einen sichtbaren Statuszusatz | `backlog/` | erledigt |
 
 ## Abschlussbild oder offene Punkte
 
@@ -72,3 +82,4 @@ hier nur als Vorgangsrahmen und nicht als fachlicher Ablageort der Regel.
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/de/operations/runbook/" | relative_url }})
 - [Jira- und Doku-Tooling: Jira-Übersicht (öffentlich)]({{ "/de/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }})
 - [Jira-Arbeitsdokus]({{ "/de/jira/" | relative_url }})
+- [Jira: Historie]({{ "/de/jira/historie/" | relative_url }})

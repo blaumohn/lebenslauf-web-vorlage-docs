@@ -6,7 +6,7 @@ permalink: /en/jira/issues/J01-104/
 jira_parent_key: J01-84
 ---
 
-**Stand:** 2026-03-18
+**Stand:** 2026-03-19
 
 {% include jira-state-head.html %}
 
@@ -28,6 +28,9 @@ the issue frame and not the domain home of the rule.
   public pages.
 - If a public step page or public subtask work status exists, parent issue,
   counterpart and detail page remain linked consistently.
+- The public Jira area now separates entry, backlog, history, and sprint
+  board more clearly; backlog lists keep the status visible on every issue
+  line.
 
 ## Jetzt umgesetzt
 
@@ -39,6 +42,10 @@ the issue frame and not the domain home of the rule.
 - Verification now checks local counterparts between `work/jira` and `mirror`
   in addition to Jira remote links.
 - Policy, template, area page, runbook and mirror skill now name the same rule.
+- The public Jira area now uses `Backlog`, `History`, and `Sprint Board` as
+  clearer primary views; `erledigt/` only remains as a compatibility path to
+  history.
+- Backlog lists now show each listed issue's status directly in the same line.
 
 ## Überprüfungsplan
 
@@ -49,6 +56,8 @@ the issue frame and not the domain home of the rule.
 | Mirror regenerates the same logic | A mirror refresh renders the short counterpart paths from local structure and Jira relations | mirror pages + generator | done |
 | Verification checks the system rule | Missing local counterparts between `work/jira` and `mirror` are reported | verification script + runbook | done |
 | Skill flow keeps the rule alive | Mirror operations explicitly include pair and cross-path verification | mirror skill | done |
+| Public Jira area stays easy to scan | The entry point separates backlog, history, and sprint board; `erledigt/` only keeps compatibility context | `jira/`, `backlog/`, `history/`, `erledigt/` | done |
+| Backlog shows status per issue line | Every listed backlog issue carries a visible status suffix | `backlog/` | done |
 
 ## Abschlussbild oder offene Punkte
 
@@ -66,3 +75,4 @@ the issue frame and not the domain home of the rule.
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/en/operations/runbook/" | relative_url }})
 - [Jira- und Doku-Tooling: Jira-Übersicht (öffentlich)]({{ "/en/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }})
 - [Jira work docs]({{ "/en/jira/" | relative_url }})
+- [Jira: History]({{ "/en/jira/history/" | relative_url }})
