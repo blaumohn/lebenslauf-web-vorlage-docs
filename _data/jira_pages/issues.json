@@ -1,4 +1,12 @@
 {
+  "J01-105": {
+    "summary": "Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "updated": "2026-03-19T13:42:56.610+0100",
+    "parent": null,
+    "sprint": "SCRUM Sprint 1"
+  },
   "J01-104": {
     "summary": "GitHub Pages: Link-Regel für öffentliche Schrittseiten",
     "issuetype": "Task",
@@ -203,7 +211,7 @@
     "summary": "Config: Konditionelle Validierung",
     "issuetype": "Task",
     "status": "Zu erledigen",
-    "updated": "2026-02-17T16:13:56.230+0100",
+    "updated": "2026-03-19T13:26:13.864+0100",
     "parent": "J01-5",
     "sprint": "-"
   },
@@ -219,7 +227,7 @@
     "summary": "Preview Readiness: System-Source-Verarbeitung",
     "issuetype": "Task",
     "status": "Zu erledigen",
-    "updated": "2026-03-16T16:48:36.250+0100",
+    "updated": "2026-03-19T13:26:13.189+0100",
     "parent": "J01-5",
     "sprint": "SCRUM Sprint 0, SCRUM Sprint 1"
   },
@@ -267,7 +275,7 @@
     "summary": "Preview: Workflow wieder aktivieren",
     "issuetype": "Task",
     "status": "Zu erledigen",
-    "updated": "2026-03-16T16:48:40.363+0100",
+    "updated": "2026-03-19T13:26:08.151+0100",
     "parent": "J01-5",
     "sprint": "SCRUM Sprint 0, SCRUM Sprint 1"
   },
