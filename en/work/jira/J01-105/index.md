@@ -29,8 +29,8 @@ boundaries are unambiguous and verifiable.
 ## Current status
 
 - Concept worked out and Jira task created (2026-03-19).
-- Prerequisite ISS-003 (remove code defaults) still open.
-- Prerequisite ISS-007 (conditional required, mail dependency) to be clarified.
+- Related to J01-28 (broad analysis frame); not a mutual blocker.
+- Prerequisite J01-37 (conditional required, mail dependency) to be clarified.
 - Implementation not yet started.
 
 ## Verification plan
@@ -46,12 +46,13 @@ boundaries are unambiguous and verifiable.
 
 ## Open points
 
-- ISS-003: Remove code defaults (prerequisite).
-- ISS-007: Clarify conditional required for mail parameters.
+- J01-28: related issue (broad analysis frame, not a blocker).
+- J01-37: Clarify conditional required for mail parameters.
 - Decision: simplified model as its own step or directly in J01-105?
 
 ## Links
 
 - [J01-9: Preview — reactivate workflow]({{ "/en/jira/issues/J01-9/" | relative_url }})
+- [J01-28: Analysis: Risk patterns and findings list]({{ "/en/jira/issues/J01-28/" | relative_url }})
 - [J01-31: Preview Readiness — system source processing]({{ "/en/jira/issues/J01-31/" | relative_url }})
 - [Jira work docs]({{ "/en/jira/" | relative_url }})

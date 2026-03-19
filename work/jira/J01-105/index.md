@@ -21,7 +21,7 @@ Phasengrenzen eindeutig und prüfbar sind.
 - `required` und `allowed` fallen zusammen: eine flache Liste je Pipeline/Phase
   benennt genau die Parameter, die vorhanden sein müssen und die erlaubt sind.
 - Code-Defaults (`get('KEY', 'default')`) werden entfernt, damit der
-  Parameter-Vektor-Ansatz echte Testergebnisse liefert (Voraussetzung: J01-28).
+  Parameter-Vektor-Ansatz echte Testergebnisse liefert.
 - Die pipeline-spec-lib liest `$pipeline[$phase]` als direkte Liste statt
   `['required']`/`['allowed']`.
 - Tests werden nachgezogen; das Manifest gilt danach als saubere
@@ -30,7 +30,7 @@ Phasengrenzen eindeutig und prüfbar sind.
 ## Aktueller Stand
 
 - Konzept ausgearbeitet und Jira-Task angelegt (2026-03-19).
-- Voraussetzung J01-28 (Code-Defaults entfernen) noch offen.
+- Verwandt mit J01-28 (breiter Analyserahmen); kein gegenseitiger Blocker.
 - Voraussetzung J01-37 (konditionelles required, Mail-Abhängigkeit) zu klären.
 - Implementierung noch nicht begonnen.
 
@@ -67,12 +67,13 @@ die lokale Lib-Version zeigt statt auf die installierte Composer-Version.
 
 ## Offene Punkte
 
-- J01-28: Code-Defaults entfernen (Voraussetzung).
+- J01-28: verwandter Vorgang (breiter Analyserahmen, kein Blocker).
 - J01-37: Konditionelles required für Mail-Parameter klären.
 - Entscheidung: vereinfachtes Modell als eigener Schritt oder direkt in J01-105?
 
 ## Links
 
 - [J01-9: Preview — Workflow wieder aktivieren]({{ "/de/jira/issues/J01-9/" | relative_url }})
+- [J01-28: Analyse: Risikomuster und Befundliste]({{ "/de/jira/issues/J01-28/" | relative_url }})
 - [J01-31: Preview Readiness — System-Source-Verarbeitung]({{ "/de/jira/issues/J01-31/" | relative_url }})
 - [Jira-Arbeitsdokus]({{ "/de/jira/" | relative_url }})
