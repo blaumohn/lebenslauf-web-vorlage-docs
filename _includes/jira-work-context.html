@@ -6,20 +6,10 @@
 {% assign label_context = "Kontext" %}
 {% assign label_parent = "Übergeordnet" %}
 {% assign label_children = "Öffentliche Schritte" %}
-{% assign label_overviews = "Übersichten" %}
-{% assign label_hub = "Jira-Start" %}
-{% assign label_sprint = "Sprint" %}
-{% assign label_backlog = "Backlog" %}
-{% assign label_done = "Erledigt" %}
 {% if current_lang == "en" %}
   {% assign label_context = "Context" %}
   {% assign label_parent = "Parent" %}
   {% assign label_children = "Public steps" %}
-  {% assign label_overviews = "Overviews" %}
-  {% assign label_hub = "Jira home" %}
-  {% assign label_sprint = "Sprint" %}
-  {% assign label_backlog = "Backlog" %}
-  {% assign label_done = "Done" %}
 {% endif %}
 
 {% assign url_parts = page.url | split: "/" %}
@@ -28,10 +18,6 @@
 {% assign parent_url = "" %}
 {% assign child_links = "" %}
 {% assign child_count = 0 %}
-{% capture hub_url %}/{{ current_lang }}/jira/{% endcapture %}
-{% capture sprint_url %}/{{ current_lang }}/jira/sprint/{% endcapture %}
-{% capture backlog_url %}/{{ current_lang }}/jira/backlog/{% endcapture %}
-{% capture done_url %}/{{ current_lang }}/jira/erledigt/{% endcapture %}
 
 {% if page.url contains "/jira/issues/" %}
   {% if page.url contains "/steps/" %}
@@ -85,21 +71,17 @@
   {% endfor %}
 {% endif %}
 
-{% capture overview_links %}
-<a class="jira-context-bar__link" href="{{ hub_url | relative_url }}">{{ label_hub }}</a>
-<a class="jira-context-bar__link" href="{{ sprint_url | relative_url }}">{{ label_sprint }}</a>
-<a class="jira-context-bar__link" href="{{ backlog_url | relative_url }}">{{ label_backlog }}</a>
-<a class="jira-context-bar__link" href="{{ done_url | relative_url }}">{{ label_done }}</a>
-{% endcapture %}
+{% assign show_context = false %}
+{% if page.url contains "/jira/issues/" and parent_exists %}
+  {% assign show_context = true %}
+{% endif %}
+{% if page.url contains "/jira/issues/" and child_count > 0 %}
+  {% assign show_context = true %}
+{% endif %}
 
-{% assign show_context = page.url contains "/jira/issues/" %}
 {% if show_context %}
 <div class="jira-context-bar">
   <span class="jira-context-bar__label">{{ label_context }}</span>
-  <span class="jira-context-bar__section">
-    <span class="jira-context-bar__section-label">{{ label_overviews }}</span>
-    {{ overview_links }}
-  </span>
   {% if parent_exists %}
     <span class="jira-context-bar__section">
       <span class="jira-context-bar__section-label">{{ label_parent }}</span>
