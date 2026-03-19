@@ -1,4 +1,20 @@
 {
+  "J01-107": {
+    "summary": "Jira-Metadaten: Migrationsvorgänge aus J01-91 präzise verlinken",
+    "issuetype": "Task",
+    "status": "Erledigt",
+    "updated": "2026-03-19T16:33:21.219+0100",
+    "parent": null,
+    "sprint": "SCRUM Sprint 1"
+  },
+  "J01-106": {
+    "summary": "Skill-Repo: jira-pages-sync in jira-state-sync zusammenführen",
+    "issuetype": "Task",
+    "status": "Erledigt",
+    "updated": "2026-03-19T16:06:37.197+0100",
+    "parent": null,
+    "sprint": "-"
+  },
   "J01-105": {
     "summary": "Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf",
     "issuetype": "Task",
@@ -19,7 +35,7 @@
     "summary": "J01-91: offene Zielerfüllung für Public-Doku und Übernahmestatus nachziehen",
     "issuetype": "Task",
     "status": "Zu erledigen",
-    "updated": "2026-03-18T11:20:22.682+0100",
+    "updated": "2026-03-19T16:25:31.614+0100",
     "parent": null,
     "sprint": "-"
   },
@@ -43,7 +59,7 @@
     "summary": "docs/agile-Reste nach Sprint 1 an kanonischen Zielorten migrieren",
     "issuetype": "Task",
     "status": "Zu erledigen",
-    "updated": "2026-03-17T10:55:25.772+0100",
+    "updated": "2026-03-19T16:25:31.930+0100",
     "parent": null,
     "sprint": "-"
   },
@@ -51,7 +67,7 @@
     "summary": "J01-91 Phase 2: sprintrelevante Preview-Migration umsetzen",
     "issuetype": "Task",
     "status": "Erledigt",
-    "updated": "2026-03-17T11:12:59.497+0100",
+    "updated": "2026-03-19T16:25:31.771+0100",
     "parent": null,
     "sprint": "SCRUM Sprint 1"
   },
@@ -355,7 +371,7 @@
     "summary": "72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen",
     "issuetype": "Subtask",
     "status": "Erledigt",
-    "updated": "2026-03-16T16:44:52.704+0100",
+    "updated": "2026-03-19T16:25:31.816+0100",
     "parent": "J01-72",
     "sprint": "-"
   },

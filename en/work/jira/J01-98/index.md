@@ -70,6 +70,8 @@ That rationale additionally uses the commit history of the branches `preview`,
 
 ## Links
 
+- Jira metadata now links `J01-98` explicitly with `J01-91` and
+  `J01-100`.
 - [J01-91: status/snapshot (closure)]({{ "/en/jira/issues/J01-91/" | relative_url }})
 - [J01-100: docs/agile leftovers after sprint 1]({{ "/en/jira/issues/J01-100/" | relative_url }})
 - [J01-98: migration map and public rationale]({{ "/en/jira/issues/J01-98/migration-map/" | relative_url }})

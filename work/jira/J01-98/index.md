@@ -73,6 +73,8 @@ Branches `preview`, `feature/iss-005-preview` und `dev`.
 
 ## Links
 
+- Jira-Metadaten verlinken `J01-98` jetzt explizit mit `J01-91` und
+  `J01-100`.
 - [J01-91: Zustand/Vorhaben (Abschluss-Snapshot)]({{ "/de/jira/issues/J01-91/" | relative_url }})
 - [J01-100: docs/agile-Reste nach Sprint 1]({{ "/de/jira/issues/J01-100/" | relative_url }})
 - [J01-98: Migrationslandkarte und öffentliche Herleitung]({{ "/de/jira/issues/J01-98/migration-map/" | relative_url }})

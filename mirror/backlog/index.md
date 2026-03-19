@@ -7,9 +7,9 @@ permalink: /de/jira/backlog/
 Öffentliche Jira-Fläche (ohne Jira-Cloud-Links).
 
 - [Jira]({{ "/de/jira/" | relative_url }})
-- [Sprint]({{ "/de/jira/sprint/" | relative_url }})
+- [Sprint Board]({{ "/de/jira/sprint/" | relative_url }})
 - [Backlog]({{ "/de/jira/backlog/" | relative_url }})
-- [Erledigt]({{ "/de/jira/erledigt/" | relative_url }})
+- [Historie]({{ "/de/jira/historie/" | relative_url }})
 
 ## Epics
 

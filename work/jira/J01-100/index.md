@@ -43,6 +43,8 @@ anpacken, damit der aktuelle Sprint-Scope klar beim Preview-Deployment bleibt.
 
 ## Links
 
+- Jira-Metadaten verlinken `J01-100` jetzt explizit mit `J01-91`,
+  `J01-98` und `J01-103`.
 - [J01-91: Abschluss-Snapshot]({{ "/de/jira/issues/J01-91/" | relative_url }})
 - [J01-98: sprintrelevante Preview-Migration]({{ "/de/jira/issues/J01-98/" | relative_url }})
 - [Sprint 1: Planning]({{ "/de/work/sprints/scrum-sprint-1/" | relative_url }})

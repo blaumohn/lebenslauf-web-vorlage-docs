@@ -221,6 +221,8 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 
 ## Links (Sichtbarkeit)
 
+- Jira-Metadaten verlinken `J01-91` jetzt explizit mit `J01-98`, `J01-100`
+  und `J01-103`.
 - [Jira: J01-72 / Schritt J01-91]({{ "/de/jira/issues/J01-72/steps/J01-91/" | relative_url }}) (abgeleitet)
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/de/operations/runbook/" | relative_url }})
 - [Drift-Report (Qualität)]({{ "/de/quality/drift-reports/J01-91/" | relative_url }})

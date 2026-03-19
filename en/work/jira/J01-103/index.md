@@ -55,6 +55,8 @@ Die öffentliche Zielerfüllung aus `J01-91` belastbar nachziehen:
 
 ## Links
 
+- Jira metadata now links `J01-103` explicitly with `J01-91` and
+  `J01-100`.
 - [J01-91: Zustand/Vorhaben (Snapshot)]({{ "/en/jira/issues/J01-91/" | relative_url }})
 - [J01-98: sprintrelevante Preview-Migration]({{ "/en/jira/issues/J01-98/" | relative_url }})
 - [J01-100: docs/agile-Reste nach Sprint 1]({{ "/en/jira/issues/J01-100/" | relative_url }})

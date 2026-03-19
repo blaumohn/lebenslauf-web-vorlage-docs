@@ -43,6 +43,8 @@ that the current sprint scope stays clearly focused on preview deployment.
 
 ## Links
 
+- Jira metadata now links `J01-100` explicitly with `J01-91`,
+  `J01-98` and `J01-103`.
 - [J01-91: closure snapshot]({{ "/en/jira/issues/J01-91/" | relative_url }})
 - [J01-98: sprint-relevant preview migration]({{ "/en/jira/issues/J01-98/" | relative_url }})
 - [Sprint 1: planning]({{ "/en/work/sprints/scrum-sprint-1/" | relative_url }})
