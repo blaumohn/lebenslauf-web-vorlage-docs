@@ -99,6 +99,17 @@ verschoben; Namespace angepasst; alle Import-Stellen nachgezogen
 `AppContext` teilt eine gemeinsame `lockRunner`- und `writer`-Instanz
 für alle drei Dienste. 26/26 Tests grün.
 
+## Delta 2026-03-20
+
+Der im App-Repo noch offene Rest zu `16-1` wurde heute explizit
+repo-seitig abgeschlossen:
+
+- Commit `ee45a62` zieht `CaptchaService` und `RateLimiter` auf denselben
+  Locking- und Atomic-Write-Stand wie in dieser Schrittdoku beschrieben.
+- `php bin/cli config lint dev` läuft grün.
+- `CaptchaServiceTest`, `RateLimiterTest` und die zugehörigen
+  `ConcurrencyTest`-Fälle laufen mit gesetztem `TMPDIR` grün.
+
 Offene Folgeschritte: `16-2` (Token-Rotation), `16-3` (Race-Tests),
 `16-4` (Betriebsnotiz).
 

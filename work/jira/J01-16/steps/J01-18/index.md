@@ -43,6 +43,17 @@ parallele `verify()`-Aufrufe.
 | Lese-Operationen unberührt | `verify()`, `findProfileForToken()`, `readHashes()` ohne Lock, kein Regressions-Risiko | `TokenService.php` | Erledigt |
 | Tests grün | 26/26 PHPUnit-Tests nach Änderung | `php vendor/bin/phpunit` | Erledigt |
 
+## Delta 2026-03-20
+
+Der im App-Repo noch offene Rest zu `16-2` wurde heute explizit
+repo-seitig abgeschlossen:
+
+- Commit `8ab08e4` zieht `TokenService` samt letzter Verdrahtung in
+  `AppContext` auf den in dieser Schrittdoku beschriebenen Stand.
+- `php bin/cli config lint dev` läuft grün.
+- `TokenServiceTest` und die zugehörigen `ConcurrencyTest`-Fälle laufen mit
+  gesetztem `TMPDIR` grün.
+
 ## Links
 
 - [16-2 im Jira-Mirror]({{ "/de/jira/issues/J01-16/steps/J01-18/" | relative_url }})

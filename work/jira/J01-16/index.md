@@ -61,6 +61,16 @@ andere Verwalter nur dann passend, wenn ihr eigenes Fachverhalten denselben
   [16-4: Betriebsnotiz aktualisieren]({{
   "/de/jira/issues/J01-16/steps/J01-20/" | relative_url }}) nachgezogen.
 
+## Delta 2026-03-20
+
+- Die zuvor noch uncommitteten App-Reste aus `16-1` und `16-2` wurden im
+  Quell-Repo auf `feature/j01-16-runtime-locking` in zwei getrennten Commits
+  nachgezogen:
+  `ee45a62` für `J01-17` und `8ab08e4` für `J01-18`.
+- `php bin/cli config lint dev` läuft grün.
+- Die betroffenen PHPUnit-Tests für `CaptchaService`, `RateLimiter`,
+  `TokenService` und `ConcurrencyTest` laufen mit gesetztem `TMPDIR` grün.
+
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
@@ -89,6 +99,8 @@ Im heutigen Jira-Zuschnitt werden diese beiden historischen Quellen über
 Die Tagebuch-Notizen vom 2026-03-18 und 2026-03-19 dokumentieren zusätzlich,
 dass `16-3`, `16-4` und der Abschluss von `J01-16` im Sprint tatsächlich
 vollzogen wurden, auch wenn der öffentliche Nachzug zeitweise hinterherhing.
+Die heutige Korrekturrunde schließt zusätzlich den bis dahin noch offenen
+Unterschied zwischen öffentlicher Schrittdoku und lokalem App-Arbeitsbaum.
 
 ## Abschluss
 

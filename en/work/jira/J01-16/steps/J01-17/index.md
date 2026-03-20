@@ -98,6 +98,17 @@ namespace updated; all import sites adjusted (ISS-012, point 4). 26/26 tests gre
 `AppContext` shares a single `lockRunner` and `writer` instance across all three services.
 26/26 tests green.
 
+## Delta 2026-03-20
+
+The previously still open app-side remainder for `16-1` is now explicitly
+closed in the source repo:
+
+- Commit `ee45a62` moves `CaptchaService` and `RateLimiter` onto the same
+  locking and atomic-write state described on this page.
+- `php bin/cli config lint dev` is green.
+- `CaptchaServiceTest`, `RateLimiterTest`, and the related
+  `ConcurrencyTest` cases are green with `TMPDIR` set.
+
 Remaining sub-steps: `16-2` (token rotation), `16-3` (race tests), `16-4` (operations note).
 
 ## Links

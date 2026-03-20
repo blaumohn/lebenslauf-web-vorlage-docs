@@ -40,6 +40,17 @@ The lock protects against two concurrent rotations of the same profile.
 | Read operations unchanged | `verify()`, `findProfileForToken()`, `readHashes()` without lock, no regression risk | `TokenService.php` | Done |
 | Tests green | 26/26 PHPUnit tests after change | `php vendor/bin/phpunit` | Done |
 
+## Delta 2026-03-20
+
+The previously still open app-side remainder for `16-2` is now explicitly
+closed in the source repo:
+
+- Commit `8ab08e4` moves `TokenService` plus the final `AppContext`
+  wiring onto the state described on this page.
+- `php bin/cli config lint dev` is green.
+- `TokenServiceTest` and the related `ConcurrencyTest` cases are green with
+  `TMPDIR` set.
+
 ## Links
 
 - [Jira: 16-2]({{ "/en/jira/issues/J01-16/steps/J01-18/" | relative_url }})

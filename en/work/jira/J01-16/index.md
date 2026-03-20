@@ -60,6 +60,16 @@ other managers when their own domain flow truly requires the same transition.
   [16-4: Betriebsnotiz aktualisieren]({{
   "/en/jira/issues/J01-16/steps/J01-20/" | relative_url }})
 
+## Delta 2026-03-20
+
+- The previously still uncommitted app-side leftovers from `16-1` and `16-2`
+  were now carried into the source repo on `feature/j01-16-runtime-locking`
+  as two separate commits:
+  `ee45a62` for `J01-17` and `8ab08e4` for `J01-18`.
+- `php bin/cli config lint dev` is green.
+- The affected PHPUnit tests for `CaptchaService`, `RateLimiter`,
+  `TokenService`, and `ConcurrencyTest` are green when run with `TMPDIR` set.
+
 ## Verification plan
 
 | Checkpoint | Expectation | Evidence / Location | Status |
@@ -88,6 +98,8 @@ through `J01-16` and the completed reference issue `J01-21`.
 The journal notes from March 18 and March 19, 2026 additionally confirm that
 `16-3`, `16-4`, and the closeout of `J01-16` were actually finished in the
 sprint, even though the public sync temporarily lagged behind.
+Today's correction round additionally closes the last mismatch between the
+public step docs and the local app worktree.
 
 ## Conclusion
 
