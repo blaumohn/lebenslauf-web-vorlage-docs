@@ -102,7 +102,22 @@ brauchen sie eine Autorenkonvention. Der Vorgang legt fest:
 - Zielbild ergänzt (2026-03-20): Repo-`AGENTS.md` nur noch in versionierten
   Skill-Repos; Workspace-`AGENTS.md` außerhalb von Git nur noch als
   Bootstrap-Verweis.
+- Architekturentscheidung getroffen (2026-03-20): Option D — GitHub Pages →
+  Hilfsskripte (J01-115) → Skills. Noch ohne echtes Skript; erster Schritt ist
+  die Definition des `ki_karte`-Formats.
+- Neue Regel verankert (2026-03-20): Alle agent-bezogenen Artefakte
+  (Schemata, Karten-Definitionen, Build-Manifeste) werden nicht in Ziel-Repos
+  versioniert — ausschließlich in Skill-Repos (`IM-SKL-01`).
+- Heimatort `ki_karte`-Schema: Skill-Repo (`lebenslauf-web-vorlage` oder
+  `shared/`), nicht `lebenslauf-web-vorlage-docs`.
 - Umsetzung noch nicht begonnen.
+
+## Regelwerk-Bestandsübersicht
+
+Vollständige Tabelle aller aktuellen Skills, Regeln und Hinweise, geordnet nach
+den Anforderungsgruppen von J01-113, steht in der Anlage:
+
+→ [Anlage: Regelwerk-Bestandsübersicht]({{ "/de/jira/issues/J01-113/anlage-regelwerk-bestand/" | relative_url }})
 
 ## Überprüfungsplan
 
