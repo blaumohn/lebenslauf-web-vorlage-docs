@@ -11,8 +11,12 @@ damit Projektanforderungen nicht im Skill dupliziert werden müssen.
 
 ## Systemrollen
 
-- **Workspace- und Repo-`AGENTS.md`**:
-  Always-on-Regeln und repo-lokale Zusatzregeln zur Laufzeit.
+- **Workspace-`AGENTS.md` außerhalb von Git**:
+  nur Bootstrap-Einstieg; verweist auf versionierte Agent-Regeln in
+  `.agents/skills/`.
+- **Versionierte Skill-Repo-`AGENTS.md`**:
+  kompakte Laufzeitregeln und repo-lokale Zusatzregeln für Skill-Repos unter
+  `.agents/skills/shared/` und `.agents/skills/<projekt>/`.
 - **GitHub-Pages-Doku**:
   kanonische Projektanforderungen, Vorgangsregeln, Link- und Spiegelregeln.
 - **`tagebuch`**:
@@ -32,6 +36,7 @@ damit Projektanforderungen nicht im Skill dupliziert werden müssen.
 ## Was ein Skill selbst tragen darf
 
 - eine knappe Projektkarte mit Links auf die kanonischen Quellen
+- ein versioniertes Repo-`AGENTS.md` für das eigene Skill-Repo
 - skillinterne Hilfen wie Cache-Rezepte und Skriptpfade
 - den konkreten wiederkehrenden Arbeitsgang des Skills
 
