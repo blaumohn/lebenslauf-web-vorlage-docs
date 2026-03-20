@@ -3,7 +3,7 @@ layout: page
 title: "J01-95: Journalisierten Jira-/Pages-Sync mit Resume aufbauen"
 jira_key: J01-95
 jira_parent_key: J01-72
-permalink: /de/jira/issues/J01-72/steps/J01-95/
+permalink: /de/jira/issues/J01-95/
 ---
 
 **Stand:** 2026-03-14

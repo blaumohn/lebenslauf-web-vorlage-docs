@@ -3,7 +3,7 @@ layout: page
 title: "J01-99: Alte Confluence-Remote-Links in Jira bereinigen"
 jira_key: J01-99
 jira_parent_key: J01-72
-permalink: /de/jira/issues/J01-72/steps/J01-99/
+permalink: /de/jira/issues/J01-99/
 ---
 
 **Stand:** 2026-03-16

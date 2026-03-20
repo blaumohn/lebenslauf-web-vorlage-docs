@@ -18,6 +18,7 @@ Keine Vorgänge.
 
 - [J01-106 — Skill-Repo: jira-pages-sync in jira-state-sync zusammenführen]({{ "/de/jira/issues/J01-106/" | relative_url }})
 - [J01-107 — Jira-Metadaten: Migrationsvorgänge aus J01-91 präzise verlinken]({{ "/de/jira/issues/J01-107/" | relative_url }})
+- [J01-108 — Jira-UI: Übersichten-Kiste aus öffentlichem Vorgangskontext entfernen]({{ "/de/jira/issues/J01-108/" | relative_url }})
 - [J01-79 — Atlassian CLI: API-Betriebe (Wrapper), http als Escape-Hatch]({{ "/de/jira/issues/J01-79/" | relative_url }})
 - [J01-80 — Atlassian Tools: Refactor – AGENTS Coding-Standards durchgehend umsetzen]({{ "/de/jira/issues/J01-80/" | relative_url }})
 - [J01-96 — Tagebuch: Quellenregister und Roh-Eingaben verankern]({{ "/de/jira/issues/J01-96/" | relative_url }})

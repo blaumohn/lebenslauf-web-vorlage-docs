@@ -3,7 +3,7 @@ layout: page
 title: "J01-99: Clean up legacy Confluence remote links in Jira"
 jira_key: J01-99
 jira_parent_key: J01-72
-permalink: /en/jira/issues/J01-72/steps/J01-99/
+permalink: /en/jira/issues/J01-99/
 ---
 
 **Stand:** 2026-03-16

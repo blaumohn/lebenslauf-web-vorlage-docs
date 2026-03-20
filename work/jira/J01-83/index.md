@@ -3,7 +3,7 @@ layout: page
 title: "J01-83: Erste Cache-V1 vorbereiten und Policy trennen"
 jira_key: J01-83
 jira_parent_key: J01-72
-permalink: /de/jira/issues/J01-72/steps/J01-83/
+permalink: /de/jira/issues/J01-83/
 ---
 
 **Stand:** 2026-03-17
@@ -120,8 +120,8 @@ Ausdrücklich nicht Teil der V1:
 | --- | --- | --- | --- |
 | Erste Cache-Zelle liegt im Skill-Repo vor | `parent-subtasks.md` ist vorhanden und beschreibt genau einen wiederkehrenden Lesefall | `shared-tooling/jira-pages/cache-recipes/parent-subtasks.md` | erledigt |
 | Befehl-nutzende Projekt-Skills behandeln den Cache als ersten Suchraum | `koordination` und `jira-state-sync` nennen die Cache-Prüfung und das Nachziehen explizit | Projekt-Skill-Repo unter `skills/` | erledigt |
-| Kanonische öffentliche Arbeitsdoku ist direkt aus Jira erreichbar | Jira hält einen Remote-Link auf `/de/jira/issues/J01-72/steps/J01-83/`; DE/EN-Aufspaltung bleibt bei GitHub Pages | Jira-Remote-Links für `J01-83` | erledigt |
-| Öffentliche Jira-Seite zeigt denselben Abschlussstand | Die öffentliche Jira-Fläche übernimmt Status und öffentliche Links aus Jira ohne Jira-Cloud-Links | `/de/jira/issues/J01-72/steps/J01-83/` | erledigt |
+| Kanonische öffentliche Arbeitsdoku ist direkt aus Jira erreichbar | Jira hält einen Remote-Link auf `/de/jira/issues/J01-83/`; DE/EN-Aufspaltung bleibt bei GitHub Pages | Jira-Remote-Links für `J01-83` | erledigt |
+| Öffentliche Jira-Seite zeigt denselben Abschlussstand | Die öffentliche Jira-Fläche übernimmt Status und öffentliche Links aus Jira ohne Jira-Cloud-Links | `/de/jira/issues/J01-83/` | erledigt |
 
 ## Nicht Teil von J01-83
 
@@ -144,7 +144,7 @@ Ausdrücklich nicht Teil der V1:
   "/de/jira/issues/J01-95/" | relative_url }})
 - [J01-101: Policy-Schärfung für CLI-Cache getrennt vorbereiten]({{
   "/de/jira/issues/J01-101/" | relative_url }})
-- [Jira: J01-72 / Schritt J01-83]({{ "/de/jira/issues/J01-72/steps/J01-83/" | relative_url }})
+- [Jira: J01-83]({{ "/de/jira/issues/J01-83/" | relative_url }})
 - [ADR-0002: atlassian-http-client Sicherheitsmodell]({{
   "/de/decisions/adr-0002/" | relative_url }})
 - [Jira-Arbeitsdokus]({{ "/de/jira/" | relative_url }})

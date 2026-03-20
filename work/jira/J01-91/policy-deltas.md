@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "J01-91: Policy-Delta-Vorschläge – 2026-03-06"
-permalink: /de/jira/issues/J01-72/steps/J01-91/policy-deltas/
+permalink: /de/jira/issues/J01-91/policy-deltas/
 ---
 
 Diese Seite hält fest, welche Vorschläge aus `J01-91` in

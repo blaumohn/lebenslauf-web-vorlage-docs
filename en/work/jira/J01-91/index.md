@@ -3,7 +3,7 @@ layout: page
 title: "J01-91: Zustand/Vorhaben (Snapshot)"
 jira_key: J01-91
 jira_parent_key: J01-72
-permalink: /en/jira/issues/J01-72/steps/J01-91/
+permalink: /en/jira/issues/J01-91/
 ---
 
 **Stand:** 2026-03-18
@@ -222,7 +222,7 @@ Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 
 - Jira metadata now links `J01-91` explicitly with `J01-98`, `J01-100`
   and `J01-103`.
-- [Jira: J01-72 / step J01-91]({{ "/en/jira/issues/J01-72/steps/J01-91/" | relative_url }}) (derived)
+- [Jira: J01-91]({{ "/en/jira/issues/J01-91/" | relative_url }})
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/en/operations/runbook/" | relative_url }})
 - [Drift-Report (Qualität)]({{ "/en/quality/drift-reports/J01-91/" | relative_url }})
 - [J01-98: sprint-relevant preview migration]({{ "/en/jira/issues/J01-98/" | relative_url }})

@@ -3,7 +3,7 @@ layout: page
 title: "J01-94: Scrum-Sprint-Rahmen und öffentliche Sprint-Historie"
 jira_key: J01-94
 jira_parent_key: J01-72
-permalink: /de/jira/issues/J01-72/steps/J01-94/
+permalink: /de/jira/issues/J01-94/
 ---
 
 **Stand:** 2026-03-14
@@ -45,4 +45,4 @@ vereinheitlichen, dass die Arbeitsweise öffentlich nachvollziehbar bleibt.
 
 - [Sprint-Historie]({{ "/de/work/sprints/" | relative_url }})
 - [Sprint-Board]({{ "/de/jira/sprint/" | relative_url }})
-- [Mirror: J01-72 / Schritt J01-94]({{ "/de/jira/issues/J01-72/steps/J01-94/" | relative_url }})
+- [Jira: J01-94]({{ "/de/jira/issues/J01-94/" | relative_url }})

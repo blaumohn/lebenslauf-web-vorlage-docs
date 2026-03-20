@@ -3,7 +3,7 @@ layout: page
 title: "J01-73: Subtask-Reihenfolge gegen Export prüfen"
 jira_key: J01-73
 jira_parent_key: J01-72
-permalink: /de/jira/issues/J01-72/steps/J01-73/
+permalink: /de/jira/issues/J01-73/
 ---
 
 **Stand:** 2026-03-17
@@ -38,7 +38,7 @@ klären, dass Umrankieren, Schritt-Nummern und Summary-Prefixe dieselbe
 | Öffentliche Entscheidungsgrundlage ist vorhanden | `ADR-0003` beschreibt Rank, Schritt-Nr und Summary-Prefix als Zielmodell | [ADR-0003]({{ "/de/decisions/adr-0003/" | relative_url }}) | erledigt |
 | Operativer Pfad zur Umsetzung ist öffentlich beschrieben | Backfill und Prefix-Pfad sind im Runbook verankert | [Runbook: Backfill Schritt-Nr und Summary-Prefix]({{ "/de/operations/jira-backfill-schritt-nr/" | relative_url }}) | erledigt |
 | Legacy-Link-Ersatz ist geklärt | `J01-99` führt `ADR-0003` als kanonisches Ziel für `J01-73` | [J01-99]({{ "/de/jira/issues/J01-99/" | relative_url }}) | erledigt |
-| Kanonische Arbeitsdoku ist aus Jira direkt erreichbar | Jira hält zusätzlich einen Remote-Link auf `/de/jira/issues/J01-72/steps/J01-73/` | Jira-Remote-Links für `J01-73` | erledigt |
+| Kanonische Arbeitsdoku ist aus Jira direkt erreichbar | Jira hält zusätzlich einen Remote-Link auf `/de/jira/issues/J01-73/` | Jira-Remote-Links für `J01-73` | erledigt |
 
 ## Abschluss
 

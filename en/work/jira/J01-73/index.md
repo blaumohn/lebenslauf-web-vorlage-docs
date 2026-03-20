@@ -3,7 +3,7 @@ layout: page
 title: "J01-73: Verify subtask ordering against the export path"
 jira_key: J01-73
 jira_parent_key: J01-72
-permalink: /en/jira/issues/J01-72/steps/J01-73/
+permalink: /en/jira/issues/J01-73/
 ---
 
 **Stand:** 2026-03-17
@@ -37,7 +37,7 @@ reranking, step numbers, and summary prefixes all carry the same public order.
 | Public decision basis exists | `ADR-0003` defines rank, step number, and summary prefix as the target model | [ADR-0003]({{ "/en/decisions/adr-0003/" | relative_url }}) | done |
 | Operational implementation path is public | The backfill and prefix path is anchored in the runbook | [Runbook: backfill step number and summary prefix]({{ "/en/operations/jira-backfill-schritt-nr/" | relative_url }}) | done |
 | Legacy-link replacement is settled | `J01-99` lists `ADR-0003` as the canonical target for `J01-73` | [J01-99]({{ "/en/jira/issues/J01-99/" | relative_url }}) | done |
-| Canonical work doc is reachable directly from Jira | Jira also carries a remote link to `/en/jira/issues/J01-72/steps/J01-73/` | Jira remote links for `J01-73` | done |
+| Canonical work doc is reachable directly from Jira | Jira also carries a remote link to `/en/jira/issues/J01-73/` | Jira remote links for `J01-73` | done |
 
 ## Closure
 

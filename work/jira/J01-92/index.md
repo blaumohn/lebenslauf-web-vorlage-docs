@@ -3,7 +3,7 @@ layout: page
 title: "J01-92: Shared-Agent-Regeln und Skill-Versionierung"
 jira_key: J01-92
 jira_parent_key: J01-72
-permalink: /de/jira/issues/J01-72/steps/J01-92/
+permalink: /de/jira/issues/J01-92/
 ---
 
 **Stand:** 2026-03-16
@@ -53,7 +53,7 @@ Regeln, Skills und öffentliche Doku zu vermischen.
 
 ## Links
 
-- [Mirror: J01-72 / Schritt J01-92]({{ "/de/jira/issues/J01-72/steps/J01-92/" | relative_url }})
+- [Jira: J01-92]({{ "/de/jira/issues/J01-92/" | relative_url }})
 - [Feature-Matrix: Jira- und Doku-Tooling]({{ "/de/areas/proj-doku-tooling/feature-matrix/" | relative_url }})
 
 ## Hinweise

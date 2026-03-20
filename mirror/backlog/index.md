@@ -91,3 +91,4 @@ permalink: /de/jira/backlog/
 - [J01-102 — KI-Arbeit: Projektkarte und Skill-/Doku-Trennung schärfen]({{ "/de/jira/issues/J01-102/" | relative_url }})
 - [J01-103 — J01-91: offene Zielerfüllung für Public-Doku und Übernahmestatus nachziehen]({{ "/de/jira/issues/J01-103/" | relative_url }})
 - [J01-105 — Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf]({{ "/de/jira/issues/J01-105/" | relative_url }})
+- [J01-109 — GitHub-Pages-Permalinks für öffentliche Jira-Doku angleichen]({{ "/de/jira/issues/J01-109/" | relative_url }})
