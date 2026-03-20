@@ -5,7 +5,7 @@ jira_key: J01-105
 permalink: /de/jira/issues/J01-105/
 ---
 
-**Stand:** 2026-03-19
+**Stand:** 2026-03-20
 
 {% include jira-state-head.html %}
 
@@ -18,30 +18,95 @@ Phasengrenzen eindeutig und prüfbar sind.
 
 ## Ziel
 
-- `required` und `allowed` fallen zusammen: eine flache Liste je Pipeline/Phase
-  benennt genau die Parameter, die vorhanden sein müssen und die erlaubt sind.
+- `required` und `allowed` fallen zusammen: die Phasenlogik wird als
+  Mischung aus `pipelines.global`, `pipelines.common.<phase>` und
+  `pipelines.<pipeline>.<phase>` beschrieben und zu konkreten
+  Parametersätzen expandiert.
 - Code-Defaults (`get('KEY', 'default')`) werden entfernt, damit der
   Parameter-Vektor-Ansatz echte Testergebnisse liefert.
-- Die pipeline-spec-lib liest `$pipeline[$phase]` als direkte Liste statt
-  `['required']`/`['allowed']`.
+- `variables` bleibt der Parameterkatalog im App-Repo; `context` wird als
+  Bereich `pipeline_phase` geführt.
+- Die pipeline-spec-lib liest Bereichs- und Teilbereichs-Referenzen, expandiert
+  sie und validiert dabei die Disjunktheit zwischen `global`, `common` und
+  konkreter Pipeline.
 - Tests werden nachgezogen; das Manifest gilt danach als saubere
   Phasengrenzen-Spezifikation.
 
 ## Aktueller Stand
 
-- Konzept ausgearbeitet und Jira-Task angelegt (2026-03-19).
+- Konzept ausgearbeitet und öffentliche Arbeitsdoku auf den
+  beschlossenen Entwurf nachgezogen (2026-03-20).
 - Verwandt mit J01-28 (breiter Analyserahmen); kein gegenseitiger Blocker.
-- Voraussetzung J01-37 (konditionelles required, Mail-Abhängigkeit) zu klären.
-- Implementierung noch nicht begonnen.
+- J01-37 bleibt ein angrenzender Folgepunkt, ist aber nicht Teil dieses
+  Doku-Nachzugs.
+- Umsetzung in den Quell-Repos ist noch nicht begonnen; dieser Arbeitslauf
+  schärft nur Jira und öffentliche Doku.
+
+## Geplantes Zielmodell
+
+- Eine Manifest-Datei im App-Repo bleibt bestehen.
+- `variables` definiert nur Parameter, Gruppen, `sources` und `meta`.
+- Jeder Variablenschlüssel erhält ein `meta`-Objekt.
+- `pipelines.global` gilt für alle Pipelines und Phasen.
+- `pipelines.common.<phase>` enthält die phasenweite Schnittmenge.
+- `pipelines.<pipeline>.<phase>` ergänzt nur die echte Pipeline-Differenz.
+- Phasenlisten dürfen ganze Bereiche oder Teilbereiche referenzieren.
+- Nach der Expansion darf es keine Schnittmenge zwischen `global`, `common`
+  und konkreter Pipeline geben.
+
+## Herleitung des dünnen Manifests
+
+Die Herleitung wird als geglätteter Fachgang im Vorgang selbst festgehalten:
+
+1. Quellanalyse: pro Phase wird aus dem Code abgeleitet, welche Parameter
+   tatsächlich gelesen werden.
+2. P_0: aus dieser Quellanalyse entsteht eine erste vollständige
+   Phasenmenge.
+3. Defaults zuerst entfernen: stille Code-Defaults verfälschen sonst die
+   spätere Ausdünnung.
+4. Tests stabilisieren: fehlende und fremde Parameter müssen sichtbar
+   fehlschlagen.
+5. Manifest ausdünnen: aus P_0 wird der dünne Zielvertrag der Phase.
+
+Bestätigte Befunde aus der Quellanalyse:
+
+- `setup`: `LEBENSLAUF_PUBLIC_PROFILE` ist nur für
+  `--reset-sample-content` relevant.
+- `build`: nutzt `LEBENSLAUF_DATEN_PFAD`,
+  `LEBENSLAUF_YAML_PFAD`, `LEBENSLAUF_JSON_PFAD`,
+  `LEBENSLAUF_PUBLIC_PROFILE`, `LEBENSLAUF_LANG_DEFAULT`,
+  `LEBENSLAUF_LANGS` und den Build-seitigen `APP_BASE_PATH`.
+- `runtime`: nutzt `APP_BASE_PATH`, `TRUST_PROXY`,
+  `CAPTCHA_TTL_SECONDS`, `CAPTCHA_MAX_GET`,
+  `CONTACT_MAX_POST`, `CONTACT_TO_EMAIL`, `CONTACT_FROM_EMAIL`,
+  `RATE_LIMIT_WINDOW_SECONDS`, `MAIL_STDOUT`, `SMTP_*`,
+  `LEBENSLAUF_LANG_DEFAULT` und `LEBENSLAUF_LANGS`.
+- `python`: nutzt `PYTHON_CMD` und optional `PYTHON_PATHS`.
+- `deploy`: nutzt nur die Deploy-Parameter `FTP_*`.
+
+Daraus folgt der Kernbefund des Vorgangs:
+`LEBENSLAUF_PUBLIC_PROFILE` gehört in `setup` und `build`, aber nicht in
+`runtime`.
+
+## Nicht-Scope dieses Doku-Nachzugs
+
+- keine Umsetzung der Manifest- oder Lib-Änderungen in den Quell-Repos
+- keine Umsetzung von J01-37
+- keine technische Testaussage, dass der neue Entwurf bereits produktiv ist
 
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Code-Defaults entfernt | Kein `get('KEY', 'default')` mehr im Quellcode | Quellanalyse pipeline-config-spec-php | offen |
+| Herleitung dokumentiert | Quellanalyse, P_0 und Ausdünnungsweg sind im Vorgang nachvollziehbar | Jira-Doku DE/EN | erledigt |
+| Zielmodell dokumentiert | `variables`, `pipelines.global`, `common` und Pipeline-Differenz sind beschrieben | Jira-Doku DE/EN | erledigt |
+| `pipeline_phase` benannt | früherer Bereich `context` wird als `pipeline_phase` festgehalten | Jira-Doku DE/EN | erledigt |
+| Bereichs-Syntax erklärt | ganze Bereiche und Teilbereiche sind als geplante Syntax beschrieben | Jira-Doku DE/EN | erledigt |
+| Disjunktheitsregel erklärt | keine Schnittmenge zwischen `global`, `common` und konkreter Pipeline | Jira-Doku DE/EN | erledigt |
+| Code-Defaults entfernt | Kein `get('KEY', 'default')` mehr im Quellcode | Quellanalyse Quell-Repos | offen |
 | `LEBENSLAUF_PUBLIC_PROFILE` korrigiert | Nur noch in `build`, nicht in `preview.runtime` | config.manifest.yaml | offen |
-| Manifest vereinfacht | Pipeline/Phase als direkte Liste, kein `required`/`allowed` | config.manifest.yaml | offen |
-| pipeline-spec-lib angepasst | `$pipeline[$phase]` als direkte Liste | pipeline-config-spec-php | offen |
+| Manifest vereinfacht | Zielmodell in den Quell-Repos umgesetzt | config.manifest.yaml | offen |
+| pipeline-spec-lib angepasst | Expander und Validierung des Zielmodells sind umgesetzt | pipeline-config-spec-php | offen |
 | Tests grün | Parameter-Vektor-Ansatz P_0 → P_n liefert echte Ergebnisse | Test-Lauf | offen |
 | Kein Blocker mehr für J01-9 | J01-105 als erledigt, J01-9 entsperrt | Jira | offen |
 
@@ -68,8 +133,9 @@ die lokale Lib-Version zeigt statt auf die installierte Composer-Version.
 ## Offene Punkte
 
 - J01-28: verwandter Vorgang (breiter Analyserahmen, kein Blocker).
-- J01-37: Konditionelles required für Mail-Parameter klären.
-- Entscheidung: vereinfachtes Modell als eigener Schritt oder direkt in J01-105?
+- Die beschriebene Zielstruktur ist dokumentiert, aber noch nicht in den
+  Quell-Repos umgesetzt.
+- J01-37 bleibt ein getrennter Folgepunkt für konditionelles required.
 
 ## Links
 

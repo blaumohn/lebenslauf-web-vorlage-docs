@@ -29,6 +29,22 @@ Er beschreibt nur den schmalen Pfad, den `SCRUM Sprint 1` für die
 - `APP_BASE_PATH` und `FTP_SERVER_DIR` erklären den sichtbaren Preview-Zielort
   ohne versteckte Sonderlogik im Doku-Pfad.
 
+## Geplantes Manifestmodell aus J01-105
+
+Der Vorgang `J01-105` schärft das Manifestmodell redaktionell nach:
+
+- `variables` bleibt der Parameterkatalog im App-Repo.
+- `pipelines` trägt die Regelschicht.
+- Geplant sind die Ebenen `pipelines.global`,
+  `pipelines.common.<phase>` und `pipelines.<pipeline>.<phase>`.
+- Die geplante Syntax darf ganze Bereiche oder Teilbereiche referenzieren.
+- Nach Expansion darf es keine Schnittmenge zwischen `global`, `common` und
+  konkreter Pipeline geben.
+
+Die vollständige Herleitung dieses dünnen Zielmodells wird auf der öffentlichen
+Vorgangsseite zu
+[J01-105]({{ "/de/jira/issues/J01-105/" | relative_url }}) festgehalten.
+
 ## Öffentlicher Preview-Pfad
 
 Der schmale Preview-Pfad für `J01-98` lautet:

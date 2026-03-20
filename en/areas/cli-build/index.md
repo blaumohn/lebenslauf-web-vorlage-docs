@@ -27,6 +27,22 @@ preview migration.
 - `APP_BASE_PATH` and `FTP_SERVER_DIR` explain the visible preview target
   without hidden special logic in the doc path.
 
+## Planned Manifest Model from J01-105
+
+Issue `J01-105` sharpens the manifest model editorially:
+
+- `variables` stays the parameter catalog in the app repo.
+- `pipelines` carries the rule layer.
+- The planned levels are `pipelines.global`,
+  `pipelines.common.<phase>`, and `pipelines.<pipeline>.<phase>`.
+- The planned syntax may reference full areas or partial areas.
+- After expansion there must be no overlap between `global`, `common`, and the
+  concrete pipeline.
+
+The full derivation of this thin target model is recorded on the public
+issue page for
+[J01-105]({{ "/en/jira/issues/J01-105/" | relative_url }}).
+
 ## Public Preview Path
 
 The narrow preview path for `J01-98` is:
