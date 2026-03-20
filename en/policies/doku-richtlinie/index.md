@@ -159,17 +159,17 @@ F) **`work/jira/` ist vorgang-genau**
   `In Überprüfung`; it does not replace a broader `quality/testmatrix/`.
 - Normal Jira work docs additionally use:
   - a short context block directly below `Stand`
-  - the block shows the counterpart in `mirror`, if that page exists
-  - if a public parent issue exists, the block also shows parent work doc and
-    parent mirror
+  - if a public parent issue exists, the block also shows the parent work doc
   - if public step pages exist below that issue, the block shows short direct
-    paths to their mirror pages
+    paths to those step pages
+  - if the current page has at least two `##` sections or the issue has
+    additional public subpages or step pages, a dedicated `## Contents key`
+    section follows below
+  - the contents key first shows the `##` outline of the current page and then
+    adds related public subpages and public steps of that issue
 - Public step pages additionally use:
   - the same short context block directly below `Stand`
-  - the block shows the page's own mirror step page, the parent work doc and
-    the parent issue in the mirror, if those targets exist
-  - the step identifier in the intro links to the page's own mirror step page,
-    if it exists
+  - the block shows the parent work doc
   - the parent key in the intro links to the parent work doc
   - when a new public step page is introduced for an existing subtask,
     existing public mentions are updated to matching links wherever they touch
@@ -213,7 +213,8 @@ L) **Internal IDs stay out of public docs**
 M) **Jira links only to canonical docs targets**
 - Jira remote links point to canonical pages under `areas/`, `operations/`,
   `decisions/`, `policies/`, `quality/` or `work/`.
-- `mirror/` remains a derived view and is not a primary link target from Jira.
+- Public Jira work docs are published only from `work/jira/` and their
+  `/de/...`-/`/en/...` permalinks.
 
 N) **Drift is a lightweight quality gate**
 - Structural changes to SSOT, link policy or operational flow require a drift

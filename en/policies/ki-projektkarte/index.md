@@ -14,7 +14,7 @@ requirements do not need to be duplicated inside the skill itself.
 - **Workspace and repo `AGENTS.md`**:
   always-on rules and repo-local runtime add-ons.
 - **GitHub Pages docs**:
-  canonical project requirements, issue rules, link rules, and mirror rules.
+  canonical project requirements, issue rules, and link rules.
 - **`tagebuch`**:
   provenance, search cases, round notes, and derivation.
 - **Skills**:
@@ -26,7 +26,7 @@ requirements do not need to be duplicated inside the skill itself.
 - where issue-specific public work lives under `work/jira/J01-<KEY>/`
 - where canonical project rules live under `policies/`, `operations/`,
   `areas/`, and `decisions/`
-- where the mirror is only a derived view and not the SSOT
+- where public Jira work docs live canonically under `work/jira/`
 - where provenance and source history should be checked in the `tagebuch`
 
 ## What a skill may carry itself
@@ -44,7 +44,7 @@ requirements do not need to be duplicated inside the skill itself.
 ## Canonical entry points
 
 - [Docs policy]({{ "/en/policies/doku-richtlinie/" | relative_url }})
-- [Runbook: update the Jira mirror]({{ "/en/operations/runbook/" | relative_url }})
+- [Runbook: update public Jira pages]({{ "/en/operations/runbook/" | relative_url }})
 - [Jira work docs]({{ "/en/jira/" | relative_url }})
 - [Jira and docs tooling: public Jira overview]({{ "/en/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }})
 

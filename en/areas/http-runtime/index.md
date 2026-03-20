@@ -69,4 +69,4 @@ Background and outcome:
 - [J01-16: Runtime concurrency, locking and atomic access]({{
   "/en/jira/issues/J01-16/" | relative_url }})
 - [16-3: Race-adjacent tests]({{ "/en/jira/issues/J01-16/steps/J01-19/" | relative_url }})
-- [J01-16 in the Jira mirror]({{ "/en/jira/issues/J01-16/" | relative_url }})
+- [J01-16 in public Jira pages]({{ "/en/jira/issues/J01-16/" | relative_url }})

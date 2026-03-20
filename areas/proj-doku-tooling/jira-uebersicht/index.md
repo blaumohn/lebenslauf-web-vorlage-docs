@@ -38,15 +38,17 @@ Jira-Fläche über GitHub Pages veröffentlicht:
     Jira-Remote-Link darauf zählt als zusätzliche Angabe.
   - Öffentliche Vorgangs- und Schrittseiten zeigen oben einen kompakten
     Zustandskopf und darunter einen kurzen Kontextblock.
+  - Wenn ein Vorgang mehrere öffentliche Teilseiten hat, zeigt die
+    Arbeitsdoku zusätzlich einen Inhalts-Schlüssel.
   - Eine öffentliche Schrittseite unter
     `jira/issues/<PARENT>/steps/<SUBTASK_KEY>/` zählt ebenfalls als eigene
     öffentliche Detailaussage.
   - Hinweis: Die Schritt-Seiten sind stabil per Subtask-Key adressiert
     (`/jira/issues/<PARENT>/steps/<SUBTASK_KEY>/`); nur die Anzeige/Linktexte
     bleiben key-frei.
-  - Wenn eine solche Schrittseite existiert, zeigen Zustandskopf und
-    Kontextblock dieselben kurzen Querpfade zur Schrittseite und zum
-    Elternvorgang.
+  - Wenn eine solche Schrittseite existiert, zeigen Zustandskopf,
+    Kontextblock und Inhalts-Schlüssel dieselben kurzen Querpfade zur
+    Schrittseite und zum Elternvorgang.
 
 ## Aktualisieren
 

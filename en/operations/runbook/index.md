@@ -25,7 +25,7 @@ Update the public Jira area in this repo:
 
 ## Path Semantics
 
-- `work/...` and `mirror/...` are filesystem paths in this repo.
+- `work/...` is the public source path for Jira work docs in this repo.
 - Public URI paths live under `/de/...` and `/en/...`.
 - A work doc can therefore live at the filesystem path
   `work/jira/J01-106/index.md` while being published at the URI
@@ -91,7 +91,8 @@ The URL conversion from Jira follows these rules:
      top-level issues.
    - `erledigt/` only remains as a compatibility path to the history view.
    - Issue and step pages under `jira/` expose short, visible cross-paths to
-     overviews, parent pages, and public steps.
+     parent pages and public steps; issue families with multiple public pages
+     additionally show a contents key.
    - Subtasks without public details do **not** get their own page.
    - The base record of a subtask is step number, title, and status.
    - Pure step-page metadata such as parent, step number, status, key, or
@@ -123,7 +124,8 @@ The URL conversion from Jira follows these rules:
   - The sprint board only shows the same top-level issues as the Jira board;
     steps stay visible on parent and step pages.
   - Backlog and history show the status on every listed issue line.
-  - The EN Jira tree is synchronized after the DE render
+  - Only generated EN Jira pages under `en/work/jira/` are synchronized after
+    the DE render
 
 ## Rollback
 

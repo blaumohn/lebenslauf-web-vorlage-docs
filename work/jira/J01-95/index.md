@@ -26,12 +26,12 @@ Normalmodus jedes Mal projektweite Jira-Listenabfragen zu brauchen.
 - neuer projektbezogener Skill `jira-state-sync/` für Journal- und Resume-Läufe
 - lokaler Jira-Snapshot-Cache unter `.local/jira-sync-cache/`
 - lokales Laufjournal unter `.local/jira-sync-journal/`
-- Mirror-Generator akzeptiert jetzt lokale Snapshot-Dateien statt nur frischer
-  Jira-Abfragen
+- Generator der öffentlichen Jira-Fläche akzeptiert jetzt lokale
+  Snapshot-Dateien statt nur frischer Jira-Abfragen
 - `verify-public-jira-pages.sh` kann jetzt gezielt nur betroffene Keys prüfen
 - neue Pages-Helfer:
   - Link-Änderungen aus Git-Diff ableiten
-  - betroffene Jira-Keys lokal aus `mirror/` rückwärts finden
+  - betroffene Jira-Keys lokal aus öffentlichen Jira-Dateien rückwärts finden
 - `atlassian jira ext remotelink sync` für gezielte Docs-Link-Synchronisierung
 - Der Vorgang ist in Jira auf `Erledigt` gesetzt; gezielte Status- und
   Remote-Link-Läufe für `J01-95` wurden erfolgreich nachgezogen.

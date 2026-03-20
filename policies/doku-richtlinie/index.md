@@ -159,17 +159,19 @@ F) **`work/jira/` ist vorgang-genau**
   `In Überprüfung`; sie ersetzt keine breite `quality/testmatrix/`.
 - Für normale Jira-Arbeitsdokus gilt zusätzlich:
   - direkt unter `Stand` steht ein kurzer Kontextblock
-  - der Block zeigt die Gegenseite im `mirror`, wenn diese existiert
   - wenn ein übergeordneter Vorgang öffentlich sichtbar ist, zeigt der Block
-    zusätzlich Parent-Arbeitsdoku und Parent-Mirror
+    zusätzlich die Parent-Arbeitsdoku
   - wenn öffentliche Schrittseiten unter dem Vorgang existieren, zeigt der
-    Block kurze Direktpfade zu deren Mirror-Seiten
+    Block kurze Direktpfade zu diesen Schrittseiten
+  - wenn die aktuelle Seite mindestens zwei `##`-Abschnitte hat oder der
+    Vorgang weitere öffentliche Teilseiten oder Schrittseiten besitzt, folgt
+    darunter ein eigener Abschnitt `## Inhalts-Schlüssel`
+  - der Inhalts-Schlüssel zeigt zuerst die `##`-Gliederung der aktuellen Seite
+    und ergänzt danach weitere Teilseiten und öffentliche Schritte des
+    Vorgangs
 - Für Schrittseiten gilt zusätzlich:
   - direkt unter `Stand` steht derselbe kurze Kontextblock
-  - der Block zeigt die eigene Mirror-Schrittseite, die Eltern-Arbeitsdoku und
-    das Eltern-Issue im Mirror, wenn diese Ziele existieren
-  - die Schrittkennung im Einleitungssatz linkt auf die eigene
-    Mirror-Schrittseite, wenn diese existiert
+  - der Block zeigt die Eltern-Arbeitsdoku
   - der Eltern-Key im Einleitungssatz linkt auf die Eltern-Arbeitsdoku
   - wenn für eine bestehende Unteraufgabe neu eine öffentliche Schrittseite
     entsteht, werden vorhandene Nennungen in der Public-Doku auf passende
@@ -223,8 +225,8 @@ L) **Interne IDs bleiben aus Public-Doku heraus**
 M) **Jira verlinkt nur auf kanonische Doku-Ziele**
 - Jira-Remote-Links zeigen auf kanonische Seiten unter `areas/`, `operations/`,
   `decisions/`, `policies/`, `quality/` oder `work/`.
-- `mirror/` bleibt eine abgeleitete Sicht und ist kein primäres Linkziel aus
-  Jira.
+- Öffentliche Jira-Arbeitsdokus entstehen nur unter `work/jira/` und dessen
+  öffentlichen `/de/...`-/`/en/...`-Permalinks.
 
 N) **Drift ist ein leichtgewichtiges Qualitäts-Gate**
 - Bei strukturellen Änderungen an SSOT, Link-Policy oder Betriebsablauf wird ein

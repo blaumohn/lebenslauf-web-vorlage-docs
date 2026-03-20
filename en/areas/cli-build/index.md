@@ -65,5 +65,5 @@ The narrow preview path for `J01-98` is:
 ## Links
 
 - [J01-98: public work status]({{ "/en/jira/issues/J01-98/" | relative_url }})
-- [J01-31 in the Jira mirror]({{ "/en/jira/issues/J01-31/" | relative_url }})
+- [J01-31 in public Jira pages]({{ "/en/jira/issues/J01-31/" | relative_url }})
 - [Test matrix]({{ "/en/quality/testmatrix/" | relative_url }})

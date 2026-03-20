@@ -15,21 +15,22 @@ jira_parent_key: J01-84
 Kanonischer öffentlicher Arbeitsstand für den Jira-Task `J01-104` unter dem
 Epic `J01-84`.
 Dieser Arbeitsstand zieht die GitHub-Pages-Regel für kurze, sichtbare
-Querpfade zwischen `work/jira` und `mirror` systemisch nach; Jira Cloud dient
-hier nur als Vorgangsrahmen und nicht als fachlicher Ablageort der Regel.
+Querpfade innerhalb von `work/jira` systemisch nach; Jira Cloud dient hier nur
+als Vorgangsrahmen und nicht als fachlicher Ablageort der Regel.
 
 ## Ziel
 
-- Die Doku-Richtlinie, Vorlagen und Mirror-Regeln erklären dieselbe
+- Die Doku-Richtlinie, Vorlagen und Skill-/Tooling-Regeln erklären dieselbe
   Kontextnavigations-Logik für Vorgänge und Schrittseiten konsistent.
 - Die Regel bleibt als Projektvorgabe erhalten:
   Richtlinie, Vorlage, Generator, Verifikation und Skill-Ablauf tragen
   denselben Pfadstandard.
 - Öffentliche Schrittseiten unter `work/jira/<PARENT>/steps/<SUBTASK_KEY>/`
   sind als Variante der Jira-Arbeitsdoku formalisiert.
-- Normale Jira-Arbeitsdokus und Mirror-Seiten zeigen oben kurze,
-  sofort sichtbare Querpfade zur Gegenseite sowie, wenn verfügbar, zu
-  über- und untergeordneten öffentlichen Seiten.
+- Normale Jira-Arbeitsdokus zeigen oben kurze, sofort sichtbare Querpfade zu
+  Parent und öffentlichen Schritten.
+- Vorgänge mit mehreren öffentlichen Teilseiten zeigen zusätzlich einen
+  Inhalts-Schlüssel.
 - Wenn eine öffentliche Schrittseite oder ein öffentlicher Subtask-Arbeitsstand
   existiert, bleiben Elternvorgang, Gegenseite und Detailseite konsistent
   verlinkt.
@@ -42,11 +43,9 @@ hier nur als Vorgangsrahmen und nicht als fachlicher Ablageort der Regel.
 - Jira-Arbeitsdokus nutzen eine gemeinsame Kontextnavigation statt
   händischer Einzel-Leisten; dadurch bleiben normale Vorgänge,
   Subtask-Arbeitsstände und Schrittseiten im selben Muster.
-- Der Mirror erzeugt dieselbe Querpfad-Logik jetzt generatorseitig aus
-  lokalen Public-Zielen und Jira-Beziehungen, nicht nur aus Remote-Link-Listen.
-- Die Verifikation prüft neben Jira-Remote-Links jetzt auch die lokalen
-  Gegenstücke zwischen `work/jira` und `mirror`.
-- Richtlinie, Vorlage, Bereichsseite, Runbook und Mirror-Skill nennen dieselbe
+- Die Verifikation prüft Jira-Remote-Links und die lokale `work/jira`-
+  Struktur jetzt ohne Spiegel-Gegenpfade.
+- Richtlinie, Vorlage, Bereichsseite, Runbook und Skill nennen dieselbe
   Regel.
 - Die öffentliche Jira-Fläche nutzt jetzt `Backlog`, `Historie` und
   `Sprint Board` als klarere Hauptsichten; `erledigt/` bleibt nur noch als
@@ -58,11 +57,11 @@ hier nur als Vorgangsrahmen und nicht als fachlicher Ablageort der Regel.
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Richtlinie beschreibt den Querpfad als Vorgabe | `work/jira` und `mirror` haben für Vorgänge und Schrittseiten klaren Kontextblock, Gegenseite und Parent-/Child-Regeln | Richtlinie + Bereichsseite | erledigt |
+| Richtlinie beschreibt die Vorgabe | `work/jira` ist die einzige öffentliche Jira-Arbeitsdoku; Kontextblock und Inhalts-Schlüssel erklären Parent-/Child-Pfade | Richtlinie + Bereichsseite | erledigt |
 | Jira-Arbeitsdokus nutzen keine Einzel-Leisten mehr | Normale Arbeitsdokus und Schrittseiten binden dieselbe gemeinsame Kontextnavigation ein | diese Seite + andere Jira-Arbeitsdokus | erledigt |
-| Mirror erzeugt dieselbe Logik erneut | Ein Mirror-Neulauf rendert die kurzen Gegenpfade aus lokaler Struktur und Jira-Beziehungen | Mirror-Seiten + Generator | erledigt |
-| Verifikation prüft die Systemregel | Fehlende lokale Gegenstücke zwischen `work/jira` und `mirror` werden gemeldet | Verifikationsskript + Runbook | erledigt |
-| Skill-Ablauf trägt die Regel weiter | Mirror-Betrieb nennt die Paar- und Querpfad-Prüfung ausdrücklich | Mirror-Skill | erledigt |
+| Generator und Sync bleiben konsistent | Generierte Übersichten und nicht-manuelle Jira-Seiten liegen unter `work/jira` | Generator + EN-Sync | erledigt |
+| Verifikation prüft die Systemregel | Öffentliche Jira-Pfade werden nur noch gegen `work/jira` bestätigt | Verifikationsskript + Runbook | erledigt |
+| Skill-Ablauf trägt die Regel weiter | Der Docs-/Sync-Ablauf nennt nur noch `work/jira` als öffentliche Quelle | Skill-Doku | erledigt |
 | Öffentliche Jira-Fläche bleibt klar lesbar | Einstieg trennt Backlog, Historie und Sprint Board; `erledigt/` ist nur noch Weiterleitungskontext | `jira/`, `backlog/`, `historie/`, `erledigt/` | erledigt |
 | Backlog zeigt Status je Vorgangszeile | Alle gelisteten Backlog-Vorgänge tragen einen sichtbaren Statuszusatz | `backlog/` | erledigt |
 
@@ -71,8 +70,8 @@ hier nur als Vorgangsrahmen und nicht als fachlicher Ablageort der Regel.
 - Der GitHub-Pages-Nachzug ist nicht nur sichtbar eingebaut, sondern als
   Projektvorgabe in Richtlinie, Vorlage, Generator, Verifikation und Skill
   verankert.
-- Neue oder nachgezogene Arbeitsdokus und Mirror-Läufe benutzen damit dieselbe
-  Querpfad-Regel reproduzierbar weiter.
+- Neue oder nachgezogene Arbeitsdokus und Generator-Läufe benutzen damit
+  dieselbe Querpfad-Regel reproduzierbar weiter.
 - Die Umsetzung bleibt vollständig außerhalb von Jira Cloud.
 
 ## Links

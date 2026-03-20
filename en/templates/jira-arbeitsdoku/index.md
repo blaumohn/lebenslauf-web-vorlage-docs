@@ -14,6 +14,10 @@ Stand: YYYY-MM-DD
 Short context
 - Canonical public work status for `J01-<KEY>`.
 - 1-2 sentences: what is this issue about, and why is it publicly relevant here?
+- If the page has at least two `##` sections, the contents key appears below
+  automatically with the outline of that page.
+- If the same issue has additional public subpages or step pages, the same
+  contents key adds those related links.
 
 ## Goal
 
@@ -49,10 +53,14 @@ Stand: YYYY-MM-DD
 
 Short context
 - Schrittspezifischer öffentlicher Arbeitsstand für
-  [<PARENTNR>-<SCHRITTNR>](<Mirror-Schrittseite>) unter
+  [<PARENTNR>-<SCHRITTNR>](<Öffentliche-Schrittseite>) unter
   [J01-<PARENTKEY>](<Eltern-Arbeitsdoku>).
 - 1-2 Sätze: Worum geht es, warum braucht genau dieser Subtask eine eigene
   öffentliche Detailseite?
+- If the page has at least two `##` sections, the contents key appears below
+  automatically with the outline of that page.
+- If the parent issue has additional public subpages or step pages, the same
+  contents key adds those related links.
 
 ## Ziel
 
@@ -74,9 +82,9 @@ Short context
 
 ## Links
 
-- <Schritt im Jira-Mirror>
+- <Öffentliche-Schrittseite>
 - <Eltern-Arbeitsdoku>
-- <Eltern-Issue im Mirror>
+- <weitere Teilseite oder kanonischer Zielort>
 - ...
 ```
 
@@ -87,4 +95,4 @@ jira_parent_key: J01-<PARENT>
 ```
 
 This keeps the parent issue visible in the context block even if the page's
-own mirror target is not present locally yet.
+own canonical work-doc target is not present locally yet.

@@ -11,7 +11,7 @@ permalink: /en/jira/issues/J01-94/
 {% include jira-work-context.html %}
 
 Canonical public work status for `J01-94`.
-This task aligns the sprint frame across Jira, GitHub Pages, and the mirror.
+This task aligns the sprint frame across Jira and GitHub Pages.
 
 ## Goal
 
@@ -25,15 +25,15 @@ working style stays publicly understandable.
 - sprint category labels introduced
 - public sprint history added under `work/sprints/`
 - sprint board changed to categories × status
-- mirror board aligned with the Jira board:
+- public sprint board aligned with the Jira board:
   `J01-94` remains a step under `J01-72` and no longer appears as its own
   board item
-- The issue is now set to `Done` in Jira; public status and mirror are aligned.
+- The issue is now set to `Done` in Jira; public status and board view are aligned.
 
 ## Completion
 
 - Sprint state, public history, and sprint categories now share the same frame
-  across Jira, GitHub Pages, and the mirror.
+  across Jira and GitHub Pages.
 - Any further care belongs to the ongoing sprint workflow, not to the core
   implementation step of `J01-94`.
 

@@ -13,7 +13,8 @@ permalink: /en/jira/issues/J01-91/
 {% include jira-work-context.html %}
 
 Kanonischer Ort für den öffentlichen Zustand/das Vorhaben zu `J01-91` (Snapshot).
-Die öffentliche Doku ist SSOT in GitHub Pages; `mirror/` ist abgeleitet.
+Die öffentliche Doku ist SSOT in GitHub Pages; öffentliche Jira-Seiten kommen
+kanonisch aus `work/jira/`.
 Der lebende Vorgangsstatus bleibt in Jira (nicht öffentlich).
 
 ## Ziel
@@ -44,8 +45,8 @@ formulierte Zielbild von `J01-91`.
   regular project docs do not live under `docs/` inside the app repo.
 - `#start` remains an intentional page anchor; duplicate quickstart commands
   are avoided there.
-- Mirror links derived from Jira remote links are normalized to stable
-  language-specific public docs targets.
+- Jira remote links are normalized to stable language-specific canonical
+  GitHub Pages targets.
 
 ## Delta 2026-03-16
 
@@ -124,7 +125,7 @@ Statuswerte:
 
 | Punkt (DoD) | Status | Beleg / Ort |
 | --- | --- | --- |
-| Drift-Report + Abdeckung (ohne `mirror/`) | erledigt | [Drift-Report]({{ "/en/quality/drift-reports/J01-91/" | relative_url }}) und [Abdeckung]({{ "/en/quality/drift-reports/J01-91/coverage/" | relative_url }}) |
+| Drift-Report + coverage of canonical public docs | erledigt | [Drift-Report]({{ "/en/quality/drift-reports/J01-91/" | relative_url }}) und [Abdeckung]({{ "/en/quality/drift-reports/J01-91/coverage/" | relative_url }}) |
 | Öffentliche Jira-Fläche konsistent nachgezogen | erledigt | [Runbook]({{ "/en/operations/runbook/" | relative_url }}) und `shared-tooling/jira-pages/update-public-jira-pages.sh` |
 | Bereiche-Inventar konsistent | erledigt | [Bereiche-Inventar]({{ "/en/jira/issues/J01-91/area-inventory/" | relative_url }}) |
 | Archiv-Auswertung liegt vor (Themen, ohne IDs) | erledigt | [Archiv-Themen]({{ "/en/jira/issues/J01-91/archive-topics/" | relative_url }}) (take-over decisions and target locations fixed) |
@@ -139,11 +140,12 @@ Statuswerte:
 
 Phase 1 ist „fertig“, wenn die folgenden Punkte erfüllt sind:
 
-- Drift-Report deckt alle menschen-geschriebenen Seiten außerhalb `mirror/` ab:
+- Drift-Report covers all people-written pages and canonical public Jira work
+  docs:
   - pro Seite sind die relevanten „Ist“-Claims geprüft oder als „unklar/geplant“
     markiert.
 - Öffentliche Jira-Fläche ist konsistent nachgezogen:
-  - keine veralteten öffentlichen Altpfade unter `mirror/` oder `work/jira/`.
+  - no competing public source families for the same Jira page.
   - Schritt-Seiten nutzen stabile URLs: `/jira/issues/<PARENT>/steps/<SUBTASK_KEY>/`.
   - Remote Links werden als site-relative Links gerendert (nicht als
     absolute Doku-Domain).

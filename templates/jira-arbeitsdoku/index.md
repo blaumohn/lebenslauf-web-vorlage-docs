@@ -16,6 +16,10 @@ Stand: YYYY-MM-DD
 Kurzkontext
 - Kanonischer öffentlicher Arbeitsstand für `J01-<KEY>`.
 - 1-2 Sätze: Worum geht es, warum ist der Vorgang hier öffentlich relevant?
+- Wenn die Seite mindestens zwei `##`-Abschnitte hat, erscheint darunter
+  automatisch der Inhalts-Schlüssel mit der Gliederung dieser Seite.
+- Wenn unter demselben Vorgang weitere öffentliche Teilseiten oder
+  Schrittseiten existieren, ergänzt derselbe Inhalts-Schlüssel diese Querlinks.
 
 ## Ziel
 
@@ -57,6 +61,10 @@ Kurzkontext
   [J01-<PARENTKEY>](<Öffentliche-Elternseite>).
 - 1-2 Sätze: Worum geht es, warum braucht genau dieser Subtask eine eigene
   öffentliche Detailseite?
+- Wenn die Seite mindestens zwei `##`-Abschnitte hat, erscheint darunter
+  automatisch der Inhalts-Schlüssel mit der Gliederung dieser Seite.
+- Wenn zum Elternvorgang weitere öffentliche Teilseiten oder Schrittseiten
+  existieren, ergänzt derselbe Inhalts-Schlüssel diese Querlinks.
 
 ## Ziel
 

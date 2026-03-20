@@ -11,7 +11,7 @@ dem tatsächlich aktuellen Stand (Code, Konfiguration, Tooling, Betriebsablauf).
 
 ## Scope & Regeln
 
-- Scope: Menschen-geschriebene Seiten (kein `mirror/`).
+- Scope: people-written pages and canonical public Jira work docs.
 - Quellen: Repo-Code, Konfig-Dateien, Skripte, CLI-Hilfeausgaben.
 - Public-Doku: Keine Nennung temporärer Export-/Umwandlungsartefakte und keine
   internen Export-Bezeichner (z. B. Export-IDs) außerhalb expliziter

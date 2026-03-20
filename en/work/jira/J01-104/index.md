@@ -14,18 +14,18 @@ jira_parent_key: J01-84
 
 Canonical public work status for Jira task `J01-104` under epic `J01-84`.
 This work status systemically carries over the GitHub Pages rule for short,
-visible cross-paths between `work/jira` and `mirror`; Jira Cloud remains only
-the issue frame and not the domain home of the rule.
+visible cross-paths inside `work/jira`; Jira Cloud remains only the issue
+frame and not the domain home of the rule.
 
 ## Ziel
 
-- Policy, template, mirror rules, verification and skill flow describe the same
-  context navigation for issues and public step pages.
+- Policy, template, verification and skill flow describe the same context
+  navigation for issues and public step pages.
 - Public step pages under `work/jira/<PARENT>/steps/<SUBTASK_KEY>/` stay
   formalized as one variant of the Jira work doc.
-- Normal Jira work docs and mirror pages show short, immediately visible
-  cross-paths to the counterpart and, where available, to parent and child
-  public pages.
+- Normal Jira work docs show short, immediately visible cross-paths to parent
+  and child public pages.
+- Issue families with multiple public pages also show a contents key.
 - If a public step page or public subtask work status exists, parent issue,
   counterpart and detail page remain linked consistently.
 - The public Jira area now separates entry, backlog, history, and sprint
@@ -37,11 +37,9 @@ the issue frame and not the domain home of the rule.
 - Jira work docs now use one shared context navigation instead of manual
   one-off bars; normal issue pages, subtask work statuses and step pages follow
   the same pattern.
-- The mirror now regenerates the same cross-path logic from local public
-  targets and Jira relations, not only from remote-link lists.
-- Verification now checks local counterparts between `work/jira` and `mirror`
-  in addition to Jira remote links.
-- Policy, template, area page, runbook and mirror skill now name the same rule.
+- Verification now checks Jira remote links and the local `work/jira`
+  structure without any competing second source family.
+- Policy, template, area page, runbook and skill now name the same rule.
 - The public Jira area now uses `Backlog`, `History`, and `Sprint Board` as
   clearer primary views; `erledigt/` only remains as a compatibility path to
   history.
@@ -51,11 +49,11 @@ the issue frame and not the domain home of the rule.
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Policy defines the cross-path as a requirement | `work/jira` and `mirror` use a clear context block plus counterpart and parent/child rules for issues and step pages | policy + area page | done |
+| Policy defines the rule | `work/jira` is the only public Jira work-doc source; context block and contents key explain parent/child paths | policy + area page | done |
 | Jira work docs no longer depend on manual one-off bars | Normal work docs and step pages use the same shared context navigation | this page + other Jira work docs | done |
-| Mirror regenerates the same logic | A mirror refresh renders the short counterpart paths from local structure and Jira relations | mirror pages + generator | done |
-| Verification checks the system rule | Missing local counterparts between `work/jira` and `mirror` are reported | verification script + runbook | done |
-| Skill flow keeps the rule alive | Mirror operations explicitly include pair and cross-path verification | mirror skill | done |
+| Generator and sync stay consistent | Generated overviews and non-manual Jira pages live under `work/jira` | generator + EN sync | done |
+| Verification checks the system rule | Public Jira paths are validated only against `work/jira` | verification script + runbook | done |
+| Skill flow keeps the rule alive | Docs and sync operations refer only to `work/jira` as public source | skill docs | done |
 | Public Jira area stays easy to scan | The entry point separates backlog, history, and sprint board; `erledigt/` only keeps compatibility context | `jira/`, `backlog/`, `history/`, `erledigt/` | done |
 | Backlog shows status per issue line | Every listed backlog issue carries a visible status suffix | `backlog/` | done |
 
@@ -64,7 +62,7 @@ the issue frame and not the domain home of the rule.
 - The GitHub Pages carry-over is not only visible in pages now; it is anchored
   as a project rule in policy, template, generator, verification and skill
   flow.
-- New or refreshed work docs and mirror runs therefore keep using the same
+- New or refreshed work docs and generator runs therefore keep using the same
   cross-path rule reproducibly.
 - The implementation stays fully outside Jira Cloud.
 

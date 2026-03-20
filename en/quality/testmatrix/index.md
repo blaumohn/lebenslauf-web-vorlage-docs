@@ -10,8 +10,8 @@ Target state:
 
 - Jira issues link to concrete test-matrix pages or evidence sections in this
   documentation.
-- The public mirror shows these links as reference targets without Jira Cloud
-  links.
+- The public Jira pages show these links as reference targets without Jira
+  Cloud links.
 
 Guardrail:
 
@@ -55,6 +55,6 @@ It keeps only the checks that directly secure the step
 ## Links
 
 - [J01-98: public work status]({{ "/en/jira/issues/J01-98/" | relative_url }})
-- [J01-13 in the Jira mirror]({{ "/en/jira/issues/J01-13/" | relative_url }})
+- [J01-13 in public Jira pages]({{ "/en/jira/issues/J01-13/" | relative_url }})
 - [Runbook: preview GitHub Pages locally]({{ "/en/operations/ghpages-preview/" | relative_url }})
 - [Area: HTTP runtime]({{ "/en/areas/http-runtime/" | relative_url }})

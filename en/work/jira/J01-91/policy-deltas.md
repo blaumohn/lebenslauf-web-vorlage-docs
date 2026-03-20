@@ -48,15 +48,13 @@ Vorschlag:
 Status: **applied**
 
 Problem:
-- Jira soll auf kanonische GitHub-Pages-Dokuseiten linken; `mirror/` ist eine
-  Ableitung und soll nicht das primäre Ziel in Jira sein.
+- Jira should link to canonical GitHub Pages docs pages; public Jira pages
+  should therefore have only one source family.
 
 Vorschlag:
 - Jira Remote Links dürfen nur auf kanonische Doku-Seiten zeigen:
   - `areas/...`, `operations/...`, `decisions/...`, `policies/...`, `quality/...`, `work/...`
-  - keine Links auf `mirror/...` aus Jira.
-- `mirror/...` darf die gleichen Remote Links anzeigen, wenn sie aus Jira
-  importiert werden (Filter/Allowlist: nur Doku-Domain zulassen).
+  - no competing alternative target paths for the same public Jira page.
 
 ## 4) Drift als Qualitäts-Gate (leichtgewichtig)
 

@@ -26,7 +26,7 @@ Die öffentliche Jira-Fläche in diesem Repo aktualisieren:
 
 ## Pfadsemantik
 
-- `work/...` und `mirror/...` sind Dateisystem-Pfade in diesem Repo.
+- `work/...` ist der öffentliche Quellpfad für Jira-Arbeitsdokus in diesem Repo.
 - Öffentliche URI-Pfade laufen unter `/de/...` und `/en/...`.
 - Eine Arbeitsdoku kann also im Dateisystem unter
   `work/jira/J01-106/index.md` liegen und gleichzeitig öffentlich unter
@@ -93,9 +93,10 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
      Zeile.
    - Die Historie bündelt Sprint-Historie und global sichtbare erledigte
      Top-Level-Vorgänge.
-   - `erledigt/` dient nur noch als Kompatibilitätspfad zur Historie.
-   - Vorgangs- und Schrittseiten unter `jira/` zeigen kurze, sichtbare
-     Querpfade zu Übersichten, Parent und öffentlichen Schritten.
+- `erledigt/` dient nur noch als Kompatibilitätspfad zur Historie.
+- Vorgangs- und Schrittseiten unter `jira/` zeigen kurze, sichtbare
+  Querpfade zu Parent und öffentlichen Schritten; bei mehreren Teilseiten
+  zusätzlich einen Inhalts-Schlüssel.
    - Subtasks ohne Angaben haben **keine** eigene Seite (nur Schritt-Nr/Titel/Zustand beim Parent).
    - Grundbestand eines Subtasks sind Schritt-Nr., Titel und Status.
    - Reine Metadaten einer Schritt-Seite, etwa Parent, Schritt-Nr., Status,
@@ -132,7 +133,8 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
   - Im Sprint-Board erscheinen nur dieselben Top-Level-Vorgänge wie im
     Jira-Board; Schritte bleiben auf Parent-/Step-Seiten sichtbar.
   - Backlog und Historie zeigen Status je Vorgangszeile sichtbar an.
-  - Nach dem DE-Render wird der EN-Jira-Baum als abgeleitete Kopie synchronisiert.
+  - Nach dem DE-Render werden nur die generierten EN-Jira-Seiten unter
+    `en/work/jira/` synchronisiert.
 
 ## Rollback
 

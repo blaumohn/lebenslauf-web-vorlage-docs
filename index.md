@@ -19,7 +19,7 @@ permalink: /
     </a>
     <a class="lang-card" href="{{ "/en/" | relative_url }}" data-lang-choice="en">
       <strong>English</strong>
-      <span>Open the public docs and Jira mirror in English</span>
+      <span>Open the public docs and Jira overview in English</span>
     </a>
   </div>
 </div>

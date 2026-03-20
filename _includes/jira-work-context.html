@@ -6,46 +6,65 @@
 {% assign label_context = "Kontext" %}
 {% assign label_parent = "Übergeordnet" %}
 {% assign label_children = "Öffentliche Schritte" %}
+{% assign label_contents = "Inhalts-Schlüssel" %}
+{% assign label_page_sections = "Diese Seite" %}
+{% assign label_related_pages = "Weitere Seiten" %}
 {% if current_lang == "en" %}
   {% assign label_context = "Context" %}
   {% assign label_parent = "Parent" %}
   {% assign label_children = "Public steps" %}
+  {% assign label_contents = "Contents key" %}
+  {% assign label_page_sections = "This page" %}
+  {% assign label_related_pages = "Related pages" %}
 {% endif %}
 
 {% assign url_parts = page.url | split: "/" %}
+{% assign page_path = page.path | default: "" %}
+{% assign work_prefix = "work/jira/" %}
+{% if current_lang == "en" %}
+  {% assign work_prefix = "en/work/jira/" %}
+{% endif %}
 {% assign current_key = "" %}
+{% assign family_key = "" %}
 {% assign parent_key = page.jira_parent_key | default: "" %}
 {% assign parent_url = "" %}
 {% assign child_links = "" %}
 {% assign child_count = 0 %}
+{% assign issue_index_url = "" %}
+{% assign issue_index_title = "" %}
+{% assign related_links = "" %}
+{% assign related_count = 0 %}
+{% assign outline_count = 0 %}
+{% assign is_work_jira_page = false %}
+{% assign step_outline_count = 0 %}
+{% assign section_links = "" %}
+{% assign section_count = 0 %}
+
+{% if page_path contains work_prefix and page.url contains "/jira/issues/" %}
+  {% assign is_work_jira_page = true %}
+{% endif %}
 
 {% if page.url contains "/jira/issues/" %}
   {% if page.url contains "/steps/" %}
     {% assign parent_key = url_parts[4] %}
     {% assign current_key = url_parts[6] %}
+    {% assign family_key = parent_key %}
     {% capture parent_issue_url %}/{{ current_lang }}/jira/issues/{{ parent_key }}/{% endcapture %}
-    {% capture parent_step_url %}/{{ current_lang }}/jira/issues/J01-72/steps/{{ parent_key }}/{% endcapture %}
     {% for candidate in site.pages %}
-      {% if candidate.url == parent_step_url %}
-        {% assign parent_url = parent_step_url %}
-        {% break %}
-      {% endif %}
       {% if candidate.url == parent_issue_url %}
         {% assign parent_url = parent_issue_url %}
+        {% break %}
       {% endif %}
     {% endfor %}
   {% else %}
     {% assign current_key = url_parts[4] %}
+    {% assign family_key = current_key %}
     {% if parent_key != "" %}
       {% capture parent_issue_url %}/{{ current_lang }}/jira/issues/{{ parent_key }}/{% endcapture %}
-      {% capture parent_step_url %}/{{ current_lang }}/jira/issues/J01-72/steps/{{ parent_key }}/{% endcapture %}
       {% for candidate in site.pages %}
-        {% if candidate.url == parent_step_url %}
-          {% assign parent_url = parent_step_url %}
-          {% break %}
-        {% endif %}
         {% if candidate.url == parent_issue_url %}
           {% assign parent_url = parent_issue_url %}
+          {% break %}
         {% endif %}
       {% endfor %}
     {% endif %}
@@ -58,6 +77,80 @@
         {% capture child_links %}{{ child_links }}<a class="jira-context-bar__link" href="{{ candidate.url | relative_url }}">{{ candidate.title }}</a>{% endcapture %}
       {% endif %}
     {% endfor %}
+  {% endif %}
+{% endif %}
+
+{% if is_work_jira_page %}
+  {% assign content_lines = page.content | newline_to_br | split: "<br />" %}
+  {% for line in content_lines %}
+    {% assign trimmed_line = line | strip %}
+    {% if trimmed_line != "" %}
+      {% assign heading_prefix = trimmed_line | slice: 0, 3 %}
+      {% if heading_prefix == "## " %}
+        {% assign heading_text = trimmed_line | remove_first: "## " | strip %}
+        {% if heading_text != "" %}
+          {% assign section_count = section_count | plus: 1 %}
+          {% assign outline_count = outline_count | plus: 1 %}
+          {% assign heading_anchor = heading_text | slugify %}
+          {% capture section_links %}{{ section_links }}<li><a href="#{{ heading_anchor }}">{{ heading_text }}</a></li>{% endcapture %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% if section_count == 0 and page.content contains "<h2" %}
+    {% assign h2_chunks = page.content | split: "<h2" %}
+    {% for chunk in h2_chunks offset: 1 %}
+      {% assign chunk_parts = chunk | split: ">" %}
+      {% assign heading_html = chunk_parts[1] | default: "" %}
+      {% assign heading_text = heading_html | split: "</h2" | first | strip_html | strip %}
+      {% assign heading_id_parts = chunk | split: 'id="' %}
+      {% assign heading_id = "" %}
+      {% if heading_id_parts.size > 1 %}
+        {% assign heading_id = heading_id_parts[1] | split: '"' | first | strip %}
+      {% endif %}
+      {% if heading_text != "" %}
+        {% assign section_count = section_count | plus: 1 %}
+        {% assign outline_count = outline_count | plus: 1 %}
+        {% assign heading_anchor = heading_id | default: heading_text | slugify %}
+        {% capture section_links %}{{ section_links }}<li><a href="#{{ heading_anchor }}">{{ heading_text }}</a></li>{% endcapture %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endif %}
+
+{% if is_work_jira_page and family_key != "" %}
+  {% capture family_dir %}{{ work_prefix }}{{ family_key }}/{% endcapture %}
+  {% capture family_steps_dir %}{{ family_dir }}steps/{% endcapture %}
+  {% capture family_index_path %}{{ family_dir }}index.md{% endcapture %}
+  {% assign family_dir_len = family_dir | size %}
+  {% assign family_steps_dir_len = family_steps_dir | size %}
+  {% assign sorted_paths = site.pages | sort: "path" %}
+  {% for candidate in sorted_paths %}
+    {% assign candidate_path = candidate.path | default: "" %}
+    {% assign candidate_family_prefix = candidate_path | slice: 0, family_dir_len %}
+    {% assign candidate_steps_prefix = candidate_path | slice: 0, family_steps_dir_len %}
+    {% if candidate_path == family_index_path %}
+      {% assign issue_index_url = candidate.url %}
+      {% assign issue_index_title = candidate.title %}
+    {% elsif candidate_steps_prefix == family_steps_dir and candidate_path contains "/index.md" %}
+      {% if candidate_path != page_path %}
+        {% assign step_outline_count = step_outline_count | plus: 1 %}
+        {% assign outline_count = outline_count | plus: 1 %}
+      {% endif %}
+    {% elsif candidate_family_prefix == family_dir and candidate_path != family_index_path %}
+      {% unless candidate_steps_prefix == family_steps_dir %}
+        {% if candidate_path != page_path %}
+          {% assign related_count = related_count | plus: 1 %}
+          {% assign outline_count = outline_count | plus: 1 %}
+          {% capture related_links %}{{ related_links }}<li><a href="{{ candidate.url | relative_url }}">{{ candidate.title }}</a></li>{% endcapture %}
+        {% endif %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  {% if issue_index_url != "" and page_path != family_index_path %}
+    {% assign related_count = related_count | plus: 1 %}
+    {% assign outline_count = outline_count | plus: 1 %}
+    {% capture related_links %}<li><a href="{{ issue_index_url | relative_url }}">{{ issue_index_title | default: family_key }}</a></li>{{ related_links }}{% endcapture %}
   {% endif %}
 {% endif %}
 
@@ -95,4 +188,34 @@
     </span>
   {% endif %}
 </div>
+{% endif %}
+
+{% if is_work_jira_page and outline_count > 1 %}
+<h2>{{ label_contents }}</h2>
+{% if section_count > 1 %}
+<p><strong>{{ label_page_sections }}</strong></p>
+<ul>
+  {{ section_links }}
+</ul>
+{% endif %}
+{% if related_count > 0 %}
+<p><strong>{{ label_related_pages }}</strong></p>
+<ul>
+  {{ related_links }}
+</ul>
+{% endif %}
+{% if step_outline_count > 0 %}
+<p><strong>{{ label_children }}</strong></p>
+<ul>
+  {% assign sorted_step_pages = site.pages | sort: "path" %}
+  {% capture family_step_url_prefix %}/{{ current_lang }}/jira/issues/{{ family_key }}/steps/{% endcapture %}
+  {% for candidate in sorted_step_pages %}
+    {% assign candidate_path = candidate.path | default: "" %}
+    {% assign candidate_work_prefix = candidate_path | slice: 0, family_steps_dir_len %}
+    {% if candidate.url contains family_step_url_prefix and candidate_work_prefix == family_steps_dir and candidate.url != page.url %}
+      <li><a href="{{ candidate.url | relative_url }}">{{ candidate.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endif %}
 {% endif %}

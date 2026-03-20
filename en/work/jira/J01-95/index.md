@@ -26,12 +26,12 @@ project-wide Jira list queries in the normal mode.
 - new project-specific skill `jira-state-sync/` for journaled and resumed runs
 - local Jira snapshot cache under `.local/jira-sync-cache/`
 - local run journal under `.local/jira-sync-journal/`
-- the mirror generator now accepts local snapshot files instead of only fresh
-  Jira list queries
+- the public Jira generator now accepts local snapshot files instead of only
+  fresh Jira list queries
 - `verify-public-jira-pages.sh` can now verify only affected keys
 - new Pages helpers to:
   - derive link changes from Git diffs
-  - find affected Jira keys locally from `mirror/`
+  - find affected Jira keys locally from public Jira files
 - `atlassian jira ext remotelink sync` for targeted docs link synchronization
 - The issue is now set to `Done` in Jira; targeted status and remote-link runs
   for `J01-95` were pulled through successfully.
