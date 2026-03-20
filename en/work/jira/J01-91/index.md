@@ -78,6 +78,17 @@ formulierte Zielbild von `J01-91`.
   macht jetzt getrennt sichtbar, was übernommen werden soll und was heute
   bereits öffentlich umgesetzt ist.
 
+## Delta 2026-03-20
+
+- Another repo-local short README pass was again split away from a feature
+  branch onto a dedicated docs branch based on `dev`:
+  `docs/j01-91-readme-ghpages-followup`.
+- The matching app-repo commit is
+  `ea86afa` (`docs: README-Kurzstart auf GitHub Pages ausrichten (J01-91)`).
+- This keeps the `J01-91` rule intact:
+  README work without a feature scope stays separate from product-feature
+  branches and flows directly into the `dev` path.
+
 ## Arbeitsprinzip (kurz)
 
 - GitHub Pages ist SSOT für Doku (öffentlich, inkl. Seiten für Jira-Links).
