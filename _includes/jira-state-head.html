@@ -19,15 +19,23 @@
 {% endif %}
 
 {% if data_issue %}
+  {% if current_parent_key == "" and data_issue.parent %}
+    {% assign current_parent_key = data_issue.parent %}
+  {% endif %}
+
   {% assign label_type = "Typ" %}
   {% assign label_status = "Status" %}
+  {% assign label_priority = "Priorität" %}
   {% assign label_sprint = "Sprint" %}
+  {% assign label_resolution = "Lösung" %}
   {% assign label_updated = "Aktualisiert" %}
   {% assign label_parent = "Übergeordnet" %}
   {% if current_lang == "en" %}
     {% assign label_type = "Type" %}
     {% assign label_status = "Status" %}
+    {% assign label_priority = "Priority" %}
     {% assign label_sprint = "Sprint" %}
+    {% assign label_resolution = "Resolution" %}
     {% assign label_updated = "Updated" %}
     {% assign label_parent = "Parent" %}
   {% endif %}
@@ -63,8 +71,16 @@
       <dd>{{ data_issue.status }}</dd>
     </div>
     <div class="jira-state-head__item">
+      <dt>{{ label_priority }}</dt>
+      <dd>{{ data_issue.priority | default: "-" }}</dd>
+    </div>
+    <div class="jira-state-head__item">
       <dt>{{ label_sprint }}</dt>
       <dd>{{ data_issue.sprint | default: "-" }}</dd>
+    </div>
+    <div class="jira-state-head__item">
+      <dt>{{ label_resolution }}</dt>
+      <dd>{{ data_issue.resolution | default: "-" }}</dd>
     </div>
     <div class="jira-state-head__item">
       <dt>{{ label_updated }}</dt>

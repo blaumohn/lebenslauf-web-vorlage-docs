@@ -5,7 +5,7 @@ jira_key: J01-16
 permalink: /de/jira/issues/J01-16/
 ---
 
-**Stand:** 2026-03-17
+**Stand:** 2026-03-20
 
 {% include jira-state-head.html %}
 
@@ -14,8 +14,8 @@ permalink: /de/jira/issues/J01-16/
 Kanonischer öffentlicher Arbeitsstand für `J01-16`.
 Der Vorgang führt den bereits erprobten Runtime-Rahmen aus
 [J01-21]({{ "/de/jira/issues/J01-21/" | relative_url }}) auf weitere kritische
-Dateizugriffe aus und bündelt den noch offenen Concurrency- und Locking-Rest
-des Preview-Pfads.
+Dateizugriffe aus und bündelt die abgeschlossene Concurrency- und
+Locking-Ausrollung des Preview-Pfads.
 
 ## Ziel
 
@@ -46,14 +46,30 @@ Insbesondere bleiben mehrstufige Marker wie `IN_PROGRESS` und `READY` für
 andere Verwalter nur dann passend, wenn ihr eigenes Fachverhalten denselben
 Übergang wirklich braucht.
 
-## Offener Zuschnitt
+## Abschlussbild
 
-- Locking für Rate-Limit- und CAPTCHA-Pfade ausrollen
-  über [16-1: Locking für Rate-Limit und CAPTCHA ausrollen]({{
-  "/de/jira/issues/J01-16/steps/J01-17/" | relative_url }})
-- Locking für Token-Rotation ausrollen
-- race-nahe Tests für die neuen Zielbereiche ergänzen
-- öffentliche Betriebsnotiz zum gelockten Runtime-Bereich nachziehen
+- Locking für Rate-Limit- und CAPTCHA-Pfade ist über
+  [16-1: Locking für Rate-Limit und CAPTCHA ausrollen]({{
+  "/de/jira/issues/J01-16/steps/J01-17/" | relative_url }}) abgeschlossen.
+- Locking für Token-Rotation ist über
+  [16-2: Locking für Token-Rotation ausrollen]({{
+  "/de/jira/issues/J01-16/steps/J01-18/" | relative_url }}) abgeschlossen.
+- Race-nahe Tests für die neuen Zielbereiche sind über
+  [16-3: Race-nahe Tests ergänzen]({{
+  "/de/jira/issues/J01-16/steps/J01-19/" | relative_url }}) abgeschlossen.
+- Die öffentliche Betriebsnotiz zum gelockten Runtime-Bereich ist über
+  [16-4: Betriebsnotiz aktualisieren]({{
+  "/de/jira/issues/J01-16/steps/J01-20/" | relative_url }}) nachgezogen.
+
+## Überprüfungsplan
+
+| Prüfpunkt | Erwartung | Nachweis / Ort | Status |
+| --- | --- | --- | --- |
+| Rate-Limit- und CAPTCHA-Schreibpfade laufen unter Lock | `16-1` dokumentiert Lock-Zuschnitt, atomische Writes und Zieloperationen | [16-1]({{ "/de/jira/issues/J01-16/steps/J01-17/" | relative_url }}) | erledigt |
+| Token-Rotation ist gegen Parallelzugriff abgesichert | `16-2` führt Lock-Key, atomisches Schreibverhalten und grüne Tests | [16-2]({{ "/de/jira/issues/J01-16/steps/J01-18/" | relative_url }}) | erledigt |
+| Race-nahe Tests sichern die Locking-Ausrollung ab | `16-3` zeigt die sieben Testnachweise für Timeout- und Konsistenzfälle | [16-3]({{ "/de/jira/issues/J01-16/steps/J01-19/" | relative_url }}) | erledigt |
+| Öffentliche Runtime-Betriebsdoku trägt denselben Endstand | `16-4` zieht den Bereich auf einen stabilen Langzeitzustand nach | [16-4]({{ "/de/jira/issues/J01-16/steps/J01-20/" | relative_url }}) | erledigt |
+| Jira, Arbeitsdoku und öffentlicher Jira-Stand sind konsistent | `J01-16` ist in Jira auf `Erledigt` mit `Lösung = Fertig` gesetzt; die öffentliche Doku widerspricht nicht mehr | Jira-Cloud, diese Seite, öffentlicher Jira-Nachzug | erledigt |
 
 ## Öffentliche Wirkung im Preview-Pfad
 
@@ -62,7 +78,7 @@ Der Vorgang macht die Stabilitätsbasis sichtbar, auf die der Preview-Pfad sich
 für wiederholbare Runtime-Zugriffe stützt.
 Die kanonische Bereichsaussage bleibt im
 [Bereich: HTTP-Runtime]({{ "/de/areas/http-runtime/" | relative_url }}); diese
-Seite hält den vorgangsbezogenen offenen Arbeitsstand.
+Seite hält den vorgangsbezogenen Abschlussstand.
 
 ## Provenienz
 
@@ -70,6 +86,18 @@ Der fachliche Ursprung liegt im früheren `docs/agile`-Strang `ISS-012`, der
 direkt an den schmaleren Referenzpfad aus `ISS-011` anschloss.
 Im heutigen Jira-Zuschnitt werden diese beiden historischen Quellen über
 `J01-16` und den erledigten Referenzvorgang `J01-21` öffentlich geführt.
+Die Tagebuch-Notizen vom 2026-03-18 und 2026-03-19 dokumentieren zusätzlich,
+dass `16-3`, `16-4` und der Abschluss von `J01-16` im Sprint tatsächlich
+vollzogen wurden, auch wenn der öffentliche Nachzug zeitweise hinterherhing.
+
+## Abschluss
+
+`J01-16` ist fachlich abgeschlossen.
+Der Runtime-Rahmen aus `J01-21` ist für Rate-Limit, CAPTCHA und
+Token-Rotation ausgerollt, die race-nahen Tests liegen vor, und die
+öffentliche Betriebsnotiz trägt denselben Endstand.
+Der noch offene Punkt lag nicht mehr in Jira oder im Code, sondern nur im
+verspäteten öffentlichen Sync dieser Arbeitsdoku.
 
 ## Links
 
@@ -77,6 +105,12 @@ Im heutigen Jira-Zuschnitt werden diese beiden historischen Quellen über
   "/de/jira/issues/J01-21/" | relative_url }})
 - [16-1: Locking für Rate-Limit und CAPTCHA ausrollen]({{
   "/de/jira/issues/J01-16/steps/J01-17/" | relative_url }})
+- [16-2: Locking für Token-Rotation ausrollen]({{
+  "/de/jira/issues/J01-16/steps/J01-18/" | relative_url }})
+- [16-3: Race-nahe Tests ergänzen]({{
+  "/de/jira/issues/J01-16/steps/J01-19/" | relative_url }})
+- [16-4: Betriebsnotiz aktualisieren]({{
+  "/de/jira/issues/J01-16/steps/J01-20/" | relative_url }})
 - [Bereich: HTTP-Runtime]({{ "/de/areas/http-runtime/" | relative_url }})
 - [J01-16 im Jira-Mirror]({{ "/de/jira/issues/J01-16/" | relative_url }})
 - [Sprint 1: Planning]({{ "/de/work/sprints/scrum-sprint-1/" | relative_url }})
