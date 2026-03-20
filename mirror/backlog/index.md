@@ -13,6 +13,11 @@ permalink: /de/jira/backlog/
 
 ## Epics
 
+### [J01-111 — KI-Regelwerk-Kohärenz und Prüfarchitektur]({{ "/de/jira/issues/J01-111/" | relative_url }})
+
+- [J01-113 — Regelwerk-Bereinigung: Ebenen 1–2–3 trennen und Prüfkategorie-Zuordnung A/B/C/D]({{ "/de/jira/issues/J01-113/" | relative_url }})
+- [J01-115 — KI-Prüfarchitektur: Kategorie-A-bis-D-System aufbauen (Hook/Skript/Modell)]({{ "/de/jira/issues/J01-115/" | relative_url }})
+
 ### [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/de/jira/issues/J01-5/" | relative_url }})
 
 - [J01-13 — Preview: Testmatrix und Entscheidungen finalisieren]({{ "/de/jira/issues/J01-13/" | relative_url }})

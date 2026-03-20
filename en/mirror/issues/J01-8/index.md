@@ -12,11 +12,11 @@ jira_key: J01-8
 
 ## Tasks
 
-- [J01-52 — Backlog: Typensicherheit statt Guards]({{ "/en/jira/issues/J01-52/" | relative_url }})
-- [J01-54 — Backlog: Zentrales Fehlerkonzept]({{ "/en/jira/issues/J01-54/" | relative_url }})
-- [J01-56 — Backlog: Bibliotheks-APIs konsequent ausschoepfen]({{ "/en/jira/issues/J01-56/" | relative_url }})
-- [J01-58 — Backlog: Pipeline-Phase Terminologie repo-weit]({{ "/en/jira/issues/J01-58/" | relative_url }})
 - [J01-60 — Backlog: SMTP-Empfangsnachweis mit Konto-Beteiligung]({{ "/en/jira/issues/J01-60/" | relative_url }})
+- [J01-58 — Backlog: Pipeline-Phase Terminologie repo-weit]({{ "/en/jira/issues/J01-58/" | relative_url }})
+- [J01-56 — Backlog: Bibliotheks-APIs konsequent ausschoepfen]({{ "/en/jira/issues/J01-56/" | relative_url }})
+- [J01-54 — Backlog: Zentrales Fehlerkonzept]({{ "/en/jira/issues/J01-54/" | relative_url }})
+- [J01-52 — Backlog: Typensicherheit statt Guards]({{ "/en/jira/issues/J01-52/" | relative_url }})
 
 ## Links
 
