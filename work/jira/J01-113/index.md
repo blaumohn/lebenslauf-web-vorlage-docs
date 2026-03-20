@@ -119,6 +119,8 @@ den Anforderungsgruppen von J01-113, steht in der Anlage:
 
 → [Anlage: Regelwerk-Bestandsübersicht]({{ "/de/jira/issues/J01-113/anlage-regelwerk-bestand/" | relative_url }})
 
+→ [Anlage: Umsetzungsplan]({{ "/de/jira/issues/J01-113/anlage-umsetzungsplan/" | relative_url }})
+
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
@@ -126,7 +128,7 @@ den Anforderungsgruppen von J01-113, steht in der Anlage:
 | Keine doppelten Regeln mehr | Kommunikation, UTF-8, Grammatik stehen nur noch in versionierten Skill-Quellen oder kanonischer Doku | Skill-Repos, GitHub Pages | offen |
 | Ebenen Bootstrap/Skill-Repo/Skill klar getrennt | WS-Datei verweist nur; Skill-Repo-AGENTS tragen Laufzeitregeln; Skills die Abläufe | Workspace-`AGENTS.md`, Skill-Repos, `SKILL.md` | offen |
 | Repo-`AGENTS.md` nur in Skill-Repos | Produkt- und Doku-Repos tragen keine kanonischen Repo-AGENTS mehr | `.agents/skills/shared/`, `.agents/skills/<projekt>/` | offen |
-| Sechs implizite Regeln formal verankert | Jede Regel hat eine dokumentierte Quelle in Bootstrap, Skill-Repo-AGENTS oder Skill | Regelwerk-Bestandsdoku | offen |
+| Implizite Regeln formal verankert | Alle bisher nur impliziten Regeln haben eine dokumentierte Quelle in Bootstrap, Skill-Repo-AGENTS oder Skill | Regelwerk-Bestandsdoku | offen |
 | Je Regel Kategorie A/B/C/D zugeordnet | Vollständige Tabelle Regel → Kategorie liegt vor | Arbeitsdoku oder Skill | offen |
 | Grenzprinzip KI-Agent / GitHub-Pages dokumentiert | Klare Regel: was gehört wohin, was darf nicht dupliziert werden | diese Doku | offen |
 | Autorenkonvention für KI-wirksame Doku festgelegt | Strukturpflicht, normative Sprache, Granularität, Permalink, Stand-Datum definiert | Policy-Seite oder Doku-Richtlinie | offen |

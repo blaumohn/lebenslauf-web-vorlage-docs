@@ -102,6 +102,13 @@ convention. This issue defines:
   and AI agent levels developed (2026-03-20); decision pending.
 - Target model extended (2026-03-20): repo `AGENTS.md` only in versioned
   skill repos; workspace `AGENTS.md` outside Git only as a bootstrap pointer.
+- Architecture decision made (2026-03-20): Option D — GitHub Pages →
+  helper scripts (J01-115) → skills. No script yet; first step is defining
+  the `ki_karte` format.
+- New rule anchored (2026-03-20): target repos do not define or version
+  their own agent rules — exclusively in skill repos (`IM-SKL-01`).
+- Home of `ki_karte` schema: skill repo (`lebenslauf-web-vorlage` or
+  `shared/`), not `lebenslauf-web-vorlage-docs`.
 - Implementation not yet started.
 
 ## Verification plan
@@ -111,7 +118,7 @@ convention. This issue defines:
 | No duplicate rules | Communication, UTF-8, grammar rules exist only in versioned skill sources or canonical docs | skill repos, GitHub Pages | open |
 | Bootstrap/skill-repo/skill levels clearly separated | WS file only points; skill-repo AGENTS hold runtime rules; skills hold workflows | workspace `AGENTS.md`, skill repos, `SKILL.md` | open |
 | Repo `AGENTS.md` only in skill repos | Product and docs repos no longer carry canonical repo AGENTS | `.agents/skills/shared/`, `.agents/skills/<project>/` | open |
-| Six implicit rules formally anchored | Each rule has a documented source in bootstrap, skill-repo AGENTS, or skill | rule inventory | open |
+| Implicit rules formally anchored | All previously implicit rules have a documented source in bootstrap, skill-repo AGENTS, or skill | rule inventory | open |
 | Verification category assigned per rule | Complete table rule → category exists | work doc or skill | open |
 | Boundary principle AI agent / GitHub Pages documented | Clear rule: what goes where, what must not be duplicated | this doc | open |
 | Authoring convention for AI-effective docs defined | Structure requirement, normative language, granularity, permalink, date defined | policy page or documentation guideline | open |
@@ -126,11 +133,15 @@ convention. This issue defines:
   sprint details) needs to be resolved.
 - Which existing policy pages already meet the authoring convention, which need
   to be updated — inventory missing.
-- Architectural decision A/B/C/D not yet made.
+- Architectural decision A/B/C/D → Option D chosen.
+- Migration path for existing repo `AGENTS.md` in product and docs repos still
+  needs to be scheduled concretely.
 
 ## Links
 
 - [J01-111: Epic AI rule coherence and verification architecture]({{ "/en/jira/issues/J01-111/" | relative_url }})
 - [J01-115: AI verification architecture]({{ "/en/jira/issues/J01-115/" | relative_url }})
 - [J01-92: Shared agent rules and skill versioning]({{ "/en/jira/issues/J01-92/" | relative_url }})
+- [Appendix: Rule Inventory]({{ "/en/jira/issues/J01-113/appendix-rule-inventory/" | relative_url }})
+- [Appendix: Implementation Plan]({{ "/en/jira/issues/J01-113/appendix-implementation-plan/" | relative_url }})
 - [Jira work docs]({{ "/en/jira/" | relative_url }})

@@ -77,7 +77,6 @@ Format: `<Datei>-<Bereich>-<Nr>`
 | --- | --- | --- | --- | --- | --- | --- |
 | SA-GRA-01 | Nach jeder Antwort einen Abschnitt „Grammatische Rückmeldung" ausgeben | `shared/arbeitsregeln/SKILL.md` | `AGENTS.md` (WS) | E2 | R | C |
 | WS-GRA-01 | Zwei Codeblöcke: Zeilenvergleich (Original / Korrektur) und vollständige geglättete Eingabe | `AGENTS.md` (WS) | — | E2 | M in `shared` | C |
-| IM-GRA-01 | Roh-Eingabe vor jeder Verarbeitung vollständig und unverändert sichern | Sitzungskontext | — | E2 | I | A |
 
 ## B3 — Anforderungs-Treue
 
@@ -91,7 +90,7 @@ Format: `<Datei>-<Bereich>-<Nr>`
 
 | Nr. | Regel | Ursprung | Weitere Orte | Soll-Ebene | Problem | Prüfkat. |
 | --- | --- | --- | --- | --- | --- | --- |
-| IM-EIN-01 | Roh-Eingaben speichern: Original vor Transformation oder Zusammenfassung aufbewahren | Sitzungskontext | — | E2 | I | A |
+| IM-EIN-01 | Jede Eingabe als Roh-Fassung aufbewahren | Sitzungskontext | — | E2 | I | A |
 | WS-EIN-01 | Beispiele nur als Problemillustration behandeln, nicht als Lösungsvorlage | `AGENTS.md` (WS) | — | E2 | M in `shared` | C |
 
 ## B5 — Programmtext-Stil
@@ -146,7 +145,7 @@ Format: `<Datei>-<Bereich>-<Nr>`
 | LA-SKL-01 | Projektbindungen (Repo-Namen, Keys, Pfade, Labels) in Projekt-Skill-Repo | `lebenslauf-web-vorlage/AGENTS.md` | `SE` | E2 | – | D |
 | SE-SKL-04 | Repo-`AGENTS.md` nur in Skill-Repos; Produkt- und Doku-Repos tragen keine | `shared/entwicklung/SKILL.md` | — | E2 | M (Migration offen) | D |
 | SA-SKL-01 | Workspace-`AGENTS.md` (E1) ist nur Bootstrap-Verweis, kein Fachinhalt | `shared/arbeitsregeln/SKILL.md` | `SE` | E1 | R (WS enthält noch Fachinhalt) | D |
-| IM-SKL-01 | Alle agent-bezogenen Artefakte (AGENTS.md, Skill-Konfigurationen, Karten-Schemata, Build-Manifeste) werden nicht in Ziel-Repos (Produkt-Repos, Doku-Repos) versioniert — ausschließlich in Skill-Repos | Sitzungskontext | — | E2 | I | D |
+| IM-SKL-01 | Ziel-Repos definieren und versionieren keine eigenen Agent-Regeln; alle für ein Ziel-Repo geltenden Regeln — auch repo-spezifische — werden in Skill-Repos gepflegt und von dort geladen | Sitzungskontext | — | E2 | I | D |
 
 ## B10 — Git und Branch
 
