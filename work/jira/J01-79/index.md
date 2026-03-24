@@ -13,7 +13,7 @@ jira_key: J01-79
 
 ## Links
 
-- [Jira- und Doku-Tooling: API-Betriebe (Wrapper)]({{ "/de/areas/proj-doku-tooling/api-betriebe/" | relative_url }})
+-
 
 ## Beschreibung
 

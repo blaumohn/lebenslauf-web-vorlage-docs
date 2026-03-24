@@ -5,7 +5,7 @@ permalink: /de/jira/issues/J01-43/
 jira_key: J01-43
 
 ---
-<!-- generated:jira:subtasks_cksum=1012928940 -->
+<!-- generated:jira:subtasks_cksum=1137495239 -->
 
 {% include jira-state-head.html %}
 
@@ -21,5 +21,5 @@ jira_key: J01-43
 
 ## Unteraufgaben
 
-- [**43-1 Marker/Signaldatei-Flow definieren**]({{ "/de/jira/issues/J01-43/steps/J01-44/" | relative_url }}) — Zu erledigen
-- [**43-2 Doku + Tests ergänzen**]({{ "/de/jira/issues/J01-43/steps/J01-45/" | relative_url }}) — Zu erledigen
+- **43-1 Marker/Signaldatei-Flow definieren** — Zu erledigen
+- **43-2 Doku + Tests ergänzen** — Zu erledigen

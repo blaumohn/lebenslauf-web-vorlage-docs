@@ -5,7 +5,7 @@ permalink: /de/jira/issues/J01-56/
 jira_key: J01-56
 
 ---
-<!-- generated:jira:subtasks_cksum=1090145107 -->
+<!-- generated:jira:subtasks_cksum=2746748307 -->
 
 {% include jira-state-head.html %}
 
@@ -21,4 +21,4 @@ jira_key: J01-56
 
 ## Unteraufgaben
 
-- [**56-1 Scope skizzieren**]({{ "/de/jira/issues/J01-56/steps/J01-57/" | relative_url }}) — Zu erledigen
+- **56-1 Scope skizzieren** — Zu erledigen

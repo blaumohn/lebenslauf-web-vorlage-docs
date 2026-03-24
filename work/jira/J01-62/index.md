@@ -5,7 +5,7 @@ permalink: /de/jira/issues/J01-62/
 jira_key: J01-62
 
 ---
-<!-- generated:jira:subtasks_cksum=3433733682 -->
+<!-- generated:jira:subtasks_cksum=3381336520 -->
 
 {% include jira-state-head.html %}
 
@@ -21,5 +21,5 @@ jira_key: J01-62
 
 ## Unteraufgaben
 
-- [**62-1 Branch-Mapping festlegen**]({{ "/de/jira/issues/J01-62/steps/J01-63/" | relative_url }}) — Zu erledigen
-- [**62-2 Environment aktivieren**]({{ "/de/jira/issues/J01-62/steps/J01-64/" | relative_url }}) — Zu erledigen
+- **62-1 Branch-Mapping festlegen** — Zu erledigen
+- **62-2 Environment aktivieren** — Zu erledigen

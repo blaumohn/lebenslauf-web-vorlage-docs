@@ -5,7 +5,7 @@ permalink: /de/jira/issues/J01-68/
 jira_key: J01-68
 
 ---
-<!-- generated:jira:subtasks_cksum=1270717361 -->
+<!-- generated:jira:subtasks_cksum=1788707738 -->
 
 {% include jira-state-head.html %}
 
@@ -21,5 +21,5 @@ jira_key: J01-68
 
 ## Unteraufgaben
 
-- [**68-1 Betriebsdoku erstellen**]({{ "/de/jira/issues/J01-68/steps/J01-69/" | relative_url }}) — Zu erledigen
-- [**68-2 Rollback/Notfallpfad skizzieren**]({{ "/de/jira/issues/J01-68/steps/J01-70/" | relative_url }}) — Zu erledigen
+- **68-1 Betriebsdoku erstellen** — Zu erledigen
+- **68-2 Rollback/Notfallpfad skizzieren** — Zu erledigen

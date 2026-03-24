@@ -5,7 +5,7 @@ permalink: /de/jira/issues/J01-31/
 jira_key: J01-31
 
 ---
-<!-- generated:jira:subtasks_cksum=1561879826 -->
+<!-- generated:jira:subtasks_cksum=4052120377 -->
 
 {% include jira-state-head.html %}
 
@@ -13,13 +13,16 @@ jira_key: J01-31
 
 ## Links
 
-- [Projekt-Doku: Start]({{ "/de/" | relative_url }})
+-
 
 ## Beschreibung
 
--
+Ziel: Konsistente System-Source-Verarbeitung und klare Guard-Strategie.
+
+- Offene Hygiene/Guard-Strategie klären
+- Produktions-Pattern vergleichen und dokumentieren
 
 ## Unteraufgaben
 
-- [**31-1 Guard-Strategie finalisieren**]({{ "/de/jira/issues/J01-31/steps/J01-32/" | relative_url }}) — Zu erledigen
-- [**31-2 Produktions-Pattern Vergleich dokumentieren**]({{ "/de/jira/issues/J01-31/steps/J01-33/" | relative_url }}) — Zu erledigen
+- **31-1 Guard-Strategie finalisieren** — Zu erledigen
+- **31-2 Produktions-Pattern Vergleich dokumentieren** — Zu erledigen

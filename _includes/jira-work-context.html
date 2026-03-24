@@ -39,6 +39,8 @@
 {% assign step_outline_count = 0 %}
 {% assign section_links = "" %}
 {% assign section_count = 0 %}
+{% assign related_issue_links = "" %}
+{% assign related_issue_count = 0 %}
 
 {% if page_path contains work_prefix and page.url contains "/jira/issues/" %}
   {% assign is_work_jira_page = true %}
@@ -165,7 +167,7 @@
 {% endif %}
 
 {% assign show_context = false %}
-{% if page.url contains "/jira/issues/" and parent_exists %}
+{% if page.url contains "/jira/issues/" and page.url contains "/steps/" and parent_exists %}
   {% assign show_context = true %}
 {% endif %}
 {% if page.url contains "/jira/issues/" and child_count > 0 %}

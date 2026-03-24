@@ -18,6 +18,4 @@ jira_parent_key: J01-85
 
 ## Links
 
-- [Jira- und Doku-Tooling: Jira-Übersicht (öffentlich)]({{ "/de/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }})
-- [ADR-0004 Öffentlich: Jira-Übersicht (statt Jira-Board publizieren)]({{ "/de/decisions/adr-0004/" | relative_url }})
-- [Runbook: Jira-Übersicht aktualisieren]({{ "/de/operations/runbook/" | relative_url }})
+-

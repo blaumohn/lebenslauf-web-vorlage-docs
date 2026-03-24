@@ -26,18 +26,24 @@
   {% assign label_type = "Typ" %}
   {% assign label_status = "Status" %}
   {% assign label_priority = "Priorität" %}
+  {% assign label_assignee = "Bearbeitung" %}
   {% assign label_sprint = "Sprint" %}
+  {% assign label_sprint_role = "Sprint-Rolle" %}
   {% assign label_resolution = "Lösung" %}
   {% assign label_updated = "Aktualisiert" %}
   {% assign label_parent = "Übergeordnet" %}
+  {% assign label_links = "Andere Vorgänge" %}
   {% if current_lang == "en" %}
     {% assign label_type = "Type" %}
     {% assign label_status = "Status" %}
     {% assign label_priority = "Priority" %}
+    {% assign label_assignee = "Assignee" %}
     {% assign label_sprint = "Sprint" %}
+    {% assign label_sprint_role = "Sprint role" %}
     {% assign label_resolution = "Resolution" %}
     {% assign label_updated = "Updated" %}
     {% assign label_parent = "Parent" %}
+    {% assign label_links = "Related issues" %}
   {% endif %}
 
   {% assign parent_target = "" %}
@@ -52,6 +58,11 @@
         {% assign parent_target = parent_issue_target %}
       {% endif %}
     {% endfor %}
+  {% endif %}
+
+  {% assign has_issue_links = false %}
+  {% if data_issue.issueLinks and data_issue.issueLinks.size > 0 %}
+    {% assign has_issue_links = true %}
   {% endif %}
 
 <div class="jira-state-head">
@@ -75,8 +86,16 @@
       <dd>{{ data_issue.priority | default: "-" }}</dd>
     </div>
     <div class="jira-state-head__item">
+      <dt>{{ label_assignee }}</dt>
+      <dd>{{ data_issue.assignee | default: "-" }}</dd>
+    </div>
+    <div class="jira-state-head__item">
       <dt>{{ label_sprint }}</dt>
-      <dd>{{ data_issue.sprint | default: "-" }}</dd>
+      <dd>{{ data_issue.activeSprint | default: data_issue.sprint | default: "-" }}</dd>
+    </div>
+    <div class="jira-state-head__item">
+      <dt>{{ label_sprint_role }}</dt>
+      <dd>{{ data_issue.sprintRole | default: "-" }}</dd>
     </div>
     <div class="jira-state-head__item">
       <dt>{{ label_resolution }}</dt>
@@ -95,6 +114,44 @@
           {% else %}
             {{ current_parent_key }}
           {% endif %}
+        </dd>
+      </div>
+    {% endif %}
+    {% if has_issue_links %}
+      <div class="jira-state-head__item">
+        <dt>{{ label_links }}</dt>
+        <dd>
+          {% for rel in data_issue.issueLinks %}
+            {% assign rel_label = rel.relation | default: "relates to" %}
+            {% if current_lang == "de" %}
+              {% if rel_label == "blocks" %}
+                {% assign rel_label = "Blockiert" %}
+              {% elsif rel_label == "is blocked by" %}
+                {% assign rel_label = "Blockiert durch" %}
+              {% elsif rel_label == "relates to" %}
+                {% assign rel_label = "Verknüpft mit" %}
+              {% endif %}
+            {% else %}
+              {% if rel_label == "blocks" %}
+                {% assign rel_label = "Blocks" %}
+              {% elsif rel_label == "is blocked by" %}
+                {% assign rel_label = "Blocked by" %}
+              {% elsif rel_label == "relates to" %}
+                {% assign rel_label = "Relates to" %}
+              {% endif %}
+            {% endif %}
+            {% capture rel_target %}/{{ current_lang }}/jira/issues/{{ rel.targetKey }}/{% endcapture %}
+            <div>
+              <strong>{{ rel_label }}:</strong>
+              <a href="{{ rel_target | relative_url }}">{{ rel.targetKey }}</a>
+              {% if rel.targetSummary %}
+                <span>— {{ rel.targetSummary }}</span>
+              {% endif %}
+              {% if rel.targetStatus %}
+                <span>— {{ rel.targetStatus }}</span>
+              {% endif %}
+            </div>
+          {% endfor %}
         </dd>
       </div>
     {% endif %}

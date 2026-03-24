@@ -5,7 +5,7 @@ permalink: /de/jira/issues/J01-34/
 jira_key: J01-34
 
 ---
-<!-- generated:jira:subtasks_cksum=3593771070 -->
+<!-- generated:jira:subtasks_cksum=1060670820 -->
 
 {% include jira-state-head.html %}
 
@@ -21,5 +21,5 @@ jira_key: J01-34
 
 ## Unteraufgaben
 
-- [**34-1 Pipeline-Phase-Syntax festlegen**]({{ "/de/jira/issues/J01-34/steps/J01-35/" | relative_url }}) — Zu erledigen
-- [**34-2 Missing-Config-Befehl definieren**]({{ "/de/jira/issues/J01-34/steps/J01-36/" | relative_url }}) — Zu erledigen
+- **34-1 Pipeline-Phase-Syntax festlegen** — Zu erledigen
+- **34-2 Missing-Config-Befehl definieren** — Zu erledigen

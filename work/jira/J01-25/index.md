@@ -5,7 +5,7 @@ permalink: /de/jira/issues/J01-25/
 jira_key: J01-25
 
 ---
-<!-- generated:jira:subtasks_cksum=2111759203 -->
+<!-- generated:jira:subtasks_cksum=2502376329 -->
 
 {% include jira-state-head.html %}
 
@@ -21,5 +21,5 @@ jira_key: J01-25
 
 ## Unteraufgaben
 
-- [**25-1 Dev-Baseline stabilisieren**]({{ "/de/jira/issues/J01-25/steps/J01-26/" | relative_url }}) — Zu erledigen
-- [**25-2 Hygiene-Regeln umsetzen**]({{ "/de/jira/issues/J01-25/steps/J01-27/" | relative_url }}) — Zu erledigen
+- **25-1 Dev-Baseline stabilisieren** — Zu erledigen
+- **25-2 Hygiene-Regeln umsetzen** — Zu erledigen

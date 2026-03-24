@@ -5,7 +5,7 @@ script_dir=$(CDPATH= cd -- "$(dirname "$0")" && pwd)
 cd "$script_dir/.."
 
 is_generated_file() {
-  grep -q '^<!-- generated:jira-' "$1"
+  sed -n '1,20p' "$1" | grep 'generated:jira:' >/dev/null 2>&1
 }
 
 delete_generated_en_pages() {
@@ -60,12 +60,20 @@ sync_generated_pages() {
       s/Historie/History/g;
       s/## Angaben/## Details/g;
       s/## Beschreibung/## Description/g;
+      s/## Jira-Zustandsbild/## Jira state snapshot/g;
       s/## Unteraufgaben/## Subtasks/g;
       s/Keine Unteraufgaben\./No subtasks\./g;
       s/Keine Aufgaben\./No tasks\./g;
       s/Öffentliche Schritte/Public steps/g;
+      s/Verknüpfte Vorgänge/Linked issues/g;
       s/Übergeordnet/Parent/g;
       s/Kontext/Context/g;
+      s/Sprint-Rolle/Sprint role/g;
+      s/Aktiver Sprint/Active sprint/g;
+      s/Bearbeitung/Assignee/g;
+      s/Blockiert durch/Blocked by/g;
+      s/Blockiert/Blocks/g;
+      s/Verknüpft mit/Relates to/g;
       s/\*\*Aktualisiert:\*\*/**Updated:**/g;
       s/Keine E-Mail-Adressen\./No email addresses\./g;
       s/Keine Jira-Cloud-Links\./No Jira Cloud links\./g;

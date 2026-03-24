@@ -5,7 +5,7 @@ permalink: /de/jira/issues/J01-49/
 jira_key: J01-49
 
 ---
-<!-- generated:jira:subtasks_cksum=448548797 -->
+<!-- generated:jira:subtasks_cksum=2494705027 -->
 
 {% include jira-state-head.html %}
 
@@ -21,5 +21,5 @@ jira_key: J01-49
 
 ## Unteraufgaben
 
-- [**49-1 Template-Text-Keys definieren**]({{ "/de/jira/issues/J01-49/steps/J01-50/" | relative_url }}) — Zu erledigen
-- [**49-2 DE/EN Mindestumfang liefern**]({{ "/de/jira/issues/J01-49/steps/J01-51/" | relative_url }}) — Zu erledigen
+- **49-1 Template-Text-Keys definieren** — Zu erledigen
+- **49-2 DE/EN Mindestumfang liefern** — Zu erledigen

@@ -5,7 +5,7 @@ permalink: /de/jira/issues/J01-40/
 jira_key: J01-40
 
 ---
-<!-- generated:jira:subtasks_cksum=2624029891 -->
+<!-- generated:jira:subtasks_cksum=1968615438 -->
 
 {% include jira-state-head.html %}
 
@@ -21,5 +21,5 @@ jira_key: J01-40
 
 ## Unteraufgaben
 
-- [**40-1 Konstanten-Schnitt definieren**]({{ "/de/jira/issues/J01-40/steps/J01-41/" | relative_url }}) — Zu erledigen
-- [**40-2 Pfad/Key-Duplikate entfernen**]({{ "/de/jira/issues/J01-40/steps/J01-42/" | relative_url }}) — Zu erledigen
+- **40-1 Konstanten-Schnitt definieren** — Zu erledigen
+- **40-2 Pfad/Key-Duplikate entfernen** — Zu erledigen

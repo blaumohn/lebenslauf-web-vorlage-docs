@@ -5,7 +5,7 @@ permalink: /de/jira/issues/J01-85/
 jira_key: J01-85
 
 ---
-<!-- generated:jira:subtasks_cksum=2246794048 -->
+<!-- generated:jira:subtasks_cksum=3079236680 -->
 
 {% include jira-state-head.html %}
 
@@ -13,8 +13,7 @@ jira_key: J01-85
 
 ## Links
 
-- [Jira- und Doku-Tooling: API-Betriebe (Wrapper)]({{ "/de/areas/proj-doku-tooling/api-betriebe/" | relative_url }})
-- [Jira- und Doku-Tooling: Systemüberblick (Ziel & Ist)]({{ "/de/areas/proj-doku-tooling/aufbau/" | relative_url }})
+-
 
 ## Beschreibung
 

@@ -1,0 +1,30 @@
+---
+layout: page
+title: "J01-84 — Atlassian-System vorbereiten (SSOT: Jira)"
+permalink: /en/jira/issues/J01-84/
+jira_key: J01-84
+---
+<!-- generated:jira:child_tasks_cksum=1920935312 -->
+
+{% include jira-state-head.html %}
+
+{% include jira-work-context.html %}
+
+## Aufgaben
+
+- [J01-104 — GitHub Pages: Link-Regel für öffentliche Schrittseiten]({{ "/en/jira/issues/J01-104/" | relative_url }})
+- [J01-116 — Öffentliche Jira-Issue-Seiten: Metadaten und Unteraufgaben konsistent spiegeln]({{ "/en/jira/issues/J01-116/" | relative_url }})
+- [J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte]({{ "/en/jira/issues/J01-72/" | relative_url }})
+- [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/en/jira/issues/J01-85/" | relative_url }})
+
+## Links
+
+-
+
+## Description
+
+-
+
+## Subtasks
+
+No subtasks.

@@ -97,6 +97,14 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
 - Vorgangs- und Schrittseiten unter `jira/` zeigen kurze, sichtbare
   Querpfade zu Parent und öffentlichen Schritten; bei mehreren Teilseiten
   zusätzlich einen Inhalts-Schlüssel.
+- Vorgangsseiten bleiben Hybrid:
+  Jira-Zustand und Jira-Verknüpfungen werden dort knapp gespiegelt,
+  fachliche Hinweise und Nachweise bleiben in GitHub Pages.
+- Jira-Metadaten leben auf Vorgangsseiten in genau einem oberen Zustands-
+  und Beziehungsblock; dazu zählen auch Parent und andere Vorgänge aus
+  `issuelinks`.
+- Ein separater Kontextblock unterhalb davon dient nur Navigationskontext,
+  etwa öffentliche Schritte oder Parent-Navigation auf Schrittseiten.
    - Subtasks ohne Angaben haben **keine** eigene Seite (nur Schritt-Nr/Titel/Zustand beim Parent).
    - Grundbestand eines Subtasks sind Schritt-Nr., Titel und Status.
    - Reine Metadaten einer Schritt-Seite, etwa Parent, Schritt-Nr., Status,
@@ -150,6 +158,8 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
 - `erledigt/` verweist nur auf die Historie und führt keine eigene Vollsicht
   mehr.
 - Issue-/Step-Seiten enthalten je Vorgang `**Aktualisiert:** …` (Jira-Quelle).
+- Issue-Seiten zeigen zusätzlich sichtbare Jira-Metadaten wie Bearbeitung,
+  Priorität, aktiven Sprint, Sprint-Rolle und verknüpfte Vorgänge.
 - `git` ist die verlässliche Historie: Diffs entstehen nur bei Inhaltsänderung.
 - `shared-tooling/jira-pages/verify-public-jira-pages.sh` bestätigt die aus
   Jira importierten GitHub-Pages-Ziele lokal für DE und EN.

@@ -27,6 +27,9 @@ Jira-Fläche über GitHub Pages veröffentlicht:
 - In der Sprint-Sicht erscheinen nur dieselben Top-Level-Vorgänge wie im
   Jira-Board; Schritte bleiben beim Parent-Vorgang und in der Sprint-Doku
   sichtbar.
+- Öffentliche Vorgangsseiten bleiben Hybrid:
+  Jira-Zustand und Jira-Verknüpfungen werden sichtbar gespiegelt,
+  fachliche Hinweise und Nachweise bleiben in GitHub Pages.
 - Subtasks werden in Listen standardmäßig **ohne Key** gezeigt (nur Schritt-Nr/Titel/Zustand).
 - Grundbestand eines Subtasks sind Schritt-Nr., Titel und Status.
 - Reine Metadaten einer Schritt-Seite gelten nicht als zusätzliche Angaben.
@@ -37,7 +40,10 @@ Jira-Fläche über GitHub Pages veröffentlicht:
     ein kanonischer
     Jira-Remote-Link darauf zählt als zusätzliche Angabe.
   - Öffentliche Vorgangs- und Schrittseiten zeigen oben einen kompakten
-    Zustandskopf und darunter einen kurzen Kontextblock.
+    Zustands- und Beziehungsblock.
+  - Parent und andere Vorgänge stammen dort nur aus Jira-Metadaten.
+  - Ein separater Kontextblock unterhalb davon dient nur echter
+    Seiten-Navigation, etwa Parent-/Schritt-Navigation.
   - Wenn ein Vorgang mehrere öffentliche Teilseiten hat, zeigt die
     Arbeitsdoku zusätzlich einen Inhalts-Schlüssel.
   - Eine öffentliche Schrittseite unter
@@ -49,6 +55,8 @@ Jira-Fläche über GitHub Pages veröffentlicht:
   - Wenn eine solche Schrittseite existiert, zeigen Zustandskopf,
     Kontextblock und Inhalts-Schlüssel dieselben kurzen Querpfade zur
     Schrittseite und zum Elternvorgang.
+  - Fehlt eine öffentliche Schrittseite, bleibt der Subtask beim Parent
+    sichtbar, aber unverlinkt.
 
 ## Aktualisieren
 

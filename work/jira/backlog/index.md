@@ -85,6 +85,7 @@ permalink: /de/jira/backlog/
 ### [J01-84 — Atlassian-System vorbereiten (SSOT: Jira)]({{ "/de/jira/issues/J01-84/" | relative_url }})
 
 - [J01-104 — GitHub Pages: Link-Regel für öffentliche Schrittseiten]({{ "/de/jira/issues/J01-104/" | relative_url }})
+- [J01-116 — Öffentliche Jira-Issue-Seiten: Metadaten und Unteraufgaben konsistent spiegeln]({{ "/de/jira/issues/J01-116/" | relative_url }})
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/de/jira/issues/J01-85/" | relative_url }})
   - [**85-1 Refactor: Coding-Standards durchgehend umsetzen**]({{ "/de/jira/issues/J01-85/steps/J01-81/" | relative_url }}) — Zu erledigen
   - [**85-2 API-Betriebe (Wrapper), http als Escape-Hatch**]({{ "/de/jira/issues/J01-85/steps/J01-82/" | relative_url }}) — Zu erledigen
