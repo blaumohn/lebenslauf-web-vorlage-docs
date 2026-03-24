@@ -8,16 +8,9 @@ The specs build the public project map.
 They explain the project as a connected system of product, docs,
 working framework, and recurring flows.
 
-This layer is intentionally readable for several audiences:
-
-- **HR**:
-  gets a fast view of why this is more than a plain CV page.
-- **Product**:
-  finds purpose, structure, and system boundaries.
-- **Tech**:
-  sees the architecture and operations logic.
-- **Dev**:
-  finds the reliable handovers between repos, docs, and delivery.
+This layer serves as a shared entry point for organisational, product, and
+technical readers. It bundles purpose, system boundaries, relationships, and
+stable flows in one consistent format.
 
 ## Reading logic
 

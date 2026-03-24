@@ -4,12 +4,11 @@ title: Lebenslauf-Web-Vorlage
 permalink: /de/
 ---
 
-Dieses Projekt ist zugleich eine wiederverwendbare PHP-Vorlage für eine
-Lebenslauf-Website und das Haupt-Portfolio-Stück, an dem Produktdenken,
-Architektur, Delivery und Betriebsdisziplin öffentlich nachvollziehbar
-werden.
+Dieses Projekt ist eine wiederverwendbare PHP-Vorlage für eine
+Lebenslauf-Website und ein Referenzprojekt für Produkt-, Architektur-,
+Delivery- und Betriebsarbeit.
 
-Über die einfache CV-Seite hinaus zeigt es drei prägende Eigenschaften:
+Die öffentliche Doku dokumentiert dazu drei prägende Eigenschaften:
 öffentliche und token-gesicherte private Ansicht mit Schwärzung der
 Kontaktdaten, eine CLI-Build-Pipeline (YAML → validiert → HTML) und einen
 dateibasierten Sicherheitsrahmen für das Kontaktformular
@@ -30,15 +29,12 @@ Das App-Repo enthält Quelltext, aber keine reguläre Projektdoku unter `docs/`.
 
 ## Leserpfade
 
-- **HR**:
-  schneller Überblick, woran dieses Portfolio-Stück fachlich und technisch
-  stark ist.
-- **Product**:
-  Produktzuschnitt, Leserführung, Scope und Projektstruktur.
-- **Tech**:
-  Systemgrenzen, Betriebsmodell, Delivery- und Qualitätslogik.
-- **Dev**:
-  Repos, Build-/Runtime-Pfade, Policies, Runbooks und Arbeitsdoku.
+- fachlicher Einstieg:
+  Projektzweck, Projektlandkarte und zentrale Eigenschaften
+- technischer Einstieg:
+  Systemgrenzen, Betriebsmodell, Delivery- und Qualitätslogik
+- Umsetzungseinstieg:
+  Repos, Build-/Runtime-Pfade, Policies, Runbooks und Arbeitsdoku
 
 ## Bereiche
 

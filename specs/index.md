@@ -8,16 +8,9 @@ Die Specs bilden die öffentliche Projektlandkarte.
 Sie erklären das Projekt als zusammenhängendes System aus Produkt,
 Doku, Arbeitsrahmen und wiederkehrenden Abläufen.
 
-Diese Schicht ist bewusst für mehrere Lesergruppen lesbar:
-
-- **HR**:
-  sieht schnell, warum dieses Projekt mehr als eine einfache CV-Seite ist.
-- **Product**:
-  findet Zweck, Struktur und Systemgrenzen.
-- **Tech**:
-  erkennt die Architektur- und Betriebslogik.
-- **Dev**:
-  findet die belastbaren Übergänge zwischen Repos, Doku und Delivery.
+Diese Schicht dient als gemeinsamer Einstieg für fachliche, technische und
+organisatorische Leser. Sie bündelt Zweck, Systemgrenzen, Beziehungen und
+stabile Abläufe in einer einheitlichen Form.
 
 ## Leselogik
 

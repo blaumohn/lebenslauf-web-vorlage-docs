@@ -4,16 +4,16 @@ title: "Spec: Project overall system"
 permalink: /en/specs/project/
 ---
 
-This project is both a reusable CV website template and the main portfolio
-piece through which product, architecture, delivery, and operations work become
-publicly legible.
+This project is a reusable CV website template and a central reference project
+for product, architecture, delivery, and operations work.
 
 ## What it is
 
 - a product and reference system around a CV website on shared hosting
 - a project made of app, config spec, public docs, work framework, and
   recurring flows
-- a public project surface that should orient HR, Product, Tech, and Dev
+- a public project surface that explains project purpose, system boundaries,
+  and flows
 
 ## What it is not
 
@@ -24,7 +24,8 @@ publicly legible.
 ## Why
 
 - the website template should be practical and reusable
-- the project should serve as a strong portfolio piece
+- the project should document how product, architecture, and delivery work fit
+  together in one continuous example
 - the public docs should make systems, flows, and decisions legible
 
 ## Structure
@@ -38,16 +39,11 @@ publicly legible.
 - AI/skill framework
 - `atlassian-tools`
 
-## Roles
+## Readers and usage
 
-- **HR**:
-  sees usefulness, maturity, and public professionalism
-- **Product**:
-  sees scope, audience fit, and information architecture
-- **Tech**:
-  sees system boundaries, quality frame, and operations model
-- **Dev**:
-  finds repos, flows, policies, and evidence
+- organisational readers find project purpose, boundaries, and key flows
+- technical readers find system shape, interfaces, and operations model
+- implementation-focused readers find repos, rules, work docs, and evidence
 
 ## Interfaces
 

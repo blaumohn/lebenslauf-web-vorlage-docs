@@ -33,6 +33,8 @@ sondern als zusammenhängende Projekt-, System- und Ablauf-Landkarte.
 - `specs/` als neue kanonische Schicht entschieden
 - erste Umsetzung im dedizierten Docs-Arbeitsbaum
   `feature/j01-117-spec-landkarte` gestartet
+- Formulierungen zur Außenwirkung nach erster Rückmeldung sachlicher gefasst,
+  damit Projekt-Spec und Startseite definierend statt werblich bleiben
 
 ## Quellenlage
 

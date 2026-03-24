@@ -33,6 +33,8 @@ of the project, its systems, and its flows.
 - `specs/` decided as the new canonical layer
 - first implementation started in the dedicated docs worktree
   `feature/j01-117-spec-landkarte`
+- external-facing wording tightened after first feedback so the start page and
+  project spec stay definitional instead of promotional
 
 ## Source base
 

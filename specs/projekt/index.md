@@ -4,9 +4,8 @@ title: "Spec: Projekt-Gesamtsystem"
 permalink: /de/specs/projekt/
 ---
 
-Dieses Projekt ist zugleich eine wiederverwendbare Lebenslauf-Web-Vorlage und
-das Haupt-Portfolio-Stück, an dem Produkt-, Architektur- und Delivery-Arbeit
-öffentlich nachvollziehbar werden.
+Dieses Projekt ist eine wiederverwendbare Lebenslauf-Web-Vorlage und ein
+zentrales Referenzprojekt für Produkt-, Architektur- und Delivery-Arbeit.
 
 ## Was es ist
 
@@ -14,8 +13,8 @@ das Haupt-Portfolio-Stück, an dem Produkt-, Architektur- und Delivery-Arbeit
   Shared-Hosting
 - ein Verbund aus App, Config-Spec, öffentlicher Doku, Arbeitsrahmen und
   wiederkehrenden Projektabläufen
-- eine öffentliche Projektfläche, die HR, Product, Tech und Dev zugleich
-  Orientierung geben soll
+- eine öffentliche Projektfläche, die Projektzweck, Systemgrenzen und Abläufe
+  nachvollziehbar beschreibt
 
 ## Was es nicht ist
 
@@ -26,8 +25,8 @@ das Haupt-Portfolio-Stück, an dem Produkt-, Architektur- und Delivery-Arbeit
 ## Warum
 
 - die Website-Vorlage soll praktisch nutzbar und wiederverwendbar sein
-- das Projekt soll als starkes Portfolio-Stück zeigen, wie Produkt und Technik
-  zusammengeführt werden
+- das Projekt soll die Verbindung von Produkt-, Architektur- und
+  Delivery-Arbeit an einem durchgängigen Beispiel dokumentieren
 - die öffentliche Doku soll Systemgrenzen, Abläufe und Entscheidungen
   nachvollziehbar machen
 
@@ -42,16 +41,11 @@ das Haupt-Portfolio-Stück, an dem Produkt-, Architektur- und Delivery-Arbeit
 - KI-/Skill-Rahmen: wiederkehrende KI-Arbeitsgänge und Regeln
 - `atlassian-tools`: technische Brücke zu Jira und Confluence
 
-## Rollen
+## Leser und Nutzung
 
-- **HR**:
-  sieht Nutzen, Reife und öffentliche Professionalität
-- **Product**:
-  erkennt Scope, Leserführung und Informationsarchitektur
-- **Tech**:
-  sieht Systemzuschnitt, Qualitätsrahmen und Betriebsmodell
-- **Dev**:
-  findet Repos, Abläufe, Policies und Nachweise
+- fachliche Leser finden Projektzweck, Grenzen und zentrale Abläufe
+- technische Leser finden Systemzuschnitt, Schnittstellen und Betriebsmodell
+- umsetzende Leser finden Repos, Regeln, Arbeitsdoku und Nachweise
 
 ## Schnittstellen
 

@@ -4,11 +4,10 @@ title: CV Web Template
 permalink: /en/
 ---
 
-This project is both a reusable PHP template for a CV website and the
-main portfolio piece that makes product thinking, architecture, delivery,
-and operational discipline publicly visible.
+This project is a reusable PHP template for a CV website and a reference
+project for product, architecture, delivery, and operations work.
 
-It goes beyond a plain CV page in three visible ways: public and
+The public docs highlight three defining characteristics: public and
 token-gated private variants with redacted contact details, a CLI
 build pipeline (YAML → validated → HTML), and a file-based security
 layer for the contact form (rate limiting, CAPTCHA, IP-salt rotation
@@ -29,14 +28,12 @@ The app repo contains source code, but no regular project docs under `docs/`.
 
 ## Reader paths
 
-- **HR**:
-  quick orientation on why this portfolio piece is strong in public.
-- **Product**:
-  product framing, audience fit, scope, and structure.
-- **Tech**:
-  system boundaries, operational model, delivery, and quality logic.
-- **Dev**:
-  repos, build/runtime paths, policies, runbooks, and work docs.
+- organisational entry:
+  project purpose, project map, and defining characteristics
+- technical entry:
+  system boundaries, operations model, delivery, and quality logic
+- implementation entry:
+  repos, build/runtime paths, policies, runbooks, and work docs
 
 ## Areas
 
