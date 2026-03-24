@@ -22,7 +22,11 @@ jira_key: J01-7
 
 ## Description
 
--
+Ziel: Production-Deployment-Workflow aktivieren und absichern.
+
+- Branch- und Environment-Regeln festziehen
+- Preflight- und Smoke-Checks definieren
+- Betriebsdoku und Runbook ergänzen
 
 ## Subtasks
 

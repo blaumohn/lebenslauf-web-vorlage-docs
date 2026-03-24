@@ -4,17 +4,21 @@ title: Lebenslauf-Web-Vorlage
 permalink: /de/
 ---
 
-PHP-Vorlage für eine Lebenslauf-Site auf Shared-Hosting.
+Dieses Projekt ist zugleich eine wiederverwendbare PHP-Vorlage für eine
+Lebenslauf-Website und das Haupt-Portfolio-Stück, an dem Produktdenken,
+Architektur, Delivery und Betriebsdisziplin öffentlich nachvollziehbar
+werden.
 
-Drei Eigenschaften, die über eine einfache CV-Seite hinausgehen:
+Über die einfache CV-Seite hinaus zeigt es drei prägende Eigenschaften:
 öffentliche und token-gesicherte private Ansicht mit Schwärzung der
-Kontaktdaten, eine CLI-Build-Pipeline (YAML → validiert → HTML),
-und ein dateibasierter Sicherheitsrahmen für das Kontaktformular
+Kontaktdaten, eine CLI-Build-Pipeline (YAML → validiert → HTML) und einen
+dateibasierten Sicherheitsrahmen für das Kontaktformular
 (Rate-Limit, CAPTCHA, IP-Salt-Rotation mit `symfony/lock`).
 
 ## Einstieg
 
 - [Einstieg / Quickstart]({{ "/de/getting-started/" | relative_url }})
+- [Projektlandkarte und Specs]({{ "/de/specs/" | relative_url }})
 
 ## Repos
 
@@ -23,6 +27,18 @@ und ein dateibasierter Sicherheitsrahmen für das Kontaktformular
 
 Die öffentliche Doku liegt in GitHub Pages.
 Das App-Repo enthält Quelltext, aber keine reguläre Projektdoku unter `docs/`.
+
+## Leserpfade
+
+- **HR**:
+  schneller Überblick, woran dieses Portfolio-Stück fachlich und technisch
+  stark ist.
+- **Product**:
+  Produktzuschnitt, Leserführung, Scope und Projektstruktur.
+- **Tech**:
+  Systemgrenzen, Betriebsmodell, Delivery- und Qualitätslogik.
+- **Dev**:
+  Repos, Build-/Runtime-Pfade, Policies, Runbooks und Arbeitsdoku.
 
 ## Bereiche
 
@@ -38,6 +54,7 @@ wie z. B. Runbooks oder Entscheidungen sofort einordbar sind.
 - [Sprint-Historie (öffentlich)]({{ "/de/work/sprints/" | relative_url }})
 - [Jira‑Übersicht (öffentlich)]({{ "/de/jira/" | relative_url }})
 - [Richtlinien]({{ "/de/policies/" | relative_url }})
+- [Specs]({{ "/de/specs/" | relative_url }})
 - [Vorlagen]({{ "/de/templates/" | relative_url }})
 - [Qualität]({{ "/de/quality/" | relative_url }})
 

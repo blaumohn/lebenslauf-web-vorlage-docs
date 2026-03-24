@@ -30,7 +30,11 @@ jira_key: J01-5
 
 ## Beschreibung
 
--
+Ziel: Qualitätskriterien verankern und Risikomuster systematisch abbauen.
+
+- Risikomuster erfassen und priorisieren
+- Repo-Standards vereinheitlichen
+- Preview-Flow stabilisieren
 
 ## Unteraufgaben
 

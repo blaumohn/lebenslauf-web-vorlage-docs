@@ -13,7 +13,7 @@ jira_key: J01-31
 
 ## Links
 
--
+- [Projekt-Doku: Start]({{ "/de/" | relative_url }})
 
 ## Beschreibung
 

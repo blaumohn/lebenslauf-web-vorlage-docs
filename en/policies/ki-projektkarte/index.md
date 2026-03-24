@@ -26,6 +26,7 @@ requirements do not need to be duplicated inside the skill itself.
 - where issue-specific public work lives under `work/jira/J01-<KEY>/`
 - where canonical project rules live under `policies/`, `operations/`,
   `areas/`, and `decisions/`
+- where project, system, and flow definitions live under `specs/`
 - where public Jira work docs live canonically under `work/jira/`
 - where provenance and source history should be checked in the `tagebuch`
 
@@ -44,6 +45,7 @@ requirements do not need to be duplicated inside the skill itself.
 ## Canonical entry points
 
 - [Docs policy]({{ "/en/policies/doku-richtlinie/" | relative_url }})
+- [Specs: project map and system definitions]({{ "/en/specs/" | relative_url }})
 - [Runbook: update public Jira pages]({{ "/en/operations/runbook/" | relative_url }})
 - [Jira work docs]({{ "/en/jira/" | relative_url }})
 - [Jira and docs tooling: public Jira overview]({{ "/en/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }})

@@ -18,4 +18,4 @@ jira_parent_key: J01-85
 
 ## Links
 
--
+- [Jira- und Doku-Tooling: API-Betriebe (Wrapper)]({{ "/en/areas/proj-doku-tooling/api-betriebe/" | relative_url }})

@@ -24,7 +24,10 @@ jira_key: J01-8
 
 ## Beschreibung
 
--
+Ziel: Frühe Kandidaten bündeln und priorisierbar machen.
+
+- Kandidaten scopen
+- Folge-Tickets ableiten
 
 ## Unteraufgaben
 

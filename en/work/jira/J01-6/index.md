@@ -22,7 +22,11 @@ jira_key: J01-6
 
 ## Description
 
--
+Ziel: Template- und UI-Texte i18n-fähig machen.
+
+- Mechanismus für Template-Text-Keys definieren
+- DE/EN als Mindestumfang festlegen
+- Fallback-Strategie dokumentieren
 
 ## Subtasks
 

@@ -17,7 +17,10 @@ jira_key: J01-62
 
 ## Description
 
--
+Ziel: Production-Branch und Environment-Regeln verbindlich setzen.
+
+- Branch->Environment-Mapping festlegen
+- Environment-Aktivierung vorbereiten
 
 ## Subtasks
 

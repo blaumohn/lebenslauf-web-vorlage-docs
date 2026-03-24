@@ -19,7 +19,8 @@ jira_key: J01-84
 
 ## Links
 
--
+- [Bereich: Jira- und Doku-Tooling]({{ "/de/areas/proj-doku-tooling/" | relative_url }})
+- [Jira- und Doku-Tooling: Systemüberblick (Ziel & Ist)]({{ "/de/areas/proj-doku-tooling/aufbau/" | relative_url }})
 
 ## Beschreibung
 

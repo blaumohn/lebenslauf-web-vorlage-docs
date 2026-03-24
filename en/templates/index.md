@@ -8,6 +8,8 @@ permalink: /en/templates/
 - [KEP Lite template]({{ "/en/templates/kep-lite/" | relative_url }})
 - [Runbook template]({{ "/en/templates/runbook/" | relative_url }})
 - [Postmortem template]({{ "/en/templates/postmortem/" | relative_url }})
+- [System spec template]({{ "/en/templates/spec-system/" | relative_url }})
+- [Flow spec template]({{ "/en/templates/spec-ablauf/" | relative_url }})
 - [Sprint dossier template]({{ "/en/templates/sprint-dossier/" | relative_url }})
 - [Test matrix template]({{ "/en/templates/testmatrix/" | relative_url }})
 - [Feature matrix template]({{ "/en/templates/feature-matrix/" | relative_url }})

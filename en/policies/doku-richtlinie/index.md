@@ -39,6 +39,9 @@ permalink: /en/policies/doku-richtlinie/
 5) Ist es „so arbeiten wir“ (Konventionen/Leitlinien)?
    - Richtlinie.
 
+5a) Is it the stable definition of a system, subsystem, or project-wide flow?
+   - Spec.
+
 4a) Ist es eine gleichfoermige Feature- oder Zustandsuebersicht mit
     Pflichtspalten?
    - Feature-Matrix.
@@ -65,7 +68,7 @@ permalink: /en/policies/doku-richtlinie/
 
 9) Gilt der Inhalt über einen einzelnen Vorgang hinaus stabil?
    - Ja: auf die kanonische Fachseite unter `areas/`, `operations/`,
-     `policies/`, `decisions/` oder `quality/`.
+     `policies/`, `decisions/`, `specs/` oder `quality/`.
    - Vorgangs- oder Drift-Seiten verlinken dorthin, sobald der Inhalt stabil
      genug ist.
 
@@ -98,6 +101,10 @@ Repo: lebenslauf-web-vorlage – Überblick (Startseite)
 2. Querschnitt (repo-weit)
 - Richtlinien (Doku, Programmierleitlinien, ggf. Security)
 - Architektur (nur wenn wirklich übergreifend)
+- Specs
+  - Project
+  - Systems
+  - Flows
 - Entscheidungen (ADR-Index, KEP-Lite-Index)
 - Betrieb (Runbook-Index)
 - Qualität (Teststrategie, Testmatrix)
@@ -128,6 +135,11 @@ B) **Querschnitt nur, wenn wirklich übergreifend**
 
 C) **„Ziel & Ist“ ist Architekturüberblick**
 - Systemüberblick (Zielbild + Ist) liegt unter Bereich → „Aufbau“.
+
+C1) **Keep specs and area pages separate**
+- A `Spec` explains stable system or flow boundaries.
+- `areas/` explains domain areas and their operational view.
+- A `Spec` does not replace an area page or a runbook.
 
 D) **Leitlinie vs. Katalog vs. Runbook strikt trennen**
 - Leitlinie: Regeln/Prinzipien/Policy.
@@ -189,8 +201,8 @@ I) **Jeder Dokutyp braucht eine Vorlage**
 - Standard-Dokutypen in diesem Repo sind nur Typen mit gepflegter Vorlage unter
   `templates/`.
 - Bevorzugt werden etablierte Typen wie `ADR`, `KEP-Lite`, `Runbook`,
-  `Richtlinie/Überblick`, `Sprint-Dossier`, `Testmatrix`, `Feature-Matrix`,
-  `Drift-Report`, `Postmortem`, `Jira work doc`.
+  `Richtlinie/Überblick`, `Spec`, `Sprint-Dossier`, `Testmatrix`,
+  `Feature-Matrix`, `Drift-Report`, `Postmortem`, `Jira work doc`.
 
 J) **Neue Dokutypen brauchen Policy + URI-Muster**
 - Ein neuer Typ (z. B. Glossar, Abnahmecheck) ist erst freigegeben, wenn
@@ -212,7 +224,7 @@ L) **Internal IDs stay out of public docs**
 
 M) **Jira links only to canonical docs targets**
 - Jira remote links point to canonical pages under `areas/`, `operations/`,
-  `decisions/`, `policies/`, `quality/` or `work/`.
+  `decisions/`, `policies/`, `specs/`, `quality/` or `work/`.
 - Public Jira work docs are published only from `work/jira/` and their
   `/de/...`-/`/en/...` permalinks.
 
@@ -234,6 +246,8 @@ P) **Canonical URI patterns are part of the doc type**
 - `Testmatrix`: `quality/testmatrix/` or `quality/testmatrix/<slug>/`
 - `Feature-Matrix`: `quality/feature-matrix/` or
   `quality/feature-matrix/<slug>/`
+- `Spec`: `specs/<slug>/`, `specs/systems/<slug>/` or
+  `specs/flows/<slug>/`
 - `Drift-Report`: `quality/drift-reports/J01-<KEY>/`
 - `Sprint-Dossier`: `work/sprints/<sprint-slug>/`
 - `Jira work doc`: `work/jira/J01-<KEY>/`

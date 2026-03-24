@@ -30,6 +30,7 @@ damit Projektanforderungen nicht im Skill dupliziert werden müssen.
 - wo Vorgangsarbeit öffentlich unter `work/jira/J01-<KEY>/` liegt
 - wo kanonische Projektregeln unter `policies/`, `operations/`, `areas/` und
   `decisions/` liegen
+- wo Projekt-, System- und Ablaufdefinitionen unter `specs/` liegen
 - wo der Mirror nur abgeleitete Sicht ist und nicht SSOT
 - wo Provenienz und Quellenlage im `tagebuch` nachgesehen werden
 
@@ -50,6 +51,7 @@ damit Projektanforderungen nicht im Skill dupliziert werden müssen.
 ## Kanonische Einstiege
 
 - [Doku-Richtlinie]({{ "/de/policies/doku-richtlinie/" | relative_url }})
+- [Specs: Projektlandkarte und Systemdefinitionen]({{ "/de/specs/" | relative_url }})
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/de/operations/runbook/" | relative_url }})
 - [Jira-Arbeitsdokus]({{ "/de/jira/" | relative_url }})
 - [Jira- und Doku-Tooling: Jira-Übersicht]({{ "/de/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }})
