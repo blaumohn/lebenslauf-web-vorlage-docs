@@ -6,6 +6,10 @@ permalink: /en/
 
 This project is a reusable PHP template for a CV website and a reference
 project for product, architecture, delivery, and operations work.
+It builds on the earlier static
+[lebenslauf-vorlage](https://github.com/blaumohn/lebenslauf-vorlage)
+template for content and i18n and extends it with today’s dynamic PHP
+layer.
 
 The public docs highlight three defining characteristics: public and
 token-gated private variants with redacted contact details, a CLI

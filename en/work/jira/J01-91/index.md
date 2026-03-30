@@ -91,15 +91,12 @@ formulierte Zielbild von `J01-91`.
 
 ## Delta 2026-03-30
 
-- The short README on `docs/j01-91-readme-ghpages-followup` now adds a brief
-  development view.
-- That view makes the project split readable as two work areas:
-  - templating for content, structure, and i18n
-  - dynamic application concerns such as access, contact, build, and
-    operations
-- The derivation comes from internal source material around the earlier static
-  frontend path; the public README keeps only the short development-facing
-  reading.
+- The short README on `docs/j01-91-readme-ghpages-followup` was reduced to a
+  single sentence.
+- That sentence links via Markdown to the earlier static
+  `lebenslauf-vorlage` template and positions the current PHP project as its
+  dynamic extension for content, i18n, and runtime concerns.
+- The same short reading was mirrored onto the public start page.
 
 ## Arbeitsprinzip (kurz)
 

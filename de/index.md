@@ -7,6 +7,9 @@ permalink: /de/
 Dieses Projekt ist eine wiederverwendbare PHP-Vorlage für eine
 Lebenslauf-Website und ein Referenzprojekt für Produkt-, Architektur-,
 Delivery- und Betriebsarbeit.
+Es baut auf der früheren statischen Vorlage aus
+[lebenslauf-vorlage](https://github.com/blaumohn/lebenslauf-vorlage) für
+Inhalt und i18n auf und ergänzt sie um den heutigen dynamischen PHP-Bereich.
 
 Die öffentliche Doku dokumentiert dazu drei prägende Eigenschaften:
 öffentliche und token-gesicherte private Ansicht mit Schwärzung der

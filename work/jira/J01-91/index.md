@@ -90,14 +90,12 @@ formulierte Zielbild von `J01-91`.
 
 ## Delta 2026-03-30
 
-- Die README-Kurzfassung auf `docs/j01-91-readme-ghpages-followup` wurde um
-  eine knappe Entwicklungssicht ergänzt.
-- Diese Sicht macht den Projektzuschnitt als Zweiteilung lesbar:
-  - Templating für Inhalt, Struktur und i18n
-  - dynamischer Bereich für Zugriff, Kontakt, Build und Betrieb
-- Die Herleitung dafür liegt nicht in der öffentlichen README selbst, sondern
-  in der internen Quellenlage zum früheren statischen Frontend-Pfad; öffentlich
-  bleibt nur die knappe Entwicklungslesart.
+- Die README-Kurzfassung auf `docs/j01-91-readme-ghpages-followup` wurde auf
+  einen Einzelsatz zurückgeführt.
+- Dieser Satz verweist per Markdown-Link auf die frühere statische Vorlage
+  `lebenslauf-vorlage` und ordnet das heutige PHP-Projekt als deren
+  dynamische Erweiterung für Inhalt, i18n und Betriebslogik ein.
+- Dieselbe Kurzlesart wurde auf die öffentliche Startseite gespiegelt.
 
 ## Arbeitsprinzip (kurz)
 
