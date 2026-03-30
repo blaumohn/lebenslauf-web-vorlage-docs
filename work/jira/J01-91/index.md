@@ -88,6 +88,17 @@ formulierte Zielbild von `J01-91`.
   README-Arbeit ohne Feature-Scope läuft getrennt vom Produkt-Feature-Fluss
   direkt in den `dev`-Pfad.
 
+## Delta 2026-03-30
+
+- Die README-Kurzfassung auf `docs/j01-91-readme-ghpages-followup` wurde um
+  eine knappe Entwicklungssicht ergänzt.
+- Diese Sicht macht den Projektzuschnitt als Zweiteilung lesbar:
+  - Templating für Inhalt, Struktur und i18n
+  - dynamischer Bereich für Zugriff, Kontakt, Build und Betrieb
+- Die Herleitung dafür liegt nicht in der öffentlichen README selbst, sondern
+  in der internen Quellenlage zum früheren statischen Frontend-Pfad; öffentlich
+  bleibt nur die knappe Entwicklungslesart.
+
 ## Arbeitsprinzip (kurz)
 
 - GitHub Pages ist SSOT für Doku (öffentlich, inkl. Seiten für Jira-Links).
