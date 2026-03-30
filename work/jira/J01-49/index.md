@@ -17,10 +17,7 @@ jira_key: J01-49
 
 ## Beschreibung
 
-Ziel: Template-Texte über i18n-Keys ausliefern.
-
-- Keys und Ablageort definieren
-- DE/EN Mindestumfang liefern
+-
 
 ## Unteraufgaben
 

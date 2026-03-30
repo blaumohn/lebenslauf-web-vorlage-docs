@@ -17,9 +17,7 @@ jira_key: J01-60
 
 ## Description
 
-Ziel: Kandidat scopen und priorisieren.
-
-- Scope skizzieren
+-
 
 ## Subtasks
 

@@ -19,6 +19,7 @@ Public Jira area (without Jira Cloud links).
 
 - [J01-113 — Regelwerk-Bereinigung: Ebenen 1–2–3 trennen und Prüfkategorie-Zuordnung A/B/C/D]({{ "/en/jira/issues/J01-113/" | relative_url }})
 - [J01-115 — KI-Prüfarchitektur: Kategorie-A-bis-D-System aufbauen (Hook/Skript/Modell)]({{ "/en/jira/issues/J01-115/" | relative_url }})
+- [J01-118 — Tagebuch-Context für projektfremde Notizen im KI-Agenten-Lauf schärfen]({{ "/en/jira/issues/J01-118/" | relative_url }})
 
 ### [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/en/jira/issues/J01-5/" | relative_url }})
 
@@ -100,4 +101,3 @@ Public Jira area (without Jira Cloud links).
 - [J01-103 — J01-91: offene Zielerfüllung für Public-Doku und Übernahmestatus nachziehen]({{ "/en/jira/issues/J01-103/" | relative_url }})
 - [J01-105 — Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf]({{ "/en/jira/issues/J01-105/" | relative_url }})
 - [J01-109 — GitHub-Pages-Permalinks für öffentliche Jira-Doku angleichen]({{ "/en/jira/issues/J01-109/" | relative_url }})
-- [J01-117 — Projekt-Doku: Spec-Landkarte für Projekt, Systeme und Abläufe]({{ "/en/jira/issues/J01-117/" | relative_url }})

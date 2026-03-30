@@ -17,10 +17,7 @@ jira_key: J01-65
 
 ## Beschreibung
 
-Ziel: Verbindliche Checks für Production-Deploys definieren.
-
-- Artefaktliste festlegen
-- Post-Deploy-Smoke definieren
+-
 
 ## Unteraufgaben
 

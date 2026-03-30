@@ -17,10 +17,7 @@ jira_key: J01-25
 
 ## Description
 
-Ziel: Stabilen Dev-Baseline-Stand und saubere Repo-Hygiene sicherstellen.
-
-- Baseline festziehen
-- Hygiene-Regeln umgesetzt
+-
 
 ## Subtasks
 

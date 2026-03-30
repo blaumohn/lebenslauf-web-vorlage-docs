@@ -109,6 +109,9 @@ convention. This issue defines:
   their own agent rules — exclusively in skill repos (`IM-SKL-01`).
 - Home of `ki_karte` schema: skill repo (`lebenslauf-web-vorlage` or
   `shared/`), not `lebenslauf-web-vorlage-docs`.
+- Follow-up derivation split out (2026-03-30): the sharpening that
+  non-project `tagebuch` notes must not be assigned to the Lebenslauf project
+  and Jira by default in the AI flow now runs as separate issue `J01-118`.
 - Implementation not yet started.
 
 ## Verification plan
@@ -136,11 +139,14 @@ convention. This issue defines:
 - Architectural decision A/B/C/D → Option D chosen.
 - Migration path for existing repo `AGENTS.md` in product and docs repos still
   needs to be scheduled concretely.
+- The derived exception for non-project `tagebuch` notes is tracked
+  separately in `J01-118`.
 
 ## Links
 
 - [J01-111: Epic AI rule coherence and verification architecture]({{ "/en/jira/issues/J01-111/" | relative_url }})
 - [J01-115: AI verification architecture]({{ "/en/jira/issues/J01-115/" | relative_url }})
+- [J01-118: Sharpen `tagebuch` context for non-project notes in the AI-agent flow]({{ "/en/jira/issues/J01-118/" | relative_url }})
 - [J01-92: Shared agent rules and skill versioning]({{ "/en/jira/issues/J01-92/" | relative_url }})
 - [Appendix: Rule Inventory]({{ "/en/jira/issues/J01-113/appendix-rule-inventory/" | relative_url }})
 - [Appendix: Implementation Plan]({{ "/en/jira/issues/J01-113/appendix-implementation-plan/" | relative_url }})

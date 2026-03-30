@@ -17,10 +17,7 @@ jira_key: J01-43
 
 ## Beschreibung
 
-Ziel: Verwaltungsabläufe ohne SSH für Preview bereitstellen.
-
-- Marker/Signaldatei-Flow definieren
-- Doku und Tests ergänzen
+-
 
 ## Unteraufgaben
 

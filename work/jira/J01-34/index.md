@@ -17,10 +17,7 @@ jira_key: J01-34
 
 ## Beschreibung
 
-Ziel: Konsistente Pipeline-Phase-Syntax und Missing-Config-Ausgabe.
-
-- Pipeline-Phase-Syntax definieren
-- Missing-Config-Befehl spezifizieren
+-
 
 ## Unteraufgaben
 

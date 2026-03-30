@@ -110,6 +110,10 @@ brauchen sie eine Autorenkonvention. Der Vorgang legt fest:
   versioniert — ausschließlich in Skill-Repos (`IM-SKL-01`).
 - Heimatort `ki_karte`-Schema: Skill-Repo (`lebenslauf-web-vorlage` oder
   `shared/`), nicht `lebenslauf-web-vorlage-docs`.
+- Folgeableitung ausgelagert (2026-03-30): Die Schärfung, dass
+  projektfremde `tagebuch`-Notizen im KI-Lauf nicht pauschal dem
+  Lebenslauf-Projekt und Jira zugeordnet werden dürfen, läuft als eigener
+  Vorgang `J01-118`.
 - Umsetzung noch nicht begonnen.
 
 ## Regelwerk-Bestandsübersicht
@@ -144,10 +148,13 @@ den Anforderungsgruppen von J01-113, steht in der Anlage:
 - Welche bestehenden Policy-Seiten erfüllen die Autorenkonvention bereits,
   welche müssen nachgezogen werden — Bestandsaufnahme fehlt.
 - Architekturentscheidung A/B/C/D noch nicht getroffen.
+- Die aus `J01-113` abgeleitete Ausnahme für projektfremde `tagebuch`-Notizen
+  wird in `J01-118` separat bearbeitet.
 
 ## Links
 
 - [J01-111: Epic KI-Regelwerk-Kohärenz und Prüfarchitektur]({{ "/de/jira/issues/J01-111/" | relative_url }})
 - [J01-115: KI-Prüfarchitektur]({{ "/de/jira/issues/J01-115/" | relative_url }})
+- [J01-118: Tagebuch-Kontext für projektfremde Notizen im KI-Agenten-Lauf schärfen]({{ "/de/jira/issues/J01-118/" | relative_url }})
 - [J01-92: Shared-Agent-Regeln und Skill-Versionierung]({{ "/de/jira/issues/J01-92/" | relative_url }})
 - [Jira-Arbeitsdokus]({{ "/de/jira/" | relative_url }})
