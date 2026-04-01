@@ -24,8 +24,9 @@ Phasengrenzen eindeutig und prüfbar sind.
   Parametersätzen expandiert.
 - Code-Defaults (`get('KEY', 'default')`) werden entfernt, damit der
   Parameter-Vektor-Ansatz echte Testergebnisse liefert.
-- `variables` bleibt der Parameterkatalog im App-Repo; `context` wird als
-  Bereich `pipeline_phase` geführt.
+- `variables` bleibt der Parameterkatalog im App-Repo; `PIPELINE` und
+  `PHASE` werden nicht mehr als Manifest-Bereich im App-Repo geführt,
+  sondern lib-intern ergänzt.
 - Die pipeline-spec-lib liest Bereichs- und Teilbereichs-Referenzen, expandiert
   sie und validiert dabei die Disjunktheit zwischen `global`, `common` und
   konkreter Pipeline.
@@ -39,20 +40,26 @@ Phasengrenzen eindeutig und prüfbar sind.
 - Verwandt mit J01-28 (breiter Analyserahmen); kein gegenseitiger Blocker.
 - J01-37 bleibt ein angrenzender Folgepunkt, ist aber nicht Teil dieses
   Doku-Nachzugs.
+- Der Hauptrepo-Teil wurde auf `feature/j01-9-preview` neu aufgesetzt, weil
+  der frühere J01-105-App-Branch auf der falschen Upstream-Basis lag.
 - Manifest, Config-YAMLs und PHP-Nutzung sind im Arbeitsbranch auf das
-  Gruppen-Schema und den klaren SMTP-Absenderpfad umgestellt (2026-04-01).
+  Gruppen-Schema, direkte Phasenlisten und den klaren SMTP-Absenderpfad
+  umgestellt (2026-04-01).
+- `PIPELINE` und `PHASE` werden im Zielstand lib-intern behandelt; ein
+  App-Bereich `pipeline_phase` gehört nicht mehr zum Manifest.
 
 ## Geplantes Zielmodell
 
 - Eine Manifest-Datei im App-Repo bleibt bestehen.
-- `variables` definiert nur Parameter, Gruppen, `sources` und `meta`.
+- `variables` definiert nur Parametergruppen, `sources` und `meta`.
 - Jeder Variablenschlüssel erhält ein `meta`-Objekt.
-- `pipelines.global` gilt für alle Pipelines und Phasen.
 - `pipelines.common.<phase>` enthält die phasenweite Schnittmenge.
 - `pipelines.<pipeline>.<phase>` ergänzt nur die echte Pipeline-Differenz.
 - Phasenlisten dürfen ganze Bereiche oder Teilbereiche referenzieren.
-- Nach der Expansion darf es keine Schnittmenge zwischen `global`, `common`
+- Nach der Expansion darf es keine Schnittmenge zwischen `common`
   und konkreter Pipeline geben.
+- `PIPELINE` und `PHASE` werden beim Kompilieren lib-intern ergänzt und
+  tauchen deshalb nicht mehr im App-Manifest auf.
 
 ## Herleitung des dünnen Manifests
 
@@ -88,9 +95,13 @@ Daraus folgt der Kernbefund des Vorgangs:
 `LEBENSLAUF_PUBLIC_PROFILE` gehört in `setup` und `build`, aber nicht in
 `runtime`.
 
+Zusätzlicher Architekturentscheid des Zielstands:
+Ein eigener Manifest-Bereich `pipeline_phase` wird nicht mehr geführt.
+Die früher im App-Manifest mitgedachten Schlüssel `PIPELINE` und `PHASE`
+werden jetzt ausschließlich in der Lib ergänzt.
+
 ## Nicht-Scope dieses Doku-Nachzugs
 
-- keine Umsetzung der Manifest- oder Lib-Änderungen in den Quell-Repos
 - keine Umsetzung von J01-37
 - keine technische Testaussage, dass der neue Entwurf bereits produktiv ist
 
@@ -100,14 +111,14 @@ Daraus folgt der Kernbefund des Vorgangs:
 | --- | --- | --- | --- |
 | Herleitung dokumentiert | Quellanalyse, P_0 und Ausdünnungsweg sind im Vorgang nachvollziehbar | Jira-Doku DE/EN | erledigt |
 | Zielmodell dokumentiert | `variables`, `pipelines.global`, `common` und Pipeline-Differenz sind beschrieben | Jira-Doku DE/EN | erledigt |
-| `pipeline_phase` benannt | früherer Bereich `context` wird als `pipeline_phase` festgehalten | Jira-Doku DE/EN | erledigt |
+| lib-interne Pipeline-Phase erklärt | App-Manifest führt keinen Bereich `pipeline_phase`; `PIPELINE` und `PHASE` kommen aus der Lib | Jira-Doku DE/EN | erledigt |
 | Bereichs-Syntax erklärt | ganze Bereiche und Teilbereiche sind als geplante Syntax beschrieben | Jira-Doku DE/EN | erledigt |
-| Disjunktheitsregel erklärt | keine Schnittmenge zwischen `global`, `common` und konkreter Pipeline | Jira-Doku DE/EN | erledigt |
+| Disjunktheitsregel erklärt | keine Schnittmenge zwischen `common` und konkreter Pipeline | Jira-Doku DE/EN | erledigt |
 | Code-Defaults entfernt | Kein `get('KEY', 'default')` mehr im Quellcode | Quellanalyse Quell-Repos | offen |
 | `LEBENSLAUF_PUBLIC_PROFILE` korrigiert | Nur noch in `build`, nicht in `preview.runtime` | config.manifest.yaml | offen |
-| Manifest vereinfacht | Zielmodell in den Quell-Repos umgesetzt | config.manifest.yaml | teilweise erledigt |
+| Manifest vereinfacht | Zielmodell im Hauptrepo-Arbeitsbranch umgesetzt | config.manifest.yaml | erledigt im Arbeitsbranch |
 | SMTP-Absender bereinigt | Absender läuft nur noch über `SMTP_FROM_EMAIL` und `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` bleibt separat | config.manifest.yaml, MailService.php | erledigt |
-| pipeline-spec-lib angepasst | Expander und Validierung des Zielmodells sind umgesetzt | pipeline-config-spec-php | offen |
+| pipeline-spec-lib angepasst | Expander und Validierung des Zielmodells sind umgesetzt | pipeline-config-spec-php | erledigt im Arbeitsbranch |
 | Tests grün | Parameter-Vektor-Ansatz P_0 → P_n liefert echte Ergebnisse | Test-Lauf | offen |
 | Kein Blocker mehr für J01-9 | J01-105 als erledigt, J01-9 entsperrt | Jira | offen |
 
@@ -134,8 +145,8 @@ die lokale Lib-Version zeigt statt auf die installierte Composer-Version.
 ## Offene Punkte
 
 - J01-28: verwandter Vorgang (breiter Analyserahmen, kein Blocker).
-- Die beschriebene Zielstruktur ist dokumentiert, aber noch nicht in den
-  Quell-Repos umgesetzt.
+- Der neue Hauptrepo-Arbeitsbranch muss noch als PR gegen die J01-9-Basis
+  eingereicht werden.
 - J01-37 bleibt ein getrennter Folgepunkt für konditionelles required.
 
 ## Links
