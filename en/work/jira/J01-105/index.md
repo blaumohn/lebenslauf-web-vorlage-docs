@@ -5,7 +5,7 @@ jira_key: J01-105
 permalink: /en/jira/issues/J01-105/
 ---
 
-**Status:** 2026-03-20
+**Status:** 2026-04-01
 
 {% include jira-state-head.html %}
 
@@ -37,8 +37,8 @@ boundaries are unambiguous and verifiable.
 - Related to J01-28 (broad analysis frame); not a mutual blocker.
 - J01-37 stays an adjacent follow-up topic and is not part of this doc-only
   pass.
-- Implementation in the source repos has not started yet; this run only
-  sharpens Jira and public docs.
+- Manifest, config YAMLs, and PHP usage are adjusted in the working branch to
+  the group schema and the explicit SMTP sender path (2026-04-01).
 
 ## Planned Target Model
 
@@ -74,7 +74,7 @@ Confirmed findings from source analysis:
   `LEBENSLAUF_LANGS`, and the build-side `APP_BASE_PATH`.
 - `runtime`: uses `APP_BASE_PATH`, `TRUST_PROXY`,
   `CAPTCHA_TTL_SECONDS`, `CAPTCHA_MAX_GET`,
-  `CONTACT_MAX_POST`, `CONTACT_TO_EMAIL`, `CONTACT_FROM_EMAIL`,
+  `CONTACT_MAX_POST`, `CONTACT_TO_EMAIL`,
   `RATE_LIMIT_WINDOW_SECONDS`, `MAIL_STDOUT`, `SMTP_*`,
   `LEBENSLAUF_LANG_DEFAULT`, and `LEBENSLAUF_LANGS`.
 - `python`: uses `PYTHON_CMD` and optional `PYTHON_PATHS`.
@@ -101,7 +101,8 @@ This leads to the key finding of the task:
 | Disjointness rule explained | No overlap between `global`, `common`, and concrete pipeline | Jira docs DE/EN | done |
 | Code defaults removed | No `get('KEY', 'default')` in source | Source analysis source repos | open |
 | `LEBENSLAUF_PUBLIC_PROFILE` corrected | Only in `build`, not in `preview.runtime` | config.manifest.yaml | open |
-| Manifest simplified | Target model implemented in source repos | config.manifest.yaml | open |
+| Manifest simplified | Target model implemented in source repos | config.manifest.yaml | partially done |
+| SMTP sender clarified | Sender now runs only via `SMTP_FROM_EMAIL` and `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` remains separate | config.manifest.yaml, MailService.php | done |
 | pipeline-spec-lib updated | Expander and validation for the target model are implemented | pipeline-config-spec-php | open |
 | Tests green | Parameter-vector approach P_0 → P_n yields real results | Test run | open |
 | J01-9 unblocked | J01-105 done, J01-9 no longer blocked | Jira | open |

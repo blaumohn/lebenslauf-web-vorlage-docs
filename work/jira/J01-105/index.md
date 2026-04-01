@@ -5,7 +5,7 @@ jira_key: J01-105
 permalink: /de/jira/issues/J01-105/
 ---
 
-**Stand:** 2026-03-20
+**Stand:** 2026-04-01
 
 {% include jira-state-head.html %}
 
@@ -39,8 +39,8 @@ Phasengrenzen eindeutig und prüfbar sind.
 - Verwandt mit J01-28 (breiter Analyserahmen); kein gegenseitiger Blocker.
 - J01-37 bleibt ein angrenzender Folgepunkt, ist aber nicht Teil dieses
   Doku-Nachzugs.
-- Umsetzung in den Quell-Repos ist noch nicht begonnen; dieser Arbeitslauf
-  schärft nur Jira und öffentliche Doku.
+- Manifest, Config-YAMLs und PHP-Nutzung sind im Arbeitsbranch auf das
+  Gruppen-Schema und den klaren SMTP-Absenderpfad umgestellt (2026-04-01).
 
 ## Geplantes Zielmodell
 
@@ -78,7 +78,7 @@ Bestätigte Befunde aus der Quellanalyse:
   `LEBENSLAUF_LANGS` und den Build-seitigen `APP_BASE_PATH`.
 - `runtime`: nutzt `APP_BASE_PATH`, `TRUST_PROXY`,
   `CAPTCHA_TTL_SECONDS`, `CAPTCHA_MAX_GET`,
-  `CONTACT_MAX_POST`, `CONTACT_TO_EMAIL`, `CONTACT_FROM_EMAIL`,
+  `CONTACT_MAX_POST`, `CONTACT_TO_EMAIL`,
   `RATE_LIMIT_WINDOW_SECONDS`, `MAIL_STDOUT`, `SMTP_*`,
   `LEBENSLAUF_LANG_DEFAULT` und `LEBENSLAUF_LANGS`.
 - `python`: nutzt `PYTHON_CMD` und optional `PYTHON_PATHS`.
@@ -105,7 +105,8 @@ Daraus folgt der Kernbefund des Vorgangs:
 | Disjunktheitsregel erklärt | keine Schnittmenge zwischen `global`, `common` und konkreter Pipeline | Jira-Doku DE/EN | erledigt |
 | Code-Defaults entfernt | Kein `get('KEY', 'default')` mehr im Quellcode | Quellanalyse Quell-Repos | offen |
 | `LEBENSLAUF_PUBLIC_PROFILE` korrigiert | Nur noch in `build`, nicht in `preview.runtime` | config.manifest.yaml | offen |
-| Manifest vereinfacht | Zielmodell in den Quell-Repos umgesetzt | config.manifest.yaml | offen |
+| Manifest vereinfacht | Zielmodell in den Quell-Repos umgesetzt | config.manifest.yaml | teilweise erledigt |
+| SMTP-Absender bereinigt | Absender läuft nur noch über `SMTP_FROM_EMAIL` und `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` bleibt separat | config.manifest.yaml, MailService.php | erledigt |
 | pipeline-spec-lib angepasst | Expander und Validierung des Zielmodells sind umgesetzt | pipeline-config-spec-php | offen |
 | Tests grün | Parameter-Vektor-Ansatz P_0 → P_n liefert echte Ergebnisse | Test-Lauf | offen |
 | Kein Blocker mehr für J01-9 | J01-105 als erledigt, J01-9 entsperrt | Jira | offen |
