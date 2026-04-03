@@ -101,3 +101,4 @@ Public Jira area (without Jira Cloud links).
 - [J01-103 — J01-91: offene Zielerfüllung für Public-Doku und Übernahmestatus nachziehen]({{ "/en/jira/issues/J01-103/" | relative_url }})
 - [J01-105 — Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf]({{ "/en/jira/issues/J01-105/" | relative_url }})
 - [J01-109 — GitHub-Pages-Permalinks für öffentliche Jira-Doku angleichen]({{ "/en/jira/issues/J01-109/" | relative_url }})
+- [J01-117 — Projekt-Doku: Spec-Landkarte für Projekt, Systeme und Abläufe]({{ "/en/jira/issues/J01-117/" | relative_url }})
