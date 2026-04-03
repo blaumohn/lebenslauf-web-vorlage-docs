@@ -47,10 +47,14 @@ Die öffentliche Jira-Fläche in diesem Repo aktualisieren:
 2) Normalweg bei bekannten Änderungen:
 
 ```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-jira-change.sh --change J01-95:summary
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-pages-change.sh HEAD~1
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/resume-open-syncs.sh
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/run-sync.sh jira-change --change J01-95:summary
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/run-sync.sh pages-change HEAD~1
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/run-sync.sh resume
 ```
+
+Wenn ein gezielter Lauf vor dem Schreiben Rückschritte bei unbehandelten
+Keys erkennt, bricht der Guard den Lauf ab. Das ist als Systemlücke im
+journalisierten Sync zu behandeln; danach ist ein bewusster Vollsync nötig.
 
 3) Reparaturmodus / Neu-Baselining:
 
@@ -169,5 +173,8 @@ Dabei gilt für die Umwandlung aus Jira-URLs:
   meldet verbliebene alte Confluence-Remote-Links mit Jira-Key und Link-ID.
 - `.local/jira-sync-cache/` und `.local/jira-sync-journal/` halten den
   lokalen Snapshot- und Resume-Zustand für den journalisierten Normalmodus.
+- Guard-Fehler aus gezielten Läufen stehen zusätzlich im Laufjournal unter
+  `.local/jira-sync-journal/`; solche Läufe schreiben keine öffentlichen
+  Jira-Dateien und verlangen danach einen Vollsync.
 - Für dieses Doku-Repo gilt kein generischer `dev`-/`preview`-Git-Ablauf;
   Änderungen werden nach lokaler Prüfung direkt in `main` integriert.

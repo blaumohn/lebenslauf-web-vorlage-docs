@@ -6,7 +6,7 @@ jira_parent_key: J01-72
 permalink: /en/jira/issues/J01-95/
 ---
 
-**Stand:** 2026-03-14
+**Stand:** 2026-04-01
 
 {% include jira-state-head.html %}
 
@@ -24,10 +24,15 @@ project-wide Jira list queries in the normal mode.
 ## Implemented now
 
 - new project-specific skill `jira-state-sync/` for journaled and resumed runs
-- local Jira snapshot cache under `.local/jira-sync-cache/`
+- canonical normal path via `skills/jira-state-sync/scripts/run-sync.sh`
+- local Jira working state under `.local/jira-sync-cache/`
 - local run journal under `.local/jira-sync-journal/`
-- the public Jira generator now accepts local snapshot files instead of only
-  fresh Jira list queries
+- a guard before writing `_data/jira_pages/issues.json`
+  - targeted runs stop when untouched issues would regress
+  - those cases are recorded as failures in the run journal
+  - a deliberate full refresh is required afterwards
+- the public Jira generator still accepts local input files for the existing
+  V1 workflow
 - `verify-public-jira-pages.sh` can now verify only affected keys
 - new Pages helpers to:
   - derive link changes from Git diffs
@@ -41,19 +46,24 @@ project-wide Jira list queries in the normal mode.
 - Jira changes are recorded as `KEY:CLASS`.
 - V1 classes:
   `status`, `summary`, `description`, `step_meta`, `remote_links`
+- targeted runs only write when the guard finds no regressions on untouched
+  issues
 - GitHub Pages changes are detected from a Git base ref.
 - In V1, `jira/` is treated as the complete public view of docs-domain links
   imported from Jira; other Jira content stays outside this path.
 - Full sync remains a repair mode, not the default path.
+- Follow-up work after the completed V1 base now continues in
+  [J01-119]({{ "/en/jira/issues/J01-119/" | relative_url }}).
 
 ## Completion
 
 - V1 delivers a journaled normal mode for known Jira and GitHub Pages changes.
-- Resume, targeted verification, and the full-sync repair path are now part of
-  the workflow.
-- Any further work is about later extensions, not the core capability.
+- Resume, targeted verification, guard-based aborts, and the full-refresh
+  repair path are now part of the workflow.
+- Any further hardening now lives in follow-up work, not under `J01-95`.
 
 ## Links
 
+- [J01-119: Harden the targeted Jira/pages sync against silent regressions]({{ "/en/jira/issues/J01-119/" | relative_url }})
 - [Jira work docs]({{ "/en/jira/" | relative_url }})
 - [Runbook: update the public Jira area]({{ "/en/operations/runbook/" | relative_url }})

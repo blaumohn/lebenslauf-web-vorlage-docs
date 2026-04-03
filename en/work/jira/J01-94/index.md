@@ -36,9 +36,12 @@ working style stays publicly understandable.
   across Jira and GitHub Pages.
 - Any further care belongs to the ongoing sprint workflow, not to the core
   implementation step of `J01-94`.
+- The operational close of `SCRUM Sprint 1` now continues as follow-up work in
+  [J01-120]({{ "/en/jira/issues/J01-120/" | relative_url }}).
 
 ## Links
 
 - [Sprint history]({{ "/en/work/sprints/" | relative_url }})
 - [Sprint board]({{ "/en/jira/sprint/" | relative_url }})
+- [J01-120: Close SCRUM Sprint 1 and publish review/retro]({{ "/en/jira/issues/J01-120/" | relative_url }})
 - [Jira: J01-94]({{ "/en/jira/issues/J01-94/" | relative_url }})

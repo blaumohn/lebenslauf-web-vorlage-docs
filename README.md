@@ -20,8 +20,11 @@ Siehe Runbook: `operations/ghpages-preview/`.
 Normalweg für bekannte Änderungen:
 
 ```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-jira-change.sh --change J01-95:summary
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/run-sync.sh jira-change --change J01-95:summary
 ```
+
+Wenn der Guard bei einem gezielten Lauf Rückschritte bei unbehandelten
+Vorgängen erkennt, bricht der Lauf ab und verlangt einen bewussten Vollsync.
 
 Reparaturmodus / Neu-Baselining:
 

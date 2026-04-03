@@ -40,9 +40,12 @@ vereinheitlichen, dass die Arbeitsweise öffentlich nachvollziehbar bleibt.
   GitHub Pages und Mirror auf denselben Rahmen gebracht.
 - Weitere Pflege läuft als laufender Sprint-/Betriebsprozess, nicht mehr als
   offener Kernschritt von `J01-94`.
+- Der operative Abschluss von `SCRUM Sprint 1` läuft als Folgearbeit unter
+  [J01-120]({{ "/de/jira/issues/J01-120/" | relative_url }}).
 
 ## Links
 
 - [Sprint-Historie]({{ "/de/work/sprints/" | relative_url }})
 - [Sprint-Board]({{ "/de/jira/sprint/" | relative_url }})
+- [J01-120: SCRUM Sprint 1 schließen und öffentliche Review/Retro nachziehen]({{ "/de/jira/issues/J01-120/" | relative_url }})
 - [Jira: J01-94]({{ "/de/jira/issues/J01-94/" | relative_url }})

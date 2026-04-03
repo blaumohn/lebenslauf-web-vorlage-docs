@@ -44,10 +44,14 @@ Update the public Jira area in this repo:
 2) Normal mode for known changes:
 
 ```bash
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-jira-change.sh --change J01-95:summary
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/journal-sync-pages-change.sh HEAD~1
-DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/resume-open-syncs.sh
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/run-sync.sh jira-change --change J01-95:summary
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/run-sync.sh pages-change HEAD~1
+DOCS_REPO=$PWD sh ../.agents/skills/lebenslauf-web-vorlage/skills/jira-state-sync/scripts/run-sync.sh resume
 ```
+
+If a targeted run would regress untouched keys before writing, the guard stops
+the run. Treat that as a gap in the journaled sync; a deliberate full refresh
+is required afterwards.
 
 3) Repair mode / full refresh:
 
@@ -149,5 +153,8 @@ The URL conversion from Jira follows these rules:
   reports remaining legacy Confluence remote links with Jira key and link ID.
 - `.local/jira-sync-cache/` and `.local/jira-sync-journal/` keep the local
   snapshot and resume state for the journaled normal mode.
+- Guard failures from targeted runs are also recorded in
+  `.local/jira-sync-journal/`; those runs do not write public Jira files and
+  require a full refresh afterwards.
 - This docs repo does not use a generic `dev`-/`preview` Git flow; after local
   checks, changes are integrated directly into `main`.
