@@ -50,7 +50,7 @@ trennt ihn vom Seed-Sonderfall und vom Lib-Schnitt.
 | `P_0` vollständig | Alle aktuellen Parameter sind im Ausgangssatz erfasst | J01-105, App-Repo | offen |
 | Jeder Übergang belegt | Jeder Schritt `P_i -> P_{i+1}` hat Quelltextbeleg und Prüflauf | App-Repo, Arbeitsdoku | offen |
 | Dünner Vertrag erreicht | Manifest enthält nur noch bestätigte Zielparameter | `config.manifest.yaml` | offen |
-| Phase-Grenzen klar | `global`, `common` und Pipeline-Differenz sind im App-Vertrag sauber getrennt | App-Repo, J01-105 | offen |
+| Phase-Grenzen klar | `common` und Pipeline-Differenz sind im App-Vertrag sauber getrennt | App-Repo, J01-105 | offen |
 
 ## Offene Punkte
 

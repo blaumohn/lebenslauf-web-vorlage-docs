@@ -21,8 +21,7 @@ Bibliotheksvertrag nicht wieder vermischt werden.
 ## Ziel
 
 - Die pipeline-spec-lib expandiert das Zielmodell mit
-  `pipelines.global`, `pipelines.common.<phase>` und
-  `pipelines.<pipeline>.<phase>`.
+  `pipelines.common.<phase>` und `pipelines.<pipeline>.<phase>`.
 - Die Lib validiert die Disjunktheit zwischen gemeinsamen und
   pipelinespezifischen Parametern.
 - Die README beschreibt nur noch das echte Gruppen- und Phasenmodell.
@@ -40,16 +39,18 @@ Bibliotheksvertrag nicht wieder vermischt werden.
 
 - Jira-Subtask `J01-125` ist angelegt.
 - Der Lib-Schnitt ist öffentlich von der App-seitigen Reduktion getrennt.
-- Umsetzung, Tests und README-Nachweise sind noch offen.
+- Lib-Code, README und die lib-internen Phasenschlüssel sind in der
+  Lib-Historie nachgezogen.
+- Offener Rest ist vor allem der repo-übergreifende Abschlussnachweis.
 
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Expander liest Zielmodell | Lib expandiert `global`, `common.<phase>` und Pipeline-Differenz korrekt | `pipeline-config-spec-php` | offen |
-| Disjunktheit validiert | Überschneidungen zwischen `common` und Pipeline-Differenz werden abgewiesen | `pipeline-config-spec-php`, Tests | offen |
-| README korrigiert | Kein `required`/`allowed`-Schema mehr in der Lib-Doku | `pipeline-config-spec-php/README*.md` | offen |
-| Lib-interne Phasenschlüssel erklärt | `PIPELINE` und `PHASE` werden nicht mehr als App-Manifest-Bereich beschrieben | Lib-Doku, J01-105 | offen |
+| Expander liest Zielmodell | Lib expandiert `common.<phase>` und Pipeline-Differenz korrekt | `pipeline-config-spec-php` | erledigt |
+| Disjunktheit validiert | Überschneidungen zwischen `common` und Pipeline-Differenz werden abgewiesen | `pipeline-config-spec-php`, Tests | erledigt |
+| README korrigiert | Kein `required`/`allowed`-Schema mehr in der Lib-Doku | `pipeline-config-spec-php/README*.md` | erledigt |
+| Lib-interne Phasenschlüssel erklärt | `PIPELINE` und `PHASE` werden nicht mehr als App-Manifest-Bereich beschrieben | Lib-Doku, J01-105 | erledigt |
 
 ## Offene Punkte
 

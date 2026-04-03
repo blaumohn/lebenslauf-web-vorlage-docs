@@ -21,8 +21,7 @@ behavior do not drift apart again.
 ## Goal
 
 - The pipeline-spec-lib expands the target model with
-  `pipelines.global`, `pipelines.common.<phase>`, and
-  `pipelines.<pipeline>.<phase>`.
+  `pipelines.common.<phase>` and `pipelines.<pipeline>.<phase>`.
 - The library validates disjointness between shared and pipeline-specific
   parameters.
 - The README documents only the real group and phase model.
@@ -40,16 +39,18 @@ behavior do not drift apart again.
 
 - Jira subtask `J01-125` exists.
 - The lib cut is publicly separated from the app-side reduction work.
-- Implementation, tests, and README evidence are still open.
+- Library code, README, and internal phase-key handling are already aligned in
+  the library history.
+- The remaining open part is mainly the cross-repo closeout evidence.
 
 ## Verification plan
 
 | Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| Expander reads target model | Library expands `global`, `common.<phase>`, and the pipeline delta correctly | `pipeline-config-spec-php` | open |
-| Disjointness validated | Overlap between `common` and pipeline delta is rejected | `pipeline-config-spec-php`, tests | open |
-| README corrected | No `required`/`allowed` schema remains in lib docs | `pipeline-config-spec-php/README*.md` | open |
-| Internal phase keys explained | `PIPELINE` and `PHASE` are no longer described as an app-manifest area | lib docs, J01-105 | open |
+| Expander reads target model | Library expands `common.<phase>` and the pipeline delta correctly | `pipeline-config-spec-php` | done |
+| Disjointness validated | Overlap between `common` and the pipeline delta is rejected | `pipeline-config-spec-php`, tests | done |
+| README corrected | No `required`/`allowed` schema remains in lib docs | `pipeline-config-spec-php/README*.md` | done |
+| Internal phase keys explained | `PIPELINE` and `PHASE` are no longer described as an app-manifest area | lib docs, J01-105 | done |
 
 ## Open points
 

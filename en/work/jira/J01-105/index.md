@@ -19,15 +19,15 @@ boundaries are unambiguous and verifiable.
 ## Goal
 
 - `required` and `allowed` collapse into one: phase logic is described through
-  a mix of `pipelines.global`, `pipelines.common.<phase>`, and
-  `pipelines.<pipeline>.<phase>`, which expand into concrete parameter sets.
+  the combination of `pipelines.common.<phase>` and
+  `pipelines.<pipeline>.<phase>`, which expands into concrete parameter sets.
 - Code defaults (`get('KEY', 'default')`) are removed so that the
   parameter-vector approach yields real test results (prerequisite: ISS-003).
-- `variables` stays the parameter catalog in the app repo; `context` is
-  carried as the `pipeline_phase` area.
+- `variables` stays the parameter catalog in the app repo; `PIPELINE` and
+  `PHASE` are injected internally by the library instead of living in an
+  app-side manifest area.
 - The pipeline-spec-lib reads area and partial-area references, expands them,
-  and validates disjointness between `global`, `common`, and the concrete
-  pipeline.
+  and validates disjointness between `common` and the concrete pipeline.
 - Tests are updated; the manifest then serves as a clean phase-boundary spec.
 
 ## Current status
@@ -69,13 +69,14 @@ boundaries are unambiguous and verifiable.
 - One manifest file stays in the app repo.
 - `variables` defines only parameters, groups, `sources`, and `meta`.
 - Every variable key gets a `meta` object.
-- `pipelines.global` applies to all pipelines and phases.
 - `pipelines.common.<phase>` contains the phase-wide intersection.
 - `pipelines.<pipeline>.<phase>` adds only the true pipeline-specific
   difference.
 - Phase lists may reference full areas or partial areas.
-- After expansion there must be no overlap between `global`, `common`, and the
-  concrete pipeline.
+- After expansion there must be no overlap between `common` and the concrete
+  pipeline.
+- A separate `pipelines.global` layer is no longer part of the confirmed
+  target state after the later library decision.
 
 ## Derivation of the Thin Manifest
 
@@ -152,17 +153,17 @@ documented canonically in
 | Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
 | Derivation documented | Source analysis, `P_0 -> ... -> P_n`, and the thinning path are traceable in the issue | Jira docs DE/EN | in progress |
-| Target model documented | `variables`, `pipelines.global`, `common`, and pipeline differences are described | Jira docs DE/EN | done |
+| Target model documented | `variables`, `common`, and pipeline differences are described; the earlier `global` draft is corrected as drift | Jira docs DE/EN | done |
 | `PIPELINE` / `PHASE` explained | No app-side `pipeline_phase`; both keys are injected by the lib | Jira docs DE/EN | done |
 | Area syntax explained | Full-area and partial-area syntax is described as the planned model | Jira docs DE/EN | done |
-| Disjointness rule explained | No overlap between `global`, `common`, and concrete pipeline | Jira docs DE/EN | done |
-| Code defaults removed | No `get('KEY', 'default')` in source | Source analysis source repos | open |
+| Disjointness rule explained | No overlap between `common` and concrete pipeline | Jira docs DE/EN | done |
+| Code defaults removed | No J01-105 case relies on content-level fallback defaults anymore; a positive interim state is evidenced, but the final closeout proof is still open | Source analysis source repos, `tagebuch` | interim state evidenced |
 | `LEBENSLAUF_PUBLIC_PROFILE` corrected | No longer in `setup` or `runtime`, only in the build path | config.manifest.yaml | open |
-| Lib README corrected | No old `required`/`allowed` schema remains in the lib docs | `pipeline-config-spec-php/README*.md` | open |
+| Lib README corrected | No old `required`/`allowed` schema remains in the lib docs | `pipeline-config-spec-php/README*.md` | done |
 | Manifest simplified | Target model implemented in source repos | config.manifest.yaml | partially done |
 | SMTP sender clarified | Sender now runs only via `SMTP_FROM_EMAIL` and `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` remains separate | config.manifest.yaml, MailService.php | done |
-| pipeline-spec-lib updated | Expander and validation for the target model are implemented | pipeline-config-spec-php | open |
-| Tests green | Parameter-vector approach P_0 → P_n yields real results | Test run | open |
+| pipeline-spec-lib updated | Expander, partial-area syntax, and internal phase keys are implemented in the library history | pipeline-config-spec-php | done |
+| Tests green | There is an evidenced positive interim state for lib tests and phase-wise `config lint`; full closeout evidence is still open | Test run, `tagebuch` | interim state evidenced |
 | J01-9 unblocked | J01-105 done, J01-9 no longer blocked | Jira | open |
 
 ## Open points
@@ -170,6 +171,10 @@ documented canonically in
 - J01-28: related issue (broad analysis frame, not a blocker).
 - The general `meta` semantics live in the pipeline-spec system docs, not
   only on this issue page.
+- The secret path for `SMTP_PASS` and FTP credentials is clear in the source
+  state, but not yet called out as its own finding in the public doc.
+- The earlier regression and later restoration of manifest `meta` objects are
+  not yet visible as an explicit finding in the public history.
 - J01-37 remains a separate follow-up for conditional required logic.
 
 ## Links

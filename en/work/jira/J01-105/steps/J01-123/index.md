@@ -49,7 +49,7 @@ the seed edge case and the library cut.
 | `P_0` complete | All current parameters are captured in the starting set | J01-105, app repo | open |
 | Every transition evidenced | Each step `P_i -> P_{i+1}` has source evidence and a check run | app repo, work docs | open |
 | Thin contract reached | Manifest contains only confirmed target parameters | `config.manifest.yaml` | open |
-| Phase boundaries clear | `global`, `common`, and pipeline delta stay cleanly separated in the app contract | app repo, J01-105 | open |
+| Phase boundaries clear | `common` and the pipeline delta stay cleanly separated in the app contract | app repo, J01-105 | open |
 
 ## Open points
 

@@ -19,7 +19,7 @@ Phasengrenzen eindeutig und prüfbar sind.
 ## Ziel
 
 - `required` und `allowed` fallen zusammen: die Phasenlogik wird als
-  Mischung aus `pipelines.global`, `pipelines.common.<phase>` und
+  Zusammenspiel aus `pipelines.common.<phase>` und
   `pipelines.<pipeline>.<phase>` beschrieben und zu konkreten
   Parametersätzen expandiert.
 - Code-Defaults (`get('KEY', 'default')`) werden entfernt, damit der
@@ -28,8 +28,8 @@ Phasengrenzen eindeutig und prüfbar sind.
   `PHASE` werden nicht mehr als Manifest-Bereich im App-Repo geführt,
   sondern lib-intern ergänzt.
 - Die pipeline-spec-lib liest Bereichs- und Teilbereichs-Referenzen, expandiert
-  sie und validiert dabei die Disjunktheit zwischen `global`, `common` und
-  konkreter Pipeline.
+  sie und validiert dabei die Disjunktheit zwischen `common` und konkreter
+  Pipeline.
 - Tests werden nachgezogen; das Manifest gilt danach als saubere
   Phasengrenzen-Spezifikation.
 
@@ -84,6 +84,8 @@ Phasengrenzen eindeutig und prüfbar sind.
   und konkreter Pipeline geben.
 - `PIPELINE` und `PHASE` werden beim Kompilieren lib-intern ergänzt und
   tauchen deshalb nicht mehr im App-Manifest auf.
+- Ein eigener `pipelines.global`-Layer gehört nach späterem Lib-Beschluss
+  nicht zum bestätigten Zielstand.
 
 ## Herleitung des dünnen Manifests
 
@@ -165,17 +167,17 @@ steht kanonisch in
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
 | Herleitung dokumentiert | Quellanalyse, `P_0 -> ... -> P_n` und Ausdünnungsweg sind im Vorgang nachvollziehbar | Jira-Doku DE/EN | in Arbeit |
-| Zielmodell dokumentiert | `variables`, `pipelines.global`, `common` und Pipeline-Differenz sind beschrieben | Jira-Doku DE/EN | erledigt |
+| Zielmodell dokumentiert | `variables`, `common` und Pipeline-Differenz sind beschrieben; früherer `global`-Entwurf ist als Drift bereinigt | Jira-Doku DE/EN | erledigt |
 | lib-interne Pipeline-Phase erklärt | App-Manifest führt keinen Bereich `pipeline_phase`; `PIPELINE` und `PHASE` kommen aus der Lib | Jira-Doku DE/EN | erledigt |
 | Bereichs-Syntax erklärt | ganze Bereiche und Teilbereiche sind als geplante Syntax beschrieben | Jira-Doku DE/EN | erledigt |
 | Disjunktheitsregel erklärt | keine Schnittmenge zwischen `common` und konkreter Pipeline | Jira-Doku DE/EN | erledigt |
-| Code-Defaults entfernt | Kein `get('KEY', 'default')` mehr im Quellcode | Quellanalyse Quell-Repos | offen |
+| Code-Defaults entfernt | Kein J01-105-Fall nutzt mehr inhaltliche Fallback-Defaults; positiver Zwischenstand ist belegt, Abschlussnachweis noch offen | Quellanalyse Quell-Repos, `tagebuch` | Zwischenstand belegt |
 | `LEBENSLAUF_PUBLIC_PROFILE` korrigiert | Nicht mehr in `setup` oder `runtime`, nur noch im Build-Pfad | config.manifest.yaml | offen |
-| Lib-README korrigiert | Kein altes `required`/`allowed`-Schema mehr in der Lib-Doku | `pipeline-config-spec-php/README*.md` | offen |
+| Lib-README korrigiert | Kein altes `required`/`allowed`-Schema mehr in der Lib-Doku | `pipeline-config-spec-php/README*.md` | erledigt |
 | Manifest vereinfacht | Zielmodell im Hauptrepo-Arbeitsbranch umgesetzt | config.manifest.yaml | erledigt im Arbeitsbranch |
 | SMTP-Absender bereinigt | Absender läuft nur noch über `SMTP_FROM_EMAIL` und `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` bleibt separat | config.manifest.yaml, MailService.php | erledigt |
-| pipeline-spec-lib angepasst | Expander und Validierung des Zielmodells sind umgesetzt | pipeline-config-spec-php | erledigt im Arbeitsbranch |
-| Tests grün | Parameter-Vektor-Ansatz P_0 → P_n liefert echte Ergebnisse | Test-Lauf | offen |
+| pipeline-spec-lib angepasst | Expander, Teilbereichs-Syntax und lib-interne Phasenschlüssel sind in der Lib-Historie umgesetzt | pipeline-config-spec-php | erledigt |
+| Tests grün | Es gibt einen belegten positiven Zwischenstand für Lib-Tests und phasenweises `config lint`; der Gesamtabschluss bleibt offen | Test-Lauf, `tagebuch` | Zwischenstand belegt |
 | Kein Blocker mehr für J01-9 | J01-105 als erledigt, J01-9 entsperrt | Jira | offen |
 
 ## Lib-Repo-Änderungen und lokales Testen
@@ -203,6 +205,11 @@ die lokale Lib-Version zeigt statt auf die installierte Composer-Version.
 - J01-28: verwandter Vorgang (breiter Analyserahmen, kein Blocker).
 - Die allgemeine `meta`-Semantik lebt im Pipeline-Spec-System, nicht nur in
   dieser Vorgangsseite.
+- Der Secret-Pfad für `SMTP_PASS` und FTP-Zugangsdaten ist im Quellstand
+  geklärt, in der öffentlichen Doku aber noch nicht als eigener Befund
+  ausgearbeitet.
+- Die frühere Regression und Wiederherstellung der `meta`-Objekte ist im
+  öffentlichen Verlauf noch nicht als eigener Befund nachgezogen.
 - Der neue Hauptrepo-Arbeitsbranch muss noch als PR gegen die J01-9-Basis
   eingereicht werden.
 - J01-37 bleibt ein getrennter Folgepunkt für konditionelles required.
