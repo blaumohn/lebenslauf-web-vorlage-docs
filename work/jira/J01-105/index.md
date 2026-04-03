@@ -47,6 +47,8 @@ Phasengrenzen eindeutig und prüfbar sind.
   umgestellt (2026-04-01).
 - `PIPELINE` und `PHASE` werden im Zielstand lib-intern behandelt; ein
   App-Bereich `pipeline_phase` gehört nicht mehr zum Manifest.
+- Die Lib-README wird im selben Vorgang auf das echte Gruppen-Schema
+  nachgezogen; das frühere `required`/`allowed`-Beispiel ist veraltet.
 
 ## Geplantes Zielmodell
 
@@ -63,22 +65,44 @@ Phasengrenzen eindeutig und prüfbar sind.
 
 ## Herleitung des dünnen Manifests
 
-Die Herleitung wird als geglätteter Fachgang im Vorgang selbst festgehalten:
+Die Herleitung wird als geglätteter Fachgang im Vorgang selbst festgehalten.
+Sie läuft über `P_0 -> P_1 -> ... -> P_n`, wobei jeder Schritt einen kleinen
+Parameterentscheid enthält und geprüft wird.
 
-1. Quellanalyse: pro Phase wird aus dem Code abgeleitet, welche Parameter
-   tatsächlich gelesen werden.
-2. P_0: aus dieser Quellanalyse entsteht eine erste vollständige
-   Phasenmenge.
-3. Defaults zuerst entfernen: stille Code-Defaults verfälschen sonst die
-   spätere Ausdünnung.
-4. Tests stabilisieren: fehlende und fremde Parameter müssen sichtbar
-   fehlschlagen.
-5. Manifest ausdünnen: aus P_0 wird der dünne Zielvertrag der Phase.
+1. `P_0`: voller aktueller Parametersatz des Arbeitsbranches.
+2. Modellfehler zuerst korrigieren: stille Defaults oder falsche
+   Kopplungen werden vor der Reduktion bereinigt.
+3. Pro Schritt `P_i -> P_{i+1}` wird genau ein kleiner Befund bestätigt:
+   ein Parameter entfällt, bleibt oder bleibt vorläufig wegen eines
+   Alternativfalls.
+4. Jeder Schritt braucht Quelltextbeleg plus Prüflauf.
+5. `P_n` ist der bestätigte dünne Vertrag, nicht nur eine Vermutung.
+
+Aktuelles `P_0` des App-Manifests:
+
+- `setup`: `LEBENSLAUF_PUBLIC_PROFILE`
+- `python`: `PYTHON_CMD`, `PYTHON_PATHS`
+- `build`: `APP_BASE_PATH`, `APP_URL`, `LEBENSLAUF_DATEN_PFAD`,
+  `LEBENSLAUF_YAML_PFAD`, `LEBENSLAUF_JSON_PFAD`,
+  `LEBENSLAUF_PUBLIC_PROFILE`, `LEBENSLAUF_LANG_DEFAULT`,
+  `LEBENSLAUF_LANGS`
+- `runtime`: `APP_BASE_PATH`, `TRUST_PROXY`,
+  `LEBENSLAUF_LANG_DEFAULT`, `LEBENSLAUF_LANGS`,
+  `CAPTCHA_TTL_SECONDS`, `CAPTCHA_MAX_GET`,
+  `CONTACT_MAX_POST`, `CONTACT_TO_EMAIL`,
+  `RATE_LIMIT_WINDOW_SECONDS`, `MAIL_STDOUT`,
+  `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`,
+  `SMTP_ENCRYPTION`, `SMTP_FROM_EMAIL`, `SMTP_FROM_NAME`
+- `deploy`: `FTP_SERVER_DIR`, `FTP_PORT`, `FTP_HOST`, `FTP_USER`, `FTP_PASS`
 
 Bestätigte Befunde aus der Quellanalyse:
 
-- `setup`: `LEBENSLAUF_PUBLIC_PROFILE` ist nur für
-  `--reset-sample-content` relevant.
+- `setup`: Der frühere Seed-Pfad war fälschlich an
+  `LEBENSLAUF_PUBLIC_PROFILE` gekoppelt. Der Zielstand nutzt
+  `--copy-sample-content` mit fester Fixture
+  `src/resources/fixtures/lebenslauf/daten-gueltig.yaml`
+  und festem Ziel `daten-sample.yaml`. Danach entfällt
+  `LEBENSLAUF_PUBLIC_PROFILE` aus `setup`.
 - `build`: nutzt `LEBENSLAUF_DATEN_PFAD`,
   `LEBENSLAUF_YAML_PFAD`, `LEBENSLAUF_JSON_PFAD`,
   `LEBENSLAUF_PUBLIC_PROFILE`, `LEBENSLAUF_LANG_DEFAULT`,
@@ -91,14 +115,23 @@ Bestätigte Befunde aus der Quellanalyse:
 - `python`: nutzt `PYTHON_CMD` und optional `PYTHON_PATHS`.
 - `deploy`: nutzt nur die Deploy-Parameter `FTP_*`.
 
-Daraus folgt der Kernbefund des Vorgangs:
-`LEBENSLAUF_PUBLIC_PROFILE` gehört in `setup` und `build`, aber nicht in
-`runtime`.
+Die ersten bestätigten Reduktionsschritte sind:
+
+- `P_0 -> P_1`: `LEBENSLAUF_PUBLIC_PROFILE` entfällt aus `setup`.
+- `P_1 -> P_2`: `PYTHON_PATHS` wird gegen den optionalen Codepfad geprüft.
+- `P_2 -> P_3`: `APP_URL` wird gegen den Build-Pfad geprüft.
+
+Danach wird der Rest von `P_0` vollständig weiter abgearbeitet, bis jeder
+Parameter einen Endstatus hat.
 
 Zusätzlicher Architekturentscheid des Zielstands:
 Ein eigener Manifest-Bereich `pipeline_phase` wird nicht mehr geführt.
 Die früher im App-Manifest mitgedachten Schlüssel `PIPELINE` und `PHASE`
 werden jetzt ausschließlich in der Lib ergänzt.
+
+Die allgemeine Bedeutung von `meta.desc`, `meta.example` und `meta.notes`
+steht kanonisch in
+[Spec: Pipeline-Spec-System]({{ "/de/specs/systeme/pipeline-spec/" | relative_url }}).
 
 ## Nicht-Scope dieses Doku-Nachzugs
 
@@ -109,13 +142,14 @@ werden jetzt ausschließlich in der Lib ergänzt.
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Herleitung dokumentiert | Quellanalyse, P_0 und Ausdünnungsweg sind im Vorgang nachvollziehbar | Jira-Doku DE/EN | erledigt |
+| Herleitung dokumentiert | Quellanalyse, `P_0 -> ... -> P_n` und Ausdünnungsweg sind im Vorgang nachvollziehbar | Jira-Doku DE/EN | in Arbeit |
 | Zielmodell dokumentiert | `variables`, `pipelines.global`, `common` und Pipeline-Differenz sind beschrieben | Jira-Doku DE/EN | erledigt |
 | lib-interne Pipeline-Phase erklärt | App-Manifest führt keinen Bereich `pipeline_phase`; `PIPELINE` und `PHASE` kommen aus der Lib | Jira-Doku DE/EN | erledigt |
 | Bereichs-Syntax erklärt | ganze Bereiche und Teilbereiche sind als geplante Syntax beschrieben | Jira-Doku DE/EN | erledigt |
 | Disjunktheitsregel erklärt | keine Schnittmenge zwischen `common` und konkreter Pipeline | Jira-Doku DE/EN | erledigt |
 | Code-Defaults entfernt | Kein `get('KEY', 'default')` mehr im Quellcode | Quellanalyse Quell-Repos | offen |
-| `LEBENSLAUF_PUBLIC_PROFILE` korrigiert | Nur noch in `build`, nicht in `preview.runtime` | config.manifest.yaml | offen |
+| `LEBENSLAUF_PUBLIC_PROFILE` korrigiert | Nicht mehr in `setup` oder `runtime`, nur noch im Build-Pfad | config.manifest.yaml | offen |
+| Lib-README korrigiert | Kein altes `required`/`allowed`-Schema mehr in der Lib-Doku | `pipeline-config-spec-php/README*.md` | offen |
 | Manifest vereinfacht | Zielmodell im Hauptrepo-Arbeitsbranch umgesetzt | config.manifest.yaml | erledigt im Arbeitsbranch |
 | SMTP-Absender bereinigt | Absender läuft nur noch über `SMTP_FROM_EMAIL` und `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` bleibt separat | config.manifest.yaml, MailService.php | erledigt |
 | pipeline-spec-lib angepasst | Expander und Validierung des Zielmodells sind umgesetzt | pipeline-config-spec-php | erledigt im Arbeitsbranch |
@@ -145,6 +179,8 @@ die lokale Lib-Version zeigt statt auf die installierte Composer-Version.
 ## Offene Punkte
 
 - J01-28: verwandter Vorgang (breiter Analyserahmen, kein Blocker).
+- Die allgemeine `meta`-Semantik lebt im Pipeline-Spec-System, nicht nur in
+  dieser Vorgangsseite.
 - Der neue Hauptrepo-Arbeitsbranch muss noch als PR gegen die J01-9-Basis
   eingereicht werden.
 - J01-37 bleibt ein getrennter Folgepunkt für konditionelles required.

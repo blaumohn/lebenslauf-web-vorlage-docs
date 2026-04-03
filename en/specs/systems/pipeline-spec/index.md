@@ -32,6 +32,14 @@ along pipelines and phases.
 - source and policy checks
 - compiler for config snapshots
 
+## Manifest metadata
+
+- `meta.desc` gives a short functional description of one parameter.
+- `meta.example` shows an example value.
+- `meta.notes` carries short local hints about that parameter.
+- Validation-relevant parameter dependencies should not remain free text in
+  `meta.notes`; they belong in a dedicated rule path such as `J01-37`.
+
 ## Roles
 
 - library and app developers

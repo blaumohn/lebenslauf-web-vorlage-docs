@@ -32,6 +32,14 @@ Konfigurationszustände entlang von Pipelines und Phasen.
 - Quellen- und Policy-Prüfung
 - Compiler für Config-Snapshots
 
+## Manifest-Meta
+
+- `meta.desc` beschreibt einen einzelnen Parameter fachlich kurz.
+- `meta.example` zeigt einen Beispielwert.
+- `meta.notes` trägt kurze lokale Hinweise zum Parameter.
+- Validierungsrelevante Parameter-Abhängigkeiten bleiben kein Freitext in
+  `meta.notes`, sondern gehören in einen eigenen Regelpfad wie `J01-37`.
+
 ## Rollen
 
 - Bibliotheks- und App-Entwickler
