@@ -48,6 +48,10 @@ Phasengrenzen eindeutig und prüfbar sind.
 - Das Vorhaben ist jetzt in vier echte Jira-Untervorgänge mit eigener
   öffentlicher Schrittseite geschnitten; temporäre Planungsnotizen unter
   `var/tmp` sind damit ersetzt.
+- Der Schritt-Kontext im Mirror wurde auf Geschwister-Sicht geschärft:
+  Schrittseiten zeigen weitere öffentliche Schritte jetzt nicht mehr als
+  Teile des aktuellen Schritts, sondern als Geschwister in
+  Schritt-Reihenfolge.
 - `PIPELINE` und `PHASE` werden im Zielstand lib-intern behandelt; ein
   App-Bereich `pipeline_phase` gehört nicht mehr zum Manifest.
 - Die Lib-README wird im selben Vorgang auf das echte Gruppen-Schema

@@ -39,6 +39,9 @@ boundaries are unambiguous and verifiable.
   pass.
 - The plan is now split into four real Jira subtasks with dedicated public
   step pages; temporary planning notes in `var/tmp` are replaced.
+- The step-context block in the mirror was tightened to a sibling view:
+  step pages now show other public steps as siblings of the same parent,
+  ordered by step number rather than by file path.
 - Manifest, config YAMLs, and PHP usage are adjusted in the working branch to
   the group schema and the explicit SMTP sender path (2026-04-01).
 - `PIPELINE` and `PHASE` are handled internally by the library; there is no

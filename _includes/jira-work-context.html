@@ -6,6 +6,7 @@
 {% assign label_context = "Kontext" %}
 {% assign label_parent = "Übergeordnet" %}
 {% assign label_children = "Öffentliche Schritte" %}
+{% assign label_sibling_steps = "Weitere öffentliche Schritte" %}
 {% assign label_contents = "Inhalts-Schlüssel" %}
 {% assign label_page_sections = "Diese Seite" %}
 {% assign label_related_pages = "Weitere Seiten" %}
@@ -13,6 +14,7 @@
   {% assign label_context = "Context" %}
   {% assign label_parent = "Parent" %}
   {% assign label_children = "Public steps" %}
+  {% assign label_sibling_steps = "Other public steps" %}
   {% assign label_contents = "Contents key" %}
   {% assign label_page_sections = "This page" %}
   {% assign label_related_pages = "Related pages" %}
@@ -207,9 +209,13 @@
 </ul>
 {% endif %}
 {% if step_outline_count > 0 %}
-<p><strong>{{ label_children }}</strong></p>
+{% assign step_list_label = label_children %}
+{% if page.url contains "/steps/" %}
+  {% assign step_list_label = label_sibling_steps %}
+{% endif %}
+<p><strong>{{ step_list_label }}</strong></p>
 <ul>
-  {% assign sorted_step_pages = site.pages | sort: "path" %}
+  {% assign sorted_step_pages = site.pages | sort: "title" %}
   {% capture family_step_url_prefix %}/{{ current_lang }}/jira/issues/{{ family_key }}/steps/{% endcapture %}
   {% for candidate in sorted_step_pages %}
     {% assign candidate_path = candidate.path | default: "" %}
