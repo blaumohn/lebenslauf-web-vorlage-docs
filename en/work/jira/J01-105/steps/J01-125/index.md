@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "105-2: Full P_0-to-P_n derivation and manifest thinning"
+title: "105-3: Align pipeline-spec-lib and README with the target model"
 jira_key: J01-125
 jira_parent_key: J01-105
 permalink: /en/jira/issues/J01-105/steps/J01-125/
@@ -13,53 +13,52 @@ permalink: /en/jira/issues/J01-105/steps/J01-125/
 {% include jira-work-context.html %}
 
 Step-specific public work status for
-[105-2]({{ "/en/jira/issues/J01-105/steps/J01-125/" | relative_url }}) under
+[105-3]({{ "/en/jira/issues/J01-105/steps/J01-125/" | relative_url }}) under
 [J01-105]({{ "/en/jira/issues/J01-105/" | relative_url }}).
-This page groups the actual app-manifest reduction path and separates it from
-the seed edge case and the library cut.
+This page isolates the library contract so the app manifest and the library
+behavior do not drift apart again.
 
 ## Goal
 
-- Every parameter from `P_0` gets a final state:
-  kept, removed, or kept temporarily because of one clearly named
-  alternative case.
-- The app manifest describes only the confirmed thin contract.
-- The derivation stays traceable through source evidence and check runs.
+- The pipeline-spec-lib expands the target model with
+  `pipelines.global`, `pipelines.common.<phase>`, and
+  `pipelines.<pipeline>.<phase>`.
+- The library validates disjointness between shared and pipeline-specific
+  parameters.
+- The README documents only the real group and phase model.
 
 ## Report
 
-- `P_0` spans the `setup`, `python`, `build`, `runtime`, and `deploy`
-  phases.
-- Each transition `P_i -> P_{i+1}` confirms exactly one small finding so the
-  reduction remains verifiable instead of merely editorial.
-- This step is the main path of the issue and carries the full parameter work
-  in the app repo.
+- The visible schema error was not only in the app manifest but also in the
+  outdated lib README that still described `required`/`allowed`.
+- This step therefore groups the lib code path and the lib docs into one
+  dedicated subtask.
+- `PIPELINE` and `PHASE` stay internal to the library in the target state;
+  there is no app-side `pipeline_phase` contract.
 
 ## Current status
 
 - Jira subtask `J01-125` exists.
-- The public `J01-105` page already contains `P_0` and the first confirmed
-  reduction steps.
-- Full processing of all remaining parameters and their checks is still open.
+- The lib cut is publicly separated from the app-side reduction work.
+- Implementation, tests, and README evidence are still open.
 
 ## Verification plan
 
 | Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| `P_0` complete | All current parameters are captured in the starting set | J01-105, app repo | open |
-| Every transition evidenced | Each step `P_i -> P_{i+1}` has source evidence and a check run | app repo, work docs | open |
-| Thin contract reached | Manifest contains only confirmed target parameters | `config.manifest.yaml` | open |
-| Phase boundaries clear | `global`, `common`, and pipeline delta stay cleanly separated in the app contract | app repo, J01-105 | open |
+| Expander reads target model | Library expands `global`, `common.<phase>`, and the pipeline delta correctly | `pipeline-config-spec-php` | open |
+| Disjointness validated | Overlap between `common` and pipeline delta is rejected | `pipeline-config-spec-php`, tests | open |
+| README corrected | No `required`/`allowed` schema remains in lib docs | `pipeline-config-spec-php/README*.md` | open |
+| Internal phase keys explained | `PIPELINE` and `PHASE` are no longer described as an app-manifest area | lib docs, J01-105 | open |
 
 ## Open points
 
-- Continue the rest of `P_0` with the same small-step discipline as `P_1`
-  through `P_3`.
-- Decide whether individual parameter explanations belong in canonical area
-  docs once the state becomes stable.
+- Keep the general `meta` semantics only in the canonical pipeline-spec docs.
+- Split clearly which tests belong in the lib and which remain in the main
+  repo.
 
 ## Links
 
-- [105-2 in the Jira mirror]({{ "/en/jira/issues/J01-105/steps/J01-125/" | relative_url }})
+- [105-3 in the Jira mirror]({{ "/en/jira/issues/J01-105/steps/J01-125/" | relative_url }})
 - [J01-105 in the Jira mirror]({{ "/en/jira/issues/J01-105/" | relative_url }})
-
+- [J01-9: Preview — reactivate workflow]({{ "/en/jira/issues/J01-9/" | relative_url }})

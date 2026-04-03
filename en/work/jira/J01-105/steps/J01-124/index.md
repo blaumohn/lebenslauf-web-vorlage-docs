@@ -60,4 +60,3 @@ not merely claimed.
 - [105-4 in the Jira mirror]({{ "/en/jira/issues/J01-105/steps/J01-124/" | relative_url }})
 - [J01-105 in the Jira mirror]({{ "/en/jira/issues/J01-105/" | relative_url }})
 - [J01-9: Preview — reactivate workflow]({{ "/en/jira/issues/J01-9/" | relative_url }})
-

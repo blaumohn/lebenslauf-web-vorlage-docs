@@ -61,4 +61,3 @@ nicht nur behauptet, sondern prüfbar geschlossen werden kann.
 - [105-4 im Jira-Mirror]({{ "/de/jira/issues/J01-105/steps/J01-124/" | relative_url }})
 - [J01-105 im Jira-Mirror]({{ "/de/jira/issues/J01-105/" | relative_url }})
 - [J01-9: Preview — Workflow wieder aktivieren]({{ "/de/jira/issues/J01-9/" | relative_url }})
-

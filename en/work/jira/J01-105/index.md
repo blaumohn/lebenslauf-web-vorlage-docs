@@ -52,10 +52,10 @@ boundaries are unambiguous and verifiable.
   "/en/jira/issues/J01-105/steps/J01-122/" | relative_url }}) isolates the
   sample-seed fix from the rest of the manifest work.
 - [105-2 Full P_0-to-P_n derivation and manifest thinning]({{
-  "/en/jira/issues/J01-105/steps/J01-125/" | relative_url }}) carries the
+  "/en/jira/issues/J01-105/steps/J01-123/" | relative_url }}) carries the
   actual reduction path across all app parameters.
 - [105-3 Align pipeline-spec-lib and README with the target model]({{
-  "/en/jira/issues/J01-105/steps/J01-123/" | relative_url }}) covers the
+  "/en/jira/issues/J01-105/steps/J01-125/" | relative_url }}) covers the
   library expander, disjointness rule, and lib docs.
 - [105-4 Prove test runs, J01-9 unblocking, and the closing picture]({{
   "/en/jira/issues/J01-105/steps/J01-124/" | relative_url }}) groups the
