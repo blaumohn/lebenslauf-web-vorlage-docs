@@ -5,7 +5,7 @@ jira_key: J01-105
 permalink: /de/jira/issues/J01-105/
 ---
 
-**Stand:** 2026-04-01
+**Stand:** 2026-04-03
 
 {% include jira-state-head.html %}
 
@@ -45,10 +45,28 @@ Phasengrenzen eindeutig und prüfbar sind.
 - Manifest, Config-YAMLs und PHP-Nutzung sind im Arbeitsbranch auf das
   Gruppen-Schema, direkte Phasenlisten und den klaren SMTP-Absenderpfad
   umgestellt (2026-04-01).
+- Das Vorhaben ist jetzt in vier echte Jira-Untervorgänge mit eigener
+  öffentlicher Schrittseite geschnitten; temporäre Planungsnotizen unter
+  `var/tmp` sind damit ersetzt.
 - `PIPELINE` und `PHASE` werden im Zielstand lib-intern behandelt; ein
   App-Bereich `pipeline_phase` gehört nicht mehr zum Manifest.
 - Die Lib-README wird im selben Vorgang auf das echte Gruppen-Schema
   nachgezogen; das frühere `required`/`allowed`-Beispiel ist veraltet.
+
+## Vorhaben als Schritte
+
+- [105-1 Setup-Seed-Pfad fachlich bereinigen]({{
+  "/de/jira/issues/J01-105/steps/J01-122/" | relative_url }}) bündelt die
+  Entkopplung des Sample-Seed-Pfads von `LEBENSLAUF_PUBLIC_PROFILE`.
+- [105-2 Vollständige P_0-zu-P_n-Herleitung und Manifest-Ausdünnung]({{
+  "/de/jira/issues/J01-105/steps/J01-125/" | relative_url }}) führt den
+  eigentlichen Reduktionsgang über alle App-Parameter.
+- [105-3 pipeline-spec-lib und README auf Zielmodell nachziehen]({{
+  "/de/jira/issues/J01-105/steps/J01-123/" | relative_url }}) hält den
+  Lib-Schnitt für Expander, Disjunktheitsprüfung und Doku fest.
+- [105-4 Prüfläufe, Entblockung J01-9 und Abschlussbild nachweisen]({{
+  "/de/jira/issues/J01-105/steps/J01-124/" | relative_url }}) bündelt die
+  Abschlussprüfung über Repo-Grenzen hinweg.
 
 ## Geplantes Zielmodell
 

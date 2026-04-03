@@ -5,7 +5,7 @@ jira_key: J01-105
 permalink: /en/jira/issues/J01-105/
 ---
 
-**Status:** 2026-04-01
+**Status:** 2026-04-03
 
 {% include jira-state-head.html %}
 
@@ -37,12 +37,29 @@ boundaries are unambiguous and verifiable.
 - Related to J01-28 (broad analysis frame); not a mutual blocker.
 - J01-37 stays an adjacent follow-up topic and is not part of this doc-only
   pass.
+- The plan is now split into four real Jira subtasks with dedicated public
+  step pages; temporary planning notes in `var/tmp` are replaced.
 - Manifest, config YAMLs, and PHP usage are adjusted in the working branch to
   the group schema and the explicit SMTP sender path (2026-04-01).
 - `PIPELINE` and `PHASE` are handled internally by the library; there is no
   app-side `pipeline_phase` area in the target state.
 - The lib README is updated in the same task to the real group-based schema;
   the former `required`/`allowed` example is outdated.
+
+## Plan as Steps
+
+- [105-1 Setup seed path: domain correction]({{
+  "/en/jira/issues/J01-105/steps/J01-122/" | relative_url }}) isolates the
+  sample-seed fix from the rest of the manifest work.
+- [105-2 Full P_0-to-P_n derivation and manifest thinning]({{
+  "/en/jira/issues/J01-105/steps/J01-125/" | relative_url }}) carries the
+  actual reduction path across all app parameters.
+- [105-3 Align pipeline-spec-lib and README with the target model]({{
+  "/en/jira/issues/J01-105/steps/J01-123/" | relative_url }}) covers the
+  library expander, disjointness rule, and lib docs.
+- [105-4 Prove test runs, J01-9 unblocking, and the closing picture]({{
+  "/en/jira/issues/J01-105/steps/J01-124/" | relative_url }}) groups the
+  cross-repo closing evidence.
 
 ## Planned Target Model
 
