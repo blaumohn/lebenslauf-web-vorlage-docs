@@ -31,38 +31,42 @@ Manifest-Umbau, weil hier zuerst ein Modellfehler bereinigt werden muss.
 - Ausgangsbefund: Der frühere Seed-Pfad koppelte Beispielinhalt an das
   Build-Profil und war damit fachlich inkohärent.
 - Zielstand laut Vorgangsherleitung:
-  `--copy-sample-content` statt `--reset-sample-content`,
+  `--copy-sample-content` statt `--create-demo-content`,
   feste Quelle `src/resources/fixtures/lebenslauf/daten-gueltig.yaml`,
   festes Ziel `daten-sample.yaml`,
   Fehler bei bereits vorhandenem Ziel.
-- Dieser Schritt hält nur den fachlichen Zuschnitt und den Nachweisplan fest;
-  die eigentliche Umsetzung und ihre Prüfläufe folgen im Quell-Repo.
+- Umgesetzt im App-Worktree `feature/j01-105-simplify-manifest`:
+  `SetupCommand` delegiert den Seed-Lauf an `SampleContentCopier`, der
+  ausschließlich mit der festen Fixture und dem festen Ziel arbeitet.
+- Nachweis ergänzt: PHPUnit deckt den erfolgreichen Kopierfall und den
+  Fehlerpfad bei vorhandenem Ziel ab; der Smoke-Test nutzt
+  `setup --copy-sample-content`.
 
 ## Aktueller Stand
 
 - Jira-Subtask `J01-122` ist angelegt.
 - Der fachliche Zielzustand ist gegen `J01-105` abgegrenzt und öffentlich
   referenzierbar.
-- Code- und Testnachweise sind in diesem Schritt noch offen.
+- Code- und Testnachweise sind im App-Worktree nachgezogen.
+- Öffentliche Repo-Doku spiegelt den neuen Seed-Pfad in README und
+  Umgebungsdoku.
 
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Setup entkoppelt | `LEBENSLAUF_PUBLIC_PROFILE` taucht im Seed-Pfad nicht mehr auf | App-Repo, Setup-Code | offen |
-| Feste Sample-Quelle | Seed liest `daten-gueltig.yaml` als feste Fixture | App-Repo, Setup-Code | offen |
-| Fester Zielname | Seed schreibt nach `daten-sample.yaml` | App-Repo, Setup-Code | offen |
-| Kein stilles Überschreiben | Bereits vorhandenes Ziel erzeugt einen klaren Fehlerpfad | App-Repo, Prüflauf | offen |
+| Setup entkoppelt | `LEBENSLAUF_PUBLIC_PROFILE` taucht im Seed-Pfad nicht mehr auf | `src/cli/php/Command/SetupCommand.php`, `src/cli/php/Setup/SampleContentCopier.php` | erledigt |
+| Feste Sample-Quelle | Seed liest `daten-gueltig.yaml` als feste Fixture | `src/cli/php/Setup/SampleContentCopier.php` | erledigt |
+| Fester Zielname | Seed schreibt nach `daten-sample.yaml` | `src/cli/php/Setup/SampleContentCopier.php` | erledigt |
+| Kein stilles Überschreiben | Bereits vorhandenes Ziel erzeugt einen klaren Fehlerpfad | `tests/php/SampleContentCopierTest.php` | erledigt |
+| CLI- und Doku-Spiegel | Schalter und Seed-Pfad sind in README, Umgebungsdoku und Smoke-Test konsistent | `README.md`, `README.en.md`, `docs/ENVIRONMENTS.md`, `tests/py/smoke.py` | erledigt |
 
 ## Offene Punkte
 
-- Abgleichen, wie der neue Seed-Pfad in CLI, README und Tests sichtbar
-  gespiegelt werden muss.
-- Prüfen, ob bestehende Setup-Tests erweitert oder neu geschnitten werden
-  müssen.
+- Keine schrittspezifischen offenen Punkte mehr.
+- Restarbeit zu `J01-105` liegt in den Geschwister-Schritten.
 
 ## Links
 
 - [105-1 im Jira-Mirror]({{ "/de/jira/issues/J01-105/steps/J01-122/" | relative_url }})
 - [J01-105 im Jira-Mirror]({{ "/de/jira/issues/J01-105/" | relative_url }})
-
