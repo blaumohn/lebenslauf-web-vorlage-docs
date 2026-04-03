@@ -17,7 +17,10 @@ jira_key: J01-46
 
 ## Beschreibung
 
--
+Ziel: i18n-fähige Nachrichten für CLI und Runtime.
+
+- Message-IDs und Katalogformat definieren
+- App + Config-Lib Ausgaben umstellen
 
 ## Unteraufgaben
 

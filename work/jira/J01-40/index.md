@@ -17,7 +17,10 @@ jira_key: J01-40
 
 ## Beschreibung
 
--
+Ziel: Pfad- und Schlüsselkonstanten konsistent bündeln.
+
+- Konstanten-Schnitt definieren
+- Pfad/Key-Duplikate abbauen
 
 ## Unteraufgaben
 

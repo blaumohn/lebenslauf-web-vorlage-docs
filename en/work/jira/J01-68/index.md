@@ -17,7 +17,10 @@ jira_key: J01-68
 
 ## Description
 
--
+Ziel: Production-Deployment dokumentieren und absichern.
+
+- Betriebsdoku erstellen
+- Rollback-/Notfallpfad skizzieren
 
 ## Subtasks
 
