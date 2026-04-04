@@ -102,11 +102,17 @@ Parameterentscheid enthält und geprüft wird.
 4. Jeder Schritt braucht Quelltextbeleg plus Prüflauf.
 5. `P_n` ist der bestätigte dünne Vertrag, nicht nur eine Vermutung.
 
-Aktuelles `P_0` des App-Manifests:
+Früher grob notiertes `P_0` des App-Manifests:
 
-- `setup`: `LEBENSLAUF_PUBLIC_PROFILE`
+- Diese Liste bleibt der grobe Überblick des Vorgangs.
+- Die parametergenaue Matrix der technisch gefundenen `P_0`-Parameter liegt
+  ab 2026-04-03 auf der
+  Schrittseite [105-2]({{ "/de/jira/issues/J01-105/steps/J01-123/" | relative_url }}).
+- Für strenge Entscheidungen über Aufnahme in `P_0`, formale Zusatzbelege
+  und Pipeline-/Phasenbezug ist diese Schrittseite maßgeblich.
+
 - `python`: `PYTHON_CMD`, `PYTHON_PATHS`
-- `build`: `APP_BASE_PATH`, `APP_URL`, `LEBENSLAUF_DATEN_PFAD`,
+- `build`: `APP_BASE_PATH`, `LEBENSLAUF_DATEN_PFAD`,
   `LEBENSLAUF_YAML_PFAD`, `LEBENSLAUF_JSON_PFAD`,
   `LEBENSLAUF_PUBLIC_PROFILE`, `LEBENSLAUF_LANG_DEFAULT`,
   `LEBENSLAUF_LANGS`
@@ -139,14 +145,18 @@ Bestätigte Befunde aus der Quellanalyse:
 - `python`: nutzt `PYTHON_CMD` und optional `PYTHON_PATHS`.
 - `deploy`: nutzt nur die Deploy-Parameter `FTP_*`.
 
-Die ersten bestätigten Reduktionsschritte sind:
+Frühe bestätigte Befunde vor der formalen Neunummerierung sind:
 
-- `P_0 -> P_1`: `LEBENSLAUF_PUBLIC_PROFILE` entfällt aus `setup`.
-- `P_1 -> P_2`: `PYTHON_PATHS` wird gegen den optionalen Codepfad geprüft.
-- `P_2 -> P_3`: `APP_URL` wird gegen den Build-Pfad geprüft.
+- Vorbefund: `LEBENSLAUF_PUBLIC_PROFILE` entfällt aus `setup`; dieser
+  Seed-Befund gehört fachlich zu `J01-122` und steht vor dem streng
+  belegten `P_0` von `J01-123`.
+- Früher notierter Prüfpfad: `PYTHON_PATHS` wird gegen den optionalen
+  Codepfad geprüft.
+- Früher notierter Prüfpfad: `APP_URL` wird als formaler Build-Kandidat
+  gegen einen möglichen technischen Leser geprüft.
 
-Danach wird der Rest von `P_0` vollständig weiter abgearbeitet, bis jeder
-Parameter einen Endstatus hat.
+Danach wird der Rest des formalisierten `P_0` vollständig weiter
+abgearbeitet, bis jeder Parameter einen Endstatus hat.
 
 Zusätzlicher Architekturentscheid des Zielstands:
 Ein eigener Manifest-Bereich `pipeline_phase` wird nicht mehr geführt.
@@ -166,7 +176,7 @@ steht kanonisch in
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Herleitung dokumentiert | Quellanalyse, `P_0 -> ... -> P_n` und Ausdünnungsweg sind im Vorgang nachvollziehbar | Jira-Doku DE/EN | in Arbeit |
+| Herleitung dokumentiert | Quellanalyse, Matrix der technisch gefundenen `P_0`-Parameter und `P_0 -> ... -> P_n` sind im Vorgang nachvollziehbar | Jira-Doku DE/EN | in Arbeit |
 | Zielmodell dokumentiert | `variables`, `common` und Pipeline-Differenz sind beschrieben; früherer `global`-Entwurf ist als Drift bereinigt | Jira-Doku DE/EN | erledigt |
 | lib-interne Pipeline-Phase erklärt | App-Manifest führt keinen Bereich `pipeline_phase`; `PIPELINE` und `PHASE` kommen aus der Lib | Jira-Doku DE/EN | erledigt |
 | Bereichs-Syntax erklärt | ganze Bereiche und Teilbereiche sind als geplante Syntax beschrieben | Jira-Doku DE/EN | erledigt |

@@ -92,11 +92,17 @@ tested parameter decision.
 4. Every step needs source evidence plus a check run.
 5. `P_n` is the confirmed thin contract, not just a guess.
 
-Current `P_0` of the app manifest:
+Earlier coarse `P_0` of the app manifest:
 
-- `setup`: `LEBENSLAUF_PUBLIC_PROFILE`
+- This list remains the broad issue-level overview.
+- Since 2026-04-03, the per-parameter matrix of technically found `P_0`
+  parameters lives on
+  [105-2]({{ "/en/jira/issues/J01-105/steps/J01-123/" | relative_url }}).
+- That step page is authoritative for strict decisions about inclusion in
+  `P_0`, formal add-on evidence, and pipeline/phase placement.
+
 - `python`: `PYTHON_CMD`, `PYTHON_PATHS`
-- `build`: `APP_BASE_PATH`, `APP_URL`, `LEBENSLAUF_DATEN_PFAD`,
+- `build`: `APP_BASE_PATH`, `LEBENSLAUF_DATEN_PFAD`,
   `LEBENSLAUF_YAML_PFAD`, `LEBENSLAUF_JSON_PFAD`,
   `LEBENSLAUF_PUBLIC_PROFILE`, `LEBENSLAUF_LANG_DEFAULT`,
   `LEBENSLAUF_LANGS`
@@ -129,14 +135,18 @@ Confirmed findings from source analysis:
 - `python`: uses `PYTHON_CMD` and optional `PYTHON_PATHS`.
 - `deploy`: uses only the deploy parameters `FTP_*`.
 
-The first confirmed reduction steps are:
+Early confirmed findings before the formal renumbering are:
 
-- `P_0 -> P_1`: remove `LEBENSLAUF_PUBLIC_PROFILE` from `setup`.
-- `P_1 -> P_2`: validate the optional path behind `PYTHON_PATHS`.
-- `P_2 -> P_3`: validate `APP_URL` against the build path.
+- Pre-finding: `LEBENSLAUF_PUBLIC_PROFILE` drops out of `setup`; this seed
+  finding belongs functionally to `J01-122` and comes before the strictly
+  evidenced `P_0` of `J01-123`.
+- Earlier noted check path: validate `PYTHON_PATHS` against the optional
+  code path.
+- Earlier noted check path: treat `APP_URL` as a formal build candidate and
+  keep checking for a possible technical reader.
 
-After that, the remaining `P_0` parameters are processed until each one has a
-final status.
+After that, the remaining formalized `P_0` parameters are processed until
+each one has a final status.
 
 The general meaning of `meta.desc`, `meta.example`, and `meta.notes` is
 documented canonically in
@@ -152,7 +162,7 @@ documented canonically in
 
 | Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| Derivation documented | Source analysis, `P_0 -> ... -> P_n`, and the thinning path are traceable in the issue | Jira docs DE/EN | in progress |
+| Derivation documented | Source analysis, the matrix of technically found `P_0` parameters, and `P_0 -> ... -> P_n` are traceable in the issue | Jira docs DE/EN | in progress |
 | Target model documented | `variables`, `common`, and pipeline differences are described; the earlier `global` draft is corrected as drift | Jira docs DE/EN | done |
 | `PIPELINE` / `PHASE` explained | No app-side `pipeline_phase`; both keys are injected by the lib | Jira docs DE/EN | done |
 | Area syntax explained | Full-area and partial-area syntax is described as the planned model | Jira docs DE/EN | done |
