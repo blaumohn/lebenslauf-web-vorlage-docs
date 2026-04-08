@@ -65,6 +65,9 @@ the seed edge case and the library cut.
   `MAIL_STDOUT` stays in `common.runtime`, `SMTP_*` moves to
   `preview.runtime`, and `LEBENSLAUF_JSON_PFAD` is fully removed without
   legacy residue.
+- `P_2` is now fixed as well:
+  `APP_URL` no longer had a technical reader in the evaluated worktree and
+  therefore drops out of the build contract and the example configs.
 
 ## `P_1`: mail contract tightened, JSON residue removed
 
@@ -78,6 +81,22 @@ The first small transition `P_0 -> P_1` is now fixed:
 
 This keeps `P_0` readable as the technical full finding while `P_1`
 documents the first strong functional reduction step.
+
+## `P_2`: `APP_URL` drops out as a merely formal candidate
+
+The next small transition `P_1 -> P_2` is now decided as well:
+
+- `APP_URL` no longer had a technical reader anywhere in the current app repo.
+- The key remained only as a formal build candidate in the manifest and in
+  the example build files.
+- It therefore drops out completely from the build contract and from
+  `dev-build.yaml` and `preview-build.yaml`.
+- `config lint` for `dev/build` and `preview/build` stays green; the `dev`
+  build runs without `APP_URL`, while the `preview` build currently stops on
+  missing fixture data rather than on `APP_URL`.
+
+`APP_URL` is therefore no longer tracked as an open candidate but as a
+completed removal.
 
 <span id="p-0-belegmatrix"></span>
 
@@ -105,11 +124,11 @@ authoritative for `P_0`:
 - `APP_URL` remains only a formal candidate until a technical reader is
   proven in the evaluated worktree.
 
-## Formal candidates outside `P_0`
+## Earlier formal candidates outside `P_0`
 
-| Domain phase | Parameter | Reason | Formal source |
+| Domain phase | Parameter | Reason | Status |
 | --- | --- | --- | --- |
-| `build` | `APP_URL` | No technical reader has been found yet in the evaluated worktree; it therefore stays outside `P_0` until a program path is proven. | `src/resources/config/dev-build.yaml`, `src/resources/config/preview-build.yaml`, `J01-105` |
+| `build` | `APP_URL` | No technical reader is evidenced in the current app repo; the former formal candidate was removed from the contract and example configs with `P_2`. | removed with `P_2` |
 
 ## Excluded earlier candidates
 
@@ -125,6 +144,7 @@ authoritative for `P_0`:
 | --- | --- | --- | --- |
 | `P_0` complete | Every included parameter carries a technical finding with pipeline/phase context; excluded early candidates and formal candidates are marked explicitly | this step page, app repo | done |
 | `P_1` implemented | `MAIL_STDOUT` stays in `common.runtime`, `SMTP_*` lives only in `preview.runtime`, and `LEBENSLAUF_JSON_PFAD` is fully removed | app repo, this step page | done |
+| `P_2` implemented | `APP_URL` was removed from the build contract and example configs because no technical reader remains | app repo, build check run, this step page | done |
 | Technical usage visible | Each parameter names the concrete program path | this step page | done |
 | Formal add-on evidence visible | Each technically found parameter shows whether docs have been pulled along | this step page | done |
 | Every transition evidenced | Each step `P_i -> P_{i+1}` has source evidence and a check run | app repo, work docs | in progress |
@@ -133,10 +153,8 @@ authoritative for `P_0`:
 
 ## Open points
 
-- Carry the earlier noted `PYTHON_PATHS` and `APP_URL` checks forward
-  against the new, strictly technical `P_0`.
-- Keep checking `APP_URL` specifically for any technical reader beyond the
-  current formal sources.
+- Carry the earlier noted `PYTHON_PATHS` check forward against the new,
+  strictly technical `P_0`.
 - Decide later whether individual parameter explanations belong in canonical
   area or system docs once `P_n` is stable.
 

@@ -64,6 +64,9 @@ trennt ihn vom Seed-Sonderfall und vom Lib-Schnitt.
   `MAIL_STDOUT` bleibt in `common.runtime`, `SMTP_*` wandert nach
   `preview.runtime`, und `LEBENSLAUF_JSON_PFAD` ist ohne Legacy-Rest
   vollständig entfernt.
+- `P_2` ist jetzt ebenfalls festgezogen:
+  `APP_URL` hatte im ausgewerteten Worktree keinen technischen Leser mehr
+  und entfällt deshalb aus Build-Vertrag und Beispiel-Konfigurationen.
 
 ## `P_1`: Mail-Vertrag geschärft, JSON-Rest entfernt
 
@@ -78,6 +81,22 @@ Der erste kleine Übergang `P_0 -> P_1` ist jetzt festgezogen:
 
 Damit bleibt `P_0` als technischer Vollbefund lesbar, während `P_1` den
 ersten starken fachlichen Reduktionsschritt dokumentiert.
+
+## `P_2`: `APP_URL` entfällt als bloßer Formalkandidat
+
+Der nächste kleine Übergang `P_1 -> P_2` ist jetzt ebenfalls entschieden:
+
+- `APP_URL` hatte im aktuellen Hauptrepo keinen technischen Leser mehr.
+- Der Key blieb nur noch als formaler Build-Kandidat im Manifest und in den
+  Beispiel-Build-Dateien stehen.
+- Deshalb entfällt `APP_URL` jetzt vollständig aus dem Build-Vertrag und aus
+  `dev-build.yaml` sowie `preview-build.yaml`.
+- `config lint` für `dev/build` und `preview/build` bleibt grün; der
+  `dev`-Build läuft ohne `APP_URL`, während der `preview`-Build aktuell an
+  fehlenden Fixture-Daten statt an `APP_URL` stoppt.
+
+Damit ist `APP_URL` nicht mehr bloß als offener Kandidat notiert, sondern als
+entfernter Rest abgeschlossen.
 
 <span id="p-0-belegmatrix"></span>
 
@@ -104,11 +123,11 @@ bleiben für `P_0` maßgeblich:
 - `APP_URL` bleibt nur ein formaler Kandidat, solange kein technischer Leser
   im ausgewerteten Worktree belegt ist.
 
-## Formale Kandidaten außerhalb von `P_0`
+## Frühere formale Kandidaten außerhalb von `P_0`
 
-| Fachphase | Parameter | Grund | Formale Quelle |
+| Fachphase | Parameter | Grund | Status |
 | --- | --- | --- | --- |
-| `build` | `APP_URL` | Aktuell kein technischer Leser im ausgewerteten Worktree gefunden; bleibt deshalb außerhalb von `P_0`, bis ein Programm-Pfad belegt ist. | `src/resources/config/dev-build.yaml`, `src/resources/config/preview-build.yaml`, `J01-105` |
+| `build` | `APP_URL` | Im aktuellen Hauptrepo kein technischer Leser belegt; der frühere Formalkandidat ist mit `P_2` aus Vertrag und Beispiel-Configs entfernt. | mit `P_2` entfernt |
 
 ## Ausgeschlossene frühere Kandidaten
 
@@ -124,6 +143,7 @@ bleiben für `P_0` maßgeblich:
 | --- | --- | --- | --- |
 | `P_0` vollständig | Alle aufgenommenen Parameter tragen einen technischen Fund mit Pipeline-/Phasenbezug; ausgeschlossene Frühkandidaten und formale Kandidaten sind kenntlich gemacht | diese Schrittseite, App-Repo | erledigt |
 | `P_1` umgesetzt | `MAIL_STDOUT` bleibt in `common.runtime`, `SMTP_*` liegt nur noch in `preview.runtime`, und `LEBENSLAUF_JSON_PFAD` ist vollständig entfernt | App-Repo, diese Schrittseite | erledigt |
+| `P_2` umgesetzt | `APP_URL` ist mangels technischem Leser aus Build-Vertrag und Beispiel-Configs entfernt | App-Repo, Build-Prüflauf, diese Schrittseite | erledigt |
 | Technische Nutzung sichtbar | Pro Parameter ist der konkrete Programm-Pfad benannt | diese Schrittseite | erledigt |
 | Formale Zusatzbelege sichtbar | Pro technisch gefundenem Parameter ist erkennbar, ob die Doku nachgezogen ist | diese Schrittseite | erledigt |
 | Jeder Übergang belegt | Jeder Schritt `P_i -> P_{i+1}` hat Quelltextbeleg und Prüflauf | App-Repo, Arbeitsdoku | in Arbeit |
@@ -132,10 +152,8 @@ bleiben für `P_0` maßgeblich:
 
 ## Offene Punkte
 
-- Die früh notierten Prüfpfade zu `PYTHON_PATHS` und `APP_URL` gegen das
-  neue, streng technische `P_0` fortschreiben.
-- Für `APP_URL` gezielt weiter prüfen, ob außerhalb der formalen Quellen
-  doch noch ein technischer Leser existiert.
+- Den früh notierten Prüfpfad zu `PYTHON_PATHS` gegen das neue, streng
+  technische `P_0` fortschreiben.
 - Prüfen, ob einzelne Parametererklärungen später in kanonische Bereichs-
   oder Systemdoku wandern sollen, sobald `P_n` stabil ist.
 
