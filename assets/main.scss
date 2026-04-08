@@ -210,3 +210,131 @@
 .jira-state-head__item dd {
   margin: 0;
 }
+
+.p0-matrix {
+  display: grid;
+  gap: 1.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.p0-matrix__legend {
+  margin: 0;
+  color: #555;
+}
+
+.p0-matrix__pipeline,
+.p0-matrix__phase,
+.p0-matrix__area {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.p0-matrix__pipeline {
+  padding: 1rem 1rem 1.1rem;
+  border: 1px solid #d6d6d6;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #fdfdfd, #f5f5f5);
+}
+
+.p0-matrix__pipeline-head,
+.p0-matrix__phase-head {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.p0-matrix__pipeline-head h3,
+.p0-matrix__phase-head h4,
+.p0-matrix__area h5 {
+  margin: 0;
+}
+
+.p0-matrix__pipeline-head p,
+.p0-matrix__phase-head p {
+  margin: 0;
+  color: #555;
+}
+
+.p0-matrix__phase-breadcrumb {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.p0-matrix__phase-breadcrumb code {
+  font-size: 0.96em;
+}
+
+.p0-matrix__crumb-sep {
+  color: #8a8068;
+  font-weight: 700;
+}
+
+.p0-matrix__phase {
+  padding: 0.9rem 0.95rem 1rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #f0f0f0, #e5e5e5);
+  box-shadow: inset 0 0 0 1px #dcdcdc;
+}
+
+.p0-matrix__area {
+  padding: 0.85rem 0.9rem 0.95rem;
+  border-left: 4px solid #d8d0bc;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #f8f6f0, #f3efe5);
+  box-shadow: inset 0 0 0 1px #e5dece;
+}
+
+.p0-matrix__table-wrap {
+  overflow-x: auto;
+}
+
+.p0-matrix__table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 680px;
+  font-size: 0.95rem;
+}
+
+.p0-matrix__table th,
+.p0-matrix__table td {
+  padding: 0.55rem 0.65rem;
+  border: 1px solid #dfdfdf;
+  vertical-align: top;
+}
+
+.p0-matrix__table th {
+  background: #f5f2e8;
+  text-align: left;
+}
+
+.p0-matrix__table code {
+  font-size: 0.92em;
+  white-space: normal;
+}
+
+.p0-matrix__p0 {
+  width: 3.3rem;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.p0-matrix__empty {
+  color: #777;
+}
+
+.p0-matrix__area h5 code {
+  font-size: 0.98em;
+}
+
+@media screen and (max-width: 720px) {
+  .p0-matrix__pipeline,
+  .p0-matrix__phase {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}

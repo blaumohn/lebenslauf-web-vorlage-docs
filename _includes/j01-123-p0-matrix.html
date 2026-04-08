@@ -1,0 +1,76 @@
+{% assign locale = include.lang | default: "de" %}
+{% assign matrix = site.data.j01_123_p0_matrix %}
+{% assign labels = matrix.labels[locale] %}
+
+<div class="p0-matrix">
+  <p class="p0-matrix__legend">{{ labels.legend }}</p>
+  {% for pipeline in matrix.pipelines %}
+    <section class="p0-matrix__pipeline">
+      <header class="p0-matrix__pipeline-head">
+        <h3><code>{{ pipeline.key }}</code></h3>
+        <p>{{ pipeline.summary[locale] }}</p>
+      </header>
+      {% for phase in pipeline.phases %}
+        <section class="p0-matrix__phase">
+          <header class="p0-matrix__phase-head">
+            <h4 class="p0-matrix__phase-breadcrumb">
+              <code>{{ pipeline.key }}</code>
+              <span class="p0-matrix__crumb-sep">&gt;</span>
+              <code>{{ phase.key }}</code>
+            </h4>
+            <p>{{ phase.summary[locale] }}</p>
+          </header>
+          {% for area in phase.areas %}
+            <section class="p0-matrix__area">
+              <h5><code>{{ area.key }}</code></h5>
+              <div class="p0-matrix__table-wrap">
+                <table class="p0-matrix__table">
+                  <thead>
+                    <tr>
+                      <th class="p0-matrix__p0">{{ labels.p0 }}</th>
+                      <th>{{ labels.parameter }}</th>
+                      <th>{{ labels.short }}</th>
+                      <th>{{ labels.technical_source }}</th>
+                      <th>{{ labels.formal_source }}</th>
+                      <th>{{ labels.dependencies }}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for row in area.rows %}
+                      <tr>
+                        <td class="p0-matrix__p0">{% if row.p0 %}x{% endif %}</td>
+                        <td><code>{{ row.parameter }}</code></td>
+                        <td>{{ row.short[locale] }}</td>
+                        <td>
+                          {% for source in row.technical_sources %}
+                            <code>{{ source }}</code>{% unless forloop.last %}, {% endunless %}
+                          {% endfor %}
+                        </td>
+                        <td>
+                          {% if row.formal_sources and row.formal_sources.size > 0 %}
+                            {% for source in row.formal_sources %}
+                              <code>{{ source }}</code>{% unless forloop.last %}, {% endunless %}
+                            {% endfor %}
+                          {% else %}
+                            <span class="p0-matrix__empty">{{ labels.none }}</span>
+                          {% endif %}
+                        </td>
+                        <td>
+                          {% if row.dependencies[locale] %}
+                            {{ row.dependencies[locale] }}
+                          {% else %}
+                            <span class="p0-matrix__empty">{{ labels.none }}</span>
+                          {% endif %}
+                        </td>
+                      </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          {% endfor %}
+        </section>
+      {% endfor %}
+    </section>
+  {% endfor %}
+</div>

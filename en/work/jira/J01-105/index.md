@@ -12,22 +12,27 @@ permalink: /en/jira/issues/J01-105/
 {% include jira-work-context.html %}
 
 Canonical public work status for Jira task `J01-105`.
-The goal is to replace the `required`/`allowed` split in the pipeline-config
-manifest with a direct parameter list per pipeline/phase, so that phase
-boundaries are unambiguous and verifiable.
+The goal is to move the pipeline-config manifest to a clearer structural
+model with `variable-groups` and group references per pipeline/phase, so
+that phase boundaries are unambiguous and verifiable without introducing
+extra `required` or `policy` semantics.
 
 ## Goal
 
-- `required` and `allowed` collapse into one: phase logic is described through
-  the combination of `pipelines.common.<phase>` and
-  `pipelines.<pipeline>.<phase>`, which expands into concrete parameter sets.
+- `variable-groups` replaces the earlier `variables` mapping as the canonical
+  catalog for groups, variables, `meta`, and `sources`.
+- `pipelines.common.<phase>` and `pipelines.<pipeline>.<phase>` consist of
+  group references with `group-key`.
+- A group reference uses either `select: "*"` for the whole group or
+  `variables` for an explicit subset.
 - Code defaults (`get('KEY', 'default')`) are removed so that the
   parameter-vector approach yields real test results (prerequisite: ISS-003).
-- `variables` stays the parameter catalog in the app repo; `PIPELINE` and
-  `PHASE` are injected internally by the library instead of living in an
-  app-side manifest area.
-- The pipeline-spec-lib reads area and partial-area references, expands them,
-  and validates disjointness between `common` and the concrete pipeline.
+- `PIPELINE` and `PHASE` are injected internally by the library instead of
+  living in an app-side manifest area.
+- The pipeline-spec-lib reads group and subset references, expands them, and
+  validates disjointness between `common` and the concrete pipeline.
+- Functional dependencies between variables stay visible in `meta.notes`;
+  losing them during the earlier J01-105 path is treated as a regression.
 - Tests are updated; the manifest then serves as a clean phase-boundary spec.
 
 ## Current status
@@ -43,11 +48,14 @@ boundaries are unambiguous and verifiable.
   step pages now show other public steps as siblings of the same parent,
   ordered by step number rather than by file path.
 - Manifest, config YAMLs, and PHP usage are adjusted in the working branch to
-  the group schema and the explicit SMTP sender path (2026-04-01).
+  the group schema and the explicit SMTP sender path (2026-04-01); the next
+  step now pulls the reduced structure-only model into place.
 - `PIPELINE` and `PHASE` are handled internally by the library; there is no
   app-side `pipeline_phase` area in the target state.
-- The lib README is updated in the same task to the real group-based schema;
-  the former `required`/`allowed` example is outdated.
+- The lib README is updated in the same task to the real structure model
+  with `variable-groups`, `group-key`, and `select`.
+- Earlier dependency hints in `meta.notes` are restored on the affected
+  variables; their earlier loss during J01-105 was not a target state.
 
 ## Plan as Steps
 
@@ -67,12 +75,14 @@ boundaries are unambiguous and verifiable.
 ## Planned Target Model
 
 - One manifest file stays in the app repo.
-- `variables` defines only parameters, groups, `sources`, and `meta`.
+- `variable-groups` defines groups, variables, `sources`, and `meta`.
 - Every variable key gets a `meta` object.
 - `pipelines.common.<phase>` contains the phase-wide intersection.
 - `pipelines.<pipeline>.<phase>` adds only the true pipeline-specific
   difference.
-- Phase lists may reference full areas or partial areas.
+- Phase lists consist of group references with `group-key`.
+- A group reference uses `select: "*"` for the full group or `variables`
+  for an explicit subset.
 - After expansion there must be no overlap between `common` and the concrete
   pipeline.
 - A separate `pipelines.global` layer is no longer part of the confirmed
@@ -103,7 +113,7 @@ Earlier coarse `P_0` of the app manifest:
 
 - `python`: `PYTHON_CMD`, `PYTHON_PATHS`
 - `build`: `APP_BASE_PATH`, `LEBENSLAUF_DATEN_PFAD`,
-  `LEBENSLAUF_YAML_PFAD`, `LEBENSLAUF_JSON_PFAD`,
+  `LEBENSLAUF_YAML_PFAD`,
   `LEBENSLAUF_PUBLIC_PROFILE`, `LEBENSLAUF_LANG_DEFAULT`,
   `LEBENSLAUF_LANGS`
 - `runtime`: `APP_BASE_PATH`, `TRUST_PROXY`,
@@ -124,7 +134,7 @@ Confirmed findings from source analysis:
   and the fixed target `daten-sample.yaml`. After that,
   `LEBENSLAUF_PUBLIC_PROFILE` drops out of `setup`.
 - `build`: uses `LEBENSLAUF_DATEN_PFAD`,
-  `LEBENSLAUF_YAML_PFAD`, `LEBENSLAUF_JSON_PFAD`,
+  `LEBENSLAUF_YAML_PFAD`,
   `LEBENSLAUF_PUBLIC_PROFILE`, `LEBENSLAUF_LANG_DEFAULT`,
   `LEBENSLAUF_LANGS`, and the build-side `APP_BASE_PATH`.
 - `runtime`: uses `APP_BASE_PATH`, `TRUST_PROXY`,
@@ -151,6 +161,9 @@ each one has a final status.
 The general meaning of `meta.desc`, `meta.example`, and `meta.notes` is
 documented canonically in
 [Spec: Pipeline spec system]({{ "/en/specs/systems/pipeline-spec/" | relative_url }}).
+At the same time, J01-105 now makes clear that concrete functional
+dependencies should remain visible on the variable entry itself; their
+earlier loss in `meta.notes` was a regression.
 
 ## Out of Scope for This Doc Pass
 
@@ -163,16 +176,17 @@ documented canonically in
 | Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
 | Derivation documented | Source analysis, the matrix of technically found `P_0` parameters, and `P_0 -> ... -> P_n` are traceable in the issue | Jira docs DE/EN | in progress |
-| Target model documented | `variables`, `common`, and pipeline differences are described; the earlier `global` draft is corrected as drift | Jira docs DE/EN | done |
+| Target model documented | `variable-groups`, `group-key`, `select`, `common`, and pipeline differences are described; the earlier `global` draft is corrected as drift | Jira docs DE/EN | in progress |
 | `PIPELINE` / `PHASE` explained | No app-side `pipeline_phase`; both keys are injected by the lib | Jira docs DE/EN | done |
 | Area syntax explained | Full-area and partial-area syntax is described as the planned model | Jira docs DE/EN | done |
 | Disjointness rule explained | No overlap between `common` and concrete pipeline | Jira docs DE/EN | done |
 | Code defaults removed | No J01-105 case relies on content-level fallback defaults anymore; a positive interim state is evidenced, but the final closeout proof is still open | Source analysis source repos, `tagebuch` | interim state evidenced |
 | `LEBENSLAUF_PUBLIC_PROFILE` corrected | No longer in `setup` or `runtime`, only in the build path | config.manifest.yaml | open |
-| Lib README corrected | No old `required`/`allowed` schema remains in the lib docs | `pipeline-config-spec-php/README*.md` | done |
+| Lib README corrected | No old `required`/`allowed` schema remains in the lib docs; the README uses the new structure model | `pipeline-config-spec-php/README*.md` | in progress |
 | Manifest simplified | Target model implemented in source repos | config.manifest.yaml | partially done |
 | SMTP sender clarified | Sender now runs only via `SMTP_FROM_EMAIL` and `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` remains separate | config.manifest.yaml, MailService.php | done |
-| pipeline-spec-lib updated | Expander, partial-area syntax, and internal phase keys are implemented in the library history | pipeline-config-spec-php | done |
+| `meta.notes` sharpened again | Functional dependencies are visible again on the affected variables; the earlier thinning is corrected | config.manifest.yaml, Jira docs | in progress |
+| pipeline-spec-lib updated | Expander, `group-key`/`select` syntax, and internal phase keys are implemented in the library history | pipeline-config-spec-php | in progress |
 | Tests green | There is an evidenced positive interim state for lib tests and phase-wise `config lint`; full closeout evidence is still open | Test run, `tagebuch` | interim state evidenced |
 | J01-9 unblocked | J01-105 done, J01-9 no longer blocked | Jira | open |
 
@@ -180,12 +194,14 @@ documented canonically in
 
 - J01-28: related issue (broad analysis frame, not a blocker).
 - The general `meta` semantics live in the pipeline-spec system docs, not
-  only on this issue page.
+  only on this issue page; concrete dependencies still remain visible on the
+  variable entry in `meta.notes`.
 - The secret path for `SMTP_PASS` and FTP credentials is clear in the source
   state, but not yet called out as its own finding in the public doc.
-- The earlier regression and later restoration of manifest `meta` objects are
-  not yet visible as an explicit finding in the public history.
-- J01-37 remains a separate follow-up for conditional required logic.
+- The earlier regression and later restoration of `meta.notes` hints are not
+  yet visible as an explicit finding in the public history.
+- J01-37 remains a separate follow-up; J01-105 does not introduce new
+  conditional or policy semantics for that.
 
 ## Links
 

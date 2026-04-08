@@ -6,7 +6,7 @@ jira_parent_key: J01-105
 permalink: /en/jira/issues/J01-105/steps/J01-123/
 ---
 
-**Status:** 2026-04-03
+**Status:** 2026-04-04
 
 {% include jira-state-head.html %}
 
@@ -42,6 +42,12 @@ the seed edge case and the library cut.
 - After `J01-122`, `setup` no longer retains a technical parameter finding;
   the earlier candidate `LEBENSLAUF_PUBLIC_PROFILE` is
   therefore not included in `P_0`.
+- `LEBENSLAUF_JSON_PFAD` is no longer part of the target state: there is
+  no current functional JSON data path, so the parameter and its remaining
+  code/config traces are removed completely.
+- `CAPTCHA_TTL_SECONDS` stays a runtime parameter in the target state; the
+  technical finding additionally covers the CLI cleanup path, which should
+  only remove expired captchas.
 - Each transition `P_i -> P_{i+1}` confirms exactly one small finding so the
   reduction remains verifiable instead of merely editorial.
 - This step is the main path of the issue and carries the full parameter work
@@ -62,42 +68,12 @@ the seed edge case and the library cut.
 ## `P_0` evidence matrix
 
 Only parameters with a technical finding enter `P_0`.
-`Technical usage` means the concrete program path:
+The presentation now follows the manifest reading path
+`Pipeline -> Phase -> Area -> Parameter`.
+The technical source remains the decisive program path:
 PHP code, CLI path, Python runner, shell script, or GitHub workflow.
 
-| Domain phase | Parameter | Pipeline/Phase | Technical finding | Technical usage | Technical source | Formally documented | Formal source | `P_0` status |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `python` | `PYTHON_CMD` | `dev/python`, `preview/python` | yes | Python runner | `src/cli/php/PythonResolver.php` | yes | `src/resources/config/dev-python.yaml`, `README.md`, `docs/ENVIRONMENTS.md` | included |
-| `python` | `PYTHON_PATHS` | `dev/python`, `preview/python` | yes | Python runner | `src/cli/php/util/PythonRunner.php` | yes | `src/resources/config/dev-python.yaml`, `README.md`, `docs/ENVIRONMENTS.md` | included |
-| `build` | `APP_BASE_PATH` | `dev/build`, `preview/build` | yes | CV build and render path | `src/cli/php/Cv/CvUploadService.php`, `src/cli/php/ConfigValues.php` | yes | `src/resources/config/dev-build.yaml`, `J01-105` | included |
-| `build` | `LEBENSLAUF_DATEN_PFAD` | `dev/build`, `preview/build` | yes | Content source for CV build | `src/cli/php/Cv/ContentSourceResolver.php` | yes | `README.md`, `README.en.md` | included |
-| `build` | `LEBENSLAUF_YAML_PFAD` | `dev/build`, `preview/build` | yes | Content source and dev watcher | `src/cli/php/Cv/ContentSourceResolver.php`, `src/cli/py/dev/dev.py` | no | - | included |
-| `build` | `LEBENSLAUF_JSON_PFAD` | `dev/build`, `preview/build` | yes | JSON target path for CV build | `src/cli/php/Cv/ContentSourceResolver.php` | no | - | included |
-| `build` | `LEBENSLAUF_PUBLIC_PROFILE` | `dev/build`, `preview/build` | yes | CV build, upload, and preview config check | `src/cli/php/Cv/CvBuildService.php`, `src/cli/php/Cv/CvUploadService.php`, `bin/ci` | yes | `README.md`, `J01-105` | included |
-| `build` | `LEBENSLAUF_LANG_DEFAULT` | `dev/build`, `preview/build` | yes | Upload and render path | `src/cli/php/Cv/CvUploadService.php` | yes | `src/resources/config/dev-build.yaml`, `J01-105` | included |
-| `build` | `LEBENSLAUF_LANGS` | `dev/build`, `preview/build` | yes | Upload and render path | `src/cli/php/Cv/CvUploadService.php` | yes | `src/resources/config/dev-build.yaml`, `J01-105` | included |
-| `runtime` | `APP_BASE_PATH` | `dev/runtime`, `preview/runtime` | yes | HTTP runtime | `src/Http/ConfigCompiled.php`, `src/Http/AppBuilder.php` | yes | `src/resources/config/dev-runtime.yaml`, `README.en.md` | included |
-| `runtime` | `TRUST_PROXY` | `dev/runtime`, `preview/runtime` | yes | HTTP runtime | `src/Http/Actions/ContactFormAction.php`, `src/Http/Actions/ContactSubmitAction.php` | no | - | included |
-| `runtime` | `LEBENSLAUF_LANG_DEFAULT` | `dev/runtime`, `preview/runtime` | yes | HTTP runtime | `src/Http/Actions/CvAction.php` | yes | `README.md`, `README.en.md` | included |
-| `runtime` | `LEBENSLAUF_LANGS` | `dev/runtime`, `preview/runtime` | yes | HTTP runtime | `src/Http/Actions/CvAction.php` | yes | `README.md`, `README.en.md` | included |
-| `runtime` | `CAPTCHA_TTL_SECONDS` | `dev/runtime`, `preview/runtime` | yes | HTTP runtime and captcha CLI | `src/Http/AppContext.php`, `src/cli/php/Command/CaptchaCommand.php` | no | - | included |
-| `runtime` | `CAPTCHA_MAX_GET` | `dev/runtime`, `preview/runtime` | yes | HTTP runtime | `src/Http/Actions/ContactFormAction.php` | no | - | included |
-| `runtime` | `CONTACT_MAX_POST` | `dev/runtime`, `preview/runtime` | yes | HTTP runtime | `src/Http/Actions/ContactSubmitAction.php` | no | - | included |
-| `runtime` | `CONTACT_TO_EMAIL` | `dev/runtime`, `preview/runtime` | yes | Mail service | `src/Http/Contact/MailService.php` | yes | `README.md`, `README.en.md` | included |
-| `runtime` | `RATE_LIMIT_WINDOW_SECONDS` | `dev/runtime`, `preview/runtime` | yes | HTTP runtime | `src/Http/Actions/ContactFormAction.php`, `src/Http/Actions/ContactSubmitAction.php` | no | - | included |
-| `runtime` | `MAIL_STDOUT` | `dev/runtime`, `preview/runtime` | yes | Mail service and preview config check | `src/Http/Contact/MailService.php`, `bin/ci` | no | - | included |
-| `runtime` | `SMTP_HOST` | `dev/runtime`, `preview/runtime` | yes | Mail service | `src/Http/Contact/MailService.php` | no | - | included |
-| `runtime` | `SMTP_PORT` | `dev/runtime`, `preview/runtime` | yes | Mail service | `src/Http/Contact/MailService.php` | no | - | included |
-| `runtime` | `SMTP_USER` | `dev/runtime`, `preview/runtime` | yes | Mail service | `src/Http/Contact/MailService.php` | no | - | included |
-| `runtime` | `SMTP_PASS` | `dev/runtime`, `preview/runtime` | yes | Mail service | `src/Http/Contact/MailService.php` | yes | `config.manifest.yaml` | included |
-| `runtime` | `SMTP_ENCRYPTION` | `dev/runtime`, `preview/runtime` | yes | Mail service | `src/Http/Contact/MailService.php` | no | - | included |
-| `runtime` | `SMTP_FROM_EMAIL` | `dev/runtime`, `preview/runtime` | yes | Mail service | `src/Http/Contact/MailService.php` | yes | `README.md`, `README.en.md` | included |
-| `runtime` | `SMTP_FROM_NAME` | `dev/runtime`, `preview/runtime` | yes | Mail service | `src/Http/Contact/MailService.php` | yes | `README.md`, `README.en.md` | included |
-| `deploy` | `FTP_SERVER_DIR` | `preview/deploy` | yes | GitHub workflow `preview-deploy` | `.github/workflows/preview-deploy.yml` | yes | `src/resources/config/preview-deploy.yaml`, `README.en.md`, `J01-105` | included |
-| `deploy` | `FTP_PORT` | `preview/deploy` | yes | GitHub workflow `preview-deploy` | `.github/workflows/preview-deploy.yml` | yes | `src/resources/config/preview-deploy.yaml`, `J01-105` | included |
-| `deploy` | `FTP_HOST` | `preview/deploy` | yes | GitHub workflow `preview-deploy` | `.github/workflows/preview-deploy.yml` | yes | `config.manifest.yaml`, `J01-105` | included |
-| `deploy` | `FTP_USER` | `preview/deploy` | yes | GitHub workflow `preview-deploy` | `.github/workflows/preview-deploy.yml` | yes | `config.manifest.yaml`, `J01-105` | included |
-| `deploy` | `FTP_PASS` | `preview/deploy` | yes | GitHub workflow `preview-deploy` | `.github/workflows/preview-deploy.yml` | yes | `config.manifest.yaml`, `J01-105` | included |
+{% include j01-123-p0-matrix.html lang="en" %}
 
 ## Formal candidates outside `P_0`
 
@@ -111,6 +87,7 @@ PHP code, CLI path, Python runner, shell script, or GitHub workflow.
 | --- | --- | --- | --- |
 | `setup` | `LEBENSLAUF_PUBLIC_PROFILE` | After `J01-122`, `setup` uses only `--copy-sample-content` with a fixed fixture; `SetupCommand` no longer reads a functional setup parameter. | not included in `P_0` |
 | `runtime` | `LEBENSLAUF_PUBLIC_PROFILE` | No positive HTTP runtime evidence in the current source state; the parameter remains evidenced on the build side. | not included in `P_0` |
+| `build` | `LEBENSLAUF_JSON_PFAD` | There is no current functional JSON data path anymore; the former intermediate path is removed without legacy residue. | removed from manifest, config, and code |
 
 ## Verification plan
 
@@ -131,6 +108,8 @@ PHP code, CLI path, Python runner, shell script, or GitHub workflow.
   against the new, strictly technical `P_0`.
 - Keep checking `APP_URL` specifically for any technical reader beyond the
   current formal sources.
+- Document the return of functional dependency notes in `meta.notes` as a
+  companion proof of the thin contract.
 - Decide later whether individual parameter explanations belong in canonical
   area or system docs once `P_n` is stable.
 

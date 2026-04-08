@@ -21,7 +21,8 @@ behavior do not drift apart again.
 ## Goal
 
 - The pipeline-spec-lib expands the target model with
-  `pipelines.common.<phase>` and `pipelines.<pipeline>.<phase>`.
+  `variable-groups`, `group-key`, `select`, and
+  `pipelines.common.<phase>` / `pipelines.<pipeline>.<phase>`.
 - The library validates disjointness between shared and pipeline-specific
   parameters.
 - The README documents only the real group and phase model.
@@ -34,6 +35,8 @@ behavior do not drift apart again.
   dedicated subtask.
 - `PIPELINE` and `PHASE` stay internal to the library in the target state;
   there is no app-side `pipeline_phase` contract.
+- The intermediate idea of adding `policy` is discarded; the confirmed target
+  state stays a pure structure refactor without extra optionality semantics.
 
 ## Current status
 
@@ -47,14 +50,15 @@ behavior do not drift apart again.
 
 | Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| Expander reads target model | Library expands `common.<phase>` and the pipeline delta correctly | `pipeline-config-spec-php` | done |
+| Expander reads target model | Library expands `variable-groups`, `group-key`, `select`, `common.<phase>`, and the pipeline delta correctly | `pipeline-config-spec-php` | in progress |
 | Disjointness validated | Overlap between `common` and the pipeline delta is rejected | `pipeline-config-spec-php`, tests | done |
-| README corrected | No `required`/`allowed` schema remains in lib docs | `pipeline-config-spec-php/README*.md` | done |
+| README corrected | No `required`/`allowed` schema remains in lib docs; the README describes the reduced structure model without `policy` | `pipeline-config-spec-php/README*.md` | in progress |
 | Internal phase keys explained | `PIPELINE` and `PHASE` are no longer described as an app-manifest area | lib docs, J01-105 | done |
 
 ## Open points
 
-- Keep the general `meta` semantics only in the canonical pipeline-spec docs.
+- Keep the general `meta` semantics canonical while restoring concrete
+  dependencies in variable-level `meta.notes`.
 - Split clearly which tests belong in the lib and which remain in the main
   repo.
 

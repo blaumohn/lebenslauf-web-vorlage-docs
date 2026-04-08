@@ -21,7 +21,8 @@ Bibliotheksvertrag nicht wieder vermischt werden.
 ## Ziel
 
 - Die pipeline-spec-lib expandiert das Zielmodell mit
-  `pipelines.common.<phase>` und `pipelines.<pipeline>.<phase>`.
+  `variable-groups`, `group-key`, `select` und
+  `pipelines.common.<phase>` / `pipelines.<pipeline>.<phase>`.
 - Die Lib validiert die Disjunktheit zwischen gemeinsamen und
   pipelinespezifischen Parametern.
 - Die README beschreibt nur noch das echte Gruppen- und Phasenmodell.
@@ -34,6 +35,9 @@ Bibliotheksvertrag nicht wieder vermischt werden.
   eigenen Untervorgang.
 - `PIPELINE` und `PHASE` bleiben im Zielzustand lib-intern; ein
   App-Bereich `pipeline_phase` gehört nicht mehr zum Vertrag.
+- Der zwischenzeitlich erwogene Ausbau mit `policy` wird verworfen; der
+  bestätigte Zielstand bleibt ein reiner Strukturumbau ohne zusätzliche
+  Optionalitätssemantik.
 
 ## Aktueller Stand
 
@@ -47,15 +51,16 @@ Bibliotheksvertrag nicht wieder vermischt werden.
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Expander liest Zielmodell | Lib expandiert `common.<phase>` und Pipeline-Differenz korrekt | `pipeline-config-spec-php` | erledigt |
+| Expander liest Zielmodell | Lib expandiert `variable-groups`, `group-key`, `select`, `common.<phase>` und Pipeline-Differenz korrekt | `pipeline-config-spec-php` | in Arbeit |
 | Disjunktheit validiert | Überschneidungen zwischen `common` und Pipeline-Differenz werden abgewiesen | `pipeline-config-spec-php`, Tests | erledigt |
-| README korrigiert | Kein `required`/`allowed`-Schema mehr in der Lib-Doku | `pipeline-config-spec-php/README*.md` | erledigt |
+| README korrigiert | Kein `required`/`allowed`-Schema mehr in der Lib-Doku; README beschreibt das reduzierte Strukturmodell ohne `policy` | `pipeline-config-spec-php/README*.md` | in Arbeit |
 | Lib-interne Phasenschlüssel erklärt | `PIPELINE` und `PHASE` werden nicht mehr als App-Manifest-Bereich beschrieben | Lib-Doku, J01-105 | erledigt |
 
 ## Offene Punkte
 
-- Prüfen, ob die allgemeine `meta`-Semantik ausschließlich in der
-  kanonischen Pipeline-Spec verbleibt.
+- Prüfen, wie die allgemeine `meta`-Semantik kanonisch bleibt, während
+  konkrete Abhängigkeiten in `meta.notes` an den Variablen sichtbar
+  wiederhergestellt werden.
 - Abgleichen, welche Testfälle in der Lib und welche im Hauptrepo geführt
   werden sollen.
 

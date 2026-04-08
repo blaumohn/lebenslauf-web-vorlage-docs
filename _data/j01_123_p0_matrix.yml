@@ -1,0 +1,540 @@
+labels:
+  de:
+    legend: "<code>x</code> markiert aktuell bestätigte Aufnahme in <code>P_0</code>; nichtleere Quellenfelder tragen den technischen oder formalen Beleg."
+    parameter: "Parameter"
+    short: "Kurzbeschreibung"
+    technical_source: "Technische Quelle"
+    formal_source: "Formale Quelle"
+    dependencies: "Abhängigkeiten"
+    p0: "P0"
+    none: "-"
+  en:
+    legend: "<code>x</code> marks confirmed inclusion in <code>P_0</code>; non-empty source fields carry the technical or formal evidence."
+    parameter: "Parameter"
+    short: "Short description"
+    technical_source: "Technical source"
+    formal_source: "Formal source"
+    dependencies: "Dependencies"
+    p0: "P0"
+    none: "-"
+
+pipelines:
+  - key: common
+    summary:
+      de: "Gemeinsame technisch belegte Parameter aus dem aktuellen Manifest-Pfad."
+      en: "Shared technically evidenced parameters from the current manifest path."
+    phases:
+      - key: python
+        summary:
+          de: "Tooling-Pfade für den Python-Runner."
+          en: "Tooling paths for the Python runner."
+        areas:
+          - key: tooling
+            rows:
+              - parameter: PYTHON_CMD
+                short:
+                  de: "Python-Befehl des Runners"
+                  en: "Python command used by the runner"
+                usage:
+                  de: "Python-Runner"
+                  en: "Python runner"
+                technical_sources:
+                  - src/cli/php/PythonResolver.php
+                formal_sources:
+                  - src/resources/config/dev-python.yaml
+                  - README.md
+                  - docs/ENVIRONMENTS.md
+                dependencies:
+                  de: "Wirkt mit <code>PYTHON_PATHS</code>; nur in der Python-Phase relevant."
+                  en: "Works with <code>PYTHON_PATHS</code>; relevant only in the Python phase."
+                p0: true
+              - parameter: PYTHON_PATHS
+                short:
+                  de: "Zusätzliche Python-Suchpfade"
+                  en: "Additional Python search paths"
+                usage:
+                  de: "Python-Runner"
+                  en: "Python runner"
+                technical_sources:
+                  - src/cli/php/util/PythonRunner.php
+                formal_sources:
+                  - src/resources/config/dev-python.yaml
+                  - README.md
+                  - docs/ENVIRONMENTS.md
+                dependencies:
+                  de: "Optionale Ergänzung zu <code>PYTHON_CMD</code>; bleibt an Runner-Aufruf gekoppelt."
+                  en: "Optional addition to <code>PYTHON_CMD</code>; remains coupled to the runner call."
+                p0: true
+      - key: build
+        summary:
+          de: "Build-seitige Parameter für CV-Erzeugung, Upload und Render-Pfade."
+          en: "Build-side parameters for CV generation, upload, and render paths."
+        areas:
+          - key: app
+            rows:
+              - parameter: APP_BASE_PATH
+                short:
+                  de: "URL-Basis-Pfad im Build"
+                  en: "URL base path in the build path"
+                usage:
+                  de: "CV-Build und Render-Pfad"
+                  en: "CV build and render path"
+                technical_sources:
+                  - src/cli/php/Cv/CvUploadService.php
+                  - src/cli/php/ConfigValues.php
+                formal_sources:
+                  - src/resources/config/dev-build.yaml
+                  - J01-105
+                dependencies:
+                  de: "Teilt den Schlüssel mit der Runtime, aber mit eigenem Build-Lesepfad."
+                  en: "Shares the key with runtime, but with its own build-side read path."
+                p0: true
+          - key: lebenslauf
+            rows:
+              - parameter: LEBENSLAUF_DATEN_PFAD
+                short:
+                  de: "Pfad zum Lebenslauf-Datenverzeichnis"
+                  en: "Path to the CV data directory"
+                usage:
+                  de: "Content-Quelle für CV-Build"
+                  en: "Content source for CV build"
+                technical_sources:
+                  - src/cli/php/Cv/ContentSourceResolver.php
+                formal_sources:
+                  - README.md
+                  - README.en.md
+                dependencies:
+                  de: "Trägt den Wurzelpfad für YAML- und JSON-Ableitungen."
+                  en: "Provides the root path for YAML and JSON derivations."
+                p0: true
+              - parameter: LEBENSLAUF_YAML_PFAD
+                short:
+                  de: "Optionale YAML-Quelldatei"
+                  en: "Optional YAML source file"
+                usage:
+                  de: "Content-Quelle und Dev-Watcher"
+                  en: "Content source and dev watcher"
+                technical_sources:
+                  - src/cli/php/Cv/ContentSourceResolver.php
+                  - src/cli/py/dev/dev.py
+                formal_sources: []
+                dependencies:
+                  de: "Übersteuert den Standardpfad aus <code>LEBENSLAUF_DATEN_PFAD</code>."
+                  en: "Overrides the default path derived from <code>LEBENSLAUF_DATEN_PFAD</code>."
+                p0: true
+              - parameter: LEBENSLAUF_PUBLIC_PROFILE
+                short:
+                  de: "Öffentliches Profil für den Build-Pfad"
+                  en: "Public profile name on the build path"
+                usage:
+                  de: "CV-Build, Upload und Preview-Config-Check"
+                  en: "CV build, upload, and preview config check"
+                technical_sources:
+                  - src/cli/php/Cv/CvBuildService.php
+                  - src/cli/php/Cv/CvUploadService.php
+                  - bin/ci
+                formal_sources:
+                  - README.md
+                  - J01-105
+                dependencies:
+                  de: "Bleibt nur build-seitig belegt; frühere Setup-/Runtime-Kandidatur ist ausgeschlossen."
+                  en: "Remains evidenced only on the build side; the earlier setup/runtime candidacy is excluded."
+                p0: true
+              - parameter: LEBENSLAUF_LANG_DEFAULT
+                short:
+                  de: "Standardsprache des Lebenslaufs"
+                  en: "Default language of the CV"
+                usage:
+                  de: "Upload- und Render-Pfad"
+                  en: "Upload and render path"
+                technical_sources:
+                  - src/cli/php/Cv/CvUploadService.php
+                formal_sources:
+                  - src/resources/config/dev-build.yaml
+                  - J01-105
+                dependencies:
+                  de: "Gehört funktional zu <code>LEBENSLAUF_LANGS</code>; taucht auch im Runtime-Pfad auf."
+                  en: "Functionally belongs with <code>LEBENSLAUF_LANGS</code>; also appears in the runtime path."
+                p0: true
+              - parameter: LEBENSLAUF_LANGS
+                short:
+                  de: "Unterstützte Sprachliste"
+                  en: "Supported language list"
+                usage:
+                  de: "Upload- und Render-Pfad"
+                  en: "Upload and render path"
+                technical_sources:
+                  - src/cli/php/Cv/CvUploadService.php
+                formal_sources:
+                  - src/resources/config/dev-build.yaml
+                  - J01-105
+                dependencies:
+                  de: "Trägt die Mehrsprachigkeit gemeinsam mit <code>LEBENSLAUF_LANG_DEFAULT</code>."
+                  en: "Carries multilingual behavior together with <code>LEBENSLAUF_LANG_DEFAULT</code>."
+                p0: true
+      - key: runtime
+        summary:
+          de: "HTTP-Runtime-Parameter für Routing, Formularpfad und Mail-Versand."
+          en: "HTTP runtime parameters for routing, form handling, and mail delivery."
+        areas:
+          - key: app
+            rows:
+              - parameter: APP_BASE_PATH
+                short:
+                  de: "URL-Basis-Pfad der Runtime"
+                  en: "Runtime URL base path"
+                usage:
+                  de: "HTTP-Runtime"
+                  en: "HTTP runtime"
+                technical_sources:
+                  - src/Http/ConfigCompiled.php
+                  - src/Http/AppBuilder.php
+                formal_sources:
+                  - src/resources/config/dev-runtime.yaml
+                  - README.en.md
+                dependencies:
+                  de: "Teilt den Schlüssel mit dem Build, aber über separaten Runtime-Lesepfad."
+                  en: "Shares the key with the build path, but through a separate runtime read path."
+                p0: true
+              - parameter: TRUST_PROXY
+                short:
+                  de: "Vertrauenswürdige Proxy-Ebenen"
+                  en: "Trusted proxy depth"
+                usage:
+                  de: "HTTP-Runtime"
+                  en: "HTTP runtime"
+                technical_sources:
+                  - src/Http/Actions/ContactFormAction.php
+                  - src/Http/Actions/ContactSubmitAction.php
+                formal_sources: []
+                dependencies:
+                  de: "Wirkt auf Request-Kontext für Formular- und Rate-Limit-Pfad."
+                  en: "Affects request context for the form and rate-limit path."
+                p0: true
+          - key: lebenslauf
+            rows:
+              - parameter: LEBENSLAUF_LANG_DEFAULT
+                short:
+                  de: "Standardsprache in der CV-Ausgabe"
+                  en: "Default language in CV output"
+                usage:
+                  de: "HTTP-Runtime"
+                  en: "HTTP runtime"
+                technical_sources:
+                  - src/Http/Actions/CvAction.php
+                formal_sources:
+                  - README.md
+                  - README.en.md
+                dependencies:
+                  de: "Läuft zusammen mit <code>LEBENSLAUF_LANGS</code> über denselben CV-Action-Pfad."
+                  en: "Runs together with <code>LEBENSLAUF_LANGS</code> through the same CV action path."
+                p0: true
+              - parameter: LEBENSLAUF_LANGS
+                short:
+                  de: "Verfügbare Sprachen in der CV-Ausgabe"
+                  en: "Available languages in CV output"
+                usage:
+                  de: "HTTP-Runtime"
+                  en: "HTTP runtime"
+                technical_sources:
+                  - src/Http/Actions/CvAction.php
+                formal_sources:
+                  - README.md
+                  - README.en.md
+                dependencies:
+                  de: "Kombiniert mit <code>LEBENSLAUF_LANG_DEFAULT</code> die Runtime-Sprachwahl."
+                  en: "Combines with <code>LEBENSLAUF_LANG_DEFAULT</code> to drive runtime language selection."
+                p0: true
+          - key: captcha
+            rows:
+              - parameter: CAPTCHA_TTL_SECONDS
+                short:
+                  de: "Lebensdauer des Captcha-Tokens"
+                  en: "Lifetime of the captcha token"
+                usage:
+                  de: "HTTP-Runtime und Captcha-CLI"
+                  en: "HTTP runtime and captcha CLI"
+                technical_sources:
+                  - src/Http/AppContext.php
+                  - src/cli/php/Command/CaptchaCommand.php
+                formal_sources: []
+                dependencies:
+                  de: "Verbindet Runtime-Validierung und Captcha-Erzeugung."
+                  en: "Connects runtime validation and captcha generation."
+                p0: true
+              - parameter: CAPTCHA_MAX_GET
+                short:
+                  de: "Maximale Captcha-Anfragen pro Fenster"
+                  en: "Maximum captcha requests per window"
+                usage:
+                  de: "HTTP-Runtime"
+                  en: "HTTP runtime"
+                technical_sources:
+                  - src/Http/Actions/ContactFormAction.php
+                formal_sources: []
+                dependencies:
+                  de: "Greift mit dem Formularpfad auf dieselbe Captcha-Steuerung zu."
+                  en: "Uses the same captcha control path as the contact form."
+                p0: true
+          - key: contact
+            rows:
+              - parameter: CONTACT_MAX_POST
+                short:
+                  de: "Maximale Formular-Absendungen"
+                  en: "Maximum form submissions"
+                usage:
+                  de: "HTTP-Runtime"
+                  en: "HTTP runtime"
+                technical_sources:
+                  - src/Http/Actions/ContactSubmitAction.php
+                formal_sources: []
+                dependencies:
+                  de: "Hängt am Kontaktformular-Submit und am Rate-Limit-Fenster."
+                  en: "Depends on contact-form submission and the rate-limit window."
+                p0: true
+              - parameter: CONTACT_TO_EMAIL
+                short:
+                  de: "Empfängeradresse des Kontaktformulars"
+                  en: "Recipient address of the contact form"
+                usage:
+                  de: "Mail-Service"
+                  en: "Mail service"
+                technical_sources:
+                  - src/Http/Contact/MailService.php
+                formal_sources:
+                  - README.md
+                  - README.en.md
+                dependencies:
+                  de: "Bleibt fachlich getrennt vom SMTP-Absenderpfad."
+                  en: "Remains functionally separate from the SMTP sender path."
+                p0: true
+          - key: rate_limit
+            rows:
+              - parameter: RATE_LIMIT_WINDOW_SECONDS
+                short:
+                  de: "Länge des Rate-Limit-Zeitfensters"
+                  en: "Length of the rate-limit time window"
+                usage:
+                  de: "HTTP-Runtime"
+                  en: "HTTP runtime"
+                technical_sources:
+                  - src/Http/Actions/ContactFormAction.php
+                  - src/Http/Actions/ContactSubmitAction.php
+                formal_sources: []
+                dependencies:
+                  de: "Gilt gemeinsam für Kontakt- und Captcha-nahe Request-Pfade."
+                  en: "Applies jointly to contact-related and captcha-adjacent request paths."
+                p0: true
+          - key: mail
+            rows:
+              - parameter: MAIL_STDOUT
+                short:
+                  de: "Mail-Ausgabe nach stdout"
+                  en: "Mail output to stdout"
+                usage:
+                  de: "Mail-Service und Preview-Config-Check"
+                  en: "Mail service and preview config check"
+                technical_sources:
+                  - src/Http/Contact/MailService.php
+                  - bin/ci
+                formal_sources: []
+                dependencies:
+                  de: "Schaltet zwischen Entwicklungs- und SMTP-Pfad um."
+                  en: "Switches between the development path and the SMTP path."
+                p0: true
+              - parameter: SMTP_HOST
+                short:
+                  de: "SMTP-Host"
+                  en: "SMTP host"
+                usage:
+                  de: "Mail-Service"
+                  en: "Mail service"
+                technical_sources:
+                  - src/Http/Contact/MailService.php
+                formal_sources: []
+                dependencies:
+                  de: "Teil des SMTP-Transportbündels mit Port, User, Pass und Verschlüsselung."
+                  en: "Part of the SMTP transport bundle with port, user, password, and encryption."
+                p0: true
+              - parameter: SMTP_PORT
+                short:
+                  de: "SMTP-Port"
+                  en: "SMTP port"
+                usage:
+                  de: "Mail-Service"
+                  en: "Mail service"
+                technical_sources:
+                  - src/Http/Contact/MailService.php
+                formal_sources: []
+                dependencies:
+                  de: "Teil des SMTP-Transportbündels."
+                  en: "Part of the SMTP transport bundle."
+                p0: true
+              - parameter: SMTP_USER
+                short:
+                  de: "SMTP-Benutzername"
+                  en: "SMTP username"
+                usage:
+                  de: "Mail-Service"
+                  en: "Mail service"
+                technical_sources:
+                  - src/Http/Contact/MailService.php
+                formal_sources: []
+                dependencies:
+                  de: "Teil des SMTP-Authentifizierungspfads."
+                  en: "Part of the SMTP authentication path."
+                p0: true
+              - parameter: SMTP_PASS
+                short:
+                  de: "SMTP-Passwort"
+                  en: "SMTP password"
+                usage:
+                  de: "Mail-Service"
+                  en: "Mail service"
+                technical_sources:
+                  - src/Http/Contact/MailService.php
+                formal_sources:
+                  - config.manifest.yaml
+                dependencies:
+                  de: "Teil des SMTP-Authentifizierungspfads; Secret-Herkunft bleibt relevant."
+                  en: "Part of the SMTP authentication path; secret sourcing remains relevant."
+                p0: true
+              - parameter: SMTP_ENCRYPTION
+                short:
+                  de: "SMTP-Verschlüsselungsmodus"
+                  en: "SMTP encryption mode"
+                usage:
+                  de: "Mail-Service"
+                  en: "Mail service"
+                technical_sources:
+                  - src/Http/Contact/MailService.php
+                formal_sources: []
+                dependencies:
+                  de: "Teil des SMTP-Transportbündels."
+                  en: "Part of the SMTP transport bundle."
+                p0: true
+              - parameter: SMTP_FROM_EMAIL
+                short:
+                  de: "Absenderadresse der App"
+                  en: "App sender address"
+                usage:
+                  de: "Mail-Service"
+                  en: "Mail service"
+                technical_sources:
+                  - src/Http/Contact/MailService.php
+                formal_sources:
+                  - README.md
+                  - README.en.md
+                dependencies:
+                  de: "Bildet mit <code>SMTP_FROM_NAME</code> den bestätigten Absenderpfad."
+                  en: "Forms the confirmed sender path together with <code>SMTP_FROM_NAME</code>."
+                p0: true
+              - parameter: SMTP_FROM_NAME
+                short:
+                  de: "Absendername der App"
+                  en: "App sender name"
+                usage:
+                  de: "Mail-Service"
+                  en: "Mail service"
+                technical_sources:
+                  - src/Http/Contact/MailService.php
+                formal_sources:
+                  - README.md
+                  - README.en.md
+                dependencies:
+                  de: "Gehört zum bestätigten SMTP-Absenderpfad mit <code>SMTP_FROM_EMAIL</code>."
+                  en: "Belongs to the confirmed SMTP sender path with <code>SMTP_FROM_EMAIL</code>."
+                p0: true
+  - key: preview
+    summary:
+      de: "Pipeline-spezifische Ergänzungen für den Preview-Deploy-Pfad."
+      en: "Pipeline-specific additions for the preview deploy path."
+    phases:
+      - key: deploy
+        summary:
+          de: "Deploy-seitige Zugangsdaten und Zielpfade des Preview-Workflows."
+          en: "Deploy-side credentials and target paths of the preview workflow."
+        areas:
+          - key: deploy
+            rows:
+              - parameter: FTP_SERVER_DIR
+                short:
+                  de: "Zielverzeichnis auf dem FTP-Server"
+                  en: "Target directory on the FTP server"
+                usage:
+                  de: "GitHub-Workflow <code>preview-deploy</code>"
+                  en: "GitHub workflow <code>preview-deploy</code>"
+                technical_sources:
+                  - .github/workflows/preview-deploy.yml
+                formal_sources:
+                  - src/resources/config/preview-deploy.yaml
+                  - README.en.md
+                  - J01-105
+                dependencies:
+                  de: "Gehört zum gesamten FTP-Deploy-Bündel des Preview-Pfads."
+                  en: "Belongs to the full FTP deploy bundle of the preview path."
+                p0: true
+              - parameter: FTP_PORT
+                short:
+                  de: "FTP-Port"
+                  en: "FTP port"
+                usage:
+                  de: "GitHub-Workflow <code>preview-deploy</code>"
+                  en: "GitHub workflow <code>preview-deploy</code>"
+                technical_sources:
+                  - .github/workflows/preview-deploy.yml
+                formal_sources:
+                  - src/resources/config/preview-deploy.yaml
+                  - J01-105
+                dependencies:
+                  de: "Teil des FTP-Deploy-Bündels."
+                  en: "Part of the FTP deploy bundle."
+                p0: true
+              - parameter: FTP_HOST
+                short:
+                  de: "FTP-Host"
+                  en: "FTP host"
+                usage:
+                  de: "GitHub-Workflow <code>preview-deploy</code>"
+                  en: "GitHub workflow <code>preview-deploy</code>"
+                technical_sources:
+                  - .github/workflows/preview-deploy.yml
+                formal_sources:
+                  - config.manifest.yaml
+                  - J01-105
+                dependencies:
+                  de: "Teil des FTP-Deploy-Bündels mit User und Pass."
+                  en: "Part of the FTP deploy bundle with user and password."
+                p0: true
+              - parameter: FTP_USER
+                short:
+                  de: "FTP-Benutzername"
+                  en: "FTP username"
+                usage:
+                  de: "GitHub-Workflow <code>preview-deploy</code>"
+                  en: "GitHub workflow <code>preview-deploy</code>"
+                technical_sources:
+                  - .github/workflows/preview-deploy.yml
+                formal_sources:
+                  - config.manifest.yaml
+                  - J01-105
+                dependencies:
+                  de: "Teil des FTP-Authentifizierungspfads."
+                  en: "Part of the FTP authentication path."
+                p0: true
+              - parameter: FTP_PASS
+                short:
+                  de: "FTP-Passwort"
+                  en: "FTP password"
+                usage:
+                  de: "GitHub-Workflow <code>preview-deploy</code>"
+                  en: "GitHub workflow <code>preview-deploy</code>"
+                technical_sources:
+                  - .github/workflows/preview-deploy.yml
+                formal_sources:
+                  - config.manifest.yaml
+                  - J01-105
+                dependencies:
+                  de: "Teil des FTP-Authentifizierungspfads; Secret-Herkunft bleibt relevant."
+                  en: "Part of the FTP authentication path; secret sourcing remains relevant."
+                p0: true
