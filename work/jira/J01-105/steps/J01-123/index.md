@@ -6,7 +6,7 @@ jira_parent_key: J01-105
 permalink: /de/jira/issues/J01-105/steps/J01-123/
 ---
 
-**Stand:** 2026-04-04
+**Stand:** 2026-04-08
 
 {% include jira-state-head.html %}
 
@@ -60,9 +60,24 @@ trennt ihn vom Seed-Sonderfall und vom Lib-Schnitt.
   technisch gefundenen Parameter nachgezogen.
 - Jeder aktuell aufgenommene Parameter hat jetzt einen technischen Fund mit
   Pipeline-/Phasenbezug; die formale Doku wird nur noch zusätzlich markiert.
-- Die eigentlichen Reduktionsschritte ab dem formalisierten `P_0` bleiben
-  weiter in Arbeit; die Seed-Korrektur aus `J01-122` zählt dabei als
-  Vorbefund vor der neuen Zählung.
+- `P_1` ist jetzt als erster echter Reduktionsschritt umgesetzt:
+  `MAIL_STDOUT` bleibt in `common.runtime`, `SMTP_*` wandert nach
+  `preview.runtime`, und `LEBENSLAUF_JSON_PFAD` ist ohne Legacy-Rest
+  vollständig entfernt.
+
+## `P_1`: Mail-Vertrag geschärft, JSON-Rest entfernt
+
+Der erste kleine Übergang `P_0 -> P_1` ist jetzt festgezogen:
+
+- `MAIL_STDOUT` bleibt als gemeinsamer Runtime-Schalter in
+  `common.runtime`.
+- `SMTP_*` gehört im aktuellen Zielstand nicht mehr zum gemeinsamen
+  Runtime-Vertrag und liegt nur noch in `preview.runtime`.
+- `LEBENSLAUF_JSON_PFAD` bleibt nicht als Altrest stehen, sondern ist aus
+  Manifest, Config und Code vollständig entfernt.
+
+Damit bleibt `P_0` als technischer Vollbefund lesbar, während `P_1` den
+ersten starken fachlichen Reduktionsschritt dokumentiert.
 
 <span id="p-0-belegmatrix"></span>
 
@@ -108,6 +123,7 @@ bleiben für `P_0` maßgeblich:
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
 | `P_0` vollständig | Alle aufgenommenen Parameter tragen einen technischen Fund mit Pipeline-/Phasenbezug; ausgeschlossene Frühkandidaten und formale Kandidaten sind kenntlich gemacht | diese Schrittseite, App-Repo | erledigt |
+| `P_1` umgesetzt | `MAIL_STDOUT` bleibt in `common.runtime`, `SMTP_*` liegt nur noch in `preview.runtime`, und `LEBENSLAUF_JSON_PFAD` ist vollständig entfernt | App-Repo, diese Schrittseite | erledigt |
 | Technische Nutzung sichtbar | Pro Parameter ist der konkrete Programm-Pfad benannt | diese Schrittseite | erledigt |
 | Formale Zusatzbelege sichtbar | Pro technisch gefundenem Parameter ist erkennbar, ob die Doku nachgezogen ist | diese Schrittseite | erledigt |
 | Jeder Übergang belegt | Jeder Schritt `P_i -> P_{i+1}` hat Quelltextbeleg und Prüflauf | App-Repo, Arbeitsdoku | in Arbeit |
@@ -116,14 +132,10 @@ bleiben für `P_0` maßgeblich:
 
 ## Offene Punkte
 
-- Die nächsten Übergänge ab diesem formalisierten `P_0` neu nummerieren;
-  der Seed-Befund aus `J01-122` bleibt ein Vorbefund vor `P_0`.
 - Die früh notierten Prüfpfade zu `PYTHON_PATHS` und `APP_URL` gegen das
   neue, streng technische `P_0` fortschreiben.
 - Für `APP_URL` gezielt weiter prüfen, ob außerhalb der formalen Quellen
   doch noch ein technischer Leser existiert.
-- Die Rückkehr fachlicher Abhängigkeitshinweise in `meta.notes` als
-  Begleitnachweis des dünnen Vertrags dokumentieren.
 - Prüfen, ob einzelne Parametererklärungen später in kanonische Bereichs-
   oder Systemdoku wandern sollen, sobald `P_n` stabil ist.
 

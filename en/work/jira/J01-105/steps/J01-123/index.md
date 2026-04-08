@@ -6,7 +6,7 @@ jira_parent_key: J01-105
 permalink: /en/jira/issues/J01-105/steps/J01-123/
 ---
 
-**Status:** 2026-04-04
+**Status:** 2026-04-08
 
 {% include jira-state-head.html %}
 
@@ -61,9 +61,23 @@ the seed edge case and the library cut.
 - Every currently included parameter now carries a technical finding with a
   pipeline/phase location; formal docs are marked only as an additional
   signal.
-- The actual reduction steps from the formalized `P_0` onward remain in
-  progress; the seed correction from `J01-122` now counts as a pre-finding
-  before the new numbering.
+- `P_1` is now implemented as the first actual reduction step:
+  `MAIL_STDOUT` stays in `common.runtime`, `SMTP_*` moves to
+  `preview.runtime`, and `LEBENSLAUF_JSON_PFAD` is fully removed without
+  legacy residue.
+
+## `P_1`: mail contract tightened, JSON residue removed
+
+The first small transition `P_0 -> P_1` is now fixed:
+
+- `MAIL_STDOUT` remains the shared runtime switch in `common.runtime`.
+- In the current target state, `SMTP_*` no longer belongs to the shared
+  runtime contract and now lives only in `preview.runtime`.
+- `LEBENSLAUF_JSON_PFAD` does not remain as an old leftover; it is fully
+  removed from manifest, config, and code.
+
+This keeps `P_0` readable as the technical full finding while `P_1`
+documents the first strong functional reduction step.
 
 <span id="p-0-belegmatrix"></span>
 
@@ -110,6 +124,7 @@ authoritative for `P_0`:
 | Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
 | `P_0` complete | Every included parameter carries a technical finding with pipeline/phase context; excluded early candidates and formal candidates are marked explicitly | this step page, app repo | done |
+| `P_1` implemented | `MAIL_STDOUT` stays in `common.runtime`, `SMTP_*` lives only in `preview.runtime`, and `LEBENSLAUF_JSON_PFAD` is fully removed | app repo, this step page | done |
 | Technical usage visible | Each parameter names the concrete program path | this step page | done |
 | Formal add-on evidence visible | Each technically found parameter shows whether docs have been pulled along | this step page | done |
 | Every transition evidenced | Each step `P_i -> P_{i+1}` has source evidence and a check run | app repo, work docs | in progress |
@@ -118,14 +133,10 @@ authoritative for `P_0`:
 
 ## Open points
 
-- Renumber the next transitions from this formalized `P_0`; the seed finding
-  from `J01-122` stays a pre-finding before `P_0`.
 - Carry the earlier noted `PYTHON_PATHS` and `APP_URL` checks forward
   against the new, strictly technical `P_0`.
 - Keep checking `APP_URL` specifically for any technical reader beyond the
   current formal sources.
-- Document the return of functional dependency notes in `meta.notes` as a
-  companion proof of the thin contract.
 - Decide later whether individual parameter explanations belong in canonical
   area or system docs once `P_n` is stable.
 

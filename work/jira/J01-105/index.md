@@ -169,6 +169,12 @@ Frühe bestätigte Befunde vor der formalen Neunummerierung sind:
 Danach wird der Rest des formalisierten `P_0` vollständig weiter
 abgearbeitet, bis jeder Parameter einen Endstatus hat.
 
+Der erste ausdrücklich dokumentierte Übergang `P_0 -> P_1` ist jetzt:
+
+- `MAIL_STDOUT` bleibt in `common.runtime`.
+- `SMTP_*` wandert aus `common.runtime` nach `preview.runtime`.
+- `LEBENSLAUF_JSON_PFAD` ist ohne Legacy-Rest vollständig entfernt.
+
 Zusätzlicher Architekturentscheid des Zielstands:
 Ein eigener Manifest-Bereich `pipeline_phase` wird nicht mehr geführt.
 Die früher im App-Manifest mitgedachten Schlüssel `PIPELINE` und `PHASE`
@@ -199,6 +205,7 @@ Variableneintrag sichtbar bleiben sollen; ihr früherer Verlust in
 | `LEBENSLAUF_PUBLIC_PROFILE` korrigiert | Nicht mehr in `setup` oder `runtime`, nur noch im Build-Pfad | config.manifest.yaml | offen |
 | Lib-README korrigiert | Kein altes `required`/`allowed`-Schema mehr in der Lib-Doku; README nutzt das neue Strukturmodell | `pipeline-config-spec-php/README*.md` | in Arbeit |
 | Manifest vereinfacht | Zielmodell im Hauptrepo-Arbeitsbranch umgesetzt | config.manifest.yaml | erledigt im Arbeitsbranch |
+| `P_1` dokumentiert | Erster Reduktionsschritt (`MAIL_STDOUT` in `common`, `SMTP_*` nur noch in `preview`, JSON-Rest entfernt) ist in J01-123 und Elternseite nachvollziehbar | Jira-Doku DE/EN, App-Repo | erledigt |
 | SMTP-Absender bereinigt | Absender läuft nur noch über `SMTP_FROM_EMAIL` und `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` bleibt separat | config.manifest.yaml, MailService.php | erledigt |
 | `meta.notes` wieder geschärft | Fachliche Abhängigkeiten stehen wieder an den betroffenen Variablen; die frühere Ausdünnung ist korrigiert | config.manifest.yaml, Jira-Doku | in Arbeit |
 | pipeline-spec-lib angepasst | Expander, `group-key`-/`select`-Syntax und lib-interne Phasenschlüssel sind in der Lib-Historie umgesetzt | pipeline-config-spec-php | in Arbeit |

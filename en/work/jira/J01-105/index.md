@@ -158,6 +158,12 @@ Early confirmed findings before the formal renumbering are:
 After that, the remaining formalized `P_0` parameters are processed until
 each one has a final status.
 
+The first explicitly documented transition `P_0 -> P_1` is now:
+
+- `MAIL_STDOUT` stays in `common.runtime`.
+- `SMTP_*` moves out of `common.runtime` into `preview.runtime`.
+- `LEBENSLAUF_JSON_PFAD` is fully removed without legacy residue.
+
 The general meaning of `meta.desc`, `meta.example`, and `meta.notes` is
 documented canonically in
 [Spec: Pipeline spec system]({{ "/en/specs/systems/pipeline-spec/" | relative_url }}).
@@ -184,6 +190,7 @@ earlier loss in `meta.notes` was a regression.
 | `LEBENSLAUF_PUBLIC_PROFILE` corrected | No longer in `setup` or `runtime`, only in the build path | config.manifest.yaml | open |
 | Lib README corrected | No old `required`/`allowed` schema remains in the lib docs; the README uses the new structure model | `pipeline-config-spec-php/README*.md` | in progress |
 | Manifest simplified | Target model implemented in source repos | config.manifest.yaml | partially done |
+| `P_1` documented | The first reduction step (`MAIL_STDOUT` in `common`, `SMTP_*` only in `preview`, JSON residue removed) is traceable in J01-123 and the parent page | Jira docs DE/EN, app repo | done |
 | SMTP sender clarified | Sender now runs only via `SMTP_FROM_EMAIL` and `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` remains separate | config.manifest.yaml, MailService.php | done |
 | `meta.notes` sharpened again | Functional dependencies are visible again on the affected variables; the earlier thinning is corrected | config.manifest.yaml, Jira docs | in progress |
 | pipeline-spec-lib updated | Expander, `group-key`/`select` syntax, and internal phase keys are implemented in the library history | pipeline-config-spec-php | in progress |
