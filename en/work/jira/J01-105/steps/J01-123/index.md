@@ -94,6 +94,10 @@ The next small transition `P_1 -> P_2` is now decided as well:
 - `config lint` for `dev/build` and `preview/build` stays green; the `dev`
   build runs without `APP_URL`, while the `preview` build currently stops on
   missing fixture data rather than on `APP_URL`.
+- For future `P_j` steps, `tests:smoke` is therefore treated as the preferred
+  functional proof; for `P_2` this run stayed open in the current
+  environment because the smoke clone got stuck in the Composer/environment
+  setup before the actual HTTP proof.
 
 `APP_URL` is therefore no longer tracked as an open candidate but as a
 completed removal.
@@ -147,7 +151,7 @@ authoritative for `P_0`:
 | `P_2` implemented | `APP_URL` was removed from the build contract and example configs because no technical reader remains | app repo, build check run, this step page | done |
 | Technical usage visible | Each parameter names the concrete program path | this step page | done |
 | Formal add-on evidence visible | Each technically found parameter shows whether docs have been pulled along | this step page | done |
-| Every transition evidenced | Each step `P_i -> P_{i+1}` has source evidence and a check run | app repo, work docs | in progress |
+| Every transition evidenced | Each step `P_i -> P_{i+1}` has source evidence and preferably `tests:smoke` as the functional proof; if the smoke path does not apply, a fitting substitute run must be evidenced | app repo, work docs | in progress |
 | Thin contract reached | Manifest contains only confirmed target parameters from `P_n` | `config.manifest.yaml` | in progress |
 | Phase boundaries clear | `common` and the pipeline delta stay cleanly separated in the app contract | app repo, J01-105 | in progress |
 
@@ -155,6 +159,8 @@ authoritative for `P_0`:
 
 - Carry the earlier noted `PYTHON_PATHS` check forward against the new,
   strictly technical `P_0`.
+- Stabilize the smoke path itself so later `P_j` steps no longer stall in
+  the clone/composer setup.
 - Decide later whether individual parameter explanations belong in canonical
   area or system docs once `P_n` is stable.
 

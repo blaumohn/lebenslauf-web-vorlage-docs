@@ -94,6 +94,10 @@ Der nächste kleine Übergang `P_1 -> P_2` ist jetzt ebenfalls entschieden:
 - `config lint` für `dev/build` und `preview/build` bleibt grün; der
   `dev`-Build läuft ohne `APP_URL`, während der `preview`-Build aktuell an
   fehlenden Fixture-Daten statt an `APP_URL` stoppt.
+- Für `P_j` gilt damit künftig: `tests:smoke` ist der bevorzugte
+  Funktionsnachweis; bei `P_2` blieb dieser Lauf in der aktuellen Umgebung
+  noch offen, weil der Smoke-Clone vor dem eigentlichen HTTP-Nachweis im
+  Composer-/Umgebungsaufbau hängen blieb.
 
 Damit ist `APP_URL` nicht mehr bloß als offener Kandidat notiert, sondern als
 entfernter Rest abgeschlossen.
@@ -146,7 +150,7 @@ bleiben für `P_0` maßgeblich:
 | `P_2` umgesetzt | `APP_URL` ist mangels technischem Leser aus Build-Vertrag und Beispiel-Configs entfernt | App-Repo, Build-Prüflauf, diese Schrittseite | erledigt |
 | Technische Nutzung sichtbar | Pro Parameter ist der konkrete Programm-Pfad benannt | diese Schrittseite | erledigt |
 | Formale Zusatzbelege sichtbar | Pro technisch gefundenem Parameter ist erkennbar, ob die Doku nachgezogen ist | diese Schrittseite | erledigt |
-| Jeder Übergang belegt | Jeder Schritt `P_i -> P_{i+1}` hat Quelltextbeleg und Prüflauf | App-Repo, Arbeitsdoku | in Arbeit |
+| Jeder Übergang belegt | Jeder Schritt `P_i -> P_{i+1}` hat Quelltextbeleg und bevorzugt `tests:smoke` als Funktionsnachweis; falls der Smoke-Pfad nicht greift, ist ein passender Ersatzlauf zu belegen | App-Repo, Arbeitsdoku | in Arbeit |
 | Dünner Vertrag erreicht | Manifest enthält nur noch bestätigte Zielparameter aus `P_n` | `config.manifest.yaml` | in Arbeit |
 | Phase-Grenzen klar | `common` und Pipeline-Differenz sind im App-Vertrag sauber getrennt | App-Repo, J01-105 | in Arbeit |
 
@@ -154,6 +158,8 @@ bleiben für `P_0` maßgeblich:
 
 - Den früh notierten Prüfpfad zu `PYTHON_PATHS` gegen das neue, streng
   technische `P_0` fortschreiben.
+- Den Smoke-Pfad selbst als Arbeitsvoraussetzung stabilisieren, damit
+  spätere `P_j`-Schritte nicht am Clone-/Composer-Aufbau hängen bleiben.
 - Prüfen, ob einzelne Parametererklärungen später in kanonische Bereichs-
   oder Systemdoku wandern sollen, sobald `P_n` stabil ist.
 

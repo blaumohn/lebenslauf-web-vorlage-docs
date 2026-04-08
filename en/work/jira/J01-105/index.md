@@ -170,6 +170,13 @@ The next explicitly documented transition `P_1 -> P_2` is now:
 - The former formal candidate therefore drops out of the build contract and
   the example build configs.
 
+The following `P_j` transitions now use this working rule:
+
+- `tests:smoke` is the preferred functional proof for a removal.
+- `lint` remains contract validation, but does not replace an execution proof.
+- If `tests:smoke` does not apply to the affected path or stalls on the
+  environment, a fitting substitute run must be evidenced explicitly.
+
 The general meaning of `meta.desc`, `meta.example`, and `meta.notes` is
 documented canonically in
 [Spec: Pipeline spec system]({{ "/en/specs/systems/pipeline-spec/" | relative_url }}).
@@ -198,6 +205,7 @@ earlier loss in `meta.notes` was a regression.
 | Manifest simplified | Target model implemented in source repos | config.manifest.yaml | partially done |
 | `P_1` documented | The first reduction step (`MAIL_STDOUT` in `common`, `SMTP_*` only in `preview`, JSON residue removed) is traceable in J01-123 and the parent page | Jira docs DE/EN, app repo | done |
 | `P_2` documented | `APP_URL` was removed from the build contract because no technical reader remained; J01-123 and the parent page reflect that | Jira docs DE/EN, app repo | done |
+| Smoke rule tightened | `tests:smoke` is the preferred functional proof for `P_j`; exceptions require an evidenced substitute run | Jira docs DE/EN, `tests/py/smoke.py` | done |
 | SMTP sender clarified | Sender now runs only via `SMTP_FROM_EMAIL` and `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` remains separate | config.manifest.yaml, MailService.php | done |
 | `meta.notes` sharpened again | Functional dependencies are visible again on the affected variables; the earlier thinning is corrected | config.manifest.yaml, Jira docs | in progress |
 | pipeline-spec-lib updated | Expander, `group-key`/`select` syntax, and internal phase keys are implemented in the library history | pipeline-config-spec-php | in progress |
