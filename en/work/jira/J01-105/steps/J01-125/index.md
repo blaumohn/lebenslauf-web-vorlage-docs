@@ -6,7 +6,7 @@ jira_parent_key: J01-105
 permalink: /en/jira/issues/J01-105/steps/J01-125/
 ---
 
-**Status:** 2026-04-03
+**Status:** 2026-04-08
 
 {% include jira-state-head.html %}
 
@@ -37,6 +37,9 @@ behavior do not drift apart again.
   there is no app-side `pipeline_phase` contract.
 - The intermediate idea of adding `policy` is discarded; the confirmed target
   state stays a pure structure refactor without extra optionality semantics.
+- The library now treats missing phase rules as an empty phase set instead of
+  an error. A present file such as `dev-setup.yaml` no longer needs an
+  artificial manifest placeholder like `setup: []`.
 
 ## Current status
 
@@ -44,6 +47,8 @@ behavior do not drift apart again.
 - The lib cut is publicly separated from the app-side reduction work.
 - Library code, README, and internal phase-key handling are already aligned in
   the library history.
+- Empty phases without group references are accepted again; the consumer path
+  `config lint dev --phase setup` works without an app-side workaround.
 - The remaining open part is mainly the cross-repo closeout evidence.
 
 ## Verification plan
@@ -54,6 +59,7 @@ behavior do not drift apart again.
 | Disjointness validated | Overlap between `common` and the pipeline delta is rejected | `pipeline-config-spec-php`, tests | done |
 | README corrected | No `required`/`allowed` schema remains in lib docs; the README describes the reduced structure model without `policy` | `pipeline-config-spec-php/README*.md` | in progress |
 | Internal phase keys explained | `PIPELINE` and `PHASE` are no longer described as an app-manifest area | lib docs, J01-105 | done |
+| Empty phases stay valid | Missing phase rules are treated as an empty set; `dev/setup` no longer needs a placeholder `setup: []` | lib tests, `config lint dev --phase setup` | done |
 
 ## Open points
 

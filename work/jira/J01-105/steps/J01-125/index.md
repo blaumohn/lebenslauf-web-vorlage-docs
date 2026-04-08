@@ -6,7 +6,7 @@ jira_parent_key: J01-105
 permalink: /de/jira/issues/J01-105/steps/J01-125/
 ---
 
-**Stand:** 2026-04-03
+**Stand:** 2026-04-08
 
 {% include jira-state-head.html %}
 
@@ -38,6 +38,9 @@ Bibliotheksvertrag nicht wieder vermischt werden.
 - Der zwischenzeitlich erwogene Ausbau mit `policy` wird verworfen; der
   bestätigte Zielstand bleibt ein reiner Strukturumbau ohne zusätzliche
   Optionalitätssemantik.
+- Die Lib behandelt fehlende Phasenregeln jetzt als leere Phasenmenge statt
+  als Fehler. Eine vorhandene Datei wie `dev-setup.yaml` braucht damit
+  keinen künstlichen Manifest-Platzhalter `setup: []`.
 
 ## Aktueller Stand
 
@@ -45,6 +48,9 @@ Bibliotheksvertrag nicht wieder vermischt werden.
 - Der Lib-Schnitt ist öffentlich von der App-seitigen Reduktion getrennt.
 - Lib-Code, README und die lib-internen Phasenschlüssel sind in der
   Lib-Historie nachgezogen.
+- Leere Phasen ohne Gruppenreferenzen werden wieder akzeptiert; der
+  Verbraucherpfad `config lint dev --phase setup` läuft ohne
+  App-Workaround.
 - Offener Rest ist vor allem der repo-übergreifende Abschlussnachweis.
 
 ## Überprüfungsplan
@@ -55,6 +61,7 @@ Bibliotheksvertrag nicht wieder vermischt werden.
 | Disjunktheit validiert | Überschneidungen zwischen `common` und Pipeline-Differenz werden abgewiesen | `pipeline-config-spec-php`, Tests | erledigt |
 | README korrigiert | Kein `required`/`allowed`-Schema mehr in der Lib-Doku; README beschreibt das reduzierte Strukturmodell ohne `policy` | `pipeline-config-spec-php/README*.md` | in Arbeit |
 | Lib-interne Phasenschlüssel erklärt | `PIPELINE` und `PHASE` werden nicht mehr als App-Manifest-Bereich beschrieben | Lib-Doku, J01-105 | erledigt |
+| Leere Phasen bleiben gültig | Fehlende Phasenregeln werden als leere Menge behandelt; `dev/setup` braucht keinen Platzhalter `setup: []` | Lib-Tests, `config lint dev --phase setup` | erledigt |
 
 ## Offene Punkte
 
