@@ -65,7 +65,9 @@ the seed edge case and the library cut.
   progress; the seed correction from `J01-122` now counts as a pre-finding
   before the new numbering.
 
-## `P_0` evidence matrix
+<span id="p-0-belegmatrix"></span>
+
+## `P_0` evidence matrix {#p_0-belegmatrix}
 
 Only parameters with a technical finding enter `P_0`.
 The presentation now follows the manifest reading path
@@ -74,6 +76,20 @@ The technical source remains the decisive program path:
 PHP code, CLI path, Python runner, shell script, or GitHub workflow.
 
 {% include j01-123-p0-matrix.html lang="en" %}
+
+## Findings kept from before the restructuring
+
+These points were already fixed before the later schema refactor and remain
+authoritative for `P_0`:
+
+- `setup` no longer carries a technical parameter finding after `J01-122`;
+  the earlier candidate `LEBENSLAUF_PUBLIC_PROFILE` therefore stays
+  explicitly outside `P_0`.
+- `deploy` belongs in the matrix because the workflow `preview-deploy`
+  provides a technical finding; the `FTP_*` values are not merely formal
+  candidates.
+- `APP_URL` remains only a formal candidate until a technical reader is
+  proven in the evaluated worktree.
 
 ## Formal candidates outside `P_0`
 

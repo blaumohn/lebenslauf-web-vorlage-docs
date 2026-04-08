@@ -64,7 +64,9 @@ trennt ihn vom Seed-Sonderfall und vom Lib-Schnitt.
   weiter in Arbeit; die Seed-Korrektur aus `J01-122` zählt dabei als
   Vorbefund vor der neuen Zählung.
 
-## P_0-Belegmatrix
+<span id="p-0-belegmatrix"></span>
+
+## P_0-Belegmatrix {#p_0-belegmatrix}
 
 Nur Parameter mit technischem Fund werden in `P_0` aufgenommen.
 Die Darstellung folgt jetzt der Manifest-Leselogik
@@ -73,6 +75,19 @@ Die technische Quelle bleibt der maßgebliche Programm-Pfad:
 PHP-Code, CLI-Pfad, Python-Runner, Shell-Skript oder GitHub-Workflow.
 
 {% include j01-123-p0-matrix.html lang="de" %}
+
+## Vorbefunde vor der Umstrukturierung
+
+Diese Punkte wurden vor dem späteren Schema-Umbau bereits festgehalten und
+bleiben für `P_0` maßgeblich:
+
+- `setup` trägt nach `J01-122` keinen technischen Parameter-Fund mehr; der
+  frühere Kandidat `LEBENSLAUF_PUBLIC_PROFILE` bleibt deshalb ausdrücklich
+  außerhalb von `P_0`.
+- `deploy` gehört wegen des technischen Funds im Workflow `preview-deploy`
+  in die Matrix; die `FTP_*`-Werte sind also kein bloßer Formalkandidat.
+- `APP_URL` bleibt nur ein formaler Kandidat, solange kein technischer Leser
+  im ausgewerteten Worktree belegt ist.
 
 ## Formale Kandidaten außerhalb von `P_0`
 
