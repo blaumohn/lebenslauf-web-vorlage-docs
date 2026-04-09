@@ -21,10 +21,12 @@ behavior do not drift apart again.
 ## Goal
 
 - The pipeline-spec-lib expands the target model with
-  `variable-groups`, `group-key`, `select`, and
-  `pipelines.common.<phase>` / `pipelines.<pipeline>.<phase>`.
+  `variable-groups` as a mapping, `phases.<phase>`, and
+  `pipelines.<pipeline>.<phase>`.
 - The library validates disjointness between shared and pipeline-specific
   parameters.
+- The library validates pipeline and phase names against the manifest; known
+  empty phases stay valid.
 - The README documents only the real group and phase model.
 
 ## Report
@@ -35,11 +37,14 @@ behavior do not drift apart again.
   dedicated subtask.
 - `PIPELINE` and `PHASE` stay internal to the library in the target state;
   there is no app-side `pipeline_phase` contract.
-- The intermediate idea of adding `policy` is discarded; the confirmed target
-  state stays a pure structure refactor without extra optionality semantics.
-- The library now treats missing phase rules as an empty phase set instead of
-  an error. A present file such as `dev-setup.yaml` no longer needs an
-  artificial manifest placeholder like `setup: []`.
+- The intermediate ideas of adding `policy`, object-list group references,
+  and `pipelines.common.<phase>` are discarded.
+- The confirmed target state is phase-centered: shared variables live in
+  `phases.<phase>`; real pipelines and their additions live in
+  `pipelines`.
+- A present, intentionally empty phase such as `dev/setup` no longer needs an
+  artificial manifest placeholder like `setup: []`. Typos in pipeline or
+  phase names still fail.
 
 ## Current status
 
@@ -47,19 +52,21 @@ behavior do not drift apart again.
 - The lib cut is publicly separated from the app-side reduction work.
 - Library code, README, and internal phase-key handling are already aligned in
   the library history.
-- Empty phases without group references are accepted again; the consumer path
+- Known empty phases without group references are accepted; the consumer path
   `config lint dev --phase setup` works without an app-side workaround.
+- The final schema reading is fixed: no pseudo-`common`, no `group-key`
+  object lists, and no `policy` semantics.
 - The remaining open part is mainly the cross-repo closeout evidence.
 
 ## Verification plan
 
 | Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| Expander reads target model | Library expands `variable-groups`, `group-key`, `select`, `common.<phase>`, and the pipeline delta correctly | `pipeline-config-spec-php` | in progress |
-| Disjointness validated | Overlap between `common` and the pipeline delta is rejected | `pipeline-config-spec-php`, tests | done |
-| README corrected | No `required`/`allowed` schema remains in lib docs; the README describes the reduced structure model without `policy` | `pipeline-config-spec-php/README*.md` | in progress |
+| Expander reads target model | Library expands `variable-groups.<group>`, `phases.<phase>`, `pipelines.<pipeline>.<phase>`, `group: "*"`, and `group: [KEY]` correctly | `pipeline-config-spec-php` | done |
+| Disjointness validated | Overlap between phase variables and pipeline addition is rejected | `pipeline-config-spec-php`, tests | done |
+| README corrected | No `required`/`allowed`, `policy`, `group-key`, or `common` schema remains in lib docs | `pipeline-config-spec-php/README.md` | done |
 | Internal phase keys explained | `PIPELINE` and `PHASE` are no longer described as an app-manifest area | lib docs, J01-105 | done |
-| Empty phases stay valid | Missing phase rules are treated as an empty set; `dev/setup` no longer needs a placeholder `setup: []` | lib tests, `config lint dev --phase setup` | done |
+| Empty phases stay valid | Known empty phases are valid; `dev/setup` needs no placeholder `setup: []`; unknown names fail | lib tests, main-repo lints | done |
 
 ## Open points
 

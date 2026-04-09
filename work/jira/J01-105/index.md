@@ -5,7 +5,7 @@ jira_key: J01-105
 permalink: /de/jira/issues/J01-105/
 ---
 
-**Stand:** 2026-04-03
+**Stand:** 2026-04-09
 
 {% include jira-state-head.html %}
 
@@ -13,25 +13,25 @@ permalink: /de/jira/issues/J01-105/
 
 Kanonischer öffentlicher Arbeitsstand für den Jira-Task `J01-105`.
 Das Ziel ist, das pipeline-config-Manifest auf ein übersichtlicheres
-Strukturmodell mit `variable-groups` und Gruppen-Referenzen je
-Pipeline/Phase umzustellen, so dass Phasengrenzen eindeutig und prüfbar
-sind, ohne zusätzliche `required`-/`policy`-Semantik einzuführen.
+Strukturmodell mit `variable-groups`, expliziten `phases` und echten
+`pipelines` umzustellen, so dass Phasengrenzen eindeutig und prüfbar sind,
+ohne zusätzliche `required`-/`policy`-Semantik einzuführen.
 
 ## Ziel
 
-- `variable-groups` ersetzt das frühere Mapping `variables` als
-  kanonischen Katalog für Gruppen, Variablen, `meta` und `sources`.
-- `pipelines.common.<phase>` und `pipelines.<pipeline>.<phase>` bestehen
-  aus Listen von Gruppen-Referenzen mit `group-key`.
-- Eine Gruppen-Referenz arbeitet entweder mit `select: "*"` für die ganze
-  Gruppe oder mit `variables` für eine explizite Teilmenge.
+- `variable-groups` ist der kanonische Katalog für Gruppen, Variablen,
+  `meta` und `sources`.
+- `phases.<phase>` enthält den gemeinsamen Variablenvertrag der Phase.
+- `pipelines.<pipeline>.<phase>` ergänzt nur die echte Pipeline-Differenz.
+- Eine Gruppen-Referenz arbeitet entweder mit `gruppe: "*"` für die ganze
+  Gruppe oder mit `gruppe: [KEY, ...]` für eine explizite Teilmenge.
 - Code-Defaults (`get('KEY', 'default')`) werden entfernt, damit der
   Parameter-Vektor-Ansatz echte Testergebnisse liefert.
 - `PIPELINE` und `PHASE` werden nicht als Manifest-Bereich im App-Repo geführt,
   sondern lib-intern ergänzt.
 - Die pipeline-spec-lib liest Gruppen- und Teilmengen-Referenzen,
-  expandiert sie und validiert dabei die Disjunktheit zwischen `common`
-  und konkreter Pipeline.
+  expandiert sie und validiert dabei Pipeline-Namen, Phasen-Namen und die
+  Disjunktheit zwischen Phase und konkreter Pipeline.
 - Fachliche Abhängigkeiten zwischen Variablen bleiben in `meta.notes`
   sichtbar; ihr früherer Verlust im J01-105-Verlauf gilt als Regression
   und wird nachgezogen.
@@ -61,7 +61,8 @@ sind, ohne zusätzliche `required`-/`policy`-Semantik einzuführen.
 - `PIPELINE` und `PHASE` werden im Zielstand lib-intern behandelt; ein
   App-Bereich `pipeline_phase` gehört nicht mehr zum Manifest.
 - Die Lib-README wird im selben Vorgang auf das echte Strukturmodell mit
-  `variable-groups`, `group-key` und `select` nachgezogen.
+  `variable-groups`, `phases`, `pipelines` und knappen Gruppen-Mappings
+  nachgezogen.
 - Frühere Abhängigkeitshinweise in `meta.notes` werden an den betroffenen
   Variablen wieder ergänzt; ihre Ausdünnung im bisherigen J01-105-Verlauf
   war kein Zielzustand.
@@ -84,15 +85,15 @@ sind, ohne zusätzliche `required`-/`policy`-Semantik einzuführen.
 ## Geplantes Zielmodell
 
 - Eine Manifest-Datei im App-Repo bleibt bestehen.
-- `variable-groups` definiert Gruppen, Variablen, `sources` und `meta`.
+- `variable-groups` definiert als Mapping Gruppen, Variablen, `sources`
+  und `meta`.
 - Jeder Variablenschlüssel erhält ein `meta`-Objekt.
-- `pipelines.common.<phase>` enthält die phasenweite Schnittmenge.
+- `phases.<phase>` enthält den gemeinsamen Variablenvertrag einer Phase.
 - `pipelines.<pipeline>.<phase>` ergänzt nur die echte Pipeline-Differenz.
-- Phasenlisten bestehen aus Gruppen-Referenzen mit `group-key`.
-- Eine Gruppen-Referenz nutzt `select: "*"` für die ganze Gruppe oder
-  `variables` für eine explizite Teilmenge.
-- Nach der Expansion darf es keine Schnittmenge zwischen `common`
-  und konkreter Pipeline geben.
+- Gruppen-Referenzen sind knappe Mappings: `gruppe: "*"` oder
+  `gruppe: [KEY, ...]`.
+- Nach der Expansion darf es keine Schnittmenge zwischen gemeinsamer
+  Phasenregel und konkreter Pipeline-Ergänzung geben.
 - `PIPELINE` und `PHASE` werden beim Kompilieren lib-intern ergänzt und
   tauchen deshalb nicht mehr im App-Manifest auf.
 - Ein eigener `pipelines.global`-Layer gehört nach späterem Lib-Beschluss
@@ -210,20 +211,20 @@ Variableneintrag sichtbar bleiben sollen; ihr früherer Verlust in
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
 | Herleitung dokumentiert | Quellanalyse, Matrix der technisch gefundenen `P_0`-Parameter und `P_0 -> ... -> P_n` sind im Vorgang nachvollziehbar | Jira-Doku DE/EN | in Arbeit |
-| Zielmodell dokumentiert | `variable-groups`, `group-key`, `select`, `common` und Pipeline-Differenz sind beschrieben; früherer `global`-Entwurf ist als Drift bereinigt | Jira-Doku DE/EN | in Arbeit |
+| Zielmodell dokumentiert | `variable-groups`, `phases`, echte `pipelines`, knappe Gruppen-Mappings und Pipeline-Differenz sind beschrieben; frühere Entwürfe mit `global`, `common`, `group-key`, `policy` sind bereinigt | Jira-Doku DE/EN | erledigt |
 | lib-interne Pipeline-Phase erklärt | App-Manifest führt keinen Bereich `pipeline_phase`; `PIPELINE` und `PHASE` kommen aus der Lib | Jira-Doku DE/EN | erledigt |
 | Bereichs-Syntax erklärt | ganze Bereiche und Teilbereiche sind als geplante Syntax beschrieben | Jira-Doku DE/EN | erledigt |
-| Disjunktheitsregel erklärt | keine Schnittmenge zwischen `common` und konkreter Pipeline | Jira-Doku DE/EN | erledigt |
+| Disjunktheitsregel erklärt | keine Schnittmenge zwischen gemeinsamer Phase und konkreter Pipeline | Jira-Doku DE/EN | erledigt |
 | Code-Defaults entfernt | Kein J01-105-Fall nutzt mehr inhaltliche Fallback-Defaults; positiver Zwischenstand ist belegt, Abschlussnachweis noch offen | Quellanalyse Quell-Repos, `tagebuch` | Zwischenstand belegt |
 | `LEBENSLAUF_PUBLIC_PROFILE` korrigiert | Nicht mehr in `setup` oder `runtime`, nur noch im Build-Pfad | config.manifest.yaml | offen |
-| Lib-README korrigiert | Kein altes `required`/`allowed`-Schema mehr in der Lib-Doku; README nutzt das neue Strukturmodell | `pipeline-config-spec-php/README*.md` | in Arbeit |
+| Lib-README korrigiert | Kein altes `required`/`allowed`-, `policy`-, `group-key`- oder `common`-Schema mehr in der Lib-Doku; README nutzt das neue Strukturmodell | `pipeline-config-spec-php/README.md` | erledigt |
 | Manifest vereinfacht | Zielmodell im Hauptrepo-Arbeitsbranch umgesetzt | config.manifest.yaml | erledigt im Arbeitsbranch |
 | `P_1` dokumentiert | Erster Reduktionsschritt (`MAIL_STDOUT` in `common`, `SMTP_*` nur noch in `preview`, JSON-Rest entfernt) ist in J01-123 und Elternseite nachvollziehbar | Jira-Doku DE/EN, App-Repo | erledigt |
 | `P_2` dokumentiert | `APP_URL` ist mangels technischem Leser aus dem Build-Vertrag entfernt und in J01-123 sowie Elternseite nachgezogen | Jira-Doku DE/EN, App-Repo | erledigt |
 | Smoke-Regel geschärft | Für `P_j` ist `tests:smoke` der bevorzugte Funktionsnachweis; Ausnahmen brauchen einen belegten Ersatzlauf | Jira-Doku DE/EN, `tests/py/smoke.py` | erledigt |
 | SMTP-Absender bereinigt | Absender läuft nur noch über `SMTP_FROM_EMAIL` und `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` bleibt separat | config.manifest.yaml, MailService.php | erledigt |
 | `meta.notes` wieder geschärft | Fachliche Abhängigkeiten stehen wieder an den betroffenen Variablen; die frühere Ausdünnung ist korrigiert | config.manifest.yaml, Jira-Doku | in Arbeit |
-| pipeline-spec-lib angepasst | Expander, `group-key`-/`select`-Syntax und lib-interne Phasenschlüssel sind in der Lib-Historie umgesetzt | pipeline-config-spec-php | in Arbeit |
+| pipeline-spec-lib angepasst | Expander für `phases`, `pipelines`, Mapping-Gruppenregeln und lib-interne Phasenschlüssel sind in der Lib-Historie umgesetzt | pipeline-config-spec-php | erledigt |
 | Tests grün | Es gibt einen belegten positiven Zwischenstand für Lib-Tests und phasenweises `config lint`; der Gesamtabschluss bleibt offen | Test-Lauf, `tagebuch` | Zwischenstand belegt |
 | Kein Blocker mehr für J01-9 | J01-105 als erledigt, J01-9 entsperrt | Jira | offen |
 

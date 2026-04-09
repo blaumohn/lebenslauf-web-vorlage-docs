@@ -21,10 +21,12 @@ Bibliotheksvertrag nicht wieder vermischt werden.
 ## Ziel
 
 - Die pipeline-spec-lib expandiert das Zielmodell mit
-  `variable-groups`, `group-key`, `select` und
-  `pipelines.common.<phase>` / `pipelines.<pipeline>.<phase>`.
+  `variable-groups` als Mapping, `phases.<phase>` und
+  `pipelines.<pipeline>.<phase>`.
 - Die Lib validiert die Disjunktheit zwischen gemeinsamen und
   pipelinespezifischen Parametern.
+- Die Lib validiert Pipeline- und Phasennamen gegen das Manifest; leere
+  bekannte Phasen bleiben erlaubt.
 - Die README beschreibt nur noch das echte Gruppen- und Phasenmodell.
 
 ## Bericht
@@ -35,12 +37,14 @@ Bibliotheksvertrag nicht wieder vermischt werden.
   eigenen Untervorgang.
 - `PIPELINE` und `PHASE` bleiben im Zielzustand lib-intern; ein
   App-Bereich `pipeline_phase` gehört nicht mehr zum Vertrag.
-- Der zwischenzeitlich erwogene Ausbau mit `policy` wird verworfen; der
-  bestätigte Zielstand bleibt ein reiner Strukturumbau ohne zusätzliche
-  Optionalitätssemantik.
-- Die Lib behandelt fehlende Phasenregeln jetzt als leere Phasenmenge statt
-  als Fehler. Eine vorhandene Datei wie `dev-setup.yaml` braucht damit
-  keinen künstlichen Manifest-Platzhalter `setup: []`.
+- Die zwischenzeitlich erwogenen Ausbauten mit `policy`, Objektlisten für
+  Gruppenreferenzen und `pipelines.common.<phase>` werden verworfen.
+- Der bestätigte Zielstand ist phase-zentriert: Gemeinsame Variablen stehen
+  direkt unter `phases.<phase>`; echte Pipelines und ihre Ergänzungen stehen
+  unter `pipelines`.
+- Eine vorhandene, fachlich leere Phase wie `dev/setup` braucht keinen
+  künstlichen Manifest-Platzhalter `setup: []`. Tippfehler in Pipeline oder
+  Phase bleiben trotzdem Fehler.
 
 ## Aktueller Stand
 
@@ -48,20 +52,22 @@ Bibliotheksvertrag nicht wieder vermischt werden.
 - Der Lib-Schnitt ist öffentlich von der App-seitigen Reduktion getrennt.
 - Lib-Code, README und die lib-internen Phasenschlüssel sind in der
   Lib-Historie nachgezogen.
-- Leere Phasen ohne Gruppenreferenzen werden wieder akzeptiert; der
+- Leere bekannte Phasen ohne Gruppenreferenzen werden akzeptiert; der
   Verbraucherpfad `config lint dev --phase setup` läuft ohne
   App-Workaround.
+- Die endgültige Schema-Lesart ist festgezogen: kein Pseudo-`common`, keine
+  `group-key`-Objektlisten und keine `policy`-Semantik.
 - Offener Rest ist vor allem der repo-übergreifende Abschlussnachweis.
 
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Expander liest Zielmodell | Lib expandiert `variable-groups`, `group-key`, `select`, `common.<phase>` und Pipeline-Differenz korrekt | `pipeline-config-spec-php` | in Arbeit |
-| Disjunktheit validiert | Überschneidungen zwischen `common` und Pipeline-Differenz werden abgewiesen | `pipeline-config-spec-php`, Tests | erledigt |
-| README korrigiert | Kein `required`/`allowed`-Schema mehr in der Lib-Doku; README beschreibt das reduzierte Strukturmodell ohne `policy` | `pipeline-config-spec-php/README*.md` | in Arbeit |
+| Expander liest Zielmodell | Lib expandiert `variable-groups.<gruppe>`, `phases.<phase>`, `pipelines.<pipeline>.<phase>`, `gruppe: "*"` und `gruppe: [KEY]` korrekt | `pipeline-config-spec-php` | erledigt |
+| Disjunktheit validiert | Überschneidungen zwischen Phase und Pipeline-Ergänzung werden abgewiesen | `pipeline-config-spec-php`, Tests | erledigt |
+| README korrigiert | Kein `required`/`allowed`-, `policy`-, `group-key`- oder `common`-Schema mehr in der Lib-Doku | `pipeline-config-spec-php/README.md` | erledigt |
 | Lib-interne Phasenschlüssel erklärt | `PIPELINE` und `PHASE` werden nicht mehr als App-Manifest-Bereich beschrieben | Lib-Doku, J01-105 | erledigt |
-| Leere Phasen bleiben gültig | Fehlende Phasenregeln werden als leere Menge behandelt; `dev/setup` braucht keinen Platzhalter `setup: []` | Lib-Tests, `config lint dev --phase setup` | erledigt |
+| Leere Phasen bleiben gültig | Bekannte leere Phasen sind gültig; `dev/setup` braucht keinen Platzhalter `setup: []`; unbekannte Namen scheitern | Lib-Tests, Hauptrepo-Lints | erledigt |
 
 ## Offene Punkte
 
