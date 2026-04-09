@@ -20,26 +20,33 @@ the wider manifest thinning can be trusted.
 
 ## Goal
 
-- `setup` must no longer depend on `LEBENSLAUF_PUBLIC_PROFILE`.
-- Sample content is provided only through one fixed source and one fixed
-  target.
+- `setup --copy-sample-content` uses the pipeline profile
+  `LEBENSLAUF_PUBLIC_PROFILE` again, but only when that concrete pipeline
+  exposes the key for its `setup` phase.
+- Sample content is provided from one fixed source and copied into the
+  pipeline's configured public profile.
 - Existing user data must not be overwritten silently by the setup path.
 
 ## Report
 
 - Initial finding: the former seed path coupled sample content to the build
   profile, which made the setup semantics incoherent.
-- Target state from the issue derivation:
+- Obsolete intermediate state from the earlier issue derivation:
   `--copy-sample-content` instead of `--create-demo-content`,
   fixed source `src/resources/fixtures/lebenslauf/daten-gueltig.yaml`,
   fixed target `daten-sample.yaml`,
   explicit failure when the target already exists.
-- Implemented in the app worktree `feature/j01-105-simplify-manifest`:
+- Initially implemented in the app worktree
+  `feature/j01-105-simplify-manifest`:
   `SetupCommand` now delegates sample seeding to `SampleContentCopier`, which
   only uses the fixed fixture and the fixed target path.
 - Evidence added: PHPUnit covers the successful copy path and the failure path
   for an existing target; the smoke test uses
   `setup --copy-sample-content`.
+- Correction after the smoke-test finding: the fixed target
+  `daten-sample.yaml` produced only a private `sample` profile; `/cv` stayed
+  404. The seed target name is now derived from the explicitly configured
+  pipeline-spec value `LEBENSLAUF_PUBLIC_PROFILE`.
 
 ## Current status
 
@@ -54,9 +61,9 @@ the wider manifest thinning can be trusted.
 
 | Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| Setup decoupled | `LEBENSLAUF_PUBLIC_PROFILE` no longer appears in the seed path | `src/cli/php/Command/SetupCommand.php`, `src/cli/php/Setup/SampleContentCopier.php` | done |
+| Setup profile explicit | `LEBENSLAUF_PUBLIC_PROFILE` is allowed only for concrete setup pipelines and must be set in the spec | `src/resources/config/config.manifest.yaml`, `src/resources/config/dev-setup.yaml` | corrected |
 | Fixed sample source | Seed reads `daten-gueltig.yaml` as a fixed fixture | `src/cli/php/Setup/SampleContentCopier.php` | done |
-| Fixed target name | Seed writes to `daten-sample.yaml` | `src/cli/php/Setup/SampleContentCopier.php` | done |
+| Profile-based target name | Seed writes to `daten-<LEBENSLAUF_PUBLIC_PROFILE>.yaml` | `src/cli/php/Setup/SampleContentCopier.php` | corrected |
 | No silent overwrite | Existing target triggers a clear error path | `tests/php/SampleContentCopierTest.php` | done |
 | CLI and docs mirrored | Flag and seed path are consistent in README, environment docs, and smoke test | `README.md`, `README.en.md`, `docs/ENVIRONMENTS.md`, `tests/py/smoke.py` | done |
 
