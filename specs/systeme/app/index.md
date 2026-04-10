@@ -69,6 +69,7 @@ trägt die sichtbaren Nutzerfunktionen.
 ## Quellen
 
 - `lebenslauf-web-vorlage/README.md`
-- `lebenslauf-web-vorlage/docs/ENVIRONMENTS.md`
+- `lebenslauf-web-vorlage/README.en.md`
+- `lebenslauf-web-vorlage/src/resources/config/config.manifest.yaml`
 - [CLI / Build]({{ "/de/areas/cli-build/" | relative_url }})
 - [HTTP-Runtime]({{ "/de/areas/http-runtime/" | relative_url }})

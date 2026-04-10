@@ -69,6 +69,7 @@ the visible user behaviour.
 ## Sources
 
 - `lebenslauf-web-vorlage/README.md`
-- `lebenslauf-web-vorlage/docs/ENVIRONMENTS.md`
+- `lebenslauf-web-vorlage/README.en.md`
+- `lebenslauf-web-vorlage/src/resources/config/config.manifest.yaml`
 - [CLI / Build]({{ "/en/areas/cli-build/" | relative_url }})
 - [HTTP runtime]({{ "/en/areas/http-runtime/" | relative_url }})

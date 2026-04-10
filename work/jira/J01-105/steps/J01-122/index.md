@@ -54,8 +54,8 @@ Manifest-Umbau, weil hier zuerst ein Modellfehler bereinigt werden muss.
 - Der fachliche Zielzustand ist gegen `J01-105` abgegrenzt und öffentlich
   referenzierbar.
 - Code- und Testnachweise sind im App-Worktree nachgezogen.
-- Öffentliche Repo-Doku spiegelt den neuen Seed-Pfad in README und
-  Umgebungsdoku.
+- Öffentliche Repo-Doku spiegelt den neuen Seed-Pfad im README und im
+  Manifest. Die frühere Umgebungsdoku ist als eigener Doku-Ort entfallen.
 
 ## Überprüfungsplan
 
@@ -65,7 +65,7 @@ Manifest-Umbau, weil hier zuerst ein Modellfehler bereinigt werden muss.
 | Feste Sample-Quelle | Seed liest `daten-gueltig.yaml` als feste Fixture | `src/cli/php/Setup/SampleContentCopier.php` | erledigt |
 | Profilbasierter Zielname | Seed schreibt nach `daten-<LEBENSLAUF_PUBLIC_PROFILE>.yaml` | `src/cli/php/Setup/SampleContentCopier.php` | korrigiert |
 | Kein stilles Überschreiben | Bereits vorhandenes Ziel erzeugt einen klaren Fehlerpfad | `tests/php/SampleContentCopierTest.php` | erledigt |
-| CLI- und Doku-Spiegel | Schalter und Seed-Pfad sind in README, Umgebungsdoku und Smoke-Test konsistent | `README.md`, `README.en.md`, `docs/ENVIRONMENTS.md`, `tests/py/smoke.py` | erledigt |
+| CLI- und Doku-Spiegel | Schalter und Seed-Pfad sind in README, Manifest und Smoke-Test konsistent | `README.md`, `README.en.md`, `src/resources/config/config.manifest.yaml`, `tests/py/smoke.py` | erledigt |
 
 ## Offene Punkte
 

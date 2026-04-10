@@ -54,8 +54,8 @@ the wider manifest thinning can be trusted.
 - The domain target state is separated from the rest of `J01-105` and is
   publicly referenceable.
 - Code and test evidence have been added in the app worktree.
-- Public repo docs reflect the new seed path in the README and environment
-  docs.
+- Public repo docs reflect the new seed path in the README and manifest. The
+  former environment docs no longer exist as a separate doc location.
 
 ## Verification plan
 
@@ -65,7 +65,7 @@ the wider manifest thinning can be trusted.
 | Fixed sample source | Seed reads `daten-gueltig.yaml` as a fixed fixture | `src/cli/php/Setup/SampleContentCopier.php` | done |
 | Profile-based target name | Seed writes to `daten-<LEBENSLAUF_PUBLIC_PROFILE>.yaml` | `src/cli/php/Setup/SampleContentCopier.php` | corrected |
 | No silent overwrite | Existing target triggers a clear error path | `tests/php/SampleContentCopierTest.php` | done |
-| CLI and docs mirrored | Flag and seed path are consistent in README, environment docs, and smoke test | `README.md`, `README.en.md`, `docs/ENVIRONMENTS.md`, `tests/py/smoke.py` | done |
+| CLI and docs mirrored | Flag and seed path are consistent in README, manifest, and smoke test | `README.md`, `README.en.md`, `src/resources/config/config.manifest.yaml`, `tests/py/smoke.py` | done |
 
 ## Open points
 

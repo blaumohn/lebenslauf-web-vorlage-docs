@@ -75,6 +75,7 @@ Konfigurationszustände entlang von Pipelines und Phasen.
 ## Quellen
 
 - `pipeline-config-spec-php/README.de.md`
-- `lebenslauf-web-vorlage/docs/ENVIRONMENTS.md`
+- `pipeline-config-spec-php/README.md`
+- `lebenslauf-web-vorlage/src/resources/config/config.manifest.yaml`
 - [CLI / Build]({{ "/de/areas/cli-build/" | relative_url }})
 - [J01-105]({{ "/de/jira/issues/J01-105/" | relative_url }})

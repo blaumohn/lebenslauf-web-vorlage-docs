@@ -56,6 +56,8 @@ behavior do not drift apart again.
   `config lint dev --phase setup` works without an app-side workaround.
 - The final schema reading is fixed: no pseudo-`common`, no `group-key`
   object lists, and no `policy` semantics.
+- The German library README is aligned with the same schema reading and no
+  longer documents `group-key`/`select` object lists.
 - The remaining open part is mainly the cross-repo closeout evidence.
 
 ## Verification plan
@@ -64,7 +66,7 @@ behavior do not drift apart again.
 | --- | --- | --- | --- |
 | Expander reads target model | Library expands `variable-groups.<group>`, `phases.<phase>`, `pipelines.<pipeline>.<phase>`, `group: "*"`, and `group: [KEY]` correctly | `pipeline-config-spec-php` | done |
 | Disjointness validated | Overlap between phase variables and pipeline addition is rejected | `pipeline-config-spec-php`, tests | done |
-| README corrected | No `required`/`allowed`, `policy`, `group-key`, or `common` schema remains in lib docs | `pipeline-config-spec-php/README.md` | done |
+| README corrected | No `required`/`allowed`, `policy`, `group-key`, or `common` schema remains in lib docs | `pipeline-config-spec-php/README.md`, `pipeline-config-spec-php/README.de.md` | done |
 | Internal phase keys explained | `PIPELINE` and `PHASE` are no longer described as an app-manifest area | lib docs, J01-105 | done |
 | Empty phases stay valid | Known empty phases are valid; `dev/setup` needs no placeholder `setup: []`; unknown names fail | lib tests, main-repo lints | done |
 

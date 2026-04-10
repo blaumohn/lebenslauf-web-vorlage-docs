@@ -43,7 +43,7 @@ pipelines:
                 formal_sources:
                   - src/resources/config/dev-python.yaml
                   - README.md
-                  - docs/ENVIRONMENTS.md
+                  - src/resources/config/config.manifest.yaml
                 dependencies:
                   de: "Wirkt mit <code>PYTHON_PATHS</code>; nur in der Python-Phase relevant."
                   en: "Works with <code>PYTHON_PATHS</code>; relevant only in the Python phase."
@@ -60,7 +60,7 @@ pipelines:
                 formal_sources:
                   - src/resources/config/dev-python.yaml
                   - README.md
-                  - docs/ENVIRONMENTS.md
+                  - src/resources/config/config.manifest.yaml
                 dependencies:
                   de: "Optionale Ergänzung zu <code>PYTHON_CMD</code>; bleibt an Runner-Aufruf gekoppelt."
                   en: "Optional addition to <code>PYTHON_CMD</code>; remains coupled to the runner call."

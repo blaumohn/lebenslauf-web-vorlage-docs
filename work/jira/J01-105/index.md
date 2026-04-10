@@ -66,6 +66,10 @@ ohne zusätzliche `required`-/`policy`-Semantik einzuführen.
 - Frühere Abhängigkeitshinweise in `meta.notes` werden an den betroffenen
   Variablen wieder ergänzt; ihre Ausdünnung im bisherigen J01-105-Verlauf
   war kein Zielzustand.
+- Die App-Umgebungsdoku `docs/ENVIRONMENTS.md` ist als duplizierender
+  Zwischenort entfallen; README und Manifest tragen nur noch lokale
+  App-Hinweise, während Pipeline-Spec-Regeln auf die Spec- und Lib-Doku
+  verweisen.
 
 ## Vorhaben als Schritte
 
@@ -217,13 +221,14 @@ Variableneintrag sichtbar bleiben sollen; ihr früherer Verlust in
 | Disjunktheitsregel erklärt | keine Schnittmenge zwischen gemeinsamer Phase und konkreter Pipeline | Jira-Doku DE/EN | erledigt |
 | Code-Defaults entfernt | Kein J01-105-Fall nutzt mehr inhaltliche Fallback-Defaults; positiver Zwischenstand ist belegt, Abschlussnachweis noch offen | Quellanalyse Quell-Repos, `tagebuch` | Zwischenstand belegt |
 | `LEBENSLAUF_PUBLIC_PROFILE` korrigiert | Nicht mehr in `setup` oder `runtime`, nur noch im Build-Pfad | config.manifest.yaml | offen |
-| Lib-README korrigiert | Kein altes `required`/`allowed`-, `policy`-, `group-key`- oder `common`-Schema mehr in der Lib-Doku; README nutzt das neue Strukturmodell | `pipeline-config-spec-php/README.md` | erledigt |
+| Lib-README korrigiert | Kein altes `required`/`allowed`-, `policy`-, `group-key`- oder `common`-Schema mehr in der Lib-Doku; README nutzt das neue Strukturmodell | `pipeline-config-spec-php/README.md`, `pipeline-config-spec-php/README.de.md` | erledigt |
 | Manifest vereinfacht | Zielmodell im Hauptrepo-Arbeitsbranch umgesetzt | config.manifest.yaml | erledigt im Arbeitsbranch |
 | `P_1` dokumentiert | Erster Reduktionsschritt (`MAIL_STDOUT` in `common`, `SMTP_*` nur noch in `preview`, JSON-Rest entfernt) ist in J01-123 und Elternseite nachvollziehbar | Jira-Doku DE/EN, App-Repo | erledigt |
 | `P_2` dokumentiert | `APP_URL` ist mangels technischem Leser aus dem Build-Vertrag entfernt und in J01-123 sowie Elternseite nachgezogen | Jira-Doku DE/EN, App-Repo | erledigt |
 | Smoke-Regel geschärft | Für `P_j` ist `tests:smoke` der bevorzugte Funktionsnachweis; Ausnahmen brauchen einen belegten Ersatzlauf | Jira-Doku DE/EN, `tests/py/smoke.py` | erledigt |
 | SMTP-Absender bereinigt | Absender läuft nur noch über `SMTP_FROM_EMAIL` und `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` bleibt separat | config.manifest.yaml, MailService.php | erledigt |
 | `meta.notes` wieder geschärft | Fachliche Abhängigkeiten stehen wieder an den betroffenen Variablen; die frühere Ausdünnung ist korrigiert | config.manifest.yaml, Jira-Doku | in Arbeit |
+| Umgebungsdoku dedupliziert | `docs/ENVIRONMENTS.md` ist entfernt; README, Manifest und Pipeline-Spec-Doku tragen die verbliebenen Zuständigkeiten ohne Regelduplikat | App-Repo, öffentliche Spec-Doku | erledigt |
 | pipeline-spec-lib angepasst | Expander für `phases`, `pipelines`, Mapping-Gruppenregeln und lib-interne Phasenschlüssel sind in der Lib-Historie umgesetzt | pipeline-config-spec-php | erledigt |
 | Tests grün | Es gibt einen belegten positiven Zwischenstand für Lib-Tests und phasenweises `config lint`; der Gesamtabschluss bleibt offen | Test-Lauf, `tagebuch` | Zwischenstand belegt |
 | Kein Blocker mehr für J01-9 | J01-105 als erledigt, J01-9 entsperrt | Jira | offen |

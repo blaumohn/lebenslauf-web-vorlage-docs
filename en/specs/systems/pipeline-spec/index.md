@@ -74,7 +74,8 @@ along pipelines and phases.
 
 ## Sources
 
+- `pipeline-config-spec-php/README.md`
 - `pipeline-config-spec-php/README.de.md`
-- `lebenslauf-web-vorlage/docs/ENVIRONMENTS.md`
+- `lebenslauf-web-vorlage/src/resources/config/config.manifest.yaml`
 - [CLI / Build]({{ "/en/areas/cli-build/" | relative_url }})
 - [J01-105]({{ "/en/jira/issues/J01-105/" | relative_url }})

@@ -5,7 +5,7 @@ jira_key: J01-103
 permalink: /de/jira/issues/J01-103/
 ---
 
-**Stand:** 2026-03-18
+**Stand:** 2026-04-10
 
 {% include jira-state-head.html %}
 
@@ -34,6 +34,9 @@ Die öffentliche Zielerfüllung aus `J01-91` belastbar nachziehen:
 - Der eigentliche Vollabgleich und die vollständige Nachschärfung des
   öffentlichen Zielbilds stehen noch aus und werden nicht mehr in den
   laufenden Sprint gedrückt.
+- Der Restpfad `docs/ENVIRONMENTS.md` ist im Zuge von `J01-105` als
+  duplizierender App-Doku-Ort entfernt; die verbliebenen Hinweise liegen in
+  README, Manifest und Pipeline-Spec-Doku.
 
 ## Überprüfungsplan
 
@@ -42,7 +45,7 @@ Die öffentliche Zielerfüllung aus `J01-91` belastbar nachziehen:
 | Zielteile aus `J01-91` sind explizit bewertet | Orientierung, Migration, Transparenz, Struktur und Nachweis sind als getrennte Zielteile sichtbar | [J01-91]({{ "/de/jira/issues/J01-91/" | relative_url }}) | teilweise |
 | `archive-topics` trennt Entscheidung und Ausführung | Die Seite mischt nicht mehr Soll und Ist in einem Einzelstatus | [Archiv-Themen]({{ "/de/jira/issues/J01-91/archive-topics/" | relative_url }}) | teilweise |
 | Offene Zielerfüllung ist nicht in `J01-100` versteckt | `J01-103` ist als eigener Folgeort aus `J01-91` verlinkt und beschrieben | diese Seite + [J01-91]({{ "/de/jira/issues/J01-91/" | relative_url }}) | teilweise |
-| Restpfad für Konfig-/Preview-Doku ist benannt | Punkte wie `docs/ENVIRONMENTS.md` werden als Beleg- oder Restpunkte der größeren Zielarbeit eingeordnet | diese Seite + Folgearbeit in `J01-103` | offen |
+| Restpfad für Konfig-/Preview-Doku ist benannt | Der frühere Punkt `docs/ENVIRONMENTS.md` ist nicht mehr als eigener Doku-Ort nötig und über `J01-105` bereinigt | diese Seite + [J01-105]({{ "/de/jira/issues/J01-105/" | relative_url }}) | erledigt |
 | Öffentliche Arbeitsdoku ist aus Jira erreichbar | Jira hält den kanonischen Link auf `/de/jira/issues/J01-103/` | Jira-Remote-Link für `J01-103` | erledigt |
 
 ## Abschlussbild oder offene Punkte

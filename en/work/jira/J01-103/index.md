@@ -1,63 +1,66 @@
 ---
 layout: page
-title: "J01-103: Offene Zielerfüllung aus J01-91 für Public-Doku und Übernahmestatus nachziehen"
+title: "J01-103: Carry over open target fulfilment from J01-91 into public docs and adoption status"
 jira_key: J01-103
 permalink: /en/jira/issues/J01-103/
 ---
 
-**Stand:** 2026-03-18
+**Status:** 2026-04-10
 
 {% include jira-state-head.html %}
 
 {% include jira-work-context.html %}
 
-Kanonischer öffentlicher Arbeitsstand für `J01-103`.
-Der Vorgang zieht die offen gebliebene Zielerfüllung aus `J01-91` nach, ohne
-den bereits geschlossenen Strukturteil von `J01-91` rückwirkend umzudefinieren.
+Canonical public work status for `J01-103`.
+This issue carries over the open target fulfilment from `J01-91` without
+retroactively redefining the already closed structural part of `J01-91`.
 
-## Ziel
+## Goal
 
-Die öffentliche Zielerfüllung aus `J01-91` belastbar nachziehen:
+Carry over the public target fulfilment from `J01-91` in a verifiable way:
 
-- Orientierung für HR/Dev als überprüfbares Zielbild ausformulieren
-- je größerem Alt-Thema Entscheidung und Umsetzungsstand sichtbar machen
-- belegbar machen, was aus Altquellen wirklich übernommen wurde und was nur
-  Zielort oder Folgearbeit bleibt
+- formulate the HR/dev orientation as a verifiable target picture
+- make the decision and implementation status visible for each larger legacy
+  topic
+- make it evident what was really adopted from legacy sources and what remains
+  only a target location or follow-up work
 
-## Aktueller Stand
+## Current status
 
-- `J01-91` bleibt als Struktur- und Entscheidungs-Snapshot bestehen.
-- Die neue Fassung von `J01-91` trennt jetzt zwischen erreichtem Strukturteil
-  und offener Zielerfüllung.
-- `archive-topics` trennt jetzt öffentlich zwischen
-  `Übernahmeentscheidung` und `Umsetzungsstand`.
-- Der eigentliche Vollabgleich und die vollständige Nachschärfung des
-  öffentlichen Zielbilds stehen noch aus und werden nicht mehr in den
-  laufenden Sprint gedrückt.
+- `J01-91` remains a structural and decision snapshot.
+- The new version of `J01-91` now separates the achieved structural part from
+  open target fulfilment.
+- `archive-topics` now publicly separates adoption decision and implementation
+  status.
+- The full reconciliation and complete sharpening of the public target picture
+  are still open and are no longer forced into the running sprint.
+- The leftover path `docs/ENVIRONMENTS.md` was removed through `J01-105` as a
+  duplicate app-doc location; the remaining hints live in README, manifest,
+  and pipeline-spec docs.
 
-## Überprüfungsplan
+## Verification plan
 
-| Prüfpunkt | Erwartung | Nachweis / Ort | Status |
+| Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| Zielteile aus `J01-91` sind explizit bewertet | Orientierung, Migration, Transparenz, Struktur und Nachweis sind als getrennte Zielteile sichtbar | [J01-91]({{ "/en/jira/issues/J01-91/" | relative_url }}) | teilweise |
-| `archive-topics` trennt Entscheidung und Ausführung | Die Seite mischt nicht mehr Soll und Ist in einem Einzelstatus | [Archiv-Themen]({{ "/en/jira/issues/J01-91/archive-topics/" | relative_url }}) | teilweise |
-| Offene Zielerfüllung ist nicht in `J01-100` versteckt | `J01-103` ist als eigener Folgeort aus `J01-91` verlinkt und beschrieben | diese Seite + [J01-91]({{ "/en/jira/issues/J01-91/" | relative_url }}) | teilweise |
-| Restpfad für Konfig-/Preview-Doku ist benannt | Punkte wie `docs/ENVIRONMENTS.md` werden als Beleg- oder Restpunkte der größeren Zielarbeit eingeordnet | diese Seite + Folgearbeit in `J01-103` | offen |
-| Öffentliche Arbeitsdoku ist aus Jira erreichbar | Jira hält den kanonischen Link auf `/en/jira/issues/J01-103/` | Jira-Remote-Link für `J01-103` | erledigt |
+| Target parts from `J01-91` are explicitly evaluated | Orientation, migration, transparency, structure, and evidence are visible as separate target parts | [J01-91]({{ "/en/jira/issues/J01-91/" | relative_url }}) | partial |
+| `archive-topics` separates decision and execution | The page no longer mixes target and current state in one single status | [Archive topics]({{ "/en/jira/issues/J01-91/archive-topics/" | relative_url }}) | partial |
+| Open target fulfilment is not hidden in `J01-100` | `J01-103` is linked and described as a separate follow-up location from `J01-91` | this page + [J01-91]({{ "/en/jira/issues/J01-91/" | relative_url }}) | partial |
+| Config/preview-doc leftover path is named | The former `docs/ENVIRONMENTS.md` point is no longer needed as a separate doc location and was cleaned up through `J01-105` | this page + [J01-105]({{ "/en/jira/issues/J01-105/" | relative_url }}) | done |
+| Public work docs are reachable from Jira | Jira keeps the canonical link to `/en/jira/issues/J01-103/` | Jira remote link for `J01-103` | done |
 
-## Abschlussbild oder offene Punkte
+## Closing Picture or Open Points
 
-- `J01-103` ist kein Sprint-1-Nachzügler, sondern der explizite Kandidat für
-  die nächste Sprint-Planung.
-- `J01-98` bleibt auf den sprintrelevanten Preview-Ausschnitt begrenzt.
-- `J01-100` bleibt bei den übrigen `docs/agile`-Resten und ersetzt nicht die
-  offene Zielerfüllung aus `J01-91`.
+- `J01-103` is not a Sprint 1 leftover, but the explicit candidate for the
+  next sprint planning.
+- `J01-98` remains limited to the sprint-relevant preview slice.
+- `J01-100` remains scoped to the remaining `docs/agile` leftovers and does
+  not replace the open target fulfilment from `J01-91`.
 
 ## Links
 
 - Jira metadata now links `J01-103` explicitly with `J01-91` and
   `J01-100`.
-- [J01-91: Zustand/Vorhaben (Snapshot)]({{ "/en/jira/issues/J01-91/" | relative_url }})
-- [J01-98: sprintrelevante Preview-Migration]({{ "/en/jira/issues/J01-98/" | relative_url }})
-- [J01-100: docs/agile-Reste nach Sprint 1]({{ "/en/jira/issues/J01-100/" | relative_url }})
-- [Jira-Arbeitsdokus]({{ "/en/jira/" | relative_url }})
+- [J01-91: Current state / plan snapshot]({{ "/en/jira/issues/J01-91/" | relative_url }})
+- [J01-98: sprint-relevant preview migration]({{ "/en/jira/issues/J01-98/" | relative_url }})
+- [J01-100: docs/agile leftovers after Sprint 1]({{ "/en/jira/issues/J01-100/" | relative_url }})
+- [Jira work docs]({{ "/en/jira/" | relative_url }})

@@ -57,6 +57,9 @@ extra `required` or `policy` semantics.
   with `variable-groups`, `phases`, `pipelines`, and compact group mappings.
 - Earlier dependency hints in `meta.notes` are restored on the affected
   variables; their earlier loss during J01-105 was not a target state.
+- The app environment doc `docs/ENVIRONMENTS.md` is removed as a duplicate
+  intermediate location; README and manifest keep only local app hints, while
+  pipeline-spec rules point to the spec and library docs.
 
 ## Plan as Steps
 
@@ -202,13 +205,14 @@ earlier loss in `meta.notes` was a regression.
 | Disjointness rule explained | No overlap between shared phase and concrete pipeline | Jira docs DE/EN | done |
 | Code defaults removed | No J01-105 case relies on content-level fallback defaults anymore; a positive interim state is evidenced, but the final closeout proof is still open | Source analysis source repos, `tagebuch` | interim state evidenced |
 | `LEBENSLAUF_PUBLIC_PROFILE` corrected | No longer in `setup` or `runtime`, only in the build path | config.manifest.yaml | open |
-| Lib README corrected | No old `required`/`allowed`, `policy`, `group-key`, or `common` schema remains in lib docs; the README uses the new structure model | `pipeline-config-spec-php/README.md` | done |
+| Lib README corrected | No old `required`/`allowed`, `policy`, `group-key`, or `common` schema remains in lib docs; the README uses the new structure model | `pipeline-config-spec-php/README.md`, `pipeline-config-spec-php/README.de.md` | done |
 | Manifest simplified | Target model implemented in source repos | config.manifest.yaml | partially done |
 | `P_1` documented | The first reduction step (`MAIL_STDOUT` in `common`, `SMTP_*` only in `preview`, JSON residue removed) is traceable in J01-123 and the parent page | Jira docs DE/EN, app repo | done |
 | `P_2` documented | `APP_URL` was removed from the build contract because no technical reader remained; J01-123 and the parent page reflect that | Jira docs DE/EN, app repo | done |
 | Smoke rule tightened | `tests:smoke` is the preferred functional proof for `P_j`; exceptions require an evidenced substitute run | Jira docs DE/EN, `tests/py/smoke.py` | done |
 | SMTP sender clarified | Sender now runs only via `SMTP_FROM_EMAIL` and `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` remains separate | config.manifest.yaml, MailService.php | done |
 | `meta.notes` sharpened again | Functional dependencies are visible again on the affected variables; the earlier thinning is corrected | config.manifest.yaml, Jira docs | in progress |
+| Environment docs deduplicated | `docs/ENVIRONMENTS.md` is removed; README, manifest, and pipeline-spec docs carry the remaining responsibilities without rule duplication | app repo, public spec docs | done |
 | pipeline-spec-lib updated | Expander for `phases`, `pipelines`, mapping-style group rules, and internal phase keys are implemented in library history | pipeline-config-spec-php | done |
 | Tests green | There is an evidenced positive interim state for lib tests and phase-wise `config lint`; full closeout evidence is still open | Test run, `tagebuch` | interim state evidenced |
 | J01-9 unblocked | J01-105 done, J01-9 no longer blocked | Jira | open |

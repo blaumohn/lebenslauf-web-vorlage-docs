@@ -57,6 +57,8 @@ Bibliotheksvertrag nicht wieder vermischt werden.
   App-Workaround.
 - Die endgültige Schema-Lesart ist festgezogen: kein Pseudo-`common`, keine
   `group-key`-Objektlisten und keine `policy`-Semantik.
+- Die deutsche Lib-README ist auf dieselbe Schema-Lesart nachgezogen und
+  beschreibt keine `group-key`-/`select`-Objektlisten mehr.
 - Offener Rest ist vor allem der repo-übergreifende Abschlussnachweis.
 
 ## Überprüfungsplan
@@ -65,7 +67,7 @@ Bibliotheksvertrag nicht wieder vermischt werden.
 | --- | --- | --- | --- |
 | Expander liest Zielmodell | Lib expandiert `variable-groups.<gruppe>`, `phases.<phase>`, `pipelines.<pipeline>.<phase>`, `gruppe: "*"` und `gruppe: [KEY]` korrekt | `pipeline-config-spec-php` | erledigt |
 | Disjunktheit validiert | Überschneidungen zwischen Phase und Pipeline-Ergänzung werden abgewiesen | `pipeline-config-spec-php`, Tests | erledigt |
-| README korrigiert | Kein `required`/`allowed`-, `policy`-, `group-key`- oder `common`-Schema mehr in der Lib-Doku | `pipeline-config-spec-php/README.md` | erledigt |
+| README korrigiert | Kein `required`/`allowed`-, `policy`-, `group-key`- oder `common`-Schema mehr in der Lib-Doku | `pipeline-config-spec-php/README.md`, `pipeline-config-spec-php/README.de.md` | erledigt |
 | Lib-interne Phasenschlüssel erklärt | `PIPELINE` und `PHASE` werden nicht mehr als App-Manifest-Bereich beschrieben | Lib-Doku, J01-105 | erledigt |
 | Leere Phasen bleiben gültig | Bekannte leere Phasen sind gültig; `dev/setup` braucht keinen Platzhalter `setup: []`; unbekannte Namen scheitern | Lib-Tests, Hauptrepo-Lints | erledigt |
 
