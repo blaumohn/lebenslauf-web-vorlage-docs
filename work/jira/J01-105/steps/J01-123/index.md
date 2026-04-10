@@ -60,22 +60,25 @@ trennt ihn vom Seed-Sonderfall und vom Lib-Schnitt.
   technisch gefundenen Parameter nachgezogen.
 - Jeder aktuell aufgenommene Parameter hat jetzt einen technischen Fund mit
   Pipeline-/Phasenbezug; die formale Doku wird nur noch zusätzlich markiert.
-- `P_1` ist jetzt als erster echter Reduktionsschritt umgesetzt:
-  `MAIL_STDOUT` bleibt in `common.runtime`, `SMTP_*` wandert nach
-  `preview.runtime`, und `LEBENSLAUF_JSON_PFAD` ist ohne Legacy-Rest
-  vollständig entfernt.
+- `P_1` ist jetzt weiter geschärft:
+  `MAIL_STDOUT` liegt in der Kontakt-Runtime, `SMTP_*` liegt in der Gruppe
+  `smtp` nur unter `preview.runtime`, und `LEBENSLAUF_JSON_PFAD` ist ohne
+  Legacy-Rest vollständig entfernt.
 - `P_2` ist jetzt ebenfalls festgezogen:
   `APP_URL` hatte im ausgewerteten Worktree keinen technischen Leser mehr
   und entfällt deshalb aus Build-Vertrag und Beispiel-Konfigurationen.
 
-## `P_1`: Mail-Vertrag geschärft, JSON-Rest entfernt
+## `P_1`: Kontakt-/SMTP-Vertrag geschärft, JSON-Rest entfernt
 
 Der erste kleine Übergang `P_0 -> P_1` ist jetzt festgezogen:
 
-- `MAIL_STDOUT` bleibt als gemeinsamer Runtime-Schalter in
-  `common.runtime`.
+- `MAIL_STDOUT` gehört fachlich zum Kontaktformular und liegt in der Gruppe
+  `contact`.
 - `SMTP_*` gehört im aktuellen Zielstand nicht mehr zum gemeinsamen
-  Runtime-Vertrag und liegt nur noch in `preview.runtime`.
+  Runtime-Vertrag und liegt als Gruppe `smtp` nur noch in `preview.runtime`.
+- `CONTACT_TO_EMAIL` ist eine App-Config-Regel: Wenn der Key zur Runtime-Phase
+  gehört, darf der Wert nicht leer sein und muss eine gültige E-Mail-Adresse
+  sein.
 - `LEBENSLAUF_JSON_PFAD` bleibt nicht als Altrest stehen, sondern ist aus
   Manifest, Config und Code vollständig entfernt.
 
@@ -146,7 +149,7 @@ bleiben für `P_0` maßgeblich:
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
 | `P_0` vollständig | Alle aufgenommenen Parameter tragen einen technischen Fund mit Pipeline-/Phasenbezug; ausgeschlossene Frühkandidaten und formale Kandidaten sind kenntlich gemacht | diese Schrittseite, App-Repo | erledigt |
-| `P_1` umgesetzt | `MAIL_STDOUT` bleibt in `common.runtime`, `SMTP_*` liegt nur noch in `preview.runtime`, und `LEBENSLAUF_JSON_PFAD` ist vollständig entfernt | App-Repo, diese Schrittseite | erledigt |
+| `P_1` umgesetzt | `MAIL_STDOUT` liegt in `contact`, `SMTP_*` liegt in `smtp` nur noch in `preview.runtime`, `CONTACT_TO_EMAIL` wird validiert, und `LEBENSLAUF_JSON_PFAD` ist vollständig entfernt | App-Repo, diese Schrittseite | erledigt |
 | `P_2` umgesetzt | `APP_URL` ist mangels technischem Leser aus Build-Vertrag und Beispiel-Configs entfernt | App-Repo, Build-Prüflauf, diese Schrittseite | erledigt |
 | Technische Nutzung sichtbar | Pro Parameter ist der konkrete Programm-Pfad benannt | diese Schrittseite | erledigt |
 | Formale Zusatzbelege sichtbar | Pro technisch gefundenem Parameter ist erkennbar, ob die Doku nachgezogen ist | diese Schrittseite | erledigt |

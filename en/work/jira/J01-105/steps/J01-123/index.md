@@ -61,21 +61,23 @@ the seed edge case and the library cut.
 - Every currently included parameter now carries a technical finding with a
   pipeline/phase location; formal docs are marked only as an additional
   signal.
-- `P_1` is now implemented as the first actual reduction step:
-  `MAIL_STDOUT` stays in `common.runtime`, `SMTP_*` moves to
-  `preview.runtime`, and `LEBENSLAUF_JSON_PFAD` is fully removed without
-  legacy residue.
+- `P_1` is now tightened further:
+  `MAIL_STDOUT` lives in the contact runtime, `SMTP_*` lives in the `smtp`
+  group only under `preview.runtime`, and `LEBENSLAUF_JSON_PFAD` is fully
+  removed without legacy residue.
 - `P_2` is now fixed as well:
   `APP_URL` no longer had a technical reader in the evaluated worktree and
   therefore drops out of the build contract and the example configs.
 
-## `P_1`: mail contract tightened, JSON residue removed
+## `P_1`: contact/SMTP contract tightened, JSON residue removed
 
 The first small transition `P_0 -> P_1` is now fixed:
 
-- `MAIL_STDOUT` remains the shared runtime switch in `common.runtime`.
+- `MAIL_STDOUT` belongs to the contact form and lives in the `contact` group.
 - In the current target state, `SMTP_*` no longer belongs to the shared
-  runtime contract and now lives only in `preview.runtime`.
+  runtime contract and now lives as the `smtp` group only in `preview.runtime`.
+- `CONTACT_TO_EMAIL` is an app config rule: when the key belongs to the
+  runtime phase, the value must not be empty and must be a valid email address.
 - `LEBENSLAUF_JSON_PFAD` does not remain as an old leftover; it is fully
   removed from manifest, config, and code.
 
@@ -147,7 +149,7 @@ authoritative for `P_0`:
 | Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
 | `P_0` complete | Every included parameter carries a technical finding with pipeline/phase context; excluded early candidates and formal candidates are marked explicitly | this step page, app repo | done |
-| `P_1` implemented | `MAIL_STDOUT` stays in `common.runtime`, `SMTP_*` lives only in `preview.runtime`, and `LEBENSLAUF_JSON_PFAD` is fully removed | app repo, this step page | done |
+| `P_1` implemented | `MAIL_STDOUT` lives in `contact`, `SMTP_*` lives in `smtp` only in `preview.runtime`, `CONTACT_TO_EMAIL` is validated, and `LEBENSLAUF_JSON_PFAD` is fully removed | app repo, this step page | done |
 | `P_2` implemented | `APP_URL` was removed from the build contract and example configs because no technical reader remains | app repo, build check run, this step page | done |
 | Technical usage visible | Each parameter names the concrete program path | this step page | done |
 | Formal add-on evidence visible | Each technically found parameter shows whether docs have been pulled along | this step page | done |
