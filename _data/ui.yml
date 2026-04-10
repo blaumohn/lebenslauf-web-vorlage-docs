@@ -7,6 +7,11 @@ de:
   home_url: /de/
   home_label: Start
   mirror_label: Jira-Übersicht
+  recent_date: Datum
+  recent_repo: Repo
+  recent_commit: Commit
+  recent_message: Nachricht
+  recent_empty: Keine Commits vorhanden.
 en:
   site_title: CV Web Template
   language_label: Language
@@ -16,3 +21,8 @@ en:
   home_url: /en/
   home_label: Home
   mirror_label: Jira Mirror
+  recent_date: Date
+  recent_repo: Repo
+  recent_commit: Commit
+  recent_message: Message
+  recent_empty: No commits available.

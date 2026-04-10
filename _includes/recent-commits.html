@@ -1,0 +1,26 @@
+{% assign ui = site.data.ui[include.lang | default: "de"] %}
+{% assign commits = site.data.recent_commits %}
+{% if commits and commits.size > 0 %}
+<table class="recent-commits">
+  <thead>
+    <tr>
+      <th>{{ ui.recent_date }}</th>
+      <th>{{ ui.recent_repo }}</th>
+      <th>{{ ui.recent_commit }}</th>
+      <th>{{ ui.recent_message }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for c in commits %}
+    <tr>
+      <td><time datetime="{{ c.datetime }}">{{ c.datetime | date: "%Y-%m-%d %H:%M" }}</time></td>
+      <td>{{ c.repo }}</td>
+      <td><a href="{{ c.github_url }}">{{ c.short_sha }}</a></td>
+      <td>{{ c.message }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p>{{ ui.recent_empty }}</p>
+{% endif %}

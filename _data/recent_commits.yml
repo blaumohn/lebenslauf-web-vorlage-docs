@@ -1,0 +1,62 @@
+# Generiert von scripts/generate-recent-commits.sh
+# Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage-docs
+  sha: 6023d4bd20a388b6306811dc019ff7e4e5d90495
+  short_sha: 6023d4b
+  datetime: "2026-04-08T14:56:50+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6023d4bd20a388b6306811dc019ff7e4e5d90495"
+  message: 'docs: J01-123 Anker und Vorbefunde nachziehen (J01-105)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: dc80b6aa36467592ee5f09e4d6b24e6fccee95f8
+  short_sha: dc80b6a
+  datetime: "2026-04-08T13:49:10+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dc80b6aa36467592ee5f09e4d6b24e6fccee95f8"
+  message: 'docs: J01-105 Arbeitsdokus und P0-Matrix nachziehen (J01-105)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 7512cec8a2a68dff479bf84733c2ba5ec624a3b2
+  short_sha: 7512cec
+  datetime: "2026-04-04T06:29:24+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7512cec8a2a68dff479bf84733c2ba5ec624a3b2"
+  message: 'docs: P_0-Matrix für J01-123 auf technische Funde schärfen (J01-123)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 020cbfac507567f528f5aa424ba47f9072a90eee
+  short_sha: 020cbfa
+  datetime: "2026-04-03T17:07:06+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/020cbfac507567f528f5aa424ba47f9072a90eee"
+  message: 'docs: J01-122 als erledigt in Jira-Spiegel melden (J01-122)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: d342a2924565f50cb6679d0452c90ddd36040dde
+  short_sha: d342a29
+  datetime: "2026-04-03T16:40:21+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/d342a2924565f50cb6679d0452c90ddd36040dde"
+  message: 'docs: J01-105-Drift im Zielmodell geradeziehen (J01-105)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: e01f43caef25ecdfc7e3867248036addaca2a938
+  short_sha: e01f43c
+  datetime: "2026-04-03T16:25:32+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e01f43caef25ecdfc7e3867248036addaca2a938"
+  message: 'docs: J01-122 in öffentlicher Schritt-Doku abschließen (J01-122)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 25329c16b6946e66e2137c61b315cf5a699e3cc2
+  short_sha: 25329c1
+  datetime: "2026-04-03T15:45:08+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/25329c16b6946e66e2137c61b315cf5a699e3cc2"
+  message: 'docs: Geschwister-Schritte in J01-105 korrekt spiegeln (J01-105)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: be12cabaf2aef44f013e226f6c0bcf6995c40a71
+  short_sha: be12cab
+  datetime: "2026-04-03T15:38:26+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/be12cabaf2aef44f013e226f6c0bcf6995c40a71"
+  message: 'docs: Jira-Status für J01-105-Schritte sichtbar nachziehen (J01-105)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: e46872fd1e09deb0dfc804c9bbe650155b75a4b6
+  short_sha: e46872f
+  datetime: "2026-04-03T15:03:05+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e46872fd1e09deb0dfc804c9bbe650155b75a4b6"
+  message: 'docs: J01-105-Vorhaben in Schrittseiten schneiden (J01-105)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: f22fcc788fbe6678d284288c28015ba7e5040e3b
+  short_sha: f22fcc7
+  datetime: "2026-04-03T12:55:30+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f22fcc788fbe6678d284288c28015ba7e5040e3b"
+  message: 'docs: Öffentlichen Jira-Mirror nachziehen (J01-119)'

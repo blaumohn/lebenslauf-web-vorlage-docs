@@ -17,6 +17,8 @@ de:
     url: /de/templates/
   - title: Qualität
     url: /de/quality/
+  - title: Letzte Änderungen
+    url: /de/recent/
 en:
   - title: Getting Started
     url: /en/getting-started/
@@ -36,3 +38,5 @@ en:
     url: /en/templates/
   - title: Quality
     url: /en/quality/
+  - title: Recent Changes
+    url: /en/recent/
