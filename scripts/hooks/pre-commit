@@ -1,0 +1,10 @@
+#!/bin/sh
+# Pre-Commit-Hook: aktualisiert _data/recent_commits.yml vor jedem Commit.
+# Einrichtung: sh scripts/install-hooks.sh
+set -eu
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname "$0")" && pwd)
+REPO_ROOT=$(CDPATH= cd -- "$SCRIPT_DIR/../.." && pwd)
+
+sh "$REPO_ROOT/scripts/generate-recent-commits.sh"
+git -C "$REPO_ROOT" add -- _data/recent_commits.yml
