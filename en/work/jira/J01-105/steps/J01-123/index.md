@@ -6,7 +6,7 @@ jira_parent_key: J01-105
 permalink: /en/jira/issues/J01-105/steps/J01-123/
 ---
 
-**Status:** 2026-04-08
+**Status:** 2026-04-12
 
 {% include jira-state-head.html %}
 
@@ -68,6 +68,11 @@ the seed edge case and the library cut.
 - `P_2` is now fixed as well:
   `APP_URL` no longer had a technical reader in the evaluated worktree and
   therefore drops out of the build contract and the example configs.
+- `P_3` is now prepared as an architecture and operations follow-up:
+  `PYTHON_PATHS` stays technically evidenced, `cli python` should resolve
+  through the same config path as the pipeline spec, and `run` is treated
+  as a thin facade over the Python path instead of as its own functional
+  path.
 
 ## `P_1`: contact/SMTP contract tightened, JSON residue removed
 
@@ -103,6 +108,33 @@ The next small transition `P_1 -> P_2` is now decided as well:
 
 `APP_URL` is therefore no longer tracked as an open candidate but as a
 completed removal.
+
+## `P_3`: `PYTHON_PATHS` stays, CLI override becomes spec-bound
+
+The next small transition `P_2 -> P_3` is prepared as an architecture and
+operations step:
+
+- `PYTHON_PATHS` remains in the target state because the Python runner
+  technically reads the value and builds `PYTHONPATH` for Python scripts from
+  it.
+- The effective Python config should no longer come from a parallel mix of
+  manifest value plus separate `--add-path`, but unambiguously from
+  `pipeline` + phase `python` + optional CLI overrides.
+- A new layer `BasePipelineCommand` is prepared for that:
+  on top of the general `BaseCommand` spec resolution, it adds only the real
+  command phase together with `pipeline` and `--override`.
+- `ConfigCommand` remains a meta/spec command without a fixed command phase;
+  there, `pipeline` and `phase` are request parameters.
+- `BuildCommand` keeps `build` as its real command phase; the additional read
+  of `runtime` remains a generation step and does not become the command
+  phase.
+- `RunCommand` is treated as a thin facade over the Python path:
+  functionally it is only an alias for the dev runner `dev.py`, not its own
+  parameter path.
+
+This means `P_3` is not another removal case. It tightens the command/spec
+boundary and documents that `PYTHON_PATHS` really remains part of the thin
+contract.
 
 <span id="p-0-belegmatrix"></span>
 
@@ -151,6 +183,7 @@ authoritative for `P_0`:
 | `P_0` complete | Every included parameter carries a technical finding with pipeline/phase context; excluded early candidates and formal candidates are marked explicitly | this step page, app repo | done |
 | `P_1` implemented | `MAIL_STDOUT` lives in `contact`, `SMTP_*` lives in `smtp` only in `preview.runtime`, `CONTACT_TO_EMAIL` is validated, and `LEBENSLAUF_JSON_PFAD` is fully removed | app repo, this step page | done |
 | `P_2` implemented | `APP_URL` was removed from the build contract and example configs because no technical reader remains | app repo, build check run, this step page | done |
+| `P_3` prepared | `PYTHON_PATHS` remains as a technically evidenced Python-runner parameter; `cli python` should resolve overrides only through the pipeline spec, and `run` is kept as an alias over the same path | app repo, this step page, work notes | in progress |
 | Technical usage visible | Each parameter names the concrete program path | this step page | done |
 | Formal add-on evidence visible | Each technically found parameter shows whether docs have been pulled along | this step page | done |
 | Every transition evidenced | Each step `P_i -> P_{i+1}` has source evidence and preferably `tests:smoke` as the functional proof; if the smoke path does not apply, a fitting substitute run must be evidenced | app repo, work docs | in progress |
@@ -160,11 +193,12 @@ authoritative for `P_0`:
 ## Open points
 
 - Carry the earlier noted `PYTHON_PATHS` check forward against the new,
-  strictly technical `P_0`.
+  strictly technical `P_0`, and anchor the future `BasePipelineCommand` /
+  `BaseCommand` separation in the CLI.
 - Stabilize the smoke path itself so later `P_j` steps no longer stall in
   the clone/composer setup.
-- Decide later whether individual parameter explanations belong in canonical
-  area or system docs once `P_n` is stable.
+- Decide later whether `cli config` as a meta/spec command should move out of
+  the main repo into spec tooling, without inflating `P_3`.
 
 ## Links
 

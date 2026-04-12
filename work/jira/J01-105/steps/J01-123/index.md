@@ -6,7 +6,7 @@ jira_parent_key: J01-105
 permalink: /de/jira/issues/J01-105/steps/J01-123/
 ---
 
-**Stand:** 2026-04-08
+**Stand:** 2026-04-12
 
 {% include jira-state-head.html %}
 
@@ -67,6 +67,10 @@ trennt ihn vom Seed-Sonderfall und vom Lib-Schnitt.
 - `P_2` ist jetzt ebenfalls festgezogen:
   `APP_URL` hatte im ausgewerteten Worktree keinen technischen Leser mehr
   und entfällt deshalb aus Build-Vertrag und Beispiel-Konfigurationen.
+- `P_3` wird jetzt als Architektur- und Betriebsnachzug vorbereitet:
+  `PYTHON_PATHS` bleibt technisch belegt, `cli python` soll denselben
+  Config-Pfad wie die Pipeline-Spec nutzen, und `run` wird als dünne
+  Fassade über den Python-Pfad behandelt statt als eigener Fachpfad.
 
 ## `P_1`: Kontakt-/SMTP-Vertrag geschärft, JSON-Rest entfernt
 
@@ -104,6 +108,32 @@ Der nächste kleine Übergang `P_1 -> P_2` ist jetzt ebenfalls entschieden:
 
 Damit ist `APP_URL` nicht mehr bloß als offener Kandidat notiert, sondern als
 entfernter Rest abgeschlossen.
+
+## `P_3`: `PYTHON_PATHS` bleibt, CLI-Override wird Spec-pflichtig
+
+Der nächste kleine Übergang `P_2 -> P_3` ist als Architektur- und
+Betriebsschritt vorbereitet:
+
+- `PYTHON_PATHS` bleibt im Zielstand, weil der Python-Runner den Wert
+  technisch liest und daraus `PYTHONPATH` für Python-Skripte aufbaut.
+- Die wirksame Python-Config soll künftig nicht mehr parallel aus
+  Manifestwert plus separatem `--add-path` entstehen, sondern eindeutig aus
+  `pipeline` + Phase `python` + optionalen CLI-Overrides.
+- Dafür wird eine neue Schicht `BasePipelineCommand` vorbereitet:
+  Sie ergänzt zur allgemeinen `BaseCommand`-Spec-Auflösung nur die echte
+  Befehlsphase sowie `pipeline` und `--override`.
+- `ConfigCommand` bleibt dabei ein Meta-/Spec-Befehl ohne feste
+  Befehlsphase; `pipeline` und `phase` sind dort Anfrage-Parameter.
+- `BuildCommand` behält als echte Befehlsphase `build`; der zusätzliche
+  Zugriff auf `runtime` bleibt ein Erzeugungsschritt und wird nicht zur
+  eigenen Befehlsphase.
+- `RunCommand` wird als dünne Fassade über den Python-Pfad behandelt:
+  fachlich ist es nur ein Alias für den Dev-Runner `dev.py`, nicht ein
+  eigener Parameterpfad.
+
+Damit wird `P_3` nicht als weiterer Entfernungsfall verstanden, sondern als
+Schärfung der Command-/Spec-Grenze und als Nachweis, dass `PYTHON_PATHS`
+wirklich im dünnen Vertrag verbleibt.
 
 <span id="p-0-belegmatrix"></span>
 
@@ -151,6 +181,7 @@ bleiben für `P_0` maßgeblich:
 | `P_0` vollständig | Alle aufgenommenen Parameter tragen einen technischen Fund mit Pipeline-/Phasenbezug; ausgeschlossene Frühkandidaten und formale Kandidaten sind kenntlich gemacht | diese Schrittseite, App-Repo | erledigt |
 | `P_1` umgesetzt | `MAIL_STDOUT` liegt in `contact`, `SMTP_*` liegt in `smtp` nur noch in `preview.runtime`, `CONTACT_TO_EMAIL` wird validiert, und `LEBENSLAUF_JSON_PFAD` ist vollständig entfernt | App-Repo, diese Schrittseite | erledigt |
 | `P_2` umgesetzt | `APP_URL` ist mangels technischem Leser aus Build-Vertrag und Beispiel-Configs entfernt | App-Repo, Build-Prüflauf, diese Schrittseite | erledigt |
+| `P_3` vorbereitet | `PYTHON_PATHS` bleibt als technisch belegter Python-Runner-Parameter erhalten; `cli python` soll Overrides nur noch über die Pipeline-Spec auflösen, und `run` wird als Alias über denselben Pfad geführt | App-Repo, diese Schrittseite, Arbeitsdoku | in Arbeit |
 | Technische Nutzung sichtbar | Pro Parameter ist der konkrete Programm-Pfad benannt | diese Schrittseite | erledigt |
 | Formale Zusatzbelege sichtbar | Pro technisch gefundenem Parameter ist erkennbar, ob die Doku nachgezogen ist | diese Schrittseite | erledigt |
 | Jeder Übergang belegt | Jeder Schritt `P_i -> P_{i+1}` hat Quelltextbeleg und bevorzugt `tests:smoke` als Funktionsnachweis; falls der Smoke-Pfad nicht greift, ist ein passender Ersatzlauf zu belegen | App-Repo, Arbeitsdoku | in Arbeit |
@@ -160,11 +191,12 @@ bleiben für `P_0` maßgeblich:
 ## Offene Punkte
 
 - Den früh notierten Prüfpfad zu `PYTHON_PATHS` gegen das neue, streng
-  technische `P_0` fortschreiben.
+  technische `P_0` fortschreiben und dabei die künftige
+  `BasePipelineCommand`-/`BaseCommand`-Trennung im CLI verankern.
 - Den Smoke-Pfad selbst als Arbeitsvoraussetzung stabilisieren, damit
   spätere `P_j`-Schritte nicht am Clone-/Composer-Aufbau hängen bleiben.
-- Prüfen, ob einzelne Parametererklärungen später in kanonische Bereichs-
-  oder Systemdoku wandern sollen, sobald `P_n` stabil ist.
+- Prüfen, ob `cli config` als Meta-/Spec-Befehl später aus dem Haupt-Repo in
+  Spec-Tooling ausgelagert werden soll, ohne `P_3` unnötig aufzublähen.
 
 ## Links
 
