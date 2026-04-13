@@ -130,9 +130,10 @@ operations step:
 - `BuildCommand` keeps `build` as its real command phase; the additional read
   of `runtime` remains the explicit `compileRuntimeConfig()` generation step
   and does not become the command phase.
-- `RunCommand` is treated as a thin facade over the Python path:
-  functionally it is only an alias for the dev runner `dev.py`, not its own
-  parameter path.
+- `RunCommand` is removed again:
+  `dev.py` remains a Python script inside the CLI phase `python`, so local
+  dev startup lives more coherently on the `composer` layer instead of as the
+  misleading pipeline command `run`.
 
 This means `P_3` is not another removal case. It tightens the command/spec
 boundary and documents that `PYTHON_PATHS` really remains part of the thin

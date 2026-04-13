@@ -1,5 +1,53 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage
+  sha: 2b1e07cb36a582bcf92c31921fbe95ea707dea70
+  short_sha: 2b1e07c
+  datetime: "2026-04-13T13:33:39+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2b1e07cb36a582bcf92c31921fbe95ea707dea70"
+  message: 'refactor(dev): verlagere Dev-Start auf Composer und Python-Phase (J01-123)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: c857bfae8a9ff50252660f9248ebf7fd0b113e32
+  short_sha: c857bfa
+  datetime: "2026-04-13T12:36:19+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c857bfae8a9ff50252660f9248ebf7fd0b113e32"
+  message: 'docs: schaerfe P_3 fuer fruehe Command-Config-Aufloesung (J01-123)'
+- repo: lebenslauf-web-vorlage
+  sha: 307a9155dd6404b0a4271fd69b9db3f455d81473
+  short_sha: 307a915
+  datetime: "2026-04-13T12:36:11+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/307a9155dd6404b0a4271fd69b9db3f455d81473"
+  message: 'fix(cli): loese Pipeline-Config frueh in BasePipelineCommand auf (J01-123)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 4cd445cc7cd8963aca18ecf4f27f8ece86f14347
+  short_sha: 4cd445c
+  datetime: "2026-04-12T17:03:13+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4cd445cc7cd8963aca18ecf4f27f8ece86f14347"
+  message: 'docs(j01-126): Runbook auf pre-commit aktualisieren und Arbeitsdoku anlegen'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 38c92d44e0ab8366b5eca4281ee907f051761c1f
+  short_sha: 38c92d4
+  datetime: "2026-04-12T17:02:59+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/38c92d44e0ab8366b5eca4281ee907f051761c1f"
+  message: 'test(j01-126): Shell-Rauchtests für generate-recent-commits und pre-commit-Hook'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 93ffb630c731be8717405abef8589e82db7fd106
+  short_sha: 93ffb63
+  datetime: "2026-04-12T17:02:21+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/93ffb630c731be8717405abef8589e82db7fd106"
+  message: 'fix(j01-126): pre-commit-Hook mit fetch und Pathspec-Filter'
+- repo: lebenslauf-web-vorlage-docs
+  sha: ce021d4d934fe7ca3c2d1c8af9ea4139a728f759
+  short_sha: ce021d4
+  datetime: "2026-04-12T17:02:03+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ce021d4d934fe7ca3c2d1c8af9ea4139a728f759"
+  message: 'docs: dokumentiere P_3 zur Python-Command-Basis (J01-123)'
+- repo: lebenslauf-web-vorlage
+  sha: a7fc4bff17dd83568020f3978cf0bff90d272324
+  short_sha: a7fc4bf
+  datetime: "2026-04-12T17:01:53+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a7fc4bff17dd83568020f3978cf0bff90d272324"
+  message: 'feat(cli): binde Python-Config an Pipeline-Command-Basis (J01-123)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 4b9032f71ea80f212948fef0d6ed78cbad1b9673
   short_sha: 4b9032f
@@ -12,51 +60,3 @@
   datetime: "2026-04-10T14:41:37+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/efc2ecfbd05cecca23d07526d4a6602b18271da4"
   message: 'feat: Seiten Letzte Änderungen DE/EN, Navbar und Runbook anlegen (J01-126)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: cb4ce97908f51cc1357b4f0b2fbaf7fa43a09260
-  short_sha: cb4ce97
-  datetime: "2026-04-10T14:40:53+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/cb4ce97908f51cc1357b4f0b2fbaf7fa43a09260"
-  message: 'feat: generate-recent-commits.sh und Pre-Push-Hook anlegen (J01-126)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: a22258973f7b39920ec4a30605a036bddc60cfac
-  short_sha: a222589
-  datetime: "2026-04-10T12:28:51+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a22258973f7b39920ec4a30605a036bddc60cfac"
-  message: 'docs: Umgebungsdoku-Entfall spiegeln (J01-105)'
-- repo: lebenslauf-web-vorlage
-  sha: aaaded14270dcde220be7d332d64ae5e45ee95dc
-  short_sha: aaaded1
-  datetime: "2026-04-10T12:28:51+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/aaaded14270dcde220be7d332d64ae5e45ee95dc"
-  message: 'docs: Umgebungsdoku entfernen (J01-105)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 36c56f1a194e2d185d121a264ddc1d78b3305482
-  short_sha: 36c56f1
-  datetime: "2026-04-10T11:58:46+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/36c56f1a194e2d185d121a264ddc1d78b3305482"
-  message: 'docs: Contact- und SMTP-Vertrag nachziehen (J01-123)'
-- repo: lebenslauf-web-vorlage
-  sha: 7b5eb21ed6ecad7498a16c6020aea49acc4f8f80
-  short_sha: 7b5eb21
-  datetime: "2026-04-10T11:58:46+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7b5eb21ed6ecad7498a16c6020aea49acc4f8f80"
-  message: 'fix: Contact- und SMTP-Config trennen (J01-123)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 7a30d9d4d4a6cac4d086a213f70c202835920e8d
-  short_sha: 7a30d9d
-  datetime: "2026-04-09T16:46:55+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7a30d9d4d4a6cac4d086a213f70c202835920e8d"
-  message: 'docs: Setup-Seed-Profil korrigieren (J01-122)'
-- repo: lebenslauf-web-vorlage
-  sha: 62e008ec45cf074da8b9a53843ff19dc1b42b6bc
-  short_sha: 62e008e
-  datetime: "2026-04-09T16:46:55+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/62e008ec45cf074da8b9a53843ff19dc1b42b6bc"
-  message: 'fix: Setup-Sample auf Public-Profil ausrichten (J01-122)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 96aa46470cc18dd034f4b7bc4f843aa95ae34d26
-  short_sha: 96aa464
-  datetime: "2026-04-09T16:06:28+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/96aa46470cc18dd034f4b7bc4f843aa95ae34d26"
-  message: 'docs: Phasen-Mapping-Zielmodell in J01-105 nachziehen (J01-125)'

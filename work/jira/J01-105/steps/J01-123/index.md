@@ -129,9 +129,10 @@ Betriebsschritt vorbereitet:
 - `BuildCommand` behält als echte Befehlsphase `build`; der zusätzliche
   Zugriff auf `runtime` bleibt als `compileRuntimeConfig()` ein
   Erzeugungsschritt und wird nicht zur eigenen Befehlsphase.
-- `RunCommand` wird als dünne Fassade über den Python-Pfad behandelt:
-  fachlich ist es nur ein Alias für den Dev-Runner `dev.py`, nicht ein
-  eigener Parameterpfad.
+- `RunCommand` entfällt wieder:
+  `dev.py` bleibt ein Python-Skript innerhalb der CLI-Phase `python`, der
+  lokale Dev-Start liegt deshalb kohärenter auf der `composer`-Ebene statt
+  als scheinbarer Pipeline-Befehl `run`.
 
 Damit wird `P_3` nicht als weiterer Entfernungsfall verstanden, sondern als
 Schärfung der Command-/Spec-Grenze und als Nachweis, dass `PYTHON_PATHS`
