@@ -122,12 +122,14 @@ operations step:
   `pipeline` + phase `python` + optional CLI overrides.
 - A new layer `BasePipelineCommand` is prepared for that:
   on top of the general `BaseCommand` spec resolution, it adds only the real
-  command phase together with `pipeline` and `--override`.
+  command phase together with `pipeline` and `--override`, resolves that
+  command config once up front, and then hands only the finished
+  `ConfigValues` to downstream pipeline commands.
 - `ConfigCommand` remains a meta/spec command without a fixed command phase;
   there, `pipeline` and `phase` are request parameters.
 - `BuildCommand` keeps `build` as its real command phase; the additional read
-  of `runtime` remains a generation step and does not become the command
-  phase.
+  of `runtime` remains the explicit `compileRuntimeConfig()` generation step
+  and does not become the command phase.
 - `RunCommand` is treated as a thin facade over the Python path:
   functionally it is only an alias for the dev runner `dev.py`, not its own
   parameter path.

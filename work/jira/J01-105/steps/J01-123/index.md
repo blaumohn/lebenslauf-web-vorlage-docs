@@ -121,12 +121,14 @@ Betriebsschritt vorbereitet:
   `pipeline` + Phase `python` + optionalen CLI-Overrides.
 - Dafür wird eine neue Schicht `BasePipelineCommand` vorbereitet:
   Sie ergänzt zur allgemeinen `BaseCommand`-Spec-Auflösung nur die echte
-  Befehlsphase sowie `pipeline` und `--override`.
+  Befehlsphase sowie `pipeline` und `--override`, löst diese Befehls-Config
+  früh einmalig auf und gibt den nachgelagerten Pipeline-Befehlen nur noch
+  die fertige `ConfigValues`.
 - `ConfigCommand` bleibt dabei ein Meta-/Spec-Befehl ohne feste
   Befehlsphase; `pipeline` und `phase` sind dort Anfrage-Parameter.
 - `BuildCommand` behält als echte Befehlsphase `build`; der zusätzliche
-  Zugriff auf `runtime` bleibt ein Erzeugungsschritt und wird nicht zur
-  eigenen Befehlsphase.
+  Zugriff auf `runtime` bleibt als `compileRuntimeConfig()` ein
+  Erzeugungsschritt und wird nicht zur eigenen Befehlsphase.
 - `RunCommand` wird als dünne Fassade über den Python-Pfad behandelt:
   fachlich ist es nur ein Alias für den Dev-Runner `dev.py`, nicht ein
   eigener Parameterpfad.
