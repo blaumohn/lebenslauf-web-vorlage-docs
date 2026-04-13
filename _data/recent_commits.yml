@@ -1,5 +1,11 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage-docs
+  sha: 9c4b54094904999bc58f8d451878182470b3b2dd
+  short_sha: 9c4b540
+  datetime: "2026-04-13T13:33:47+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/9c4b54094904999bc58f8d451878182470b3b2dd"
+  message: 'docs: entferne run als Dev-Befehl aus P_3 (J01-123)'
 - repo: lebenslauf-web-vorlage
   sha: 2b1e07cb36a582bcf92c31921fbe95ea707dea70
   short_sha: 2b1e07c
@@ -54,9 +60,3 @@
   datetime: "2026-04-10T14:59:05+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4b9032f71ea80f212948fef0d6ed78cbad1b9673"
   message: 'chore: recent_commits.yml aktualisieren (J01-126)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: efc2ecfbd05cecca23d07526d4a6602b18271da4
-  short_sha: efc2ecf
-  datetime: "2026-04-10T14:41:37+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/efc2ecfbd05cecca23d07526d4a6602b18271da4"
-  message: 'feat: Seiten Letzte Änderungen DE/EN, Navbar und Runbook anlegen (J01-126)'

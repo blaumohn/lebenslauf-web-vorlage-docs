@@ -14,13 +14,10 @@ fail() { printf 'FAIL: %s\n' "$1" >&2; exit 1; }
 pass() { printf 'PASS: %s\n' "$1"; }
 
 setup_source_repo() {
-    BARE="$BASE/lebenslauf-web-vorlage-bare"
     SRC="$BASE/lebenslauf-web-vorlage"
-    git init --bare "$BARE" --quiet
     git init "$SRC" --quiet
     git -C "$SRC" config user.name "Test"
     git -C "$SRC" config user.email "test@example.invalid"
-    git -C "$SRC" remote add origin "$BARE"
 
     printf 'content\n' > "$SRC/file.txt"
     git -C "$SRC" add file.txt
@@ -30,8 +27,6 @@ setup_source_repo() {
     printf 'generated\n' > "$SRC/_data/recent_commits.yml"
     git -C "$SRC" add _data/recent_commits.yml
     git -C "$SRC" commit -m "chore: recent_commits.yml aktualisieren" --quiet
-
-    git -C "$SRC" push origin HEAD:main --quiet 2>/dev/null
 }
 
 setup_docs_repo() {

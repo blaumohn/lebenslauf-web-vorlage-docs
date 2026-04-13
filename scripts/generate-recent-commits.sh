@@ -26,8 +26,7 @@ collect_repo() {
     slug="$2"
     path="$PARENT_DIR/$name"
     [ -d "$path/.git" ] || return 0
-    git -C "$path" fetch --quiet origin 2>/dev/null || true
-    git -C "$path" log --remotes --format="%aI %H %s" --max-count=20 \
+    git -C "$path" log --all --format="%aI %H %s" --max-count=20 \
         -- . ":(exclude)_data/recent_commits.yml" \
         | parse_log_lines "$name" "$slug" >> "$RAWFILE"
 }
