@@ -87,6 +87,7 @@ Public Jira area (without Jira Cloud links).
 
 - [J01-104 — GitHub Pages: Link-Regel für öffentliche Schrittseiten]({{ "/en/jira/issues/J01-104/" | relative_url }})
 - [J01-116 — Öffentliche Jira-Issue-Seiten: Metadaten und Unteraufgaben konsistent spiegeln]({{ "/en/jira/issues/J01-116/" | relative_url }})
+- [J01-128 — GitHub Pages: jira-work-context.html – Anker-IDs und Backtick-Reste im TOC korrigieren]({{ "/en/jira/issues/J01-128/" | relative_url }})
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/en/jira/issues/J01-85/" | relative_url }})
   - [**85-1 Refactor: Coding-Standards durchgehend umsetzen**]({{ "/en/jira/issues/J01-85/steps/J01-81/" | relative_url }}) — To Do
   - [**85-2 API-Betriebe (Wrapper), http als Escape-Hatch**]({{ "/en/jira/issues/J01-85/steps/J01-82/" | relative_url }}) — To Do

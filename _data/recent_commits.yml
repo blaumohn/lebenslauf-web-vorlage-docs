@@ -1,11 +1,11 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
-  sha: ee3839ad2b7cc939d46fd98e83ae3964f9052109
-  short_sha: ee3839a
+  sha: bd553ae254f8a69d2c11c871e9c518f8c8117394
+  short_sha: bd553ae
   datetime: "2026-04-14T16:34:32+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ee3839ad2b7cc939d46fd98e83ae3964f9052109"
-  message: 'fix(docs): Anker-IDs im Jira-Kontext an Kramdown angleichen (J01-128)'
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/bd553ae254f8a69d2c11c871e9c518f8c8117394"
+  message: 'docs: Jira-Kontext-Anker-IDs an Kramdown angleichen (J01-128)'
 - repo: pipeline-config-spec-php
   sha: 64c1d411db04b4f96279758407313f1423b97ffc
   short_sha: 64c1d41
