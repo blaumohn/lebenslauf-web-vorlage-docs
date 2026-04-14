@@ -87,6 +87,7 @@ permalink: /de/jira/backlog/
 
 - [J01-104 — GitHub Pages: Link-Regel für öffentliche Schrittseiten]({{ "/de/jira/issues/J01-104/" | relative_url }})
 - [J01-116 — Öffentliche Jira-Issue-Seiten: Metadaten und Unteraufgaben konsistent spiegeln]({{ "/de/jira/issues/J01-116/" | relative_url }})
+- [J01-128 — GitHub Pages: jira-work-context.html – Anker-IDs und Backtick-Reste im TOC korrigieren]({{ "/de/jira/issues/J01-128/" | relative_url }})
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/de/jira/issues/J01-85/" | relative_url }})
   - [**85-1 Refactor: Coding-Standards durchgehend umsetzen**]({{ "/de/jira/issues/J01-85/steps/J01-81/" | relative_url }}) — Zu erledigen
   - [**85-2 API-Betriebe (Wrapper), http als Escape-Hatch**]({{ "/de/jira/issues/J01-85/steps/J01-82/" | relative_url }}) — Zu erledigen

@@ -74,7 +74,7 @@ the seed edge case and the library cut.
   `src/cli/php/shared/PythonCommand.php` /
   `src/cli/php/shared/PythonRunner.php`, and `run` stays discarded.
 
-## `P_1`: contact/SMTP contract tightened, JSON residue removed
+## P_1: contact/SMTP contract tightened, JSON residue removed
 
 The first small transition `P_0 -> P_1` is now fixed:
 
@@ -89,7 +89,7 @@ The first small transition `P_0 -> P_1` is now fixed:
 This keeps `P_0` readable as the technical full finding while `P_1`
 documents the first strong functional reduction step.
 
-## `P_2`: `APP_URL` drops out as a merely formal candidate
+## P_2: APP_URL drops out as a merely formal candidate
 
 The next small transition `P_1 -> P_2` is now decided as well:
 
@@ -109,7 +109,7 @@ The next small transition `P_1 -> P_2` is now decided as well:
 `APP_URL` is therefore no longer tracked as an open candidate but as a
 completed removal.
 
-## `P_3`: `PYTHON_PATHS` stays, CLI override becomes spec-bound
+## P_3: PYTHON_PATHS stays, CLI override becomes spec-bound
 
 The next small transition `P_2 -> P_3` is now partially implemented as an
 architecture and operations step:
@@ -143,9 +143,7 @@ This means `P_3` is not another removal case. It tightens the command/spec
 boundary and documents that `PYTHON_PATHS` really remains part of the thin
 contract.
 
-<span id="p-0-belegmatrix"></span>
-
-## `P_0` evidence matrix {#p_0-belegmatrix}
+## P_0 evidence matrix
 
 Only parameters with a technical finding enter `P_0`.
 The presentation now follows the manifest reading path

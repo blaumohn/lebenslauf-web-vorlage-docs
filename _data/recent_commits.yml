@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: 3deb974e5ca1967b4b25e60f0d733c1756c7f947
+  short_sha: 3deb974
+  datetime: "2026-04-14T15:36:32+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3deb974e5ca1967b4b25e60f0d733c1756c7f947"
+  message: 'docs: J01-34 EN-Spiegel – Subtask-Prüfsumme und J01-127-Schritt nachziehen (J01-34)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 208e2331fa58ac184cb72e92c6be03ed2728d716
   short_sha: 208e233
   datetime: "2026-04-14T14:58:40+02:00"
@@ -54,9 +60,3 @@
   datetime: "2026-04-13T13:58:43+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/39e2003df237557c5706ed06540b55df54a2f1fb"
   message: 'fix(tests): starte Smoke-Server ueber composer dev (J01-123)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 0fb374db80af7eae7c7057809fa64d7fb3b50175
-  short_sha: 0fb374d
-  datetime: "2026-04-13T13:55:50+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/0fb374db80af7eae7c7057809fa64d7fb3b50175"
-  message: 'fix(j01-126): fetch entfernen, --remotes durch --all ersetzen'

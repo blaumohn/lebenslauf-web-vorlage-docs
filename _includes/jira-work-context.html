@@ -95,7 +95,7 @@
         {% if heading_text != "" %}
           {% assign section_count = section_count | plus: 1 %}
           {% assign outline_count = outline_count | plus: 1 %}
-          {% assign heading_anchor = heading_text | slugify %}
+          {% assign heading_anchor = heading_text | slugify | replace: "_", "-" %}
           {% capture section_links %}{{ section_links }}<li><a href="#{{ heading_anchor }}">{{ heading_text }}</a></li>{% endcapture %}
         {% endif %}
       {% endif %}

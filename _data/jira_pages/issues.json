@@ -2474,5 +2474,26 @@
       "sprint-admin"
     ],
     "issueLinks": []
+  },
+  "J01-128": {
+    "summary": "GitHub Pages: jira-work-context.html – Anker-IDs und Backtick-Reste im TOC korrigieren",
+    "issuetype": "Task",
+    "status": "In Bearbeitung",
+    "resolution": "-",
+    "assignee": "Dani Y.",
+    "priority": "Medium",
+    "updated": "2026-04-14T00:00:00.000+0200",
+    "parent": "J01-84",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "sprint-unplanned",
+    "labels": [
+      "bug",
+      "docs",
+      "github-pages",
+      "sprint-unplanned",
+      "tooling"
+    ],
+    "issueLinks": []
   }
 }

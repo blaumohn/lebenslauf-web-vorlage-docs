@@ -73,7 +73,7 @@ trennt ihn vom Seed-Sonderfall und vom Lib-Schnitt.
   `src/cli/php/shared/PythonCommand.php` /
   `src/cli/php/shared/PythonRunner.php`, und `run` bleibt verworfen.
 
-## `P_1`: Kontakt-/SMTP-Vertrag geschärft, JSON-Rest entfernt
+## P_1: Kontakt-/SMTP-Vertrag geschärft, JSON-Rest entfernt
 
 Der erste kleine Übergang `P_0 -> P_1` ist jetzt festgezogen:
 
@@ -90,7 +90,7 @@ Der erste kleine Übergang `P_0 -> P_1` ist jetzt festgezogen:
 Damit bleibt `P_0` als technischer Vollbefund lesbar, während `P_1` den
 ersten starken fachlichen Reduktionsschritt dokumentiert.
 
-## `P_2`: `APP_URL` entfällt als bloßer Formalkandidat
+## P_2: APP_URL entfällt als bloßer Formalkandidat
 
 Der nächste kleine Übergang `P_1 -> P_2` ist jetzt ebenfalls entschieden:
 
@@ -110,7 +110,7 @@ Der nächste kleine Übergang `P_1 -> P_2` ist jetzt ebenfalls entschieden:
 Damit ist `APP_URL` nicht mehr bloß als offener Kandidat notiert, sondern als
 entfernter Rest abgeschlossen.
 
-## `P_3`: `PYTHON_PATHS` bleibt, CLI-Override wird Spec-pflichtig
+## P_3: PYTHON_PATHS bleibt, CLI-Override wird Spec-pflichtig
 
 Der nächste kleine Übergang `P_2 -> P_3` ist als Architektur- und
 Betriebsschritt jetzt teilweise umgesetzt:
@@ -143,9 +143,7 @@ Damit wird `P_3` nicht als weiterer Entfernungsfall verstanden, sondern als
 Schärfung der Command-/Spec-Grenze und als Nachweis, dass `PYTHON_PATHS`
 wirklich im dünnen Vertrag verbleibt.
 
-<span id="p-0-belegmatrix"></span>
-
-## P_0-Belegmatrix {#p_0-belegmatrix}
+## P_0-Belegmatrix
 
 Nur Parameter mit technischem Fund werden in `P_0` aufgenommen.
 Die Darstellung folgt jetzt der Manifest-Leselogik
