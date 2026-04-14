@@ -37,6 +37,9 @@ behavior do not drift apart again.
   dedicated subtask.
 - `PIPELINE` and `PHASE` stay internal to the library in the target state;
   there is no app-side `pipeline_phase` contract.
+- The pipeline phase itself still stays a separate validation target:
+  `pipeline` must exist under `pipelines`, `phase` under `phases`, before the
+  functional config variables of that pipeline phase are checked.
 - The intermediate ideas of adding `policy`, object-list group references,
   and `pipelines.common.<phase>` are discarded.
 - The confirmed target state is phase-centered: shared variables live in

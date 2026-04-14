@@ -37,6 +37,10 @@ Bibliotheksvertrag nicht wieder vermischt werden.
   eigenen Untervorgang.
 - `PIPELINE` und `PHASE` bleiben im Zielzustand lib-intern; ein
   App-Bereich `pipeline_phase` gehört nicht mehr zum Vertrag.
+- Die Pipeline-Phase selbst bleibt trotzdem ein eigener
+  Validierungsgegenstand: `pipeline` muss in `pipelines`, `phase` in
+  `phases` stehen, bevor die fachlichen Konfig-Variablen dieser
+  Pipeline-Phase geprüft werden.
 - Die zwischenzeitlich erwogenen Ausbauten mit `policy`, Objektlisten für
   Gruppenreferenzen und `pipelines.common.<phase>` werden verworfen.
 - Der bestätigte Zielstand ist phase-zentriert: Gemeinsame Variablen stehen

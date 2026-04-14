@@ -1,5 +1,23 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: pipeline-config-spec-php
+  sha: 830ae4232adb4f0b4f51636177028b9e51e02e7e
+  short_sha: 830ae42
+  datetime: "2026-04-14T12:15:12+02:00"
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/830ae4232adb4f0b4f51636177028b9e51e02e7e"
+  message: 'refactor: pipeline-phase und origins klarziehen (J01-125)'
+- repo: lebenslauf-web-vorlage
+  sha: 71b8027054d017b047bb2ce470a2abc2ca69e085
+  short_sha: 71b8027
+  datetime: "2026-04-14T11:48:45+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/71b8027054d017b047bb2ce470a2abc2ca69e085"
+  message: 'feat: Help-Text für bin/cli config ergänzen (J01-127)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 5aea0b13ec855a42e900184fafe85cb94d4165c3
+  short_sha: 5aea0b1
+  datetime: "2026-04-14T11:33:43+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5aea0b13ec855a42e900184fafe85cb94d4165c3"
+  message: 'docs: J01-34 Subtask-Liste um J01-127 ergänzen (J01-34)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 55c704b6f39730be7d68de78391bed9a5d889dc0
   short_sha: 55c704b
@@ -42,21 +60,3 @@
   datetime: "2026-04-13T12:36:11+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/307a9155dd6404b0a4271fd69b9db3f455d81473"
   message: 'fix(cli): loese Pipeline-Config frueh in BasePipelineCommand auf (J01-123)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 4cd445cc7cd8963aca18ecf4f27f8ece86f14347
-  short_sha: 4cd445c
-  datetime: "2026-04-12T17:03:13+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4cd445cc7cd8963aca18ecf4f27f8ece86f14347"
-  message: 'docs(j01-126): Runbook auf pre-commit aktualisieren und Arbeitsdoku anlegen'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 38c92d44e0ab8366b5eca4281ee907f051761c1f
-  short_sha: 38c92d4
-  datetime: "2026-04-12T17:02:59+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/38c92d44e0ab8366b5eca4281ee907f051761c1f"
-  message: 'test(j01-126): Shell-Rauchtests für generate-recent-commits und pre-commit-Hook'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 93ffb630c731be8717405abef8589e82db7fd106
-  short_sha: 93ffb63
-  datetime: "2026-04-12T17:02:21+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/93ffb630c731be8717405abef8589e82db7fd106"
-  message: 'fix(j01-126): pre-commit-Hook mit fetch und Pathspec-Filter'
