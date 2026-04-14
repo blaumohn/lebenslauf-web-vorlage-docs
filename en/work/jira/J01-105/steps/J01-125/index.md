@@ -60,7 +60,7 @@ behavior do not drift apart again.
   the library history.
 - `compile()` no longer writes flat `PIPELINE`/`PHASE` keys into the compiled
   config; the consumer path reads the pipeline phase via separate context
-  metadata.
+  metadata without a legacy fallback.
 - Known empty phases without group references are accepted; the consumer path
   `config lint dev --phase setup` works without an app-side workaround.
 - The final schema reading is fixed: no pseudo-`common`, no `group-key`

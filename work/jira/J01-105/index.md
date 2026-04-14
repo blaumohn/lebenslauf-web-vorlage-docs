@@ -107,7 +107,8 @@ sondern als Folgearbeit [J01-129]({{ "/de/jira/issues/J01-129/" | relative_url }
 - Nach der Expansion darf es keine Schnittmenge zwischen gemeinsamer
   Phasenregel und konkreter Pipeline-Ergänzung geben.
 - Das kompilierte Config-Array enthält nur Konfig-Variablen; die
-  Pipeline-Phase wird separat als Lib-Metadaten geführt.
+  Pipeline-Phase wird separat als Lib-Metadaten geführt und ist im
+  Runtime-Pfad kein Legacy-Fallback mehr.
 - Ein eigener `pipelines.global`-Layer gehört nach späterem Lib-Beschluss
   nicht zum bestätigten Zielstand.
 

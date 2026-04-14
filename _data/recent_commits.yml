@@ -1,11 +1,23 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage
+  sha: f43c3738d016151ab62d20524d6ba2b0251fdd98
+  short_sha: f43c373
+  datetime: "2026-04-14T16:16:34+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f43c3738d016151ab62d20524d6ba2b0251fdd98"
+  message: 'refactor: Kontextpfad ohne Legacy-Fallback lesen (J01-105)'
 - repo: pipeline-config-spec-php
   sha: 6c540ad0b99e4707f489ff7885dc3cb0dcc67805
   short_sha: 6c540ad
   datetime: "2026-04-14T15:57:33+02:00"
   github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/6c540ad0b99e4707f489ff7885dc3cb0dcc67805"
   message: 'refactor: Pipeline-Phase im Kompilat von Variablen trennen (J01-125)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: a99f712db560ca86d6db71a1a2fa12bee0002454
+  short_sha: a99f712
+  datetime: "2026-04-14T15:57:33+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a99f712db560ca86d6db71a1a2fa12bee0002454"
+  message: 'docs: Kompilat und Kontext-Metadaten fuer J01-105 nachziehen (J01-125)'
 - repo: lebenslauf-web-vorlage
   sha: 0eb0fe12c5973ead133c2ce367fe3aff50db4293
   short_sha: 0eb0fe1
@@ -48,15 +60,3 @@
   datetime: "2026-04-14T12:15:12+02:00"
   github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/830ae4232adb4f0b4f51636177028b9e51e02e7e"
   message: 'refactor: pipeline-phase und origins klarziehen (J01-125)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 3f1eb51a00afc5c90e3309b9611daac98f467829
-  short_sha: 3f1eb51
-  datetime: "2026-04-14T12:15:12+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3f1eb51a00afc5c90e3309b9611daac98f467829"
-  message: 'docs: Pipeline-Phase-Validierung in J01-125 erklären (J01-125)'
-- repo: lebenslauf-web-vorlage
-  sha: 71b8027054d017b047bb2ce470a2abc2ca69e085
-  short_sha: 71b8027
-  datetime: "2026-04-14T11:48:45+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/71b8027054d017b047bb2ce470a2abc2ca69e085"
-  message: 'feat: Help-Text für bin/cli config ergänzen (J01-127)'

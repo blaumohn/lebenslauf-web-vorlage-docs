@@ -61,7 +61,7 @@ Bibliotheksvertrag nicht wieder vermischt werden.
   Lib-Historie nachgezogen.
 - `compile()` schreibt keine flachen `PIPELINE`-/`PHASE`-Keys mehr in das
   Kompilat; der Verbraucherpfad liest die Pipeline-Phase über getrennte
-  Kontext-Metadaten.
+  Kontext-Metadaten ohne Legacy-Fallback.
 - Leere bekannte Phasen ohne Gruppenreferenzen werden akzeptiert; der
   Verbraucherpfad `config lint dev --phase setup` läuft ohne
   App-Workaround.
