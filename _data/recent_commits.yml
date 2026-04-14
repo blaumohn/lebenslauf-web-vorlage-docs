@@ -1,5 +1,11 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage-docs
+  sha: 55c704b6f39730be7d68de78391bed9a5d889dc0
+  short_sha: 55c704b
+  datetime: "2026-04-14T10:54:05+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/55c704b6f39730be7d68de78391bed9a5d889dc0"
+  message: 'docs: Schrittseite J01-127 anlegen (J01-34)'
 - repo: lebenslauf-web-vorlage
   sha: 39e2003df237557c5706ed06540b55df54a2f1fb
   short_sha: 39e2003
@@ -54,9 +60,3 @@
   datetime: "2026-04-12T17:02:21+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/93ffb630c731be8717405abef8589e82db7fd106"
   message: 'fix(j01-126): pre-commit-Hook mit fetch und Pathspec-Filter'
-- repo: lebenslauf-web-vorlage-docs
-  sha: ce021d4d934fe7ca3c2d1c8af9ea4139a728f759
-  short_sha: ce021d4
-  datetime: "2026-04-12T17:02:03+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ce021d4d934fe7ca3c2d1c8af9ea4139a728f759"
-  message: 'docs: dokumentiere P_3 zur Python-Command-Basis (J01-123)'
