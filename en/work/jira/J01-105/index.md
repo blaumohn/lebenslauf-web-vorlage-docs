@@ -96,9 +96,10 @@ as follow-up work in [J01-129]({{ "/en/jira/issues/J01-129/" | relative_url }}).
   `group: [KEY, ...]`.
 - After expansion there must be no overlap between the shared phase rule and
   the concrete pipeline addition.
-- The compiled config array contains only config variables; the pipeline phase
-  is stored separately as library metadata and no longer uses a runtime
-  legacy fallback.
+- The compiled output now lives in one file:
+  `config.php` with `pipeline_phase` and `values`; the pipeline phase stays
+  clearly separated from config variables and no longer uses a runtime legacy
+  fallback.
 - A separate `pipelines.global` layer is no longer part of the confirmed
   target state after the later library decision.
 

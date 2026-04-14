@@ -37,9 +37,9 @@ Bibliotheksvertrag nicht wieder vermischt werden.
   eigenen Untervorgang.
 - `PIPELINE` und `PHASE` bleiben im Zielzustand lib-intern; ein
   App-Bereich `pipeline_phase` gehört nicht mehr zum Vertrag.
-- Das kompilierte Config-Array enthält nur die Konfig-Variablen der gültigen
-  Pipeline-Phase; die Pipeline-Phase selbst bleibt getrennt als Metadaten
-  verfügbar.
+- Das Kompilat ist jetzt eine Datei mit zwei Bereichen:
+  `pipeline_phase` und `values`. So bleibt die Pipeline-Phase im Kompilat
+  selbst von den Konfig-Variablen getrennt.
 - Die Pipeline-Phase selbst bleibt trotzdem ein eigener
   Validierungsgegenstand: `pipeline` muss in `pipelines`, `phase` in
   `phases` stehen, bevor die fachlichen Konfig-Variablen dieser
@@ -59,9 +59,9 @@ Bibliotheksvertrag nicht wieder vermischt werden.
 - Der Lib-Schnitt ist öffentlich von der App-seitigen Reduktion getrennt.
 - Lib-Code, README und die lib-internen Phasenschlüssel sind in der
   Lib-Historie nachgezogen.
-- `compile()` schreibt keine flachen `PIPELINE`-/`PHASE`-Keys mehr in das
-  Kompilat; der Verbraucherpfad liest die Pipeline-Phase über getrennte
-  Kontext-Metadaten ohne Legacy-Fallback.
+- `compile()` schreibt keine flachen `PIPELINE`-/`PHASE`-Keys mehr; der
+  Verbraucherpfad liest `pipeline_phase` direkt aus dem strukturierten
+  Kompilat ohne Legacy-Fallback.
 - Leere bekannte Phasen ohne Gruppenreferenzen werden akzeptiert; der
   Verbraucherpfad `config lint dev --phase setup` läuft ohne
   App-Workaround.
@@ -79,7 +79,7 @@ Bibliotheksvertrag nicht wieder vermischt werden.
 | Disjunktheit validiert | Überschneidungen zwischen Phase und Pipeline-Ergänzung werden abgewiesen | `pipeline-config-spec-php`, Tests | erledigt |
 | README korrigiert | Kein `required`/`allowed`-, `policy`-, `group-key`- oder `common`-Schema mehr in der Lib-Doku | `pipeline-config-spec-php/README.md`, `pipeline-config-spec-php/README.de.md` | erledigt |
 | Lib-interne Phasenschlüssel erklärt | `PIPELINE` und `PHASE` werden nicht mehr als App-Manifest-Bereich beschrieben | Lib-Doku, J01-105 | erledigt |
-| Kompilat trennt Kontext und Variablen | `compile()` schreibt nur Variablen; Pipeline-Phase bleibt getrennte Metadaten | Lib-Tests, Hauptrepo-Runtime | erledigt |
+| Kompilat trennt Pipeline-Phase und Variablen | `compile()` schreibt ein Kompilat mit `pipeline_phase` und `values` | Lib-Tests, Hauptrepo-Runtime | erledigt |
 | Leere Phasen bleiben gültig | Bekannte leere Phasen sind gültig; `dev/setup` braucht keinen Platzhalter `setup: []`; unbekannte Namen scheitern | Lib-Tests, Hauptrepo-Lints | erledigt |
 
 ## Offene Punkte

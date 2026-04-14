@@ -37,9 +37,9 @@ behavior do not drift apart again.
   dedicated subtask.
 - `PIPELINE` and `PHASE` stay internal to the library in the target state;
   there is no app-side `pipeline_phase` contract.
-- The compiled config array now contains only the config variables of the
-  valid pipeline phase; the pipeline phase itself stays available separately
-  as metadata.
+- The compiled output is now one file with two sections:
+  `pipeline_phase` and `values`. This keeps the pipeline phase separate from
+  config variables inside the compiled payload itself.
 - The pipeline phase itself still stays a separate validation target:
   `pipeline` must exist under `pipelines`, `phase` under `phases`, before the
   functional config variables of that pipeline phase are checked.
@@ -58,9 +58,9 @@ behavior do not drift apart again.
 - The lib cut is publicly separated from the app-side reduction work.
 - Library code, README, and internal phase-key handling are already aligned in
   the library history.
-- `compile()` no longer writes flat `PIPELINE`/`PHASE` keys into the compiled
-  config; the consumer path reads the pipeline phase via separate context
-  metadata without a legacy fallback.
+- `compile()` no longer writes flat `PIPELINE`/`PHASE` keys; the consumer
+  path reads `pipeline_phase` directly from the structured compiled payload
+  without a legacy fallback.
 - Known empty phases without group references are accepted; the consumer path
   `config lint dev --phase setup` works without an app-side workaround.
 - The final schema reading is fixed: no pseudo-`common`, no `group-key`
@@ -77,7 +77,7 @@ behavior do not drift apart again.
 | Disjointness validated | Overlap between phase variables and pipeline addition is rejected | `pipeline-config-spec-php`, tests | done |
 | README corrected | No `required`/`allowed`, `policy`, `group-key`, or `common` schema remains in lib docs | `pipeline-config-spec-php/README.md`, `pipeline-config-spec-php/README.de.md` | done |
 | Internal phase keys explained | `PIPELINE` and `PHASE` are no longer described as an app-manifest area | lib docs, J01-105 | done |
-| Compiled output separates context and variables | `compile()` writes only variables; the pipeline phase remains separate metadata | lib tests, main-repo runtime | done |
+| Compiled output separates pipeline phase and variables | `compile()` writes one payload with `pipeline_phase` and `values` | lib tests, main-repo runtime | done |
 | Empty phases stay valid | Known empty phases are valid; `dev/setup` needs no placeholder `setup: []`; unknown names fail | lib tests, main-repo lints | done |
 
 ## Open points

@@ -106,9 +106,10 @@ sondern als Folgearbeit [J01-129]({{ "/de/jira/issues/J01-129/" | relative_url }
   `gruppe: [KEY, ...]`.
 - Nach der Expansion darf es keine Schnittmenge zwischen gemeinsamer
   Phasenregel und konkreter Pipeline-Ergänzung geben.
-- Das kompilierte Config-Array enthält nur Konfig-Variablen; die
-  Pipeline-Phase wird separat als Lib-Metadaten geführt und ist im
-  Runtime-Pfad kein Legacy-Fallback mehr.
+- Das Kompilat liegt als eine Datei vor:
+  `config.php` mit `pipeline_phase` und `values`; die Pipeline-Phase ist
+  darin klar von den Konfig-Variablen getrennt und bleibt im Runtime-Pfad
+  ohne Legacy-Fallback.
 - Ein eigener `pipelines.global`-Layer gehört nach späterem Lib-Beschluss
   nicht zum bestätigten Zielstand.
 
