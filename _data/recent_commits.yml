@@ -1,5 +1,17 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage
+  sha: 39e2003df237557c5706ed06540b55df54a2f1fb
+  short_sha: 39e2003
+  datetime: "2026-04-13T13:58:43+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/39e2003df237557c5706ed06540b55df54a2f1fb"
+  message: 'fix(tests): starte Smoke-Server ueber composer dev (J01-123)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 0fb374db80af7eae7c7057809fa64d7fb3b50175
+  short_sha: 0fb374d
+  datetime: "2026-04-13T13:55:50+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/0fb374db80af7eae7c7057809fa64d7fb3b50175"
+  message: 'fix(j01-126): fetch entfernen, --remotes durch --all ersetzen'
 - repo: lebenslauf-web-vorlage-docs
   sha: 9c4b54094904999bc58f8d451878182470b3b2dd
   short_sha: 9c4b540
@@ -48,15 +60,3 @@
   datetime: "2026-04-12T17:02:03+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ce021d4d934fe7ca3c2d1c8af9ea4139a728f759"
   message: 'docs: dokumentiere P_3 zur Python-Command-Basis (J01-123)'
-- repo: lebenslauf-web-vorlage
-  sha: a7fc4bff17dd83568020f3978cf0bff90d272324
-  short_sha: a7fc4bf
-  datetime: "2026-04-12T17:01:53+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a7fc4bff17dd83568020f3978cf0bff90d272324"
-  message: 'feat(cli): binde Python-Config an Pipeline-Command-Basis (J01-123)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 4b9032f71ea80f212948fef0d6ed78cbad1b9673
-  short_sha: 4b9032f
-  datetime: "2026-04-10T14:59:05+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4b9032f71ea80f212948fef0d6ed78cbad1b9673"
-  message: 'chore: recent_commits.yml aktualisieren (J01-126)'
