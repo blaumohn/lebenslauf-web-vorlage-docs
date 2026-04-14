@@ -1,11 +1,23 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage-docs
+  sha: ee3839ad2b7cc939d46fd98e83ae3964f9052109
+  short_sha: ee3839a
+  datetime: "2026-04-14T16:34:32+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ee3839ad2b7cc939d46fd98e83ae3964f9052109"
+  message: 'fix(docs): Anker-IDs im Jira-Kontext an Kramdown angleichen (J01-128)'
 - repo: pipeline-config-spec-php
   sha: 64c1d411db04b4f96279758407313f1423b97ffc
   short_sha: 64c1d41
   datetime: "2026-04-14T16:28:54+02:00"
   github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/64c1d411db04b4f96279758407313f1423b97ffc"
   message: 'refactor: Kompilat auf pipeline_phase und values umstellen (J01-125)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 124f7f647fb437d4fa28f8f717d3bdb1f4da137c
+  short_sha: 124f7f6
+  datetime: "2026-04-14T16:28:54+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/124f7f647fb437d4fa28f8f717d3bdb1f4da137c"
+  message: 'docs: Ein-Datei-Kompilat fuer J01-105 nachziehen (J01-125)'
 - repo: lebenslauf-web-vorlage
   sha: 871cb60ada54a824758a665369c7f79eb0f8ddec
   short_sha: 871cb60
@@ -48,15 +60,3 @@
   datetime: "2026-04-14T15:37:39+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/99a9f90f3740e663ab6f7a9019f7278be014d856"
   message: 'fix: Anker-IDs und Backtick-Reste im TOC korrigieren (J01-128)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 3deb974e5ca1967b4b25e60f0d733c1756c7f947
-  short_sha: 3deb974
-  datetime: "2026-04-14T15:36:32+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3deb974e5ca1967b4b25e60f0d733c1756c7f947"
-  message: 'docs: J01-34 EN-Spiegel – Subtask-Prüfsumme und J01-127-Schritt nachziehen (J01-34)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 208e2331fa58ac184cb72e92c6be03ed2728d716
-  short_sha: 208e233
-  datetime: "2026-04-14T14:58:40+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/208e2331fa58ac184cb72e92c6be03ed2728d716"
-  message: 'docs: J01-129 als Folgevorgang nach J01-105 spiegeln (J01-129)'
