@@ -27,8 +27,9 @@ ohne zusätzliche `required`-/`policy`-Semantik einzuführen.
   Gruppe oder mit `gruppe: [KEY, ...]` für eine explizite Teilmenge.
 - Code-Defaults (`get('KEY', 'default')`) werden entfernt, damit der
   Parameter-Vektor-Ansatz echte Testergebnisse liefert.
-- `PIPELINE` und `PHASE` werden nicht als Manifest-Bereich im App-Repo geführt,
-  sondern lib-intern ergänzt.
+- `PIPELINE` und `PHASE` werden nicht als Manifest-Bereich im App-Repo geführt;
+  die Pipeline-Phase bleibt getrennte Lib-Metadaten und ist keine
+  Konfig-Variable.
 - Die pipeline-spec-lib liest Gruppen- und Teilmengen-Referenzen,
   expandiert sie und validiert dabei Pipeline-Namen, Phasen-Namen und die
   Disjunktheit zwischen Phase und konkreter Pipeline.
@@ -58,7 +59,7 @@ ohne zusätzliche `required`-/`policy`-Semantik einzuführen.
   Schrittseiten zeigen weitere öffentliche Schritte jetzt nicht mehr als
   Teile des aktuellen Schritts, sondern als Geschwister in
   Schritt-Reihenfolge.
-- `PIPELINE` und `PHASE` werden im Zielstand lib-intern behandelt; ein
+- `PIPELINE` und `PHASE` bleiben im Zielstand getrennte Lib-Metadaten; ein
   App-Bereich `pipeline_phase` gehört nicht mehr zum Manifest.
 - Die Lib-README wird im selben Vorgang auf das echte Strukturmodell mit
   `variable-groups`, `phases`, `pipelines` und knappen Gruppen-Mappings
@@ -105,8 +106,8 @@ sondern als Folgearbeit [J01-129]({{ "/de/jira/issues/J01-129/" | relative_url }
   `gruppe: [KEY, ...]`.
 - Nach der Expansion darf es keine Schnittmenge zwischen gemeinsamer
   Phasenregel und konkreter Pipeline-Ergänzung geben.
-- `PIPELINE` und `PHASE` werden beim Kompilieren lib-intern ergänzt und
-  tauchen deshalb nicht mehr im App-Manifest auf.
+- Das kompilierte Config-Array enthält nur Konfig-Variablen; die
+  Pipeline-Phase wird separat als Lib-Metadaten geführt.
 - Ein eigener `pipelines.global`-Layer gehört nach späterem Lib-Beschluss
   nicht zum bestätigten Zielstand.
 

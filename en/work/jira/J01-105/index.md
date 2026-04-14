@@ -27,8 +27,8 @@ extra `required` or `policy` semantics.
   `group: [KEY, ...]` for an explicit subset.
 - Code defaults (`get('KEY', 'default')`) are removed so that the
   parameter-vector approach yields real test results (prerequisite: ISS-003).
-- `PIPELINE` and `PHASE` are injected internally by the library instead of
-  living in an app-side manifest area.
+- `PIPELINE` and `PHASE` do not live in an app-side manifest area; the
+  pipeline phase stays separate library metadata and is not a config variable.
 - The pipeline-spec-lib reads group and subset references, expands them, and
   validates pipeline names, phase names, and disjointness between the phase
   and the concrete pipeline.
@@ -51,8 +51,8 @@ extra `required` or `policy` semantics.
 - Manifest, config YAMLs, and PHP usage are adjusted in the working branch to
   the group schema and the explicit SMTP sender path (2026-04-01); the next
   step now pulls the reduced structure-only model into place.
-- `PIPELINE` and `PHASE` are handled internally by the library; there is no
-  app-side `pipeline_phase` area in the target state.
+- `PIPELINE` and `PHASE` stay separate library metadata in the target state;
+  there is no app-side `pipeline_phase` area.
 - The lib README is updated in the same task to the real structure model
   with `variable-groups`, `phases`, `pipelines`, and compact group mappings.
 - Earlier dependency hints in `meta.notes` are restored on the affected
@@ -96,6 +96,8 @@ as follow-up work in [J01-129]({{ "/en/jira/issues/J01-129/" | relative_url }}).
   `group: [KEY, ...]`.
 - After expansion there must be no overlap between the shared phase rule and
   the concrete pipeline addition.
+- The compiled config array contains only config variables; the pipeline phase
+  is stored separately as library metadata.
 - A separate `pipelines.global` layer is no longer part of the confirmed
   target state after the later library decision.
 
