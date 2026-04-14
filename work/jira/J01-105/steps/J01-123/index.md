@@ -201,6 +201,11 @@ bleiben für `P_0` maßgeblich:
 - Den früh notierten Prüfpfad zu `PYTHON_PATHS` gegen das neue, streng
   technische `P_0` fortschreiben und die jetzt umgesetzte
   `BasePipelineCommand`-/`BaseCommand`-Trennung im CLI weiter absichern.
+- Die weitergehende Frage, ob die in `BasePipelineCommand` früh aufgelöste
+  Konfig danach als zugängliches Objekt statt über wiederholte
+  Methodenargumente geführt werden soll, ist bewusst als Folgearbeit
+  [J01-129]({{ "/de/jira/issues/J01-129/" | relative_url }}) ausgelagert
+  und gehört nicht mehr in das aktuelle `P_3`-Abschlussbild.
 - Den Smoke-Pfad selbst als Arbeitsvoraussetzung stabilisieren, damit
   spätere `P_j`-Schritte nicht am Clone-/Composer-Aufbau hängen bleiben.
 - Prüfen, ob `cli config` als Meta-/Spec-Befehl später aus dem Haupt-Repo in

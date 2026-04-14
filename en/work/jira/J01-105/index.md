@@ -60,6 +60,9 @@ extra `required` or `policy` semantics.
 - The app environment doc `docs/ENVIRONMENTS.md` is removed as a duplicate
   intermediate location; README and manifest keep only local app hints, while
   pipeline-spec rules point to the spec and library docs.
+- The possible object consolidation in the CLI path is no longer pushed into
+  this step tree: it now runs as its own follow-up issue `J01-129` outside
+  `105-1` to `105-4`.
 
 ## Plan as Steps
 
@@ -75,6 +78,10 @@ extra `required` or `policy` semantics.
 - [105-4 Prove test runs, J01-9 unblocking, and the closing picture]({{
   "/en/jira/issues/J01-105/steps/J01-124/" | relative_url }}) groups the
   cross-repo closing evidence.
+
+The possible follow-up to expose the config resolved early in
+`BasePipelineCommand` as an object is intentionally not cut as `105-5`, but
+as follow-up work in [J01-129]({{ "/en/jira/issues/J01-129/" | relative_url }}).
 
 ## Planned Target Model
 

@@ -1,11 +1,17 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage-docs
+  sha: 0af8ea61d195a354cc436bad8bf8ebe75af10a7c
+  short_sha: 0af8ea6
+  datetime: "2026-04-14T13:13:10+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/0af8ea61d195a354cc436bad8bf8ebe75af10a7c"
+  message: 'docs: P_3-Stand in J01-123 aktualisieren (J01-123)'
 - repo: lebenslauf-web-vorlage
-  sha: b75a0b23dcd3cb36a5b3e0e7349c71f3612c0095
-  short_sha: b75a0b2
-  datetime: "2026-04-14T12:16:09+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b75a0b23dcd3cb36a5b3e0e7349c71f3612c0095"
-  message: 'refactor: Pipeline-Befehle und Overrides nachziehen (J01-105)'
+  sha: e717bb8a63ee76ad0cbbb66037fb51520c78c08a
+  short_sha: e717bb8
+  datetime: "2026-04-14T13:13:10+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/e717bb8a63ee76ad0cbbb66037fb51520c78c08a"
+  message: 'refactor: Python-Pfad auf shared-Zuschnitt ziehen (J01-123)'
 - repo: pipeline-config-spec-php
   sha: 830ae4232adb4f0b4f51636177028b9e51e02e7e
   short_sha: 830ae42
@@ -54,9 +60,3 @@
   datetime: "2026-04-13T13:33:47+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/9c4b54094904999bc58f8d451878182470b3b2dd"
   message: 'docs: entferne run als Dev-Befehl aus P_3 (J01-123)'
-- repo: lebenslauf-web-vorlage
-  sha: 2b1e07cb36a582bcf92c31921fbe95ea707dea70
-  short_sha: 2b1e07c
-  datetime: "2026-04-13T13:33:39+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2b1e07cb36a582bcf92c31921fbe95ea707dea70"
-  message: 'refactor(dev): verlagere Dev-Start auf Composer und Python-Phase (J01-123)'

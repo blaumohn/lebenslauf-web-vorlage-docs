@@ -202,6 +202,12 @@ authoritative for `P_0`:
 - Carry the earlier noted `PYTHON_PATHS` check forward against the new,
   strictly technical `P_0`, and further harden the now implemented
   `BasePipelineCommand` / `BaseCommand` separation in the CLI.
+- The broader question whether the config resolved early in
+  `BasePipelineCommand` should then be exposed as an accessible object
+  instead of being passed repeatedly through method arguments is
+  intentionally split out into follow-up work
+  [J01-129]({{ "/en/jira/issues/J01-129/" | relative_url }}) and no longer
+  belongs to the current `P_3` closing picture.
 - Stabilize the smoke path itself so later `P_j` steps no longer stall in
   the clone/composer setup.
 - Decide later whether `cli config` as a meta/spec command should move out of

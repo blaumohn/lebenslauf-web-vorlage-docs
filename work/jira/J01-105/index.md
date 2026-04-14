@@ -70,6 +70,9 @@ ohne zusätzliche `required`-/`policy`-Semantik einzuführen.
   Zwischenort entfallen; README und Manifest tragen nur noch lokale
   App-Hinweise, während Pipeline-Spec-Regeln auf die Spec- und Lib-Doku
   verweisen.
+- Die mögliche Objekt-Konsolidierung im CLI-Pfad wird nicht mehr in diesen
+  Schrittbaum gedrückt: Sie läuft als eigener Folgevorgang `J01-129`
+  außerhalb von `105-1` bis `105-4`.
 
 ## Vorhaben als Schritte
 
@@ -85,6 +88,10 @@ ohne zusätzliche `required`-/`policy`-Semantik einzuführen.
 - [105-4 Prüfläufe, Entblockung J01-9 und Abschlussbild nachweisen]({{
   "/de/jira/issues/J01-105/steps/J01-124/" | relative_url }}) bündelt die
   Abschlussprüfung über Repo-Grenzen hinweg.
+
+Der mögliche Nachzug, die in `BasePipelineCommand` früh aufgelöste Konfig
+als Objekt zugänglich zu machen, ist bewusst nicht als `105-5` geschnitten,
+sondern als Folgearbeit [J01-129]({{ "/de/jira/issues/J01-129/" | relative_url }}).
 
 ## Geplantes Zielmodell
 
