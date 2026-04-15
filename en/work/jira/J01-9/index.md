@@ -14,7 +14,6 @@ jira_key: J01-9
 ## Links
 
 - [Operations runbook]({{ "/en/operations/" | relative_url }})
-- [Run GitHub Pages preview]({{ "/en/operations/ghpages-preview/" | relative_url }})
 
 ## Description
 

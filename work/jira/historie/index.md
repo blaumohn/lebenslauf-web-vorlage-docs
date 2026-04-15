@@ -18,10 +18,10 @@ Keine Vorgänge.
 
 ## Ohne Epic
 
+- [J01-105 — Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf]({{ "/de/jira/issues/J01-105/" | relative_url }})
 - [J01-106 — Skill-Repo: jira-pages-sync in jira-state-sync zusammenführen]({{ "/de/jira/issues/J01-106/" | relative_url }})
 - [J01-107 — Jira-Metadaten: Migrationsvorgänge aus J01-91 präzise verlinken]({{ "/de/jira/issues/J01-107/" | relative_url }})
 - [J01-108 — Jira-UI: Übersichten-Kiste aus öffentlichem Vorgangskontext entfernen]({{ "/de/jira/issues/J01-108/" | relative_url }})
-- [J01-105 — Pipeline-Spec: Manifest vereinfachen für klaren Parameter-Ablauf]({{ "/de/jira/issues/J01-105/" | relative_url }})
 - [J01-126 — GitHub Pages: Letzte Änderungen – Navbar-Seite mit Commit-Feed]({{ "/de/jira/issues/J01-126/" | relative_url }})
 - [J01-79 — Atlassian CLI: API-Betriebe (Wrapper), http als Escape-Hatch]({{ "/de/jira/issues/J01-79/" | relative_url }})
 - [J01-80 — Atlassian Tools: Refactor – AGENTS Coding-Standards durchgehend umsetzen]({{ "/de/jira/issues/J01-80/" | relative_url }})

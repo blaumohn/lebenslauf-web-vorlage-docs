@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "SCRUM Sprint 2: planning"
+title: "SCRUM Sprint 2: review, retro, and carry-over"
 permalink: /en/work/sprints/scrum-sprint-2/
 ---
 
 **Window:** 2026-04-01 to 2026-04-15  
-**Status:** active
+**Closed:** 2026-04-15
 
 ## Participants
 
@@ -16,59 +16,76 @@ permalink: /en/work/sprints/scrum-sprint-2/
 
 Finish the preview deployment.
 
-## Deliberate carry-over from Sprint 1
+## Planned
 
-- The open goal issues from Sprint 1 are carried over deliberately:
+- Sprint goal:
   [J01-9]({{ "/en/jira/issues/J01-9/" | relative_url }}),
   [J01-13]({{ "/en/jira/issues/J01-13/" | relative_url }}),
   [J01-31]({{ "/en/jira/issues/J01-31/" | relative_url }})
-- They stay `sprint-goal` because Sprint 2 continues the same goal on purpose.
-- [J01-105]({{ "/en/jira/issues/J01-105/" | relative_url }}) is included as
-  `sprint-support` because it explicitly blocks `J01-9`.
+- Support:
+  [J01-105]({{ "/en/jira/issues/J01-105/" | relative_url }})
+- Admin / framework:
+  [J01-119]({{ "/en/jira/issues/J01-119/" | relative_url }}),
+  [J01-120]({{ "/en/jira/issues/J01-120/" | relative_url }}), and
+  [J01-121]({{ "/en/jira/issues/J01-121/" | relative_url }})
+- Unplanned:
+  [J01-126]({{ "/en/jira/issues/J01-126/" | relative_url }})
 
-## Sprint backlog
+## Actually done
 
-### Sprint goal
+- Support delivered:
+  [J01-105]({{ "/en/jira/issues/J01-105/" | relative_url }}) was completed;
+  the config spec and variable paths were checked, and the blocker to
+  `J01-9` was removed.
+- Admin/framework work delivered:
+  [J01-119]({{ "/en/jira/issues/J01-119/" | relative_url }}),
+  [J01-120]({{ "/en/jira/issues/J01-120/" | relative_url }}), and
+  [J01-121]({{ "/en/jira/issues/J01-121/" | relative_url }}) were completed.
+- Unplanned additional work delivered:
+  [J01-126]({{ "/en/jira/issues/J01-126/" | relative_url }}) was completed.
+- The sprint contained 8 top-level issues; 5 were completed and 3 goal issues
+  remain open.
+
+## Not finished / carry-over
 
 - [J01-9]({{ "/en/jira/issues/J01-9/" | relative_url }})
 - [J01-13]({{ "/en/jira/issues/J01-13/" | relative_url }})
 - [J01-31]({{ "/en/jira/issues/J01-31/" | relative_url }})
 
-### Support
+## Review
 
-- [J01-105]({{ "/en/jira/issues/J01-105/" | relative_url }}) —
-  simplify the pipeline-spec manifest for a clear parameter flow
+- The sprint goal “Finish the preview deployment” remained correct, but it
+  was not fully achieved again.
+- The main progress was unblocking `J01-9` by completing `J01-105`.
+- The actual preview operations work is now narrower: the PR is merged into
+  `dev`, and the remaining work is mainly the preview run with evidence.
+- The public Jira/docs operation became more stable through sync guardrails,
+  sprint history, and the recent-feed work.
 
-### Admin / frame
+## Retro
 
-- [J01-119]({{ "/en/jira/issues/J01-119/" | relative_url }}) —
-  harden the targeted Jira/pages sync against silent regressions
-- [J01-120]({{ "/en/jira/issues/J01-120/" | relative_url }}) —
-  close Sprint 1 cleanly and publish review/retro
-- [J01-121]({{ "/en/jira/issues/J01-121/" | relative_url }}) —
-  plan Sprint 2 and sort carry-over deliberately
+- Worked well:
+  - The technical blocker `J01-105` is done instead of continuing as an
+    unclear support carry-over.
+  - Sprint and mirror work are more traceable than at the start of the sprint.
+- Missing:
+  - The actual preview deployment was not run yet.
+  - `J01-13` and `J01-31` remain open prerequisites.
+- Consequence:
+  - Sprint 3 carries only the remaining preview-goal issues and a small admin
+    issue for the sprint transition.
+  - New side work must again be labeled clearly as `sprint-support`,
+    `sprint-admin`, or `sprint-unplanned`.
 
-## Not taken in for now
+## Scope changes
 
-- Open leftovers from Sprint 1 remain in the backlog for now instead of being
-  pulled into Sprint 2 silently:
-  `J01-104`, `J01-109`, `J01-111`, `J01-113`, `J01-115`, `J01-116`, `J01-117`
-
-## Planning decision
-
-- Sprint 2 does not inherit every open Sprint-1 issue.
-- Admission is based on:
-  - direct relation to the preview goal
-  - explicit blockers of the goal work
-  - follow-up work that is already actually in progress
-- This keeps the board manageable again even while the pre-preview phase still
-  implies more variation than a mature product phase.
+- [J01-126]({{ "/en/jira/issues/J01-126/" | relative_url }}) entered the
+  sprint as unplanned feed/navbar work.
+- The backlog leftovers from Sprint 1 that were not carried into Sprint 2 stay
+  outside the active sprint goal.
 
 ## Risks
 
-- The three open goal issues from Sprint 1 remain substantial and still carry
-  most of the preview risk.
-- `J01-105` must actually help unblock `J01-9`; otherwise support work stays in
-  the sprint without helping the goal.
-- Admin work must not displace the sprint goal again.
-- New unplanned work remains possible and must then be categorized visibly.
+- Preview work can still be displaced by necessary Jira/docs operations.
+- `J01-9` is unblocked, but not operationally completed.
+- `J01-13` and `J01-31` must not only passively carry over into the new sprint.

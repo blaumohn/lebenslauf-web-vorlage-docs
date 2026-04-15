@@ -14,15 +14,12 @@ jira_key: J01-9
 ## Links
 
 - [Betrieb (Runbook)]({{ "/de/operations/" | relative_url }})
-- [GitHub-Pages-Preview ausführen]({{ "/de/operations/ghpages-preview/" | relative_url }})
 
 ## Beschreibung
 
-Ziel: Das Preview-Deployment nach dem bereits in `dev` gemergten PR
-betrieblich ausführen und dokumentieren.
+Ziel: Das Preview-Deployment nach dem bereits in dev gemergten PR betrieblich ausführen und dokumentieren.
 
-Offen ist der Preview-Lauf mit Ergebnisnachweis; die anschließende
-Deploy-Arbeit bleibt als nachgelagerte Arbeit getrennt.
+Offen ist der Preview-Lauf mit Ergebnisnachweis; die anschließende Deploy-Arbeit bleibt als nachgelagerte Arbeit getrennt.
 
 ## Unteraufgaben
 
