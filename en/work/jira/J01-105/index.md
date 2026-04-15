@@ -5,7 +5,7 @@ jira_key: J01-105
 permalink: /en/jira/issues/J01-105/
 ---
 
-**Status:** 2026-04-09
+**Status:** 2026-04-15
 
 {% include jira-state-head.html %}
 
@@ -16,6 +16,9 @@ The goal is to move the pipeline-config manifest to a clearer structural
 model with `variable-groups`, explicit `phases`, and real `pipelines`, so
 that phase boundaries are unambiguous and verifiable without introducing
 extra `required` or `policy` semantics.
+
+`J01-105` is publicly closed for this sprint. The follow-up work continues
+separately in [J01-129]({{ "/en/jira/issues/J01-129/" | relative_url }}).
 
 ## Goal
 
@@ -63,6 +66,13 @@ extra `required` or `policy` semantics.
 - The possible object consolidation in the CLI path is no longer pushed into
   this step tree: it now runs as its own follow-up issue `J01-129` outside
   `105-1` to `105-4`.
+
+## Closure
+
+- `J01-105` is treated as done in the public Jira/doc area.
+- The config spec, variables, and program paths were reviewed; the earlier
+  coherence problems were corrected.
+- Follow-up work stays visible in `J01-129` without keeping `J01-105` open.
 
 ## Plan as Steps
 
@@ -209,26 +219,26 @@ earlier loss in `meta.notes` was a regression.
 
 | Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| Derivation documented | Source analysis, the matrix of technically found `P_0` parameters, and `P_0 -> ... -> P_n` are traceable in the issue | Jira docs DE/EN | in progress |
+| Derivation documented | Source analysis, the matrix of technically found `P_0` parameters, and `P_0 -> ... -> P_n` are traceable in the issue | Jira docs DE/EN | done |
 | Target model documented | `variable-groups`, `phases`, real `pipelines`, compact group mappings, and pipeline differences are described; earlier drafts with `global`, `common`, `group-key`, `policy` are cleaned up | Jira docs DE/EN | done |
 | `PIPELINE` / `PHASE` explained | No app-side `pipeline_phase`; both keys are injected by the lib | Jira docs DE/EN | done |
 | Area syntax explained | Full-area and partial-area syntax is described as the planned model | Jira docs DE/EN | done |
 | Disjointness rule explained | No overlap between shared phase and concrete pipeline | Jira docs DE/EN | done |
-| Code defaults removed | No J01-105 case relies on content-level fallback defaults anymore; a positive interim state is evidenced, but the final closeout proof is still open | Source analysis source repos, `tagebuch` | interim state evidenced |
-| `LEBENSLAUF_PUBLIC_PROFILE` corrected | No longer in `setup` or `runtime`, only in the build path | config.manifest.yaml | open |
+| Code defaults removed | No J01-105 case relies on content-level fallback defaults anymore; a positive interim state is evidenced, and the closeout proof is now in place | Source analysis source repos, `tagebuch` | done |
+| `LEBENSLAUF_PUBLIC_PROFILE` corrected | No longer in `setup` or `runtime`, only in the build path | config.manifest.yaml | done |
 | Lib README corrected | No old `required`/`allowed`, `policy`, `group-key`, or `common` schema remains in lib docs; the README uses the new structure model | `pipeline-config-spec-php/README.md`, `pipeline-config-spec-php/README.de.md` | done |
-| Manifest simplified | Target model implemented in source repos | config.manifest.yaml | partially done |
+| Manifest simplified | Target model implemented in source repos | config.manifest.yaml | done |
 | `P_1` documented | The first reduction step (`MAIL_STDOUT` in `common`, `SMTP_*` only in `preview`, JSON residue removed) is traceable in J01-123 and the parent page | Jira docs DE/EN, app repo | done |
 | `P_2` documented | `APP_URL` was removed from the build contract because no technical reader remained; J01-123 and the parent page reflect that | Jira docs DE/EN, app repo | done |
 | Smoke rule tightened | `tests:smoke` is the preferred functional proof for `P_j`; exceptions require an evidenced substitute run | Jira docs DE/EN, `tests/py/smoke.py` | done |
 | SMTP sender clarified | Sender now runs only via `SMTP_FROM_EMAIL` and `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` remains separate | config.manifest.yaml, MailService.php | done |
-| `meta.notes` sharpened again | Functional dependencies are visible again on the affected variables; the earlier thinning is corrected | config.manifest.yaml, Jira docs | in progress |
+| `meta.notes` sharpened again | Functional dependencies are visible again on the affected variables; the earlier thinning is corrected | config.manifest.yaml, Jira docs | done |
 | Environment docs deduplicated | `docs/ENVIRONMENTS.md` is removed; README, manifest, and pipeline-spec docs carry the remaining responsibilities without rule duplication | app repo, public spec docs | done |
 | pipeline-spec-lib updated | Expander for `phases`, `pipelines`, mapping-style group rules, and internal phase keys are implemented in library history | pipeline-config-spec-php | done |
-| Tests green | There is an evidenced positive interim state for lib tests and phase-wise `config lint`; full closeout evidence is still open | Test run, `tagebuch` | interim state evidenced |
-| J01-9 unblocked | J01-105 done, J01-9 no longer blocked | Jira | open |
+| Tests green | There is an evidenced positive interim state for lib tests and phase-wise `config lint`; full closeout evidence is now in place | Test run, `tagebuch` | done |
+| J01-9 unblocked | J01-105 done, J01-9 no longer blocked | Jira | done |
 
-## Open points
+## Follow-up
 
 - J01-28: related issue (broad analysis frame, not a blocker).
 - The general `meta` semantics live in the pipeline-spec system docs, not

@@ -1,10 +1,28 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage
+  sha: d68e609fa2f95ca7696257dec0eea025de22b3a4
+  short_sha: d68e609
+  datetime: "2026-04-15T15:43:57+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d68e609fa2f95ca7696257dec0eea025de22b3a4"
+  message: 'docs: README auf Kurzstart und Doku-Verweis eindampfen (J01-91)'
+- repo: pipeline-config-spec-php
+  sha: 0c894ac3af60349d72a192296027ef985ea1b93e
+  short_sha: 0c894ac
+  datetime: "2026-04-15T13:46:32+02:00"
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/0c894ac3af60349d72a192296027ef985ea1b93e"
+  message: 'fix: filterSnapshot entfernen, Validierung greift vor Filter (J01-125)'
+- repo: pipeline-config-spec-php
+  sha: 398bd94aa48c03d1cd05abbbdaf9fc80e8eb36e8
+  short_sha: 398bd94
+  datetime: "2026-04-15T13:44:16+02:00"
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/398bd94aa48c03d1cd05abbbdaf9fc80e8eb36e8"
+  message: 'refactor: origin in source umbenennen (J01-125)'
 - repo: lebenslauf-web-vorlage-docs
-  sha: b8f82e0dbba2ae10fe85e20b21d2fa84a1107ec5
-  short_sha: b8f82e0
+  sha: cdd477382f58ad226608e83985e919196fa09972
+  short_sha: cdd4773
   datetime: "2026-04-15T09:31:39+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/b8f82e0dbba2ae10fe85e20b21d2fa84a1107ec5"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/cdd477382f58ad226608e83985e919196fa09972"
   message: 'docs: J01-128 bereinigen und J01-130 anlegen (J01-130)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 2376bedbeb615124150b563544e1c11786f2f4f2
@@ -42,21 +60,3 @@
   datetime: "2026-04-14T16:16:34+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/73c2897a87e1b36244f33346a134b98a5f87d993"
   message: 'docs: Kontextpfad ohne Legacy fuer J01-105 festziehen (J01-125)'
-- repo: lebenslauf-web-vorlage
-  sha: f43c3738d016151ab62d20524d6ba2b0251fdd98
-  short_sha: f43c373
-  datetime: "2026-04-14T16:16:34+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f43c3738d016151ab62d20524d6ba2b0251fdd98"
-  message: 'refactor: Kontextpfad ohne Legacy-Fallback lesen (J01-105)'
-- repo: pipeline-config-spec-php
-  sha: 6c540ad0b99e4707f489ff7885dc3cb0dcc67805
-  short_sha: 6c540ad
-  datetime: "2026-04-14T15:57:33+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/6c540ad0b99e4707f489ff7885dc3cb0dcc67805"
-  message: 'refactor: Pipeline-Phase im Kompilat von Variablen trennen (J01-125)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: a99f712db560ca86d6db71a1a2fa12bee0002454
-  short_sha: a99f712
-  datetime: "2026-04-14T15:57:33+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a99f712db560ca86d6db71a1a2fa12bee0002454"
-  message: 'docs: Kompilat und Kontext-Metadaten fuer J01-105 nachziehen (J01-125)'

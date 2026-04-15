@@ -5,7 +5,7 @@ jira_key: J01-105
 permalink: /de/jira/issues/J01-105/
 ---
 
-**Stand:** 2026-04-09
+**Stand:** 2026-04-15
 
 {% include jira-state-head.html %}
 
@@ -16,6 +16,9 @@ Das Ziel ist, das pipeline-config-Manifest auf ein übersichtlicheres
 Strukturmodell mit `variable-groups`, expliziten `phases` und echten
 `pipelines` umzustellen, so dass Phasengrenzen eindeutig und prüfbar sind,
 ohne zusätzliche `required`-/`policy`-Semantik einzuführen.
+
+`J01-105` ist für diesen Sprint öffentlich abgeschlossen. Die fachliche
+Folgearbeit läuft getrennt unter [J01-129]({{ "/de/jira/issues/J01-129/" | relative_url }}).
 
 ## Ziel
 
@@ -74,6 +77,14 @@ ohne zusätzliche `required`-/`policy`-Semantik einzuführen.
 - Die mögliche Objekt-Konsolidierung im CLI-Pfad wird nicht mehr in diesen
   Schrittbaum gedrückt: Sie läuft als eigener Folgevorgang `J01-129`
   außerhalb von `105-1` bis `105-4`.
+
+## Abschluss
+
+- `J01-105` ist im öffentlichen Jira-/Doku-Bereich als erledigt eingeordnet.
+- Die Konfig-Spec, die Variablen und die Programmpfade sind geprüft; die
+  früheren Kohärenzprobleme wurden bereinigt.
+- Die Folgearbeit bleibt sichtbar in `J01-129`, ohne `J01-105` offen zu
+  halten.
 
 ## Vorhaben als Schritte
 
@@ -224,15 +235,15 @@ Variableneintrag sichtbar bleiben sollen; ihr früherer Verlust in
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Herleitung dokumentiert | Quellanalyse, Matrix der technisch gefundenen `P_0`-Parameter und `P_0 -> ... -> P_n` sind im Vorgang nachvollziehbar | Jira-Doku DE/EN | in Arbeit |
+| Herleitung dokumentiert | Quellanalyse, Matrix der technisch gefundenen `P_0`-Parameter und `P_0 -> ... -> P_n` sind im Vorgang nachvollziehbar | Jira-Doku DE/EN | erledigt |
 | Zielmodell dokumentiert | `variable-groups`, `phases`, echte `pipelines`, knappe Gruppen-Mappings und Pipeline-Differenz sind beschrieben; frühere Entwürfe mit `global`, `common`, `group-key`, `policy` sind bereinigt | Jira-Doku DE/EN | erledigt |
 | lib-interne Pipeline-Phase erklärt | App-Manifest führt keinen Bereich `pipeline_phase`; `PIPELINE` und `PHASE` kommen aus der Lib | Jira-Doku DE/EN | erledigt |
 | Bereichs-Syntax erklärt | ganze Bereiche und Teilbereiche sind als geplante Syntax beschrieben | Jira-Doku DE/EN | erledigt |
 | Disjunktheitsregel erklärt | keine Schnittmenge zwischen gemeinsamer Phase und konkreter Pipeline | Jira-Doku DE/EN | erledigt |
-| Code-Defaults entfernt | Kein J01-105-Fall nutzt mehr inhaltliche Fallback-Defaults; positiver Zwischenstand ist belegt, Abschlussnachweis noch offen | Quellanalyse Quell-Repos, `tagebuch` | Zwischenstand belegt |
-| `LEBENSLAUF_PUBLIC_PROFILE` korrigiert | Nicht mehr in `setup` oder `runtime`, nur noch im Build-Pfad | config.manifest.yaml | offen |
+| Code-Defaults entfernt | Kein J01-105-Fall nutzt mehr inhaltliche Fallback-Defaults; positiver Zwischenstand ist belegt, Abschlussnachweis ist nachgezogen | Quellanalyse Quell-Repos, `tagebuch` | erledigt |
+| `LEBENSLAUF_PUBLIC_PROFILE` korrigiert | Nicht mehr in `setup` oder `runtime`, nur noch im Build-Pfad | config.manifest.yaml | erledigt |
 | Lib-README korrigiert | Kein altes `required`/`allowed`-, `policy`-, `group-key`- oder `common`-Schema mehr in der Lib-Doku; README nutzt das neue Strukturmodell | `pipeline-config-spec-php/README.md`, `pipeline-config-spec-php/README.de.md` | erledigt |
-| Manifest vereinfacht | Zielmodell im Hauptrepo-Arbeitsbranch umgesetzt | config.manifest.yaml | erledigt im Arbeitsbranch |
+| Manifest vereinfacht | Zielmodell im Hauptrepo-Arbeitsbranch umgesetzt | config.manifest.yaml | erledigt |
 | `P_1` dokumentiert | Erster Reduktionsschritt (`MAIL_STDOUT` in `common`, `SMTP_*` nur noch in `preview`, JSON-Rest entfernt) ist in J01-123 und Elternseite nachvollziehbar | Jira-Doku DE/EN, App-Repo | erledigt |
 | `P_2` dokumentiert | `APP_URL` ist mangels technischem Leser aus dem Build-Vertrag entfernt und in J01-123 sowie Elternseite nachgezogen | Jira-Doku DE/EN, App-Repo | erledigt |
 | Smoke-Regel geschärft | Für `P_j` ist `tests:smoke` der bevorzugte Funktionsnachweis; Ausnahmen brauchen einen belegten Ersatzlauf | Jira-Doku DE/EN, `tests/py/smoke.py` | erledigt |
@@ -240,8 +251,8 @@ Variableneintrag sichtbar bleiben sollen; ihr früherer Verlust in
 | `meta.notes` wieder geschärft | Fachliche Abhängigkeiten stehen wieder an den betroffenen Variablen; die frühere Ausdünnung ist korrigiert | config.manifest.yaml, Jira-Doku | in Arbeit |
 | Umgebungsdoku dedupliziert | `docs/ENVIRONMENTS.md` ist entfernt; README, Manifest und Pipeline-Spec-Doku tragen die verbliebenen Zuständigkeiten ohne Regelduplikat | App-Repo, öffentliche Spec-Doku | erledigt |
 | pipeline-spec-lib angepasst | Expander für `phases`, `pipelines`, Mapping-Gruppenregeln und lib-interne Phasenschlüssel sind in der Lib-Historie umgesetzt | pipeline-config-spec-php | erledigt |
-| Tests grün | Es gibt einen belegten positiven Zwischenstand für Lib-Tests und phasenweises `config lint`; der Gesamtabschluss bleibt offen | Test-Lauf, `tagebuch` | Zwischenstand belegt |
-| Kein Blocker mehr für J01-9 | J01-105 als erledigt, J01-9 entsperrt | Jira | offen |
+| Tests grün | Es gibt einen belegten positiven Zwischenstand für Lib-Tests und phasenweises `config lint`; der Gesamtabschluss ist nachgezogen | Test-Lauf, `tagebuch` | erledigt |
+| Kein Blocker mehr für J01-9 | J01-105 als erledigt, J01-9 entsperrt | Jira | erledigt |
 
 ## Lib-Repo-Änderungen und lokales Testen
 
@@ -263,7 +274,7 @@ die lokale Lib-Version zeigt statt auf die installierte Composer-Version.
 | Testen | Tests im Hauptrepo laufen gegen lokale Lib |
 | Rücksetzen | `.local/bin/set-config-spec-repo` ohne Argument oder auf Published-Version |
 
-## Offene Punkte
+## Folgearbeit
 
 - J01-28: verwandter Vorgang (breiter Analyserahmen, kein Blocker).
 - Die allgemeine `meta`-Semantik lebt im Pipeline-Spec-System, nicht nur in

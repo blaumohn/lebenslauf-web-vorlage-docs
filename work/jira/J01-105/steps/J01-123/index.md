@@ -6,7 +6,7 @@ jira_parent_key: J01-105
 permalink: /de/jira/issues/J01-105/steps/J01-123/
 ---
 
-**Stand:** 2026-04-12
+**Stand:** 2026-04-15
 
 {% include jira-state-head.html %}
 
@@ -187,14 +187,14 @@ bleiben für `P_0` maßgeblich:
 | `P_0` vollständig | Alle aufgenommenen Parameter tragen einen technischen Fund mit Pipeline-/Phasenbezug; ausgeschlossene Frühkandidaten und formale Kandidaten sind kenntlich gemacht | diese Schrittseite, App-Repo | erledigt |
 | `P_1` umgesetzt | `MAIL_STDOUT` liegt in `contact`, `SMTP_*` liegt in `smtp` nur noch in `preview.runtime`, `CONTACT_TO_EMAIL` wird validiert, und `LEBENSLAUF_JSON_PFAD` ist vollständig entfernt | App-Repo, diese Schrittseite | erledigt |
 | `P_2` umgesetzt | `APP_URL` ist mangels technischem Leser aus Build-Vertrag und Beispiel-Configs entfernt | App-Repo, Build-Prüflauf, diese Schrittseite | erledigt |
-| `P_3` teil-umgesetzt | `PYTHON_PATHS` bleibt als technisch belegter Python-Runner-Parameter erhalten; `BasePipelineCommand` ist im App-Repo verankert, `cli python` nutzt den gemeinsamen `shared`-Pfad, und `run` bleibt verworfen | App-Repo, diese Schrittseite, Arbeitsdoku | in Arbeit |
+| `P_3` umgesetzt | `PYTHON_PATHS` bleibt als technisch belegter Python-Runner-Parameter erhalten; `BasePipelineCommand` ist im App-Repo verankert, `cli python` nutzt den gemeinsamen `shared`-Pfad, und `run` bleibt verworfen | App-Repo, diese Schrittseite, Arbeitsdoku | erledigt |
 | Technische Nutzung sichtbar | Pro Parameter ist der konkrete Programm-Pfad benannt | diese Schrittseite | erledigt |
 | Formale Zusatzbelege sichtbar | Pro technisch gefundenem Parameter ist erkennbar, ob die Doku nachgezogen ist | diese Schrittseite | erledigt |
-| Jeder Übergang belegt | Jeder Schritt `P_i -> P_{i+1}` hat Quelltextbeleg und bevorzugt `tests:smoke` als Funktionsnachweis; falls der Smoke-Pfad nicht greift, ist ein passender Ersatzlauf zu belegen | App-Repo, Arbeitsdoku | in Arbeit |
-| Dünner Vertrag erreicht | Manifest enthält nur noch bestätigte Zielparameter aus `P_n` | `config.manifest.yaml` | in Arbeit |
-| Phase-Grenzen klar | `common` und Pipeline-Differenz sind im App-Vertrag sauber getrennt | App-Repo, J01-105 | in Arbeit |
+| Jeder Übergang belegt | Jeder Schritt `P_i -> P_{i+1}` hat Quelltextbeleg und bevorzugt `tests:smoke` als Funktionsnachweis; falls der Smoke-Pfad nicht greift, ist ein passender Ersatzlauf zu belegen | App-Repo, Arbeitsdoku | erledigt |
+| Dünner Vertrag erreicht | Manifest enthält nur noch bestätigte Zielparameter aus `P_n` | `config.manifest.yaml` | erledigt |
+| Phase-Grenzen klar | `common` und Pipeline-Differenz sind im App-Vertrag sauber getrennt | App-Repo, J01-105 | erledigt |
 
-## Offene Punkte
+## Folgearbeit
 
 - Den früh notierten Prüfpfad zu `PYTHON_PATHS` gegen das neue, streng
   technische `P_0` fortschreiben und die jetzt umgesetzte

@@ -6,7 +6,7 @@ jira_parent_key: J01-105
 permalink: /en/jira/issues/J01-105/steps/J01-123/
 ---
 
-**Status:** 2026-04-12
+**Status:** 2026-04-15
 
 {% include jira-state-head.html %}
 
@@ -188,14 +188,14 @@ authoritative for `P_0`:
 | `P_0` complete | Every included parameter carries a technical finding with pipeline/phase context; excluded early candidates and formal candidates are marked explicitly | this step page, app repo | done |
 | `P_1` implemented | `MAIL_STDOUT` lives in `contact`, `SMTP_*` lives in `smtp` only in `preview.runtime`, `CONTACT_TO_EMAIL` is validated, and `LEBENSLAUF_JSON_PFAD` is fully removed | app repo, this step page | done |
 | `P_2` implemented | `APP_URL` was removed from the build contract and example configs because no technical reader remains | app repo, build check run, this step page | done |
-| `P_3` partially implemented | `PYTHON_PATHS` remains as a technically evidenced Python-runner parameter; `BasePipelineCommand` is anchored in the app repo, `cli python` uses the shared path, and `run` stays discarded | app repo, this step page, work notes | in progress |
+| `P_3` implemented | `PYTHON_PATHS` remains as a technically evidenced Python-runner parameter; `BasePipelineCommand` is anchored in the app repo, `cli python` uses the shared path, and `run` stays discarded | app repo, this step page, work notes | done |
 | Technical usage visible | Each parameter names the concrete program path | this step page | done |
 | Formal add-on evidence visible | Each technically found parameter shows whether docs have been pulled along | this step page | done |
-| Every transition evidenced | Each step `P_i -> P_{i+1}` has source evidence and preferably `tests:smoke` as the functional proof; if the smoke path does not apply, a fitting substitute run must be evidenced | app repo, work docs | in progress |
-| Thin contract reached | Manifest contains only confirmed target parameters from `P_n` | `config.manifest.yaml` | in progress |
-| Phase boundaries clear | `common` and the pipeline delta stay cleanly separated in the app contract | app repo, J01-105 | in progress |
+| Every transition evidenced | Each step `P_i -> P_{i+1}` has source evidence and preferably `tests:smoke` as the functional proof; if the smoke path does not apply, a fitting substitute run must be evidenced | app repo, work docs | done |
+| Thin contract reached | Manifest contains only confirmed target parameters from `P_n` | `config.manifest.yaml` | done |
+| Phase boundaries clear | `common` and the pipeline delta stay cleanly separated in the app contract | app repo, J01-105 | done |
 
-## Open points
+## Follow-up
 
 - Carry the earlier noted `PYTHON_PATHS` check forward against the new,
   strictly technical `P_0`, and further harden the now implemented
