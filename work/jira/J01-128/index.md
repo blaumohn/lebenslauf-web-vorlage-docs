@@ -60,8 +60,11 @@ Die Liquid-Vorlage wendet danach `slugify` auf den Rohtextanteil des Headers
   `auto_ids`.
 
 **Vorlage `_includes/jira-work-context.html`:**
-- Nach `slugify` ein `| replace: "_", "-"` als Sicherheitsnetz ergänzen,
-  damit verbleibende Unterstriche in Anker-IDs nicht zu Abweichungen führen.
+- Die TOC-Ankerbildung an Kramdown angleichen:
+  `slugify: "pretty"` verwenden und störende Satzzeichen wie `:` und `,`
+  entfernen.
+- Damit bleiben Unterstriche in Überschriften wie `P_1`, `P_2` und `P_3`
+  erhalten, während die generierten Links zu den Kramdown-IDs passen.
 
 ## Prüfpunkte
 
@@ -69,6 +72,7 @@ Die Liquid-Vorlage wendet danach `slugify` auf den Rohtextanteil des Headers
 | --- | --- | --- |
 | TOC zeigt P_1/P_2/P_3 ohne Backticks | `P_1:`, `P_2:`, `P_3:` | erledigt |
 | TOC-Link `#p-0-belegmatrix` korrekt | kein `#p-0-belegmatrix-p-0-belegmatrix` | erledigt |
+| TOC-Anker für `P_1`/`P_2`/`P_3` korrekt | Unterstriche bleiben in den IDs erhalten | erledigt |
 | `config lint` grün | keine Vorlage bricht | erledigt |
 
 ## Links

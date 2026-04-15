@@ -1,6 +1,18 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: b8f82e0dbba2ae10fe85e20b21d2fa84a1107ec5
+  short_sha: b8f82e0
+  datetime: "2026-04-15T09:31:39+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/b8f82e0dbba2ae10fe85e20b21d2fa84a1107ec5"
+  message: 'docs: J01-128 bereinigen und J01-130 anlegen (J01-130)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 2376bedbeb615124150b563544e1c11786f2f4f2
+  short_sha: 2376bed
+  datetime: "2026-04-14T16:38:09+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2376bedbeb615124150b563544e1c11786f2f4f2"
+  message: 'docs: J01-128 im englischen Backlog eintragen (J01-128)'
+- repo: lebenslauf-web-vorlage-docs
   sha: bd553ae254f8a69d2c11c871e9c518f8c8117394
   short_sha: bd553ae
   datetime: "2026-04-14T16:34:32+02:00"
@@ -48,15 +60,3 @@
   datetime: "2026-04-14T15:57:33+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a99f712db560ca86d6db71a1a2fa12bee0002454"
   message: 'docs: Kompilat und Kontext-Metadaten fuer J01-105 nachziehen (J01-125)'
-- repo: lebenslauf-web-vorlage
-  sha: 0eb0fe12c5973ead133c2ce367fe3aff50db4293
-  short_sha: 0eb0fe1
-  datetime: "2026-04-14T15:57:33+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/0eb0fe12c5973ead133c2ce367fe3aff50db4293"
-  message: 'refactor: Runtime-Kontext getrennt von Konfig lesen (J01-105)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 99a9f90f3740e663ab6f7a9019f7278be014d856
-  short_sha: 99a9f90
-  datetime: "2026-04-14T15:37:39+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/99a9f90f3740e663ab6f7a9019f7278be014d856"
-  message: 'fix: Anker-IDs und Backtick-Reste im TOC korrigieren (J01-128)'

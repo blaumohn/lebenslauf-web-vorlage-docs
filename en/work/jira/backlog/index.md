@@ -35,6 +35,7 @@ Public Jira area (without Jira Cloud links).
 - [J01-34 — CLI-UX: Missing-Config und Pipeline-Phase]({{ "/en/jira/issues/J01-34/" | relative_url }})
   - [**34-1 Pipeline-Phase-Syntax festlegen**]({{ "/en/jira/issues/J01-34/steps/J01-35/" | relative_url }}) — To Do
   - [**34-2 Missing-Config-Befehl definieren**]({{ "/en/jira/issues/J01-34/steps/J01-36/" | relative_url }}) — To Do
+  - [**34-3 CLI: Help-Text für bin/cli config ergänzen**]({{ "/en/jira/issues/J01-34/steps/J01-127/" | relative_url }}) — To Do
 - [J01-37 — Config: Konditionelle Validierung]({{ "/en/jira/issues/J01-37/" | relative_url }})
   - [**37-1 Schema um Bedingungen erweitern**]({{ "/en/jira/issues/J01-37/steps/J01-38/" | relative_url }}) — To Do
   - [**37-2 Validierung + Doku ergänzen**]({{ "/en/jira/issues/J01-37/steps/J01-39/" | relative_url }}) — To Do
@@ -87,7 +88,7 @@ Public Jira area (without Jira Cloud links).
 
 - [J01-104 — GitHub Pages: Link-Regel für öffentliche Schrittseiten]({{ "/en/jira/issues/J01-104/" | relative_url }})
 - [J01-116 — Öffentliche Jira-Issue-Seiten: Metadaten und Unteraufgaben konsistent spiegeln]({{ "/en/jira/issues/J01-116/" | relative_url }})
-- [J01-128 — GitHub Pages: jira-work-context.html – Anker-IDs und Backtick-Reste im TOC korrigieren]({{ "/en/jira/issues/J01-128/" | relative_url }})
+- [J01-130 — GitHub Pages: Backlog, Recent-Feed und Jira-UI bewerten]({{ "/en/jira/issues/J01-130/" | relative_url }})
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/en/jira/issues/J01-85/" | relative_url }})
   - [**85-1 Refactor: Coding-Standards durchgehend umsetzen**]({{ "/en/jira/issues/J01-85/steps/J01-81/" | relative_url }}) — To Do
   - [**85-2 API-Betriebe (Wrapper), http als Escape-Hatch**]({{ "/en/jira/issues/J01-85/steps/J01-82/" | relative_url }}) — To Do
@@ -103,3 +104,4 @@ Public Jira area (without Jira Cloud links).
 - [J01-105 — Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf]({{ "/en/jira/issues/J01-105/" | relative_url }})
 - [J01-109 — GitHub-Pages-Permalinks für öffentliche Jira-Doku angleichen]({{ "/en/jira/issues/J01-109/" | relative_url }})
 - [J01-117 — Projekt-Doku: Spec-Landkarte für Projekt, Systeme und Abläufe]({{ "/en/jira/issues/J01-117/" | relative_url }})
+- [J01-129 — BasePipelineCommand-Konfig als Objekt konsolidieren]({{ "/en/jira/issues/J01-129/" | relative_url }})

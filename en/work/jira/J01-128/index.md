@@ -59,8 +59,11 @@ IAL) and generates `p-0-belegmatrix`, while the actual HTML anchor is
   Kramdown generates `id="p-0-belegmatrix"` automatically via `auto_ids`.
 
 **Template `_includes/jira-work-context.html`:**
-- Append `| replace: "_", "-"` after `slugify` as a safety net so remaining
-  underscores in anchor IDs do not cause mismatches.
+- Align TOC anchor generation with Kramdown:
+  use `slugify: "pretty"` and remove disruptive punctuation such as `:` and
+  `,`.
+- This keeps underscores in headings such as `P_1`, `P_2`, and `P_3` while
+  keeping generated links aligned with the Kramdown IDs.
 
 ## Verification
 
@@ -68,6 +71,7 @@ IAL) and generates `p-0-belegmatrix`, while the actual HTML anchor is
 | --- | --- | --- |
 | TOC shows P_1/P_2/P_3 without backticks | `P_1:`, `P_2:`, `P_3:` | done |
 | TOC link `#p-0-belegmatrix` correct | no `#p-0-belegmatrix-p-0-belegmatrix` | done |
+| TOC anchors for `P_1`/`P_2`/`P_3` correct | underscores remain in the IDs | done |
 | `config lint` green | no template breaks | done |
 
 ## Links

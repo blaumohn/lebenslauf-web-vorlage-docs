@@ -4,7 +4,7 @@ title: "J01-84 — Atlassian-System vorbereiten (SSOT: Jira)"
 permalink: /en/jira/issues/J01-84/
 jira_key: J01-84
 ---
-<!-- generated:jira:child_tasks_cksum=1094870990 -->
+<!-- generated:jira:child_tasks_cksum=1622378218 -->
 
 {% include jira-state-head.html %}
 
@@ -17,6 +17,7 @@ jira_key: J01-84
 - [J01-119 — Gezielten Jira-/Pages-Sync gegen stille Rückschritte härten]({{ "/en/jira/issues/J01-119/" | relative_url }})
 - [J01-120 — SCRUM Sprint 1 schließen und öffentliche Review/Retro nachziehen]({{ "/en/jira/issues/J01-120/" | relative_url }})
 - [J01-121 — SCRUM Sprint 2 planen und Preview-Carry-over einsortieren]({{ "/en/jira/issues/J01-121/" | relative_url }})
+- [J01-130 — GitHub Pages: Backlog, Recent-Feed und Jira-UI bewerten]({{ "/en/jira/issues/J01-130/" | relative_url }})
 - [J01-72 — Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte]({{ "/en/jira/issues/J01-72/" | relative_url }})
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/en/jira/issues/J01-85/" | relative_url }})
 

@@ -145,7 +145,7 @@
     "resolution": "-",
     "assignee": "Dani Y.",
     "priority": "High",
-    "updated": "2026-04-01T13:55:36.654+0200",
+    "updated": "2026-04-14T15:13:19.436+0200",
     "parent": null,
     "sprint": "SCRUM Sprint 1, SCRUM Sprint 2",
     "activeSprint": "SCRUM Sprint 2",
@@ -183,6 +183,14 @@
         "relation": "relates to",
         "targetKey": "J01-28",
         "targetSummary": "Analyse: Risikomuster und Befundliste",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      },
+      {
+        "direction": "inward",
+        "relation": "relates to",
+        "targetKey": "J01-129",
+        "targetSummary": "BasePipelineCommand-Konfig als Objekt konsolidieren",
         "targetStatus": "Zu erledigen",
         "targetType": "Task"
       }
@@ -553,6 +561,47 @@
       }
     ]
   },
+  "J01-126": {
+    "summary": "GitHub Pages: Letzte Änderungen – Navbar-Seite mit Commit-Feed",
+    "issuetype": "Task",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-04-10T14:45:24.445+0200",
+    "parent": null,
+    "sprint": "SCRUM Sprint 2",
+    "activeSprint": "SCRUM Sprint 2",
+    "sprintRole": "Sprint-Ungeplant",
+    "labels": [
+      "sprint-unplanned"
+    ],
+    "issueLinks": []
+  },
+  "J01-129": {
+    "summary": "BasePipelineCommand-Konfig als Objekt konsolidieren",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-04-14T15:13:19.376+0200",
+    "parent": null,
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": [
+      {
+        "direction": "outward",
+        "relation": "relates to",
+        "targetKey": "J01-105",
+        "targetSummary": "Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf",
+        "targetStatus": "In Bearbeitung",
+        "targetType": "Task"
+      }
+    ]
+  },
   "J01-13": {
     "summary": "Preview: Testmatrix und Entscheidungen finalisieren",
     "issuetype": "Task",
@@ -578,6 +627,27 @@
         "targetType": "Task"
       }
     ]
+  },
+  "J01-130": {
+    "summary": "GitHub Pages: Backlog, Recent-Feed und Jira-UI bewerten",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-04-15T09:26:15.495+0200",
+    "parent": "J01-84",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Ungeplant",
+    "labels": [
+      "backlog",
+      "docs",
+      "github-pages",
+      "sprint-unplanned",
+      "tooling"
+    ],
+    "issueLinks": []
   },
   "J01-16": {
     "summary": "Runtime: Concurrency, Locking und atomare Zugriffe",
@@ -1499,6 +1569,44 @@
     "activeSprint": "-",
     "sprintRole": "-",
     "labels": [],
+    "issueLinks": []
+  },
+  "J01-127": {
+    "summary": "34-3 CLI: Help-Text für bin/cli config ergänzen",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-04-14T10:54:25.773+0200",
+    "parent": "J01-34",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [
+      "sprint-support"
+    ],
+    "issueLinks": []
+  },
+  "J01-128": {
+    "summary": "GitHub Pages: jira-work-context.html – Anker-IDs und Backtick-Reste im TOC korrigieren",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-04-15T09:52:46.754+0200",
+    "parent": "J01-105",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [
+      "bug",
+      "docs",
+      "github-pages",
+      "sprint-unplanned",
+      "tooling"
+    ],
     "issueLinks": []
   },
   "J01-14": {
@@ -2472,27 +2580,6 @@
     "sprintRole": "-",
     "labels": [
       "sprint-admin"
-    ],
-    "issueLinks": []
-  },
-  "J01-128": {
-    "summary": "GitHub Pages: jira-work-context.html – Anker-IDs und Backtick-Reste im TOC korrigieren",
-    "issuetype": "Task",
-    "status": "In Bearbeitung",
-    "resolution": "-",
-    "assignee": "Dani Y.",
-    "priority": "Medium",
-    "updated": "2026-04-14T00:00:00.000+0200",
-    "parent": "J01-84",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "sprint-unplanned",
-    "labels": [
-      "bug",
-      "docs",
-      "github-pages",
-      "sprint-unplanned",
-      "tooling"
     ],
     "issueLinks": []
   }
