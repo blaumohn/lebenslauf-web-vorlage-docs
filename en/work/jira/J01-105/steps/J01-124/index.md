@@ -38,22 +38,23 @@ not merely claimed.
 
 - Jira subtask `J01-124` exists.
 - The verification and unblocking logic is separated as its own public step.
-- Concrete test runs and the final Jira transition are still open.
+- The config spec, variables, and program paths were checked; the final Jira
+  transition has been applied.
 
 ## Verification plan
 
 | Check | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| App tests green | Target model runs reproducibly in the main repo | app repo, test run | open |
-| Lib tests green | Expander and validation are covered against the target model | lib repo, test run | open |
-| Integration test traceable | Main repo tests against the local lib checkout | `set-config-spec-repo`, work note | open |
-| J01-9 unblocked | Jira shows no remaining blocker via `J01-105` | Jira | open |
+| App tests green | Target model runs reproducibly in the main repo | app repo, test run | done |
+| Lib tests green | Expander and validation are covered against the target model | lib repo, test run | done |
+| Integration test traceable | Main repo tests against the local lib checkout | `set-config-spec-repo`, work note | done |
+| J01-9 unblocked | Jira shows no remaining blocker via `J01-105` | Jira | done |
 
-## Open points
+## Closing picture
 
-- Freeze the minimum test set required for closure.
-- Check whether follow-up references to `J01-37` or `J01-31` must be carried
-  into the final closing picture.
+- The minimum verification set is sufficient for the sprint closeout.
+- Additional maintenance and follow-up questions stay in separate issues and
+  no longer keep `J01-105` open.
 
 ## Links
 

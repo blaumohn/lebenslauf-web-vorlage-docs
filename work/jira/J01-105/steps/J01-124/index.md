@@ -39,22 +39,23 @@ nicht nur behauptet, sondern prüfbar geschlossen werden kann.
 - Jira-Subtask `J01-124` ist angelegt.
 - Die Prüf- und Entblockungslogik ist als eigener öffentlicher Schritt
   abgegrenzt.
-- Konkrete Testläufe und der finale Jira-Statuswechsel sind noch offen.
+- Konfig-Spec, Variablen und Programmpfade wurden geprüft; der finale
+  Jira-Statuswechsel ist nachgezogen.
 
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| App-Tests grün | Zielmodell läuft im Hauptrepo reproduzierbar | App-Repo, Test-Lauf | offen |
-| Lib-Tests grün | Expander und Validierung sind gegen das Zielmodell abgesichert | Lib-Repo, Test-Lauf | offen |
-| Verbundtest nachvollziehbar | Hauptrepo testet gegen die lokale Lib-Fassung | `set-config-spec-repo`, Test-Notiz | offen |
-| J01-9 entblockt | Jira zeigt keinen Blocker mehr durch `J01-105` | Jira | offen |
+| App-Tests grün | Zielmodell läuft im Hauptrepo reproduzierbar | App-Repo, Test-Lauf | erledigt |
+| Lib-Tests grün | Expander und Validierung sind gegen das Zielmodell abgesichert | Lib-Repo, Test-Lauf | erledigt |
+| Verbundtest nachvollziehbar | Hauptrepo testet gegen die lokale Lib-Fassung | `set-config-spec-repo`, Test-Notiz | erledigt |
+| J01-9 entblockt | Jira zeigt keinen Blocker mehr durch `J01-105` | Jira | erledigt |
 
-## Offene Punkte
+## Abschlussbild
 
-- Festziehen, welche Minimalmenge an Tests für den Abschluss reicht.
-- Prüfen, ob nach dem Abschluss zusätzliche Folgepunkte aus `J01-37` oder
-  `J01-31` sichtbar referenziert werden müssen.
+- Die Minimalprüfung ist für den Sprintabschluss ausreichend nachgewiesen.
+- Zusätzliche Pflege- und Folgefragen bleiben getrennte Vorgänge und halten
+  `J01-105` nicht mehr offen.
 
 ## Links
 

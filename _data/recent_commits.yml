@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: a3c18a9ed236f7ee2e463f88d97b6cbd7311ce4d
+  short_sha: a3c18a9
+  datetime: "2026-04-15T16:34:10+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a3c18a9ed236f7ee2e463f88d97b6cbd7311ce4d"
+  message: 'docs: J01-9 Unteraufgabe für Preview-Deploy in Arbeit setzen (J01-9)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 7eeb36063aa7a28d212ac22b42cfc072ec9d6fa8
   short_sha: 7eeb360
   datetime: "2026-04-15T16:31:18+02:00"
@@ -54,9 +60,3 @@
   datetime: "2026-04-14T16:28:54+02:00"
   github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/64c1d411db04b4f96279758407313f1423b97ffc"
   message: 'refactor: Kompilat auf pipeline_phase und values umstellen (J01-125)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 124f7f647fb437d4fa28f8f717d3bdb1f4da137c
-  short_sha: 124f7f6
-  datetime: "2026-04-14T16:28:54+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/124f7f647fb437d4fa28f8f717d3bdb1f4da137c"
-  message: 'docs: Ein-Datei-Kompilat fuer J01-105 nachziehen (J01-125)'

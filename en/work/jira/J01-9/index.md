@@ -13,19 +13,19 @@ jira_key: J01-9
 
 ## Links
 
-- [Betrieb (Runbook)]({{ "/en/operations/" | relative_url }})
-- [Run the GitHub Pages preview]({{ "/en/operations/ghpages-preview/" | relative_url }})
+- [Operations runbook]({{ "/en/operations/" | relative_url }})
+- [Run GitHub Pages preview]({{ "/en/operations/ghpages-preview/" | relative_url }})
 
 ## Description
 
-Goal: continue the preview workflow operationally in the preview environment
-after the merge into `dev`.
+Goal: run and document the preview deployment after the PR that has already
+been merged into `dev`.
 
-- Run the preview deployment from the runbook
-- Check and document the result in preview
+The remaining work is the preview run with evidence of the result; the later
+deployment work stays separate.
 
 ## Subtasks
 
-- **9-1 CI-Gates finalisieren** — Done
-- **9-2 Deploy-Checks validieren** — In Progress
-- **9-3 Branch-Flow dokumentieren** — Done
+- **9-1 CI-Gates finalisieren** — To Do
+- **9-2 Deploy-Checks validieren** — To Do
+- **9-3 Branch-Flow dokumentieren** — To Do

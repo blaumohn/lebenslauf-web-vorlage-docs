@@ -248,7 +248,7 @@ Variableneintrag sichtbar bleiben sollen; ihr früherer Verlust in
 | `P_2` dokumentiert | `APP_URL` ist mangels technischem Leser aus dem Build-Vertrag entfernt und in J01-123 sowie Elternseite nachgezogen | Jira-Doku DE/EN, App-Repo | erledigt |
 | Smoke-Regel geschärft | Für `P_j` ist `tests:smoke` der bevorzugte Funktionsnachweis; Ausnahmen brauchen einen belegten Ersatzlauf | Jira-Doku DE/EN, `tests/py/smoke.py` | erledigt |
 | SMTP-Absender bereinigt | Absender läuft nur noch über `SMTP_FROM_EMAIL` und `SMTP_FROM_NAME`; `CONTACT_TO_EMAIL` bleibt separat | config.manifest.yaml, MailService.php | erledigt |
-| `meta.notes` wieder geschärft | Fachliche Abhängigkeiten stehen wieder an den betroffenen Variablen; die frühere Ausdünnung ist korrigiert | config.manifest.yaml, Jira-Doku | in Arbeit |
+| `meta.notes` wieder geschärft | Fachliche Abhängigkeiten stehen wieder an den betroffenen Variablen; die frühere Ausdünnung ist korrigiert | config.manifest.yaml, Jira-Doku | erledigt |
 | Umgebungsdoku dedupliziert | `docs/ENVIRONMENTS.md` ist entfernt; README, Manifest und Pipeline-Spec-Doku tragen die verbliebenen Zuständigkeiten ohne Regelduplikat | App-Repo, öffentliche Spec-Doku | erledigt |
 | pipeline-spec-lib angepasst | Expander für `phases`, `pipelines`, Mapping-Gruppenregeln und lib-interne Phasenschlüssel sind in der Lib-Historie umgesetzt | pipeline-config-spec-php | erledigt |
 | Tests grün | Es gibt einen belegten positiven Zwischenstand für Lib-Tests und phasenweises `config lint`; der Gesamtabschluss ist nachgezogen | Test-Lauf, `tagebuch` | erledigt |

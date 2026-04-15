@@ -18,14 +18,14 @@ jira_key: J01-9
 
 ## Beschreibung
 
-Ziel: Preview-Workflow nach dem Merge in `dev` im Preview-Betrieb
-fortsetzen.
+Ziel: Das Preview-Deployment nach dem bereits in `dev` gemergten PR
+betrieblich ausführen und dokumentieren.
 
-- Preview-Deployment im Runbook ausführen
-- Ergebnis im Preview prüfen und dokumentieren
+Offen ist der Preview-Lauf mit Ergebnisnachweis; die anschließende
+Deploy-Arbeit bleibt als nachgelagerte Arbeit getrennt.
 
 ## Unteraufgaben
 
-- **9-1 CI-Gates finalisieren** — Erledigt
-- **9-2 Deploy-Checks validieren** — In Bearbeitung
-- **9-3 Branch-Flow dokumentieren** — Erledigt
+- **9-1 CI-Gates finalisieren** — Zu erledigen
+- **9-2 Deploy-Checks validieren** — Zu erledigen
+- **9-3 Branch-Flow dokumentieren** — Zu erledigen

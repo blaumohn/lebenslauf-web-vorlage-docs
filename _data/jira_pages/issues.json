@@ -145,7 +145,7 @@
     "resolution": "Fertig",
     "assignee": "Dani Y.",
     "priority": "High",
-    "updated": "2026-04-15T15:57:43+0200",
+    "updated": "2026-04-15T20:41:54.503+0200",
     "parent": null,
     "sprint": "SCRUM Sprint 1, SCRUM Sprint 2",
     "activeSprint": "SCRUM Sprint 2",
@@ -154,14 +154,6 @@
       "sprint-support"
     ],
     "issueLinks": [
-      {
-        "direction": "outward",
-        "relation": "blocks",
-        "targetKey": "J01-9",
-        "targetSummary": "Preview: Workflow wieder aktivieren",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      },
       {
         "direction": "outward",
         "relation": "relates to",
@@ -1331,7 +1323,7 @@
     "resolution": "-",
     "assignee": "Dani Y.",
     "priority": "Highest",
-    "updated": "2026-04-15T16:05:00+0200",
+    "updated": "2026-04-15T20:41:54.533+0200",
     "parent": "J01-5",
     "sprint": "SCRUM Sprint 0, SCRUM Sprint 1, SCRUM Sprint 2",
     "activeSprint": "SCRUM Sprint 2",
@@ -1340,6 +1332,46 @@
       "sprint-goal"
     ],
     "issueLinks": [
+      {
+        "direction": "inward",
+        "relation": "is blocked by",
+        "targetKey": "J01-31",
+        "targetSummary": "Preview Readiness: System-Source-Verarbeitung",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      },
+      {
+        "direction": "inward",
+        "relation": "is blocked by",
+        "targetKey": "J01-25",
+        "targetSummary": "Dev-Branch Baseline und Repo-Hygiene",
+        "targetStatus": "Erledigt",
+        "targetType": "Task"
+      },
+      {
+        "direction": "inward",
+        "relation": "is blocked by",
+        "targetKey": "J01-13",
+        "targetSummary": "Preview: Testmatrix und Entscheidungen finalisieren",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      },
+      {
+        "direction": "inward",
+        "relation": "is blocked by",
+        "targetKey": "J01-21",
+        "targetSummary": "Runtime: IP_SALT-Verwaltung und Guardrails",
+        "targetStatus": "Erledigt",
+        "targetType": "Task"
+      },
+      {
+        "direction": "inward",
+        "relation": "is blocked by",
+        "targetKey": "J01-16",
+        "targetSummary": "Runtime: Concurrency, Locking und atomare Zugriffe",
+        "targetStatus": "Erledigt",
+        "targetType": "Task"
+      },
       {
         "direction": "outward",
         "relation": "blocks",
@@ -1481,11 +1513,11 @@
   "J01-123": {
     "summary": "105-2 Vollständige P_0-zu-P_n-Herleitung und Manifest-Ausdünnung",
     "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
+    "status": "Erledigt",
+    "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-04-03T15:13:07.197+0200",
+    "updated": "2026-04-15T20:40:01.347+0200",
     "parent": "J01-105",
     "sprint": "-",
     "activeSprint": "-",
@@ -1496,11 +1528,11 @@
   "J01-124": {
     "summary": "105-4 Prüfläufe, Entblockung J01-9 und Abschlussbild nachweisen",
     "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
+    "status": "Erledigt",
+    "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-04-03T15:12:25.855+0200",
+    "updated": "2026-04-15T20:40:01.300+0200",
     "parent": "J01-105",
     "sprint": "-",
     "activeSprint": "-",
@@ -1511,11 +1543,11 @@
   "J01-125": {
     "summary": "105-3 pipeline-spec-lib und README auf Zielmodell nachziehen",
     "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
+    "status": "Erledigt",
+    "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-04-03T15:13:41.551+0200",
+    "updated": "2026-04-15T20:40:01.305+0200",
     "parent": "J01-105",
     "sprint": "-",
     "activeSprint": "-",
