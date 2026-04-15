@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: aa3dda6ba5e391796646cb23c2b65ab05b0ac168
+  short_sha: aa3dda6
+  datetime: "2026-04-15T22:53:36+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/aa3dda6ba5e391796646cb23c2b65ab05b0ac168"
+  message: 'docs: Sprint 2 schließen und Sprint 3 eröffnen (J01-131)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 1a0f7655f4f85137f48e51a19b8f9c34b34550be
   short_sha: 1a0f765
   datetime: "2026-04-15T20:43:49+02:00"
@@ -54,9 +60,3 @@
   datetime: "2026-04-14T16:38:09+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2376bedbeb615124150b563544e1c11786f2f4f2"
   message: 'docs: J01-128 im englischen Backlog eintragen (J01-128)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: bd553ae254f8a69d2c11c871e9c518f8c8117394
-  short_sha: bd553ae
-  datetime: "2026-04-14T16:34:32+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/bd553ae254f8a69d2c11c871e9c518f8c8117394"
-  message: 'docs: Jira-Kontext-Anker-IDs an Kramdown angleichen (J01-128)'
