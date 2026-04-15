@@ -14,17 +14,18 @@ jira_key: J01-9
 ## Links
 
 - [Betrieb (Runbook)]({{ "/de/operations/" | relative_url }})
+- [GitHub-Pages-Preview ausführen]({{ "/de/operations/ghpages-preview/" | relative_url }})
 
 ## Beschreibung
 
-Ziel: Preview-Workflow reproduzierbar aktivieren und dokumentieren.
+Ziel: Preview-Workflow nach dem Merge in `dev` im Preview-Betrieb
+fortsetzen.
 
-- CI-Gates (Lint, Build, Smoke) finalisieren
-- Deploy-Checks absichern
-- Branch-Flow dokumentieren
+- Preview-Deployment im Runbook ausführen
+- Ergebnis im Preview prüfen und dokumentieren
 
 ## Unteraufgaben
 
-- **9-1 CI-Gates finalisieren** — Zu erledigen
+- **9-1 CI-Gates finalisieren** — Erledigt
 - **9-2 Deploy-Checks validieren** — Zu erledigen
-- **9-3 Branch-Flow dokumentieren** — Zu erledigen
+- **9-3 Branch-Flow dokumentieren** — Erledigt

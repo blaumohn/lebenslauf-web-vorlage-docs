@@ -1327,11 +1327,11 @@
   "J01-9": {
     "summary": "Preview: Workflow wieder aktivieren",
     "issuetype": "Task",
-    "status": "Zu erledigen",
+    "status": "In Bearbeitung",
     "resolution": "-",
     "assignee": "Dani Y.",
     "priority": "Highest",
-    "updated": "2026-04-01T13:30:54.134+0200",
+    "updated": "2026-04-15T16:05:00+0200",
     "parent": "J01-5",
     "sprint": "SCRUM Sprint 0, SCRUM Sprint 1, SCRUM Sprint 2",
     "activeSprint": "SCRUM Sprint 2",
@@ -1341,59 +1341,11 @@
     ],
     "issueLinks": [
       {
-        "direction": "inward",
-        "relation": "is blocked by",
-        "targetKey": "J01-31",
-        "targetSummary": "Preview Readiness: System-Source-Verarbeitung",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      },
-      {
-        "direction": "inward",
-        "relation": "is blocked by",
-        "targetKey": "J01-25",
-        "targetSummary": "Dev-Branch Baseline und Repo-Hygiene",
-        "targetStatus": "Erledigt",
-        "targetType": "Task"
-      },
-      {
-        "direction": "inward",
-        "relation": "is blocked by",
-        "targetKey": "J01-13",
-        "targetSummary": "Preview: Testmatrix und Entscheidungen finalisieren",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      },
-      {
-        "direction": "inward",
-        "relation": "is blocked by",
-        "targetKey": "J01-21",
-        "targetSummary": "Runtime: IP_SALT-Verwaltung und Guardrails",
-        "targetStatus": "Erledigt",
-        "targetType": "Task"
-      },
-      {
-        "direction": "inward",
-        "relation": "is blocked by",
-        "targetKey": "J01-16",
-        "targetSummary": "Runtime: Concurrency, Locking und atomare Zugriffe",
-        "targetStatus": "Erledigt",
-        "targetType": "Task"
-      },
-      {
         "direction": "outward",
         "relation": "blocks",
         "targetKey": "J01-43",
         "targetSummary": "Preview: FTP/FTPS-Verwaltungsskripte",
         "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      },
-      {
-        "direction": "inward",
-        "relation": "is blocked by",
-        "targetKey": "J01-105",
-        "targetSummary": "Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf",
-        "targetStatus": "In Bearbeitung",
         "targetType": "Task"
       }
     ]

@@ -6,7 +6,7 @@ jira_parent_key: J01-84
 permalink: /de/jira/issues/J01-121/
 ---
 
-**Stand:** 2026-04-01
+**Stand:** 2026-04-15
 
 {% include jira-state-head.html %}
 
@@ -22,7 +22,8 @@ ordnet das Preview-Carry-over bewusst ein und macht die Sprint-2-Planung
 - `SCRUM Sprint 2` als neuen aktiven Sprint mit dem Ziel
   „Preview-Deployment fertig machen“ eröffnen.
 - Die offenen Zielvorgänge aus Sprint 1 bewusst statt automatisch übernehmen.
-- Den harten Blocker `J01-105` als Support-Arbeit im Sprint sichtbar halten.
+- Den offenen Rest von `J01-9` als betriebliche Aufgabe im Sprint sichtbar
+  halten.
 - Tatsächlich bearbeitete Admin-Folgearbeit sichtbar im neuen Sprint halten.
 
 ## Aktueller Stand
@@ -32,13 +33,12 @@ ordnet das Preview-Carry-over bewusst ein und macht die Sprint-2-Planung
   [J01-9]({{ "/de/jira/issues/J01-9/" | relative_url }}),
   [J01-13]({{ "/de/jira/issues/J01-13/" | relative_url }}),
   [J01-31]({{ "/de/jira/issues/J01-31/" | relative_url }})
-- Als `sprint-support` ist zusätzlich aufgenommen:
-  [J01-105]({{ "/de/jira/issues/J01-105/" | relative_url }}) als expliziter
-  Blocker von `J01-9`
 - Als `sprint-admin` und tatsächlich bearbeitete Folgearbeit liegen im Sprint:
   [J01-119]({{ "/de/jira/issues/J01-119/" | relative_url }}),
   [J01-120]({{ "/de/jira/issues/J01-120/" | relative_url }}),
   `J01-121`
+- `J01-105` ist inzwischen erledigt; der verbleibende offene Rest liegt bei
+  `J01-9` im Preview-Deployment.
 - Andere offene Sprint-1-Reste wie `J01-104`, `J01-109`, `J01-111`,
   `J01-113`, `J01-115`, `J01-116` und `J01-117` bleiben vorerst im Backlog.
 
@@ -48,7 +48,7 @@ ordnet das Preview-Carry-over bewusst ein und macht die Sprint-2-Planung
 | --- | --- | --- | --- |
 | Neuer Sprint aktiv | Jira zeigt `SCRUM Sprint 2` als `active` | Jira-Board 1 / Sprint 35 | offen |
 | Zielarbeit bewusst übernommen | `J01-9`, `J01-13`, `J01-31` liegen im aktiven Sprint mit `sprint-goal` | Jira-Sprint 2, Sprint-Board | offen |
-| Blocker sichtbar berücksichtigt | `J01-105` liegt im aktiven Sprint mit `sprint-support` | Jira-Sprint 2, Sprint-Board | offen |
+| Betriebsrest sichtbar | `J01-9` bleibt als offener Preview-Betriebsrest sichtbar; `J01-105` ist erledigt | Jira-Sprint 2, Sprint-Board | erledigt |
 | Admin-Folgearbeit sichtbar | `J01-119`, `J01-120`, `J01-121` liegen im aktiven Sprint mit `sprint-admin` | Jira-Sprint 2, Sprint-Board | offen |
 | Sprint-2-Planning öffentlich | `work/sprints/scrum-sprint-2/` beschreibt Ziel, Carry-over und Nicht-Übernahmen | öffentliche Sprint-Doku | offen |
 
@@ -56,6 +56,8 @@ ordnet das Preview-Carry-over bewusst ein und macht die Sprint-2-Planung
 
 - Carry-over wird jetzt nicht mehr nur retrospektiv benannt, sondern aktiv in
   Sprint 2 eingeordnet.
+- Der frühere Support-Blocker `J01-105` ist erledigt; sichtbar offen bleibt
+  nur noch das Preview-Deployment von `J01-9`.
 - Offen bleibt nur die spätere Feinsteuerung innerhalb des Sprints, nicht mehr
   die Grundentscheidung über den Start des nächsten aktiven Sprints.
 

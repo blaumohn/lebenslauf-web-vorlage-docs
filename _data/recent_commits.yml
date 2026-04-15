@@ -1,5 +1,11 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage-docs
+  sha: dc4d0b71411747d0aa441782f5a55e61518d8b0c
+  short_sha: dc4d0b7
+  datetime: "2026-04-15T15:59:07+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dc4d0b71411747d0aa441782f5a55e61518d8b0c"
+  message: 'docs: J01-105 öffentlich abschließen und Mirror bereinigen (J01-105)'
 - repo: lebenslauf-web-vorlage
   sha: d68e609fa2f95ca7696257dec0eea025de22b3a4
   short_sha: d68e609
@@ -54,9 +60,3 @@
   datetime: "2026-04-14T16:28:54+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/871cb60ada54a824758a665369c7f79eb0f8ddec"
   message: 'refactor: Runtime-Kompilat auf pipeline_phase umstellen (J01-105)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 73c2897a87e1b36244f33346a134b98a5f87d993
-  short_sha: 73c2897
-  datetime: "2026-04-14T16:16:34+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/73c2897a87e1b36244f33346a134b98a5f87d993"
-  message: 'docs: Kontextpfad ohne Legacy fuer J01-105 festziehen (J01-125)'

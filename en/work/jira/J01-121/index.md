@@ -6,7 +6,7 @@ jira_parent_key: J01-84
 permalink: /en/jira/issues/J01-121/
 ---
 
-**Stand:** 2026-04-01
+**Stand:** 2026-04-15
 
 {% include jira-state-head.html %}
 
@@ -22,7 +22,7 @@ carry-over deliberately, and makes Sprint 2 planning publicly traceable.
   “Finish the preview deployment”.
 - Deliberately carry over the unfinished goal issues from Sprint 1 instead of
   inheriting everything automatically.
-- Keep the hard blocker `J01-105` visible as support work in the sprint.
+- Keep the remaining operational part of `J01-9` visible in the sprint.
 - Keep actually handled admin follow-up work visible in the new sprint.
 
 ## Current status
@@ -32,12 +32,12 @@ carry-over deliberately, and makes Sprint 2 planning publicly traceable.
   [J01-9]({{ "/en/jira/issues/J01-9/" | relative_url }}),
   [J01-13]({{ "/en/jira/issues/J01-13/" | relative_url }}),
   [J01-31]({{ "/en/jira/issues/J01-31/" | relative_url }})
-- `J01-105` was added as `sprint-support` because it is an explicit blocker of
-  `J01-9`.
 - The actually handled admin follow-up work in the sprint is:
   [J01-119]({{ "/en/jira/issues/J01-119/" | relative_url }}),
   [J01-120]({{ "/en/jira/issues/J01-120/" | relative_url }}),
   `J01-121`
+- `J01-105` is done; the remaining open part is the preview deployment of
+  `J01-9`.
 - Other open Sprint-1 leftovers such as `J01-104`, `J01-109`, `J01-111`,
   `J01-113`, `J01-115`, `J01-116`, and `J01-117` remain in the backlog for
   now.
@@ -48,7 +48,7 @@ carry-over deliberately, and makes Sprint 2 planning publicly traceable.
 | --- | --- | --- | --- |
 | New sprint active | Jira shows `SCRUM Sprint 2` as `active` | Jira board 1 / Sprint 35 | open |
 | Goal work carried over deliberately | `J01-9`, `J01-13`, `J01-31` are in the active sprint with `sprint-goal` | Jira Sprint 2, sprint board | open |
-| Blocker accounted for visibly | `J01-105` is in the active sprint with `sprint-support` | Jira Sprint 2, sprint board | open |
+| Operational rest visible | `J01-9` remains the open preview-deployment rest; `J01-105` is done | Jira Sprint 2, sprint board | done |
 | Admin follow-up visible | `J01-119`, `J01-120`, `J01-121` are in the active sprint with `sprint-admin` | Jira Sprint 2, sprint board | open |
 | Public Sprint-2 planning exists | `work/sprints/scrum-sprint-2/` describes goal, carry-over, and what stayed out | public sprint doc | open |
 
@@ -56,6 +56,8 @@ carry-over deliberately, and makes Sprint 2 planning publicly traceable.
 
 - Carry-over is no longer only named retrospectively; it is now actively
   sorted into Sprint 2.
+- The earlier blocker `J01-105` is done; only the preview deployment of
+  `J01-9` remains open.
 - What remains open is later in-sprint steering, not the basic decision to
   start the next active sprint.
 
