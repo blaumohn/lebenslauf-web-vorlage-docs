@@ -27,5 +27,5 @@ after the merge into `dev`.
 ## Subtasks
 
 - **9-1 CI-Gates finalisieren** — Done
-- **9-2 Deploy-Checks validieren** — To Do
+- **9-2 Deploy-Checks validieren** — In Progress
 - **9-3 Branch-Flow dokumentieren** — Done

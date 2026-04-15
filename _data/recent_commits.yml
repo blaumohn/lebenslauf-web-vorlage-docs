@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: 7eeb36063aa7a28d212ac22b42cfc072ec9d6fa8
+  short_sha: 7eeb360
+  datetime: "2026-04-15T16:31:18+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7eeb36063aa7a28d212ac22b42cfc072ec9d6fa8"
+  message: 'docs: J01-9 auf Preview-Deployment im Bearbeitungsstand zuschneiden (J01-9)'
+- repo: lebenslauf-web-vorlage-docs
   sha: dc4d0b71411747d0aa441782f5a55e61518d8b0c
   short_sha: dc4d0b7
   datetime: "2026-04-15T15:59:07+02:00"
@@ -54,9 +60,3 @@
   datetime: "2026-04-14T16:28:54+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/124f7f647fb437d4fa28f8f717d3bdb1f4da137c"
   message: 'docs: Ein-Datei-Kompilat fuer J01-105 nachziehen (J01-125)'
-- repo: lebenslauf-web-vorlage
-  sha: 871cb60ada54a824758a665369c7f79eb0f8ddec
-  short_sha: 871cb60
-  datetime: "2026-04-14T16:28:54+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/871cb60ada54a824758a665369c7f79eb0f8ddec"
-  message: 'refactor: Runtime-Kompilat auf pipeline_phase umstellen (J01-105)'

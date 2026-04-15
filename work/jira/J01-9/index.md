@@ -27,5 +27,5 @@ fortsetzen.
 ## Unteraufgaben
 
 - **9-1 CI-Gates finalisieren** — Erledigt
-- **9-2 Deploy-Checks validieren** — Zu erledigen
+- **9-2 Deploy-Checks validieren** — In Bearbeitung
 - **9-3 Branch-Flow dokumentieren** — Erledigt
