@@ -32,11 +32,11 @@ The app repo contains source code, but no regular project docs under `docs/`.
 
 ## Reader paths
 
-- organisational entry:
+- **[organisational entry]({{ "/en/getting-started/" | relative_url }})**  
   project purpose, project map, and defining characteristics
-- technical entry:
+- **[technical entry]({{ "/en/specs/" | relative_url }})**  
   system boundaries, operations model, delivery, and quality logic
-- implementation entry:
+- **[implementation entry]({{ "/en/operations/" | relative_url }})**  
   repos, build/runtime paths, policies, runbooks, and work docs
 
 ## Areas

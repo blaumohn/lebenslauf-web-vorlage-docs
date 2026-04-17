@@ -1,5 +1,11 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage-docs
+  sha: 01efcc328bb846a39a6bcccb838c056ed45e8ffd
+  short_sha: 01efcc3
+  datetime: "2026-04-17T10:24:55+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/01efcc328bb846a39a6bcccb838c056ed45e8ffd"
+  message: 'docs: J01-132 anlegen und J01-9/J01-131 nachziehen (J01-9, J01-131)'
 - repo: lebenslauf-web-vorlage
   sha: aa0d9f3a5c686dff9a8f924388662b6036d77495
   short_sha: aa0d9f3
@@ -54,9 +60,3 @@
   datetime: "2026-04-15T15:59:07+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dc4d0b71411747d0aa441782f5a55e61518d8b0c"
   message: 'docs: J01-105 öffentlich abschließen und Mirror bereinigen (J01-105)'
-- repo: lebenslauf-web-vorlage
-  sha: d68e609fa2f95ca7696257dec0eea025de22b3a4
-  short_sha: d68e609
-  datetime: "2026-04-15T15:43:57+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d68e609fa2f95ca7696257dec0eea025de22b3a4"
-  message: 'docs: README auf Kurzstart und Doku-Verweis eindampfen (J01-91)'

@@ -20,7 +20,3 @@ sprint view.
   issues.
 - **Sprint Board** shows only the active sprint slice.
 
-## Public step pages
-
-- [16-1: Roll out locking for rate limiting and CAPTCHA]({{ "/en/jira/issues/J01-16/steps/J01-17/" | relative_url }})
-- [16-2: Roll out locking for token rotation]({{ "/en/jira/issues/J01-16/steps/J01-18/" | relative_url }})

@@ -32,11 +32,11 @@ Das App-Repo enthält Quelltext, aber keine reguläre Projektdoku unter `docs/`.
 
 ## Leserpfade
 
-- fachlicher Einstieg:
+- **[fachlicher Einstieg]({{ "/de/getting-started/" | relative_url }})**  
   Projektzweck, Projektlandkarte und zentrale Eigenschaften
-- technischer Einstieg:
+- **[technischer Einstieg]({{ "/de/specs/" | relative_url }})**  
   Systemgrenzen, Betriebsmodell, Delivery- und Qualitätslogik
-- Umsetzungseinstieg:
+- **[Umsetzungseinstieg]({{ "/de/operations/" | relative_url }})**  
   Repos, Build-/Runtime-Pfade, Policies, Runbooks und Arbeitsdoku
 
 ## Bereiche

@@ -20,7 +20,3 @@ Historie und aktueller Sprint-Sicht.
   Top-Level-Vorgänge.
 - **Sprint Board** zeigt nur den aktuellen Sprint-Zuschnitt.
 
-## Öffentliche Schrittseiten
-
-- [16-1: Locking für Rate-Limit und CAPTCHA ausrollen]({{ "/de/jira/issues/J01-16/steps/J01-17/" | relative_url }})
-- [16-2: Locking für Token-Rotation ausrollen]({{ "/de/jira/issues/J01-16/steps/J01-18/" | relative_url }})
