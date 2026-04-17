@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: 925b4e027c37f165efccd52237f4daef94d5fdd3
+  short_sha: 925b4e0
+  datetime: "2026-04-17T12:01:50+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/925b4e027c37f165efccd52237f4daef94d5fdd3"
+  message: 'docs: Footer bereinigen, Schrittliste entfernen und Leserpfade verlinken (J01-130, J01-104)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 01efcc328bb846a39a6bcccb838c056ed45e8ffd
   short_sha: 01efcc3
   datetime: "2026-04-17T10:24:55+02:00"
@@ -54,9 +60,3 @@
   datetime: "2026-04-15T16:31:18+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7eeb36063aa7a28d212ac22b42cfc072ec9d6fa8"
   message: 'docs: J01-9 auf Preview-Deployment im Bearbeitungsstand zuschneiden (J01-9)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: dc4d0b71411747d0aa441782f5a55e61518d8b0c
-  short_sha: dc4d0b7
-  datetime: "2026-04-15T15:59:07+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dc4d0b71411747d0aa441782f5a55e61518d8b0c"
-  message: 'docs: J01-105 öffentlich abschließen und Mirror bereinigen (J01-105)'

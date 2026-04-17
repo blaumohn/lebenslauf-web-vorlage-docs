@@ -1,12 +1,52 @@
 {
-  "J01-100": {
-    "summary": "docs/agile-Reste nach Sprint 1 an kanonischen Zielorten migrieren",
+  "J01-131": {
+    "summary": "SCRUM Sprint 3 planen und Preview-Betrieb fortsetzen",
+    "issuetype": "Task",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-04-15T22:47:12.710+0200",
+    "parent": "J01-84",
+    "sprint": "SCRUM Sprint 3",
+    "activeSprint": "SCRUM Sprint 3",
+    "sprintRole": "Sprint-Admin",
+    "labels": [
+      "atlassian-tools",
+      "sprint-admin",
+      "tooling"
+    ],
+    "issueLinks": []
+  },
+  "J01-130": {
+    "summary": "GitHub Pages: Backlog, Recent-Feed und Jira-UI bewerten",
     "issuetype": "Task",
     "status": "Zu erledigen",
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-19T16:25:31.930+0100",
+    "updated": "2026-04-15T09:30:06.541+0200",
+    "parent": "J01-84",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Ungeplant",
+    "labels": [
+      "backlog",
+      "docs",
+      "github-pages",
+      "sprint-unplanned",
+      "tooling"
+    ],
+    "issueLinks": []
+  },
+  "J01-129": {
+    "summary": "BasePipelineCommand-Konfig als Objekt konsolidieren",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-04-14T15:13:19.376+0200",
     "parent": null,
     "sprint": "-",
     "activeSprint": "-",
@@ -16,116 +56,368 @@
       {
         "direction": "outward",
         "relation": "relates to",
-        "targetKey": "J01-103",
-        "targetSummary": "J01-91: offene Zielerfüllung für Public-Doku und Übernahmestatus nachziehen",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      },
-      {
-        "direction": "inward",
-        "relation": "relates to",
-        "targetKey": "J01-98",
-        "targetSummary": "J01-91 Phase 2: sprintrelevante Preview-Migration umsetzen",
+        "targetKey": "J01-105",
+        "targetSummary": "Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf",
         "targetStatus": "Erledigt",
         "targetType": "Task"
-      },
-      {
-        "direction": "inward",
-        "relation": "relates to",
-        "targetKey": "J01-91",
-        "targetSummary": "72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen",
-        "targetStatus": "Erledigt",
-        "targetType": "Subtask"
       }
     ]
   },
-  "J01-101": {
-    "summary": "CLI-Cache: Policy-Schärfung im curl-Wrapper als späteren Sprint-Kandidaten vorbereiten",
+  "J01-126": {
+    "summary": "GitHub Pages: Letzte Änderungen – Navbar-Seite mit Commit-Feed",
     "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
+    "status": "Erledigt",
+    "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-17T11:44:27.631+0100",
+    "updated": "2026-04-10T14:45:24.445+0200",
     "parent": null,
-    "sprint": "-",
+    "sprint": "SCRUM Sprint 2",
     "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
+    "sprintRole": "Sprint-Ungeplant",
+    "labels": [
+      "sprint-unplanned"
+    ],
     "issueLinks": []
   },
-  "J01-102": {
-    "summary": "KI-Arbeit: Projektkarte und Skill-/Doku-Trennung schärfen",
+  "J01-121": {
+    "summary": "SCRUM Sprint 2 planen und Preview-Carry-over einsortieren",
     "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "Dani Y.",
     "priority": "Medium",
-    "updated": "2026-03-17T15:24:02.416+0100",
-    "parent": null,
-    "sprint": "-",
+    "updated": "2026-04-01T13:37:22.842+0200",
+    "parent": "J01-84",
+    "sprint": "SCRUM Sprint 2",
     "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-103": {
-    "summary": "J01-91: offene Zielerfüllung für Public-Doku und Übernahmestatus nachziehen",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-19T21:34:15.520+0100",
-    "parent": null,
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
+    "sprintRole": "Sprint-Admin",
+    "labels": [
+      "atlassian-tools",
+      "sprint-admin",
+      "tooling"
+    ],
     "issueLinks": [
       {
         "direction": "inward",
         "relation": "relates to",
-        "targetKey": "J01-91",
-        "targetSummary": "72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen",
+        "targetKey": "J01-120",
+        "targetSummary": "SCRUM Sprint 1 schließen und öffentliche Review/Retro nachziehen",
+        "targetStatus": "Erledigt",
+        "targetType": "Task"
+      }
+    ]
+  },
+  "J01-120": {
+    "summary": "SCRUM Sprint 1 schließen und öffentliche Review/Retro nachziehen",
+    "issuetype": "Task",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "Dani Y.",
+    "priority": "Medium",
+    "updated": "2026-04-01T13:37:22.849+0200",
+    "parent": "J01-84",
+    "sprint": "SCRUM Sprint 2",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Admin",
+    "labels": [
+      "atlassian-tools",
+      "sprint-admin",
+      "tooling"
+    ],
+    "issueLinks": [
+      {
+        "direction": "inward",
+        "relation": "relates to",
+        "targetKey": "J01-94",
+        "targetSummary": "72-14 Scrum-Sprint-Rahmen und öffentliche Sprint-Historie in GitHub Pages",
         "targetStatus": "Erledigt",
         "targetType": "Subtask"
       },
       {
-        "direction": "inward",
+        "direction": "outward",
         "relation": "relates to",
-        "targetKey": "J01-100",
-        "targetSummary": "docs/agile-Reste nach Sprint 1 an kanonischen Zielorten migrieren",
-        "targetStatus": "Zu erledigen",
+        "targetKey": "J01-121",
+        "targetSummary": "SCRUM Sprint 2 planen und Preview-Carry-over einsortieren",
+        "targetStatus": "Erledigt",
         "targetType": "Task"
-      },
+      }
+    ]
+  },
+  "J01-119": {
+    "summary": "Gezielten Jira-/Pages-Sync gegen stille Rückschritte härten",
+    "issuetype": "Task",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "Dani Y.",
+    "priority": "Medium",
+    "updated": "2026-04-01T13:37:22.821+0200",
+    "parent": "J01-84",
+    "sprint": "SCRUM Sprint 2",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Admin",
+    "labels": [
+      "atlassian-tools",
+      "sprint-admin",
+      "tooling"
+    ],
+    "issueLinks": [
       {
         "direction": "inward",
         "relation": "relates to",
-        "targetKey": "J01-109",
-        "targetSummary": "GitHub-Pages-Permalinks für öffentliche Jira-Doku angleichen",
+        "targetKey": "J01-95",
+        "targetSummary": "72-15 Journalisierten Jira-/Pages-Sync mit Resume aufbauen",
+        "targetStatus": "Erledigt",
+        "targetType": "Subtask"
+      }
+    ]
+  },
+  "J01-118": {
+    "summary": "Tagebuch-Kontext für projektfremde Notizen im KI-Agenten-Lauf schärfen",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-30T17:36:57.726+0200",
+    "parent": "J01-111",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Ungeplant",
+    "labels": [
+      "sprint-unplanned"
+    ],
+    "issueLinks": [
+      {
+        "direction": "outward",
+        "relation": "blocks",
+        "targetKey": "J01-113",
+        "targetSummary": "Regelwerk-Bereinigung: Ebenen 1–2–3 trennen und Prüfkategorie-Zuordnung A/B/C/D",
         "targetStatus": "Zu erledigen",
         "targetType": "Task"
       }
     ]
   },
-  "J01-104": {
-    "summary": "GitHub Pages: Link-Regel für öffentliche Schrittseiten",
+  "J01-117": {
+    "summary": "Projekt-Doku: Spec-Landkarte für Projekt, Systeme und Abläufe",
+    "issuetype": "Task",
+    "status": "In Bearbeitung",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-24T16:01:40.922+0100",
+    "parent": null,
+    "sprint": "SCRUM Sprint 1",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Ungeplant",
+    "labels": [
+      "sprint-unplanned"
+    ],
+    "issueLinks": []
+  },
+  "J01-116": {
+    "summary": "Öffentliche Jira-Issue-Seiten: Metadaten und Unteraufgaben konsistent spiegeln",
     "issuetype": "Task",
     "status": "Zu erledigen",
     "resolution": "-",
     "assignee": "Dani Y.",
     "priority": "Medium",
-    "updated": "2026-03-24T11:37:56.669+0100",
+    "updated": "2026-03-24T11:56:48.308+0100",
     "parent": "J01-84",
     "sprint": "SCRUM Sprint 1",
     "activeSprint": "-",
     "sprintRole": "Sprint-Admin",
     "labels": [
+      "sprint-admin"
+    ],
+    "issueLinks": [
+      {
+        "direction": "outward",
+        "relation": "relates to",
+        "targetKey": "J01-107",
+        "targetSummary": "Jira-Metadaten: Migrationsvorgänge aus J01-91 präzise verlinken",
+        "targetStatus": "Erledigt",
+        "targetType": "Task"
+      },
+      {
+        "direction": "outward",
+        "relation": "relates to",
+        "targetKey": "J01-31",
+        "targetSummary": "Preview Readiness: System-Source-Verarbeitung",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      },
+      {
+        "direction": "outward",
+        "relation": "relates to",
+        "targetKey": "J01-104",
+        "targetSummary": "GitHub Pages: Link-Regel für öffentliche Schrittseiten",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      }
+    ]
+  },
+  "J01-115": {
+    "summary": "KI-Prüfarchitektur: Kategorie-A-bis-D-System aufbauen (Hook/Skript/Modell)",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "Dani Y.",
+    "priority": "High",
+    "updated": "2026-03-20T12:36:50.162+0100",
+    "parent": "J01-111",
+    "sprint": "SCRUM Sprint 1",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Ungeplant",
+    "labels": [
+      "sprint-unplanned"
+    ],
+    "issueLinks": [
+      {
+        "direction": "outward",
+        "relation": "relates to",
+        "targetKey": "J01-92",
+        "targetSummary": "72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern",
+        "targetStatus": "Erledigt",
+        "targetType": "Subtask"
+      },
+      {
+        "direction": "inward",
+        "relation": "is blocked by",
+        "targetKey": "J01-113",
+        "targetSummary": "Regelwerk-Bereinigung: Ebenen 1–2–3 trennen und Prüfkategorie-Zuordnung A/B/C/D",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      }
+    ]
+  },
+  "J01-113": {
+    "summary": "Regelwerk-Bereinigung: Ebenen 1–2–3 trennen und Prüfkategorie-Zuordnung A/B/C/D",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "Dani Y.",
+    "priority": "High",
+    "updated": "2026-03-30T17:36:57.759+0200",
+    "parent": "J01-111",
+    "sprint": "SCRUM Sprint 1",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Ungeplant",
+    "labels": [
+      "sprint-unplanned"
+    ],
+    "issueLinks": [
+      {
+        "direction": "outward",
+        "relation": "relates to",
+        "targetKey": "J01-92",
+        "targetSummary": "72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern",
+        "targetStatus": "Erledigt",
+        "targetType": "Subtask"
+      },
+      {
+        "direction": "outward",
+        "relation": "blocks",
+        "targetKey": "J01-115",
+        "targetSummary": "KI-Prüfarchitektur: Kategorie-A-bis-D-System aufbauen (Hook/Skript/Modell)",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      },
+      {
+        "direction": "inward",
+        "relation": "is blocked by",
+        "targetKey": "J01-118",
+        "targetSummary": "Tagebuch-Kontext für projektfremde Notizen im KI-Agenten-Lauf schärfen",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      }
+    ]
+  },
+  "J01-111": {
+    "summary": "KI-Regelwerk-Kohärenz und Prüfarchitektur",
+    "issuetype": "Epic",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "Dani Y.",
+    "priority": "High",
+    "updated": "2026-03-20T12:36:50.186+0100",
+    "parent": null,
+    "sprint": "SCRUM Sprint 1",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Ungeplant",
+    "labels": [
+      "sprint-unplanned"
+    ],
+    "issueLinks": []
+  },
+  "J01-109": {
+    "summary": "GitHub-Pages-Permalinks für öffentliche Jira-Doku angleichen",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "Dani Y.",
+    "priority": "Medium",
+    "updated": "2026-03-20T12:36:29.379+0100",
+    "parent": null,
+    "sprint": "SCRUM Sprint 1",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Admin",
+    "labels": [
       "docs",
-      "github-pages",
-      "sprint-admin",
-      "tooling"
+      "sprint-admin"
+    ],
+    "issueLinks": [
+      {
+        "direction": "outward",
+        "relation": "relates to",
+        "targetKey": "J01-91",
+        "targetSummary": "72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen",
+        "targetStatus": "Erledigt",
+        "targetType": "Subtask"
+      },
+      {
+        "direction": "outward",
+        "relation": "relates to",
+        "targetKey": "J01-103",
+        "targetSummary": "J01-91: offene Zielerfüllung für Public-Doku und Übernahmestatus nachziehen",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      }
+    ]
+  },
+  "J01-108": {
+    "summary": "Jira-UI: Übersichten-Kiste aus öffentlichem Vorgangskontext entfernen",
+    "issuetype": "Task",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "Dani Y.",
+    "priority": "Medium",
+    "updated": "2026-03-20T12:36:29.364+0100",
+    "parent": null,
+    "sprint": "SCRUM Sprint 1",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Admin",
+    "labels": [
+      "docs",
+      "sprint-admin"
+    ],
+    "issueLinks": []
+  },
+  "J01-107": {
+    "summary": "Jira-Metadaten: Migrationsvorgänge aus J01-91 präzise verlinken",
+    "issuetype": "Task",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "Dani Y.",
+    "priority": "Medium",
+    "updated": "2026-03-24T11:37:56.471+0100",
+    "parent": null,
+    "sprint": "SCRUM Sprint 1",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Admin",
+    "labels": [
+      "docs",
+      "sprint-admin"
     ],
     "issueLinks": [
       {
@@ -137,6 +429,21 @@
         "targetType": "Task"
       }
     ]
+  },
+  "J01-106": {
+    "summary": "Skill-Repo: jira-pages-sync in jira-state-sync zusammenführen",
+    "issuetype": "Task",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-19T16:06:37.197+0100",
+    "parent": null,
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
   },
   "J01-105": {
     "summary": "Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf",
@@ -188,36 +495,23 @@
       }
     ]
   },
-  "J01-106": {
-    "summary": "Skill-Repo: jira-pages-sync in jira-state-sync zusammenführen",
+  "J01-104": {
+    "summary": "GitHub Pages: Link-Regel für öffentliche Schrittseiten",
     "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-19T16:06:37.197+0100",
-    "parent": null,
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-107": {
-    "summary": "Jira-Metadaten: Migrationsvorgänge aus J01-91 präzise verlinken",
-    "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
+    "status": "Zu erledigen",
+    "resolution": "-",
     "assignee": "Dani Y.",
     "priority": "Medium",
-    "updated": "2026-03-24T11:37:56.471+0100",
-    "parent": null,
+    "updated": "2026-03-24T11:37:56.669+0100",
+    "parent": "J01-84",
     "sprint": "SCRUM Sprint 1",
     "activeSprint": "-",
     "sprintRole": "Sprint-Admin",
     "labels": [
       "docs",
-      "sprint-admin"
+      "github-pages",
+      "sprint-admin",
+      "tooling"
     ],
     "issueLinks": [
       {
@@ -230,43 +524,22 @@
       }
     ]
   },
-  "J01-108": {
-    "summary": "Jira-UI: Übersichten-Kiste aus öffentlichem Vorgangskontext entfernen",
-    "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "Dani Y.",
-    "priority": "Medium",
-    "updated": "2026-03-20T12:36:29.364+0100",
-    "parent": null,
-    "sprint": "SCRUM Sprint 1",
-    "activeSprint": "-",
-    "sprintRole": "Sprint-Admin",
-    "labels": [
-      "docs",
-      "sprint-admin"
-    ],
-    "issueLinks": []
-  },
-  "J01-109": {
-    "summary": "GitHub-Pages-Permalinks für öffentliche Jira-Doku angleichen",
+  "J01-103": {
+    "summary": "J01-91: offene Zielerfüllung für Public-Doku und Übernahmestatus nachziehen",
     "issuetype": "Task",
     "status": "Zu erledigen",
     "resolution": "-",
-    "assignee": "Dani Y.",
+    "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-20T12:36:29.379+0100",
+    "updated": "2026-03-19T21:34:15.520+0100",
     "parent": null,
-    "sprint": "SCRUM Sprint 1",
+    "sprint": "-",
     "activeSprint": "-",
-    "sprintRole": "Sprint-Admin",
-    "labels": [
-      "docs",
-      "sprint-admin"
-    ],
+    "sprintRole": "-",
+    "labels": [],
     "issueLinks": [
       {
-        "direction": "outward",
+        "direction": "inward",
         "relation": "relates to",
         "targetKey": "J01-91",
         "targetSummary": "72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen",
@@ -274,310 +547,61 @@
         "targetType": "Subtask"
       },
       {
-        "direction": "outward",
+        "direction": "inward",
         "relation": "relates to",
-        "targetKey": "J01-103",
-        "targetSummary": "J01-91: offene Zielerfüllung für Public-Doku und Übernahmestatus nachziehen",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      }
-    ]
-  },
-  "J01-111": {
-    "summary": "KI-Regelwerk-Kohärenz und Prüfarchitektur",
-    "issuetype": "Epic",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "Dani Y.",
-    "priority": "High",
-    "updated": "2026-03-20T12:36:50.186+0100",
-    "parent": null,
-    "sprint": "SCRUM Sprint 1",
-    "activeSprint": "-",
-    "sprintRole": "Sprint-Ungeplant",
-    "labels": [
-      "sprint-unplanned"
-    ],
-    "issueLinks": []
-  },
-  "J01-113": {
-    "summary": "Regelwerk-Bereinigung: Ebenen 1–2–3 trennen und Prüfkategorie-Zuordnung A/B/C/D",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "Dani Y.",
-    "priority": "High",
-    "updated": "2026-03-30T17:36:57.759+0200",
-    "parent": "J01-111",
-    "sprint": "SCRUM Sprint 1",
-    "activeSprint": "-",
-    "sprintRole": "Sprint-Ungeplant",
-    "labels": [
-      "sprint-unplanned"
-    ],
-    "issueLinks": [
-      {
-        "direction": "outward",
-        "relation": "relates to",
-        "targetKey": "J01-92",
-        "targetSummary": "72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern",
-        "targetStatus": "Erledigt",
-        "targetType": "Subtask"
-      },
-      {
-        "direction": "outward",
-        "relation": "blocks",
-        "targetKey": "J01-115",
-        "targetSummary": "KI-Prüfarchitektur: Kategorie-A-bis-D-System aufbauen (Hook/Skript/Modell)",
+        "targetKey": "J01-100",
+        "targetSummary": "docs/agile-Reste nach Sprint 1 an kanonischen Zielorten migrieren",
         "targetStatus": "Zu erledigen",
         "targetType": "Task"
       },
       {
         "direction": "inward",
-        "relation": "is blocked by",
-        "targetKey": "J01-118",
-        "targetSummary": "Tagebuch-Kontext für projektfremde Notizen im KI-Agenten-Lauf schärfen",
+        "relation": "relates to",
+        "targetKey": "J01-109",
+        "targetSummary": "GitHub-Pages-Permalinks für öffentliche Jira-Doku angleichen",
         "targetStatus": "Zu erledigen",
         "targetType": "Task"
       }
     ]
   },
-  "J01-115": {
-    "summary": "KI-Prüfarchitektur: Kategorie-A-bis-D-System aufbauen (Hook/Skript/Modell)",
+  "J01-102": {
+    "summary": "KI-Arbeit: Projektkarte und Skill-/Doku-Trennung schärfen",
     "issuetype": "Task",
     "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "Dani Y.",
-    "priority": "High",
-    "updated": "2026-03-20T12:36:50.162+0100",
-    "parent": "J01-111",
-    "sprint": "SCRUM Sprint 1",
-    "activeSprint": "-",
-    "sprintRole": "Sprint-Ungeplant",
-    "labels": [
-      "sprint-unplanned"
-    ],
-    "issueLinks": [
-      {
-        "direction": "outward",
-        "relation": "relates to",
-        "targetKey": "J01-92",
-        "targetSummary": "72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern",
-        "targetStatus": "Erledigt",
-        "targetType": "Subtask"
-      },
-      {
-        "direction": "inward",
-        "relation": "is blocked by",
-        "targetKey": "J01-113",
-        "targetSummary": "Regelwerk-Bereinigung: Ebenen 1–2–3 trennen und Prüfkategorie-Zuordnung A/B/C/D",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      }
-    ]
-  },
-  "J01-116": {
-    "summary": "Öffentliche Jira-Issue-Seiten: Metadaten und Unteraufgaben konsistent spiegeln",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "Dani Y.",
-    "priority": "Medium",
-    "updated": "2026-03-24T11:56:48.308+0100",
-    "parent": "J01-84",
-    "sprint": "SCRUM Sprint 1",
-    "activeSprint": "-",
-    "sprintRole": "Sprint-Admin",
-    "labels": [
-      "sprint-admin"
-    ],
-    "issueLinks": [
-      {
-        "direction": "outward",
-        "relation": "relates to",
-        "targetKey": "J01-107",
-        "targetSummary": "Jira-Metadaten: Migrationsvorgänge aus J01-91 präzise verlinken",
-        "targetStatus": "Erledigt",
-        "targetType": "Task"
-      },
-      {
-        "direction": "outward",
-        "relation": "relates to",
-        "targetKey": "J01-31",
-        "targetSummary": "Preview Readiness: System-Source-Verarbeitung",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      },
-      {
-        "direction": "outward",
-        "relation": "relates to",
-        "targetKey": "J01-104",
-        "targetSummary": "GitHub Pages: Link-Regel für öffentliche Schrittseiten",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      }
-    ]
-  },
-  "J01-117": {
-    "summary": "Projekt-Doku: Spec-Landkarte für Projekt, Systeme und Abläufe",
-    "issuetype": "Task",
-    "status": "In Bearbeitung",
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-24T16:01:40.922+0100",
+    "updated": "2026-03-17T15:24:02.416+0100",
     "parent": null,
-    "sprint": "SCRUM Sprint 1",
-    "activeSprint": "-",
-    "sprintRole": "Sprint-Ungeplant",
-    "labels": [
-      "sprint-unplanned"
-    ],
-    "issueLinks": []
-  },
-  "J01-118": {
-    "summary": "Tagebuch-Kontext für projektfremde Notizen im KI-Agenten-Lauf schärfen",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-30T17:36:57.726+0200",
-    "parent": "J01-111",
     "sprint": "-",
     "activeSprint": "-",
-    "sprintRole": "Sprint-Ungeplant",
-    "labels": [
-      "sprint-unplanned"
-    ],
-    "issueLinks": [
-      {
-        "direction": "outward",
-        "relation": "blocks",
-        "targetKey": "J01-113",
-        "targetSummary": "Regelwerk-Bereinigung: Ebenen 1–2–3 trennen und Prüfkategorie-Zuordnung A/B/C/D",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      }
-    ]
-  },
-  "J01-119": {
-    "summary": "Gezielten Jira-/Pages-Sync gegen stille Rückschritte härten",
-    "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "Dani Y.",
-    "priority": "Medium",
-    "updated": "2026-04-01T13:37:22.821+0200",
-    "parent": "J01-84",
-    "sprint": "SCRUM Sprint 2",
-    "activeSprint": "-",
-    "sprintRole": "Sprint-Admin",
-    "labels": [
-      "atlassian-tools",
-      "sprint-admin",
-      "tooling"
-    ],
-    "issueLinks": [
-      {
-        "direction": "inward",
-        "relation": "relates to",
-        "targetKey": "J01-95",
-        "targetSummary": "72-15 Journalisierten Jira-/Pages-Sync mit Resume aufbauen",
-        "targetStatus": "Erledigt",
-        "targetType": "Subtask"
-      }
-    ]
-  },
-  "J01-120": {
-    "summary": "SCRUM Sprint 1 schließen und öffentliche Review/Retro nachziehen",
-    "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "Dani Y.",
-    "priority": "Medium",
-    "updated": "2026-04-01T13:37:22.849+0200",
-    "parent": "J01-84",
-    "sprint": "SCRUM Sprint 2",
-    "activeSprint": "-",
-    "sprintRole": "Sprint-Admin",
-    "labels": [
-      "atlassian-tools",
-      "sprint-admin",
-      "tooling"
-    ],
-    "issueLinks": [
-      {
-        "direction": "inward",
-        "relation": "relates to",
-        "targetKey": "J01-94",
-        "targetSummary": "72-14 Scrum-Sprint-Rahmen und öffentliche Sprint-Historie in GitHub Pages",
-        "targetStatus": "Erledigt",
-        "targetType": "Subtask"
-      },
-      {
-        "direction": "outward",
-        "relation": "relates to",
-        "targetKey": "J01-121",
-        "targetSummary": "SCRUM Sprint 2 planen und Preview-Carry-over einsortieren",
-        "targetStatus": "Erledigt",
-        "targetType": "Task"
-      }
-    ]
-  },
-  "J01-121": {
-    "summary": "SCRUM Sprint 2 planen und Preview-Carry-over einsortieren",
-    "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "Dani Y.",
-    "priority": "Medium",
-    "updated": "2026-04-01T13:37:22.842+0200",
-    "parent": "J01-84",
-    "sprint": "SCRUM Sprint 2",
-    "activeSprint": "-",
-    "sprintRole": "Sprint-Admin",
-    "labels": [
-      "atlassian-tools",
-      "sprint-admin",
-      "tooling"
-    ],
-    "issueLinks": [
-      {
-        "direction": "inward",
-        "relation": "relates to",
-        "targetKey": "J01-120",
-        "targetSummary": "SCRUM Sprint 1 schließen und öffentliche Review/Retro nachziehen",
-        "targetStatus": "Erledigt",
-        "targetType": "Task"
-      }
-    ]
-  },
-  "J01-126": {
-    "summary": "GitHub Pages: Letzte Änderungen – Navbar-Seite mit Commit-Feed",
-    "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-04-10T14:45:24.445+0200",
-    "parent": null,
-    "sprint": "SCRUM Sprint 2",
-    "activeSprint": "-",
-    "sprintRole": "Sprint-Ungeplant",
-    "labels": [
-      "sprint-unplanned"
-    ],
+    "sprintRole": "-",
+    "labels": [],
     "issueLinks": []
   },
-  "J01-129": {
-    "summary": "BasePipelineCommand-Konfig als Objekt konsolidieren",
+  "J01-101": {
+    "summary": "CLI-Cache: Policy-Schärfung im curl-Wrapper als späteren Sprint-Kandidaten vorbereiten",
     "issuetype": "Task",
     "status": "Zu erledigen",
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-04-14T15:13:19.376+0200",
+    "updated": "2026-03-17T11:44:27.631+0100",
+    "parent": null,
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-100": {
+    "summary": "docs/agile-Reste nach Sprint 1 an kanonischen Zielorten migrieren",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-19T16:25:31.930+0100",
     "parent": null,
     "sprint": "-",
     "activeSprint": "-",
@@ -587,129 +611,436 @@
       {
         "direction": "outward",
         "relation": "relates to",
-        "targetKey": "J01-105",
-        "targetSummary": "Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf",
+        "targetKey": "J01-103",
+        "targetSummary": "J01-91: offene Zielerfüllung für Public-Doku und Übernahmestatus nachziehen",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      },
+      {
+        "direction": "inward",
+        "relation": "relates to",
+        "targetKey": "J01-98",
+        "targetSummary": "J01-91 Phase 2: sprintrelevante Preview-Migration umsetzen",
         "targetStatus": "Erledigt",
         "targetType": "Task"
+      },
+      {
+        "direction": "inward",
+        "relation": "relates to",
+        "targetKey": "J01-91",
+        "targetSummary": "72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen",
+        "targetStatus": "Erledigt",
+        "targetType": "Subtask"
       }
     ]
   },
-  "J01-13": {
-    "summary": "Preview: Testmatrix und Entscheidungen finalisieren",
+  "J01-98": {
+    "summary": "J01-91 Phase 2: sprintrelevante Preview-Migration umsetzen",
     "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
+    "status": "Erledigt",
+    "resolution": "Fertig",
     "assignee": "Dani Y.",
-    "priority": "Highest",
-    "updated": "2026-04-15T22:31:37.136+0200",
-    "parent": "J01-5",
-    "sprint": "SCRUM Sprint 0, SCRUM Sprint 1, SCRUM Sprint 2, SCRUM Sprint 3",
-    "activeSprint": "SCRUM Sprint 3",
-    "sprintRole": "Sprint-Ziel",
+    "priority": "High",
+    "updated": "2026-03-20T12:36:15.573+0100",
+    "parent": null,
+    "sprint": "SCRUM Sprint 1",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Support",
     "labels": [
-      "sprint-goal"
+      "sprint-support"
     ],
     "issueLinks": [
       {
         "direction": "outward",
-        "relation": "blocks",
-        "targetKey": "J01-9",
-        "targetSummary": "Preview: Workflow wieder aktivieren",
-        "targetStatus": "In Bearbeitung",
+        "relation": "relates to",
+        "targetKey": "J01-100",
+        "targetSummary": "docs/agile-Reste nach Sprint 1 an kanonischen Zielorten migrieren",
+        "targetStatus": "Zu erledigen",
         "targetType": "Task"
+      },
+      {
+        "direction": "inward",
+        "relation": "relates to",
+        "targetKey": "J01-91",
+        "targetSummary": "72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen",
+        "targetStatus": "Erledigt",
+        "targetType": "Subtask"
       }
     ]
   },
-  "J01-130": {
-    "summary": "GitHub Pages: Backlog, Recent-Feed und Jira-UI bewerten",
+  "J01-96": {
+    "summary": "Tagebuch: Quellenregister und Roh-Eingaben verankern",
+    "issuetype": "Task",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "Dani Y.",
+    "priority": "Medium",
+    "updated": "2026-03-20T12:36:29.377+0100",
+    "parent": null,
+    "sprint": "SCRUM Sprint 1",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Admin",
+    "labels": [
+      "sprint-admin"
+    ],
+    "issueLinks": []
+  },
+  "J01-93": {
+    "summary": "i18n: GitHub Pages und Jira-Spiegel zweisprachig machen",
+    "issuetype": "Task",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "Dani Y.",
+    "priority": "High",
+    "updated": "2026-03-20T12:36:15.522+0100",
+    "parent": "J01-6",
+    "sprint": "SCRUM Sprint 1",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Support",
+    "labels": [
+      "sprint-support"
+    ],
+    "issueLinks": []
+  },
+  "J01-85": {
+    "summary": "Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container",
     "issuetype": "Task",
     "status": "Zu erledigen",
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-04-15T09:30:06.541+0200",
+    "updated": "2026-03-16T16:44:10.499+0100",
     "parent": "J01-84",
     "sprint": "-",
     "activeSprint": "-",
-    "sprintRole": "Sprint-Ungeplant",
+    "sprintRole": "-",
     "labels": [
-      "backlog",
-      "docs",
-      "github-pages",
-      "sprint-unplanned",
+      "after-prod",
+      "atlassian-tools",
+      "cache",
       "tooling"
     ],
     "issueLinks": []
   },
-  "J01-131": {
-    "summary": "SCRUM Sprint 3 planen und Preview-Betrieb fortsetzen",
+  "J01-84": {
+    "summary": "Atlassian-System vorbereiten (SSOT: Jira)",
+    "issuetype": "Epic",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-16T16:44:07.760+0100",
+    "parent": null,
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [
+      "after-prod",
+      "atlassian-tools",
+      "tooling"
+    ],
+    "issueLinks": []
+  },
+  "J01-80": {
+    "summary": "Atlassian Tools: Refactor – AGENTS Coding-Standards durchgehend umsetzen",
     "issuetype": "Task",
     "status": "Erledigt",
     "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-04-15T22:47:12.710+0200",
-    "parent": "J01-84",
-    "sprint": "SCRUM Sprint 3",
-    "activeSprint": "SCRUM Sprint 3",
-    "sprintRole": "Sprint-Admin",
+    "updated": "2026-03-16T16:44:00.460+0100",
+    "parent": null,
+    "sprint": "SCRUM Sprint 0",
+    "activeSprint": "-",
+    "sprintRole": "-",
     "labels": [
       "atlassian-tools",
-      "sprint-admin",
+      "quality",
+      "refactor",
       "tooling"
-    ],
-    "issueLinks": []
-  },
-  "J01-16": {
-    "summary": "Runtime: Concurrency, Locking und atomare Zugriffe",
-    "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "Dani Y.",
-    "priority": "Highest",
-    "updated": "2026-03-20T12:36:01.730+0100",
-    "parent": "J01-5",
-    "sprint": "SCRUM Sprint 0, SCRUM Sprint 1",
-    "activeSprint": "-",
-    "sprintRole": "Sprint-Ziel",
-    "labels": [
-      "sprint-goal"
     ],
     "issueLinks": [
       {
         "direction": "inward",
-        "relation": "is blocked by",
-        "targetKey": "J01-21",
-        "targetSummary": "Runtime: IP_SALT-Verwaltung und Guardrails",
-        "targetStatus": "Erledigt",
-        "targetType": "Task"
-      },
+        "relation": "is duplicated by",
+        "targetKey": "J01-81",
+        "targetSummary": "85-1 Refactor: Coding-Standards durchgehend umsetzen",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Subtask"
+      }
+    ]
+  },
+  "J01-79": {
+    "summary": "Atlassian CLI: API-Betriebe (Wrapper), http als Escape-Hatch",
+    "issuetype": "Task",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-16T16:43:59.122+0100",
+    "parent": null,
+    "sprint": "SCRUM Sprint 0",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [
+      "atlassian-tools",
+      "cli",
+      "tooling"
+    ],
+    "issueLinks": [
+      {
+        "direction": "inward",
+        "relation": "is duplicated by",
+        "targetKey": "J01-82",
+        "targetSummary": "85-2 API-Betriebe (Wrapper), http als Escape-Hatch",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Subtask"
+      }
+    ]
+  },
+  "J01-72": {
+    "summary": "Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte",
+    "issuetype": "Task",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "Dani Y.",
+    "priority": "Medium",
+    "updated": "2026-03-20T12:36:15.511+0100",
+    "parent": "J01-84",
+    "sprint": "SCRUM Sprint 0, SCRUM Sprint 1",
+    "activeSprint": "-",
+    "sprintRole": "Sprint-Admin",
+    "labels": [
+      "sprint-admin"
+    ],
+    "issueLinks": []
+  },
+  "J01-68": {
+    "summary": "Production: Betriebsdoku und Runbook",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-17T16:14:54.341+0100",
+    "parent": "J01-7",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-65": {
+    "summary": "Production: Artefakt- und Smoke-Checks definieren",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-17T16:14:48.911+0100",
+    "parent": "J01-7",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-62": {
+    "summary": "Production: Branch- und Environment-Regeln aktivieren",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-17T16:14:43.673+0100",
+    "parent": "J01-7",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-60": {
+    "summary": "Backlog: SMTP-Empfangsnachweis mit Konto-Beteiligung",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-17T16:14:40.471+0100",
+    "parent": "J01-8",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-58": {
+    "summary": "Backlog: Pipeline-Phase Terminologie repo-weit",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-17T16:15:11.297+0100",
+    "parent": "J01-8",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": [
       {
         "direction": "outward",
         "relation": "blocks",
-        "targetKey": "J01-9",
-        "targetSummary": "Preview: Workflow wieder aktivieren",
-        "targetStatus": "In Bearbeitung",
-        "targetType": "Task"
-      },
-      {
-        "direction": "inward",
-        "relation": "is blocked by",
-        "targetKey": "J01-40",
-        "targetSummary": "Runtime: Technische Konstanten vereinheitlichen",
+        "targetKey": "J01-34",
+        "targetSummary": "CLI-UX: Missing-Config und Pipeline-Phase",
         "targetStatus": "Zu erledigen",
         "targetType": "Task"
       }
     ]
   },
-  "J01-21": {
-    "summary": "Runtime: IP_SALT-Verwaltung und Guardrails",
+  "J01-56": {
+    "summary": "Backlog: Bibliotheks-APIs konsequent ausschoepfen",
     "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
+    "status": "Zu erledigen",
+    "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-02-17T16:15:05.743+0100",
+    "updated": "2026-02-17T16:14:32.393+0100",
+    "parent": "J01-8",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-54": {
+    "summary": "Backlog: Zentrales Fehlerkonzept",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-17T16:15:10.253+0100",
+    "parent": "J01-8",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": [
+      {
+        "direction": "outward",
+        "relation": "blocks",
+        "targetKey": "J01-46",
+        "targetSummary": "i18n: CLI- und Runtime-Nachrichten",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      }
+    ]
+  },
+  "J01-52": {
+    "summary": "Backlog: Typensicherheit statt Guards",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-17T16:14:24.429+0100",
+    "parent": "J01-8",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-49": {
+    "summary": "i18n: Template-Texte i18n-fähig machen",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-17T16:15:09.400+0100",
+    "parent": "J01-6",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": [
+      {
+        "direction": "inward",
+        "relation": "is blocked by",
+        "targetKey": "J01-46",
+        "targetSummary": "i18n: CLI- und Runtime-Nachrichten",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      }
+    ]
+  },
+  "J01-46": {
+    "summary": "i18n: CLI- und Runtime-Nachrichten",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-17T16:15:10.281+0100",
+    "parent": "J01-6",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": [
+      {
+        "direction": "outward",
+        "relation": "blocks",
+        "targetKey": "J01-49",
+        "targetSummary": "i18n: Template-Texte i18n-fähig machen",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      },
+      {
+        "direction": "inward",
+        "relation": "is blocked by",
+        "targetKey": "J01-54",
+        "targetSummary": "Backlog: Zentrales Fehlerkonzept",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      }
+    ]
+  },
+  "J01-43": {
+    "summary": "Preview: FTP/FTPS-Verwaltungsskripte",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-17T16:15:08.526+0100",
+    "parent": "J01-5",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": [
+      {
+        "direction": "inward",
+        "relation": "is blocked by",
+        "targetKey": "J01-9",
+        "targetSummary": "Preview: Workflow wieder aktivieren",
+        "targetStatus": "In Bearbeitung",
+        "targetType": "Task"
+      }
+    ]
+  },
+  "J01-40": {
+    "summary": "Runtime: Technische Konstanten vereinheitlichen",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-17T16:15:07.626+0100",
     "parent": "J01-5",
     "sprint": "-",
     "activeSprint": "-",
@@ -723,65 +1054,41 @@
         "targetSummary": "Runtime: Concurrency, Locking und atomare Zugriffe",
         "targetStatus": "Erledigt",
         "targetType": "Task"
-      },
-      {
-        "direction": "outward",
-        "relation": "blocks",
-        "targetKey": "J01-9",
-        "targetSummary": "Preview: Workflow wieder aktivieren",
-        "targetStatus": "In Bearbeitung",
-        "targetType": "Task"
       }
     ]
   },
-  "J01-25": {
-    "summary": "Dev-Branch Baseline und Repo-Hygiene",
-    "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-17T16:15:02.790+0100",
-    "parent": "J01-5",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": [
-      {
-        "direction": "inward",
-        "relation": "is blocked by",
-        "targetKey": "J01-31",
-        "targetSummary": "Preview Readiness: System-Source-Verarbeitung",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      },
-      {
-        "direction": "inward",
-        "relation": "is blocked by",
-        "targetKey": "J01-28",
-        "targetSummary": "Analyse: Risikomuster und Befundliste",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      },
-      {
-        "direction": "outward",
-        "relation": "blocks",
-        "targetKey": "J01-9",
-        "targetSummary": "Preview: Workflow wieder aktivieren",
-        "targetStatus": "In Bearbeitung",
-        "targetType": "Task"
-      }
-    ]
-  },
-  "J01-28": {
-    "summary": "Analyse: Risikomuster und Befundliste",
+  "J01-37": {
+    "summary": "Config: Konditionelle Validierung",
     "issuetype": "Task",
     "status": "Zu erledigen",
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-19T21:00:38.932+0100",
+    "updated": "2026-03-19T13:26:13.864+0100",
+    "parent": "J01-5",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": [
+      {
+        "direction": "inward",
+        "relation": "relates to",
+        "targetKey": "J01-105",
+        "targetSummary": "Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf",
+        "targetStatus": "Erledigt",
+        "targetType": "Task"
+      }
+    ]
+  },
+  "J01-34": {
+    "summary": "CLI-UX: Missing-Config und Pipeline-Phase",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-17T16:15:11.345+0100",
     "parent": "J01-5",
     "sprint": "-",
     "activeSprint": "-",
@@ -791,25 +1098,9 @@
       {
         "direction": "inward",
         "relation": "is blocked by",
-        "targetKey": "J01-31",
-        "targetSummary": "Preview Readiness: System-Source-Verarbeitung",
+        "targetKey": "J01-58",
+        "targetSummary": "Backlog: Pipeline-Phase Terminologie repo-weit",
         "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      },
-      {
-        "direction": "outward",
-        "relation": "blocks",
-        "targetKey": "J01-25",
-        "targetSummary": "Dev-Branch Baseline und Repo-Hygiene",
-        "targetStatus": "Erledigt",
-        "targetType": "Task"
-      },
-      {
-        "direction": "outward",
-        "relation": "relates to",
-        "targetKey": "J01-105",
-        "targetSummary": "Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf",
-        "targetStatus": "Erledigt",
         "targetType": "Task"
       }
     ]
@@ -872,14 +1163,14 @@
       }
     ]
   },
-  "J01-34": {
-    "summary": "CLI-UX: Missing-Config und Pipeline-Phase",
+  "J01-28": {
+    "summary": "Analyse: Risikomuster und Befundliste",
     "issuetype": "Task",
     "status": "Zu erledigen",
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-02-17T16:15:11.345+0100",
+    "updated": "2026-03-19T21:00:38.932+0100",
     "parent": "J01-5",
     "sprint": "-",
     "activeSprint": "-",
@@ -889,29 +1180,21 @@
       {
         "direction": "inward",
         "relation": "is blocked by",
-        "targetKey": "J01-58",
-        "targetSummary": "Backlog: Pipeline-Phase Terminologie repo-weit",
+        "targetKey": "J01-31",
+        "targetSummary": "Preview Readiness: System-Source-Verarbeitung",
         "targetStatus": "Zu erledigen",
         "targetType": "Task"
-      }
-    ]
-  },
-  "J01-37": {
-    "summary": "Config: Konditionelle Validierung",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-19T13:26:13.864+0100",
-    "parent": "J01-5",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": [
+      },
       {
-        "direction": "inward",
+        "direction": "outward",
+        "relation": "blocks",
+        "targetKey": "J01-25",
+        "targetSummary": "Dev-Branch Baseline und Repo-Hygiene",
+        "targetStatus": "Erledigt",
+        "targetType": "Task"
+      },
+      {
+        "direction": "outward",
         "relation": "relates to",
         "targetKey": "J01-105",
         "targetSummary": "Pipeline-Spec: Manifest vereinfachen fuer klaren Parameter-Ablauf",
@@ -920,14 +1203,54 @@
       }
     ]
   },
-  "J01-40": {
-    "summary": "Runtime: Technische Konstanten vereinheitlichen",
+  "J01-25": {
+    "summary": "Dev-Branch Baseline und Repo-Hygiene",
     "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
+    "status": "Erledigt",
+    "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-02-17T16:15:07.626+0100",
+    "updated": "2026-02-17T16:15:02.790+0100",
+    "parent": "J01-5",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": [
+      {
+        "direction": "inward",
+        "relation": "is blocked by",
+        "targetKey": "J01-31",
+        "targetSummary": "Preview Readiness: System-Source-Verarbeitung",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      },
+      {
+        "direction": "inward",
+        "relation": "is blocked by",
+        "targetKey": "J01-28",
+        "targetSummary": "Analyse: Risikomuster und Befundliste",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      },
+      {
+        "direction": "outward",
+        "relation": "blocks",
+        "targetKey": "J01-9",
+        "targetSummary": "Preview: Workflow wieder aktivieren",
+        "targetStatus": "In Bearbeitung",
+        "targetType": "Task"
+      }
+    ]
+  },
+  "J01-21": {
+    "summary": "Runtime: IP_SALT-Verwaltung und Guardrails",
+    "issuetype": "Task",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-17T16:15:05.743+0100",
     "parent": "J01-5",
     "sprint": "-",
     "activeSprint": "-",
@@ -941,26 +1264,10 @@
         "targetSummary": "Runtime: Concurrency, Locking und atomare Zugriffe",
         "targetStatus": "Erledigt",
         "targetType": "Task"
-      }
-    ]
-  },
-  "J01-43": {
-    "summary": "Preview: FTP/FTPS-Verwaltungsskripte",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-17T16:15:08.526+0100",
-    "parent": "J01-5",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": [
+      },
       {
-        "direction": "inward",
-        "relation": "is blocked by",
+        "direction": "outward",
+        "relation": "blocks",
         "targetKey": "J01-9",
         "targetSummary": "Preview: Workflow wieder aktivieren",
         "targetStatus": "In Bearbeitung",
@@ -968,372 +1275,73 @@
       }
     ]
   },
-  "J01-46": {
-    "summary": "i18n: CLI- und Runtime-Nachrichten",
+  "J01-16": {
+    "summary": "Runtime: Concurrency, Locking und atomare Zugriffe",
     "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-17T16:15:10.281+0100",
-    "parent": "J01-6",
-    "sprint": "-",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "Dani Y.",
+    "priority": "Highest",
+    "updated": "2026-03-20T12:36:01.730+0100",
+    "parent": "J01-5",
+    "sprint": "SCRUM Sprint 0, SCRUM Sprint 1",
     "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
+    "sprintRole": "Sprint-Ziel",
+    "labels": [
+      "sprint-goal"
+    ],
     "issueLinks": [
+      {
+        "direction": "inward",
+        "relation": "is blocked by",
+        "targetKey": "J01-21",
+        "targetSummary": "Runtime: IP_SALT-Verwaltung und Guardrails",
+        "targetStatus": "Erledigt",
+        "targetType": "Task"
+      },
       {
         "direction": "outward",
         "relation": "blocks",
-        "targetKey": "J01-49",
-        "targetSummary": "i18n: Template-Texte i18n-fähig machen",
-        "targetStatus": "Zu erledigen",
+        "targetKey": "J01-9",
+        "targetSummary": "Preview: Workflow wieder aktivieren",
+        "targetStatus": "In Bearbeitung",
         "targetType": "Task"
       },
       {
         "direction": "inward",
         "relation": "is blocked by",
-        "targetKey": "J01-54",
-        "targetSummary": "Backlog: Zentrales Fehlerkonzept",
+        "targetKey": "J01-40",
+        "targetSummary": "Runtime: Technische Konstanten vereinheitlichen",
         "targetStatus": "Zu erledigen",
         "targetType": "Task"
       }
     ]
   },
-  "J01-49": {
-    "summary": "i18n: Template-Texte i18n-fähig machen",
+  "J01-13": {
+    "summary": "Preview: Testmatrix und Entscheidungen finalisieren",
     "issuetype": "Task",
     "status": "Zu erledigen",
     "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-17T16:15:09.400+0100",
-    "parent": "J01-6",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": [
-      {
-        "direction": "inward",
-        "relation": "is blocked by",
-        "targetKey": "J01-46",
-        "targetSummary": "i18n: CLI- und Runtime-Nachrichten",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      }
-    ]
-  },
-  "J01-5": {
-    "summary": "Qualitätsrahmen für App und Config-Lib",
-    "issuetype": "Epic",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T13:45:42.075+0100",
-    "parent": null,
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-52": {
-    "summary": "Backlog: Typensicherheit statt Guards",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-17T16:14:24.429+0100",
-    "parent": "J01-8",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-54": {
-    "summary": "Backlog: Zentrales Fehlerkonzept",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-17T16:15:10.253+0100",
-    "parent": "J01-8",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": [
-      {
-        "direction": "outward",
-        "relation": "blocks",
-        "targetKey": "J01-46",
-        "targetSummary": "i18n: CLI- und Runtime-Nachrichten",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      }
-    ]
-  },
-  "J01-56": {
-    "summary": "Backlog: Bibliotheks-APIs konsequent ausschoepfen",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-17T16:14:32.393+0100",
-    "parent": "J01-8",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-58": {
-    "summary": "Backlog: Pipeline-Phase Terminologie repo-weit",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-17T16:15:11.297+0100",
-    "parent": "J01-8",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": [
-      {
-        "direction": "outward",
-        "relation": "blocks",
-        "targetKey": "J01-34",
-        "targetSummary": "CLI-UX: Missing-Config und Pipeline-Phase",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      }
-    ]
-  },
-  "J01-6": {
-    "summary": "i18n für Seitenvorlagen und Templates",
-    "issuetype": "Epic",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-17T16:12:54.985+0100",
-    "parent": null,
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-60": {
-    "summary": "Backlog: SMTP-Empfangsnachweis mit Konto-Beteiligung",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-17T16:14:40.471+0100",
-    "parent": "J01-8",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-62": {
-    "summary": "Production: Branch- und Environment-Regeln aktivieren",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-17T16:14:43.673+0100",
-    "parent": "J01-7",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-65": {
-    "summary": "Production: Artefakt- und Smoke-Checks definieren",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-17T16:14:48.911+0100",
-    "parent": "J01-7",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-68": {
-    "summary": "Production: Betriebsdoku und Runbook",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-17T16:14:54.341+0100",
-    "parent": "J01-7",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-7": {
-    "summary": "Production Deployment",
-    "issuetype": "Epic",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T13:45:47.986+0100",
-    "parent": null,
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-72": {
-    "summary": "Atlassian-System vorbereiten (SSOT: Jira) – Iteration 1: Umsetzungsschritte",
-    "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
     "assignee": "Dani Y.",
-    "priority": "Medium",
-    "updated": "2026-03-20T12:36:15.511+0100",
-    "parent": "J01-84",
-    "sprint": "SCRUM Sprint 0, SCRUM Sprint 1",
-    "activeSprint": "-",
-    "sprintRole": "Sprint-Admin",
+    "priority": "Highest",
+    "updated": "2026-04-15T22:31:37.136+0200",
+    "parent": "J01-5",
+    "sprint": "SCRUM Sprint 0, SCRUM Sprint 1, SCRUM Sprint 2, SCRUM Sprint 3",
+    "activeSprint": "SCRUM Sprint 3",
+    "sprintRole": "Sprint-Ziel",
     "labels": [
-      "sprint-admin"
-    ],
-    "issueLinks": []
-  },
-  "J01-79": {
-    "summary": "Atlassian CLI: API-Betriebe (Wrapper), http als Escape-Hatch",
-    "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-16T16:43:59.122+0100",
-    "parent": null,
-    "sprint": "SCRUM Sprint 0",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [
-      "atlassian-tools",
-      "cli",
-      "tooling"
+      "sprint-goal"
     ],
     "issueLinks": [
       {
-        "direction": "inward",
-        "relation": "is duplicated by",
-        "targetKey": "J01-82",
-        "targetSummary": "85-2 API-Betriebe (Wrapper), http als Escape-Hatch",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Subtask"
+        "direction": "outward",
+        "relation": "blocks",
+        "targetKey": "J01-9",
+        "targetSummary": "Preview: Workflow wieder aktivieren",
+        "targetStatus": "In Bearbeitung",
+        "targetType": "Task"
       }
     ]
-  },
-  "J01-8": {
-    "summary": "Backlog-Kandidaten",
-    "issuetype": "Epic",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-17T16:12:59.939+0100",
-    "parent": null,
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-80": {
-    "summary": "Atlassian Tools: Refactor – AGENTS Coding-Standards durchgehend umsetzen",
-    "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-16T16:44:00.460+0100",
-    "parent": null,
-    "sprint": "SCRUM Sprint 0",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [
-      "atlassian-tools",
-      "quality",
-      "refactor",
-      "tooling"
-    ],
-    "issueLinks": [
-      {
-        "direction": "inward",
-        "relation": "is duplicated by",
-        "targetKey": "J01-81",
-        "targetSummary": "85-1 Refactor: Coding-Standards durchgehend umsetzen",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Subtask"
-      }
-    ]
-  },
-  "J01-84": {
-    "summary": "Atlassian-System vorbereiten (SSOT: Jira)",
-    "issuetype": "Epic",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-16T16:44:07.760+0100",
-    "parent": null,
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [
-      "after-prod",
-      "atlassian-tools",
-      "tooling"
-    ],
-    "issueLinks": []
-  },
-  "J01-85": {
-    "summary": "Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container",
-    "issuetype": "Task",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-16T16:44:10.499+0100",
-    "parent": "J01-84",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [
-      "after-prod",
-      "atlassian-tools",
-      "cache",
-      "tooling"
-    ],
-    "issueLinks": []
   },
   "J01-9": {
     "summary": "Preview: Workflow wieder aktivieren",
@@ -1401,193 +1409,80 @@
       }
     ]
   },
-  "J01-93": {
-    "summary": "i18n: GitHub Pages und Jira-Spiegel zweisprachig machen",
-    "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "Dani Y.",
-    "priority": "High",
-    "updated": "2026-03-20T12:36:15.522+0100",
-    "parent": "J01-6",
-    "sprint": "SCRUM Sprint 1",
-    "activeSprint": "-",
-    "sprintRole": "Sprint-Support",
-    "labels": [
-      "sprint-support"
-    ],
-    "issueLinks": []
-  },
-  "J01-96": {
-    "summary": "Tagebuch: Quellenregister und Roh-Eingaben verankern",
-    "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "Dani Y.",
+  "J01-8": {
+    "summary": "Backlog-Kandidaten",
+    "issuetype": "Epic",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-20T12:36:29.377+0100",
+    "updated": "2026-02-17T16:12:59.939+0100",
     "parent": null,
-    "sprint": "SCRUM Sprint 1",
+    "sprint": "-",
     "activeSprint": "-",
-    "sprintRole": "Sprint-Admin",
-    "labels": [
-      "sprint-admin"
-    ],
+    "sprintRole": "-",
+    "labels": [],
     "issueLinks": []
   },
-  "J01-98": {
-    "summary": "J01-91 Phase 2: sprintrelevante Preview-Migration umsetzen",
-    "issuetype": "Task",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "Dani Y.",
-    "priority": "High",
-    "updated": "2026-03-20T12:36:15.573+0100",
+  "J01-7": {
+    "summary": "Production Deployment",
+    "issuetype": "Epic",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T13:45:47.986+0100",
     "parent": null,
-    "sprint": "SCRUM Sprint 1",
+    "sprint": "-",
     "activeSprint": "-",
-    "sprintRole": "Sprint-Support",
-    "labels": [
-      "sprint-support"
-    ],
-    "issueLinks": [
-      {
-        "direction": "outward",
-        "relation": "relates to",
-        "targetKey": "J01-100",
-        "targetSummary": "docs/agile-Reste nach Sprint 1 an kanonischen Zielorten migrieren",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      },
-      {
-        "direction": "inward",
-        "relation": "relates to",
-        "targetKey": "J01-91",
-        "targetSummary": "72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen",
-        "targetStatus": "Erledigt",
-        "targetType": "Subtask"
-      }
-    ]
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
   },
-  "J01-10": {
-    "summary": "9-1 CI-Gates finalisieren",
-    "issuetype": "Subtask",
+  "J01-6": {
+    "summary": "i18n für Seitenvorlagen und Templates",
+    "issuetype": "Epic",
     "status": "Zu erledigen",
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-02-24T14:46:39.807+0100",
+    "updated": "2026-02-17T16:12:54.985+0100",
+    "parent": null,
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-5": {
+    "summary": "Qualitätsrahmen für App und Config-Lib",
+    "issuetype": "Epic",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T13:45:42.075+0100",
+    "parent": null,
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-132": {
+    "summary": "9-4 Preview-Deploy-Bundle und Schutzregeln nachziehen",
+    "issuetype": "Subtask",
+    "status": "In Bearbeitung",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-04-16T16:09:46.777+0200",
     "parent": "J01-9",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-11": {
-    "summary": "9-2 Deploy-Checks validieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-24T14:46:40.856+0100",
-    "parent": "J01-9",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-12": {
-    "summary": "9-3 Branch-Flow dokumentieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-24T14:46:41.648+0100",
-    "parent": "J01-9",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-122": {
-    "summary": "105-1 Setup-Seed-Pfad fachlich bereinigen",
-    "issuetype": "Subtask",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-04-03T17:05:37.242+0200",
-    "parent": "J01-105",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-123": {
-    "summary": "105-2 Vollständige P_0-zu-P_n-Herleitung und Manifest-Ausdünnung",
-    "issuetype": "Subtask",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-04-15T20:40:01.347+0200",
-    "parent": "J01-105",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-124": {
-    "summary": "105-4 Prüfläufe, Entblockung J01-9 und Abschlussbild nachweisen",
-    "issuetype": "Subtask",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-04-15T20:40:01.300+0200",
-    "parent": "J01-105",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-125": {
-    "summary": "105-3 pipeline-spec-lib und README auf Zielmodell nachziehen",
-    "issuetype": "Subtask",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-04-15T20:40:01.305+0200",
-    "parent": "J01-105",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-127": {
-    "summary": "34-3 CLI: Help-Text für bin/cli config ergänzen",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-04-14T10:54:25.773+0200",
-    "parent": "J01-34",
     "sprint": "-",
     "activeSprint": "-",
     "sprintRole": "-",
     "labels": [
-      "sprint-support"
+      "sprint-goal"
     ],
     "issueLinks": []
   },
@@ -1612,834 +1507,196 @@
     ],
     "issueLinks": []
   },
-  "J01-132": {
-    "summary": "9-4 Preview-Deploy-Bundle und Schutzregeln nachziehen",
+  "J01-127": {
+    "summary": "34-3 CLI: Help-Text für bin/cli config ergänzen",
     "issuetype": "Subtask",
-    "status": "In Bearbeitung",
+    "status": "Zu erledigen",
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-04-16T16:09:46.777+0200",
-    "parent": "J01-9",
+    "updated": "2026-04-14T10:54:25.773+0200",
+    "parent": "J01-34",
     "sprint": "-",
     "activeSprint": "-",
     "sprintRole": "-",
     "labels": [
-      "sprint-goal"
+      "sprint-support"
     ],
     "issueLinks": []
   },
-  "J01-14": {
-    "summary": "13-1 Entscheidungstabelle finalisieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-24T14:46:43.081+0100",
-    "parent": "J01-13",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-15": {
-    "summary": "13-2 Testmatrix-Nachweise verlinken",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-24T14:46:43.882+0100",
-    "parent": "J01-13",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-17": {
-    "summary": "16-1 Locking für Rate-Limit und CAPTCHA ausrollen",
+  "J01-125": {
+    "summary": "105-3 pipeline-spec-lib und README auf Zielmodell nachziehen",
     "issuetype": "Subtask",
     "status": "Erledigt",
     "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-18T14:03:48.257+0100",
-    "parent": "J01-16",
+    "updated": "2026-04-15T20:40:01.305+0200",
+    "parent": "J01-105",
     "sprint": "-",
     "activeSprint": "-",
     "sprintRole": "-",
     "labels": [],
     "issueLinks": []
   },
-  "J01-18": {
-    "summary": "16-2 Locking für Token-Rotation ausrollen",
+  "J01-124": {
+    "summary": "105-4 Prüfläufe, Entblockung J01-9 und Abschlussbild nachweisen",
     "issuetype": "Subtask",
     "status": "Erledigt",
     "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-18T14:20:19.739+0100",
-    "parent": "J01-16",
+    "updated": "2026-04-15T20:40:01.300+0200",
+    "parent": "J01-105",
     "sprint": "-",
     "activeSprint": "-",
     "sprintRole": "-",
     "labels": [],
     "issueLinks": []
   },
-  "J01-19": {
-    "summary": "16-3 Race-nahe Tests ergänzen",
+  "J01-123": {
+    "summary": "105-2 Vollständige P_0-zu-P_n-Herleitung und Manifest-Ausdünnung",
     "issuetype": "Subtask",
     "status": "Erledigt",
     "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-18T16:14:16.406+0100",
-    "parent": "J01-16",
+    "updated": "2026-04-15T20:40:01.347+0200",
+    "parent": "J01-105",
     "sprint": "-",
     "activeSprint": "-",
     "sprintRole": "-",
     "labels": [],
     "issueLinks": []
   },
-  "J01-20": {
-    "summary": "16-4 Betriebsnotiz aktualisieren",
+  "J01-122": {
+    "summary": "105-1 Setup-Seed-Pfad fachlich bereinigen",
     "issuetype": "Subtask",
     "status": "Erledigt",
     "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-18T16:37:42.506+0100",
-    "parent": "J01-16",
+    "updated": "2026-04-03T17:05:37.242+0200",
+    "parent": "J01-105",
     "sprint": "-",
     "activeSprint": "-",
     "sprintRole": "-",
     "labels": [],
     "issueLinks": []
   },
-  "J01-22": {
-    "summary": "21-1 Runtime-Verwaltung implementieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:51:48.995+0100",
-    "parent": "J01-21",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-23": {
-    "summary": "21-2 CLI-Resetpfad etablieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:51:49.696+0100",
-    "parent": "J01-21",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-24": {
-    "summary": "21-3 Paralleltests ergänzen",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:51:50.440+0100",
-    "parent": "J01-21",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-26": {
-    "summary": "25-1 Dev-Baseline stabilisieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:51:51.773+0100",
-    "parent": "J01-25",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-27": {
-    "summary": "25-2 Hygiene-Regeln umsetzen",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:51:52.768+0100",
-    "parent": "J01-25",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-29": {
-    "summary": "28-1 Befunde erfassen",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:51:53.916+0100",
-    "parent": "J01-28",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-30": {
-    "summary": "28-2 Priorisierung und Folge-Tickets",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:51:54.557+0100",
-    "parent": "J01-28",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-32": {
-    "summary": "31-1 Guard-Strategie finalisieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-24T14:46:49.573+0100",
-    "parent": "J01-31",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-33": {
-    "summary": "31-2 Produktions-Pattern Vergleich dokumentieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-24T14:46:50.490+0100",
-    "parent": "J01-31",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-35": {
-    "summary": "34-1 Pipeline-Phase-Syntax festlegen",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:51:55.581+0100",
-    "parent": "J01-34",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-36": {
-    "summary": "34-2 Missing-Config-Befehl definieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:51:56.418+0100",
-    "parent": "J01-34",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-38": {
-    "summary": "37-1 Schema um Bedingungen erweitern",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:51:57.537+0100",
-    "parent": "J01-37",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-39": {
-    "summary": "37-2 Validierung + Doku ergänzen",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:51:58.433+0100",
-    "parent": "J01-37",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-41": {
-    "summary": "40-1 Konstanten-Schnitt definieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:51:59.713+0100",
-    "parent": "J01-40",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-42": {
-    "summary": "40-2 Pfad/Key-Duplikate entfernen",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:00.742+0100",
-    "parent": "J01-40",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-44": {
-    "summary": "43-1 Marker/Signaldatei-Flow definieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:01.900+0100",
-    "parent": "J01-43",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-45": {
-    "summary": "43-2 Doku + Tests ergänzen",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:02.622+0100",
-    "parent": "J01-43",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-47": {
-    "summary": "46-1 Message-IDs und Format definieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:04.336+0100",
-    "parent": "J01-46",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-48": {
-    "summary": "46-2 Ausgaben in App + Config-Lib umstellen",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:07.186+0100",
-    "parent": "J01-46",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-50": {
-    "summary": "49-1 Template-Text-Keys definieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:17.800+0100",
-    "parent": "J01-49",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-51": {
-    "summary": "49-2 DE/EN Mindestumfang liefern",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:18.506+0100",
-    "parent": "J01-49",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-53": {
-    "summary": "52-1 Scope skizzieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:19.738+0100",
-    "parent": "J01-52",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-55": {
-    "summary": "54-1 Scope skizzieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:21.082+0100",
-    "parent": "J01-54",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-57": {
-    "summary": "56-1 Scope skizzieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:22.182+0100",
-    "parent": "J01-56",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-59": {
-    "summary": "58-1 Scope skizzieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:23.503+0100",
-    "parent": "J01-58",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-61": {
-    "summary": "60-1 Scope skizzieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:25.922+0100",
-    "parent": "J01-60",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-63": {
-    "summary": "62-1 Branch-Mapping festlegen",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:29.116+0100",
-    "parent": "J01-62",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-64": {
-    "summary": "62-2 Environment aktivieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:29.967+0100",
-    "parent": "J01-62",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-66": {
-    "summary": "65-1 Artefaktliste festlegen",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:35.785+0100",
-    "parent": "J01-65",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-67": {
-    "summary": "65-2 Post-Deploy-Smoke definieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:39.553+0100",
-    "parent": "J01-65",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-69": {
-    "summary": "68-1 Betriebsdoku erstellen",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:40.855+0100",
-    "parent": "J01-68",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-70": {
-    "summary": "68-2 Rollback/Notfallpfad skizzieren",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:41.730+0100",
-    "parent": "J01-68",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-73": {
-    "summary": "72-8 Projektweit: Subtask-Reihenfolge gegen Export prüfen",
+  "J01-99": {
+    "summary": "72-16 Alte Confluence-Remote-Links in Jira bereinigen und Guardrail verankern",
     "issuetype": "Subtask",
     "status": "Erledigt",
     "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-20T05:23:42.084+0100",
+    "updated": "2026-03-20T05:23:51.628+0100",
     "parent": "J01-72",
     "sprint": "-",
     "activeSprint": "-",
     "sprintRole": "-",
-    "labels": [],
+    "labels": [
+      "sprint-admin"
+    ],
     "issueLinks": []
   },
-  "J01-74": {
-    "summary": "72-1 Altlast: J01-3 Status klären",
-    "issuetype": "Subtask",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:43.061+0100",
-    "parent": "J01-72",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-75": {
-    "summary": "72-2 Sprint 2: Backfill ausführen (Schritt-Nr + Prefix)",
-    "issuetype": "Subtask",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-16T16:43:56.214+0100",
-    "parent": "J01-72",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-76": {
-    "summary": "72-3 Rank-Endpoint verifizieren (No-Op)",
-    "issuetype": "Subtask",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:44.398+0100",
-    "parent": "J01-72",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-77": {
-    "summary": "72-4 CLI: jira ext backfill schritt-nr implementieren",
-    "issuetype": "Subtask",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-02-27T14:52:45.190+0100",
-    "parent": "J01-72",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-78": {
-    "summary": "72-9 Board-Sicht prüfen (Prefix-Format 9-1)",
-    "issuetype": "Subtask",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-16T16:43:57.737+0100",
-    "parent": "J01-72",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-81": {
-    "summary": "85-1 Refactor: Coding-Standards durchgehend umsetzen",
+  "J01-97": {
+    "summary": "85-4 Backlog: Feature-Matrix für Tooling-Betriebe vervollständigen",
     "issuetype": "Subtask",
     "status": "Zu erledigen",
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-16T16:44:02.030+0100",
+    "updated": "2026-03-17T10:52:22.434+0100",
     "parent": "J01-85",
     "sprint": "-",
     "activeSprint": "-",
     "sprintRole": "-",
-    "labels": [
-      "atlassian-tools",
-      "quality",
-      "refactor",
-      "tooling"
-    ],
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-95": {
+    "summary": "72-15 Journalisierten Jira-/Pages-Sync mit Resume aufbauen",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-04-01T12:52:36.637+0200",
+    "parent": "J01-72",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
     "issueLinks": [
       {
         "direction": "outward",
-        "relation": "duplicates",
-        "targetKey": "J01-80",
-        "targetSummary": "Atlassian Tools: Refactor – AGENTS Coding-Standards durchgehend umsetzen",
+        "relation": "relates to",
+        "targetKey": "J01-119",
+        "targetSummary": "Gezielten Jira-/Pages-Sync gegen stille Rückschritte härten",
         "targetStatus": "Erledigt",
         "targetType": "Task"
       }
     ]
   },
-  "J01-82": {
-    "summary": "85-2 API-Betriebe (Wrapper), http als Escape-Hatch",
+  "J01-94": {
+    "summary": "72-14 Scrum-Sprint-Rahmen und öffentliche Sprint-Historie in GitHub Pages",
     "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
+    "status": "Erledigt",
+    "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-16T16:44:03.423+0100",
-    "parent": "J01-85",
+    "updated": "2026-04-01T13:05:12.354+0200",
+    "parent": "J01-72",
     "sprint": "-",
     "activeSprint": "-",
     "sprintRole": "-",
     "labels": [
-      "atlassian-tools",
-      "cli",
-      "tooling"
+      "sprint-admin"
     ],
     "issueLinks": [
       {
         "direction": "outward",
-        "relation": "duplicates",
-        "targetKey": "J01-79",
-        "targetSummary": "Atlassian CLI: API-Betriebe (Wrapper), http als Escape-Hatch",
+        "relation": "relates to",
+        "targetKey": "J01-120",
+        "targetSummary": "SCRUM Sprint 1 schließen und öffentliche Review/Retro nachziehen",
         "targetStatus": "Erledigt",
         "targetType": "Task"
       }
     ]
   },
-  "J01-83": {
-    "summary": "72-10 CLI-Cache: erste Cache-V1 vorbereiten (Policy getrennt)",
+  "J01-92": {
+    "summary": "72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern",
     "issuetype": "Subtask",
     "status": "Erledigt",
     "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-20T05:23:43.397+0100",
-    "parent": "J01-72",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [
-      "after-prod",
-      "atlassian-tools",
-      "cache",
-      "tooling"
-    ],
-    "issueLinks": []
-  },
-  "J01-86": {
-    "summary": "72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links)",
-    "issuetype": "Subtask",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-16T16:44:13.065+0100",
+    "updated": "2026-03-20T10:23:17.446+0100",
     "parent": "J01-72",
     "sprint": "-",
     "activeSprint": "-",
     "sprintRole": "-",
     "labels": [],
-    "issueLinks": []
-  },
-  "J01-87": {
-    "summary": "85-3 Backlog: Confluence-Spiegel periodisch aktualisieren (Batch; optional Warteschlange)",
-    "issuetype": "Subtask",
-    "status": "Zu erledigen",
-    "resolution": "-",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-16T16:44:18.674+0100",
-    "parent": "J01-85",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-88": {
-    "summary": "72-6 Spiegel-Links umstellen (nur Confluence-Spiegel-Links)",
-    "issuetype": "Subtask",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-16T16:44:20.022+0100",
-    "parent": "J01-72",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-89": {
-    "summary": "72-7 Spiegel-Anzeige für Unteraufgaben: nur Summary-Prefix",
-    "issuetype": "Subtask",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-16T16:44:21.712+0100",
-    "parent": "J01-72",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
-  },
-  "J01-90": {
-    "summary": "72-5 Spiegel-Anzeige für Epics/Aufgaben: Vorgangsnummern + eigene Seiten",
-    "issuetype": "Subtask",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-03-16T16:44:23.185+0100",
-    "parent": "J01-72",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [],
-    "issueLinks": []
+    "issueLinks": [
+      {
+        "direction": "inward",
+        "relation": "relates to",
+        "targetKey": "J01-113",
+        "targetSummary": "Regelwerk-Bereinigung: Ebenen 1–2–3 trennen und Prüfkategorie-Zuordnung A/B/C/D",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      },
+      {
+        "direction": "inward",
+        "relation": "relates to",
+        "targetKey": "J01-115",
+        "targetSummary": "KI-Prüfarchitektur: Kategorie-A-bis-D-System aufbauen (Hook/Skript/Modell)",
+        "targetStatus": "Zu erledigen",
+        "targetType": "Task"
+      }
+    ]
   },
   "J01-91": {
     "summary": "72-12 Doku-Struktur: Confluence konsolidieren, GitHub Pages ausbauen",
@@ -2489,96 +1746,59 @@
       }
     ]
   },
-  "J01-92": {
-    "summary": "72-13 Skill-Repo: projektbezogene KI-Skills versionieren und Jira-/Mirror-Ablauf verankern",
+  "J01-90": {
+    "summary": "72-5 Spiegel-Anzeige für Epics/Aufgaben: Vorgangsnummern + eigene Seiten",
     "issuetype": "Subtask",
     "status": "Erledigt",
     "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-20T10:23:17.446+0100",
+    "updated": "2026-03-16T16:44:23.185+0100",
     "parent": "J01-72",
     "sprint": "-",
     "activeSprint": "-",
     "sprintRole": "-",
     "labels": [],
-    "issueLinks": [
-      {
-        "direction": "inward",
-        "relation": "relates to",
-        "targetKey": "J01-113",
-        "targetSummary": "Regelwerk-Bereinigung: Ebenen 1–2–3 trennen und Prüfkategorie-Zuordnung A/B/C/D",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      },
-      {
-        "direction": "inward",
-        "relation": "relates to",
-        "targetKey": "J01-115",
-        "targetSummary": "KI-Prüfarchitektur: Kategorie-A-bis-D-System aufbauen (Hook/Skript/Modell)",
-        "targetStatus": "Zu erledigen",
-        "targetType": "Task"
-      }
-    ]
+    "issueLinks": []
   },
-  "J01-94": {
-    "summary": "72-14 Scrum-Sprint-Rahmen und öffentliche Sprint-Historie in GitHub Pages",
+  "J01-89": {
+    "summary": "72-7 Spiegel-Anzeige für Unteraufgaben: nur Summary-Prefix",
     "issuetype": "Subtask",
     "status": "Erledigt",
     "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-04-01T13:05:12.354+0200",
-    "parent": "J01-72",
-    "sprint": "-",
-    "activeSprint": "-",
-    "sprintRole": "-",
-    "labels": [
-      "sprint-admin"
-    ],
-    "issueLinks": [
-      {
-        "direction": "outward",
-        "relation": "relates to",
-        "targetKey": "J01-120",
-        "targetSummary": "SCRUM Sprint 1 schließen und öffentliche Review/Retro nachziehen",
-        "targetStatus": "Erledigt",
-        "targetType": "Task"
-      }
-    ]
-  },
-  "J01-95": {
-    "summary": "72-15 Journalisierten Jira-/Pages-Sync mit Resume aufbauen",
-    "issuetype": "Subtask",
-    "status": "Erledigt",
-    "resolution": "Fertig",
-    "assignee": "-",
-    "priority": "Medium",
-    "updated": "2026-04-01T12:52:36.637+0200",
+    "updated": "2026-03-16T16:44:21.712+0100",
     "parent": "J01-72",
     "sprint": "-",
     "activeSprint": "-",
     "sprintRole": "-",
     "labels": [],
-    "issueLinks": [
-      {
-        "direction": "outward",
-        "relation": "relates to",
-        "targetKey": "J01-119",
-        "targetSummary": "Gezielten Jira-/Pages-Sync gegen stille Rückschritte härten",
-        "targetStatus": "Erledigt",
-        "targetType": "Task"
-      }
-    ]
+    "issueLinks": []
   },
-  "J01-97": {
-    "summary": "85-4 Backlog: Feature-Matrix für Tooling-Betriebe vervollständigen",
+  "J01-88": {
+    "summary": "72-6 Spiegel-Links umstellen (nur Confluence-Spiegel-Links)",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-16T16:44:20.022+0100",
+    "parent": "J01-72",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-87": {
+    "summary": "85-3 Backlog: Confluence-Spiegel periodisch aktualisieren (Batch; optional Warteschlange)",
     "issuetype": "Subtask",
     "status": "Zu erledigen",
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-17T10:52:22.434+0100",
+    "updated": "2026-03-16T16:44:18.674+0100",
     "parent": "J01-85",
     "sprint": "-",
     "activeSprint": "-",
@@ -2586,21 +1806,801 @@
     "labels": [],
     "issueLinks": []
   },
-  "J01-99": {
-    "summary": "72-16 Alte Confluence-Remote-Links in Jira bereinigen und Guardrail verankern",
+  "J01-86": {
+    "summary": "72-11 Öffentlich: Confluence-Spiegel für Sprint + Backlog (ohne Links)",
     "issuetype": "Subtask",
     "status": "Erledigt",
     "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-03-20T05:23:51.628+0100",
+    "updated": "2026-03-16T16:44:13.065+0100",
+    "parent": "J01-72",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-83": {
+    "summary": "72-10 CLI-Cache: erste Cache-V1 vorbereiten (Policy getrennt)",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-20T05:23:43.397+0100",
     "parent": "J01-72",
     "sprint": "-",
     "activeSprint": "-",
     "sprintRole": "-",
     "labels": [
-      "sprint-admin"
+      "after-prod",
+      "atlassian-tools",
+      "cache",
+      "tooling"
     ],
+    "issueLinks": []
+  },
+  "J01-82": {
+    "summary": "85-2 API-Betriebe (Wrapper), http als Escape-Hatch",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-16T16:44:03.423+0100",
+    "parent": "J01-85",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [
+      "atlassian-tools",
+      "cli",
+      "tooling"
+    ],
+    "issueLinks": [
+      {
+        "direction": "outward",
+        "relation": "duplicates",
+        "targetKey": "J01-79",
+        "targetSummary": "Atlassian CLI: API-Betriebe (Wrapper), http als Escape-Hatch",
+        "targetStatus": "Erledigt",
+        "targetType": "Task"
+      }
+    ]
+  },
+  "J01-81": {
+    "summary": "85-1 Refactor: Coding-Standards durchgehend umsetzen",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-16T16:44:02.030+0100",
+    "parent": "J01-85",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [
+      "atlassian-tools",
+      "quality",
+      "refactor",
+      "tooling"
+    ],
+    "issueLinks": [
+      {
+        "direction": "outward",
+        "relation": "duplicates",
+        "targetKey": "J01-80",
+        "targetSummary": "Atlassian Tools: Refactor – AGENTS Coding-Standards durchgehend umsetzen",
+        "targetStatus": "Erledigt",
+        "targetType": "Task"
+      }
+    ]
+  },
+  "J01-78": {
+    "summary": "72-9 Board-Sicht prüfen (Prefix-Format 9-1)",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-16T16:43:57.737+0100",
+    "parent": "J01-72",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-77": {
+    "summary": "72-4 CLI: jira ext backfill schritt-nr implementieren",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:45.190+0100",
+    "parent": "J01-72",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-76": {
+    "summary": "72-3 Rank-Endpoint verifizieren (No-Op)",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:44.398+0100",
+    "parent": "J01-72",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-75": {
+    "summary": "72-2 Sprint 2: Backfill ausführen (Schritt-Nr + Prefix)",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-16T16:43:56.214+0100",
+    "parent": "J01-72",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-74": {
+    "summary": "72-1 Altlast: J01-3 Status klären",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:43.061+0100",
+    "parent": "J01-72",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-73": {
+    "summary": "72-8 Projektweit: Subtask-Reihenfolge gegen Export prüfen",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-20T05:23:42.084+0100",
+    "parent": "J01-72",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-70": {
+    "summary": "68-2 Rollback/Notfallpfad skizzieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:41.730+0100",
+    "parent": "J01-68",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-69": {
+    "summary": "68-1 Betriebsdoku erstellen",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:40.855+0100",
+    "parent": "J01-68",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-67": {
+    "summary": "65-2 Post-Deploy-Smoke definieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:39.553+0100",
+    "parent": "J01-65",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-66": {
+    "summary": "65-1 Artefaktliste festlegen",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:35.785+0100",
+    "parent": "J01-65",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-64": {
+    "summary": "62-2 Environment aktivieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:29.967+0100",
+    "parent": "J01-62",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-63": {
+    "summary": "62-1 Branch-Mapping festlegen",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:29.116+0100",
+    "parent": "J01-62",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-61": {
+    "summary": "60-1 Scope skizzieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:25.922+0100",
+    "parent": "J01-60",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-59": {
+    "summary": "58-1 Scope skizzieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:23.503+0100",
+    "parent": "J01-58",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-57": {
+    "summary": "56-1 Scope skizzieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:22.182+0100",
+    "parent": "J01-56",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-55": {
+    "summary": "54-1 Scope skizzieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:21.082+0100",
+    "parent": "J01-54",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-53": {
+    "summary": "52-1 Scope skizzieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:19.738+0100",
+    "parent": "J01-52",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-51": {
+    "summary": "49-2 DE/EN Mindestumfang liefern",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:18.506+0100",
+    "parent": "J01-49",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-50": {
+    "summary": "49-1 Template-Text-Keys definieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:17.800+0100",
+    "parent": "J01-49",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-48": {
+    "summary": "46-2 Ausgaben in App + Config-Lib umstellen",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:07.186+0100",
+    "parent": "J01-46",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-47": {
+    "summary": "46-1 Message-IDs und Format definieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:04.336+0100",
+    "parent": "J01-46",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-45": {
+    "summary": "43-2 Doku + Tests ergänzen",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:02.622+0100",
+    "parent": "J01-43",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-44": {
+    "summary": "43-1 Marker/Signaldatei-Flow definieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:01.900+0100",
+    "parent": "J01-43",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-42": {
+    "summary": "40-2 Pfad/Key-Duplikate entfernen",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:52:00.742+0100",
+    "parent": "J01-40",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-41": {
+    "summary": "40-1 Konstanten-Schnitt definieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:51:59.713+0100",
+    "parent": "J01-40",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-39": {
+    "summary": "37-2 Validierung + Doku ergänzen",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:51:58.433+0100",
+    "parent": "J01-37",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-38": {
+    "summary": "37-1 Schema um Bedingungen erweitern",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:51:57.537+0100",
+    "parent": "J01-37",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-36": {
+    "summary": "34-2 Missing-Config-Befehl definieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:51:56.418+0100",
+    "parent": "J01-34",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-35": {
+    "summary": "34-1 Pipeline-Phase-Syntax festlegen",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:51:55.581+0100",
+    "parent": "J01-34",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-33": {
+    "summary": "31-2 Produktions-Pattern Vergleich dokumentieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-24T14:46:50.490+0100",
+    "parent": "J01-31",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-32": {
+    "summary": "31-1 Guard-Strategie finalisieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-24T14:46:49.573+0100",
+    "parent": "J01-31",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-30": {
+    "summary": "28-2 Priorisierung und Folge-Tickets",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:51:54.557+0100",
+    "parent": "J01-28",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-29": {
+    "summary": "28-1 Befunde erfassen",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:51:53.916+0100",
+    "parent": "J01-28",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-27": {
+    "summary": "25-2 Hygiene-Regeln umsetzen",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:51:52.768+0100",
+    "parent": "J01-25",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-26": {
+    "summary": "25-1 Dev-Baseline stabilisieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:51:51.773+0100",
+    "parent": "J01-25",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-24": {
+    "summary": "21-3 Paralleltests ergänzen",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:51:50.440+0100",
+    "parent": "J01-21",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-23": {
+    "summary": "21-2 CLI-Resetpfad etablieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:51:49.696+0100",
+    "parent": "J01-21",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-22": {
+    "summary": "21-1 Runtime-Verwaltung implementieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-27T14:51:48.995+0100",
+    "parent": "J01-21",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-20": {
+    "summary": "16-4 Betriebsnotiz aktualisieren",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-18T16:37:42.506+0100",
+    "parent": "J01-16",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-19": {
+    "summary": "16-3 Race-nahe Tests ergänzen",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-18T16:14:16.406+0100",
+    "parent": "J01-16",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-18": {
+    "summary": "16-2 Locking für Token-Rotation ausrollen",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-18T14:20:19.739+0100",
+    "parent": "J01-16",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-17": {
+    "summary": "16-1 Locking für Rate-Limit und CAPTCHA ausrollen",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-03-18T14:03:48.257+0100",
+    "parent": "J01-16",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-15": {
+    "summary": "13-2 Testmatrix-Nachweise verlinken",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-24T14:46:43.882+0100",
+    "parent": "J01-13",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-14": {
+    "summary": "13-1 Entscheidungstabelle finalisieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-24T14:46:43.081+0100",
+    "parent": "J01-13",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-12": {
+    "summary": "9-3 Branch-Flow dokumentieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-24T14:46:41.648+0100",
+    "parent": "J01-9",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-11": {
+    "summary": "9-2 Deploy-Checks validieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-24T14:46:40.856+0100",
+    "parent": "J01-9",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
+    "issueLinks": []
+  },
+  "J01-10": {
+    "summary": "9-1 CI-Gates finalisieren",
+    "issuetype": "Subtask",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-02-24T14:46:39.807+0100",
+    "parent": "J01-9",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [],
     "issueLinks": []
   }
 }
