@@ -33,3 +33,9 @@ SSOT (Vorgänge/Status): Jira (Projekt `J01`, nicht öffentlich).
 Nicht öffentlich:
 
 - Interne Arbeitsnotizen: privates Notizrepo.
+
+## Praktische Einstiegspunkte
+
+- [Bereiche (CLI/Build, HTTP-Runtime)]({{ "/de/areas/" | relative_url }})
+- [Programmierleitlinien]({{ "/de/policies/programmierleitlinien/" | relative_url }})
+- [Jira-Übersicht (Arbeitsdoku)]({{ "/de/jira/" | relative_url }})

@@ -33,3 +33,9 @@ Public:
 Not public:
 
 - Internal working notes: private notes repo.
+
+## Practical entry points
+
+- [Areas (CLI/Build, HTTP-Runtime)]({{ "/en/areas/" | relative_url }})
+- [Coding guidelines]({{ "/en/policies/programmierleitlinien/" | relative_url }})
+- [Jira overview (work docs)]({{ "/en/jira/" | relative_url }})

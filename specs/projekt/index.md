@@ -39,7 +39,7 @@ zentrales Referenzprojekt für Produkt-, Architektur- und Delivery-Arbeit.
 - GitHub- und PR-System: Code-, Review- und Integrationssystem
 - `tagebuch`: Provenienz- und Herleitungssystem
 - KI-/Skill-Rahmen: wiederkehrende KI-Arbeitsgänge und Regeln
-- `atlassian-tools`: technische Brücke zu Jira und Confluence
+- `atlassian-tools`: technische Brücke zu Jira
 
 ## Leser und Nutzung
 

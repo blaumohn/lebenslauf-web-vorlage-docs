@@ -6,6 +6,18 @@
   datetime: "2026-04-17T14:26:59+02:00"
   github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/1375de5497b7bd4614c96cd84d64e431203fe684"
   message: 'fix: PHP-Basis der Config-Lib auf 8.2 anheben (J01-132)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 793d081f0af1410c31e822ab478f43f244244649
+  short_sha: 793d081
+  datetime: "2026-04-17T14:26:59+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/793d081f0af1410c31e822ab478f43f244244649"
+  message: 'docs: PHP-8.2-Basis in J01-132 nachziehen (J01-132)'
+- repo: lebenslauf-web-vorlage
+  sha: 13409574fc588b5b888c8bef3bd325387c9c3999
+  short_sha: 1340957
+  datetime: "2026-04-17T14:26:59+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/13409574fc588b5b888c8bef3bd325387c9c3999"
+  message: 'fix: PHP-Basis auf 8.2 anheben (J01-132)'
 - repo: lebenslauf-web-vorlage
   sha: c54c83b97fef02701e45eb2850852f762e787771
   short_sha: c54c83b
@@ -48,15 +60,3 @@
   datetime: "2026-04-17T13:04:43+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/cef5c05453e75b509ba22a67d618ab380b92d7ad"
   message: 'docs: Resolve-Deploy-Adapter dokumentieren (J01-132)'
-- repo: lebenslauf-web-vorlage
-  sha: 9070918de03af8df89ebe543c0f92375a6d45995
-  short_sha: 9070918
-  datetime: "2026-04-17T13:04:43+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9070918de03af8df89ebe543c0f92375a6d45995"
-  message: 'feat: Resolve-Deploy-Adapter nachziehen (J01-132)'
-- repo: pipeline-config-spec-php
-  sha: 868308e56496aad1a32c6df02c6c193e242ed987
-  short_sha: 868308e
-  datetime: "2026-04-17T12:38:36+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/868308e56496aad1a32c6df02c6c193e242ed987"
-  message: 'test: Preview-Auflösungsmatrix ergänzen (J01-132)'
