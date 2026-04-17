@@ -42,6 +42,10 @@ Matrix
 - `config lint preview --phase deploy` -> App-Integration ->
   `ConfigCommandTest` bestätigt den Deploy-Phasenlauf ->
   `lebenslauf-web-vorlage/tests/php/ConfigCommandTest.php`
+- `build preview` -> App-Integration ->
+  `preview-build.yaml` verweist auf `src/resources/fixtures/lebenslauf`,
+  sodass der Preview-Build mit vorhandenen Beispieldaten laufen kann ->
+  `lebenslauf-web-vorlage/src/resources/config/preview-build.yaml`
 - Workflow-Eingaben -> Workflow/Integration ->
   `preview-deploy.yml` erzeugt erst `.local/preview-runtime.yaml` und
   `.local/preview-deploy.yaml` über `bin/ci prepare-config` ->

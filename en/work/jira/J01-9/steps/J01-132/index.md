@@ -34,13 +34,17 @@ Sprint Goal passen.
   nutzt dafür nur den Ausgabeadapter `--format github-output`.
 - Die FTP-Werte werden direkt vor `FTP deploy` aus dieser Auflösung gelesen;
   die Action liest nur die aufgelösten Step-Outputs.
+- The last build blocker in this sprint slice was closed by correcting
+  `preview-build.yaml` to the existing fixture path
+  `src/resources/fixtures/lebenslauf`.
 - Die größere Idee eines gemeinsamen Python-Deploy-Pfads bleibt nur als
   erwägte Folgeidee im Tagebuch und nicht Teil dieses Sprint-Zuschnitts.
 
 Success criterion: the preview workflow builds the FTP artifact under
 `var/deploy/` from the existing app tree plus guard files without
 rewriting the local dev entry point, and resolves `preview/deploy` only
-at the consumer for `FTP deploy`.
+at the consumer for `FTP deploy`; `build preview` uses an existing preview
+data path.
 
 ## Testbild
 

@@ -34,13 +34,17 @@ Sprint-Ziel passen.
   nutzt dafür nur den Ausgabeadapter `--format github-output`.
 - Die FTP-Werte werden direkt vor `FTP deploy` aus dieser Auflösung gelesen;
   die Action liest nur die aufgelösten Step-Outputs.
+- Der letzte Build-Blocker wurde im Sprint-Zuschnitt durch die Korrektur
+  von `preview-build.yaml` auf den tatsächlich vorhandenen Fixture-Pfad
+  `src/resources/fixtures/lebenslauf` geschlossen.
 - Die größere Idee eines gemeinsamen Python-Deploy-Pfads bleibt nur als
   erwägte Folgeidee im Tagebuch und nicht Teil dieses Sprint-Zuschnitts.
 
 Erfolgskriterium: Der Preview-Workflow baut das FTP-Artefakt unter
 `var/deploy/` aus dem bestehenden App-Baum plus Schutzdateien, ohne den
 lokalen Dev-Einstiegspunkt umzuschneiden, und löst `preview/deploy` erst
-am Verbraucher spec-treu für `FTP deploy` auf.
+am Verbraucher spec-treu für `FTP deploy` auf; `build preview` nutzt dafür
+einen vorhandenen Preview-Datenpfad.
 
 ## Testbild
 

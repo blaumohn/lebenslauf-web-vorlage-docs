@@ -1,6 +1,18 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 5fd8c30d223935257242059561d6bfb1b924c62a
+  short_sha: 5fd8c30
+  datetime: "2026-04-17T13:51:16+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/5fd8c30d223935257242059561d6bfb1b924c62a"
+  message: 'fix: Preview-Build-Pfad korrigieren (J01-132)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: e396a8b277614c317e1ed842f7434c8033f287bb
+  short_sha: e396a8b
+  datetime: "2026-04-17T13:22:13+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e396a8b277614c317e1ed842f7434c8033f287bb"
+  message: 'docs: Var-Deploy-Pfad für J01-132 nachziehen (J01-132)'
+- repo: lebenslauf-web-vorlage
   sha: 928440b830c50b2339de75ca64c544479d2d8931
   short_sha: 928440b
   datetime: "2026-04-17T13:22:13+02:00"
@@ -48,15 +60,3 @@
   datetime: "2026-04-17T12:01:50+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/925b4e027c37f165efccd52237f4daef94d5fdd3"
   message: 'docs: Footer bereinigen, Schrittliste entfernen und Leserpfade verlinken (J01-130, J01-104)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 01efcc328bb846a39a6bcccb838c056ed45e8ffd
-  short_sha: 01efcc3
-  datetime: "2026-04-17T10:24:55+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/01efcc328bb846a39a6bcccb838c056ed45e8ffd"
-  message: 'docs: J01-132 anlegen und J01-9/J01-131 nachziehen (J01-9, J01-131)'
-- repo: lebenslauf-web-vorlage
-  sha: aa0d9f3a5c686dff9a8f924388662b6036d77495
-  short_sha: aa0d9f3
-  datetime: "2026-04-16T11:23:56+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/aa0d9f3a5c686dff9a8f924388662b6036d77495"
-  message: 'chore: pipeline-config-spec-php auf aktuellen Stand ziehen (J01-105)'
