@@ -49,6 +49,7 @@ permalink: /de/jira/backlog/
   - [**9-1 CI-Gates finalisieren**]({{ "/de/jira/issues/J01-9/steps/J01-10/" | relative_url }}) — Zu erledigen
   - [**9-2 Deploy-Checks validieren**]({{ "/de/jira/issues/J01-9/steps/J01-11/" | relative_url }}) — Zu erledigen
   - [**9-3 Branch-Flow dokumentieren**]({{ "/de/jira/issues/J01-9/steps/J01-12/" | relative_url }}) — Zu erledigen
+  - [**9-4 Preview-Deploy-Bundle und Schutzregeln nachziehen**]({{ "/de/jira/issues/J01-9/steps/J01-132/" | relative_url }}) — In Bearbeitung
 
 ### [J01-6 — i18n für Seitenvorlagen und Templates]({{ "/de/jira/issues/J01-6/" | relative_url }})
 

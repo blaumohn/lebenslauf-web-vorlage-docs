@@ -1612,6 +1612,23 @@
     ],
     "issueLinks": []
   },
+  "J01-132": {
+    "summary": "9-4 Preview-Deploy-Bundle und Schutzregeln nachziehen",
+    "issuetype": "Subtask",
+    "status": "In Bearbeitung",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-04-16T16:09:46.777+0200",
+    "parent": "J01-9",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [
+      "sprint-goal"
+    ],
+    "issueLinks": []
+  },
   "J01-14": {
     "summary": "13-1 Entscheidungstabelle finalisieren",
     "issuetype": "Subtask",

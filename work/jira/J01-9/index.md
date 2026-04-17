@@ -5,7 +5,7 @@ permalink: /de/jira/issues/J01-9/
 jira_key: J01-9
 
 ---
-<!-- generated:jira:subtasks_cksum=26669624 -->
+<!-- generated:jira:subtasks_cksum=2526708873 -->
 
 {% include jira-state-head.html %}
 
@@ -26,3 +26,4 @@ Offen ist der Preview-Lauf mit Ergebnisnachweis; die anschließende Deploy-Arbei
 - **9-1 CI-Gates finalisieren** — Zu erledigen
 - **9-2 Deploy-Checks validieren** — Zu erledigen
 - **9-3 Branch-Flow dokumentieren** — Zu erledigen
+- [**9-4 Preview-Deploy-Bundle und Schutzregeln nachziehen**]({{ "/de/jira/issues/J01-9/steps/J01-132/" | relative_url }}) — In Bearbeitung

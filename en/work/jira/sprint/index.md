@@ -8,7 +8,7 @@ permalink: /en/jira/sprint/
 
 Sprint board of the public Jira area (without Jira Cloud links).
 
-| Category | To Do | In Progress | In Review | Done |
+| Kategorie | To Do | In Progress | In Review | Done |
 |---|---|---|---|---|
 | Sprint Goal | - [J01-13 — Preview: Testmatrix und Entscheidungen finalisieren]({{ "/en/jira/issues/J01-13/" | relative_url }})<br>- [J01-31 — Preview Readiness: System-Source-Verarbeitung]({{ "/en/jira/issues/J01-31/" | relative_url }}) | - [J01-9 — Preview: Workflow wieder aktivieren]({{ "/en/jira/issues/J01-9/" | relative_url }}) | - | - |
 | Support | - | - | - | - |

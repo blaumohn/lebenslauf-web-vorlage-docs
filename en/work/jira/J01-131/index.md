@@ -11,16 +11,18 @@ jira_key: J01-131
 
 {% include jira-work-context.html %}
 
+## Links
+
+-
+
 ## Description
 
-Follow-up after closing SCRUM Sprint 2: open Sprint 3, keep the preview goal
-focused, and deliberately limit carry-over to the open preview-goal issues.
+Folgearbeit nach dem Abschluss von SCRUM Sprint 2: Sprint 3 eröffnen, das Preview-Ziel fokussiert weiterführen und das Carry-over bewusst auf die offenen Preview-Zielvorgänge begrenzen.
 
-- Close SCRUM Sprint 2 and publish its review/retro.
-- Create and start SCRUM Sprint 3 with the goal of finishing the preview
-  deployment.
-- Deliberately carry over J01-9, J01-13, and J01-31 as the sprint goal.
-- Check backlog, feed, sync cache, and journal after the sprint transition.
+- SCRUM Sprint 2 schließen und Review/Retro öffentlich nachziehen.
+- SCRUM Sprint 3 mit dem Ziel Preview-Deployment fertig machen anlegen und starten.
+- J01-9, J01-13 und J01-31 bewusst als Sprint Goal übernehmen.
+- Backlog, Feed, Sync-Cache und Journal nach dem Sprintwechsel prüfen.
 
 ## Subtasks
 

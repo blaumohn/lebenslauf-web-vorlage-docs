@@ -11,6 +11,10 @@ jira_key: J01-131
 
 {% include jira-work-context.html %}
 
+## Links
+
+-
+
 ## Beschreibung
 
 Folgearbeit nach dem Abschluss von SCRUM Sprint 2: Sprint 3 eröffnen, das Preview-Ziel fokussiert weiterführen und das Carry-over bewusst auf die offenen Preview-Zielvorgänge begrenzen.
