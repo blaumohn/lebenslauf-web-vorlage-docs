@@ -21,8 +21,9 @@ Sprint-Ziel passen.
 - `composer install` läuft vor der frühen Config-Prüfung im Workflow.
 - Der bisherige Name `smoke` wird im CI-Hilfspfad durch einen sprechenden
   Deploy-Prüfschritt ersetzt.
-- `deploy/` enthält die Root-`.htaccess` sowie Schutzdateien für `src/`
-  und `var`.
+- Das Deploy-Artefakt liegt nicht mehr im Repo-Root, sondern standardmäßig
+  unter `var/deploy/`; `deploy-check` kann den Zielpfad per `--dir`
+  überschreiben.
 - `public/` bleibt vorerst unverändert, damit `index.php` und der
   Bootstrap-Pfad nicht deploymentabhängig werden.
 - Der Workflow verwendet `vars.PIPELINE` als Pipeline-ID.
@@ -36,10 +37,10 @@ Sprint-Ziel passen.
 - Die größere Idee eines gemeinsamen Python-Deploy-Pfads bleibt nur als
   erwägte Folgeidee im Tagebuch und nicht Teil dieses Sprint-Zuschnitts.
 
-Erfolgskriterium: Der Preview-Workflow baut das FTP-Artefakt aus dem
-bestehenden App-Baum plus Schutzdateien, ohne den lokalen
-Dev-Einstiegspunkt umzuschneiden, und löst `preview/deploy` erst am
-Verbraucher spec-treu für `FTP deploy` auf.
+Erfolgskriterium: Der Preview-Workflow baut das FTP-Artefakt unter
+`var/deploy/` aus dem bestehenden App-Baum plus Schutzdateien, ohne den
+lokalen Dev-Einstiegspunkt umzuschneiden, und löst `preview/deploy` erst
+am Verbraucher spec-treu für `FTP deploy` auf.
 
 ## Testbild
 

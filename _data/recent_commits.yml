@@ -1,6 +1,18 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 928440b830c50b2339de75ca64c544479d2d8931
+  short_sha: 928440b
+  datetime: "2026-04-17T13:22:13+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/928440b830c50b2339de75ca64c544479d2d8931"
+  message: 'feat: Deploy-Artefaktpfad konfigurierbar machen (J01-132)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: cef5c05453e75b509ba22a67d618ab380b92d7ad
+  short_sha: cef5c05
+  datetime: "2026-04-17T13:04:43+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/cef5c05453e75b509ba22a67d618ab380b92d7ad"
+  message: 'docs: Resolve-Deploy-Adapter dokumentieren (J01-132)'
+- repo: lebenslauf-web-vorlage
   sha: 9070918de03af8df89ebe543c0f92375a6d45995
   short_sha: 9070918
   datetime: "2026-04-17T13:04:43+02:00"
@@ -48,15 +60,3 @@
   datetime: "2026-04-16T11:23:56+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/aa0d9f3a5c686dff9a8f924388662b6036d77495"
   message: 'chore: pipeline-config-spec-php auf aktuellen Stand ziehen (J01-105)'
-- repo: lebenslauf-web-vorlage
-  sha: 3ae8a03dabfba006a43b61a04a6f0d1fc6784c15
-  short_sha: 3ae8a03
-  datetime: "2026-04-16T11:15:36+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3ae8a03dabfba006a43b61a04a6f0d1fc6784c15"
-  message: 'test: PYTHON_PATHS an Umbenennung von origin zu source anpassen (J01-125)'
-- repo: lebenslauf-web-vorlage
-  sha: 8f466fbf94229cd21ef0ea98bd58714ccf9eda4d
-  short_sha: 8f466fb
-  datetime: "2026-04-16T11:13:06+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8f466fbf94229cd21ef0ea98bd58714ccf9eda4d"
-  message: 'fix: Symfony-Process-Timeout für lang laufende Python-Skripte deaktivieren (J01-9)'

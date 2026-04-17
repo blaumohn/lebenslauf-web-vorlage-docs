@@ -21,25 +21,26 @@ Sprint Goal passen.
 - `composer install` läuft vor der frühen Config-Prüfung im Workflow.
 - Der bisherige Name `smoke` wird im CI-Hilfspfad durch einen sprechenden
   Deploy-Prüfschritt ersetzt.
-- `deploy/` enthält die Root-`.htaccess` sowie Schutzdateien für `src/`
-  und `var`.
+- The deploy artifact no longer lives in the repo root; by default it is
+  written to `var/deploy/`, and `deploy-check` can override the target
+  path through `--dir`.
 - `public/` bleibt vorerst unverändert, damit `index.php` und der
   Bootstrap-Pfad nicht deploymentabhängig werden.
 - Der Workflow verwendet `vars.PIPELINE` als Pipeline-ID.
 - Der Workflow materialisiert die GitHub-Eingaben zuerst als
   phasenspezifische `.local`-Dateien für `preview/runtime` und
   `preview/deploy`.
-- `bin/ci resolve-deploy` now owns the general deploy resolution; GitHub
-  uses only the `--format github-output` output adapter.
-- The FTP values are read right before `FTP deploy` from that resolution;
-  the action reads only the resolved step outputs.
+- `bin/ci resolve-deploy` bündelt die allgemeine Deploy-Auflösung; GitHub
+  nutzt dafür nur den Ausgabeadapter `--format github-output`.
+- Die FTP-Werte werden direkt vor `FTP deploy` aus dieser Auflösung gelesen;
+  die Action liest nur die aufgelösten Step-Outputs.
 - Die größere Idee eines gemeinsamen Python-Deploy-Pfads bleibt nur als
   erwägte Folgeidee im Tagebuch und nicht Teil dieses Sprint-Zuschnitts.
 
-Erfolgskriterium: Der Preview-Workflow baut das FTP-Artefakt aus dem
-bestehenden App-Baum plus Schutzdateien, ohne den lokalen
-Dev-Einstiegspunkt umzuschneiden, und löst `preview/deploy` erst am
-Verbraucher spec-treu für `FTP deploy` auf.
+Success criterion: the preview workflow builds the FTP artifact under
+`var/deploy/` from the existing app tree plus guard files without
+rewriting the local dev entry point, and resolves `preview/deploy` only
+at the consumer for `FTP deploy`.
 
 ## Testbild
 

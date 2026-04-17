@@ -52,10 +52,15 @@ Matrix
   `CiCommandTest` confirms the neutral output and the
   `--format github-output` adapter ->
   `lebenslauf-web-vorlage/tests/php/CiCommandTest.php`
+- `deploy-check --dir` -> CI integration ->
+  `CiCommandTest` confirms the accepted target-path syntax for temporary
+  artifacts outside the repo root ->
+  `lebenslauf-web-vorlage/tests/php/CiCommandTest.php`
 - `FTP deploy` -> workflow/integration ->
   `preview-deploy.yml` calls
   `bin/ci resolve-deploy ... --format github-output` and passes only
-  step outputs to the action ->
+  step outputs to the action; the upload artifact lives under
+  `var/deploy/` ->
   `lebenslauf-web-vorlage/.github/workflows/preview-deploy.yml`
 
 Evidence
