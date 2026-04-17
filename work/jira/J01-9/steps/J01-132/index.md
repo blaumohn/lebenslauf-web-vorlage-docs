@@ -29,9 +29,10 @@ Sprint-Ziel passen.
 - Der Workflow materialisiert die GitHub-Eingaben zuerst als
   phasenspezifische `.local`-Dateien für `preview/runtime` und
   `preview/deploy`.
-- Die FTP-Werte werden direkt vor `FTP deploy` spec-treu über
-  `config get ... --phase deploy` aus dieser Auflösung gelesen; die
-  Action liest nur die aufgelösten Step-Outputs.
+- `bin/ci resolve-deploy` bündelt die allgemeine Deploy-Auflösung; GitHub
+  nutzt dafür nur den Ausgabeadapter `--format github-output`.
+- Die FTP-Werte werden direkt vor `FTP deploy` aus dieser Auflösung gelesen;
+  die Action liest nur die aufgelösten Step-Outputs.
 - Die größere Idee eines gemeinsamen Python-Deploy-Pfads bleibt nur als
   erwägte Folgeidee im Tagebuch und nicht Teil dieses Sprint-Zuschnitts.
 

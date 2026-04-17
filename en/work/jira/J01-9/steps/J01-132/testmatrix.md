@@ -48,9 +48,14 @@ Matrix
   `.local/preview-deploy.yaml` through `bin/ci prepare-config` ->
   `lebenslauf-web-vorlage/.github/workflows/preview-deploy.yml`,
   `lebenslauf-web-vorlage/bin/ci`
+- `resolve-deploy` -> CI integration ->
+  `CiCommandTest` confirms the neutral output and the
+  `--format github-output` adapter ->
+  `lebenslauf-web-vorlage/tests/php/CiCommandTest.php`
 - `FTP deploy` -> workflow/integration ->
-  `preview-deploy.yml` resolves `FTP_*` only in the `Resolve deploy outputs`
-  step and passes only step outputs to the action ->
+  `preview-deploy.yml` calls
+  `bin/ci resolve-deploy ... --format github-output` and passes only
+  step outputs to the action ->
   `lebenslauf-web-vorlage/.github/workflows/preview-deploy.yml`
 
 Evidence

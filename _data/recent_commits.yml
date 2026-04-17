@@ -1,11 +1,23 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage
+  sha: 9070918de03af8df89ebe543c0f92375a6d45995
+  short_sha: 9070918
+  datetime: "2026-04-17T13:04:43+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9070918de03af8df89ebe543c0f92375a6d45995"
+  message: 'feat: Resolve-Deploy-Adapter nachziehen (J01-132)'
 - repo: pipeline-config-spec-php
   sha: 868308e56496aad1a32c6df02c6c193e242ed987
   short_sha: 868308e
   datetime: "2026-04-17T12:38:36+02:00"
   github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/868308e56496aad1a32c6df02c6c193e242ed987"
   message: 'test: Preview-Auflösungsmatrix ergänzen (J01-132)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 8007a3d32dd0ea477b1011aea5ca0a957174ac62
+  short_sha: 8007a3d
+  datetime: "2026-04-17T12:38:36+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8007a3d32dd0ea477b1011aea5ca0a957174ac62"
+  message: 'docs: Testmatrix für J01-132 ergänzen (J01-132)'
 - repo: lebenslauf-web-vorlage
   sha: dc972b5e2ecf26c2a36b347fff5d03ddcc3cca35
   short_sha: dc972b5
@@ -48,15 +60,3 @@
   datetime: "2026-04-16T11:13:06+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8f466fbf94229cd21ef0ea98bd58714ccf9eda4d"
   message: 'fix: Symfony-Process-Timeout für lang laufende Python-Skripte deaktivieren (J01-9)'
-- repo: lebenslauf-web-vorlage
-  sha: 9de690b2483cd43992661ce36e5eafbc3a3da713
-  short_sha: 9de690b
-  datetime: "2026-04-16T09:54:53+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9de690b2483cd43992661ce36e5eafbc3a3da713"
-  message: 'tmp: smoke test'
-- repo: lebenslauf-web-vorlage-docs
-  sha: aa3dda6ba5e391796646cb23c2b65ab05b0ac168
-  short_sha: aa3dda6
-  datetime: "2026-04-15T22:53:36+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/aa3dda6ba5e391796646cb23c2b65ab05b0ac168"
-  message: 'docs: Sprint 2 schließen und Sprint 3 eröffnen (J01-131)'

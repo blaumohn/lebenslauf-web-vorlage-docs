@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "9-4 — Preview deploy bundle, deploy resolution, and guard rules"
+title: "9-4 — Preview-Deploy-Bundle, Deploy-Auflösung und Schutzregeln"
 permalink: /en/jira/issues/J01-9/steps/J01-132/
 jira_key: J01-132
 jira_parent_key: J01-9
@@ -14,42 +14,45 @@ jira_parent_key: J01-9
 
 ## Details
 
-Goal: tighten the preview deploy path so that workflow order, early contract
-check, deploy resolution, and the FTP artifact fit the active sprint goal.
+Ziel: Den Preview-Deploy-Pfad so nachziehen, dass Workflow-Reihenfolge,
+früher Vertragscheck, Deploy-Auflösung und FTP-Artefakt zum aktiven
+Sprint Goal passen.
 
-- `composer install` runs before the early config check in the workflow.
-- The old `smoke` name is replaced by a clearer deploy check in the CI helper
-  path.
-- `deploy/` contains the root `.htaccess` and guard files for `src/` and
-  `var`.
-- `public/` stays unchanged for now, so `index.php` and the bootstrap path
-  do not become deployment-specific.
-- The workflow uses `vars.PIPELINE` as the pipeline identifier.
-- The workflow first materializes the GitHub inputs as phase-specific
-  `.local` files for `preview/runtime` and `preview/deploy`.
-- The FTP values are resolved right before `FTP deploy` through
-  `config get ... --phase deploy` from that resolution; the action reads
-  only the resolved step outputs.
-- The larger shared Python deploy idea remains only as a deferred idea in the
-  journal and is not part of this sprint slice.
+- `composer install` läuft vor der frühen Config-Prüfung im Workflow.
+- Der bisherige Name `smoke` wird im CI-Hilfspfad durch einen sprechenden
+  Deploy-Prüfschritt ersetzt.
+- `deploy/` enthält die Root-`.htaccess` sowie Schutzdateien für `src/`
+  und `var`.
+- `public/` bleibt vorerst unverändert, damit `index.php` und der
+  Bootstrap-Pfad nicht deploymentabhängig werden.
+- Der Workflow verwendet `vars.PIPELINE` als Pipeline-ID.
+- Der Workflow materialisiert die GitHub-Eingaben zuerst als
+  phasenspezifische `.local`-Dateien für `preview/runtime` und
+  `preview/deploy`.
+- `bin/ci resolve-deploy` now owns the general deploy resolution; GitHub
+  uses only the `--format github-output` output adapter.
+- The FTP values are read right before `FTP deploy` from that resolution;
+  the action reads only the resolved step outputs.
+- Die größere Idee eines gemeinsamen Python-Deploy-Pfads bleibt nur als
+  erwägte Folgeidee im Tagebuch und nicht Teil dieses Sprint-Zuschnitts.
 
-Success criterion: the preview workflow builds the FTP artifact from the
-existing app tree plus guard files without rewriting the local dev entry
-point, and resolves `preview/deploy` only at the consumer for
-`FTP deploy`.
+Erfolgskriterium: Der Preview-Workflow baut das FTP-Artefakt aus dem
+bestehenden App-Baum plus Schutzdateien, ohne den lokalen
+Dev-Einstiegspunkt umzuschneiden, und löst `preview/deploy` erst am
+Verbraucher spec-treu für `FTP deploy` auf.
 
-## Test Picture
+## Testbild
 
-- The full resolution matrix lives in `pipeline-config-spec-php`.
-- The app repo covers only app-side integration cases.
-- The compact public evidence view is the
-  [test matrix for J01-132]({{
-  "/en/jira/issues/J01-9/steps/J01-132/testmatrix/" | relative_url }}).
+- Die volle Auflösungsmatrix liegt in `pipeline-config-spec-php`.
+- Das App-Repo deckt nur die app-seitigen Integrationsfälle ab.
+- Die kompakte öffentliche Nachweisform liegt in der
+  [Testmatrix zu J01-132]({{
+  "/de/jira/issues/J01-9/steps/J01-132/testmatrix/" | relative_url }}).
 
 ## Links
 
-- [J01-9 in public Jira pages]({{ "/en/jira/issues/J01-9/" | relative_url }})
-- [Test matrix for J01-132]({{
-  "/en/jira/issues/J01-9/steps/J01-132/testmatrix/" | relative_url }})
-- [J01-105 step 105-4]({{
-  "/en/jira/issues/J01-105/steps/J01-124/" | relative_url }})
+- [J01-9 im Jira-Mirror]({{ "/en/jira/issues/J01-9/" | relative_url }})
+- [Testmatrix zu J01-132]({{
+  "/de/jira/issues/J01-9/steps/J01-132/testmatrix/" | relative_url }})
+- [J01-105 Schritt 105-4]({{
+  "/de/jira/issues/J01-105/steps/J01-124/" | relative_url }})
