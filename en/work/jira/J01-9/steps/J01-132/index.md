@@ -30,6 +30,9 @@ Sprint Goal passen.
 - Der Workflow materialisiert die GitHub-Eingaben zuerst als
   phasenspezifische `.local`-Dateien für `preview/runtime` und
   `preview/deploy`.
+- The PHP baseline for app, config library and preview workflow was
+  aligned to `>=8.2` with `8.2` as the CI default because the locked
+  Symfony 7.4 packages already require `php >=8.2`.
 - `bin/ci resolve-deploy` bündelt die allgemeine Deploy-Auflösung; GitHub
   nutzt dafür nur den Ausgabeadapter `--format github-output`.
 - Die FTP-Werte werden direkt vor `FTP deploy` aus dieser Auflösung gelesen;
@@ -44,7 +47,8 @@ Success criterion: the preview workflow builds the FTP artifact under
 `var/deploy/` from the existing app tree plus guard files without
 rewriting the local dev entry point, and resolves `preview/deploy` only
 at the consumer for `FTP deploy`; `build preview` uses an existing preview
-data path.
+data path; `composer install` is consistent with the declared PHP
+baseline again.
 
 ## Testbild
 

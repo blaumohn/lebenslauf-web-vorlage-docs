@@ -1,5 +1,29 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: pipeline-config-spec-php
+  sha: 1375de5497b7bd4614c96cd84d64e431203fe684
+  short_sha: 1375de5
+  datetime: "2026-04-17T14:26:59+02:00"
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/1375de5497b7bd4614c96cd84d64e431203fe684"
+  message: 'fix: PHP-Basis der Config-Lib auf 8.2 anheben (J01-132)'
+- repo: lebenslauf-web-vorlage
+  sha: c54c83b97fef02701e45eb2850852f762e787771
+  short_sha: c54c83b
+  datetime: "2026-04-17T14:04:31+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c54c83b97fef02701e45eb2850852f762e787771"
+  message: 'chore: composer.lock aktualisieren (J01-132)'
+- repo: pipeline-config-spec-php
+  sha: f44fba5c948513fe83a8e49ee8a0ccbeee10ec03
+  short_sha: f44fba5
+  datetime: "2026-04-17T14:02:13+02:00"
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/f44fba5c948513fe83a8e49ee8a0ccbeee10ec03"
+  message: 'chore: composer.lock aktualisieren (J01-132)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 91f838eee8a3b07a56a3229b8553e48b5ed0b9de
+  short_sha: 91f838e
+  datetime: "2026-04-17T13:51:16+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/91f838eee8a3b07a56a3229b8553e48b5ed0b9de"
+  message: 'docs: Build-Blocker in J01-132 nachziehen (J01-132)'
 - repo: lebenslauf-web-vorlage
   sha: 5fd8c30d223935257242059561d6bfb1b924c62a
   short_sha: 5fd8c30
@@ -36,27 +60,3 @@
   datetime: "2026-04-17T12:38:36+02:00"
   github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/868308e56496aad1a32c6df02c6c193e242ed987"
   message: 'test: Preview-Auflösungsmatrix ergänzen (J01-132)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 8007a3d32dd0ea477b1011aea5ca0a957174ac62
-  short_sha: 8007a3d
-  datetime: "2026-04-17T12:38:36+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8007a3d32dd0ea477b1011aea5ca0a957174ac62"
-  message: 'docs: Testmatrix für J01-132 ergänzen (J01-132)'
-- repo: lebenslauf-web-vorlage
-  sha: dc972b5e2ecf26c2a36b347fff5d03ddcc3cca35
-  short_sha: dc972b5
-  datetime: "2026-04-17T12:38:36+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dc972b5e2ecf26c2a36b347fff5d03ddcc3cca35"
-  message: 'feat: Preview-Deploy-Auflösung nachziehen (J01-132)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: ddea90479920b5fe4190d4c724ca3da69caec3da
-  short_sha: ddea904
-  datetime: "2026-04-17T12:34:57+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ddea90479920b5fe4190d4c724ca3da69caec3da"
-  message: 'docs: Jira-Cache erneuern und öffentliche Seiten neu sortieren (J01-9)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 925b4e027c37f165efccd52237f4daef94d5fdd3
-  short_sha: 925b4e0
-  datetime: "2026-04-17T12:01:50+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/925b4e027c37f165efccd52237f4daef94d5fdd3"
-  message: 'docs: Footer bereinigen, Schrittliste entfernen und Leserpfade verlinken (J01-130, J01-104)'

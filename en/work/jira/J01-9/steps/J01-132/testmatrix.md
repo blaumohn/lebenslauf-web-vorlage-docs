@@ -47,6 +47,12 @@ Matrix
   `preview-build.yaml` points to `src/resources/fixtures/lebenslauf` so
   the preview build can run with existing sample data ->
   `lebenslauf-web-vorlage/src/resources/config/preview-build.yaml`
+- `composer install` platform contract -> app/lib/workflow ->
+  `composer.json` in app and library declare `php >=8.2`, and the
+  preview workflow uses PHP `8.2` ->
+  `lebenslauf-web-vorlage/composer.json`,
+  `pipeline-config-spec-php/composer.json`,
+  `lebenslauf-web-vorlage/.github/workflows/preview-deploy.yml`
 - workflow inputs -> workflow/integration ->
   `preview-deploy.yml` first creates `.local/preview-runtime.yaml` and
   `.local/preview-deploy.yaml` through `bin/ci prepare-config` ->
