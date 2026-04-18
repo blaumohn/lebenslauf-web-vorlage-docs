@@ -27,3 +27,4 @@ Offen ist der Preview-Lauf mit Ergebnisnachweis; die anschließende Deploy-Arbei
 - **9-2 Deploy-Checks validieren** — Zu erledigen
 - **9-3 Branch-Flow dokumentieren** — Zu erledigen
 - [**9-4 Preview-Deploy-Bundle und Schutzregeln nachziehen**]({{ "/de/jira/issues/J01-9/steps/J01-132/" | relative_url }}) — In Bearbeitung
+- [**9-6 Preview-CI am Pipeline-Modell ausrichten**]({{ "/de/jira/issues/J01-9/steps/J01-134/" | relative_url }}) — In Bearbeitung

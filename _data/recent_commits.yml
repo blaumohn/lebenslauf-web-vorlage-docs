@@ -1,5 +1,23 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage
+  sha: 378103b7bcafb3e2b49cec951d135856d5f1589c
+  short_sha: 378103b
+  datetime: "2026-04-17T16:50:25+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/378103b7bcafb3e2b49cec951d135856d5f1589c"
+  message: 'fix(ci): Wert im GitHub-Workflow nur für das erste Preview-Deploy fest setzen (J01-132)'
+- repo: lebenslauf-web-vorlage
+  sha: 3d4f69545ee1dd2dda9517924fed6fade2c85182
+  short_sha: 3d4f695
+  datetime: "2026-04-17T16:40:42+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3d4f69545ee1dd2dda9517924fed6fade2c85182"
+  message: 'feat(ci): lokale Composer-CI-Prüfung via Docker ersetzt smoke.py (J01-133)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 012a2e405936d06315de5357191fa58d6b0079c6
+  short_sha: 012a2e4
+  datetime: "2026-04-17T15:19:20+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/012a2e405936d06315de5357191fa58d6b0079c6"
+  message: 'docs: Startseiten-Leserpfade, Umsetzungseinstieg und Projekts-Spec schärfen (J01-117)'
 - repo: pipeline-config-spec-php
   sha: 1375de5497b7bd4614c96cd84d64e431203fe684
   short_sha: 1375de5
@@ -42,21 +60,3 @@
   datetime: "2026-04-17T13:51:16+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/5fd8c30d223935257242059561d6bfb1b924c62a"
   message: 'fix: Preview-Build-Pfad korrigieren (J01-132)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: e396a8b277614c317e1ed842f7434c8033f287bb
-  short_sha: e396a8b
-  datetime: "2026-04-17T13:22:13+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e396a8b277614c317e1ed842f7434c8033f287bb"
-  message: 'docs: Var-Deploy-Pfad für J01-132 nachziehen (J01-132)'
-- repo: lebenslauf-web-vorlage
-  sha: 928440b830c50b2339de75ca64c544479d2d8931
-  short_sha: 928440b
-  datetime: "2026-04-17T13:22:13+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/928440b830c50b2339de75ca64c544479d2d8931"
-  message: 'feat: Deploy-Artefaktpfad konfigurierbar machen (J01-132)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: cef5c05453e75b509ba22a67d618ab380b92d7ad
-  short_sha: cef5c05
-  datetime: "2026-04-17T13:04:43+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/cef5c05453e75b509ba22a67d618ab380b92d7ad"
-  message: 'docs: Resolve-Deploy-Adapter dokumentieren (J01-132)'
