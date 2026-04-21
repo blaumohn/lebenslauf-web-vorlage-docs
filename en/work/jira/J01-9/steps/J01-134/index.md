@@ -24,6 +24,10 @@ and the workflow remains only a thin consumer of `bin/ci`.
 - `bin/ci` now carries the reusable preview core:
   `composer install`, config preparation, contract checks, setup, build,
   deploy verification, and `github-output` emission.
+- `pipeline-config-spec-php/src/Internal/ConfigLoader.php` now separates
+  orchestration, file loading, and merge handling more clearly. This keeps
+  `load()` shorter and aligns better with the style goal of one task per
+  function.
 - `tests/ci/run.sh` is reduced to the git-clone entry and then delegates
   to a pipeline matrix in `bin/ci`.
 - The local matrix covers `dev` and `preview` in the same
@@ -43,6 +47,7 @@ and the workflow remains only a thin consumer of `bin/ci`.
 | Pipeline model stays primary | `bin/ci` operates along `pipeline + phase`; no second CI domain model appears | `lebenslauf-web-vorlage/bin/ci` | done |
 | Local preview reproduction | The Docker matrix covers `preview` locally and checks the full preview path | `lebenslauf-web-vorlage/tests/ci/run.sh`, `lebenslauf-web-vorlage/docker-compose.ci.yml` | done |
 | Preview outputs stay verifiable | `ftp_host`, `ftp_user`, `ftp_pass`, `ftp_port`, `ftp_server_dir` are verified locally | `lebenslauf-web-vorlage/bin/ci`, `lebenslauf-web-vorlage/tests/php/CiCommandTest.php` | done |
+| Loader style aligned with the model | `ConfigLoader::load()` stays narrow and delegates loading plus merging to helper functions | `pipeline-config-spec-php/src/Internal/ConfigLoader.php` | done |
 | Workflow stays consumer only | The former YAML logic disappears; the workflow calls the central preview path | `lebenslauf-web-vorlage/.github/workflows/preview-deploy.yml` | done |
 | Hook and local entry are current | `composer tests:ci` is the canonical local entry; `pre-push` calls it | `lebenslauf-web-vorlage/composer.json`, `lebenslauf-web-vorlage/scripts/hooks/pre-push`, `lebenslauf-web-vorlage/README.en.md` | done |
 

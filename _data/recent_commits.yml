@@ -1,5 +1,35 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: pipeline-config-spec-php
+  sha: 23fcf4c18b8ec32d8642b4ca52461d7f9480f223
+  short_sha: 23fcf4c
+  datetime: "2026-04-21T11:34:49+02:00"
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/23fcf4c18b8ec32d8642b4ca52461d7f9480f223"
+  message: 'refactor: ConfigLoader-Ladepfad entflechten (J01-9)'
+- repo: lebenslauf-web-vorlage
+  sha: 52b69b08204a0ce9ab2fd45af16fc3c51e696f3d
+  short_sha: 52b69b0
+  datetime: "2026-04-20T14:30:08+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/52b69b08204a0ce9ab2fd45af16fc3c51e696f3d"
+  message: 'refactor(ci): CI/CD in bin/ci und bin/cd aufteilen, gemeinsame Logik in scripts/pipeline_lib.sh (J01-134)'
+- repo: lebenslauf-web-vorlage
+  sha: 9ec274708bee78940218d848ef744114318d7dd0
+  short_sha: 9ec2747
+  datetime: "2026-04-19T20:56:54+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9ec274708bee78940218d848ef744114318d7dd0"
+  message: 'fix(ci): PHP-Server auf 0.0.0.0 binden statt 127.0.0.1 (J01-134)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 61f8da6fd145b63de149e6f12eef1c79b5f85446
+  short_sha: 61f8da6
+  datetime: "2026-04-18T09:38:48+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/61f8da6fd145b63de149e6f12eef1c79b5f85446"
+  message: 'docs: J01-134 Arbeitsdoku für Preview-CI ergänzen (J01-134)'
+- repo: lebenslauf-web-vorlage
+  sha: 280902821ea341aae9109f06ea28ea4d1da17dd0
+  short_sha: 2809028
+  datetime: "2026-04-18T09:38:48+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/280902821ea341aae9109f06ea28ea4d1da17dd0"
+  message: 'feat(ci): Preview-CI auf Pipeline-Modell umstellen (J01-134)'
 - repo: lebenslauf-web-vorlage
   sha: 378103b7bcafb3e2b49cec951d135856d5f1589c
   short_sha: 378103b
@@ -30,33 +60,3 @@
   datetime: "2026-04-17T14:26:59+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/793d081f0af1410c31e822ab478f43f244244649"
   message: 'docs: PHP-8.2-Basis in J01-132 nachziehen (J01-132)'
-- repo: lebenslauf-web-vorlage
-  sha: 13409574fc588b5b888c8bef3bd325387c9c3999
-  short_sha: 1340957
-  datetime: "2026-04-17T14:26:59+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/13409574fc588b5b888c8bef3bd325387c9c3999"
-  message: 'fix: PHP-Basis auf 8.2 anheben (J01-132)'
-- repo: lebenslauf-web-vorlage
-  sha: c54c83b97fef02701e45eb2850852f762e787771
-  short_sha: c54c83b
-  datetime: "2026-04-17T14:04:31+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c54c83b97fef02701e45eb2850852f762e787771"
-  message: 'chore: composer.lock aktualisieren (J01-132)'
-- repo: pipeline-config-spec-php
-  sha: f44fba5c948513fe83a8e49ee8a0ccbeee10ec03
-  short_sha: f44fba5
-  datetime: "2026-04-17T14:02:13+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/f44fba5c948513fe83a8e49ee8a0ccbeee10ec03"
-  message: 'chore: composer.lock aktualisieren (J01-132)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 91f838eee8a3b07a56a3229b8553e48b5ed0b9de
-  short_sha: 91f838e
-  datetime: "2026-04-17T13:51:16+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/91f838eee8a3b07a56a3229b8553e48b5ed0b9de"
-  message: 'docs: Build-Blocker in J01-132 nachziehen (J01-132)'
-- repo: lebenslauf-web-vorlage
-  sha: 5fd8c30d223935257242059561d6bfb1b924c62a
-  short_sha: 5fd8c30
-  datetime: "2026-04-17T13:51:16+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/5fd8c30d223935257242059561d6bfb1b924c62a"
-  message: 'fix: Preview-Build-Pfad korrigieren (J01-132)'
