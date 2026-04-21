@@ -12,9 +12,9 @@ jira_key: J01-6
 
 ## Aufgaben
 
-- [J01-93 — i18n: GitHub Pages und Jira-Spiegel zweisprachig machen]({{ "/de/jira/issues/J01-93/" | relative_url }})
-- [J01-49 — i18n: Template-Texte i18n-fähig machen]({{ "/de/jira/issues/J01-49/" | relative_url }})
 - [J01-46 — i18n: CLI- und Runtime-Nachrichten]({{ "/de/jira/issues/J01-46/" | relative_url }})
+- [J01-49 — i18n: Template-Texte i18n-fähig machen]({{ "/de/jira/issues/J01-49/" | relative_url }})
+- [J01-93 — i18n: GitHub Pages und Jira-Spiegel zweisprachig machen]({{ "/de/jira/issues/J01-93/" | relative_url }})
 
 ## Links
 

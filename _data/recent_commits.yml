@@ -1,5 +1,17 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage
+  sha: a8589a26443c2e44eadca12fa5a3e0587f4bc362
+  short_sha: a8589a2
+  datetime: "2026-04-21T12:54:38+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a8589a26443c2e44eadca12fa5a3e0587f4bc362"
+  message: 'feat(overrides): system-Quelle entfernen, --overrides JSON einführen (J01-105)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 93752feef425afb2fd137db81923df1041adc8e0
+  short_sha: 93752fe
+  datetime: "2026-04-21T12:49:33+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/93752feef425afb2fd137db81923df1041adc8e0"
+  message: 'docs: J01-134 in Jira-Spur und Schrittseiten nachziehen (J01-134)'
 - repo: pipeline-config-spec-php
   sha: 797affd1ae529d4f37a5a44aca94f0770f7f1217
   short_sha: 797affd
@@ -48,15 +60,3 @@
   datetime: "2026-04-19T20:56:54+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9ec274708bee78940218d848ef744114318d7dd0"
   message: 'fix(ci): PHP-Server auf 0.0.0.0 binden statt 127.0.0.1 (J01-134)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 61f8da6fd145b63de149e6f12eef1c79b5f85446
-  short_sha: 61f8da6
-  datetime: "2026-04-18T09:38:48+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/61f8da6fd145b63de149e6f12eef1c79b5f85446"
-  message: 'docs: J01-134 Arbeitsdoku für Preview-CI ergänzen (J01-134)'
-- repo: lebenslauf-web-vorlage
-  sha: 280902821ea341aae9109f06ea28ea4d1da17dd0
-  short_sha: 2809028
-  datetime: "2026-04-18T09:38:48+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/280902821ea341aae9109f06ea28ea4d1da17dd0"
-  message: 'feat(ci): Preview-CI auf Pipeline-Modell umstellen (J01-134)'
