@@ -32,6 +32,12 @@ and the workflow remains only a thin consumer of `bin/ci`.
   without a pipeline-only file. The order is now
   `config/<phase>.yaml`, `.local/<phase>.yaml`,
   `config/<pipeline>-<phase>.yaml`, `.local/<pipeline>-<phase>.yaml`.
+- The public work log is now ahead of the current Jira state:
+  `J01-134` has not yet been mirrored there according to the current
+  work context.
+- In parallel, the new `--overrides` spec is being finished by another
+  contributor. This step page therefore records only the confirmed
+  interim state and does not touch the ongoing source work.
 - `tests/ci/run.sh` is reduced to the git-clone entry and then delegates
   to a pipeline matrix in `bin/ci`.
 - The local matrix covers `dev` and `preview` in the same
@@ -53,6 +59,8 @@ and the workflow remains only a thin consumer of `bin/ci`.
 | Preview outputs stay verifiable | `ftp_host`, `ftp_user`, `ftp_pass`, `ftp_port`, `ftp_server_dir` are verified locally | `lebenslauf-web-vorlage/bin/ci`, `lebenslauf-web-vorlage/tests/php/CiCommandTest.php` | done |
 | Loader style aligned with the model | `ConfigLoader::load()` stays narrow and delegates loading plus merging to helper functions | `pipeline-config-spec-php/src/Internal/ConfigLoader.php` | done |
 | Loader file model follows the spec | No `common.yaml`, no pipeline-only file; phase comes before pipeline phase | `pipeline-config-spec-php/src/Internal/ConfigLoader.php`, `pipeline-config-spec-php/tests/ConfigLoaderTest.php`, `pipeline-config-spec-php/README.de.md`, `pipeline-config-spec-php/README.md` | done |
+| Jira follow-up for the step is still missing | Public evidence exists, but `J01-134` has not yet been mirrored in Jira | Jira + this page | open |
+| `--overrides` spec is running in parallel | The nearly finished spec is being finished by another contributor; this page records only the confirmed interim state | Work context of this round | in progress |
 | Workflow stays consumer only | The former YAML logic disappears; the workflow calls the central preview path | `lebenslauf-web-vorlage/.github/workflows/preview-deploy.yml` | done |
 | Hook and local entry are current | `composer tests:ci` is the canonical local entry; `pre-push` calls it | `lebenslauf-web-vorlage/composer.json`, `lebenslauf-web-vorlage/scripts/hooks/pre-push`, `lebenslauf-web-vorlage/README.en.md` | done |
 
