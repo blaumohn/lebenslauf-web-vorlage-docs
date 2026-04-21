@@ -1,6 +1,18 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: pipeline-config-spec-php
+  sha: 0ff318dad02e3e62c7b9499dbd3de15c9cf76741
+  short_sha: 0ff318d
+  datetime: "2026-04-21T11:53:29+02:00"
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/0ff318dad02e3e62c7b9499dbd3de15c9cf76741"
+  message: 'fix: Loader auf Phasen-Dateimodell umstellen (J01-9)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 872c6c22001e5ec86b11daec1096b8828776c867
+  short_sha: 872c6c2
+  datetime: "2026-04-21T11:36:06+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/872c6c22001e5ec86b11daec1096b8828776c867"
+  message: 'docs: J01-134 um Loader-Stil ergänzt (J01-9)'
+- repo: pipeline-config-spec-php
   sha: 23fcf4c18b8ec32d8642b4ca52461d7f9480f223
   short_sha: 23fcf4c
   datetime: "2026-04-21T11:34:49+02:00"
@@ -48,15 +60,3 @@
   datetime: "2026-04-17T15:19:20+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/012a2e405936d06315de5357191fa58d6b0079c6"
   message: 'docs: Startseiten-Leserpfade, Umsetzungseinstieg und Projekts-Spec schärfen (J01-117)'
-- repo: pipeline-config-spec-php
-  sha: 1375de5497b7bd4614c96cd84d64e431203fe684
-  short_sha: 1375de5
-  datetime: "2026-04-17T14:26:59+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/1375de5497b7bd4614c96cd84d64e431203fe684"
-  message: 'fix: PHP-Basis der Config-Lib auf 8.2 anheben (J01-132)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 793d081f0af1410c31e822ab478f43f244244649
-  short_sha: 793d081
-  datetime: "2026-04-17T14:26:59+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/793d081f0af1410c31e822ab478f43f244244649"
-  message: 'docs: PHP-8.2-Basis in J01-132 nachziehen (J01-132)'

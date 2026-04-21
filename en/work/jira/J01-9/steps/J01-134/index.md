@@ -28,6 +28,10 @@ and the workflow remains only a thin consumer of `bin/ci`.
   orchestration, file loading, and merge handling more clearly. This keeps
   `load()` shorter and aligns better with the style goal of one task per
   function.
+- The loader file model now follows the spec without `common.yaml` and
+  without a pipeline-only file. The order is now
+  `config/<phase>.yaml`, `.local/<phase>.yaml`,
+  `config/<pipeline>-<phase>.yaml`, `.local/<pipeline>-<phase>.yaml`.
 - `tests/ci/run.sh` is reduced to the git-clone entry and then delegates
   to a pipeline matrix in `bin/ci`.
 - The local matrix covers `dev` and `preview` in the same
@@ -48,6 +52,7 @@ and the workflow remains only a thin consumer of `bin/ci`.
 | Local preview reproduction | The Docker matrix covers `preview` locally and checks the full preview path | `lebenslauf-web-vorlage/tests/ci/run.sh`, `lebenslauf-web-vorlage/docker-compose.ci.yml` | done |
 | Preview outputs stay verifiable | `ftp_host`, `ftp_user`, `ftp_pass`, `ftp_port`, `ftp_server_dir` are verified locally | `lebenslauf-web-vorlage/bin/ci`, `lebenslauf-web-vorlage/tests/php/CiCommandTest.php` | done |
 | Loader style aligned with the model | `ConfigLoader::load()` stays narrow and delegates loading plus merging to helper functions | `pipeline-config-spec-php/src/Internal/ConfigLoader.php` | done |
+| Loader file model follows the spec | No `common.yaml`, no pipeline-only file; phase comes before pipeline phase | `pipeline-config-spec-php/src/Internal/ConfigLoader.php`, `pipeline-config-spec-php/tests/ConfigLoaderTest.php`, `pipeline-config-spec-php/README.de.md`, `pipeline-config-spec-php/README.md` | done |
 | Workflow stays consumer only | The former YAML logic disappears; the workflow calls the central preview path | `lebenslauf-web-vorlage/.github/workflows/preview-deploy.yml` | done |
 | Hook and local entry are current | `composer tests:ci` is the canonical local entry; `pre-push` calls it | `lebenslauf-web-vorlage/composer.json`, `lebenslauf-web-vorlage/scripts/hooks/pre-push`, `lebenslauf-web-vorlage/README.en.md` | done |
 
