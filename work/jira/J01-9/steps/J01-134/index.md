@@ -21,6 +21,9 @@ sind und der Workflow nur noch dünner Verbraucher von `bin/ci` bleibt.
 
 ## Aktueller Stand
 
+- `J01-134` ist jetzt im SSOT Jira als Schritt unter `J01-9` angelegt,
+  steht auf `In Bearbeitung` und trägt den kanonischen Remote-Link auf
+  diese Arbeitsdoku.
 - `bin/ci` trägt jetzt den wiederverwendbaren Kern für den Preview-Pfad:
   `composer install`, Konfigurationsvorbereitung, Vertragsprüfung, Setup,
   Build, Deploy-Prüfung und die Ausgabe im `github-output`-Format.
@@ -32,11 +35,9 @@ sind und der Workflow nur noch dünner Verbraucher von `bin/ci` bleibt.
   ohne reine Pipeline-Datei. Stattdessen gilt die Reihenfolge
   `config/<phase>.yaml`, `.local/<phase>.yaml`,
   `config/<pipeline>-<phase>.yaml`, `.local/<pipeline>-<phase>.yaml`.
-- Die öffentliche Arbeitsdoku ist damit weiter als der aktuelle Jira-Stand:
-  `J01-134` ist laut Arbeitskontext dort noch nicht nachgezogen.
-- Parallel läuft außerdem die neue `--overrides`-Spec in anderer Hand und
-  ist fast fertig. Diese Schrittseite dokumentiert deshalb nur den
-  bestätigten Zwischenstand und greift nicht in die laufende Quellarbeit ein.
+- Die neue `--overrides`-Spec läuft parallel in anderer Hand und ist fast
+  fertig. Diese Schrittseite hält deshalb nur den bestätigten Stand zu
+  `J01-134` fest und greift nicht in die laufende Quellarbeit ein.
 - `tests/ci/run.sh` enthält nur noch den Git-Clone-Einstieg und ruft
   danach eine Pipeline-Matrix aus `bin/ci` auf.
 - Die lokale Matrix deckt `dev` und `preview` in derselben
@@ -53,13 +54,15 @@ sind und der Workflow nur noch dünner Verbraucher von `bin/ci` bleibt.
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
+| SSOT-Schritt vorhanden | `J01-134` existiert in Jira unter `J01-9` | Jira | erledigt |
+| SSOT-Status stimmt | `J01-134` steht auf `In Bearbeitung` | Jira | erledigt |
+| Remote-Link ist kanonisch | Jira zeigt auf diese öffentliche Arbeitsdoku | Jira + diese Seite | erledigt |
 | Pipeline-Modell bleibt führend | `bin/ci` arbeitet entlang von `pipeline + phase`; kein zweites fachliches CI-Modell entsteht | `lebenslauf-web-vorlage/bin/ci` | erledigt |
 | Lokale Preview-Reproduktion | Die Docker-Matrix deckt `preview` lokal ab und prüft den kompletten Preview-Pfad | `lebenslauf-web-vorlage/tests/ci/run.sh`, `lebenslauf-web-vorlage/docker-compose.ci.yml` | erledigt |
 | Preview-Outputs lokal prüfbar | `ftp_host`, `ftp_user`, `ftp_pass`, `ftp_port`, `ftp_server_dir` werden lokal verifiziert | `lebenslauf-web-vorlage/bin/ci`, `lebenslauf-web-vorlage/tests/php/CiCommandTest.php` | erledigt |
 | Loader-Stil am Modell ausgerichtet | `ConfigLoader::load()` bleibt schmal und delegiert Laden sowie Merge an Hilfsfunktionen | `pipeline-config-spec-php/src/Internal/ConfigLoader.php` | erledigt |
 | Loader-Dateimodell folgt der Spec | Kein `common.yaml`, keine reine Pipeline-Datei; Phase vor Pipeline-Phase | `pipeline-config-spec-php/src/Internal/ConfigLoader.php`, `pipeline-config-spec-php/tests/ConfigLoaderTest.php`, `pipeline-config-spec-php/README.de.md`, `pipeline-config-spec-php/README.md` | erledigt |
-| Jira-Nachzug für den Schritt fehlt noch | Öffentlicher Nachweis liegt vor, aber `J01-134` ist im Jira-Stand noch nicht nachgezogen | Jira + diese Seite | offen |
-| `--overrides`-Spec läuft parallel | Die fast fertige Spec ist in anderer Hand; diese Seite hält nur den bestätigten Zwischenstand fest | Arbeitskontext dieser Runde | in Arbeit |
+| `--overrides`-Spec bleibt getrennt | Die parallele fast fertige Spec wird hier nicht als abgeschlossen behauptet | Arbeitskontext dieser Runde | in Arbeit |
 | Workflow nur Verbraucher | Die früheren YAML-Fachschritte entfallen; der Workflow ruft den zentralen Preview-Pfad auf | `lebenslauf-web-vorlage/.github/workflows/preview-deploy.yml` | erledigt |
 | Hook und lokaler Einstieg aktuell | `composer tests:ci` ist kanonischer Einstieg; `pre-push` ruft ihn auf | `lebenslauf-web-vorlage/composer.json`, `lebenslauf-web-vorlage/scripts/hooks/pre-push`, `lebenslauf-web-vorlage/README.md` | erledigt |
 

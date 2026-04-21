@@ -1,5 +1,17 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: pipeline-config-spec-php
+  sha: 797affd1ae529d4f37a5a44aca94f0770f7f1217
+  short_sha: 797affd
+  datetime: "2026-04-21T12:45:56+02:00"
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/797affd1ae529d4f37a5a44aca94f0770f7f1217"
+  message: 'feat(overrides): system-Quelle entfernen, Dot-Notation-Overrides einführen (J01-105)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 5b9d7dc5dea211bb14aa0c4f1e173c117fd4d4b9
+  short_sha: 5b9d7dc
+  datetime: "2026-04-21T12:31:06+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5b9d7dc5dea211bb14aa0c4f1e173c117fd4d4b9"
+  message: 'docs: J01-134 um Jira-Lücke und Parallelspur ergänzen (J01-134)'
 - repo: lebenslauf-web-vorlage-docs
   sha: ed31ca3b793aeaf24d48f3d826be3ebca43b1532
   short_sha: ed31ca3
@@ -48,15 +60,3 @@
   datetime: "2026-04-18T09:38:48+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/280902821ea341aae9109f06ea28ea4d1da17dd0"
   message: 'feat(ci): Preview-CI auf Pipeline-Modell umstellen (J01-134)'
-- repo: lebenslauf-web-vorlage
-  sha: 378103b7bcafb3e2b49cec951d135856d5f1589c
-  short_sha: 378103b
-  datetime: "2026-04-17T16:50:25+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/378103b7bcafb3e2b49cec951d135856d5f1589c"
-  message: 'fix(ci): Wert im GitHub-Workflow nur für das erste Preview-Deploy fest setzen (J01-132)'
-- repo: lebenslauf-web-vorlage
-  sha: 3d4f69545ee1dd2dda9517924fed6fade2c85182
-  short_sha: 3d4f695
-  datetime: "2026-04-17T16:40:42+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3d4f69545ee1dd2dda9517924fed6fade2c85182"
-  message: 'feat(ci): lokale Composer-CI-Prüfung via Docker ersetzt smoke.py (J01-133)'
