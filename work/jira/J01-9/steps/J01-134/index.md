@@ -27,6 +27,20 @@ sind und der Workflow nur noch dünner Verbraucher von `bin/ci` bleibt.
 - `bin/ci` trägt jetzt den wiederverwendbaren Kern für den Preview-Pfad:
   `composer install`, Konfigurationsvorbereitung, Vertragsprüfung, Setup,
   Build, Deploy-Prüfung und die Ausgabe im `github-output`-Format.
+- `bin/ci` liest die Pipeline jetzt aus `APP_PIPELINE` statt aus
+  `CI_PIPELINE`.
+- `bin/cd` arbeitet jetzt argumentlos und liest `APP_PIPELINE` sowie
+  `DEPLOY_DIR` aus der Prozessumgebung.
+- Der Preview-Fixture-Pfad in `bin/ci` setzt feste Testwerte jetzt nur
+  noch als lokale Shell-Variablen statt als exportierte Prozessumgebung.
+  Dadurch bleibt der Secret- und Deploy-Pfad im CI konsistent im
+  `--overrides`-Kanal.
+- `scripts/pipeline_lib.sh` baut die CI-Overrides jetzt mit einer
+  gemeinsamen Shell-Funktion verschachtelt pro `pipeline`, `phase` und
+  Variablengruppe auf. `cli build` erhält nur den Runtime-SMTP-Pfad;
+  `cli config` erhält nur den Deploy-FTP-Pfad.
+- Wiederholte Prüfblöcke für Deploy-Outputs sind im Shell-Code auf
+  Schleifen verdichtet, damit der CI-Pfad kürzer und konsistenter bleibt.
 - `pipeline-config-spec-php/src/Internal/ConfigLoader.php` trennt den
   Ladepfad jetzt klar in Orchestrierung, Dateiladen und Merge-Schritt auf.
   Die Methode `load()` bleibt dadurch kürzer und folgt dem Stilziel
@@ -41,7 +55,10 @@ sind und der Workflow nur noch dünner Verbraucher von `bin/ci` bleibt.
 - `tests/ci/run.sh` enthält nur noch den Git-Clone-Einstieg und ruft
   danach eine Pipeline-Matrix aus `bin/ci` auf.
 - Die lokale Matrix deckt `dev` und `preview` in derselben
-  `docker-compose.ci.yml` ab.
+  `docker-compose.ci.yml` ab, mit gemeinsamem Basisanker für Build und
+  Prozessumgebung.
+- Der Preview-Workflow ruft `bin/cd` ohne Positionsargumente auf und
+  setzt `APP_PIPELINE` sowie `DEPLOY_DIR` direkt im Schritt.
 - `composer tests:ci` ersetzt den früheren Namen `tests:smoke`.
 - Das App-Repo hat einen versionierten `pre-push`-Hook, der genau diesen
   CI-Lauf ausführt.
@@ -58,8 +75,10 @@ sind und der Workflow nur noch dünner Verbraucher von `bin/ci` bleibt.
 | SSOT-Status stimmt | `J01-134` steht auf `In Bearbeitung` | Jira | erledigt |
 | Remote-Link ist kanonisch | Jira zeigt auf diese öffentliche Arbeitsdoku | Jira + diese Seite | erledigt |
 | Pipeline-Modell bleibt führend | `bin/ci` arbeitet entlang von `pipeline + phase`; kein zweites fachliches CI-Modell entsteht | `lebenslauf-web-vorlage/bin/ci` | erledigt |
+| CI/CD laufen über Umgebungsvariablen | `bin/ci` und `bin/cd` lesen `APP_PIPELINE`; `bin/cd` verlangt zusätzlich `DEPLOY_DIR` | `lebenslauf-web-vorlage/bin/ci`, `lebenslauf-web-vorlage/bin/cd`, `lebenslauf-web-vorlage/.github/workflows/preview-deploy.yml` | in Arbeit |
 | Lokale Preview-Reproduktion | Die Docker-Matrix deckt `preview` lokal ab und prüft den kompletten Preview-Pfad | `lebenslauf-web-vorlage/tests/ci/run.sh`, `lebenslauf-web-vorlage/docker-compose.ci.yml` | erledigt |
 | Preview-Outputs lokal prüfbar | `ftp_host`, `ftp_user`, `ftp_pass`, `ftp_port`, `ftp_server_dir` werden lokal verifiziert | `lebenslauf-web-vorlage/bin/ci`, `lebenslauf-web-vorlage/tests/php/CiCommandTest.php` | erledigt |
+| CI-Overrides passen zur aktuellen Spec | `bin/ci` und `pipeline_lib.sh` liefern verschachtelte Overrides statt flacher Punkt-Schlüssel | `lebenslauf-web-vorlage/bin/ci`, `lebenslauf-web-vorlage/scripts/pipeline_lib.sh`, `lebenslauf-web-vorlage/tests/php/ConfigCommandTest.php` | erledigt |
 | Loader-Stil am Modell ausgerichtet | `ConfigLoader::load()` bleibt schmal und delegiert Laden sowie Merge an Hilfsfunktionen | `pipeline-config-spec-php/src/Internal/ConfigLoader.php` | erledigt |
 | Loader-Dateimodell folgt der Spec | Kein `common.yaml`, keine reine Pipeline-Datei; Phase vor Pipeline-Phase | `pipeline-config-spec-php/src/Internal/ConfigLoader.php`, `pipeline-config-spec-php/tests/ConfigLoaderTest.php`, `pipeline-config-spec-php/README.de.md`, `pipeline-config-spec-php/README.md` | erledigt |
 | `--overrides`-Spec bleibt getrennt | Die parallele fast fertige Spec wird hier nicht als abgeschlossen behauptet | Arbeitskontext dieser Runde | in Arbeit |

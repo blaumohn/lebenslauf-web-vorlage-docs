@@ -1,11 +1,41 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
-  sha: a8589a26443c2e44eadca12fa5a3e0587f4bc362
-  short_sha: a8589a2
+  sha: d4c5feb74dfc0a5710f7e822320218c288793b16
+  short_sha: d4c5feb
+  datetime: "2026-04-22T09:54:49+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d4c5feb74dfc0a5710f7e822320218c288793b16"
+  message: 'refactor: APP_PIPELINE in ci und cd'
+- repo: lebenslauf-web-vorlage
+  sha: 2a22d354e981427d92c83563bffdd59e8f977162
+  short_sha: 2a22d35
+  datetime: "2026-04-22T09:52:00+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2a22d354e981427d92c83563bffdd59e8f977162"
+  message: 'refactor: pipeline-overrides vorbereiten'
+- repo: pipeline-config-spec-php
+  sha: 6d7c00580f2e077a5db862338357e0dc491d80c4
+  short_sha: 6d7c005
+  datetime: "2026-04-21T14:41:04+02:00"
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/6d7c00580f2e077a5db862338357e0dc491d80c4"
+  message: 'refactor: Verschachtelte Overrides mit Phasen-Spezifität laden (J01-9)'
+- repo: lebenslauf-web-vorlage
+  sha: a665be4dd3de15bef40a90bcffd0f0bf5728b9e2
+  short_sha: a665be4
+  datetime: "2026-04-21T13:35:03+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a665be4dd3de15bef40a90bcffd0f0bf5728b9e2"
+  message: 'refactor(cli): requireOverrides nach BaseCommand verschieben, CiCommandTest bereinigen (J01-9)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 304d8e2d5c80f5076b0621927a9c90530cfe53a8
+  short_sha: 304d8e2
+  datetime: "2026-04-21T12:57:15+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/304d8e2d5c80f5076b0621927a9c90530cfe53a8"
+  message: 'docs: Jira-Sync-Nachzug und Schrittseiten ergänzen (J01-134, J01-133)'
+- repo: lebenslauf-web-vorlage
+  sha: d501e533a3f7922a06357db433ea0c6f136e8c2b
+  short_sha: d501e53
   datetime: "2026-04-21T12:54:38+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a8589a26443c2e44eadca12fa5a3e0587f4bc362"
-  message: 'feat(overrides): system-Quelle entfernen, --overrides JSON einführen (J01-105)'
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d501e533a3f7922a06357db433ea0c6f136e8c2b"
+  message: 'feat(overrides): system-Quelle entfernen, --overrides JSON einführen (J01-9)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 93752feef425afb2fd137db81923df1041adc8e0
   short_sha: 93752fe
@@ -13,11 +43,11 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/93752feef425afb2fd137db81923df1041adc8e0"
   message: 'docs: J01-134 in Jira-Spur und Schrittseiten nachziehen (J01-134)'
 - repo: pipeline-config-spec-php
-  sha: 797affd1ae529d4f37a5a44aca94f0770f7f1217
-  short_sha: 797affd
+  sha: eb968882989d6baed8c792914c01061dede0b8a5
+  short_sha: eb96888
   datetime: "2026-04-21T12:45:56+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/797affd1ae529d4f37a5a44aca94f0770f7f1217"
-  message: 'feat(overrides): system-Quelle entfernen, Dot-Notation-Overrides einführen (J01-105)'
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/eb968882989d6baed8c792914c01061dede0b8a5"
+  message: 'feat(overrides): system-Quelle entfernen, Dot-Notation-Overrides einführen (J01-9)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 5b9d7dc5dea211bb14aa0c4f1e173c117fd4d4b9
   short_sha: 5b9d7dc
@@ -30,33 +60,3 @@
   datetime: "2026-04-21T11:54:00+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ed31ca3b793aeaf24d48f3d826be3ebca43b1532"
   message: 'docs: J01-134 um Phasen-Dateimodell ergänzt (J01-9)'
-- repo: pipeline-config-spec-php
-  sha: 0ff318dad02e3e62c7b9499dbd3de15c9cf76741
-  short_sha: 0ff318d
-  datetime: "2026-04-21T11:53:29+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/0ff318dad02e3e62c7b9499dbd3de15c9cf76741"
-  message: 'fix: Loader auf Phasen-Dateimodell umstellen (J01-9)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 872c6c22001e5ec86b11daec1096b8828776c867
-  short_sha: 872c6c2
-  datetime: "2026-04-21T11:36:06+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/872c6c22001e5ec86b11daec1096b8828776c867"
-  message: 'docs: J01-134 um Loader-Stil ergänzt (J01-9)'
-- repo: pipeline-config-spec-php
-  sha: 23fcf4c18b8ec32d8642b4ca52461d7f9480f223
-  short_sha: 23fcf4c
-  datetime: "2026-04-21T11:34:49+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/23fcf4c18b8ec32d8642b4ca52461d7f9480f223"
-  message: 'refactor: ConfigLoader-Ladepfad entflechten (J01-9)'
-- repo: lebenslauf-web-vorlage
-  sha: 52b69b08204a0ce9ab2fd45af16fc3c51e696f3d
-  short_sha: 52b69b0
-  datetime: "2026-04-20T14:30:08+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/52b69b08204a0ce9ab2fd45af16fc3c51e696f3d"
-  message: 'refactor(ci): CI/CD in bin/ci und bin/cd aufteilen, gemeinsame Logik in scripts/pipeline_lib.sh (J01-134)'
-- repo: lebenslauf-web-vorlage
-  sha: 9ec274708bee78940218d848ef744114318d7dd0
-  short_sha: 9ec2747
-  datetime: "2026-04-19T20:56:54+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9ec274708bee78940218d848ef744114318d7dd0"
-  message: 'fix(ci): PHP-Server auf 0.0.0.0 binden statt 127.0.0.1 (J01-134)'
