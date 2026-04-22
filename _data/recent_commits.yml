@@ -1,5 +1,11 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage-docs
+  sha: 342f613eb2de25c2f939efef602752e356faab96
+  short_sha: 342f613
+  datetime: "2026-04-22T14:52:58+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/342f613eb2de25c2f939efef602752e356faab96"
+  message: 'docs: Arbeitsdoku zu J01-134 aktualisieren (J01-134)'
 - repo: lebenslauf-web-vorlage
   sha: a95ce3fed2143aa38fcdf20f9036b04581a32ed0
   short_sha: a95ce3f
@@ -54,9 +60,3 @@
   datetime: "2026-04-22T09:52:00+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2a22d354e981427d92c83563bffdd59e8f977162"
   message: 'refactor: pipeline-overrides vorbereiten'
-- repo: pipeline-config-spec-php
-  sha: 6d7c00580f2e077a5db862338357e0dc491d80c4
-  short_sha: 6d7c005
-  datetime: "2026-04-21T14:41:04+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/6d7c00580f2e077a5db862338357e0dc491d80c4"
-  message: 'refactor: Verschachtelte Overrides mit Phasen-Spezifität laden (J01-9)'
