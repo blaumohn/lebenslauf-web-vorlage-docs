@@ -12,63 +12,62 @@ jira_parent_key: J01-9
 
 {% include jira-work-context.html %}
 
-## Goal
+## Ziel
 
-Align the local CI and the GitHub preview flow with the leading
-`pipeline + phase` model so that preview failures become reproducible
-locally, preview-specific outputs remain verifiable locally, and the
-workflow stays only a thin consumer of `bin/ci`.
+Den lokalen CI- und den GitHub-Preview-Ablauf so auf das führende
+Projektmodell `pipeline + phase` ausrichten, dass Preview-Fehler lokal
+schnell reproduzierbar werden, Preview-spezifische Outputs lokal prüfbar
+sind und der Workflow nur noch dünner Verbraucher von `bin/ci` bleibt.
 
-## Current State
+## Aktueller Stand
 
-- `J01-134` now exists in the Jira SSOT as a step under `J01-9`, is set
-  to `In Bearbeitung`, and carries the canonical remote link to this
-  work log.
-- `bin/ci` now carries the reusable preview core:
-  `composer install`, config preparation, contract checks, setup, build,
-  deploy verification, and `github-output` emission.
-- `pipeline-config-spec-php/src/Internal/ConfigLoader.php` now separates
-  orchestration, file loading, and merge handling more clearly. This
-  keeps `load()` shorter and aligns better with the style goal of one
-  task per function.
-- The loader file model now follows the spec without `common.yaml` and
-  without a pipeline-only file. The order is now
+- `J01-134` ist jetzt im SSOT Jira als Schritt unter `J01-9` angelegt,
+  steht auf `In Progress` und trägt den kanonischen Remote-Link auf
+  diese Arbeitsdoku.
+- `bin/ci` trägt jetzt den wiederverwendbaren Kern für den Preview-Pfad:
+  `composer install`, Konfigurationsvorbereitung, Vertragsprüfung, Setup,
+  Build, Deploy-Prüfung und die Ausgabe im `github-output`-Format.
+- `pipeline-config-spec-php/src/Internal/ConfigLoader.php` trennt den
+  Ladepfad jetzt klar in Orchestrierung, Dateiladen und Merge-Schritt auf.
+  Die Methode `load()` bleibt dadurch kürzer und folgt dem Stilziel
+  "eine Aufgabe pro Funktion" besser.
+- Das Dateimodell des Loaders folgt jetzt der Spec ohne `common.yaml` und
+  ohne reine Pipeline-Datei. Stattdessen gilt die Reihenfolge
   `config/<phase>.yaml`, `.local/<phase>.yaml`,
   `config/<pipeline>-<phase>.yaml`, `.local/<pipeline>-<phase>.yaml`.
-- The new `--overrides` spec is being finished in parallel by another
-  contributor and is nearly done. This page therefore records only the
-  confirmed `J01-134` state and does not interfere with the ongoing
-  source work.
-- `tests/ci/run.sh` is reduced to the git-clone entry and then delegates
-  to a pipeline matrix in `bin/ci`.
-- The local matrix covers `dev` and `preview` in the same
-  `docker-compose.ci.yml`.
-- `composer tests:ci` replaces the former `tests:smoke` name.
-- The app repo now ships a versioned `pre-push` hook that runs exactly
-  that CI path.
-- The GitHub workflow `preview-deploy.yml` no longer keeps the former
-  `Prepare config inputs` to `Resolve deploy outputs` logic as separate
-  YAML steps and instead calls the central preview path through
-  `bin/ci pipeline-check`.
+- Die neue `--overrides`-Spec läuft parallel in anderer Hand und ist fast
+  fertig. Diese Schrittseite hält deshalb nur den bestätigten Stand zu
+  `J01-134` fest und greift nicht in die laufende Quellarbeit ein.
+- `tests/ci/run.sh` enthält nur noch den Git-Clone-Einstieg und ruft
+  danach eine Pipeline-Matrix aus `bin/ci` auf.
+- Die lokale Matrix deckt `dev` und `preview` in derselben
+  `docker-compose.ci.yml` ab.
+- `composer tests:ci` ersetzt den früheren Namen `tests:smoke`.
+- Das App-Repo hat einen versionierten `pre-push`-Hook, der genau diesen
+  CI-Lauf ausführt.
+- Der GitHub-Workflow `preview-deploy.yml` enthält die frühere
+  Fachlogik von `Prepare config inputs` bis `Resolve deploy outputs`
+  nicht mehr als einzelne YAML-Schritte, sondern ruft den zentralen
+  Preview-Pfad über `bin/ci pipeline-check` auf.
 
-## Verification Plan
+## Überprüfungsplan
 
-| Checkpoint | Expectation | Evidence / Location | Status |
+| Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| SSOT step exists | `J01-134` exists in Jira under `J01-9` | Jira | done |
-| SSOT status matches | `J01-134` is set to `In Bearbeitung` | Jira | done |
-| Remote link is canonical | Jira points to this public work log | Jira + this page | done |
-| Pipeline model stays primary | `bin/ci` operates along `pipeline + phase`; no second CI domain model appears | `lebenslauf-web-vorlage/bin/ci` | done |
-| Local preview reproduction | The Docker matrix covers `preview` locally and checks the full preview path | `lebenslauf-web-vorlage/tests/ci/run.sh`, `lebenslauf-web-vorlage/docker-compose.ci.yml` | done |
-| Preview outputs stay verifiable | `ftp_host`, `ftp_user`, `ftp_pass`, `ftp_port`, `ftp_server_dir` are verified locally | `lebenslauf-web-vorlage/bin/ci`, `lebenslauf-web-vorlage/tests/php/CiCommandTest.php` | done |
-| Loader style aligned with the model | `ConfigLoader::load()` stays narrow and delegates loading plus merging to helper functions | `pipeline-config-spec-php/src/Internal/ConfigLoader.php` | done |
-| Loader file model follows the spec | No `common.yaml`, no pipeline-only file; phase comes before pipeline phase | `pipeline-config-spec-php/src/Internal/ConfigLoader.php`, `pipeline-config-spec-php/tests/ConfigLoaderTest.php`, `pipeline-config-spec-php/README.de.md`, `pipeline-config-spec-php/README.md` | done |
-| `--overrides` spec stays separate | The nearly finished parallel spec is not claimed as completed here | Work context of this round | in progress |
-| Workflow stays consumer only | The former YAML logic disappears; the workflow calls the central preview path | `lebenslauf-web-vorlage/.github/workflows/preview-deploy.yml` | done |
-| Hook and local entry are current | `composer tests:ci` is the canonical local entry; `pre-push` calls it | `lebenslauf-web-vorlage/composer.json`, `lebenslauf-web-vorlage/scripts/hooks/pre-push`, `lebenslauf-web-vorlage/README.md` | done |
+| SSOT-Schritt vorhanden | `J01-134` existiert in Jira unter `J01-9` | Jira | erledigt |
+| SSOT-Status stimmt | `J01-134` steht auf `In Progress` | Jira | erledigt |
+| Remote-Link ist kanonisch | Jira zeigt auf diese öffentliche Arbeitsdoku | Jira + diese Seite | erledigt |
+| Pipeline-Modell bleibt führend | `bin/ci` arbeitet entlang von `pipeline + phase`; kein zweites fachliches CI-Modell entsteht | `lebenslauf-web-vorlage/bin/ci` | erledigt |
+| Lokale Preview-Reproduktion | Die Docker-Matrix deckt `preview` lokal ab und prüft den kompletten Preview-Pfad | `lebenslauf-web-vorlage/tests/ci/run.sh`, `lebenslauf-web-vorlage/docker-compose.ci.yml` | erledigt |
+| Preview-Outputs lokal prüfbar | `ftp_host`, `ftp_user`, `ftp_pass`, `ftp_port`, `ftp_server_dir` werden lokal verifiziert | `lebenslauf-web-vorlage/bin/ci`, `lebenslauf-web-vorlage/tests/php/CiCommandTest.php` | erledigt |
+| Loader-Stil am Modell ausgerichtet | `ConfigLoader::load()` bleibt schmal und delegiert Laden sowie Merge an Hilfsfunktionen | `pipeline-config-spec-php/src/Internal/ConfigLoader.php` | erledigt |
+| Loader-Dateimodell folgt der Spec | Kein `common.yaml`, keine reine Pipeline-Datei; Phase vor Pipeline-Phase | `pipeline-config-spec-php/src/Internal/ConfigLoader.php`, `pipeline-config-spec-php/tests/ConfigLoaderTest.php`, `pipeline-config-spec-php/README.de.md`, `pipeline-config-spec-php/README.md` | erledigt |
+| `--overrides`-Spec bleibt getrennt | Die parallele fast fertige Spec wird hier nicht als abgeschlossen behauptet | Arbeitskontext dieser Runde | in Arbeit |
+| Workflow nur Verbraucher | Die früheren YAML-Fachschritte entfallen; der Workflow ruft den zentralen Preview-Pfad auf | `lebenslauf-web-vorlage/.github/workflows/preview-deploy.yml` | erledigt |
+| Hook und lokaler Einstieg aktuell | `composer tests:ci` ist kanonischer Einstieg; `pre-push` ruft ihn auf | `lebenslauf-web-vorlage/composer.json`, `lebenslauf-web-vorlage/scripts/hooks/pre-push`, `lebenslauf-web-vorlage/README.md` | erledigt |
 
 ## Links
 
-- [J01-9 in the Jira mirror]({{ "/en/jira/issues/J01-9/" | relative_url }})
-- [J01-9 step 9-4]({{ "/en/jira/issues/J01-9/steps/J01-132/" | relative_url }})
-- [J01-9 step 9-5]({{ "/en/jira/issues/J01-9/steps/J01-133/" | relative_url }})
+- [J01-9 im Jira-Mirror]({{ "/en/jira/issues/J01-9/" | relative_url }})
+- [J01-9 Schritt 9-4]({{ "/en/jira/issues/J01-9/steps/J01-132/" | relative_url }})
+- [J01-9 Schritt 9-5]({{ "/en/jira/issues/J01-9/steps/J01-133/" | relative_url }})

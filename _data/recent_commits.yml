@@ -1,17 +1,41 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
-  sha: d88e4073895eeac66e981a9f9f84a740e035cebc
-  short_sha: d88e407
-  datetime: "2026-04-22T11:55:59+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d88e4073895eeac66e981a9f9f84a740e035cebc"
-  message: 'refactor(cli): phase-fallback entfernen und overrides parsen (J01-9)'
+  sha: a95ce3fed2143aa38fcdf20f9036b04581a32ed0
+  short_sha: a95ce3f
+  datetime: "2026-04-22T14:52:53+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a95ce3fed2143aa38fcdf20f9036b04581a32ed0"
+  message: 'refactor(build): alte Build-Validierung und zugehoerige Tests entfernen (J01-134)'
 - repo: lebenslauf-web-vorlage
-  sha: b4670a2e825c63d9477149de4a51d5ecaf173626
-  short_sha: b4670a2
-  datetime: "2026-04-22T11:53:38+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b4670a2e825c63d9477149de4a51d5ecaf173626"
-  message: 'chore: laufende Qualitätsverbesserungen sichern (J01-5)'
+  sha: a931d25da919921c25c0493a012f7cda3b191a07
+  short_sha: a931d25
+  datetime: "2026-04-22T14:52:49+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a931d25da919921c25c0493a012f7cda3b191a07"
+  message: 'fix(preview): Build-Profil auf gueltig umstellen (J01-134)'
+- repo: lebenslauf-web-vorlage
+  sha: 68e0a8abcc7665f739dc3e8b087845174b7d19e5
+  short_sha: 68e0a8a
+  datetime: "2026-04-22T14:52:43+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/68e0a8abcc7665f739dc3e8b087845174b7d19e5"
+  message: 'feat(ci): Preview-Overrides und GitHub-Output zentralisieren (J01-134)'
+- repo: lebenslauf-web-vorlage
+  sha: 9ec9227a8cbf83819835a6684a893fd7d24cf8d7
+  short_sha: 9ec9227
+  datetime: "2026-04-22T12:13:38+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9ec9227a8cbf83819835a6684a893fd7d24cf8d7"
+  message: 'refactor(cli): phase-fallback und AppConfigValidator entfernen und overrides parsen (J01-9)'
+- repo: lebenslauf-web-vorlage
+  sha: c62f654c64bcdcaf4a6b24bf0b04bbb493408b3a
+  short_sha: c62f654
+  datetime: "2026-04-22T12:08:39+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c62f654c64bcdcaf4a6b24bf0b04bbb493408b3a"
+  message: 'fix(ci): Argumente für bin/ci ablehnen (J01-134)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 31f6d1b4b1c2cde85d31ad4943554f45c13975a3
+  short_sha: 31f6d1b
+  datetime: "2026-04-22T11:55:59+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/31f6d1b4b1c2cde85d31ad4943554f45c13975a3"
+  message: 'docs(j01-9): cli-status im mirror nachziehen'
 - repo: lebenslauf-web-vorlage-docs
   sha: 5d32be843c44441f0eece0ec1494b0cf07d122e8
   short_sha: 5d32be8
@@ -36,27 +60,3 @@
   datetime: "2026-04-21T14:41:04+02:00"
   github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/6d7c00580f2e077a5db862338357e0dc491d80c4"
   message: 'refactor: Verschachtelte Overrides mit Phasen-Spezifität laden (J01-9)'
-- repo: lebenslauf-web-vorlage
-  sha: a665be4dd3de15bef40a90bcffd0f0bf5728b9e2
-  short_sha: a665be4
-  datetime: "2026-04-21T13:35:03+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a665be4dd3de15bef40a90bcffd0f0bf5728b9e2"
-  message: 'refactor(cli): requireOverrides nach BaseCommand verschieben, CiCommandTest bereinigen (J01-9)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 304d8e2d5c80f5076b0621927a9c90530cfe53a8
-  short_sha: 304d8e2
-  datetime: "2026-04-21T12:57:15+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/304d8e2d5c80f5076b0621927a9c90530cfe53a8"
-  message: 'docs: Jira-Sync-Nachzug und Schrittseiten ergänzen (J01-134, J01-133)'
-- repo: lebenslauf-web-vorlage
-  sha: d501e533a3f7922a06357db433ea0c6f136e8c2b
-  short_sha: d501e53
-  datetime: "2026-04-21T12:54:38+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d501e533a3f7922a06357db433ea0c6f136e8c2b"
-  message: 'feat(overrides): system-Quelle entfernen, --overrides JSON einführen (J01-9)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 93752feef425afb2fd137db81923df1041adc8e0
-  short_sha: 93752fe
-  datetime: "2026-04-21T12:49:33+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/93752feef425afb2fd137db81923df1041adc8e0"
-  message: 'docs: J01-134 in Jira-Spur und Schrittseiten nachziehen (J01-134)'
