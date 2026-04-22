@@ -66,6 +66,10 @@ sind und der Workflow nur noch dünner Verbraucher von `bin/ci` bleibt.
   Fachlogik von `Prepare config inputs` bis `Resolve deploy outputs`
   nicht mehr als einzelne YAML-Schritte, sondern ruft den zentralen
   Preview-Pfad über `bin/ci pipeline-check` auf.
+- `ConfigCommandTest` schreibt den Preview-Runtime-Pfad für
+  `SMTP_PASS` jetzt mit einem temporären Manifest selbst auf
+  `preview/runtime/smtp` um, damit der CLI-Override ohne echte
+  Pipeline-Datei geprüft werden kann.
 
 ## Überprüfungsplan
 

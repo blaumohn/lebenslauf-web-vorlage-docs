@@ -37,7 +37,8 @@ Matrix
   `ConfigCommandTest` liest `FTP_PORT` aus dem Deploy-Pfad ->
   `lebenslauf-web-vorlage/tests/php/ConfigCommandTest.php`
 - `config get preview --phase runtime` -> App-Integration ->
-  `ConfigCommandTest` liest `SMTP_PASS` aus dem Runtime-Pfad ->
+  `ConfigCommandTest` schreibt ein temporäres Manifest mit
+  `preview/runtime/smtp` und liest `SMTP_PASS` aus dem Runtime-Pfad ->
   `lebenslauf-web-vorlage/tests/php/ConfigCommandTest.php`
 - `config lint preview --phase deploy` -> App-Integration ->
   `ConfigCommandTest` bestätigt den Deploy-Phasenlauf ->

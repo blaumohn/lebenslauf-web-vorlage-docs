@@ -1,6 +1,30 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: 23fb0a8531b61832b7199d8124fc4ae04da6cc54
+  short_sha: 23fb0a8
+  datetime: "2026-04-22T15:17:53+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/23fb0a8531b61832b7199d8124fc4ae04da6cc54"
+  message: 'docs: update J01-9 config command test matrix'
+- repo: lebenslauf-web-vorlage
+  sha: f4e19ec83c75303d984a3c218fb79c9e4c74b176
+  short_sha: f4e19ec
+  datetime: "2026-04-22T15:17:53+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f4e19ec83c75303d984a3c218fb79c9e4c74b176"
+  message: 'test: adapt ConfigCommand runtime override'
+- repo: lebenslauf-web-vorlage
+  sha: 2654ea1568237122431687f9a0d5dbb360ee3c0b
+  short_sha: 2654ea1
+  datetime: "2026-04-22T15:17:53+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2654ea1568237122431687f9a0d5dbb360ee3c0b"
+  message: 'test: adapt ConfigCommand runtime override (J01-9)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 5275724c08059a311af94119a94b632564800f7f
+  short_sha: 5275724
+  datetime: "2026-04-22T14:57:53+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5275724c08059a311af94119a94b632564800f7f"
+  message: 'docs: englische J01-134-Schrittseite korrigieren (J01-134)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 342f613eb2de25c2f939efef602752e356faab96
   short_sha: 342f613
   datetime: "2026-04-22T14:52:58+02:00"
@@ -36,27 +60,3 @@
   datetime: "2026-04-22T12:08:39+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c62f654c64bcdcaf4a6b24bf0b04bbb493408b3a"
   message: 'fix(ci): Argumente für bin/ci ablehnen (J01-134)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 31f6d1b4b1c2cde85d31ad4943554f45c13975a3
-  short_sha: 31f6d1b
-  datetime: "2026-04-22T11:55:59+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/31f6d1b4b1c2cde85d31ad4943554f45c13975a3"
-  message: 'docs(j01-9): cli-status im mirror nachziehen'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 5d32be843c44441f0eece0ec1494b0cf07d122e8
-  short_sha: 5d32be8
-  datetime: "2026-04-22T09:54:53+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5d32be843c44441f0eece0ec1494b0cf07d122e8"
-  message: 'docs: J01-134 um APP_PIPELINE ergänzt'
-- repo: lebenslauf-web-vorlage
-  sha: d4c5feb74dfc0a5710f7e822320218c288793b16
-  short_sha: d4c5feb
-  datetime: "2026-04-22T09:54:49+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d4c5feb74dfc0a5710f7e822320218c288793b16"
-  message: 'refactor: APP_PIPELINE in ci und cd'
-- repo: lebenslauf-web-vorlage
-  sha: 2a22d354e981427d92c83563bffdd59e8f977162
-  short_sha: 2a22d35
-  datetime: "2026-04-22T09:52:00+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2a22d354e981427d92c83563bffdd59e8f977162"
-  message: 'refactor: pipeline-overrides vorbereiten'
