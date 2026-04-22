@@ -1,6 +1,24 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: d88e4073895eeac66e981a9f9f84a740e035cebc
+  short_sha: d88e407
+  datetime: "2026-04-22T11:55:59+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d88e4073895eeac66e981a9f9f84a740e035cebc"
+  message: 'refactor(cli): phase-fallback entfernen und overrides parsen (J01-9)'
+- repo: lebenslauf-web-vorlage
+  sha: b4670a2e825c63d9477149de4a51d5ecaf173626
+  short_sha: b4670a2
+  datetime: "2026-04-22T11:53:38+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b4670a2e825c63d9477149de4a51d5ecaf173626"
+  message: 'chore: laufende Qualitätsverbesserungen sichern (J01-5)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 5d32be843c44441f0eece0ec1494b0cf07d122e8
+  short_sha: 5d32be8
+  datetime: "2026-04-22T09:54:53+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5d32be843c44441f0eece0ec1494b0cf07d122e8"
+  message: 'docs: J01-134 um APP_PIPELINE ergänzt'
+- repo: lebenslauf-web-vorlage
   sha: d4c5feb74dfc0a5710f7e822320218c288793b16
   short_sha: d4c5feb
   datetime: "2026-04-22T09:54:49+02:00"
@@ -42,21 +60,3 @@
   datetime: "2026-04-21T12:49:33+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/93752feef425afb2fd137db81923df1041adc8e0"
   message: 'docs: J01-134 in Jira-Spur und Schrittseiten nachziehen (J01-134)'
-- repo: pipeline-config-spec-php
-  sha: eb968882989d6baed8c792914c01061dede0b8a5
-  short_sha: eb96888
-  datetime: "2026-04-21T12:45:56+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/eb968882989d6baed8c792914c01061dede0b8a5"
-  message: 'feat(overrides): system-Quelle entfernen, Dot-Notation-Overrides einführen (J01-9)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 5b9d7dc5dea211bb14aa0c4f1e173c117fd4d4b9
-  short_sha: 5b9d7dc
-  datetime: "2026-04-21T12:31:06+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5b9d7dc5dea211bb14aa0c4f1e173c117fd4d4b9"
-  message: 'docs: J01-134 um Jira-Lücke und Parallelspur ergänzen (J01-134)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: ed31ca3b793aeaf24d48f3d826be3ebca43b1532
-  short_sha: ed31ca3
-  datetime: "2026-04-21T11:54:00+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ed31ca3b793aeaf24d48f3d826be3ebca43b1532"
-  message: 'docs: J01-134 um Phasen-Dateimodell ergänzt (J01-9)'

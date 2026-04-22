@@ -21,6 +21,11 @@ Ziel: Das Preview-Deployment nach dem bereits in dev gemergten PR betrieblich au
 
 Offen ist der Preview-Lauf mit Ergebnisnachweis; die anschließende Deploy-Arbeit bleibt als nachgelagerte Arbeit getrennt.
 
+## Aktueller Stand
+
+- Die CLI-Konfigurationsbefehle verlangen jetzt explizit `--phase`; der frühere `runtime`-Fallback ist entfernt.
+- Die Overrides-Hilfe heißt in der Basisklasse jetzt `parseOverrides`, damit die Benennung klarer zum Parsing-Schritt passt.
+
 ## Unteraufgaben
 
 - **9-1 CI-Gates finalisieren** — Zu erledigen
