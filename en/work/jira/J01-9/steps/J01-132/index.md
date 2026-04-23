@@ -19,6 +19,8 @@ Ziel: Den Preview-Deploy-Pfad so nachziehen, dass Workflow-Reihenfolge, Deploy-P
 - composer install laeuft vor der fruehen Config-Pruefung im Workflow.
 - Der bisherige Name smoke wird im CI-Hilfspfad durch einen sprechenden Deploy-Pruefschritt ersetzt.
 - deploy/ enthaelt die Root-.htaccess sowie Schutzdateien fuer src/ und var.
+- The root `.htaccess` now routes `/` to `public/index.php` before the `/public/` exception so the home page is not intercepted too early.
+- `config get` without a KEY now returns JSON for the deploy path so SFTP configuration can be passed without losing structure.
 - public/ bleibt vorerst unveraendert, damit index.php und der Bootstrap-Pfad nicht deploymentabhaengig werden.
 - Die groessere Idee eines gemeinsamen Python-Deploy-Pfads bleibt nur als erwaegte Folgeidee im Tagebuch und nicht Teil dieses Sprint-Zuschnitts.
 

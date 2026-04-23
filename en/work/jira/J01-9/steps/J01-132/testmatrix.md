@@ -62,14 +62,17 @@ Matrix
   `CiCommandTest` confirms the neutral output and the
   `--format github-output` adapter ->
   `lebenslauf-web-vorlage/tests/php/CiCommandTest.php`
+- `config get preview --phase deploy` -> app integration ->
+  `ConfigCommandTest` returns JSON for deploy values when no KEY is passed ->
+  `lebenslauf-web-vorlage/tests/php/ConfigCommandTest.php`
 - `deploy-check --dir` -> CI integration ->
   `CiCommandTest` confirms the accepted target-path syntax for temporary
   artifacts outside the repo root ->
   `lebenslauf-web-vorlage/tests/php/CiCommandTest.php`
 - `FTP deploy` -> workflow/integration ->
   `preview-deploy.yml` calls
-  `bin/ci resolve-deploy ... --format github-output` and passes only
-  step outputs to the action; the upload artifact lives under
+  `bin/ci resolve-deploy ...`, reads deploy values as JSON, and passes them
+  to the SFTP upload; the upload artifact lives under
   `var/deploy/` ->
   `lebenslauf-web-vorlage/.github/workflows/preview-deploy.yml`
 

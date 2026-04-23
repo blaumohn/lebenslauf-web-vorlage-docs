@@ -1,23 +1,53 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage
+  sha: 3b7e0dbaff32a6e4f998fee0698db7f2cbda3229
+  short_sha: 3b7e0db
+  datetime: "2026-04-24T01:25:35+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3b7e0dbaff32a6e4f998fee0698db7f2cbda3229"
+  message: 'chore: Preview-CI und SFTP-Upload nachschärfen (J01-9)'
+- repo: lebenslauf-web-vorlage
+  sha: 00127d8402b2d21d78254f5c5437238a3f2ad88b
+  short_sha: 00127d8
+  datetime: "2026-04-23T23:30:02+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/00127d8402b2d21d78254f5c5437238a3f2ad88b"
+  message: 'refactor(deploy): deploy-Schritt konsolidieren, github-output-Format entfernen (J01-9)'
+- repo: lebenslauf-web-vorlage
+  sha: c6ba6493a60df46778d47dccf9478b781a481e8a
+  short_sha: c6ba649
+  datetime: "2026-04-23T18:00:57+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c6ba6493a60df46778d47dccf9478b781a481e8a"
+  message: 'fix(deploy): sshpass durch paramiko ersetzen (J01-9)'
+- repo: lebenslauf-web-vorlage
+  sha: 9cddff0666bed8c200c1ff2b7b88c8047569309d
+  short_sha: 9cddff0
+  datetime: "2026-04-23T16:22:39+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9cddff0666bed8c200c1ff2b7b88c8047569309d"
+  message: 'fix(deploy): sshpass-Passwort-Auth zuverlässig einleiten (J01-9)'
+- repo: lebenslauf-web-vorlage
+  sha: b60cddf1faa16b6b7db33b9a28bc087930d9c747
+  short_sha: b60cddf
+  datetime: "2026-04-23T15:54:39+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b60cddf1faa16b6b7db33b9a28bc087930d9c747"
+  message: 'feat(deploy): FTP-Deploy durch SFTP-Deploy ersetzen (J01-9)'
+- repo: lebenslauf-web-vorlage
+  sha: 15062854c865b87812601bdf4bb8e6275beac647
+  short_sha: 1506285
+  datetime: "2026-04-22T15:38:34+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/15062854c865b87812601bdf4bb8e6275beac647"
+  message: 'fix(ci): Broken-Pipe-Falle im HTTP-Smoke-Check vermeiden (J01-9)'
 - repo: lebenslauf-web-vorlage-docs
-  sha: 23fb0a8531b61832b7199d8124fc4ae04da6cc54
-  short_sha: 23fb0a8
+  sha: f77f337f7f74113725aed182415ed6f8c9fc91fd
+  short_sha: f77f337
   datetime: "2026-04-22T15:17:53+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/23fb0a8531b61832b7199d8124fc4ae04da6cc54"
-  message: 'docs: update J01-9 config command test matrix'
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f77f337f7f74113725aed182415ed6f8c9fc91fd"
+  message: 'docs: update J01-9 config command test matrix (J01-9)'
 - repo: lebenslauf-web-vorlage
-  sha: f4e19ec83c75303d984a3c218fb79c9e4c74b176
-  short_sha: f4e19ec
+  sha: c0a347bef7a851a112c7dbadb62c9980d3eb31f8
+  short_sha: c0a347b
   datetime: "2026-04-22T15:17:53+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f4e19ec83c75303d984a3c218fb79c9e4c74b176"
-  message: 'test: adapt ConfigCommand runtime override'
-- repo: lebenslauf-web-vorlage
-  sha: 2654ea1568237122431687f9a0d5dbb360ee3c0b
-  short_sha: 2654ea1
-  datetime: "2026-04-22T15:17:53+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2654ea1568237122431687f9a0d5dbb360ee3c0b"
-  message: 'test: adapt ConfigCommand runtime override (J01-9)'
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c0a347bef7a851a112c7dbadb62c9980d3eb31f8"
+  message: 'config: entferne SMTP aus preview (J01-9)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 5275724c08059a311af94119a94b632564800f7f
   short_sha: 5275724
@@ -30,33 +60,3 @@
   datetime: "2026-04-22T14:52:58+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/342f613eb2de25c2f939efef602752e356faab96"
   message: 'docs: Arbeitsdoku zu J01-134 aktualisieren (J01-134)'
-- repo: lebenslauf-web-vorlage
-  sha: a95ce3fed2143aa38fcdf20f9036b04581a32ed0
-  short_sha: a95ce3f
-  datetime: "2026-04-22T14:52:53+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a95ce3fed2143aa38fcdf20f9036b04581a32ed0"
-  message: 'refactor(build): alte Build-Validierung und zugehoerige Tests entfernen (J01-134)'
-- repo: lebenslauf-web-vorlage
-  sha: a931d25da919921c25c0493a012f7cda3b191a07
-  short_sha: a931d25
-  datetime: "2026-04-22T14:52:49+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a931d25da919921c25c0493a012f7cda3b191a07"
-  message: 'fix(preview): Build-Profil auf gueltig umstellen (J01-134)'
-- repo: lebenslauf-web-vorlage
-  sha: 68e0a8abcc7665f739dc3e8b087845174b7d19e5
-  short_sha: 68e0a8a
-  datetime: "2026-04-22T14:52:43+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/68e0a8abcc7665f739dc3e8b087845174b7d19e5"
-  message: 'feat(ci): Preview-Overrides und GitHub-Output zentralisieren (J01-134)'
-- repo: lebenslauf-web-vorlage
-  sha: 9ec9227a8cbf83819835a6684a893fd7d24cf8d7
-  short_sha: 9ec9227
-  datetime: "2026-04-22T12:13:38+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9ec9227a8cbf83819835a6684a893fd7d24cf8d7"
-  message: 'refactor(cli): phase-fallback und AppConfigValidator entfernen und overrides parsen (J01-9)'
-- repo: lebenslauf-web-vorlage
-  sha: c62f654c64bcdcaf4a6b24bf0b04bbb493408b3a
-  short_sha: c62f654
-  datetime: "2026-04-22T12:08:39+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c62f654c64bcdcaf4a6b24bf0b04bbb493408b3a"
-  message: 'fix(ci): Argumente für bin/ci ablehnen (J01-134)'
