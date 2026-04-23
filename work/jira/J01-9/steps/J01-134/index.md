@@ -66,6 +66,10 @@ sind und der Workflow nur noch dünner Verbraucher von `bin/ci` bleibt.
   langlebige Hilfsdienst `sftp-server` den Lauf nicht offen hält; ein
   kleiner Wrapper fährt den Stack danach mit `docker compose down`
   vollständig herunter.
+- Für den Preview-Smoke-Pfad gibt es jetzt zusätzlich `preview-web` als
+  HTTP/PHP-Laufzeit auf demselben Deploy-Volume. `dev` bleibt beim
+  lokalen PHP-Server; nur `preview` prüft die Seiten über den
+  Container-Pfad `preview-web:80`.
 - Der Paramiko-basierte Upload gibt im CI jetzt nur knappe
   Phasenmeldungen für Verbindungsaufbau, Upload-Start,
   Upload-Abschluss und Verbindungsende aus. Die Abschlusszeile enthält
@@ -91,7 +95,7 @@ sind und der Workflow nur noch dünner Verbraucher von `bin/ci` bleibt.
 | Remote-Link ist kanonisch | Jira zeigt auf diese öffentliche Arbeitsdoku | Jira + diese Seite | erledigt |
 | Pipeline-Modell bleibt führend | `bin/ci` arbeitet entlang von `pipeline + phase`; kein zweites fachliches CI-Modell entsteht | `lebenslauf-web-vorlage/bin/ci` | erledigt |
 | CI/CD laufen über Umgebungsvariablen | `bin/ci` und `bin/cd` lesen `APP_PIPELINE`; `bin/cd` verlangt zusätzlich `DEPLOY_DIR` | `lebenslauf-web-vorlage/bin/ci`, `lebenslauf-web-vorlage/bin/cd`, `lebenslauf-web-vorlage/.github/workflows/preview-deploy.yml` | in Arbeit |
-| Lokale Preview-Reproduktion | Die Docker-Matrix deckt `preview` lokal ab, und `composer run ci:preview` beendet sowie entfernt den Stack nach `ci-preview` sauber | `lebenslauf-web-vorlage/composer.json`, `lebenslauf-web-vorlage/scripts/run-ci-preview.sh`, `lebenslauf-web-vorlage/docker-compose.ci.yml` | erledigt |
+| Lokale Preview-Reproduktion | Die Docker-Matrix deckt `preview` lokal ab, beendet sowie entfernt den Stack nach `ci-preview` sauber und prüft HTTP gegen `preview-web:80` | `lebenslauf-web-vorlage/composer.json`, `lebenslauf-web-vorlage/scripts/run-ci-preview.sh`, `lebenslauf-web-vorlage/docker-compose.ci.yml`, `lebenslauf-web-vorlage/scripts/pipeline_lib.sh` | erledigt |
 | Preview-Outputs lokal prüfbar | `ftp_host`, `ftp_user`, `ftp_pass`, `ftp_port`, `ftp_server_dir` werden lokal verifiziert | `lebenslauf-web-vorlage/bin/ci`, `lebenslauf-web-vorlage/tests/php/CiCommandTest.php` | erledigt |
 | Preview-Upload im Log nachvollziehbar | Der Paramiko-Upload meldet Phasen und Abschlusswerte ohne Secret-Leak | `lebenslauf-web-vorlage/scripts/sftp-deploy.py`, `composer run ci:preview` | erledigt |
 | CI-Overrides passen zur aktuellen Spec | `bin/ci` und `pipeline_lib.sh` liefern verschachtelte Overrides statt flacher Punkt-Schlüssel | `lebenslauf-web-vorlage/bin/ci`, `lebenslauf-web-vorlage/scripts/pipeline_lib.sh`, `lebenslauf-web-vorlage/tests/php/ConfigCommandTest.php` | erledigt |

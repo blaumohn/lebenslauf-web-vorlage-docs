@@ -1,6 +1,18 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 86c2b6c4e4b2cf19e99aa31f3e12918db86e1fa5
+  short_sha: 86c2b6c
+  datetime: "2026-04-24T01:40:45+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/86c2b6c4e4b2cf19e99aa31f3e12918db86e1fa5"
+  message: 'chore: Preview-Smokes über preview-web führen (J01-9)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 72369b4b359cfbbaa7b9bda63c7290817b9fbe60
+  short_sha: 72369b4
+  datetime: "2026-04-24T01:25:46+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/72369b4b359cfbbaa7b9bda63c7290817b9fbe60"
+  message: 'docs: Preview-CI und Deploy-JSON dokumentieren (J01-9)'
+- repo: lebenslauf-web-vorlage
   sha: 3b7e0dbaff32a6e4f998fee0698db7f2cbda3229
   short_sha: 3b7e0db
   datetime: "2026-04-24T01:25:35+02:00"
@@ -48,15 +60,3 @@
   datetime: "2026-04-22T15:17:53+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c0a347bef7a851a112c7dbadb62c9980d3eb31f8"
   message: 'config: entferne SMTP aus preview (J01-9)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 5275724c08059a311af94119a94b632564800f7f
-  short_sha: 5275724
-  datetime: "2026-04-22T14:57:53+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5275724c08059a311af94119a94b632564800f7f"
-  message: 'docs: englische J01-134-Schrittseite korrigieren (J01-134)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 342f613eb2de25c2f939efef602752e356faab96
-  short_sha: 342f613
-  datetime: "2026-04-22T14:52:58+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/342f613eb2de25c2f939efef602752e356faab96"
-  message: 'docs: Arbeitsdoku zu J01-134 aktualisieren (J01-134)'
