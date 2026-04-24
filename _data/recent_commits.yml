@@ -1,6 +1,24 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: f2a3f02ba77b91e4957c0bef3394d1df6762ae67
+  short_sha: f2a3f02
+  datetime: "2026-04-24T02:26:39+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f2a3f02ba77b91e4957c0bef3394d1df6762ae67"
+  message: 'chore: Preview-Runtime-Layer ergänzen (J01-9)'
+- repo: lebenslauf-web-vorlage
+  sha: 9002a7510c025eddc305c2576af276e213d49616
+  short_sha: 9002a75
+  datetime: "2026-04-24T02:16:40+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9002a7510c025eddc305c2576af276e213d49616"
+  message: 'chore: Preview-Debug und Smoke-Checks nachschärfen (J01-9)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 9c36e7bdbd488c73f3892b3e68932e1d689d81b0
+  short_sha: 9c36e7b
+  datetime: "2026-04-24T01:40:50+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/9c36e7bdbd488c73f3892b3e68932e1d689d81b0"
+  message: 'docs: Preview-Web-Smokes dokumentieren (J01-9)'
+- repo: lebenslauf-web-vorlage
   sha: 86c2b6c4e4b2cf19e99aa31f3e12918db86e1fa5
   short_sha: 86c2b6c
   datetime: "2026-04-24T01:40:45+02:00"
@@ -42,21 +60,3 @@
   datetime: "2026-04-23T15:54:39+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b60cddf1faa16b6b7db33b9a28bc087930d9c747"
   message: 'feat(deploy): FTP-Deploy durch SFTP-Deploy ersetzen (J01-9)'
-- repo: lebenslauf-web-vorlage
-  sha: 15062854c865b87812601bdf4bb8e6275beac647
-  short_sha: 1506285
-  datetime: "2026-04-22T15:38:34+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/15062854c865b87812601bdf4bb8e6275beac647"
-  message: 'fix(ci): Broken-Pipe-Falle im HTTP-Smoke-Check vermeiden (J01-9)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: f77f337f7f74113725aed182415ed6f8c9fc91fd
-  short_sha: f77f337
-  datetime: "2026-04-22T15:17:53+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f77f337f7f74113725aed182415ed6f8c9fc91fd"
-  message: 'docs: update J01-9 config command test matrix (J01-9)'
-- repo: lebenslauf-web-vorlage
-  sha: c0a347bef7a851a112c7dbadb62c9980d3eb31f8
-  short_sha: c0a347b
-  datetime: "2026-04-22T15:17:53+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c0a347bef7a851a112c7dbadb62c9980d3eb31f8"
-  message: 'config: entferne SMTP aus preview (J01-9)'

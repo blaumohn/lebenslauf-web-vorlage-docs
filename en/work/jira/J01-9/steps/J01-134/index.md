@@ -53,6 +53,10 @@ and the workflow remains only a thin consumer of `bin/ci`.
 - The preview smoke path now also includes `preview-web` as an HTTP/PHP
   runtime on the same deploy volume. `dev` still uses the local PHP
   server; only `preview` checks the pages through `preview-web:80`.
+- `preview-web` keeps the deploy tree read-only and receives the
+  writable runtime paths `var/state` and `var/tmp` through dedicated
+  volumes. That keeps runtime locks and other transient data testable in
+  the container without opening up the deploy artifact itself.
 - The Paramiko-based upload now emits only concise CI phase messages
   for connection start, upload start, upload completion, and connection
   shutdown. The completion line includes files, directories, bytes, and
@@ -73,7 +77,7 @@ and the workflow remains only a thin consumer of `bin/ci`.
 | SSOT status matches | `J01-134` is set to `In Progress` | Jira | done |
 | Remote link is canonical | Jira points to this public work log | Jira + this page | done |
 | Pipeline model stays primary | `bin/ci` operates along `pipeline + phase`; no second domain CI model appears | `lebenslauf-web-vorlage/bin/ci` | done |
-| Local preview reproduction | The Docker matrix covers `preview` locally, stops and removes the stack cleanly after `ci-preview`, and checks HTTP against `preview-web:80` | `lebenslauf-web-vorlage/composer.json`, `lebenslauf-web-vorlage/scripts/run-ci-preview.sh`, `lebenslauf-web-vorlage/docker-compose.ci.yml`, `lebenslauf-web-vorlage/scripts/pipeline_lib.sh` | done |
+| Local preview reproduction | The Docker matrix covers `preview` locally, stops and removes the stack cleanly after `ci-preview`, checks HTTP against `preview-web:80`, and keeps `var/state` plus `var/tmp` writable there through dedicated runtime volumes | `lebenslauf-web-vorlage/composer.json`, `lebenslauf-web-vorlage/scripts/run-ci-preview.sh`, `lebenslauf-web-vorlage/docker-compose.ci.yml`, `lebenslauf-web-vorlage/scripts/pipeline_lib.sh` | done |
 | Preview outputs stay verifiable locally | `ftp_host`, `ftp_user`, `ftp_pass`, `ftp_port`, `ftp_server_dir` are verified locally | `lebenslauf-web-vorlage/bin/ci`, `lebenslauf-web-vorlage/tests/php/CiCommandTest.php` | done |
 | Preview upload stays visible in logs | The Paramiko upload reports phases and completion values without leaking secrets | `lebenslauf-web-vorlage/scripts/sftp-deploy.py`, `composer run ci:preview` | done |
 | Loader style aligned with the model | `ConfigLoader::load()` stays narrow and delegates loading plus merging to helper functions | `pipeline-config-spec-php/src/Internal/ConfigLoader.php` | done |
