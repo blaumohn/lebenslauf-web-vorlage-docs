@@ -26,6 +26,7 @@ permalink: /de/jira/backlog/
 - [J01-13 — Preview: Testmatrix und Entscheidungen finalisieren]({{ "/de/jira/issues/J01-13/" | relative_url }})
   - [**13-1 Entscheidungstabelle finalisieren**]({{ "/de/jira/issues/J01-13/steps/J01-14/" | relative_url }}) — Zu erledigen
   - [**13-2 Testmatrix-Nachweise verlinken**]({{ "/de/jira/issues/J01-13/steps/J01-15/" | relative_url }}) — Zu erledigen
+- [J01-135 — CI/CD-Tools: CV-Token-Erzeugung und Runtime-Admin-Betrieb]({{ "/de/jira/issues/J01-135/" | relative_url }})
 - [J01-28 — Analyse: Risikomuster und Befundliste]({{ "/de/jira/issues/J01-28/" | relative_url }})
   - [**28-1 Befunde erfassen**]({{ "/de/jira/issues/J01-28/steps/J01-29/" | relative_url }}) — Zu erledigen
   - [**28-2 Priorisierung und Folge-Tickets**]({{ "/de/jira/issues/J01-28/steps/J01-30/" | relative_url }}) — Zu erledigen
@@ -45,12 +46,6 @@ permalink: /de/jira/backlog/
 - [J01-43 — Preview: FTP/FTPS-Verwaltungsskripte]({{ "/de/jira/issues/J01-43/" | relative_url }})
   - [**43-1 Marker/Signaldatei-Flow definieren**]({{ "/de/jira/issues/J01-43/steps/J01-44/" | relative_url }}) — Zu erledigen
   - [**43-2 Doku + Tests ergänzen**]({{ "/de/jira/issues/J01-43/steps/J01-45/" | relative_url }}) — Zu erledigen
-- [J01-9 — Preview: Workflow wieder aktivieren]({{ "/de/jira/issues/J01-9/" | relative_url }})
-  - [**9-1 CI-Gates finalisieren**]({{ "/de/jira/issues/J01-9/steps/J01-10/" | relative_url }}) — Zu erledigen
-  - [**9-2 Deploy-Checks validieren**]({{ "/de/jira/issues/J01-9/steps/J01-11/" | relative_url }}) — Zu erledigen
-  - [**9-3 Branch-Flow dokumentieren**]({{ "/de/jira/issues/J01-9/steps/J01-12/" | relative_url }}) — Zu erledigen
-  - [**9-4 Preview-Deploy-Bundle und Schutzregeln nachziehen**]({{ "/de/jira/issues/J01-9/steps/J01-132/" | relative_url }}) — In Bearbeitung
-  - [**9-6 Preview-CI am Pipeline-Modell ausrichten**]({{ "/de/jira/issues/J01-9/steps/J01-134/" | relative_url }}) — In Bearbeitung
 
 ### [J01-6 — i18n für Seitenvorlagen und Templates]({{ "/de/jira/issues/J01-6/" | relative_url }})
 

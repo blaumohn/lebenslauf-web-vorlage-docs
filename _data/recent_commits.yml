@@ -1,10 +1,34 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage-docs
+  sha: 977e8bc596c1b770c4cfc4041e4c2b08606cf1d9
+  short_sha: 977e8bc
+  datetime: "2026-04-28T13:45:38+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/977e8bc596c1b770c4cfc4041e4c2b08606cf1d9"
+  message: 'docs: Sprint 4 starten und Jira-Mirror nachziehen (J01-136)'
 - repo: lebenslauf-web-vorlage
-  sha: f2a3f02ba77b91e4957c0bef3394d1df6762ae67
-  short_sha: f2a3f02
+  sha: 3f02b449d15f3ef7661917d581c3af3dd5d0f1a4
+  short_sha: 3f02b44
+  datetime: "2026-04-28T12:53:07+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3f02b449d15f3ef7661917d581c3af3dd5d0f1a4"
+  message: 'refactor: CD-Pipeline vereinfachen und CI-Teststruktur klären (J01-133)'
+- repo: lebenslauf-web-vorlage
+  sha: be571e0f165c67dc02d1290185144703db09fb82
+  short_sha: be571e0
+  datetime: "2026-04-27T13:15:12+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/be571e0f165c67dc02d1290185144703db09fb82"
+  message: 'feat(deploy): diff-basiertes SFTP-Deployment über DEPLOY_BEFORE (J01-133)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 01ae0997a624c64bf0f4d65dd3db3c1f094fb764
+  short_sha: 01ae099
+  datetime: "2026-04-24T02:26:47+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/01ae0997a624c64bf0f4d65dd3db3c1f094fb764"
+  message: 'docs: Preview-Runtime-Layer dokumentieren (J01-9)'
+- repo: lebenslauf-web-vorlage
+  sha: 38a177ba0cdfbf5c789e7f09731a61f13e495241
+  short_sha: 38a177b
   datetime: "2026-04-24T02:26:39+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f2a3f02ba77b91e4957c0bef3394d1df6762ae67"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/38a177ba0cdfbf5c789e7f09731a61f13e495241"
   message: 'chore: Preview-Runtime-Layer ergänzen (J01-9)'
 - repo: lebenslauf-web-vorlage
   sha: 9002a7510c025eddc305c2576af276e213d49616
@@ -36,27 +60,3 @@
   datetime: "2026-04-24T01:25:35+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3b7e0dbaff32a6e4f998fee0698db7f2cbda3229"
   message: 'chore: Preview-CI und SFTP-Upload nachschärfen (J01-9)'
-- repo: lebenslauf-web-vorlage
-  sha: 00127d8402b2d21d78254f5c5437238a3f2ad88b
-  short_sha: 00127d8
-  datetime: "2026-04-23T23:30:02+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/00127d8402b2d21d78254f5c5437238a3f2ad88b"
-  message: 'refactor(deploy): deploy-Schritt konsolidieren, github-output-Format entfernen (J01-9)'
-- repo: lebenslauf-web-vorlage
-  sha: c6ba6493a60df46778d47dccf9478b781a481e8a
-  short_sha: c6ba649
-  datetime: "2026-04-23T18:00:57+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c6ba6493a60df46778d47dccf9478b781a481e8a"
-  message: 'fix(deploy): sshpass durch paramiko ersetzen (J01-9)'
-- repo: lebenslauf-web-vorlage
-  sha: 9cddff0666bed8c200c1ff2b7b88c8047569309d
-  short_sha: 9cddff0
-  datetime: "2026-04-23T16:22:39+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9cddff0666bed8c200c1ff2b7b88c8047569309d"
-  message: 'fix(deploy): sshpass-Passwort-Auth zuverlässig einleiten (J01-9)'
-- repo: lebenslauf-web-vorlage
-  sha: b60cddf1faa16b6b7db33b9a28bc087930d9c747
-  short_sha: b60cddf
-  datetime: "2026-04-23T15:54:39+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b60cddf1faa16b6b7db33b9a28bc087930d9c747"
-  message: 'feat(deploy): FTP-Deploy durch SFTP-Deploy ersetzen (J01-9)'

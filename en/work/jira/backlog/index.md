@@ -26,6 +26,7 @@ Public Jira area (without Jira Cloud links).
 - [J01-13 — Preview: Testmatrix und Entscheidungen finalisieren]({{ "/en/jira/issues/J01-13/" | relative_url }})
   - [**13-1 Entscheidungstabelle finalisieren**]({{ "/en/jira/issues/J01-13/steps/J01-14/" | relative_url }}) — To Do
   - [**13-2 Testmatrix-Nachweise verlinken**]({{ "/en/jira/issues/J01-13/steps/J01-15/" | relative_url }}) — To Do
+- [J01-135 — CI/CD-Tools: CV-Token-Erzeugung und Runtime-Admin-Betrieb]({{ "/en/jira/issues/J01-135/" | relative_url }})
 - [J01-28 — Analyse: Risikomuster und Befundliste]({{ "/en/jira/issues/J01-28/" | relative_url }})
   - [**28-1 Befunde erfassen**]({{ "/en/jira/issues/J01-28/steps/J01-29/" | relative_url }}) — To Do
   - [**28-2 Priorisierung und Folge-Tickets**]({{ "/en/jira/issues/J01-28/steps/J01-30/" | relative_url }}) — To Do
@@ -45,12 +46,6 @@ Public Jira area (without Jira Cloud links).
 - [J01-43 — Preview: FTP/FTPS-Verwaltungsskripte]({{ "/en/jira/issues/J01-43/" | relative_url }})
   - [**43-1 Marker/Signaldatei-Flow definieren**]({{ "/en/jira/issues/J01-43/steps/J01-44/" | relative_url }}) — To Do
   - [**43-2 Doku + Tests ergänzen**]({{ "/en/jira/issues/J01-43/steps/J01-45/" | relative_url }}) — To Do
-- [J01-9 — Preview: Workflow wieder aktivieren]({{ "/en/jira/issues/J01-9/" | relative_url }})
-  - [**9-1 CI-Gates finalisieren**]({{ "/en/jira/issues/J01-9/steps/J01-10/" | relative_url }}) — To Do
-  - [**9-2 Deploy-Checks validieren**]({{ "/en/jira/issues/J01-9/steps/J01-11/" | relative_url }}) — To Do
-  - [**9-3 Branch-Flow dokumentieren**]({{ "/en/jira/issues/J01-9/steps/J01-12/" | relative_url }}) — To Do
-  - [**9-4 Preview-Deploy-Bundle und Schutzregeln nachziehen**]({{ "/en/jira/issues/J01-9/steps/J01-132/" | relative_url }}) — In Progress
-  - [**9-6 Preview-CI am Pipeline-Modell ausrichten**]({{ "/en/jira/issues/J01-9/steps/J01-134/" | relative_url }}) — In Progress
 
 ### [J01-6 — i18n für Seitenvorlagen und Templates]({{ "/en/jira/issues/J01-6/" | relative_url }})
 

@@ -5,7 +5,7 @@ permalink: /en/jira/issues/J01-9/
 jira_key: J01-9
 
 ---
-<!-- generated:jira:subtasks_cksum=914092716 -->
+<!-- generated:jira:subtasks_cksum=1820504765 -->
 
 {% include jira-state-head.html %}
 
@@ -21,15 +21,11 @@ Ziel: Das Preview-Deployment nach dem bereits in dev gemergten PR betrieblich au
 
 Offen ist der Preview-Lauf mit Ergebnisnachweis; die anschließende Deploy-Arbeit bleibt als nachgelagerte Arbeit getrennt.
 
-## Aktueller Stand
-
-- Die CLI-Konfigurationsbefehle verlangen jetzt explizit `--phase`; der frühere `runtime`-Fallback ist entfernt.
-- Die Overrides-Hilfe heißt in der Basisklasse jetzt `parseOverrides`, damit die Benennung klarer zum Parsing-Schritt passt.
-
 ## Subtasks
 
-- **9-1 CI-Gates finalisieren** — To Do
-- **9-2 Deploy-Checks validieren** — To Do
-- **9-3 Branch-Flow dokumentieren** — To Do
-- [**9-4 Preview-Deploy-Bundle und Schutzregeln nachziehen**]({{ "/en/jira/issues/J01-9/steps/J01-132/" | relative_url }}) — In Progress
-- [**9-6 Preview-CI am Pipeline-Modell ausrichten**]({{ "/en/jira/issues/J01-9/steps/J01-134/" | relative_url }}) — In Progress
+- [**9-1 CI-Gates finalisieren**]({{ "/en/jira/issues/J01-9/steps/J01-10/" | relative_url }}) — Done
+- [**9-2 Deploy-Checks validieren**]({{ "/en/jira/issues/J01-9/steps/J01-11/" | relative_url }}) — Done
+- [**9-3 Branch-Flow dokumentieren**]({{ "/en/jira/issues/J01-9/steps/J01-12/" | relative_url }}) — Done
+- [**9-4 Preview-Deploy-Bundle und Schutzregeln nachziehen**]({{ "/en/jira/issues/J01-9/steps/J01-132/" | relative_url }}) — Done
+- [**9-5 Lokale Composer-CI-Prüfung via Docker**]({{ "/en/jira/issues/J01-9/steps/J01-133/" | relative_url }}) — Done
+- [**9-6 Preview-CI am Pipeline-Modell ausrichten**]({{ "/en/jira/issues/J01-9/steps/J01-134/" | relative_url }}) — Done
