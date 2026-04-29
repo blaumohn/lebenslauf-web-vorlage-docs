@@ -38,6 +38,7 @@ Canonical public working note for ongoing CV UI adjustments in
 | --- | --- | --- |
 | 2026-04-29 | `cb4c846` | `fix: CV-Ausbildungsdaten und Tagbreiten stabilisieren (J01-137)` |
 | 2026-04-29 | `fefc79e` | `fix: laufende CV-UI-Anpassungen fortführen (J01-137)` |
+| 2026-04-29 | `49edc6a` | `fix: CV-Abschnittslinien im Druck zusammenhalten (J01-137)` |
 
 ## Verification
 
@@ -46,6 +47,7 @@ Canonical public working note for ongoing CV UI adjustments in
 | Schema | `grad` and `beschreibung` are individually optional, but not both absent together | `CvValidatorTest` | done |
 | Twig output | Empty or absent fields do not render empty comma separators | `sections.html.twig` | done |
 | UI layout | Entry metadata sits at the top right and long entry text can flow around it | `entry.html.twig`, `entry.css` | done |
+| Print layout | Section lines are not separated immediately after the line when printed | `sections.css` | done |
 | Renderer | The CV output remains renderable | `CvRendererTest` | done |
 | CSS build | Built CV CSS contains the current layout rules | `npm run build:css` | done |
 

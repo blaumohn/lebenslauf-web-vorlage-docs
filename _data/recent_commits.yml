@@ -1,6 +1,24 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 49edc6ac8a8e693ea95648ff56a59b6b19d8c11d
+  short_sha: 49edc6a
+  datetime: "2026-04-29T14:38:56+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/49edc6ac8a8e693ea95648ff56a59b6b19d8c11d"
+  message: 'fix: CV-Abschnittslinien im Druck zusammenhalten (J01-137)'
+- repo: lebenslauf-web-vorlage
+  sha: b649057952228d0086a9993f0816e81af5e7120e
+  short_sha: b649057
+  datetime: "2026-04-29T13:20:27+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b649057952228d0086a9993f0816e81af5e7120e"
+  message: 'fix: CV-Beispieldaten im Kopfbereich präzisieren (J01-137)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: f8c68c810663930272a51c2e52a0bd8255aade87
+  short_sha: f8c68c8
+  datetime: "2026-04-29T13:19:36+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f8c68c810663930272a51c2e52a0bd8255aade87"
+  message: 'docs: J01-137 als laufende UI-Anpassung dokumentieren (J01-137)'
+- repo: lebenslauf-web-vorlage
   sha: fefc79eb098ace2eb400410d1ff40e01028e89f1
   short_sha: fefc79e
   datetime: "2026-04-29T13:16:37+02:00"
@@ -42,21 +60,3 @@
   datetime: "2026-04-24T02:26:39+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/38a177ba0cdfbf5c789e7f09731a61f13e495241"
   message: 'chore: Preview-Runtime-Layer ergänzen (J01-9)'
-- repo: lebenslauf-web-vorlage
-  sha: 9002a7510c025eddc305c2576af276e213d49616
-  short_sha: 9002a75
-  datetime: "2026-04-24T02:16:40+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9002a7510c025eddc305c2576af276e213d49616"
-  message: 'chore: Preview-Debug und Smoke-Checks nachschärfen (J01-9)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 9c36e7bdbd488c73f3892b3e68932e1d689d81b0
-  short_sha: 9c36e7b
-  datetime: "2026-04-24T01:40:50+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/9c36e7bdbd488c73f3892b3e68932e1d689d81b0"
-  message: 'docs: Preview-Web-Smokes dokumentieren (J01-9)'
-- repo: lebenslauf-web-vorlage
-  sha: 86c2b6c4e4b2cf19e99aa31f3e12918db86e1fa5
-  short_sha: 86c2b6c
-  datetime: "2026-04-24T01:40:45+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/86c2b6c4e4b2cf19e99aa31f3e12918db86e1fa5"
-  message: 'chore: Preview-Smokes über preview-web führen (J01-9)'

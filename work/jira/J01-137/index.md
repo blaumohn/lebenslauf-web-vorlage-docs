@@ -40,6 +40,7 @@ Kanonischer öffentlicher Arbeitsstand für laufende CV-UI-Anpassungen in
 | --- | --- | --- |
 | 2026-04-29 | `cb4c846` | `fix: CV-Ausbildungsdaten und Tagbreiten stabilisieren (J01-137)` |
 | 2026-04-29 | `fefc79e` | `fix: laufende CV-UI-Anpassungen fortführen (J01-137)` |
+| 2026-04-29 | `49edc6a` | `fix: CV-Abschnittslinien im Druck zusammenhalten (J01-137)` |
 
 ## Überprüfung
 
@@ -48,6 +49,7 @@ Kanonischer öffentlicher Arbeitsstand für laufende CV-UI-Anpassungen in
 | Schema | `grad` und `beschreibung` sind einzeln optional, nicht beide gemeinsam fehlend | `CvValidatorTest` | erledigt |
 | Twig-Ausgabe | Leere oder fehlende Felder erzeugen keine leeren Komma-Trenner | `sections.html.twig` | erledigt |
 | UI-Layout | Eintrags-Metadaten liegen rechts oben und lange Eintragstexte können umfließen | `entry.html.twig`, `entry.css` | erledigt |
+| Drucklayout | Abschnittslinien werden beim Druck nicht direkt nach der Linie getrennt | `sections.css` | erledigt |
 | Renderer | Die CV-Ausgabe bleibt renderbar | `CvRendererTest` | erledigt |
 | CSS-Build | Gebaute CV-CSS enthält die aktuellen Layoutregeln | `npm run build:css` | erledigt |
 
