@@ -19,6 +19,8 @@ statt sie als lose manuelle Bedienung neben CI/CD stehen zu lassen.
 - Die Aktion verwendet die vorhandene Runtime-Persistenz und Locking-Logik.
 - Token-Programmpfade und CLI-Orchestrierung gehören hierher; sie sind keine
   UI-Änderungen aus `J01-137`.
+- Der README-Schnellstart verwendet den aktuellen Setup-Schalter
+  `--with-sample-content`.
 - Neue Tokens werden nicht unkontrolliert in Logs ausgegeben.
 - Der Betriebsablauf ist reproduzierbar und überprüfbar.
 
@@ -31,6 +33,7 @@ erzeugt werden, ohne Profilvalidierung oder Runtime-Schutz zu umgehen.
 | --- | --- | --- | --- |
 | Profilbindung | Rotation ist nur für vorhandene CV-Profile möglich | Test oder Codepfad | offen |
 | Programmpfade | CLI/Handler trennen Token-Mechanik von Profilverfügbarkeit | `src/cli/php/Token/TokenRotateHandler.php` | offen |
+| Schnellstart | README nutzt den gültigen Beispielinhalt-Schalter | `README.md` | offen |
 | Runtime-Schutz | Bestehende Locks und atomare Writes bleiben wirksam | Test oder Codepfad | offen |
 | Bedienbarkeit | Admin-Aktion ist reproduzierbar auslösbar | Runbook oder CI/CD-Nachweis | offen |
 

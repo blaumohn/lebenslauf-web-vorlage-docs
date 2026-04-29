@@ -1,6 +1,18 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 5d8733c8e2762b0d2345c69218507ff5b41b0341
+  short_sha: 5d8733c
+  datetime: "2026-04-29T15:56:19+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/5d8733c8e2762b0d2345c69218507ff5b41b0341"
+  message: 'docs: korrigiere Setup-Schnellstart (J01-139)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 2cf5d4181c293be437c5d341c1dd0670bb218f93
+  short_sha: 2cf5d41
+  datetime: "2026-04-29T15:48:36+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2cf5d4181c293be437c5d341c1dd0670bb218f93"
+  message: 'docs: ergänze Runtime-Admin-Untervorgänge (J01-135)'
+- repo: lebenslauf-web-vorlage
   sha: 4107fe1253a1f90ca197b762e385e367a7983d36
   short_sha: 4107fe1
   datetime: "2026-04-29T15:48:22+02:00"
@@ -48,15 +60,3 @@
   datetime: "2026-04-28T13:45:38+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6c3f14de5d1b72a312e54465ee562fb698b77375"
   message: 'docs: Sprint 4 starten und Jira-Mirror nachziehen (J01-136)'
-- repo: lebenslauf-web-vorlage
-  sha: 3f02b449d15f3ef7661917d581c3af3dd5d0f1a4
-  short_sha: 3f02b44
-  datetime: "2026-04-28T12:53:07+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3f02b449d15f3ef7661917d581c3af3dd5d0f1a4"
-  message: 'refactor: CD-Pipeline vereinfachen und CI-Teststruktur klären (J01-133)'
-- repo: lebenslauf-web-vorlage
-  sha: be571e0f165c67dc02d1290185144703db09fb82
-  short_sha: be571e0
-  datetime: "2026-04-27T13:15:12+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/be571e0f165c67dc02d1290185144703db09fb82"
-  message: 'feat(deploy): diff-basiertes SFTP-Deployment über DEPLOY_BEFORE (J01-133)'

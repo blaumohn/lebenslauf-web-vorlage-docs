@@ -19,6 +19,8 @@ leaving it as loose manual work beside CI/CD.
 - The action uses the existing runtime persistence and locking logic.
 - Token program paths and CLI orchestration belong here; they are not UI
   changes from `J01-137`.
+- The README quick start uses the current setup switch
+  `--with-sample-content`.
 - New tokens are not written to uncontrolled logs.
 - The operations flow is reproducible and checkable.
 
@@ -31,6 +33,7 @@ without bypassing profile validation or runtime protection.
 | --- | --- | --- | --- |
 | Profile binding | Rotation is possible only for existing CV profiles | Test or code path | open |
 | Program paths | CLI/handler separate token mechanics from profile availability | `src/cli/php/Token/TokenRotateHandler.php` | open |
+| Quick start | README uses the valid sample-content switch | `README.md` | open |
 | Runtime protection | Existing locks and atomic writes remain effective | Test or code path | open |
 | Operability | Admin action is reproducibly triggerable | Runbook or CI/CD evidence | open |
 
