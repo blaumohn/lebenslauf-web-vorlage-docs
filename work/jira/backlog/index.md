@@ -49,6 +49,7 @@ permalink: /de/jira/backlog/
 
 ### [J01-6 — i18n für Seitenvorlagen und Templates]({{ "/de/jira/issues/J01-6/" | relative_url }})
 
+- [J01-137 — Laufende CV-UI-Anpassungen Sprint 4]({{ "/de/jira/issues/J01-137/" | relative_url }})
 - [J01-46 — i18n: CLI- und Runtime-Nachrichten]({{ "/de/jira/issues/J01-46/" | relative_url }})
   - [**46-1 Message-IDs und Format definieren**]({{ "/de/jira/issues/J01-46/steps/J01-47/" | relative_url }}) — Zu erledigen
   - [**46-2 Ausgaben in App + Config-Lib umstellen**]({{ "/de/jira/issues/J01-46/steps/J01-48/" | relative_url }}) — Zu erledigen

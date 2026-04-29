@@ -699,6 +699,25 @@
     ],
     "issueLinks": []
   },
+  "J01-137": {
+    "summary": "Laufende CV-UI-Anpassungen Sprint 4",
+    "issuetype": "Bug",
+    "status": "In Bearbeitung",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-04-28T17:07:39.164+0200",
+    "parent": "J01-6",
+    "sprint": "SCRUM Sprint 4",
+    "activeSprint": "SCRUM Sprint 4",
+    "sprintRole": "Sprint-Ungeplant",
+    "labels": [
+      "cv",
+      "sprint-unplanned",
+      "twig"
+    ],
+    "issueLinks": []
+  },
   "J01-16": {
     "summary": "Runtime: Concurrency, Locking und atomare Zugriffe",
     "issuetype": "Task",

@@ -49,6 +49,7 @@ Public Jira area (without Jira Cloud links).
 
 ### [J01-6 — i18n für Seitenvorlagen und Templates]({{ "/en/jira/issues/J01-6/" | relative_url }})
 
+- [J01-137 — Laufende CV-UI-Anpassungen Sprint 4]({{ "/en/jira/issues/J01-137/" | relative_url }})
 - [J01-46 — i18n: CLI- und Runtime-Nachrichten]({{ "/en/jira/issues/J01-46/" | relative_url }})
   - [**46-1 Message-IDs und Format definieren**]({{ "/en/jira/issues/J01-46/steps/J01-47/" | relative_url }}) — To Do
   - [**46-2 Ausgaben in App + Config-Lib umstellen**]({{ "/en/jira/issues/J01-46/steps/J01-48/" | relative_url }}) — To Do

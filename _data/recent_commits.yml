@@ -1,10 +1,22 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage
+  sha: fefc79eb098ace2eb400410d1ff40e01028e89f1
+  short_sha: fefc79e
+  datetime: "2026-04-29T13:16:37+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/fefc79eb098ace2eb400410d1ff40e01028e89f1"
+  message: 'fix: laufende CV-UI-Anpassungen fortführen (J01-137)'
+- repo: lebenslauf-web-vorlage
+  sha: cb4c846a62e0f1074b408012a8109cd46f1eaaed
+  short_sha: cb4c846
+  datetime: "2026-04-29T13:16:25+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/cb4c846a62e0f1074b408012a8109cd46f1eaaed"
+  message: 'fix: CV-Ausbildungsdaten und Tagbreiten stabilisieren (J01-137)'
 - repo: lebenslauf-web-vorlage-docs
-  sha: 977e8bc596c1b770c4cfc4041e4c2b08606cf1d9
-  short_sha: 977e8bc
+  sha: 6c3f14de5d1b72a312e54465ee562fb698b77375
+  short_sha: 6c3f14d
   datetime: "2026-04-28T13:45:38+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/977e8bc596c1b770c4cfc4041e4c2b08606cf1d9"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6c3f14de5d1b72a312e54465ee562fb698b77375"
   message: 'docs: Sprint 4 starten und Jira-Mirror nachziehen (J01-136)'
 - repo: lebenslauf-web-vorlage
   sha: 3f02b449d15f3ef7661917d581c3af3dd5d0f1a4
@@ -48,15 +60,3 @@
   datetime: "2026-04-24T01:40:45+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/86c2b6c4e4b2cf19e99aa31f3e12918db86e1fa5"
   message: 'chore: Preview-Smokes über preview-web führen (J01-9)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 72369b4b359cfbbaa7b9bda63c7290817b9fbe60
-  short_sha: 72369b4
-  datetime: "2026-04-24T01:25:46+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/72369b4b359cfbbaa7b9bda63c7290817b9fbe60"
-  message: 'docs: Preview-CI und Deploy-JSON dokumentieren (J01-9)'
-- repo: lebenslauf-web-vorlage
-  sha: 3b7e0dbaff32a6e4f998fee0698db7f2cbda3229
-  short_sha: 3b7e0db
-  datetime: "2026-04-24T01:25:35+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3b7e0dbaff32a6e4f998fee0698db7f2cbda3229"
-  message: 'chore: Preview-CI und SFTP-Upload nachschärfen (J01-9)'
