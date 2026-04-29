@@ -26,14 +26,49 @@ CI/CD-/Runtime-Admin-Betrieb.
 
 - Der Vorgang wurde für `SCRUM Sprint 4` angelegt und als `sprint-goal`
   eingeordnet.
-- Die Arbeit ist gestartet; konkrete Umsetzung und Nachweise stehen noch aus.
+- Die Arbeit ist gestartet.
+- Der Architektur-Nachtrag im `tagebuch` wurde in vier prüfbare
+  Untervorgänge zerlegt:
+  - [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }})
+    — Runtime-Admin-Auslösung über SFTP-Fahne und HTTP-Trigger modellieren
+  - [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }})
+    — CV-Token-Rotation als Runtime-Admin-Aktion umsetzen
+  - [J01-140]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }})
+    — Mail-Rückkanal für Runtime-Admin-Ergebnisse festziehen
+  - [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }})
+    — Admin-Aktionsliste und Zugriffsschutz begrenzen
+
+## Inhalts-Schlüssel
+
+- [Ziel](#ziel)
+- [Aktueller Stand](#aktueller-stand)
+- [Untervorgänge](#untervorgaenge)
+- [Überprüfungsplan](#ueberpruefungsplan)
+- [Abschlussbild oder offene Punkte](#abschlussbild-oder-offene-punkte)
+- [Links](#links)
+- Öffentliche Schritte:
+  [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }}),
+  [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}),
+  [J01-140]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }}),
+  [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }})
+
+## Untervorgänge
+
+| Vorgang | Teilpaket | Status |
+| --- | --- | --- |
+| [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }}) | Runtime-Admin-Auslösung über SFTP-Fahne und HTTP-Trigger | offen |
+| [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | CV-Token-Rotation als Runtime-Admin-Aktion | offen |
+| [J01-140]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | Mail-Rückkanal für Admin-Ergebnisse | offen |
+| [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | Feste Admin-Aktionsliste und Zugriffsschutz | offen |
 
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| CV-Token-Erzeugung | Ablauf ist reproduzierbar und dokumentiert | CI/CD- oder Runbook-Nachweis | offen |
-| Runtime-Admin-Betrieb | Admin-Schritte sind begrenzt und prüfbar | Betriebsdoku oder Skriptpfad | offen |
+| Auslösung | Wartende Admin-Betriebe werden über einen begrenzten Auslöseweg erkannt | [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }}) | offen |
+| CV-Token-Erzeugung | Ablauf ist reproduzierbar, profilgebunden und dokumentiert | [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | offen |
+| Rückkanal | Admin-Ergebnisse werden kontrolliert zurückgemeldet | [J01-140]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | offen |
+| Begrenzung | Admin-Trigger führt nur feste, prüfbare Aktionen aus | [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | offen |
 | Sprint-Zuordnung | Vorgang liegt in `SCRUM Sprint 4` mit `sprint-goal` | Jira Sprint Board | erledigt |
 
 ## Abschlussbild oder offene Punkte

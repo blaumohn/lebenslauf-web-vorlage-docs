@@ -27,6 +27,10 @@ Public Jira area (without Jira Cloud links).
   - [**13-1 Entscheidungstabelle finalisieren**]({{ "/en/jira/issues/J01-13/steps/J01-14/" | relative_url }}) — To Do
   - [**13-2 Testmatrix-Nachweise verlinken**]({{ "/en/jira/issues/J01-13/steps/J01-15/" | relative_url }}) — To Do
 - [J01-135 — CI/CD-Tools: CV-Token-Erzeugung und Runtime-Admin-Betrieb]({{ "/en/jira/issues/J01-135/" | relative_url }})
+  - [**135-1 Runtime-Admin-Auslösung über SFTP-Fahne und HTTP-Trigger modellieren**]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }}) — To Do
+  - [**135-2 CV-Token-Rotation als Runtime-Admin-Aktion umsetzen**]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}) — In Progress
+  - [**135-3 Mail-Rückkanal für Runtime-Admin-Ergebnisse festziehen**]({{ "/en/jira/issues/J01-135/steps/J01-140/" | relative_url }}) — To Do
+  - [**135-4 Admin-Aktionsliste und Zugriffsschutz begrenzen**]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}) — To Do
 - [J01-28 — Analyse: Risikomuster und Befundliste]({{ "/en/jira/issues/J01-28/" | relative_url }})
   - [**28-1 Befunde erfassen**]({{ "/en/jira/issues/J01-28/steps/J01-29/" | relative_url }}) — To Do
   - [**28-2 Priorisierung und Folge-Tickets**]({{ "/en/jira/issues/J01-28/steps/J01-30/" | relative_url }}) — To Do
@@ -49,7 +53,7 @@ Public Jira area (without Jira Cloud links).
 
 ### [J01-6 — i18n für Seitenvorlagen und Templates]({{ "/en/jira/issues/J01-6/" | relative_url }})
 
-- [J01-137 — Laufende CV-UI-Anpassungen Sprint 4]({{ "/en/jira/issues/J01-137/" | relative_url }})
+- [J01-137 — CV-Ausbildung: leere Komma-Trenner in Twig-Ausgabe vermeiden]({{ "/en/jira/issues/J01-137/" | relative_url }})
 - [J01-46 — i18n: CLI- und Runtime-Nachrichten]({{ "/en/jira/issues/J01-46/" | relative_url }})
   - [**46-1 Message-IDs und Format definieren**]({{ "/en/jira/issues/J01-46/steps/J01-47/" | relative_url }}) — To Do
   - [**46-2 Ausgaben in App + Config-Lib umstellen**]({{ "/en/jira/issues/J01-46/steps/J01-48/" | relative_url }}) — To Do

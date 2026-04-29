@@ -1,6 +1,18 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 4107fe1253a1f90ca197b762e385e367a7983d36
+  short_sha: 4107fe1
+  datetime: "2026-04-29T15:48:22+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4107fe1253a1f90ca197b762e385e367a7983d36"
+  message: 'fix: Token-Rotation auf vorhandene CV-Profile begrenzen (J01-139)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: f8e6ab0071644b77ee712e49e4cd80593f831898
+  short_sha: f8e6ab0
+  datetime: "2026-04-29T14:39:50+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f8e6ab0071644b77ee712e49e4cd80593f831898"
+  message: 'docs: J01-137 Druck-CSS-Commit dokumentieren (J01-137)'
+- repo: lebenslauf-web-vorlage
   sha: 49edc6ac8a8e693ea95648ff56a59b6b19d8c11d
   short_sha: 49edc6a
   datetime: "2026-04-29T14:38:56+02:00"
@@ -48,15 +60,3 @@
   datetime: "2026-04-27T13:15:12+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/be571e0f165c67dc02d1290185144703db09fb82"
   message: 'feat(deploy): diff-basiertes SFTP-Deployment über DEPLOY_BEFORE (J01-133)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 01ae0997a624c64bf0f4d65dd3db3c1f094fb764
-  short_sha: 01ae099
-  datetime: "2026-04-24T02:26:47+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/01ae0997a624c64bf0f4d65dd3db3c1f094fb764"
-  message: 'docs: Preview-Runtime-Layer dokumentieren (J01-9)'
-- repo: lebenslauf-web-vorlage
-  sha: 38a177ba0cdfbf5c789e7f09731a61f13e495241
-  short_sha: 38a177b
-  datetime: "2026-04-24T02:26:39+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/38a177ba0cdfbf5c789e7f09731a61f13e495241"
-  message: 'chore: Preview-Runtime-Layer ergänzen (J01-9)'
