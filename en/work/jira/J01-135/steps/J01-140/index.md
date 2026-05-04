@@ -45,7 +45,7 @@ Current implementation state:
 - The slot-root resource is named `src/resources/http/app-slot/.htaccess`; the
   misleading `root` name and the no longer referenced legacy `entry` resource
   were removed.
-- `.deploy-state.json` is the sole script state source; the inline
+- `.deploy-state.ini` is the sole script state source; the inline
   `// deploy-state:` in the generated `index.php` was removed.
 
 ## Verification Plan
@@ -55,7 +55,7 @@ Current implementation state:
 | SMTP path | Preview/production use a mail return channel | Configuration or test | open |
 | Dev path | `mail_stdout` remains clearly bounded as a dev helper | Runbook or config docs | open |
 | Log protection | Sensitive results do not appear in uncontrolled logs | Test or review | open |
-| SFTP deploy state | `.deploy-state.json` is the SSOT for deploy script state | `scripts/sftp_deploy_state.py`, `scripts/sftp-deploy.py`, `scripts/sftp-read-vendor-build-id.py` | done |
+| SFTP deploy state | `.deploy-state.ini` is the SSOT for deploy script state | `scripts/sftp_deploy_state.py`, `scripts/sftp-deploy.py`, `scripts/sftp-read-vendor-build-id.py` | done |
 | SFTP deploy flow | Command edge and deploy flow are separated | `scripts/sftp-deploy.py` (`main()`, `SftpDeploy`) | done |
 | SFTP deploy resources | Router and `.htaccess` content is rendered from HTTP resources | `src/resources/http/`, `scripts/sftp_deploy_templates.py` | done |
 | Slot-root resource | App-slot `.htaccess` is no longer named as HTTP root | `src/resources/http/app-slot/.htaccess`, `scripts/pipeline_lib.sh` | done |

@@ -1,6 +1,18 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: c0e45260af22dc5bfa5bbf90ddf5559150e769ff
+  short_sha: c0e4526
+  datetime: "2026-05-04T15:54:32+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c0e45260af22dc5bfa5bbf90ddf5559150e769ff"
+  message: 'refactor: Deploy-State als INI formatieren (J01-140)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 456cd28b4653b1ab5d669c36a811355e63baa584
+  short_sha: 456cd28
+  datetime: "2026-05-04T12:28:56+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/456cd28b4653b1ab5d669c36a811355e63baa584"
+  message: 'docs: JSON-Deploy-State als SSOT dokumentieren (J01-140)'
+- repo: lebenslauf-web-vorlage
   sha: 0c1e53fdd0cc7a82127c9ef967112540c9d86974
   short_sha: 0c1e53f
   datetime: "2026-05-04T12:28:45+02:00"
@@ -48,15 +60,3 @@
   datetime: "2026-05-04T10:42:26+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/cd13844cdcdcb79395298ad20bb495d264820d38"
   message: 'refactor: SFTP-Dateischreibzugriff glätten (J01-140)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: da7362756b70dd9e9da862ad37db6af08479f39e
-  short_sha: da73627
-  datetime: "2026-05-04T10:11:36+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/da7362756b70dd9e9da862ad37db6af08479f39e"
-  message: 'docs: SFTP-Deploy-Kohärenz nachziehen (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: 924aeba015ba8c7cdf09c0947ab7bd84175b93b7
-  short_sha: 924aeba
-  datetime: "2026-05-04T10:11:26+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/924aeba015ba8c7cdf09c0947ab7bd84175b93b7"
-  message: 'refactor: SFTP-Deploy-Zustand trennen (J01-140)'
