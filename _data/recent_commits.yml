@@ -1,10 +1,22 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage
+  sha: 9cc573b5aea197b0222c536060767e49fe3da973
+  short_sha: 9cc573b
+  datetime: "2026-05-04T23:41:51+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9cc573b5aea197b0222c536060767e49fe3da973"
+  message: 'test: Swap-Deploy-Tests temporär deaktivieren (J01-142)'
+- repo: lebenslauf-web-vorlage
+  sha: e0881527f336ed16d353691ff9fddde684d1bf83
+  short_sha: e088152
+  datetime: "2026-05-04T23:40:51+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/e0881527f336ed16d353691ff9fddde684d1bf83"
+  message: 'feat: Swap-Deploy auf Vorbereitung begrenzen (J01-142)'
 - repo: lebenslauf-web-vorlage-docs
-  sha: d97d8af4b43569b9fcf365f3b62c0ae5aba5ee58
-  short_sha: d97d8af
+  sha: c7fa8e710b509dbb963129a996ebec7fe1b0f83b
+  short_sha: c7fa8e7
   datetime: "2026-05-04T16:12:44+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/d97d8af4b43569b9fcf365f3b62c0ae5aba5ee58"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c7fa8e710b509dbb963129a996ebec7fe1b0f83b"
   message: 'docs: statische SFTP-Entry-Dateien dokumentieren (J01-140)'
 - repo: lebenslauf-web-vorlage
   sha: a4da21cbda85bea182f1c2d00bc5b3e42fa91211
@@ -48,15 +60,3 @@
   datetime: "2026-05-04T12:00:33+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/81160ace3835a2f3fd3b16466b64860b354facdf"
   message: 'refactor: App-Slot-HTAccess klar benennen (J01-140)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: a46054b9440e97ac71900d4e4e96bad25112ed1e
-  short_sha: a46054b
-  datetime: "2026-05-04T11:45:06+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a46054b9440e97ac71900d4e4e96bad25112ed1e"
-  message: 'docs: SFTP-Ressourcenpfad korrigieren (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: b1683a7df12b66df9d0ef6931123ffc82e46dc06
-  short_sha: b1683a7
-  datetime: "2026-05-04T11:44:48+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b1683a7df12b66df9d0ef6931123ffc82e46dc06"
-  message: 'refactor: SFTP-Ressourcen nach HTTP-Zielstruktur ordnen (J01-140)'

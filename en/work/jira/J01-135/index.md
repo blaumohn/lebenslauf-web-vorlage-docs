@@ -25,7 +25,7 @@ CI/CD/runtime-admin operations.
 
 - The issue was created for `SCRUM Sprint 4` and classified as `sprint-goal`.
 - Work has started.
-- The architecture follow-up in `tagebuch` has been split into four
+- The architecture follow-up in `tagebuch` has been split into five
   verifiable subtasks:
   - [J01-138]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }})
     — model runtime-admin triggering through an SFTP flag and HTTP trigger
@@ -35,6 +35,8 @@ CI/CD/runtime-admin operations.
     — define the mail return channel for runtime-admin results
   - [J01-141]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }})
     — bound the admin action list and access protection
+  - [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }})
+    — define the zero-downtime deploy switch as an admin operation
 
 ## Content Key
 
@@ -48,7 +50,8 @@ CI/CD/runtime-admin operations.
   [J01-138]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }}),
   [J01-139]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}),
   [J01-140]({{ "/en/jira/issues/J01-135/steps/J01-140/" | relative_url }}),
-  [J01-141]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }})
+  [J01-141]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}),
+  [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }})
 
 ## Subtasks
 
@@ -58,6 +61,7 @@ CI/CD/runtime-admin operations.
 | [J01-139]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | CV-token rotation as a runtime-admin action | open |
 | [J01-140]({{ "/en/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | Mail return channel for admin results | open |
 | [J01-141]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | Fixed admin action list and access protection | open |
+| [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | Zero-downtime deploy switch as an admin operation | open |
 
 ## Verification Plan
 
@@ -67,6 +71,7 @@ CI/CD/runtime-admin operations.
 | CV-token generation | Workflow is reproducible, profile-bound, and documented | [J01-139]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | open |
 | Return channel | Admin results are reported through a controlled channel | [J01-140]({{ "/en/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | open |
 | Boundaries | The admin trigger runs only fixed, checkable actions | [J01-141]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | open |
+| Deploy switch | Running deploys are prepared through SFTP and made visible atomically by a PHP admin operation | [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | open |
 | Sprint assignment | Issue is in `SCRUM Sprint 4` with `sprint-goal` | Jira sprint board | done |
 
 ## Target State or Open Points

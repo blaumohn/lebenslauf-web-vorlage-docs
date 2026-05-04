@@ -27,7 +27,7 @@ CI/CD-/Runtime-Admin-Betrieb.
 - Der Vorgang wurde für `SCRUM Sprint 4` angelegt und als `sprint-goal`
   eingeordnet.
 - Die Arbeit ist gestartet.
-- Der Architektur-Nachtrag im `tagebuch` wurde in vier prüfbare
+- Der Architektur-Nachtrag im `tagebuch` wurde in fünf prüfbare
   Untervorgänge zerlegt:
   - [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }})
     — Runtime-Admin-Auslösung über SFTP-Fahne und HTTP-Trigger modellieren
@@ -37,6 +37,8 @@ CI/CD-/Runtime-Admin-Betrieb.
     — Mail-Rückkanal für Runtime-Admin-Ergebnisse festziehen
   - [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }})
     — Admin-Aktionsliste und Zugriffsschutz begrenzen
+  - [J01-142]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }})
+    — Zero-Downtime-Deploy-Umschaltung als Admin-Betrieb festziehen
 
 ## Inhalts-Schlüssel
 
@@ -50,7 +52,8 @@ CI/CD-/Runtime-Admin-Betrieb.
   [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }}),
   [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}),
   [J01-140]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }}),
-  [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }})
+  [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }}),
+  [J01-142]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }})
 
 ## Untervorgänge
 
@@ -60,6 +63,7 @@ CI/CD-/Runtime-Admin-Betrieb.
 | [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | CV-Token-Rotation als Runtime-Admin-Aktion | offen |
 | [J01-140]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | Mail-Rückkanal für Admin-Ergebnisse | offen |
 | [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | Feste Admin-Aktionsliste und Zugriffsschutz | offen |
+| [J01-142]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | Zero-Downtime-Deploy-Umschaltung als Admin-Betrieb | offen |
 
 ## Überprüfungsplan
 
@@ -69,6 +73,7 @@ CI/CD-/Runtime-Admin-Betrieb.
 | CV-Token-Erzeugung | Ablauf ist reproduzierbar, profilgebunden und dokumentiert | [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | offen |
 | Rückkanal | Admin-Ergebnisse werden kontrolliert zurückgemeldet | [J01-140]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | offen |
 | Begrenzung | Admin-Trigger führt nur feste, prüfbare Aktionen aus | [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | offen |
+| Deploy-Umschaltung | Laufende Deploys werden per SFTP vorbereitet und per PHP-Admin-Betrieb atomar sichtbar geschaltet | [J01-142]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | offen |
 | Sprint-Zuordnung | Vorgang liegt in `SCRUM Sprint 4` mit `sprint-goal` | Jira Sprint Board | erledigt |
 
 ## Abschlussbild oder offene Punkte
