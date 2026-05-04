@@ -1,5 +1,23 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage-docs
+  sha: d97d8af4b43569b9fcf365f3b62c0ae5aba5ee58
+  short_sha: d97d8af
+  datetime: "2026-05-04T16:12:44+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/d97d8af4b43569b9fcf365f3b62c0ae5aba5ee58"
+  message: 'docs: statische SFTP-Entry-Dateien dokumentieren (J01-140)'
+- repo: lebenslauf-web-vorlage
+  sha: a4da21cbda85bea182f1c2d00bc5b3e42fa91211
+  short_sha: a4da21c
+  datetime: "2026-05-04T16:12:36+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a4da21cbda85bea182f1c2d00bc5b3e42fa91211"
+  message: 'refactor: statische SFTP-Entry-Dateien verwenden (J01-140)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 93f9e646ec409d3d7e14db38f67bd568b80b5641
+  short_sha: 93f9e64
+  datetime: "2026-05-04T15:54:39+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/93f9e646ec409d3d7e14db38f67bd568b80b5641"
+  message: 'docs: INI-Deploy-State dokumentieren (J01-140)'
 - repo: lebenslauf-web-vorlage
   sha: c0e45260af22dc5bfa5bbf90ddf5559150e769ff
   short_sha: c0e4526
@@ -42,21 +60,3 @@
   datetime: "2026-05-04T11:44:48+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b1683a7df12b66df9d0ef6931123ffc82e46dc06"
   message: 'refactor: SFTP-Ressourcen nach HTTP-Zielstruktur ordnen (J01-140)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: c91b0900568fef482166c4b6a2d1c5684423b046
-  short_sha: c91b090
-  datetime: "2026-05-04T11:13:18+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c91b0900568fef482166c4b6a2d1c5684423b046"
-  message: 'docs: SFTP-Deploy-Ablauf dokumentieren (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: 4c9f431fa87b585e0607ccff9c31b8f56041de43
-  short_sha: 4c9f431
-  datetime: "2026-05-04T11:13:11+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4c9f431fa87b585e0607ccff9c31b8f56041de43"
-  message: 'refactor: SFTP-Deploy-Ablauf kapseln (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: cd13844cdcdcb79395298ad20bb495d264820d38
-  short_sha: cd13844
-  datetime: "2026-05-04T10:42:26+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/cd13844cdcdcb79395298ad20bb495d264820d38"
-  message: 'refactor: SFTP-Dateischreibzugriff glätten (J01-140)'

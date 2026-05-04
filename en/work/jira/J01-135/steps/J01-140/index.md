@@ -37,7 +37,7 @@ Current implementation state:
 - `sftp_lib.py` now contains only SFTP transport and configuration loading.
 - `sftp_deploy_state.py` contains `SlotState`, `DeployState` and
   `DeploymentPlan`.
-- `sftp_deploy_templates.py` renders the deployment files from resources.
+- `sftp_deploy_templates.py` provides the HTTP resource path.
 - `sftp-deploy.py` separates the command edge from the `SftpDeploy` flow class;
   `main()` reads config and `SFTP_INCLUDE_VENDOR`, while the class runs the
   deploy flow.
@@ -47,6 +47,10 @@ Current implementation state:
   were removed.
 - `.deploy-state.ini` is the sole script state source; the inline
   `// deploy-state:` in the generated `index.php` was removed.
+- `index.php` and the root `.htaccess` are static entry files; in the normal
+  case, deploy only writes `.deploy-state.ini` as the switch point. Static
+  entry files are uploaded only on first deploy; migration and recovery remain
+  a separate admin operation.
 
 ## Verification Plan
 
@@ -57,9 +61,10 @@ Current implementation state:
 | Log protection | Sensitive results do not appear in uncontrolled logs | Test or review | open |
 | SFTP deploy state | `.deploy-state.ini` is the SSOT for deploy script state | `scripts/sftp_deploy_state.py`, `scripts/sftp-deploy.py`, `scripts/sftp-read-vendor-build-id.py` | done |
 | SFTP deploy flow | Command edge and deploy flow are separated | `scripts/sftp-deploy.py` (`main()`, `SftpDeploy`) | done |
-| SFTP deploy resources | Router and `.htaccess` content is rendered from HTTP resources | `src/resources/http/`, `scripts/sftp_deploy_templates.py` | done |
+| SFTP deploy resources | Static entry files live under the HTTP resources | `src/resources/http/index.php`, `src/resources/http/.htaccess` | done |
 | Slot-root resource | App-slot `.htaccess` is no longer named as HTTP root | `src/resources/http/app-slot/.htaccess`, `scripts/pipeline_lib.sh` | done |
-| Inline router state | Generated router no longer contains `// deploy-state:` | `src/resources/http/index.php.tpl` | done |
+| Inline router state | Static router no longer contains `// deploy-state:` | `src/resources/http/index.php` | done |
+| Switch point | Swap deploys switch only through `.deploy-state.ini`; entry files belong to first deploy/admin recovery | `scripts/sftp-deploy.py` | done |
 
 ## Links
 

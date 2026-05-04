@@ -38,7 +38,7 @@ Aktueller Umsetzungsstand:
 - `sftp_lib.py` enthält nur noch SFTP-Transport und Konfigurationslesung.
 - `sftp_deploy_state.py` enthält `SlotState`, `DeployState` und
   `DeploymentPlan`.
-- `sftp_deploy_templates.py` rendert die Deploy-Dateien aus Ressourcen.
+- `sftp_deploy_templates.py` stellt den HTTP-Ressourcenpfad bereit.
 - `sftp-deploy.py` trennt den Befehlsrand von der Ablaufklasse `SftpDeploy`;
   `main()` liest Config und `SFTP_INCLUDE_VENDOR`, die Klasse führt den
   Deploy-Ablauf aus.
@@ -48,6 +48,10 @@ Aktueller Umsetzungsstand:
   `entry` wurden entfernt.
 - `.deploy-state.ini` ist die alleinige Skript-Zustandsquelle; der
   inline `// deploy-state:` im generierten `index.php` wurde entfernt.
+- `index.php` und die Root-`.htaccess` sind statische Entry-Dateien; im
+  Normalfall schreibt der Deploy nur noch `.deploy-state.ini` als Umschaltpunkt.
+  Die statischen Entry-Dateien werden nur beim Erstdeploy hochgeladen;
+  Migration und Recovery bleiben ein separater Admin-Betrieb.
 
 ## Überprüfungsplan
 
@@ -58,9 +62,10 @@ Aktueller Umsetzungsstand:
 | Log-Schutz | Sensible Ergebnisse erscheinen nicht in unkontrollierten Logs | Test oder Review | offen |
 | SFTP-Deploy-Zustand | `.deploy-state.ini` ist SSOT für Deploy-Skript-Zustand | `scripts/sftp_deploy_state.py`, `scripts/sftp-deploy.py`, `scripts/sftp-read-vendor-build-id.py` | umgesetzt |
 | SFTP-Deploy-Ablauf | Befehlsrand und Deploy-Ablauf sind getrennt | `scripts/sftp-deploy.py` (`main()`, `SftpDeploy`) | umgesetzt |
-| SFTP-Deploy-Ressourcen | Router- und `.htaccess`-Inhalte werden aus HTTP-Ressourcen gerendert | `src/resources/http/`, `scripts/sftp_deploy_templates.py` | umgesetzt |
+| SFTP-Deploy-Ressourcen | Statische Entry-Dateien liegen unter den HTTP-Ressourcen | `src/resources/http/index.php`, `src/resources/http/.htaccess` | umgesetzt |
 | Slot-Root-Ressource | App-Slot-`.htaccess` ist nicht mehr als HTTP-Root benannt | `src/resources/http/app-slot/.htaccess`, `scripts/pipeline_lib.sh` | umgesetzt |
-| Inline-Router-State | Generierter Router enthält keinen `// deploy-state:` mehr | `src/resources/http/index.php.tpl` | umgesetzt |
+| Inline-Router-State | Statischer Router enthält keinen `// deploy-state:` mehr | `src/resources/http/index.php` | umgesetzt |
+| Umschaltpunkt | Swap-Deploys schalten nur per `.deploy-state.ini`; Entry-Dateien gehören zu Erstdeploy/Admin-Recovery | `scripts/sftp-deploy.py` | umgesetzt |
 
 ## Links
 
