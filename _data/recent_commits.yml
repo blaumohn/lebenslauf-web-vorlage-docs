@@ -1,6 +1,24 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: d02092ee83b79fe2b915f683709eb4297032305c
+  short_sha: d02092e
+  datetime: "2026-05-04T11:13:11+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d02092ee83b79fe2b915f683709eb4297032305c"
+  message: 'refactor: SFTP-Deploy-Ablauf kapseln (J01-140)'
+- repo: lebenslauf-web-vorlage
+  sha: cd13844cdcdcb79395298ad20bb495d264820d38
+  short_sha: cd13844
+  datetime: "2026-05-04T10:42:26+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/cd13844cdcdcb79395298ad20bb495d264820d38"
+  message: 'refactor: SFTP-Dateischreibzugriff glätten (J01-140)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: da7362756b70dd9e9da862ad37db6af08479f39e
+  short_sha: da73627
+  datetime: "2026-05-04T10:11:36+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/da7362756b70dd9e9da862ad37db6af08479f39e"
+  message: 'docs: SFTP-Deploy-Kohärenz nachziehen (J01-140)'
+- repo: lebenslauf-web-vorlage
   sha: 924aeba015ba8c7cdf09c0947ab7bd84175b93b7
   short_sha: 924aeba
   datetime: "2026-05-04T10:11:26+02:00"
@@ -42,21 +60,3 @@
   datetime: "2026-05-03T21:58:03+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/05cf205de6342a65db5ed97f6729f3817beb5832"
   message: 'feat: handle preview deploy runtime transitions (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: ff9d0ac4bda010144a5c1a72dcf869e5eaf71a8e
-  short_sha: ff9d0ac
-  datetime: "2026-05-01T12:55:18+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ff9d0ac4bda010144a5c1a72dcf869e5eaf71a8e"
-  message: 'refactor(ci): CI-Preview auf run-basierte Testausführung umstellen (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: aa2ccf2117d975415b540dfd4918a3424138c8ec
-  short_sha: aa2ccf2
-  datetime: "2026-04-30T16:42:25+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/aa2ccf2117d975415b540dfd4918a3424138c8ec"
-  message: 'test(ci): Kontaktformular-Smoke-Test einbinden (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: 656c2783314b5c8d1ccaf0a6cbfc616086c9969b
-  short_sha: 656c278
-  datetime: "2026-04-30T13:16:46+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/656c2783314b5c8d1ccaf0a6cbfc616086c9969b"
-  message: 'feat: SMTP-CI-Test mit TLS und Zertifikatsprüfung (J01-140)'

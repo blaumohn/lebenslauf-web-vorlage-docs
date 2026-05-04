@@ -39,6 +39,9 @@ Aktueller Umsetzungsstand:
 - `sftp_deploy_state.py` enthält `SlotState`, `DeployStateFile`,
   `RouterState` und `DeploymentPlan`.
 - `sftp_deploy_templates.py` rendert die Deploy-Dateien aus Ressourcen.
+- `sftp-deploy.py` trennt den Befehlsrand von der Ablaufklasse `SftpDeploy`;
+  `main()` liest Config und `SFTP_INCLUDE_VENDOR`, die Klasse führt den
+  Deploy-Ablauf aus.
 - Die SFTP-Ressourcen liegen unter `src/resources/deploy/sftp/`.
 - Der Inline-Deploy-State in `index.php` bleibt vorerst bestehen und wird in
   einem eigenen Folgeschritt fachlich neu bewertet.
@@ -51,6 +54,7 @@ Aktueller Umsetzungsstand:
 | Dev-Pfad | `mail_stdout` bleibt klar als Dev-Hilfe abgegrenzt | Runbook oder Config-Doku | offen |
 | Log-Schutz | Sensible Ergebnisse erscheinen nicht in unkontrollierten Logs | Test oder Review | offen |
 | SFTP-Deploy-Zustand | Slot- und Router-Zustand liegen außerhalb der SFTP-Transportbibliothek | `scripts/sftp_deploy_state.py`, `scripts/sftp_lib.py` | umgesetzt |
+| SFTP-Deploy-Ablauf | Befehlsrand und Deploy-Ablauf sind getrennt | `scripts/sftp-deploy.py` (`main()`, `SftpDeploy`) | umgesetzt |
 | SFTP-Deploy-Ressourcen | Router- und `.htaccess`-Inhalte werden aus Ressourcen gerendert | `src/resources/deploy/sftp/`, `scripts/sftp_deploy_templates.py` | umgesetzt |
 | Deploy-State-Folgeentscheidung | Nutzen des inline `// deploy-state:` wird gesondert bewertet | Folgeprüfung im J01-140-Kontext | offen |
 
