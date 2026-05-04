@@ -1,6 +1,18 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 0c1e53fdd0cc7a82127c9ef967112540c9d86974
+  short_sha: 0c1e53f
+  datetime: "2026-05-04T12:28:45+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/0c1e53fdd0cc7a82127c9ef967112540c9d86974"
+  message: 'refactor: Deploy-State als JSON-SSOT verwenden (J01-140)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: ef39b59db3d62bf190076b07f21eb41f9c510936
+  short_sha: ef39b59
+  datetime: "2026-05-04T12:00:39+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ef39b59db3d62bf190076b07f21eb41f9c510936"
+  message: 'docs: App-Slot-Ressource dokumentieren (J01-140)'
+- repo: lebenslauf-web-vorlage
   sha: 81160ace3835a2f3fd3b16466b64860b354facdf
   short_sha: 81160ac
   datetime: "2026-05-04T12:00:33+02:00"
@@ -48,15 +60,3 @@
   datetime: "2026-05-04T10:11:26+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/924aeba015ba8c7cdf09c0947ab7bd84175b93b7"
   message: 'refactor: SFTP-Deploy-Zustand trennen (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: b6870633fa08a32cdd15799ec5420d093881e458
-  short_sha: b687063
-  datetime: "2026-05-03T22:04:00+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b6870633fa08a32cdd15799ec5420d093881e458"
-  message: 'fix: Preview-Switch über Fallback-Routing staffeln (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: 675e1d619266ef61bd9f13f51949b548b4b6ceaf
-  short_sha: 675e1d6
-  datetime: "2026-05-03T22:04:00+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/675e1d619266ef61bd9f13f51949b548b4b6ceaf"
-  message: 'fix: stage preview switch through fallback routing (J01-140)'
