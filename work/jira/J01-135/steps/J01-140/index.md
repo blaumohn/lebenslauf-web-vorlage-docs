@@ -25,6 +25,24 @@ Erfolgskriterium: Runtime-Admin-Ergebnisse haben einen dokumentierten
 Rückkanal, der für Preview/Produktion nicht auf unkontrollierte Konsolenausgabe
 angewiesen ist.
 
+## Nachtrag 2026-05-04: SFTP-Deploy-Kohärenz
+
+Im Preview-Deployment wurde ein gewachsener Mischbereich nachgeschärft:
+Transport, Slot-Zustand, Router-Zustand, Template-Erzeugung und
+Tree-Operationen werden nicht mehr in `sftp_lib.py` gebündelt. Der sichtbare
+Aufrufpfad bleibt unverändert; die bestehenden Einstiegsskripte bleiben
+`scripts/sftp-deploy.py` und `scripts/sftp-read-vendor-build-id.py`.
+
+Aktueller Umsetzungsstand:
+
+- `sftp_lib.py` enthält nur noch SFTP-Transport und Konfigurationslesung.
+- `sftp_deploy_state.py` enthält `SlotState`, `DeployStateFile`,
+  `RouterState` und `DeploymentPlan`.
+- `sftp_deploy_templates.py` rendert die Deploy-Dateien aus Ressourcen.
+- Die SFTP-Ressourcen liegen unter `src/resources/deploy/sftp/`.
+- Der Inline-Deploy-State in `index.php` bleibt vorerst bestehen und wird in
+  einem eigenen Folgeschritt fachlich neu bewertet.
+
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
@@ -32,6 +50,9 @@ angewiesen ist.
 | SMTP-Pfad | Preview/Produktion nutzen einen Mail-Rückkanal | Konfiguration oder Test | offen |
 | Dev-Pfad | `mail_stdout` bleibt klar als Dev-Hilfe abgegrenzt | Runbook oder Config-Doku | offen |
 | Log-Schutz | Sensible Ergebnisse erscheinen nicht in unkontrollierten Logs | Test oder Review | offen |
+| SFTP-Deploy-Zustand | Slot- und Router-Zustand liegen außerhalb der SFTP-Transportbibliothek | `scripts/sftp_deploy_state.py`, `scripts/sftp_lib.py` | umgesetzt |
+| SFTP-Deploy-Ressourcen | Router- und `.htaccess`-Inhalte werden aus Ressourcen gerendert | `src/resources/deploy/sftp/`, `scripts/sftp_deploy_templates.py` | umgesetzt |
+| Deploy-State-Folgeentscheidung | Nutzen des inline `// deploy-state:` wird gesondert bewertet | Folgeprüfung im J01-140-Kontext | offen |
 
 ## Links
 
