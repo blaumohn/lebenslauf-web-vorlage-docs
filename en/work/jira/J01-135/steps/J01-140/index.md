@@ -41,7 +41,7 @@ Current implementation state:
 - `sftp-deploy.py` separates the command edge from the `SftpDeploy` flow class;
   `main()` reads config and `SFTP_INCLUDE_VENDOR`, while the class runs the
   deploy flow.
-- The SFTP resources live under `src/resources/deploy/sftp/`.
+- The root HTTP resources live close to their target under `src/resources/http/`.
 - The inline deploy state in `index.php` remains for now and will be reviewed
   separately in a follow-up step.
 
@@ -54,7 +54,7 @@ Current implementation state:
 | Log protection | Sensitive results do not appear in uncontrolled logs | Test or review | open |
 | SFTP deploy state | Slot and router state live outside the SFTP transport library | `scripts/sftp_deploy_state.py`, `scripts/sftp_lib.py` | done |
 | SFTP deploy flow | Command edge and deploy flow are separated | `scripts/sftp-deploy.py` (`main()`, `SftpDeploy`) | done |
-| SFTP deploy resources | Router and `.htaccess` content is rendered from resources | `src/resources/deploy/sftp/`, `scripts/sftp_deploy_templates.py` | done |
+| SFTP deploy resources | Router and `.htaccess` content is rendered from HTTP resources | `src/resources/http/`, `scripts/sftp_deploy_templates.py` | done |
 | Deploy-state follow-up decision | Usefulness of inline `// deploy-state:` is reviewed separately | Follow-up review in the J01-140 context | open |
 
 ## Links

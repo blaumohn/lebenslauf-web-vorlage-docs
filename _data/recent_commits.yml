@@ -1,10 +1,22 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
-  sha: d02092ee83b79fe2b915f683709eb4297032305c
-  short_sha: d02092e
+  sha: b1683a7df12b66df9d0ef6931123ffc82e46dc06
+  short_sha: b1683a7
+  datetime: "2026-05-04T11:44:48+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b1683a7df12b66df9d0ef6931123ffc82e46dc06"
+  message: 'refactor: SFTP-Ressourcen nach HTTP-Zielstruktur ordnen (J01-140)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: c91b0900568fef482166c4b6a2d1c5684423b046
+  short_sha: c91b090
+  datetime: "2026-05-04T11:13:18+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c91b0900568fef482166c4b6a2d1c5684423b046"
+  message: 'docs: SFTP-Deploy-Ablauf dokumentieren (J01-140)'
+- repo: lebenslauf-web-vorlage
+  sha: 4c9f431fa87b585e0607ccff9c31b8f56041de43
+  short_sha: 4c9f431
   datetime: "2026-05-04T11:13:11+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d02092ee83b79fe2b915f683709eb4297032305c"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4c9f431fa87b585e0607ccff9c31b8f56041de43"
   message: 'refactor: SFTP-Deploy-Ablauf kapseln (J01-140)'
 - repo: lebenslauf-web-vorlage
   sha: cd13844cdcdcb79395298ad20bb495d264820d38
@@ -48,15 +60,3 @@
   datetime: "2026-05-03T21:58:18+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/81899f0dadb4d53013d432f8c736c28d7485ed9e"
   message: 'fix: align preview slot routing and container users (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: fe51d896d1e1fbca78530c55a7685d485f73a46d
-  short_sha: fe51d89
-  datetime: "2026-05-03T21:58:03+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/fe51d896d1e1fbca78530c55a7685d485f73a46d"
-  message: 'feat: Preview-Deployment-Laufzeit vorbereiten (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: 05cf205de6342a65db5ed97f6729f3817beb5832
-  short_sha: 05cf205
-  datetime: "2026-05-03T21:58:03+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/05cf205de6342a65db5ed97f6729f3817beb5832"
-  message: 'feat: handle preview deploy runtime transitions (J01-140)'
