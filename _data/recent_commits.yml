@@ -1,6 +1,18 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 81160ace3835a2f3fd3b16466b64860b354facdf
+  short_sha: 81160ac
+  datetime: "2026-05-04T12:00:33+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/81160ace3835a2f3fd3b16466b64860b354facdf"
+  message: 'refactor: App-Slot-HTAccess klar benennen (J01-140)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: a46054b9440e97ac71900d4e4e96bad25112ed1e
+  short_sha: a46054b
+  datetime: "2026-05-04T11:45:06+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a46054b9440e97ac71900d4e4e96bad25112ed1e"
+  message: 'docs: SFTP-Ressourcenpfad korrigieren (J01-140)'
+- repo: lebenslauf-web-vorlage
   sha: b1683a7df12b66df9d0ef6931123ffc82e46dc06
   short_sha: b1683a7
   datetime: "2026-05-04T11:44:48+02:00"
@@ -48,15 +60,3 @@
   datetime: "2026-05-03T22:04:00+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/675e1d619266ef61bd9f13f51949b548b4b6ceaf"
   message: 'fix: stage preview switch through fallback routing (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: 95e0d0abaf8c3b6773dcfa0b3fd68dd1647ddb49
-  short_sha: 95e0d0a
-  datetime: "2026-05-03T21:58:18+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/95e0d0abaf8c3b6773dcfa0b3fd68dd1647ddb49"
-  message: 'fix: Preview-Slot-Routing und Container-Benutzer angleichen (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: 81899f0dadb4d53013d432f8c736c28d7485ed9e
-  short_sha: 81899f0
-  datetime: "2026-05-03T21:58:18+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/81899f0dadb4d53013d432f8c736c28d7485ed9e"
-  message: 'fix: align preview slot routing and container users (J01-140)'
