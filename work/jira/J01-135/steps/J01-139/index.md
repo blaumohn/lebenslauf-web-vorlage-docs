@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "135-2 — CV-Token-Rotation als Runtime-Admin-Aktion umsetzen"
+title: "135-5 — CV-Token-Rotation als Runtime-Admin-Aktion umsetzen"
 permalink: /de/jira/issues/J01-135/steps/J01-139/
 jira_key: J01-139
 jira_parent_key: J01-135
@@ -14,6 +14,11 @@ jira_parent_key: J01-135
 
 Ziel: Die CV-Token-Erzeugung als begrenzte Runtime-Admin-Aktion festziehen,
 statt sie als lose manuelle Bedienung neben CI/CD stehen zu lassen.
+
+Dieser Schritt ist jetzt nach dem Admin-Gerüst eingeordnet: J01-142 klärt das
+generische Laufzeit-Admin-Betriebe-Gerüst und den ersten konkreten
+`deploy_switch`; J01-139 nutzt diese Grenzen später für die fachliche
+CV-Token-Rotation.
 
 - Token-Rotation bleibt profilgebunden.
 - Die Aktion verwendet die vorhandene Runtime-Persistenz und Locking-Logik.

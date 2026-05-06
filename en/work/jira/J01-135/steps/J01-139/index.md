@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "135-2 — Implement CV-token rotation as a runtime-admin action"
+title: "135-5 — Implement CV-token rotation as a runtime-admin action"
 permalink: /en/jira/issues/J01-135/steps/J01-139/
 jira_key: J01-139
 jira_parent_key: J01-135
@@ -14,6 +14,10 @@ jira_parent_key: J01-135
 
 Goal: Define CV-token generation as a bounded runtime-admin action instead of
 leaving it as loose manual work beside CI/CD.
+
+This step is now ordered after the admin scaffold: J01-142 defines the generic
+runtime-admin operations scaffold and the first concrete `deploy_switch`;
+J01-139 later uses those boundaries for the CV-token rotation action.
 
 - Token rotation remains profile-bound.
 - The action uses the existing runtime persistence and locking logic.

@@ -29,14 +29,14 @@ CI/CD/runtime-admin operations.
   verifiable subtasks:
   - [J01-138]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }})
     — model runtime-admin triggering through an SFTP flag and HTTP trigger
-  - [J01-139]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }})
-    — implement CV-token rotation as a runtime-admin action
+  - [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }})
+    — define the runtime-admin operations scaffold and zero-downtime deploy switch
   - [J01-140]({{ "/en/jira/issues/J01-135/steps/J01-140/" | relative_url }})
     — define the mail return channel for runtime-admin results
   - [J01-141]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }})
     — bound the admin action list and access protection
-  - [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }})
-    — define the zero-downtime deploy switch as an admin operation
+  - [J01-139]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }})
+    — implement CV-token rotation as a runtime-admin action
 
 ## Content Key
 
@@ -48,30 +48,30 @@ CI/CD/runtime-admin operations.
 - [Links](#links)
 - Public steps:
   [J01-138]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }}),
-  [J01-139]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}),
+  [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }}),
   [J01-140]({{ "/en/jira/issues/J01-135/steps/J01-140/" | relative_url }}),
   [J01-141]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}),
-  [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }})
+  [J01-139]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }})
 
 ## Subtasks
 
 | Issue | Work package | Status |
 | --- | --- | --- |
 | [J01-138]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }}) | Runtime-admin triggering through an SFTP flag and HTTP trigger | open |
-| [J01-139]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | CV-token rotation as a runtime-admin action | open |
+| [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | Runtime-admin operations scaffold and zero-downtime deploy switch | done |
 | [J01-140]({{ "/en/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | Mail return channel for admin results | open |
 | [J01-141]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | Fixed admin action list and access protection | open |
-| [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | Zero-downtime deploy switch as an admin operation | open |
+| [J01-139]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | CV-token rotation as a runtime-admin action | open |
 
 ## Verification Plan
 
 | Checkpoint | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
 | Triggering | Waiting admin operations are detected through a bounded trigger path | [J01-138]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }}) | open |
-| CV-token generation | Workflow is reproducible, profile-bound, and documented | [J01-139]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | open |
+| Admin scaffold | Runtime-admin operations have a task file, handler interface, runner, and runtime context | [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | done |
 | Return channel | Admin results are reported through a controlled channel | [J01-140]({{ "/en/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | open |
 | Boundaries | The admin trigger runs only fixed, checkable actions | [J01-141]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | open |
-| Deploy switch | Running deploys are prepared through SFTP and made visible atomically by a PHP admin operation | [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | open |
+| CV-token generation | Workflow is reproducible, profile-bound, and documented | [J01-139]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | open |
 | Sprint assignment | Issue is in `SCRUM Sprint 4` with `sprint-goal` | Jira sprint board | done |
 
 ## Target State or Open Points

@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: 6223452f6a8e97a27216539531cc02422d8053a1
+  short_sha: 6223452
+  datetime: "2026-05-06T07:21:18+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6223452f6a8e97a27216539531cc02422d8053a1"
+  message: 'docs: J01-140 Status im Jira-Dünnstand nachziehen (J01-140)'
+- repo: lebenslauf-web-vorlage-docs
   sha: c01fb87428d1b036cdb04efdaf00cb3d2c4bc51d
   short_sha: c01fb87
   datetime: "2026-05-06T06:57:07+02:00"
@@ -54,9 +60,3 @@
   datetime: "2026-05-04T16:12:36+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a4da21cbda85bea182f1c2d00bc5b3e42fa91211"
   message: 'refactor: statische SFTP-Entry-Dateien verwenden (J01-140)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 93f9e646ec409d3d7e14db38f67bd568b80b5641
-  short_sha: 93f9e64
-  datetime: "2026-05-04T15:54:39+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/93f9e646ec409d3d7e14db38f67bd568b80b5641"
-  message: 'docs: INI-Deploy-State dokumentieren (J01-140)'

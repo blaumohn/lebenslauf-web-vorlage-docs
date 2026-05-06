@@ -1537,13 +1537,13 @@
     "issueLinks": []
   },
   "J01-142": {
-    "summary": "135-5 Zero-Downtime-Deploy-Umschaltung als Admin-Betrieb festziehen",
+    "summary": "135-2 Laufzeit-Admin-Betriebe-Gerüst und Zero-Downtime-Deploy-Switch festziehen",
     "issuetype": "Subtask",
-    "status": "In Bearbeitung",
-    "resolution": "-",
+    "status": "Erledigt",
+    "resolution": "Fertig",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-05-06T06:15:52.555+0200",
+    "updated": "2026-05-06T09:14:56.317+0200",
     "parent": "J01-135",
     "sprint": "-",
     "activeSprint": "-",
@@ -1597,13 +1597,13 @@
     "issueLinks": []
   },
   "J01-139": {
-    "summary": "135-2 CV-Token-Rotation als Runtime-Admin-Aktion umsetzen",
+    "summary": "135-5 CV-Token-Rotation als Runtime-Admin-Aktion umsetzen",
     "issuetype": "Subtask",
     "status": "In Bearbeitung",
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-05-04T23:23:49.547+0200",
+    "updated": "2026-05-06T09:14:43.558+0200",
     "parent": "J01-135",
     "sprint": "-",
     "activeSprint": "-",
