@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: 5044d5bfe9aeda6774f477253841e7c957e2e0fe
+  short_sha: 5044d5b
+  datetime: "2026-05-06T10:20:31+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5044d5bfe9aeda6774f477253841e7c957e2e0fe"
+  message: 'docs: J01-135 Schritt-Backfill synchronisieren (J01-135)'
+- repo: lebenslauf-web-vorlage-docs
   sha: c32e84c381d187a91ab7e21613832df572c12cd8
   short_sha: c32e84c
   datetime: "2026-05-06T09:43:10+02:00"
@@ -54,9 +60,3 @@
   datetime: "2026-05-04T23:41:51+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9cc573b5aea197b0222c536060767e49fe3da973"
   message: 'test: Swap-Deploy-Tests temporär deaktivieren (J01-142)'
-- repo: lebenslauf-web-vorlage
-  sha: e0881527f336ed16d353691ff9fddde684d1bf83
-  short_sha: e088152
-  datetime: "2026-05-04T23:40:51+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/e0881527f336ed16d353691ff9fddde684d1bf83"
-  message: 'feat: Swap-Deploy auf Vorbereitung begrenzen (J01-142)'

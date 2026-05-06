@@ -21,17 +21,36 @@ nur vorbereitete Aktionen über einen HTTP-Trigger ausführt.
 - Der Ablauf bleibt mit vorhandenen Runtime-Locks vereinbar.
 - Fehlerfälle und Leerlauf müssen klar unterscheidbar sein.
 
-Erfolgskriterium: Der geplante Auslöseweg ist dokumentiert und kann später
-ohne frei parametrisierbaren Betriebsendpunkt umgesetzt werden.
+Erfolgskriterium: Der geplante Auslöseweg ist dokumentiert und ohne frei
+parametrisierbaren Betriebsendpunkt umgesetzt.
+
+## Abschlussnotiz 2026-05-06
+
+Der Auslöseweg wurde nicht als separater Implementierungsstrang fertiggestellt.
+Er ist im Zuge von
+[J01-142]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }})
+praktisch mit erledigt worden:
+
+- SFTP hinterlegt vorbereitete Admin-Artefakte unter `var/admin/`.
+- Der HTTP-Trigger `/admin/run` liest wartende Aufgaben.
+- Der Trigger nimmt keine freien Befehle an, sondern dispatcht nur bekannte
+  Task-Typen an feste Handler.
+- Der konkrete `deploy_switch` läuft unter Runtime-Lock und schreibt den
+  sichtbaren Zustand atomar.
+
+Damit ist J01-138 fachlich erledigt. Die konkrete technische Ausprägung und
+die Nachweise bleiben in J01-142, damit der Arbeitsstand nicht doppelt geführt
+wird.
 
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| SFTP-Fahne | Wartende Aktion ist als Datei oder gleichwertiges Runtime-Artefakt modelliert | Entwurf oder Implementierung | offen |
-| HTTP-Trigger | Trigger liest nur vorbereitete Aktionen | Code oder Runbook | offen |
-| Locking | Runtime-Locks bleiben Teil des Ausführungswegs | Codepfad / Test | offen |
+| SFTP-Fahne | Wartende Aktion ist als Datei oder gleichwertiges Runtime-Artefakt modelliert | `AdminTaskStore`, `var/admin/tasks/`, J01-142 | erledigt |
+| HTTP-Trigger | Trigger liest nur vorbereitete Aktionen | `/admin/run`, `AdminTaskRunner`, J01-142 | erledigt |
+| Locking | Runtime-Locks bleiben Teil des Ausführungswegs | `DeploySwitcher`, `RuntimeLockRunner`, J01-142 | erledigt |
 
 ## Links
 
 - [J01-135]({{ "/de/jira/issues/J01-135/" | relative_url }})
+- [J01-142]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }})

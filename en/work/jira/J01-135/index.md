@@ -24,7 +24,8 @@ CI/CD/runtime-admin operations.
 ## Current State
 
 - The issue was created for `SCRUM Sprint 4` and classified as `sprint-goal`.
-- Work has started.
+- Work has started; J01-138 and J01-142 are complete as one connected
+  trigger/switch foundation.
 - The architecture follow-up in `tagebuch` has been split into five
   verifiable subtasks:
   - [J01-138]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }})
@@ -57,7 +58,7 @@ CI/CD/runtime-admin operations.
 
 | Issue | Work package | Status |
 | --- | --- | --- |
-| [J01-138]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }}) | Runtime-admin triggering through an SFTP flag and HTTP trigger | open |
+| [J01-138]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }}) | Runtime-admin triggering through an SFTP flag and HTTP trigger | done |
 | [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | Runtime-admin operations scaffold and zero-downtime deploy switch | done |
 | [J01-140]({{ "/en/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | Mail return channel for admin results | open |
 | [J01-141]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | Fixed admin action list and access protection | open |
@@ -67,7 +68,7 @@ CI/CD/runtime-admin operations.
 
 | Checkpoint | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| Triggering | Waiting admin operations are detected through a bounded trigger path | [J01-138]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }}) | open |
+| Triggering | Waiting admin operations are detected through a bounded trigger path | [J01-138]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }}) and [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | done |
 | Admin scaffold | Runtime-admin operations have a task file, handler interface, runner, and runtime context | [J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | done |
 | Return channel | Admin results are reported through a controlled channel | [J01-140]({{ "/en/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | open |
 | Boundaries | The admin trigger runs only fixed, checkable actions | [J01-141]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | open |

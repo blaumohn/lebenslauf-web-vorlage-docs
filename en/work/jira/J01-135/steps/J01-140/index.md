@@ -24,6 +24,15 @@ uncontrolled logs.
 Success criterion: Runtime-admin results have a documented return channel that
 does not rely on uncontrolled console output for preview/production.
 
+## Boundary
+
+J01-140 remains the issue for the controlled return channel. The runtime-admin
+trigger path from
+[J01-138]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }})
+was completed in the technical foundation of
+[J01-142]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }})
+and is evidenced there. This page does not duplicate the trigger/switch state.
+
 ## Update 2026-05-04: SFTP Deploy Coherence
 
 The preview deployment had accumulated a mixed responsibility area that is now

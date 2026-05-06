@@ -22,6 +22,12 @@ J01-142 liefert zwei Ergebnisse:
 - Den konkreten `deploy_switch` als Admin-Aufgabe, die den vorbereiteten
   Deploy-State lokal, gelockt und atomar sichtbar schaltet.
 
+Der in
+[J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }})
+geplante Auslöseweg ist hier mit umgesetzt. J01-138 beschreibt deshalb nur
+noch die fachliche Abschlusszuordnung; die technischen Details und Nachweise
+bleiben auf dieser Seite.
+
 - `deploy_fresh` bleibt der administrative Neuaufbau ohne geschützten
   aktiven Runtime-Zustand.
 - `deploy_swap` lädt App- und Vendor-Slot hoch, migriert Tokens und schreibt

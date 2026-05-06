@@ -26,7 +26,8 @@ CI/CD-/Runtime-Admin-Betrieb.
 
 - Der Vorgang wurde für `SCRUM Sprint 4` angelegt und als `sprint-goal`
   eingeordnet.
-- Die Arbeit ist gestartet.
+- Die Arbeit ist gestartet; J01-138 und J01-142 sind als zusammenhängender
+  Auslöse-/Switch-Unterbau erledigt.
 - Der Architektur-Nachtrag im `tagebuch` wurde in fünf prüfbare
   Untervorgänge zerlegt:
   - [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }})
@@ -59,7 +60,7 @@ CI/CD-/Runtime-Admin-Betrieb.
 
 | Vorgang | Teilpaket | Status |
 | --- | --- | --- |
-| [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }}) | Runtime-Admin-Auslösung über SFTP-Fahne und HTTP-Trigger | offen |
+| [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }}) | Runtime-Admin-Auslösung über SFTP-Fahne und HTTP-Trigger | erledigt |
 | [J01-142]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | Laufzeit-Admin-Betriebe-Gerüst und Zero-Downtime-Deploy-Switch | erledigt |
 | [J01-140]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | Mail-Rückkanal für Admin-Ergebnisse | offen |
 | [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | Feste Admin-Aktionsliste und Zugriffsschutz | offen |
@@ -69,7 +70,7 @@ CI/CD-/Runtime-Admin-Betrieb.
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Auslösung | Wartende Admin-Betriebe werden über einen begrenzten Auslöseweg erkannt | [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }}) | offen |
+| Auslösung | Wartende Admin-Betriebe werden über einen begrenzten Auslöseweg erkannt | [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }}) und [J01-142]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | erledigt |
 | Admin-Gerüst | Runtime-Admin-Betriebe haben Task-Datei, Handler-Schnittstelle, Runner und Runtime-Kontext | [J01-142]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | erledigt |
 | Rückkanal | Admin-Ergebnisse werden kontrolliert zurückgemeldet | [J01-140]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | offen |
 | Begrenzung | Admin-Trigger führt nur feste, prüfbare Aktionen aus | [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | offen |

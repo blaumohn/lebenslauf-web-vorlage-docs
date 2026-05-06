@@ -25,6 +25,16 @@ Erfolgskriterium: Runtime-Admin-Ergebnisse haben einen dokumentierten
 Rückkanal, der für Preview/Produktion nicht auf unkontrollierte Konsolenausgabe
 angewiesen ist.
 
+## Abgrenzung
+
+J01-140 bleibt der Vorgang für den kontrollierten Rückkanal. Der
+Runtime-Admin-Auslöseweg aus
+[J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }})
+wurde im technischen Unterbau von
+[J01-142]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }})
+mit erledigt und wird dort nachgewiesen. Diese Seite dupliziert den
+Trigger-/Switch-Stand nicht.
+
 ## Nachtrag 2026-05-04: SFTP-Deploy-Kohärenz
 
 Im Preview-Deployment wurde ein gewachsener Mischbereich nachgeschärft:

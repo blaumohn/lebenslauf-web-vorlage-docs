@@ -27,7 +27,7 @@ Public Jira area (without Jira Cloud links).
   - [**13-1 Entscheidungstabelle finalisieren**]({{ "/en/jira/issues/J01-13/steps/J01-14/" | relative_url }}) — To Do
   - [**13-2 Testmatrix-Nachweise verlinken**]({{ "/en/jira/issues/J01-13/steps/J01-15/" | relative_url }}) — To Do
 - [J01-135 — CI/CD-Tools: CV-Token-Erzeugung und Runtime-Admin-Betrieb]({{ "/en/jira/issues/J01-135/" | relative_url }})
-  - [**135-1 Runtime-Admin-Auslösung über SFTP-Fahne und HTTP-Trigger modellieren**]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }}) — To Do
+  - [**135-1 Runtime-Admin-Auslösung über SFTP-Fahne und HTTP-Trigger modellieren**]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }}) — Done
   - [**135-2 Laufzeit-Admin-Betriebe-Gerüst und Zero-Downtime-Deploy-Switch festziehen**]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }}) — Done
   - [**135-3 Mail-Rückkanal für Runtime-Admin-Ergebnisse festziehen**]({{ "/en/jira/issues/J01-135/steps/J01-140/" | relative_url }}) — In Progress
   - [**135-4 Admin-Aktionsliste und Zugriffsschutz begrenzen**]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}) — To Do

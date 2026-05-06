@@ -22,6 +22,11 @@ J01-142 delivers two results:
 - The concrete `deploy_switch` admin task that makes the prepared deploy state
   visible locally, under a lock, and atomically.
 
+The trigger path planned in
+[J01-138]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }})
+is implemented here as well. J01-138 therefore only records the closure
+mapping; the technical details and evidence remain on this page.
+
 - `deploy_fresh` remains the administrative rebuild path without a protected
   active runtime state.
 - `deploy_swap` uploads the app and vendor slots, migrates tokens, and writes
