@@ -14,9 +14,13 @@ Er beschreibt nur den schmalen Pfad, den `SCRUM Sprint 1` für die
 - Die CLI führt Phasen direkt aus: `cli <phase> <pipeline> [args]`.
 - Für den Preview-Pfad sind vor allem `setup`, `build`, `runtime` und
   `deploy` relevant.
-- Die Config-Ladereihenfolge führt von versionierten Defaults zu lokalen
-  Overrides und anschließend in die kompilierte Laufzeitdatei
-  `var/config/config.php`.
+- Die Config-Ladereihenfolge führt von expliziten versionierten
+  Betriebswerten zu lokalen Overrides und anschließend in die kompilierte
+  Laufzeitdatei `var/config/config.php`.
+- Versionierte Betriebswerte sind echte Werte für den jeweiligen Pfad, zum
+  Beispiel anerkannte Standards oder bewusst gewählte Dev-/Preview-Werte.
+  Reine Beispielwerte gehören nicht in aktive Config-Dateien, sondern als
+  `meta.example` ins Manifest.
 
 ## Manifest-Regeln
 
@@ -29,16 +33,15 @@ Er beschreibt nur den schmalen Pfad, den `SCRUM Sprint 1` für die
 - `APP_BASE_PATH` und `FTP_SERVER_DIR` erklären den sichtbaren Preview-Zielort
   ohne versteckte Sonderlogik im Doku-Pfad.
 
-## Geplantes Manifestmodell aus J01-105
+## Manifestmodell aus J01-105
 
 Der Vorgang `J01-105` schärft das Manifestmodell redaktionell nach:
 
-- `variables` bleibt der Parameterkatalog im App-Repo.
-- `pipelines` trägt die Regelschicht.
-- Geplant sind die Ebenen `pipelines.global`,
-  `pipelines.common.<phase>` und `pipelines.<pipeline>.<phase>`.
-- Die geplante Syntax darf ganze Bereiche oder Teilbereiche referenzieren.
-- Nach Expansion darf es keine Schnittmenge zwischen `global`, `common` und
+- `variable-groups` ist der Parameterkatalog im App-Repo.
+- `phases.<phase>` trägt den gemeinsamen Variablenvertrag einer Phase.
+- `pipelines.<pipeline>.<phase>` ergänzt nur echte Pipeline-Differenzen.
+- Gruppenreferenzen dürfen ganze Gruppen oder Teilmengen referenzieren.
+- Nach Expansion darf es keine Schnittmenge zwischen gemeinsamer Phase und
   konkreter Pipeline geben.
 
 Die vollständige Herleitung dieses dünnen Zielmodells wird auf der öffentlichen

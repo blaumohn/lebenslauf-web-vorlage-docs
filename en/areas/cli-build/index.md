@@ -13,8 +13,12 @@ preview migration.
 
 - The CLI executes phases directly: `cli <phase> <pipeline> [args]`.
 - For the preview path, `setup`, `build`, `runtime`, and `deploy` matter most.
-- Config loading moves from versioned defaults to local overrides and then into
-  the compiled runtime file `var/config/config.php`.
+- Config loading moves from explicit versioned operating values to local
+  overrides and then into the compiled runtime file `var/config/config.php`.
+- Versioned operating values are real values for the respective path, such as
+  accepted standards or deliberately chosen dev/preview values. Pure example
+  values do not belong in active config files; they belong in the manifest as
+  `meta.example`.
 
 ## Manifest Rules
 
@@ -27,16 +31,15 @@ preview migration.
 - `APP_BASE_PATH` and `FTP_SERVER_DIR` explain the visible preview target
   without hidden special logic in the doc path.
 
-## Planned Manifest Model from J01-105
+## Manifest Model from J01-105
 
 Issue `J01-105` sharpens the manifest model editorially:
 
-- `variables` stays the parameter catalog in the app repo.
-- `pipelines` carries the rule layer.
-- The planned levels are `pipelines.global`,
-  `pipelines.common.<phase>`, and `pipelines.<pipeline>.<phase>`.
-- The planned syntax may reference full areas or partial areas.
-- After expansion there must be no overlap between `global`, `common`, and the
+- `variable-groups` is the parameter catalog in the app repo.
+- `phases.<phase>` carries the shared variable contract of a phase.
+- `pipelines.<pipeline>.<phase>` adds only real pipeline differences.
+- Group references may reference whole groups or subsets.
+- After expansion there must be no overlap between the shared phase and the
   concrete pipeline.
 
 The full derivation of this thin target model is recorded on the public

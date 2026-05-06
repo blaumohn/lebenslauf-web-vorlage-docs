@@ -36,9 +36,20 @@ along pipelines and phases.
 
 - `meta.desc` gives a short functional description of one parameter.
 - `meta.example` shows an example value.
+- `meta.example` is the home for example values. These values are only
+  guidance and are not effective config values.
 - `meta.notes` carries short local hints about that parameter.
 - Validation-relevant parameter dependencies should not remain free text in
   `meta.notes`; they belong in a dedicated rule path such as `J01-37`.
+
+## Config Values
+
+- Active config files contain only effective operating values.
+- Effective operating values may be accepted standards, deliberately chosen
+  dev/preview values, or instance-specific deployment values.
+- Pure example values do not belong in active config files.
+- If a pipeline phase needs a value and no valid source provides it,
+  validation must fail.
 
 ## Roles
 

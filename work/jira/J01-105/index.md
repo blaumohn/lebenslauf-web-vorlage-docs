@@ -226,6 +226,14 @@ J01-105 stellt zugleich klar, dass konkrete fachliche Abhängigkeiten am
 Variableneintrag sichtbar bleiben sollen; ihr früherer Verlust in
 `meta.notes` war eine Regression.
 
+Nachzug 2026-05-06:
+
+- Aktive Config-Dateien werden in der öffentlichen Doku nicht mehr pauschal
+  als Default-Ablage beschrieben, sondern als explizite Betriebswerte.
+- Reine Beispielwerte gehören ins Manifest unter `meta.example`.
+- Fehlende notwendige Instanzwerte sollen durch Validierung und CI/CD sichtbar
+  werden, statt durch Platzhalterwerte verdeckt zu werden.
+
 ## Nicht-Scope dieses Doku-Nachzugs
 
 - keine Umsetzung von J01-37

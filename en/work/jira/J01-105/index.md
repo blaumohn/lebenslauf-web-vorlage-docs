@@ -209,6 +209,14 @@ At the same time, J01-105 now makes clear that concrete functional
 dependencies should remain visible on the variable entry itself; their
 earlier loss in `meta.notes` was a regression.
 
+Follow-up on 2026-05-06:
+
+- Public docs no longer describe active config files broadly as a defaults
+  store, but as explicit operating values.
+- Pure example values belong in the manifest under `meta.example`.
+- Missing required instance values should become visible through validation
+  and CI/CD instead of being hidden by placeholder values.
+
 ## Out of Scope for This Doc Pass
 
 - no implementation of manifest or lib changes in the source repos

@@ -36,9 +36,20 @@ Konfigurationszustände entlang von Pipelines und Phasen.
 
 - `meta.desc` beschreibt einen einzelnen Parameter fachlich kurz.
 - `meta.example` zeigt einen Beispielwert.
+- `meta.example` ist die Heimat für Beispielwerte. Diese Werte dienen der
+  Orientierung und sind keine wirksamen Config-Werte.
 - `meta.notes` trägt kurze lokale Hinweise zum Parameter.
 - Validierungsrelevante Parameter-Abhängigkeiten bleiben kein Freitext in
   `meta.notes`, sondern gehören in einen eigenen Regelpfad wie `J01-37`.
+
+## Config-Werte
+
+- Aktive Config-Dateien enthalten nur wirksame Betriebswerte.
+- Wirksame Betriebswerte können anerkannte Standards, bewusst gewählte
+  Dev-/Preview-Werte oder instanzspezifische Deployment-Werte sein.
+- Reine Beispielwerte gehören nicht in aktive Config-Dateien.
+- Wenn eine Pipeline-Phase einen Wert braucht und keine gültige Quelle ihn
+  liefert, muss die Validierung fehlschlagen.
 
 ## Rollen
 
