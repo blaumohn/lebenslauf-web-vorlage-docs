@@ -33,7 +33,7 @@ Beispiele (Ist):
 ```bash
 atlassian jira ext backfill schritt-nr --parent J01-72 --dry-run
 atlassian jira ext remotelink add --issue J01-91 --url https://docs.template.ysdani.com/quality/drift-reports/J01-91/ --title "Phase 1: Drift-Report" --dry-run
-atlassian jira ext remotelink sync --issue J01-91 --changes-file <changes-file.json> --dry-run
+atlassian jira ext remotelink sync --issue J01-91 --changes-file /tmp/jira-link-changes.json --dry-run
 ```
 
 ## Geplant (Kandidaten)

@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: c32e84c381d187a91ab7e21613832df572c12cd8
+  short_sha: c32e84c
+  datetime: "2026-05-06T09:43:10+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c32e84c381d187a91ab7e21613832df572c12cd8"
+  message: 'docs: Schritt-Backfill-Grenze klarstellen (J01-92)'
+- repo: lebenslauf-web-vorlage-docs
   sha: a967e0f4d409cc4f5f2e6a530937d5b5ae615d2d
   short_sha: a967e0f
   datetime: "2026-05-06T09:18:58+02:00"
@@ -54,9 +60,3 @@
   datetime: "2026-05-04T23:40:51+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/e0881527f336ed16d353691ff9fddde684d1bf83"
   message: 'feat: Swap-Deploy auf Vorbereitung begrenzen (J01-142)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: c7fa8e710b509dbb963129a996ebec7fe1b0f83b
-  short_sha: c7fa8e7
-  datetime: "2026-05-04T16:12:44+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c7fa8e710b509dbb963129a996ebec7fe1b0f83b"
-  message: 'docs: statische SFTP-Entry-Dateien dokumentieren (J01-140)'
