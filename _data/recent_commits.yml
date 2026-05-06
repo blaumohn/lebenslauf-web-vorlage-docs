@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: 2687b5152ec3c6a7f9d36fd84af9a9aa6baa5884
+  short_sha: 2687b51
+  datetime: "2026-05-06T11:57:41+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2687b5152ec3c6a7f9d36fd84af9a9aa6baa5884"
+  message: 'docs: J01-138-Abschluss in Runtime-Admin-Doku klären (J01-138)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 5044d5bfe9aeda6774f477253841e7c957e2e0fe
   short_sha: 5044d5b
   datetime: "2026-05-06T10:20:31+02:00"
@@ -54,9 +60,3 @@
   datetime: "2026-05-04T23:44:21+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2849d07cea2e5db4b193b23ebc9ebf62b3263ea6"
   message: 'docs: Zero-Downtime-Deploy-Schritt ergänzen (J01-142)'
-- repo: lebenslauf-web-vorlage
-  sha: 9cc573b5aea197b0222c536060767e49fe3da973
-  short_sha: 9cc573b
-  datetime: "2026-05-04T23:41:51+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9cc573b5aea197b0222c536060767e49fe3da973"
-  message: 'test: Swap-Deploy-Tests temporär deaktivieren (J01-142)'

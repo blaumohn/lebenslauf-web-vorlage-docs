@@ -718,6 +718,25 @@
     ],
     "issueLinks": []
   },
+  "J01-143": {
+    "summary": "Doku-GitHub-Einbau für automatische Aktualisierung bewerten",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-05-06T12:07:00.556+0200",
+    "parent": "J01-84",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [
+      "docs",
+      "github-pages",
+      "tooling"
+    ],
+    "issueLinks": []
+  },
   "J01-16": {
     "summary": "Runtime: Concurrency, Locking und atomare Zugriffe",
     "issuetype": "Task",
