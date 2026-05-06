@@ -24,6 +24,28 @@ uncontrolled logs.
 Success criterion: Runtime-admin results have a documented return channel that
 does not rely on uncontrolled console output for preview/production.
 
+## Closure 2026-05-06
+
+J01-140 is done in Jira Cloud. The closing state comes from the ongoing Claude
+session `4fe85d48-3c41-482a-86b8-11cad187ee02`; that session is still running
+and was used here only for the completed J01-140 part.
+
+Implemented closing state:
+
+- `MailMessage` carries module, title, and body; the subject is derived from
+  app name, module, and title.
+- `MailService` is the shared mail service for the contact form and
+  runtime-admin return messages.
+- The recipient is read centrally from `MAIL_TO_EMAIL` and validated.
+- `CONTACT_TO_EMAIL` no longer belongs to the active config path.
+- CI/preview use the SMTP/Mailpit path; the contact-form smoke test checks the
+  actual recipient.
+- The source repo records the state in commit `15686cd`:
+  `feat(mail): MailMessage/MailService verallgemeinern, MAIL_TO_EMAIL einführen (J01-140)`.
+
+J01-139 remains in progress and uses this return channel for CV-token rotation
+as a runtime-admin action.
+
 ## Boundary
 
 J01-140 remains the issue for the controlled return channel. The runtime-admin
@@ -65,9 +87,9 @@ Current implementation state:
 
 | Checkpoint | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| SMTP path | Preview/production use a mail return channel | Configuration or test | open |
-| Dev path | `mail_stdout` remains clearly bounded as a dev helper | Runbook or config docs | open |
-| Log protection | Sensitive results do not appear in uncontrolled logs | Test or review | open |
+| SMTP path | Preview/production use a mail return channel | `MailService`, `MAIL_TO_EMAIL`, Mailpit/contact smoke, commit `15686cd` | done |
+| Dev path | `mail_stdout` remains clearly bounded as a dev helper | `MAIL_STDOUT`, `MailService::sendToStdout()` | done |
+| Log protection | Sensitive results do not appear in uncontrolled logs | Return uses deliberate mail sending in the handler; J01-139 remains open for token-specific output | done |
 | SFTP deploy state | `.deploy-state.ini` is the SSOT for deploy script state | `scripts/sftp_deploy_state.py`, `scripts/sftp-deploy.py`, `scripts/sftp-read-vendor-build-id.py` | done |
 | SFTP deploy flow | Command edge and deploy flow are separated | `scripts/sftp-deploy.py` (`main()`, `SftpDeploy`) | done |
 | SFTP deploy resources | Static entry files live under the HTTP resources | `src/resources/http/index.php`, `src/resources/http/.htaccess` | done |

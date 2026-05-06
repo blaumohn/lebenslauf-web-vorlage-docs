@@ -25,6 +25,28 @@ Erfolgskriterium: Runtime-Admin-Ergebnisse haben einen dokumentierten
 Rückkanal, der für Preview/Produktion nicht auf unkontrollierte Konsolenausgabe
 angewiesen ist.
 
+## Abschluss 2026-05-06
+
+J01-140 ist in Jira Cloud erledigt. Der Abschlussstand stammt aus der laufenden
+Claude-Sitzung `4fe85d48-3c41-482a-86b8-11cad187ee02`; die Sitzung läuft
+weiter, wurde hier aber nur für den abgeschlossenen J01-140-Teil ausgewertet.
+
+Umgesetzter Abschlussstand:
+
+- `MailMessage` trägt Modul, Titel und Text; der Betreff wird aus
+  App-Name, Modul und Titel gebildet.
+- `MailService` ist der gemeinsame Mail-Service für Kontaktformular und
+  Runtime-Admin-Rückmeldungen.
+- Der Empfänger wird zentral aus `MAIL_TO_EMAIL` gelesen und validiert.
+- `CONTACT_TO_EMAIL` wurde aus dem aktiven Config-Pfad abgelöst.
+- CI/Preview nutzen den SMTP-/Mailpit-Pfad; der Kontaktformular-Smoke prüft
+  den tatsächlichen Empfänger.
+- Der Stand ist im App-Repo mit Commit `15686cd` dokumentiert:
+  `feat(mail): MailMessage/MailService verallgemeinern, MAIL_TO_EMAIL einführen (J01-140)`.
+
+J01-139 bleibt in Bearbeitung und nutzt diesen Rückkanal für die
+CV-Token-Rotation als Runtime-Admin-Aktion.
+
 ## Abgrenzung
 
 J01-140 bleibt der Vorgang für den kontrollierten Rückkanal. Der
@@ -67,9 +89,9 @@ Aktueller Umsetzungsstand:
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| SMTP-Pfad | Preview/Produktion nutzen einen Mail-Rückkanal | Konfiguration oder Test | offen |
-| Dev-Pfad | `mail_stdout` bleibt klar als Dev-Hilfe abgegrenzt | Runbook oder Config-Doku | offen |
-| Log-Schutz | Sensible Ergebnisse erscheinen nicht in unkontrollierten Logs | Test oder Review | offen |
+| SMTP-Pfad | Preview/Produktion nutzen einen Mail-Rückkanal | `MailService`, `MAIL_TO_EMAIL`, Mailpit-/Kontakt-Smoke, Commit `15686cd` | erledigt |
+| Dev-Pfad | `mail_stdout` bleibt klar als Dev-Hilfe abgegrenzt | `MAIL_STDOUT`, `MailService::sendToStdout()` | erledigt |
+| Log-Schutz | Sensible Ergebnisse erscheinen nicht in unkontrollierten Logs | Rückgabe erfolgt über bewussten Mail-Versand im Handler; J01-139 bleibt für Token-spezifische Ausgabe offen | erledigt |
 | SFTP-Deploy-Zustand | `.deploy-state.ini` ist SSOT für Deploy-Skript-Zustand | `scripts/sftp_deploy_state.py`, `scripts/sftp-deploy.py`, `scripts/sftp-read-vendor-build-id.py` | umgesetzt |
 | SFTP-Deploy-Ablauf | Befehlsrand und Deploy-Ablauf sind getrennt | `scripts/sftp-deploy.py` (`main()`, `SftpDeploy`) | umgesetzt |
 | SFTP-Deploy-Ressourcen | Statische Entry-Dateien liegen unter den HTTP-Ressourcen | `src/resources/http/index.php`, `src/resources/http/.htaccess` | umgesetzt |

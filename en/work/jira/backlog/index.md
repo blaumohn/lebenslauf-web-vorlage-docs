@@ -29,7 +29,7 @@ Public Jira area (without Jira Cloud links).
 - [J01-135 — CI/CD-Tools: CV-Token-Erzeugung und Runtime-Admin-Betrieb]({{ "/en/jira/issues/J01-135/" | relative_url }})
   - [**135-1 Runtime-Admin-Auslösung über SFTP-Fahne und HTTP-Trigger modellieren**]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }}) — Done
   - [**135-2 Laufzeit-Admin-Betriebe-Gerüst und Zero-Downtime-Deploy-Switch festziehen**]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }}) — Done
-  - [**135-3 Mail-Rückkanal für Runtime-Admin-Ergebnisse festziehen**]({{ "/en/jira/issues/J01-135/steps/J01-140/" | relative_url }}) — In Progress
+  - [**135-3 Mail-Rückkanal für Runtime-Admin-Ergebnisse festziehen**]({{ "/en/jira/issues/J01-135/steps/J01-140/" | relative_url }}) — Done
   - [**135-4 Admin-Aktionsliste und Zugriffsschutz begrenzen**]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}) — To Do
   - [**135-5 CV-Token-Rotation als Runtime-Admin-Aktion umsetzen**]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}) — In Progress
 - [J01-28 — Analyse: Risikomuster und Befundliste]({{ "/en/jira/issues/J01-28/" | relative_url }})

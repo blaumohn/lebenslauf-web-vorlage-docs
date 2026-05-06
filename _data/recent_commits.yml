@@ -1,5 +1,11 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage-docs
+  sha: ef1046a3437525e261c044c0c817ef5d3d48dfd1
+  short_sha: ef1046a
+  datetime: "2026-05-06T13:21:25+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ef1046a3437525e261c044c0c817ef5d3d48dfd1"
+  message: 'docs: Pipeline-Spec-Beispielwerte schaerfen (J01-105)'
 - repo: pipeline-config-spec-php
   sha: fd402fb1a999c9c781aab29a7916442dc2ebc98c
   short_sha: fd402fb
@@ -54,9 +60,3 @@
   datetime: "2026-05-06T06:57:07+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c01fb87428d1b036cdb04efdaf00cb3d2c4bc51d"
   message: 'docs: J01-142 Admin-Deploy-Nachzug ergänzen (J01-142)'
-- repo: lebenslauf-web-vorlage
-  sha: 211091f22637bd135c04f6b61380cbc6b32107aa
-  short_sha: 211091f
-  datetime: "2026-05-06T06:05:09+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/211091f22637bd135c04f6b61380cbc6b32107aa"
-  message: 'refactor: clarify preview ci env flow (J01-142)'

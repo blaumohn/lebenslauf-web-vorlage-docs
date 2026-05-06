@@ -160,6 +160,10 @@ E) **KEP führt oft zu ADR**
 F) **`work/jira/` ist vorgang-genau**
 - Dorthin gehören öffentliche Arbeitsstände, Nachweise und offene Entscheidungen
   zu genau einem Jira-Vorgang.
+- Abschluss- und Statusaussagen folgen Jira Cloud als operativem SSOT: Wenn
+  eine Arbeitsdoku einen Vorgang als erledigt beschreibt, muss der Jira-Status
+  vorher oder im selben Arbeitsgang auf den passenden Abschlussstatus gesetzt
+  und danach die öffentliche Jira-Fläche gezielt nachgezogen werden.
 - Jede Seite unter `work/jira/J01-<KEY>/` nutzt dieselbe Grundstruktur:
   Ziel, aktueller Stand oder Abschlussbild, Überprüfungsplan, Links.
 - Öffentliche Schrittseiten unter

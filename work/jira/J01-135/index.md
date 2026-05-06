@@ -28,6 +28,11 @@ CI/CD-/Runtime-Admin-Betrieb.
   eingeordnet.
 - Die Arbeit ist gestartet; J01-138 und J01-142 sind als zusammenhängender
   Auslöse-/Switch-Unterbau erledigt.
+- J01-140 ist erledigt: Der Mail-Rückkanal läuft über den verallgemeinerten
+  `MailService`, `MailMessage` trägt Modul/Titel/Text, und `MAIL_TO_EMAIL`
+  ist der zentrale Empfänger aus der Pipeline-Config.
+- J01-139 bleibt der laufende Folgepunkt für die CV-Token-Rotation als
+  Runtime-Admin-Aktion.
 - Der Architektur-Nachtrag im `tagebuch` wurde in fünf prüfbare
   Untervorgänge zerlegt:
   - [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }})
@@ -62,9 +67,9 @@ CI/CD-/Runtime-Admin-Betrieb.
 | --- | --- | --- |
 | [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }}) | Runtime-Admin-Auslösung über SFTP-Fahne und HTTP-Trigger | erledigt |
 | [J01-142]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | Laufzeit-Admin-Betriebe-Gerüst und Zero-Downtime-Deploy-Switch | erledigt |
-| [J01-140]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | Mail-Rückkanal für Admin-Ergebnisse | offen |
+| [J01-140]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | Mail-Rückkanal für Admin-Ergebnisse | erledigt |
 | [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | Feste Admin-Aktionsliste und Zugriffsschutz | offen |
-| [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | CV-Token-Rotation als Runtime-Admin-Aktion | offen |
+| [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | CV-Token-Rotation als Runtime-Admin-Aktion | in Bearbeitung |
 
 ## Überprüfungsplan
 
@@ -72,9 +77,9 @@ CI/CD-/Runtime-Admin-Betrieb.
 | --- | --- | --- | --- |
 | Auslösung | Wartende Admin-Betriebe werden über einen begrenzten Auslöseweg erkannt | [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }}) und [J01-142]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | erledigt |
 | Admin-Gerüst | Runtime-Admin-Betriebe haben Task-Datei, Handler-Schnittstelle, Runner und Runtime-Kontext | [J01-142]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | erledigt |
-| Rückkanal | Admin-Ergebnisse werden kontrolliert zurückgemeldet | [J01-140]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | offen |
+| Rückkanal | Admin-Ergebnisse werden kontrolliert zurückgemeldet | [J01-140]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | erledigt |
 | Begrenzung | Admin-Trigger führt nur feste, prüfbare Aktionen aus | [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | offen |
-| CV-Token-Erzeugung | Ablauf ist reproduzierbar, profilgebunden und dokumentiert | [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | offen |
+| CV-Token-Erzeugung | Ablauf ist reproduzierbar, profilgebunden und dokumentiert | [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | in Bearbeitung |
 | Sprint-Zuordnung | Vorgang liegt in `SCRUM Sprint 4` mit `sprint-goal` | Jira Sprint Board | erledigt |
 
 ## Abschlussbild oder offene Punkte
