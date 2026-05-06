@@ -23,7 +23,7 @@ Regeln, Skills und öffentliche Doku zu vermischen.
 
 ## Jetzt umgesetzt
 
-- Workspace-`AGENTS.md` für `/Users/usr2/edv/werk` eingeführt
+- Workspace-`AGENTS.md` für den lokalen Projekt-Workspace eingeführt
 - Shared-Skill `arbeitsregeln` als kanonische Langfassung ergänzt
 - Dokumentationspflicht für jede Änderung als Always-on-Regel ergänzt
 - Klein-Commit-Regel für Always-on-Arbeit ergänzt:

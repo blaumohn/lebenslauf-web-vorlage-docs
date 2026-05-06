@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: a967e0f4d409cc4f5f2e6a530937d5b5ae615d2d
+  short_sha: a967e0f
+  datetime: "2026-05-06T09:18:58+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a967e0f4d409cc4f5f2e6a530937d5b5ae615d2d"
+  message: 'docs: J01-135 Schrittordnung schärfen (J01-142)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 6223452f6a8e97a27216539531cc02422d8053a1
   short_sha: 6223452
   datetime: "2026-05-06T07:21:18+02:00"
@@ -54,9 +60,3 @@
   datetime: "2026-05-04T16:12:44+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c7fa8e710b509dbb963129a996ebec7fe1b0f83b"
   message: 'docs: statische SFTP-Entry-Dateien dokumentieren (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: a4da21cbda85bea182f1c2d00bc5b3e42fa91211
-  short_sha: a4da21c
-  datetime: "2026-05-04T16:12:36+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a4da21cbda85bea182f1c2d00bc5b3e42fa91211"
-  message: 'refactor: statische SFTP-Entry-Dateien verwenden (J01-140)'

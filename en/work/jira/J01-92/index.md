@@ -20,7 +20,7 @@ rules, skills, and public docs.
 
 ## Implemented now
 
-- Added a workspace `AGENTS.md` for `/Users/usr2/edv/werk`
+- Added a workspace `AGENTS.md` for the local project workspace
 - Added the shared `arbeitsregeln` skill as the canonical long-form source
 - Added the documentation duty as an always-on rule for every change
 - Added the small-commit rule:

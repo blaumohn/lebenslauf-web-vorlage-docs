@@ -11,6 +11,11 @@ Subtasks (Schritte) bekommen eine konsistente Reihenfolge:
 - `customfield_10071` („Schritt-Nr“) wird aus Rank abgeleitet und als 1..n gesetzt.
 - Zusätzlich wird ein Summary-Prefix `<ParentNum>-<SchrittNum> ` gesetzt (z. B. `9-1 …`), damit Schritte auf dem Board eindeutig lesbar sind.
 
+This command does not change the Jira rank order itself. The order must be
+changed in Jira first, either by a human/agent on the board or through the Jira
+rank endpoint. The backfill then synchronizes only the metadata derived from
+that order.
+
 ## Voraussetzungen {#voraussetzungen}
 
 - Jira: Feld „Schritt-Nr“ (`customfield_10071`) ist für Issue-Type „Subtask“ setzbar (Projekt `J01`).
@@ -26,6 +31,16 @@ Subtasks (Schritte) bekommen eine konsistente Reihenfolge:
 4) Ausführen: gleicher Befehl ohne `--dry-run`.
 5) Verifizieren: Schritt-Nr und Summary-Prefix sind konsistent (per JQL/Issue-View).
 6) Nach Umrankieren: Backfill erneut ausführen (optional mit `--force`).
+7) Danach die öffentliche Jira-Fläche/Doku gezielt nachziehen und verifizieren.
+
+Example after a changed rank order:
+
+```bash
+atlassian jira ext backfill schritt-nr --parent J01-135 --force
+DOCS_REPO=<path-to-docs-repo> \
+  sh <path-to-skill-repo>/shared-tooling/jira-pages/update-public-jira-pages.sh \
+  --touched-keys J01-135,J01-139,J01-142
+```
 
 ## Rollback {#rollback}
 
