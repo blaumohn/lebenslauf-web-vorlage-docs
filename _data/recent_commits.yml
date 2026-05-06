@@ -1,5 +1,11 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage-docs
+  sha: c01fb87428d1b036cdb04efdaf00cb3d2c4bc51d
+  short_sha: c01fb87
+  datetime: "2026-05-06T06:57:07+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c01fb87428d1b036cdb04efdaf00cb3d2c4bc51d"
+  message: 'docs: J01-142 Admin-Deploy-Nachzug ergänzen (J01-142)'
 - repo: lebenslauf-web-vorlage
   sha: 211091f22637bd135c04f6b61380cbc6b32107aa
   short_sha: 211091f
@@ -54,9 +60,3 @@
   datetime: "2026-05-04T15:54:39+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/93f9e646ec409d3d7e14db38f67bd568b80b5641"
   message: 'docs: INI-Deploy-State dokumentieren (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: c0e45260af22dc5bfa5bbf90ddf5559150e769ff
-  short_sha: c0e4526
-  datetime: "2026-05-04T15:54:32+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c0e45260af22dc5bfa5bbf90ddf5559150e769ff"
-  message: 'refactor: Deploy-State als INI formatieren (J01-140)'

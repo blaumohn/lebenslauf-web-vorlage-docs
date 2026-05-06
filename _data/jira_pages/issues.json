@@ -1579,11 +1579,11 @@
   "J01-140": {
     "summary": "135-3 Mail-Rückkanal für Runtime-Admin-Ergebnisse festziehen",
     "issuetype": "Subtask",
-    "status": "Zu erledigen",
+    "status": "In Bearbeitung",
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-05-04T23:23:49.545+0200",
+    "updated": "2026-05-06T07:13:18.765+0200",
     "parent": "J01-135",
     "sprint": "-",
     "activeSprint": "-",
