@@ -1,6 +1,30 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 211091f22637bd135c04f6b61380cbc6b32107aa
+  short_sha: 211091f
+  datetime: "2026-05-06T06:05:09+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/211091f22637bd135c04f6b61380cbc6b32107aa"
+  message: 'refactor: clarify preview ci env flow (J01-142)'
+- repo: lebenslauf-web-vorlage
+  sha: a971aa5021d9bdf33c43bf4743dc4678194be2a0
+  short_sha: a971aa5
+  datetime: "2026-05-06T06:04:28+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a971aa5021d9bdf33c43bf4743dc4678194be2a0"
+  message: 'feat: Admin-Task-System und Deploy-Switcher aufbauen (J01-142)'
+- repo: lebenslauf-web-vorlage
+  sha: 57e814b60c3acc475d03c87061cad5abf9703d04
+  short_sha: 57e814b
+  datetime: "2026-05-05T10:04:44+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/57e814b60c3acc475d03c87061cad5abf9703d04"
+  message: 'refactor: inline preview ci compose service (J01-142)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 2849d07cea2e5db4b193b23ebc9ebf62b3263ea6
+  short_sha: 2849d07
+  datetime: "2026-05-04T23:44:21+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2849d07cea2e5db4b193b23ebc9ebf62b3263ea6"
+  message: 'docs: Zero-Downtime-Deploy-Schritt ergänzen (J01-142)'
+- repo: lebenslauf-web-vorlage
   sha: 9cc573b5aea197b0222c536060767e49fe3da973
   short_sha: 9cc573b
   datetime: "2026-05-04T23:41:51+02:00"
@@ -36,27 +60,3 @@
   datetime: "2026-05-04T15:54:32+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c0e45260af22dc5bfa5bbf90ddf5559150e769ff"
   message: 'refactor: Deploy-State als INI formatieren (J01-140)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 456cd28b4653b1ab5d669c36a811355e63baa584
-  short_sha: 456cd28
-  datetime: "2026-05-04T12:28:56+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/456cd28b4653b1ab5d669c36a811355e63baa584"
-  message: 'docs: JSON-Deploy-State als SSOT dokumentieren (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: 0c1e53fdd0cc7a82127c9ef967112540c9d86974
-  short_sha: 0c1e53f
-  datetime: "2026-05-04T12:28:45+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/0c1e53fdd0cc7a82127c9ef967112540c9d86974"
-  message: 'refactor: Deploy-State als JSON-SSOT verwenden (J01-140)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: ef39b59db3d62bf190076b07f21eb41f9c510936
-  short_sha: ef39b59
-  datetime: "2026-05-04T12:00:39+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ef39b59db3d62bf190076b07f21eb41f9c510936"
-  message: 'docs: App-Slot-Ressource dokumentieren (J01-140)'
-- repo: lebenslauf-web-vorlage
-  sha: 81160ace3835a2f3fd3b16466b64860b354facdf
-  short_sha: 81160ac
-  datetime: "2026-05-04T12:00:33+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/81160ace3835a2f3fd3b16466b64860b354facdf"
-  message: 'refactor: App-Slot-HTAccess klar benennen (J01-140)'

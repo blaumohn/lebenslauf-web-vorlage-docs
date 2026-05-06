@@ -44,15 +44,43 @@ The normal CI/CD path decides automatically from the active deploy state
 whether `deploy_fresh` or `deploy_swap` applies. The admin workflow can still
 force `deploy_fresh` when the server state is deliberately rebuilt.
 
+## Update 2026-05-06: App-Repo Implementation
+
+The boundary is now present in the app code. `deploy_swap` prepares the next
+target state without replacing the visible runtime file directly:
+
+- `scripts/sftp-deploy.py` uploads the new app/vendor slot and migrates tokens
+  from the active tree.
+- `PreparedDeployStore` writes a prepared INI file under
+  `var/admin/deploy-prepared/`.
+- `AdminTaskStore` creates a `deploy_switch` task under `var/admin/tasks/` and
+  references that prepared file.
+- `AdminTaskRunner` reads pending tasks server-side and passes them to the
+  matching handler.
+- `DeploySwitchTaskHandler` loads `PreparedDeployState` and calls
+  `DeploySwitcher`.
+- `DeploySwitcher` writes `.deploy-state.ini` through `RuntimeAtomicWriter`
+  under `RuntimeLockRunner`.
+
+Evidence in the app repo:
+
+- `src/Http/Admin/AdminTaskRunner.php`
+- `src/Http/Admin/Deploy/DeploySwitchTaskHandler.php`
+- `src/Http/Admin/Deploy/DeploySwitcher.php`
+- `src/Http/Admin/Deploy/PreparedDeployState.php`
+- `scripts/sftp_deploy_prepared.py`
+- `tests/php/AdminDeployTest.php`
+- `tests/py/test_sftp_deploy_prepared.py`
+
 ## Verification Plan
 
 | Checkpoint | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| Fresh boundary | `deploy_fresh` is described as an administrative rebuild without a zero-downtime swap | Design or implementation | open |
-| Swap preparation | `deploy_swap` writes only slots, tokens, prepared state, and admin task | Design or implementation | open |
-| Prepared state | Prepared files have unique names and are referenced by admin tasks | Code or spec | open |
-| Atomic PHP operation | PHP sets the visible switch point with a lock and `rename()` on `.deploy-state.ini` | Code path / test | open |
-| Runtime safety | Old state remains functional until the state switch; new state remains functional afterwards | Review / test | open |
+| Fresh boundary | `deploy_fresh` is described as an administrative rebuild without a zero-downtime swap | `scripts/sftp-deploy.py` | done |
+| Swap preparation | `deploy_swap` writes only slots, tokens, prepared state, and admin task | `scripts/sftp-deploy.py`, `scripts/sftp_deploy_prepared.py` | done |
+| Prepared state | Prepared files have unique names and are referenced by admin tasks | `PreparedDeployStore`, `AdminTaskStore`, `PreparedDeployState` | done |
+| Atomic PHP operation | PHP sets the visible switch point with a lock and `rename()` on `.deploy-state.ini` | `DeploySwitcher`, `RuntimeAtomicWriter`, `RuntimeLockRunner`, `AdminDeployTest` | done |
+| Runtime safety | Old state remains functional until the state switch; new state remains functional afterwards | SFTP does not write runtime state during `deploy_swap`; the switch happens only in the admin task | done |
 | Remote link | Jira points to the public working note | Jira remote link | done |
 
 ## Links

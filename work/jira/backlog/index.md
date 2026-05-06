@@ -31,7 +31,7 @@ permalink: /de/jira/backlog/
   - [**135-2 CV-Token-Rotation als Runtime-Admin-Aktion umsetzen**]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}) — In Bearbeitung
   - [**135-3 Mail-Rückkanal für Runtime-Admin-Ergebnisse festziehen**]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }}) — Zu erledigen
   - [**135-4 Admin-Aktionsliste und Zugriffsschutz begrenzen**]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }}) — Zu erledigen
-  - [**135-5 Zero-Downtime-Deploy-Umschaltung als Admin-Betrieb festziehen**]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }}) — Zu erledigen
+  - [**135-5 Zero-Downtime-Deploy-Umschaltung als Admin-Betrieb festziehen**]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }}) — In Bearbeitung
 - [J01-28 — Analyse: Risikomuster und Befundliste]({{ "/de/jira/issues/J01-28/" | relative_url }})
   - [**28-1 Befunde erfassen**]({{ "/de/jira/issues/J01-28/steps/J01-29/" | relative_url }}) — Zu erledigen
   - [**28-2 Priorisierung und Folge-Tickets**]({{ "/de/jira/issues/J01-28/steps/J01-30/" | relative_url }}) — Zu erledigen
@@ -54,7 +54,7 @@ permalink: /de/jira/backlog/
 
 ### [J01-6 — i18n für Seitenvorlagen und Templates]({{ "/de/jira/issues/J01-6/" | relative_url }})
 
-- [J01-137 — CV-Ausbildung: leere Komma-Trenner in Twig-Ausgabe vermeiden]({{ "/de/jira/issues/J01-137/" | relative_url }})
+- [J01-137 — Laufende CV-UI-Anpassungen Sprint 4]({{ "/de/jira/issues/J01-137/" | relative_url }})
 - [J01-46 — i18n: CLI- und Runtime-Nachrichten]({{ "/de/jira/issues/J01-46/" | relative_url }})
   - [**46-1 Message-IDs und Format definieren**]({{ "/de/jira/issues/J01-46/steps/J01-47/" | relative_url }}) — Zu erledigen
   - [**46-2 Ausgaben in App + Config-Lib umstellen**]({{ "/de/jira/issues/J01-46/steps/J01-48/" | relative_url }}) — Zu erledigen
