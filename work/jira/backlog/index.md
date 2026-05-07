@@ -65,8 +65,9 @@ permalink: /de/jira/backlog/
 ### [J01-7 — Production Deployment]({{ "/de/jira/issues/J01-7/" | relative_url }})
 
 - [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/de/jira/issues/J01-62/" | relative_url }})
-  - [**62-1 Branch-Mapping festlegen**]({{ "/de/jira/issues/J01-62/steps/J01-63/" | relative_url }}) — Zu erledigen
-  - [**62-2 Environment aktivieren**]({{ "/de/jira/issues/J01-62/steps/J01-64/" | relative_url }}) — Zu erledigen
+  - [**62-1 Mail im Deployment aktivieren**]({{ "/de/jira/issues/J01-62/steps/J01-144/" | relative_url }}) — Zu erledigen
+  - [**62-2 Branch-Mapping festlegen**]({{ "/de/jira/issues/J01-62/steps/J01-63/" | relative_url }}) — Zu erledigen
+  - [**62-3 Environment aktivieren**]({{ "/de/jira/issues/J01-62/steps/J01-64/" | relative_url }}) — Zu erledigen
 - [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/de/jira/issues/J01-65/" | relative_url }})
   - [**65-1 Artefaktliste festlegen**]({{ "/de/jira/issues/J01-65/steps/J01-66/" | relative_url }}) — Zu erledigen
   - [**65-2 Post-Deploy-Smoke definieren**]({{ "/de/jira/issues/J01-65/steps/J01-67/" | relative_url }}) — Zu erledigen

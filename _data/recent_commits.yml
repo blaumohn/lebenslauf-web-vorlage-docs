@@ -1,6 +1,36 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: ab9c2f1b1332e95be4a887226d29bd38fbe91274
+  short_sha: ab9c2f1
+  datetime: "2026-05-07T13:05:38+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ab9c2f1b1332e95be4a887226d29bd38fbe91274"
+  message: 'docs: Mail im Deployment dokumentieren (J01-144)'
+- repo: lebenslauf-web-vorlage
+  sha: b4b3c8251166a83db2e8339b98d6d2c18dad99eb
+  short_sha: b4b3c82
+  datetime: "2026-05-07T13:03:27+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b4b3c8251166a83db2e8339b98d6d2c18dad99eb"
+  message: 'test: Deployment-Mail-Smoke vorbereiten (J01-144)'
+- repo: lebenslauf-web-vorlage
+  sha: 2953262b3b716f4231d6b9585a644c4af80718fa
+  short_sha: 2953262
+  datetime: "2026-05-06T14:49:18+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2953262b3b716f4231d6b9585a644c4af80718fa"
+  message: 'test(J01-139): Feature-Test für CV-Token-Rotation via Admin-Endpunkt'
+- repo: lebenslauf-web-vorlage
+  sha: 39ae356fb82f6edc9f364e0b1a4fe2cf91614fbf
+  short_sha: 39ae356
+  datetime: "2026-05-06T14:13:54+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/39ae356fb82f6edc9f364e0b1a4fe2cf91614fbf"
+  message: 'feat: CV-Token-Rotation als Runtime-Admin-Aktion einführen (J01-139)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 7e59cfc7aaff4e9596e497e73613839679f91222
+  short_sha: 7e59cfc
+  datetime: "2026-05-06T13:59:52+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7e59cfc7aaff4e9596e497e73613839679f91222"
+  message: 'docs: J01-140 Abschluss in Jira nachziehen (J01-140)'
+- repo: lebenslauf-web-vorlage-docs
   sha: ef1046a3437525e261c044c0c817ef5d3d48dfd1
   short_sha: ef1046a
   datetime: "2026-05-06T13:21:25+02:00"
@@ -30,33 +60,3 @@
   datetime: "2026-05-06T11:57:41+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2687b5152ec3c6a7f9d36fd84af9a9aa6baa5884"
   message: 'docs: J01-138-Abschluss in Runtime-Admin-Doku klären (J01-138)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 5044d5bfe9aeda6774f477253841e7c957e2e0fe
-  short_sha: 5044d5b
-  datetime: "2026-05-06T10:20:31+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5044d5bfe9aeda6774f477253841e7c957e2e0fe"
-  message: 'docs: J01-135 Schritt-Backfill synchronisieren (J01-135)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: c32e84c381d187a91ab7e21613832df572c12cd8
-  short_sha: c32e84c
-  datetime: "2026-05-06T09:43:10+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c32e84c381d187a91ab7e21613832df572c12cd8"
-  message: 'docs: Schritt-Backfill-Grenze klarstellen (J01-92)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: a967e0f4d409cc4f5f2e6a530937d5b5ae615d2d
-  short_sha: a967e0f
-  datetime: "2026-05-06T09:18:58+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a967e0f4d409cc4f5f2e6a530937d5b5ae615d2d"
-  message: 'docs: J01-135 Schrittordnung schärfen (J01-142)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 6223452f6a8e97a27216539531cc02422d8053a1
-  short_sha: 6223452
-  datetime: "2026-05-06T07:21:18+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6223452f6a8e97a27216539531cc02422d8053a1"
-  message: 'docs: J01-140 Status im Jira-Dünnstand nachziehen (J01-140)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: c01fb87428d1b036cdb04efdaf00cb3d2c4bc51d
-  short_sha: c01fb87
-  datetime: "2026-05-06T06:57:07+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c01fb87428d1b036cdb04efdaf00cb3d2c4bc51d"
-  message: 'docs: J01-142 Admin-Deploy-Nachzug ergänzen (J01-142)'

@@ -65,8 +65,9 @@ Public Jira area (without Jira Cloud links).
 ### [J01-7 — Production Deployment]({{ "/en/jira/issues/J01-7/" | relative_url }})
 
 - [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/en/jira/issues/J01-62/" | relative_url }})
-  - [**62-1 Branch-Mapping festlegen**]({{ "/en/jira/issues/J01-62/steps/J01-63/" | relative_url }}) — To Do
-  - [**62-2 Environment aktivieren**]({{ "/en/jira/issues/J01-62/steps/J01-64/" | relative_url }}) — To Do
+  - [**62-1 Mail im Deployment aktivieren**]({{ "/en/jira/issues/J01-62/steps/J01-144/" | relative_url }}) — To Do
+  - [**62-2 Branch-Mapping festlegen**]({{ "/en/jira/issues/J01-62/steps/J01-63/" | relative_url }}) — To Do
+  - [**62-3 Environment aktivieren**]({{ "/en/jira/issues/J01-62/steps/J01-64/" | relative_url }}) — To Do
 - [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/en/jira/issues/J01-65/" | relative_url }})
   - [**65-1 Artefaktliste festlegen**]({{ "/en/jira/issues/J01-65/steps/J01-66/" | relative_url }}) — To Do
   - [**65-2 Post-Deploy-Smoke definieren**]({{ "/en/jira/issues/J01-65/steps/J01-67/" | relative_url }}) — To Do

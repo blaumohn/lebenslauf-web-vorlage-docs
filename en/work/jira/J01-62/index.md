@@ -5,7 +5,7 @@ permalink: /en/jira/issues/J01-62/
 jira_key: J01-62
 
 ---
-<!-- generated:jira:subtasks_cksum=3381336520 -->
+<!-- generated:jira:subtasks_cksum=458069282 -->
 
 {% include jira-state-head.html %}
 
@@ -24,5 +24,6 @@ Ziel: Production-Branch und Environment-Regeln verbindlich setzen.
 
 ## Subtasks
 
-- **62-1 Branch-Mapping festlegen** — To Do
-- **62-2 Environment aktivieren** — To Do
+- [**62-1 Mail im Deployment aktivieren**]({{ "/en/jira/issues/J01-62/steps/J01-144/" | relative_url }}) — To Do
+- **62-2 Branch-Mapping festlegen** — To Do
+- **62-3 Environment aktivieren** — To Do
