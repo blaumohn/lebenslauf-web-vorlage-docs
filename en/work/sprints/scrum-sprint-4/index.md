@@ -56,3 +56,10 @@ open the production deployment path in practice.
 - Production deployment needs clear branch, environment, and smoke-check
   boundaries early.
 - Sprint-admin work remains visible, but must not displace the two goal lines.
+
+## Remaining Work Before Production Deployment
+
+The concrete mail/token-admin remainder is tracked in
+[J01-135]({{ "/en/jira/issues/J01-135/" | relative_url }}). That issue remains
+the canonical checklist for preview mail, local token admin, admin hardening,
+and CI-preview follow-ups before production.

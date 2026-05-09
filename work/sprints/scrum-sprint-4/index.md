@@ -57,3 +57,10 @@ Production-Deployment-Pfad praktisch eröffnen.
   Smoke-Check-Grenzen.
 - Sprint-Admin-Arbeit bleibt sichtbar, darf aber die beiden Zielrichtungen
   nicht verdrängen.
+
+## Rest vor Production-Deployment
+
+Der konkrete Mail-/Token-Admin-Rest wird in
+[J01-135]({{ "/de/jira/issues/J01-135/" | relative_url }}) geführt. Dort
+bleibt die kanonische Restliste für Preview-Mail, lokalen Token-Admin,
+Admin-Härtung und CI-Preview-Nachzüge vor Production.

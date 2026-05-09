@@ -1,10 +1,58 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage
+  sha: d817a9747b2a0c2842d3bd851a16159ff1e439bb
+  short_sha: d817a97
+  datetime: "2026-05-09T10:32:54+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d817a9747b2a0c2842d3bd851a16159ff1e439bb"
+  message: 'chore(tooling): Linting-Konfiguration und Hilfswerkzeuge hinzufügen (J01-139)'
+- repo: lebenslauf-web-vorlage
+  sha: f4d6804069ec1ca895fb3f689ec1759b8e986e84
+  short_sha: f4d6804
+  datetime: "2026-05-09T10:32:28+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f4d6804069ec1ca895fb3f689ec1759b8e986e84"
+  message: 'refactor(workflows): GitHub Actions auf sftp-Secrets und Heredoc-Config umstellen (J01-139)'
+- repo: lebenslauf-web-vorlage
+  sha: 42bf5a4c4270a05a878570b5dff6da9a89afbeb8
+  short_sha: 42bf5a4
+  datetime: "2026-05-09T10:31:58+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/42bf5a4c4270a05a878570b5dff6da9a89afbeb8"
+  message: 'refactor(ci): CI/CD-Skripte auf stdin-Heredoc und sftp umstellen (J01-139)'
+- repo: lebenslauf-web-vorlage
+  sha: 1d514d37e58cb62c9c54dfe97c61c3f902a5b973
+  short_sha: 1d514d3
+  datetime: "2026-05-09T10:31:11+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1d514d37e58cb62c9c54dfe97c61c3f902a5b973"
+  message: 'test(php): Tests auf neue Config-Struktur und --overrides-Option anpassen (J01-139)'
+- repo: lebenslauf-web-vorlage
+  sha: 4689eaaa1152ff41e03484cdeb9cdab0ce9cd00f
+  short_sha: 4689eaa
+  datetime: "2026-05-09T10:30:05+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4689eaaa1152ff41e03484cdeb9cdab0ce9cd00f"
+  message: 'refactor(cli): PHP-Befehle auf --overrides-Option und initialize()-Hook umstellen (J01-139)'
+- repo: lebenslauf-web-vorlage
+  sha: df5ccbf382e016f87b0ee49c5de0a7bbdcd165ea
+  short_sha: df5ccbf
+  datetime: "2026-05-09T10:29:34+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/df5ccbf382e016f87b0ee49c5de0a7bbdcd165ea"
+  message: 'refactor(config): Pipeline-Config-Format auf Gruppenstruktur umstellen (J01-139)'
+- repo: pipeline-config-spec-php
+  sha: bb8559839550ca84aee1b8c101e42ad6ab497b16
+  short_sha: bb85598
+  datetime: "2026-05-08T18:25:55+02:00"
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/bb8559839550ca84aee1b8c101e42ad6ab497b16"
+  message: 'refactor(config): gruppenbasiertes Pipeline-Config-Format (J01-139)'
+- repo: pipeline-config-spec-php
+  sha: 279bc11397535fa422011e234fee4810eb66f1d3
+  short_sha: 279bc11
+  datetime: "2026-05-08T15:35:01+02:00"
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/279bc11397535fa422011e234fee4810eb66f1d3"
+  message: 'feat(config): cliVarsForPhase für env-basierte Overrides (J01-139)'
 - repo: lebenslauf-web-vorlage-docs
-  sha: ab9c2f1b1332e95be4a887226d29bd38fbe91274
-  short_sha: ab9c2f1
+  sha: 18b26c761d68e0a2b020976d6a60726ce4918550
+  short_sha: 18b26c7
   datetime: "2026-05-07T13:05:38+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ab9c2f1b1332e95be4a887226d29bd38fbe91274"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/18b26c761d68e0a2b020976d6a60726ce4918550"
   message: 'docs: Mail im Deployment dokumentieren (J01-144)'
 - repo: lebenslauf-web-vorlage
   sha: b4b3c8251166a83db2e8339b98d6d2c18dad99eb
@@ -12,51 +60,3 @@
   datetime: "2026-05-07T13:03:27+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b4b3c8251166a83db2e8339b98d6d2c18dad99eb"
   message: 'test: Deployment-Mail-Smoke vorbereiten (J01-144)'
-- repo: lebenslauf-web-vorlage
-  sha: 2953262b3b716f4231d6b9585a644c4af80718fa
-  short_sha: 2953262
-  datetime: "2026-05-06T14:49:18+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2953262b3b716f4231d6b9585a644c4af80718fa"
-  message: 'test(J01-139): Feature-Test für CV-Token-Rotation via Admin-Endpunkt'
-- repo: lebenslauf-web-vorlage
-  sha: 39ae356fb82f6edc9f364e0b1a4fe2cf91614fbf
-  short_sha: 39ae356
-  datetime: "2026-05-06T14:13:54+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/39ae356fb82f6edc9f364e0b1a4fe2cf91614fbf"
-  message: 'feat: CV-Token-Rotation als Runtime-Admin-Aktion einführen (J01-139)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 7e59cfc7aaff4e9596e497e73613839679f91222
-  short_sha: 7e59cfc
-  datetime: "2026-05-06T13:59:52+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7e59cfc7aaff4e9596e497e73613839679f91222"
-  message: 'docs: J01-140 Abschluss in Jira nachziehen (J01-140)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: ef1046a3437525e261c044c0c817ef5d3d48dfd1
-  short_sha: ef1046a
-  datetime: "2026-05-06T13:21:25+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ef1046a3437525e261c044c0c817ef5d3d48dfd1"
-  message: 'docs: Pipeline-Spec-Beispielwerte schaerfen (J01-105)'
-- repo: pipeline-config-spec-php
-  sha: fd402fb1a999c9c781aab29a7916442dc2ebc98c
-  short_sha: fd402fb
-  datetime: "2026-05-06T13:21:17+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/fd402fb1a999c9c781aab29a7916442dc2ebc98c"
-  message: 'docs: Beispielwerte in Config-Spec klaeren (J01-105)'
-- repo: lebenslauf-web-vorlage
-  sha: 15686cd57fa46865223e9945df389401bc20508e
-  short_sha: 15686cd
-  datetime: "2026-05-06T13:07:44+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/15686cd57fa46865223e9945df389401bc20508e"
-  message: 'feat(mail): MailMessage/MailService verallgemeinern, MAIL_TO_EMAIL einführen (J01-140)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 477c7fb013fa6a2615f7c2878e137d707b1debed
-  short_sha: 477c7fb
-  datetime: "2026-05-06T12:08:41+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/477c7fb013fa6a2615f7c2878e137d707b1debed"
-  message: 'docs: Doku-GitHub-Einbau als Backlog-Vorgang anlegen (J01-143)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 2687b5152ec3c6a7f9d36fd84af9a9aa6baa5884
-  short_sha: 2687b51
-  datetime: "2026-05-06T11:57:41+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2687b5152ec3c6a7f9d36fd84af9a9aa6baa5884"
-  message: 'docs: J01-138-Abschluss in Runtime-Admin-Doku klären (J01-138)'

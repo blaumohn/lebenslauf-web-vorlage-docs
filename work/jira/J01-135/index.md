@@ -31,8 +31,17 @@ CI/CD-/Runtime-Admin-Betrieb.
 - J01-140 ist erledigt: Der Mail-Rückkanal läuft über den verallgemeinerten
   `MailService`, `MailMessage` trägt Modul/Titel/Text, und `MAIL_TO_EMAIL`
   ist der zentrale Empfänger aus der Pipeline-Config.
-- J01-139 bleibt der laufende Folgepunkt für die CV-Token-Rotation als
-  Runtime-Admin-Aktion.
+- J01-144 bereitet den Preview-Mail-Pfad im CI-Smoke vor; der echte
+  Mailtrap-Nachweis mit Preview-Environment-Werten bleibt vor Production
+  offen.
+- J01-139 hat die CV-Token-Rotation im Runtime-Admin-Gerüst technisch
+  erreicht: `cv_token_rotation` läuft über Task-Datei, `/admin/run`,
+  Runtime-Locks und Mail-Rückkanal. Offen ist noch der lokale
+  Preview-Admin-Befehl, der die Task-Datei per SFTP ablegt und den
+  HTTP-Trigger ausführt.
+- J01-141 bleibt der offene Härtungspunkt: feste Aktionsliste,
+  Parametergrenzen, Zugriffsschutz und Fehler-/Auditpfade müssen vor
+  Production nachvollziehbar geprüft sein.
 - Der Architektur-Nachtrag im `tagebuch` wurde in fünf prüfbare
   Untervorgänge zerlegt:
   - [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }})
@@ -79,13 +88,23 @@ CI/CD-/Runtime-Admin-Betrieb.
 | Admin-Gerüst | Runtime-Admin-Betriebe haben Task-Datei, Handler-Schnittstelle, Runner und Runtime-Kontext | [J01-142]({{ "/de/jira/issues/J01-135/steps/J01-142/" | relative_url }}) | erledigt |
 | Rückkanal | Admin-Ergebnisse werden kontrolliert zurückgemeldet | [J01-140]({{ "/de/jira/issues/J01-135/steps/J01-140/" | relative_url }}) | erledigt |
 | Begrenzung | Admin-Trigger führt nur feste, prüfbare Aktionen aus | [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | offen |
-| CV-Token-Erzeugung | Ablauf ist reproduzierbar, profilgebunden und dokumentiert | [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | in Bearbeitung |
+| CV-Token-Erzeugung | Token-Rotation läuft als Runtime-Admin-Task und ist lokal reproduzierbar auslösbar | [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | teilweise umgesetzt |
+| Preview-Mail | Preview versendet mit echten SMTP-/Mailtrap-Werten und ohne stdout-Rückfall | [J01-144]({{ "/de/jira/issues/J01-62/steps/J01-144/" | relative_url }}) | offen |
 | Sprint-Zuordnung | Vorgang liegt in `SCRUM Sprint 4` mit `sprint-goal` | Jira Sprint Board | erledigt |
 
 ## Abschlussbild oder offene Punkte
 
-- Offen ist, ob die Token-Erzeugung direkt in CI/CD läuft oder als
-  kontrollierter Admin-Betrieb mit klaren Prüfpunkten bleibt.
+Die letzte Vorbereitung vor Production besteht aus vier konkreten Punkten:
+
+- Preview-Mail mit echten Mailtrap-/Environment-Werten ausführen und
+  Abweichungen in `J01-144` nachziehen.
+- Lokalen Token-Admin-Befehl ergänzen: SFTP schreibt eine
+  `cv_token_rotation`-Task-Datei, danach triggert ein HTTP-GET `/admin/run`.
+- `J01-141` abschließen: erlaubte Admin-Aktionen benennen,
+  Parameter validieren und Zugriffsschutz/Auditierbarkeit prüfen.
+- CI-Preview-Konfiguration für Mail in
+  [J01-144]({{ "/de/jira/issues/J01-62/steps/J01-144/" | relative_url }})
+  stabilisieren.
 
 ## Links
 

@@ -23,13 +23,28 @@ Befehlsschnittstelle wird.
 Erfolgskriterium: Der Runtime-Admin-Trigger kann nur definierte, prüfbare
 Aktionen ausführen und erweitert die Angriffsfläche nicht unnötig.
 
+## Offener Härtungsschnitt vor Production
+
+Der aktuelle App-Stand hat bereits feste Handler für `deploy_switch` und
+`cv_token_rotation`; die Production-Vorbereitung braucht aber noch die
+explizite Härtung dieses Schnitts:
+
+- erlaubte Task-Typen öffentlich dokumentieren und im Code bewusst prüfen
+- Parameter je Task begrenzen, insbesondere Profilname und Token-Anzahl bei
+  `cv_token_rotation`
+- Fehlerfälle so melden, dass keine Tokens oder Secrets in Logs landen
+- Zugriffsschutz des `/admin/run`-Endpunkts gegen das bestehende
+  HTTP-Security-Modell prüfen
+- erfolgreiche und fehlerhafte Läufe auditierbar machen
+
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Aktionsliste | Erlaubte Admin-Aktionen sind fest benannt | Code oder Spec | offen |
+| Aktionsliste | Erlaubte Admin-Aktionen sind fest benannt | `deploy_switch`, `cv_token_rotation`, Doku/Code-Review | teilweise umgesetzt |
 | Parametergrenzen | Jede Aktion validiert ihre Eingaben | Test oder Codepfad | offen |
 | Zugriffsschutz | Trigger hängt am bestehenden Schutzmodell | Review / Test | offen |
+| Auditierbarkeit | Erfolg und Fehler sind nachvollziehbar, ohne Secrets auszugeben | Runbook / Test | offen |
 
 ## Links
 
