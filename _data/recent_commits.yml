@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: c56c51f383a43736d1178a802efd5e1dce37968d
+  short_sha: c56c51f
+  datetime: "2026-05-09T15:43:28+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c56c51f383a43736d1178a802efd5e1dce37968d"
+  message: 'docs: Jira-Sync-Cache reparieren (J01-139)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 995796d50028e52fe56bf2d8e1e9da2ffb786991
   short_sha: 995796d
   datetime: "2026-05-09T15:31:03+02:00"
@@ -54,9 +60,3 @@
   datetime: "2026-05-08T18:25:55+02:00"
   github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/bb8559839550ca84aee1b8c101e42ad6ab497b16"
   message: 'refactor(config): gruppenbasiertes Pipeline-Config-Format (J01-139)'
-- repo: pipeline-config-spec-php
-  sha: 279bc11397535fa422011e234fee4810eb66f1d3
-  short_sha: 279bc11
-  datetime: "2026-05-08T15:35:01+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/279bc11397535fa422011e234fee4810eb66f1d3"
-  message: 'feat(config): cliVarsForPhase für env-basierte Overrides (J01-139)'
