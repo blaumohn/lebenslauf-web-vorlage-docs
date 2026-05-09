@@ -36,9 +36,10 @@ CI/CD-/Runtime-Admin-Betrieb.
   offen.
 - J01-139 hat die CV-Token-Rotation im Runtime-Admin-Gerüst technisch
   erreicht: `cv_token_rotation` läuft über Task-Datei, `/admin/run`,
-  Runtime-Locks und Mail-Rückkanal. Offen ist noch der lokale
-  Preview-Admin-Befehl, der die Task-Datei per SFTP ablegt und den
-  HTTP-Trigger ausführt.
+  Runtime-Locks und Mail-Rückkanal. Offen ist noch der generische lokale
+  Preview-Admin-Befehl: `php bin/cli python ...` nimmt Admin-Betrieb plus
+  Argumente entgegen, ergänzt per SFTP die Admin-Betrieb-Liste und löst die
+  wartenden Betriebe per HTTP-GET aus.
 - J01-141 bleibt der offene Härtungspunkt: feste Aktionsliste,
   Parametergrenzen, Zugriffsschutz und Fehler-/Auditpfade müssen vor
   Production nachvollziehbar geprüft sein.
@@ -98,8 +99,9 @@ Die letzte Vorbereitung vor Production besteht aus vier konkreten Punkten:
 
 - Preview-Mail mit echten Mailtrap-/Environment-Werten ausführen und
   Abweichungen in `J01-144` nachziehen.
-- Lokalen Token-Admin-Befehl ergänzen: SFTP schreibt eine
-  `cv_token_rotation`-Task-Datei, danach triggert ein HTTP-GET `/admin/run`.
+- Generischen lokalen Admin-Befehl ergänzen: `php bin/cli python ...` nimmt
+  Betrieb plus Argumente entgegen, SFTP schreibt die Admin-Betrieb-Liste,
+  danach triggert ein HTTP-GET `/admin/run`.
 - `J01-141` abschließen: erlaubte Admin-Aktionen benennen,
   Parameter validieren und Zugriffsschutz/Auditierbarkeit prüfen.
 - CI-Preview-Konfiguration für Mail in

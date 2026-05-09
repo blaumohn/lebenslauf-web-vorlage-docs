@@ -45,12 +45,17 @@ J01-139:
 - Pipeline config was moved to grouped structure and `--overrides`; GitHub
   workflows pass SFTP/SMTP secrets as YAML heredoc to `bin/cd`.
 
-The actual preview operations command for token admin remains open:
+The actual preview operations command for local runtime-admin work remains
+open. The design is intentionally more general than a token-only script:
 
-- local trusted execution instead of a general GitHub workflow
+- one local command, executable through `php bin/cli python ...`
+- input: admin operation plus arguments, for example `cv_token_rotation` with
+  profile and token count
 - credentials from a local file with restrictive permissions
-- SFTP step to place the task file under `var/admin/tasks/`
-- HTTP GET against `/admin/run`
+- use the revised pipeline config so the data flow for SFTP/preview values
+  stays coherent
+- SFTP step to append the admin operation list under `var/admin/tasks/`
+- HTTP GET against `/admin/run` to trigger the waiting admin operations
 - E2E proof against preview, including mail return channel
 
 ## Verification Plan

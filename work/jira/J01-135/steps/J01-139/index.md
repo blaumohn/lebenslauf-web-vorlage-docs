@@ -47,12 +47,20 @@ J01-139 weitergebracht:
 - Die Pipeline-Config wurde auf Gruppenstruktur und `--overrides` umgestellt;
   GitHub-Workflows geben SFTP-/SMTP-Secrets als YAML-Heredoc an `bin/cd`.
 
-Offen bleibt der eigentliche Preview-Betriebsbefehl für Token-Admin:
+Offen bleibt der eigentliche Preview-Betriebsbefehl für lokale
+Runtime-Admin-Arbeiten. Der Entwurf ist bewusst allgemeiner als ein
+reines Token-Skript:
 
-- lokale, vertraute Ausführung statt allgemeiner GitHub-Workflow
+- ein einzelner lokaler Befehl, der über `php bin/cli python ...`
+  ausführbar ist
+- Eingabe: Admin-Betrieb plus Argumente, zum Beispiel
+  `cv_token_rotation` mit Profil und Token-Anzahl
 - Credentials aus einer lokalen Datei mit restriktiven Rechten
-- SFTP-Schritt zum Ablegen der Task-Datei unter `var/admin/tasks/`
-- HTTP-GET gegen `/admin/run`
+- Nutzung der überarbeiteten Pipeline-Config, damit der Datenfluss zu
+  SFTP-/Preview-Werten kohärent bleibt
+- SFTP-Schritt zum Ergänzen der Admin-Betrieb-Liste unter
+  `var/admin/tasks/`
+- HTTP-GET gegen `/admin/run` zum Auslösen der wartenden Admin-Betriebe
 - E2E-Nachweis gegen Preview, inklusive Mail-Rückkanal
 
 ## Überprüfungsplan

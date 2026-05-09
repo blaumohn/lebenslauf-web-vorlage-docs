@@ -33,8 +33,10 @@ CI/CD/runtime-admin operations.
   proof with preview environment values remains open before production.
 - J01-139 has technically reached CV-token rotation within the runtime-admin
   scaffold: `cv_token_rotation` runs through a task file, `/admin/run`,
-  runtime locks, and the mail return channel. The local preview admin command
-  that uploads the task file by SFTP and triggers HTTP is still open.
+  runtime locks, and the mail return channel. The generic local preview admin
+  command is still open: `php bin/cli python ...` receives the admin operation
+  plus arguments, appends the admin-operation list by SFTP, and triggers the
+  waiting operations by HTTP GET.
 - J01-141 remains the open hardening point: fixed action list, parameter
   boundaries, access protection, and error/audit paths must be checkable before
   production.
@@ -94,8 +96,9 @@ The last preparation before production consists of four concrete points:
 
 - Run preview mail with real Mailtrap/environment values and track deviations
   in `J01-144`.
-- Add the local token-admin command: SFTP writes a `cv_token_rotation` task
-  file, then an HTTP GET triggers `/admin/run`.
+- Add the generic local admin command: `php bin/cli python ...` receives the
+  operation plus arguments, SFTP writes the admin-operation list, then an
+  HTTP GET triggers `/admin/run`.
 - Finish `J01-141`: name allowed admin actions, validate parameters, and check
   access protection/auditability.
 - Stabilize preview-CI config for mail in

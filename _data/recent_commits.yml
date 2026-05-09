@@ -1,5 +1,11 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage-docs
+  sha: 062f241a403e2fe3124cbd1c4d26774ccd79d569
+  short_sha: 062f241
+  datetime: "2026-05-09T15:21:46+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/062f241a403e2fe3124cbd1c4d26774ccd79d569"
+  message: 'docs: Mail- und Token-Preview-Rest klären (J01-135)'
 - repo: lebenslauf-web-vorlage
   sha: d817a9747b2a0c2842d3bd851a16159ff1e439bb
   short_sha: d817a97
@@ -54,9 +60,3 @@
   datetime: "2026-05-07T13:05:38+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/18b26c761d68e0a2b020976d6a60726ce4918550"
   message: 'docs: Mail im Deployment dokumentieren (J01-144)'
-- repo: lebenslauf-web-vorlage
-  sha: b4b3c8251166a83db2e8339b98d6d2c18dad99eb
-  short_sha: b4b3c82
-  datetime: "2026-05-07T13:03:27+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b4b3c8251166a83db2e8339b98d6d2c18dad99eb"
-  message: 'test: Deployment-Mail-Smoke vorbereiten (J01-144)'
