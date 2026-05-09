@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: 995796d50028e52fe56bf2d8e1e9da2ffb786991
+  short_sha: 995796d
+  datetime: "2026-05-09T15:31:03+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/995796d50028e52fe56bf2d8e1e9da2ffb786991"
+  message: 'docs: Lokalen Admin-Befehl präzisieren (J01-139)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 062f241a403e2fe3124cbd1c4d26774ccd79d569
   short_sha: 062f241
   datetime: "2026-05-09T15:21:46+02:00"
@@ -54,9 +60,3 @@
   datetime: "2026-05-08T15:35:01+02:00"
   github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/279bc11397535fa422011e234fee4810eb66f1d3"
   message: 'feat(config): cliVarsForPhase für env-basierte Overrides (J01-139)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 18b26c761d68e0a2b020976d6a60726ce4918550
-  short_sha: 18b26c7
-  datetime: "2026-05-07T13:05:38+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/18b26c761d68e0a2b020976d6a60726ce4918550"
-  message: 'docs: Mail im Deployment dokumentieren (J01-144)'
