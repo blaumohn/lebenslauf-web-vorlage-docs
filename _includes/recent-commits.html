@@ -11,8 +11,21 @@
   {% endif %}
 {% endfor %}
 
+{% if has_project_commits or has_docs_commits %}
+<nav aria-label="{{ ui.recent_contents }}">
+  <ul>
+    {% if has_project_commits %}
+    <li><a href="#project-commits">{{ ui.recent_project_commits }}</a></li>
+    {% endif %}
+    {% if has_docs_commits %}
+    <li><a href="#docs-commits">{{ ui.recent_docs_commits }}</a></li>
+    {% endif %}
+  </ul>
+</nav>
+{% endif %}
+
 {% if has_project_commits %}
-<h2>{{ ui.recent_project_commits }}</h2>
+<h2 id="project-commits">{{ ui.recent_project_commits }}</h2>
 <table class="recent-commits">
   <thead>
     <tr>
@@ -38,7 +51,7 @@
 {% endif %}
 
 {% if has_docs_commits %}
-<h2>{{ ui.recent_docs_commits }}</h2>
+<h2 id="docs-commits">{{ ui.recent_docs_commits }}</h2>
 <table class="recent-commits">
   <thead>
     <tr>

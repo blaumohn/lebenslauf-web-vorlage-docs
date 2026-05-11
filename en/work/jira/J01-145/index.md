@@ -38,6 +38,7 @@ Canonical public working note for ongoing documentation maintenance in
 | --- | --- | --- | --- | --- |
 | 2026-05-11 | `docs: laufende doku-wartung verankern (J01-145)` | `J01-145`, `J01-113` | Programming guidelines | Domain style rules explain top-to-bottom readability for the main flow of program files without turning it into a rigid sorting rule; `J01-113` only points to this ongoing maintenance issue. |
 | 2026-05-11 | `docs: doku-commits im recent-feed trennen (J01-145)` | `J01-145` | Recent changes | Documentation commits are shown in a separate table on `/recent/`. |
+| 2026-05-11 | `docs: recent-feed mit inhaltsliste erweitern (J01-145)` | `J01-145` | Recent changes | `/recent/` shows a contents list and up to 10 project/config commits plus 10 documentation commits. |
 
 ## Verification
 

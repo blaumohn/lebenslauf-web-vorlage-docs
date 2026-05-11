@@ -10,6 +10,7 @@ PARENT_DIR=$(CDPATH= cd -- "$REPO_ROOT/.." && pwd)
 OUTPUT="$REPO_ROOT/_data/recent_commits.yml"
 RAWFILE="${TMPDIR:-/tmp}/recent_commits.$$.raw"
 TOP=10
+DOCS_REPO="lebenslauf-web-vorlage-docs"
 
 main() {
     : > "$RAWFILE"
@@ -48,8 +49,23 @@ write_output() {
     {
         printf '# Generiert von scripts/generate-recent-commits.sh\n'
         printf '# Nicht manuell bearbeiten.\n'
-        sort -r "$RAWFILE" | head -"$TOP" | format_entries
+        write_recent_project_entries
+        write_recent_docs_entries
     } > "$OUTPUT"
+}
+
+write_recent_project_entries() {
+    awk -F '\t' -v docs_repo="$DOCS_REPO" '$2 != docs_repo' "$RAWFILE" \
+        | sort -r \
+        | head -"$TOP" \
+        | format_entries
+}
+
+write_recent_docs_entries() {
+    awk -F '\t' -v docs_repo="$DOCS_REPO" '$2 == docs_repo' "$RAWFILE" \
+        | sort -r \
+        | head -"$TOP" \
+        | format_entries
 }
 
 format_entries() {
