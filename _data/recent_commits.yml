@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: 74d3af711805c58a87901db721387765719ec024
+  short_sha: 74d3af7
+  datetime: "2026-05-11T16:27:39+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/74d3af711805c58a87901db721387765719ec024"
+  message: 'docs: doku-commits im recent-feed trennen (J01-145)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 25ecc099e7fa8a746f9cdb30d171a045dd589319
   short_sha: 25ecc09
   datetime: "2026-05-11T16:02:27+02:00"
@@ -54,9 +60,3 @@
   datetime: "2026-05-09T10:31:58+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/42bf5a4c4270a05a878570b5dff6da9a89afbeb8"
   message: 'refactor(ci): CI/CD-Skripte auf stdin-Heredoc und sftp umstellen (J01-139)'
-- repo: lebenslauf-web-vorlage
-  sha: 1d514d37e58cb62c9c54dfe97c61c3f902a5b973
-  short_sha: 1d514d3
-  datetime: "2026-05-09T10:31:11+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1d514d37e58cb62c9c54dfe97c61c3f902a5b973"
-  message: 'test(php): Tests auf neue Config-Struktur und --overrides-Option anpassen (J01-139)'
