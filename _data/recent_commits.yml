@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b4b3c8251166a83db2e8339b98d6d2c18dad99eb"
   message: 'test: Deployment-Mail-Smoke vorbereiten (J01-144)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: b54823df167e4f231543c436bcf91d6f00943c77
+  short_sha: b54823d
+  datetime: "2026-05-11T16:37:00+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/b54823df167e4f231543c436bcf91d6f00943c77"
+  message: 'test: recent-feed-trennung absichern (J01-145)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 82d5592edef3cdffca4f34620d3bcf9828676a50
   short_sha: 82d5592
   datetime: "2026-05-11T16:35:34+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-05-06T13:59:52+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7e59cfc7aaff4e9596e497e73613839679f91222"
   message: 'docs: J01-140 Abschluss in Jira nachziehen (J01-140)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: ef1046a3437525e261c044c0c817ef5d3d48dfd1
-  short_sha: ef1046a
-  datetime: "2026-05-06T13:21:25+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ef1046a3437525e261c044c0c817ef5d3d48dfd1"
-  message: 'docs: Pipeline-Spec-Beispielwerte schaerfen (J01-105)'

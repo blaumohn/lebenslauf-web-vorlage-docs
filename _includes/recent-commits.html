@@ -15,17 +15,18 @@
 <nav aria-label="{{ ui.recent_contents }}">
   <ul>
     {% if has_project_commits %}
-    <li><a href="#project-commits">{{ ui.recent_project_commits }}</a></li>
+    <li><a href="#recent-project-commits">{{ ui.recent_project_commits }}</a></li>
     {% endif %}
     {% if has_docs_commits %}
-    <li><a href="#docs-commits">{{ ui.recent_docs_commits }}</a></li>
+    <li><a href="#recent-docs-commits">{{ ui.recent_docs_commits }}</a></li>
     {% endif %}
   </ul>
 </nav>
 {% endif %}
 
 {% if has_project_commits %}
-<h2 id="project-commits">{{ ui.recent_project_commits }}</h2>
+<section id="recent-project-commits">
+<h2>{{ ui.recent_project_commits }}</h2>
 <table class="recent-commits">
   <thead>
     <tr>
@@ -48,10 +49,12 @@
     {% endfor %}
   </tbody>
 </table>
+</section>
 {% endif %}
 
 {% if has_docs_commits %}
-<h2 id="docs-commits">{{ ui.recent_docs_commits }}</h2>
+<section id="recent-docs-commits">
+<h2>{{ ui.recent_docs_commits }}</h2>
 <table class="recent-commits">
   <thead>
     <tr>
@@ -74,6 +77,7 @@
     {% endfor %}
   </tbody>
 </table>
+</section>
 {% endif %}
 {% else %}
 <p>{{ ui.recent_empty }}</p>
