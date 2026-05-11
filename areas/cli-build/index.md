@@ -52,7 +52,7 @@ Vorgangsseite zu
 
 Der schmale Preview-Pfad für `J01-98` lautet:
 
-1. `php bin/cli config lint <pipeline>` prüft, ob Manifest und Quellenlogik
+1. `php bin/cli config <pipeline> lint` prüft, ob Manifest und Quellenlogik
    zusammenpassen.
 2. `php bin/cli setup preview` bereitet den Preview-Lauf vor.
 3. `php bin/cli build preview` erzeugt den auslieferbaren Stand.

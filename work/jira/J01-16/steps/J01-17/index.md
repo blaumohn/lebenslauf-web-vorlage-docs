@@ -106,7 +106,7 @@ repo-seitig abgeschlossen:
 
 - Commit `ee45a62` zieht `CaptchaService` und `RateLimiter` auf denselben
   Locking- und Atomic-Write-Stand wie in dieser Schrittdoku beschrieben.
-- `php bin/cli config lint dev` läuft grün.
+- `php bin/cli config dev lint` läuft grün.
 - `CaptchaServiceTest`, `RateLimiterTest` und die zugehörigen
   `ConcurrencyTest`-Fälle laufen mit gesetztem `TMPDIR` grün.
 

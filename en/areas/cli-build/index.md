@@ -50,7 +50,7 @@ issue page for
 
 The narrow preview path for `J01-98` is:
 
-1. `php bin/cli config lint <pipeline>` checks that the manifest and source
+1. `php bin/cli config <pipeline> lint` checks that the manifest and source
    logic fit together.
 2. `php bin/cli setup preview` prepares the preview run.
 3. `php bin/cli build preview` produces the deliverable state.

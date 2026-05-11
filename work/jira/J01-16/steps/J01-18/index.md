@@ -50,7 +50,7 @@ repo-seitig abgeschlossen:
 
 - Commit `8ab08e4` zieht `TokenService` samt letzter Verdrahtung in
   `AppContext` auf den in dieser Schrittdoku beschriebenen Stand.
-- `php bin/cli config lint dev` läuft grün.
+- `php bin/cli config dev lint` läuft grün.
 - `TokenServiceTest` und die zugehörigen `ConcurrencyTest`-Fälle laufen mit
   gesetztem `TMPDIR` grün.
 
