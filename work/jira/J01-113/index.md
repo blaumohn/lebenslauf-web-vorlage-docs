@@ -114,7 +114,8 @@ brauchen sie eine Autorenkonvention. Der Vorgang legt fest:
   projektfremde `tagebuch`-Notizen im KI-Lauf nicht pauschal dem
   Lebenslauf-Projekt und Jira zugeordnet werden dürfen, läuft als eigener
   Vorgang `J01-118`.
-- Umsetzung noch nicht begonnen.
+- Laufende Policy-Wartung wird nicht in diesem allgemeinen Vorgang
+  fortgeschrieben; sie läuft in `J01-145`.
 
 ## Regelwerk-Bestandsübersicht
 
@@ -156,5 +157,6 @@ den Anforderungsgruppen von J01-113, steht in der Anlage:
 - [J01-111: Epic KI-Regelwerk-Kohärenz und Prüfarchitektur]({{ "/de/jira/issues/J01-111/" | relative_url }})
 - [J01-115: KI-Prüfarchitektur]({{ "/de/jira/issues/J01-115/" | relative_url }})
 - [J01-118: Tagebuch-Kontext für projektfremde Notizen im KI-Agenten-Lauf schärfen]({{ "/de/jira/issues/J01-118/" | relative_url }})
+- [J01-145: Laufende Doku-Wartung Sprint 4]({{ "/de/jira/issues/J01-145/" | relative_url }})
 - [J01-92: Shared-Agent-Regeln und Skill-Versionierung]({{ "/de/jira/issues/J01-92/" | relative_url }})
 - [Jira-Arbeitsdokus]({{ "/de/jira/" | relative_url }})

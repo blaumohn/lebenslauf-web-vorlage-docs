@@ -1,6 +1,24 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
+  sha: 87e6e39f52b510ffdb6c77b69d1ee2178e3f212d
+  short_sha: 87e6e39
+  datetime: "2026-05-11T16:02:27+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/87e6e39f52b510ffdb6c77b69d1ee2178e3f212d"
+  message: 'docs: laufende doku-wartung verankern (J01-145)'
+- repo: pipeline-config-spec-php
+  sha: 659b3a2e8367788723049e1a9e3847589cb592ee
+  short_sha: 659b3a2
+  datetime: "2026-05-11T15:48:51+02:00"
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/659b3a2e8367788723049e1a9e3847589cb592ee"
+  message: 'feat(config): lokale Pipeline-Konfig nach .local/{pipeline}.yaml (J01-139)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 6375f81c7fa330905531b35e1da2ca1ed7963441
+  short_sha: 6375f81
+  datetime: "2026-05-09T23:12:19+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6375f81c7fa330905531b35e1da2ca1ed7963441"
+  message: 'docs: Schritt-Nummern-Backfill nachziehen (J01-62)'
+- repo: lebenslauf-web-vorlage-docs
   sha: c56c51f383a43736d1178a802efd5e1dce37968d
   short_sha: c56c51f
   datetime: "2026-05-09T15:43:28+02:00"
@@ -42,21 +60,3 @@
   datetime: "2026-05-09T10:31:11+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1d514d37e58cb62c9c54dfe97c61c3f902a5b973"
   message: 'test(php): Tests auf neue Config-Struktur und --overrides-Option anpassen (J01-139)'
-- repo: lebenslauf-web-vorlage
-  sha: 4689eaaa1152ff41e03484cdeb9cdab0ce9cd00f
-  short_sha: 4689eaa
-  datetime: "2026-05-09T10:30:05+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4689eaaa1152ff41e03484cdeb9cdab0ce9cd00f"
-  message: 'refactor(cli): PHP-Befehle auf --overrides-Option und initialize()-Hook umstellen (J01-139)'
-- repo: lebenslauf-web-vorlage
-  sha: df5ccbf382e016f87b0ee49c5de0a7bbdcd165ea
-  short_sha: df5ccbf
-  datetime: "2026-05-09T10:29:34+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/df5ccbf382e016f87b0ee49c5de0a7bbdcd165ea"
-  message: 'refactor(config): Pipeline-Config-Format auf Gruppenstruktur umstellen (J01-139)'
-- repo: pipeline-config-spec-php
-  sha: bb8559839550ca84aee1b8c101e42ad6ab497b16
-  short_sha: bb85598
-  datetime: "2026-05-08T18:25:55+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/bb8559839550ca84aee1b8c101e42ad6ab497b16"
-  message: 'refactor(config): gruppenbasiertes Pipeline-Config-Format (J01-139)'

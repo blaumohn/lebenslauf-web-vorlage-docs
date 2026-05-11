@@ -1,32 +1,53 @@
 ---
 layout: page
-title: Programmierleitlinien
+title: Programming guidelines
 permalink: /en/policies/programmierleitlinien/
 ---
 
-Diese Leitlinien sollen Code für Review, Wartung und Betrieb klar machen.
+These guidelines keep code clear for review, maintenance, and operations.
 
-## Struktur
+## Automated Checks
 
-- Kleine Funktionen: eine Aufgabe, klarer Name, frühe Rückgaben.
-- Geringe Verschachtelung (max. 2 Ebenen).
-- Keine tiefen Ausdrucksverschachtelungen: Zwischenschritte benennen.
+Automatable style and quality rules are maintained in linter configurations,
+not duplicated in this guideline.
 
-## Tests & Sicherheit
+As a compact example for the kind of style checks used here, see the
+[Pylint configuration in `lebenslauf-web-vorlage`](https://github.com/blaumohn/lebenslauf-web-vorlage/blob/main/.pylintrc).
 
-- Tests dort ergänzen, wo Fehler teuer wären (Parsing, I/O, Deploy-Pfade).
-- Secrets nie in Logs oder Doku.
-- Öffentliche Doku: keine Jira-Cloud-Links und keine personenbezogenen Daten.
+The concrete tools and values are maintained per repository in the respective
+linter configurations.
 
-## Dokumentation im Code
+## Domain Style Rules
 
-- Öffentliche Erklärungen in GitHub Pages.
-- Runbooks für Schrittfolgen (Betrieb/Wartung/Störung).
-- Entscheidungen als ADRs, Vorschläge als KEP-Lite.
+- Every function has exactly one clearly recognizable task.
+- Function names describe the task in concrete domain terms.
+- Program files should make the domain flow readable from top to bottom where
+  possible: purpose and main flow first, details afterwards.
+- Public functions, orchestration, and main paths come before small helper
+  functions unless the language or repository convention requires a different
+  order.
+- Helper functions live where they make the main flow understandable; if they
+  hide it, they belong in a separate module.
+- This ordering serves readability. Pure reordering without domain value is not
+  a standalone refactoring task.
 
-## Commits (Jira-Verknüpfung)
+## Tests & Safety
 
-- Commit-Messages enthalten einen Jira-Key (z. B. `J01-91`), damit Jira die
-  Änderung zuverlässig zuordnen kann.
-- Format: Conventional Commit + Jira-Key am Ende (empfohlen in Klammern).
-  Beispiel: `docs: drift-report strukturieren (J01-91)`
+- Relevant linting and test checks must pass before a change counts as done.
+- Add tests where failures would be expensive (parsing, I/O, deploy paths).
+- Never put secrets into logs or documentation.
+- Public documentation contains no Jira Cloud links and no personal data.
+
+## Documentation in Code
+
+- Public explanations belong in GitHub Pages.
+- Runbooks cover step-by-step procedures for operations, maintenance, and
+  incidents.
+- Decisions belong in ADRs; proposals belong in KEP-Lite documents.
+
+## Commits (Jira Link)
+
+- Commit messages contain a Jira key (for example `J01-91`) so Jira can assign
+  changes reliably.
+- Format: Conventional Commit + Jira key at the end, preferably in
+  parentheses. Example: `docs: drift-report strukturieren (J01-91)`

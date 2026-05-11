@@ -109,3 +109,4 @@ permalink: /de/jira/backlog/
 - [J01-109 — GitHub-Pages-Permalinks für öffentliche Jira-Doku angleichen]({{ "/de/jira/issues/J01-109/" | relative_url }})
 - [J01-117 — Projekt-Doku: Spec-Landkarte für Projekt, Systeme und Abläufe]({{ "/de/jira/issues/J01-117/" | relative_url }})
 - [J01-129 — BasePipelineCommand-Konfig als Objekt konsolidieren]({{ "/de/jira/issues/J01-129/" | relative_url }})
+- [J01-145 — Laufende Doku-Wartung Sprint 4]({{ "/de/jira/issues/J01-145/" | relative_url }})

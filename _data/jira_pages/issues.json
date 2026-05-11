@@ -1881,6 +1881,24 @@
     ],
     "issueLinks": []
   },
+  "J01-145": {
+    "summary": "Laufende Doku-Wartung Sprint 4",
+    "issuetype": "Task",
+    "status": "In Bearbeitung",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-05-11T15:32:30.082+0200",
+    "sprint": "SCRUM Sprint 4",
+    "activeSprint": "SCRUM Sprint 4",
+    "sprintRole": "Sprint-Ungeplant",
+    "labels": [
+      "docs",
+      "policy",
+      "sprint-unplanned"
+    ],
+    "issueLinks": []
+  },
   "J01-15": {
     "summary": "13-2 Testmatrix-Nachweise verlinken",
     "issuetype": "Subtask",

@@ -109,3 +109,4 @@ Public Jira area (without Jira Cloud links).
 - [J01-109 — GitHub-Pages-Permalinks für öffentliche Jira-Doku angleichen]({{ "/en/jira/issues/J01-109/" | relative_url }})
 - [J01-117 — Projekt-Doku: Spec-Landkarte für Projekt, Systeme und Abläufe]({{ "/en/jira/issues/J01-117/" | relative_url }})
 - [J01-129 — BasePipelineCommand-Konfig als Objekt konsolidieren]({{ "/en/jira/issues/J01-129/" | relative_url }})
+- [J01-145 — Laufende Doku-Wartung Sprint 4]({{ "/en/jira/issues/J01-145/" | relative_url }})
