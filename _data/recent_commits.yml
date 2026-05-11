@@ -1,10 +1,10 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage-docs
-  sha: 87e6e39f52b510ffdb6c77b69d1ee2178e3f212d
-  short_sha: 87e6e39
+  sha: 25ecc099e7fa8a746f9cdb30d171a045dd589319
+  short_sha: 25ecc09
   datetime: "2026-05-11T16:02:27+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/87e6e39f52b510ffdb6c77b69d1ee2178e3f212d"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/25ecc099e7fa8a746f9cdb30d171a045dd589319"
   message: 'docs: laufende doku-wartung verankern (J01-145)'
 - repo: pipeline-config-spec-php
   sha: 659b3a2e8367788723049e1a9e3847589cb592ee

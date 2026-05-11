@@ -11,6 +11,8 @@ de:
   recent_repo: Repo
   recent_commit: Commit
   recent_message: Nachricht
+  recent_project_commits: Projekt-Commits
+  recent_docs_commits: Doku-Commits
   recent_empty: Keine Commits vorhanden.
 en:
   site_title: CV Web Template
@@ -25,4 +27,6 @@ en:
   recent_repo: Repo
   recent_commit: Commit
   recent_message: Message
+  recent_project_commits: Project commits
+  recent_docs_commits: Documentation commits
   recent_empty: No commits available.

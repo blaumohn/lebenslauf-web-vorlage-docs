@@ -38,6 +38,7 @@ Kanonischer öffentlicher Arbeitsstand für laufende Doku-Wartung in
 | Datum | Commit-Spur | Betroffene Vorgänge | Bereich | Änderung |
 | --- | --- | --- | --- | --- |
 | 2026-05-11 | `docs: laufende doku-wartung verankern (J01-145)` | `J01-145`, `J01-113` | Programmierleitlinien | Fachliche Stilregeln erklären den von oben nach unten lesbaren Hauptfluss von Programmdateien ohne starre Sortierpflicht; `J01-113` verweist nur auf diesen laufenden Wartungsvorgang. |
+| 2026-05-11 | `docs: doku-commits im recent-feed trennen (J01-145)` | `J01-145` | Letzte Änderungen | Doku-Commits werden auf `/recent/` in einer eigenen Tabelle angezeigt. |
 
 ## Überprüfung
 

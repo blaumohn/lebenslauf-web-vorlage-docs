@@ -1,6 +1,18 @@
 {% assign ui = site.data.ui[include.lang | default: "de"] %}
 {% assign commits = site.data.recent_commits %}
 {% if commits and commits.size > 0 %}
+{% assign has_project_commits = false %}
+{% assign has_docs_commits = false %}
+{% for c in commits %}
+  {% if c.repo == "lebenslauf-web-vorlage-docs" %}
+    {% assign has_docs_commits = true %}
+  {% else %}
+    {% assign has_project_commits = true %}
+  {% endif %}
+{% endfor %}
+
+{% if has_project_commits %}
+<h2>{{ ui.recent_project_commits }}</h2>
 <table class="recent-commits">
   <thead>
     <tr>
@@ -12,15 +24,44 @@
   </thead>
   <tbody>
     {% for c in commits %}
+    {% unless c.repo == "lebenslauf-web-vorlage-docs" %}
     <tr>
       <td><time datetime="{{ c.datetime }}">{{ c.datetime | date: "%Y-%m-%d %H:%M" }}</time></td>
       <td>{{ c.repo }}</td>
       <td><a href="{{ c.github_url }}">{{ c.short_sha }}</a></td>
       <td>{{ c.message }}</td>
     </tr>
+    {% endunless %}
     {% endfor %}
   </tbody>
 </table>
+{% endif %}
+
+{% if has_docs_commits %}
+<h2>{{ ui.recent_docs_commits }}</h2>
+<table class="recent-commits">
+  <thead>
+    <tr>
+      <th>{{ ui.recent_date }}</th>
+      <th>{{ ui.recent_repo }}</th>
+      <th>{{ ui.recent_commit }}</th>
+      <th>{{ ui.recent_message }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for c in commits %}
+    {% if c.repo == "lebenslauf-web-vorlage-docs" %}
+    <tr>
+      <td><time datetime="{{ c.datetime }}">{{ c.datetime | date: "%Y-%m-%d %H:%M" }}</time></td>
+      <td>{{ c.repo }}</td>
+      <td><a href="{{ c.github_url }}">{{ c.short_sha }}</a></td>
+      <td>{{ c.message }}</td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
 {% else %}
 <p>{{ ui.recent_empty }}</p>
 {% endif %}
