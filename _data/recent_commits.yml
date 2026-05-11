@@ -1,5 +1,41 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
+- repo: lebenslauf-web-vorlage
+  sha: fe945d70e725ffff6f7613bf05af6fbb483a5147
+  short_sha: fe945d7
+  datetime: "2026-05-12T00:10:18+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/fe945d70e725ffff6f7613bf05af6fbb483a5147"
+  message: 'refactor: CLI-Pipeline-Syntax vereinheitlichen (J01-34)'
+- repo: lebenslauf-web-vorlage
+  sha: e64c902a55a92379cebe250f618bcb176af1cd7c
+  short_sha: e64c902
+  datetime: "2026-05-11T23:20:23+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/e64c902a55a92379cebe250f618bcb176af1cd7c"
+  message: 'fix(ci): Config-Fehler und Test-Suite beheben (J01-139)'
+- repo: lebenslauf-web-vorlage
+  sha: 94c908801551f8f2893246393742e6aaf21935fa
+  short_sha: 94c9088
+  datetime: "2026-05-11T23:19:43+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/94c908801551f8f2893246393742e6aaf21935fa"
+  message: 'refactor(cli): PythonRunner TTY-Streaming und PHP-CLI-Refactoring (J01-139)'
+- repo: lebenslauf-web-vorlage
+  sha: 0f0663b1ff9071af4033a85129a98d2962f38ccb
+  short_sha: 0f0663b
+  datetime: "2026-05-11T22:35:14+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/0f0663b1ff9071af4033a85129a98d2962f38ccb"
+  message: 'refactor(ci): SMTP- und Kontakt-Smoke vereinfachen (J01-139)'
+- repo: lebenslauf-web-vorlage
+  sha: 192874a565600be9260a54ace04bc92d96062786
+  short_sha: 192874a
+  datetime: "2026-05-11T22:25:33+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/192874a565600be9260a54ace04bc92d96062786"
+  message: 'feat(ci): CI-Runner und CiCommand einführen (J01-139)'
+- repo: lebenslauf-web-vorlage
+  sha: d18438758a2c0d95e7f22777981b66e68c9e601a
+  short_sha: d184387
+  datetime: "2026-05-11T22:18:13+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d18438758a2c0d95e7f22777981b66e68c9e601a"
+  message: 'refactor(deploy): SFTP-Bibliotheken nach src/cli/py/deploy/ verschieben (J01-139)'
 - repo: pipeline-config-spec-php
   sha: 659b3a2e8367788723049e1a9e3847589cb592ee
   short_sha: 659b3a2
@@ -24,42 +60,12 @@
   datetime: "2026-05-09T10:31:58+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/42bf5a4c4270a05a878570b5dff6da9a89afbeb8"
   message: 'refactor(ci): CI/CD-Skripte auf stdin-Heredoc und sftp umstellen (J01-139)'
-- repo: lebenslauf-web-vorlage
-  sha: 1d514d37e58cb62c9c54dfe97c61c3f902a5b973
-  short_sha: 1d514d3
-  datetime: "2026-05-09T10:31:11+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1d514d37e58cb62c9c54dfe97c61c3f902a5b973"
-  message: 'test(php): Tests auf neue Config-Struktur und --overrides-Option anpassen (J01-139)'
-- repo: lebenslauf-web-vorlage
-  sha: 4689eaaa1152ff41e03484cdeb9cdab0ce9cd00f
-  short_sha: 4689eaa
-  datetime: "2026-05-09T10:30:05+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4689eaaa1152ff41e03484cdeb9cdab0ce9cd00f"
-  message: 'refactor(cli): PHP-Befehle auf --overrides-Option und initialize()-Hook umstellen (J01-139)'
-- repo: lebenslauf-web-vorlage
-  sha: df5ccbf382e016f87b0ee49c5de0a7bbdcd165ea
-  short_sha: df5ccbf
-  datetime: "2026-05-09T10:29:34+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/df5ccbf382e016f87b0ee49c5de0a7bbdcd165ea"
-  message: 'refactor(config): Pipeline-Config-Format auf Gruppenstruktur umstellen (J01-139)'
-- repo: pipeline-config-spec-php
-  sha: bb8559839550ca84aee1b8c101e42ad6ab497b16
-  short_sha: bb85598
-  datetime: "2026-05-08T18:25:55+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/bb8559839550ca84aee1b8c101e42ad6ab497b16"
-  message: 'refactor(config): gruppenbasiertes Pipeline-Config-Format (J01-139)'
-- repo: pipeline-config-spec-php
-  sha: 279bc11397535fa422011e234fee4810eb66f1d3
-  short_sha: 279bc11
-  datetime: "2026-05-08T15:35:01+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/279bc11397535fa422011e234fee4810eb66f1d3"
-  message: 'feat(config): cliVarsForPhase für env-basierte Overrides (J01-139)'
-- repo: lebenslauf-web-vorlage
-  sha: b4b3c8251166a83db2e8339b98d6d2c18dad99eb
-  short_sha: b4b3c82
-  datetime: "2026-05-07T13:03:27+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b4b3c8251166a83db2e8339b98d6d2c18dad99eb"
-  message: 'test: Deployment-Mail-Smoke vorbereiten (J01-144)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 16e2f6ef1aca32f077ee890170c41432a004d834
+  short_sha: 16e2f6e
+  datetime: "2026-05-11T16:43:27+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/16e2f6ef1aca32f077ee890170c41432a004d834"
+  message: 'fix: recent-ui-texte im include aufloesen (J01-145)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 7b51fae284e676068f221d061d4896da5f1d390a
   short_sha: 7b51fae
@@ -114,9 +120,3 @@
   datetime: "2026-05-09T15:21:46+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/062f241a403e2fe3124cbd1c4d26774ccd79d569"
   message: 'docs: Mail- und Token-Preview-Rest klären (J01-135)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 18b26c761d68e0a2b020976d6a60726ce4918550
-  short_sha: 18b26c7
-  datetime: "2026-05-07T13:05:38+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/18b26c761d68e0a2b020976d6a60726ce4918550"
-  message: 'docs: Mail im Deployment dokumentieren (J01-144)'

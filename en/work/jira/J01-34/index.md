@@ -17,10 +17,36 @@ jira_key: J01-34
 
 ## Description
 
-Ziel: Konsistente Pipeline-Phase-Syntax und Missing-Config-Ausgabe.
+Goal: consistent pipeline-phase syntax and missing-config output.
 
-- Pipeline-Phase-Syntax definieren
-- Missing-Config-Befehl spezifizieren
+- Define the pipeline-phase syntax.
+- Specify the missing-config command.
+
+## Current Status
+
+Status 2026-05-12:
+
+- Pipeline-bound CLI commands are being aligned in the app repo to the common
+  shape `cli <command> <pipeline> ...`.
+- `BasePipelineCommand` is the shared place for the `pipeline` argument.
+- `config` changes from `config <action> <pipeline> ...` to
+  `config <pipeline> <action> ...`.
+- `setup --skip-python` is removed from the normal setup path.
+- Python linting no longer runs through `cli python`; it runs directly through
+  `.venv/bin/python tools/lint-python.py`.
+- `PythonRunner` no longer falls back to `python3`; pipeline-bound Python
+  commands require an existing `.venv`.
+
+## Verification Plan
+
+| Checkpoint | Expectation | Evidence / Location | Status |
+| --- | --- | --- | --- |
+| CLI signature | Pipeline commands show `<pipeline>` directly after the command | `php bin/cli help config`, `help token`, `help python`, `help setup` | done |
+| Config calls | `config dev lint --phase build` works | Local CLI call | done |
+| Python runner | Without `.venv/bin/python`, there is no `python3` fallback | `tests/php/PythonRunnerTest.php` | done |
+| Setup option | `setup` no longer offers `--skip-python` | `php bin/cli help setup` | done |
+| PHP tests | App test suite is green with a writable temp directory | `php -d sys_temp_dir=/private/tmp vendor/bin/phpunit` | done |
+| Python lint | New direct `.venv` call is wired; existing lint findings remain separate cleanup work | `composer --working-dir=lebenslauf-web-vorlage run lint:python` | open |
 
 ## Subtasks
 

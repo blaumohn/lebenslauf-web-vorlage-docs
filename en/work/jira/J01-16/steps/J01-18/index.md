@@ -47,7 +47,7 @@ closed in the source repo:
 
 - Commit `8ab08e4` moves `TokenService` plus the final `AppContext`
   wiring onto the state described on this page.
-- `php bin/cli config lint dev` is green.
+- `php bin/cli config dev lint` is green.
 - `TokenServiceTest` and the related `ConcurrencyTest` cases are green with
   `TMPDIR` set.
 

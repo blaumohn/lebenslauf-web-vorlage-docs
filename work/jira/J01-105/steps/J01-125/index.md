@@ -63,7 +63,7 @@ Bibliotheksvertrag nicht wieder vermischt werden.
   Verbraucherpfad liest `pipeline_phase` direkt aus dem strukturierten
   Kompilat ohne Legacy-Fallback.
 - Leere bekannte Phasen ohne Gruppenreferenzen werden akzeptiert; der
-  Verbraucherpfad `config lint dev --phase setup` läuft ohne
+  Verbraucherpfad `config dev lint --phase setup` läuft ohne
   App-Workaround.
 - Die endgültige Schema-Lesart ist festgezogen: kein Pseudo-`common`, keine
   `group-key`-Objektlisten und keine `policy`-Semantik.

@@ -67,7 +67,7 @@ andere Verwalter nur dann passend, wenn ihr eigenes Fachverhalten denselben
   Quell-Repo auf `feature/j01-16-runtime-locking` in zwei getrennten Commits
   nachgezogen:
   `ee45a62` für `J01-17` und `8ab08e4` für `J01-18`.
-- `php bin/cli config lint dev` läuft grün.
+- `php bin/cli config dev lint` läuft grün.
 - Die betroffenen PHPUnit-Tests für `CaptchaService`, `RateLimiter`,
   `TokenService` und `ConcurrencyTest` laufen mit gesetztem `TMPDIR` grün.
 

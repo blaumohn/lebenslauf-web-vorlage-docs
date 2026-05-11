@@ -66,7 +66,7 @@ other managers when their own domain flow truly requires the same transition.
   were now carried into the source repo on `feature/j01-16-runtime-locking`
   as two separate commits:
   `ee45a62` for `J01-17` and `8ab08e4` for `J01-18`.
-- `php bin/cli config lint dev` is green.
+- `php bin/cli config dev lint` is green.
 - The affected PHPUnit tests for `CaptchaService`, `RateLimiter`,
   `TokenService`, and `ConcurrencyTest` are green when run with `TMPDIR` set.
 

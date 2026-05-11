@@ -62,7 +62,7 @@ behavior do not drift apart again.
   path reads `pipeline_phase` directly from the structured compiled payload
   without a legacy fallback.
 - Known empty phases without group references are accepted; the consumer path
-  `config lint dev --phase setup` works without an app-side workaround.
+  `config dev lint --phase setup` works without an app-side workaround.
 - The final schema reading is fixed: no pseudo-`common`, no `group-key`
   object lists, and no `policy` semantics.
 - The German library README is aligned with the same schema reading and no
