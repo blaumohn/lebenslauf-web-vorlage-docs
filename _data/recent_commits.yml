@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b4b3c8251166a83db2e8339b98d6d2c18dad99eb"
   message: 'test: Deployment-Mail-Smoke vorbereiten (J01-144)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: 82d5592edef3cdffca4f34620d3bcf9828676a50
+  short_sha: 82d5592
+  datetime: "2026-05-11T16:35:34+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/82d5592edef3cdffca4f34620d3bcf9828676a50"
+  message: 'docs: recent-feed mit inhaltsliste erweitern (J01-145)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 74d3af711805c58a87901db721387765719ec024
   short_sha: 74d3af7
   datetime: "2026-05-11T16:27:39+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-05-06T13:21:25+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ef1046a3437525e261c044c0c817ef5d3d48dfd1"
   message: 'docs: Pipeline-Spec-Beispielwerte schaerfen (J01-105)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 477c7fb013fa6a2615f7c2878e137d707b1debed
-  short_sha: 477c7fb
-  datetime: "2026-05-06T12:08:41+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/477c7fb013fa6a2615f7c2878e137d707b1debed"
-  message: 'docs: Doku-GitHub-Einbau als Backlog-Vorgang anlegen (J01-143)'

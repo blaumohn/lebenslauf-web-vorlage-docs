@@ -36,6 +36,14 @@ setup_docs_repo() {
     git init "$DOCS" --quiet
     git -C "$DOCS" config user.name "Test"
     git -C "$DOCS" config user.email "test@example.invalid"
+
+    i=1
+    while [ "$i" -le 12 ]; do
+        printf 'docs %s\n' "$i" > "$DOCS/docs-$i.md"
+        git -C "$DOCS" add "docs-$i.md"
+        git -C "$DOCS" commit -m "docs: docs Änderung $i" --quiet
+        i=$((i + 1))
+    done
 }
 
 run_script() {
@@ -56,6 +64,16 @@ check_output() {
     else
         pass "Artefakt-Commit korrekt gefiltert"
     fi
+
+    docs_count=$(grep -c "repo: lebenslauf-web-vorlage-docs$" "$OUT")
+    [ "$docs_count" -eq 10 ] \
+        && pass "Doku-Commits sind auf 10 Einträge begrenzt" \
+        || fail "Doku-Commit-Anzahl falsch: $docs_count"
+
+    project_count=$(grep -c "repo: lebenslauf-web-vorlage$" "$OUT")
+    [ "$project_count" -eq 1 ] \
+        && pass "Projekt-Commits werden getrennt erhalten" \
+        || fail "Projekt-Commit-Anzahl falsch: $project_count"
 }
 
 setup_source_repo
