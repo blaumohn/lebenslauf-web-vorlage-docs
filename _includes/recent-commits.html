@@ -1,4 +1,5 @@
-{% assign ui = site.data.ui[include.lang | default: "de"] %}
+{% assign recent_lang = include.lang | default: "de" %}
+{% assign ui = site.data.ui[recent_lang] %}
 {% assign commits = site.data.recent_commits %}
 {% if commits and commits.size > 0 %}
 {% assign has_project_commits = false %}
