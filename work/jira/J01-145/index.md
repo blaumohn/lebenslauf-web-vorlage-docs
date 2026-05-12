@@ -42,6 +42,7 @@ Kanonischer öffentlicher Arbeitsstand für laufende Doku-Wartung in
 | 2026-05-11 | `docs: recent-feed mit inhaltsliste erweitern (J01-145)` | `J01-145` | Letzte Änderungen | `/recent/` zeigt eine Inhaltsliste und bis zu 10 Projekt-/Konfigurationscommits plus 10 Doku-Commits. |
 | 2026-05-11 | `fix: recent-ui-texte im include aufloesen (J01-145)` | `J01-145` | Letzte Änderungen | Das Include löst die Sprache vor dem Zugriff auf `_data/ui.yml` auf, damit Inhaltslinks und Abschnittstitel nicht leer bleiben. |
 | 2026-05-12 | offen | `J01-145` | Programmierleitlinien | Fachliche Stilregeln sind in prüfbare Unterbereiche gegliedert; Fallbacks werden als eigene Programmpfad-Zweige beschrieben, die Fehler nicht verdecken dürfen. |
+| 2026-05-12 | offen | `J01-145`, `J01-34` | Jira-Seiten-Sync | Der EN-Sync überschreibt manuell gepflegte englische Jira-Seiten nicht mehr mit generierten DE-Seiten; `J01-34` bleibt nach `prepare-site.sh` englisch. |
 
 ## Überprüfung
 
@@ -51,6 +52,7 @@ Kanonischer öffentlicher Arbeitsstand für laufende Doku-Wartung in
 | DE/EN-Policy | Deutsche und englische Programmierleitlinie sind inhaltlich gleichwertig | `policies/programmierleitlinien/`, `en/policies/programmierleitlinien/` | erledigt |
 | Keine starre Sortierpflicht | Die Regel beschreibt Lesbarkeit und fachlichen Hauptfluss statt mechanischer Umordnung | Abschnitt `Fachliche Stilregeln` | erledigt |
 | Fallback-Regel | Fallbacks sind nur als gültige, benannte und getestete Programmpfad-Zweige zulässig | Abschnitt `Fallbacks verdecken keine Fehler` | erledigt |
+| EN-Sync schützt manuelle Seiten | Manuell gepflegte EN-Jira-Seiten behalten ihre Übersetzung nach `prepare-site.sh` | `scripts/sync-en-jira-pages.sh`, `en/work/jira/J01-34/index.md` | erledigt |
 | Remote-Link | Jira verweist auf die kanonische öffentliche Arbeitsdoku | Jira-Remote-Link auf `/de/jira/issues/J01-145/` | erledigt |
 
 ## Offene Punkte

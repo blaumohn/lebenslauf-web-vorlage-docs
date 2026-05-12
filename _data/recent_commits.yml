@@ -61,24 +61,23 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/94c908801551f8f2893246393742e6aaf21935fa"
   message: 'refactor(cli): PythonRunner TTY-Streaming und PHP-CLI-Refactoring (J01-139)'
 - repo: lebenslauf-web-vorlage-docs
-<<<<<<< HEAD
-  sha: 52c0173e88e58fcd7bc805d32e4be4fc1fb19257
-  short_sha: 52c0173
+  sha: 08054b4d6497769fc17bfc75347b16570de4d9e2
+  short_sha: 08054b4
   datetime: "2026-05-12T15:03:31+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/52c0173e88e58fcd7bc805d32e4be4fc1fb19257"
-=======
-  sha: 451182da910911ca60def68b44101af2f07e4e2e
-  short_sha: 451182d
-  datetime: "2026-05-12T15:03:31+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/451182da910911ca60def68b44101af2f07e4e2e"
->>>>>>> 52c0173 (docs: programmierleitlinien zu fallbacks schaerfen (J01-145))
-  message: 'docs: programmierleitlinien zu fallbacks schaerfen (J01-145)'
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/08054b4d6497769fc17bfc75347b16570de4d9e2"
+  message: 'docs: programmierleitlinien zu fallbacks schärfen (J01-145)'
 - repo: lebenslauf-web-vorlage-docs
   sha: a0e0133d2c75dfccec47bf97b2d65a3623e9b39d
   short_sha: a0e0133
   datetime: "2026-05-12T00:10:29+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a0e0133d2c75dfccec47bf97b2d65a3623e9b39d"
   message: 'docs: CLI-Pipeline-Syntax dokumentieren (J01-34)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 1fafc5cbcae14e495fc30e1b7a2b71f318cc0d33
+  short_sha: 1fafc5c
+  datetime: "2026-05-12T00:10:29+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/1fafc5cbcae14e495fc30e1b7a2b71f318cc0d33"
+  message: 'docs: CLI-Pipeline-Syntax dokumentieren (J01-144)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 16e2f6ef1aca32f077ee890170c41432a004d834
   short_sha: 16e2f6e
@@ -121,9 +120,3 @@
   datetime: "2026-05-09T23:12:19+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6375f81c7fa330905531b35e1da2ca1ed7963441"
   message: 'docs: Schritt-Nummern-Backfill nachziehen (J01-62)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: c56c51f383a43736d1178a802efd5e1dce37968d
-  short_sha: c56c51f
-  datetime: "2026-05-09T15:43:28+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c56c51f383a43736d1178a802efd5e1dce37968d"
-  message: 'docs: Jira-Sync-Cache reparieren (J01-139)'

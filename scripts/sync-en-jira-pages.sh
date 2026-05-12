@@ -8,6 +8,10 @@ is_generated_file() {
   sed -n '1,20p' "$1" | grep 'generated:jira:' >/dev/null 2>&1
 }
 
+is_managed_en_file() {
+  [ ! -f "$1" ] || is_generated_file "$1"
+}
+
 delete_generated_en_pages() {
   find en/work/jira -name '*.md' 2>/dev/null | while read -r file; do
     if is_generated_file "$file"; then
@@ -39,6 +43,10 @@ sync_generated_pages() {
     esac
 
     mkdir -p "$(dirname "$dest")"
+    if ! is_managed_en_file "$dest"; then
+      continue
+    fi
+
     cp "$src" "$dest"
 
     perl -0pi -e '

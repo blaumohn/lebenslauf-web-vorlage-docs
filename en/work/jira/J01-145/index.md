@@ -41,6 +41,7 @@ Canonical public working note for ongoing documentation maintenance in
 | 2026-05-11 | `docs: recent-feed mit inhaltsliste erweitern (J01-145)` | `J01-145` | Recent changes | `/recent/` shows a contents list and up to 10 project/config commits plus 10 documentation commits. |
 | 2026-05-11 | `fix: recent-ui-texte im include aufloesen (J01-145)` | `J01-145` | Recent changes | The include resolves the language before reading `_data/ui.yml` so contents links and section titles do not stay empty. |
 | 2026-05-12 | open | `J01-145` | Programming guidelines | Domain style rules are split into reviewable subsections; fallbacks are described as separate program-path branches that must not hide errors. |
+| 2026-05-12 | open | `J01-145`, `J01-34` | Jira page sync | The EN sync no longer overwrites manually maintained English Jira pages with generated DE pages; `J01-34` stays English after `prepare-site.sh`. |
 
 ## Verification
 
@@ -50,6 +51,7 @@ Canonical public working note for ongoing documentation maintenance in
 | DE/EN policy | German and English programming guidelines are content-equivalent | `policies/programmierleitlinien/`, `en/policies/programmierleitlinien/` | done |
 | No rigid sorting rule | The rule describes readability and domain main flow instead of mechanical reordering | `Domain Style Rules` section | done |
 | Fallback rule | Fallbacks are only allowed as valid, named, and tested program-path branches | `Fallbacks Do Not Hide Errors` section | done |
+| EN sync protects manual pages | Manually maintained EN Jira pages keep their translation after `prepare-site.sh` | `scripts/sync-en-jira-pages.sh`, `en/work/jira/J01-34/index.md` | done |
 | Remote link | Jira points to the canonical public work doc | Jira remote link to `/de/jira/issues/J01-145/` | done |
 
 ## Open Points
