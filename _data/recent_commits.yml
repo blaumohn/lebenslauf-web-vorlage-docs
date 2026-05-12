@@ -61,10 +61,17 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/94c908801551f8f2893246393742e6aaf21935fa"
   message: 'refactor(cli): PythonRunner TTY-Streaming und PHP-CLI-Refactoring (J01-139)'
 - repo: lebenslauf-web-vorlage-docs
+<<<<<<< HEAD
   sha: 52c0173e88e58fcd7bc805d32e4be4fc1fb19257
   short_sha: 52c0173
   datetime: "2026-05-12T15:03:31+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/52c0173e88e58fcd7bc805d32e4be4fc1fb19257"
+=======
+  sha: 451182da910911ca60def68b44101af2f07e4e2e
+  short_sha: 451182d
+  datetime: "2026-05-12T15:03:31+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/451182da910911ca60def68b44101af2f07e4e2e"
+>>>>>>> 52c0173 (docs: programmierleitlinien zu fallbacks schaerfen (J01-145))
   message: 'docs: programmierleitlinien zu fallbacks schaerfen (J01-145)'
 - repo: lebenslauf-web-vorlage-docs
   sha: a0e0133d2c75dfccec47bf97b2d65a3623e9b39d

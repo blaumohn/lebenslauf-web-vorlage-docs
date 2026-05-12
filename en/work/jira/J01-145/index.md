@@ -40,6 +40,7 @@ Canonical public working note for ongoing documentation maintenance in
 | 2026-05-11 | `docs: doku-commits im recent-feed trennen (J01-145)` | `J01-145` | Recent changes | Documentation commits are shown in a separate table on `/recent/`. |
 | 2026-05-11 | `docs: recent-feed mit inhaltsliste erweitern (J01-145)` | `J01-145` | Recent changes | `/recent/` shows a contents list and up to 10 project/config commits plus 10 documentation commits. |
 | 2026-05-11 | `fix: recent-ui-texte im include aufloesen (J01-145)` | `J01-145` | Recent changes | The include resolves the language before reading `_data/ui.yml` so contents links and section titles do not stay empty. |
+| 2026-05-12 | open | `J01-145` | Programming guidelines | Domain style rules are split into reviewable subsections; fallbacks are described as separate program-path branches that must not hide errors. |
 
 ## Verification
 
@@ -48,6 +49,7 @@ Canonical public working note for ongoing documentation maintenance in
 | Ongoing issue | Documentation maintenance does not run through a general old issue | `J01-145` | done |
 | DE/EN policy | German and English programming guidelines are content-equivalent | `policies/programmierleitlinien/`, `en/policies/programmierleitlinien/` | done |
 | No rigid sorting rule | The rule describes readability and domain main flow instead of mechanical reordering | `Domain Style Rules` section | done |
+| Fallback rule | Fallbacks are only allowed as valid, named, and tested program-path branches | `Fallbacks Do Not Hide Errors` section | done |
 | Remote link | Jira points to the canonical public work doc | Jira remote link to `/de/jira/issues/J01-145/` | done |
 
 ## Open Points

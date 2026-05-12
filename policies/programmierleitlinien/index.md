@@ -19,8 +19,15 @@ Linter-Konfigurationen gepflegt.
 
 ## Fachliche Stilregeln
 
+### Funktionen haben eine Aufgabe
+{: .policy-subtitle }
+
 - Jede Funktion hat genau eine klar erkennbare Aufgabe.
 - Funktionsnamen beschreiben die Aufgabe fachlich konkret.
+
+### Programmfluss bleibt von oben nach unten lesbar
+{: .policy-subtitle }
+
 - Programmdateien sollen den fachlichen Ablauf möglichst von oben nach unten
   lesbar machen: zuerst Zweck und Hauptfluss, danach Details.
 - Öffentliche Funktionen, Orchestrierung und Hauptpfade stehen vor
@@ -30,6 +37,17 @@ Linter-Konfigurationen gepflegt.
   sie ihn verdecken, gehören sie in ein eigenes Modul.
 - Diese Sortierung dient der Verständlichkeit. Reine Umordnung ohne fachlichen
   Nutzen ist keine eigene Refaktorierungsaufgabe.
+
+### Fallbacks verdecken keine Fehler
+{: .policy-subtitle }
+
+- Fallbacks sind eigene Programmpfad-Zweige. Sie sind nur zulässig, wenn der
+  abgedeckte Randfall fachlich gültig, benannt und getestet ist.
+- Fallbacks dürfen fehlende Pflichtwerte, ungültige Zustände oder falsche
+  Kopplungen nicht verdecken. Solche Fälle müssen durch Validierung, klare
+  Fehlermeldungen oder bewusstes Abbrechen sichtbar werden.
+- Stille Legacy-, Komfort- oder Platzhalter-Fallbacks werden entfernt, wenn sie
+  keinen gültigen fachlichen Alternativpfad abbilden.
 
 ## Tests & Sicherheit
 

@@ -120,6 +120,17 @@
   color: #555;
 }
 
+.post-content .policy-subtitle {
+  margin-bottom: 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 550;
+  line-height: 1.35;
+}
+
+.post-content .policy-subtitle + ul {
+  margin-top: 0.2rem;
+}
+
 .jira-context-bar {
   display: flex;
   flex-wrap: wrap;

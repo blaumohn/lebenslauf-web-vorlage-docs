@@ -19,8 +19,15 @@ linter configurations.
 
 ## Domain Style Rules
 
+### Functions Have One Task
+{: .policy-subtitle }
+
 - Every function has exactly one clearly recognizable task.
 - Function names describe the task in concrete domain terms.
+
+### Program Flow Stays Readable From Top to Bottom
+{: .policy-subtitle }
+
 - Program files should make the domain flow readable from top to bottom where
   possible: purpose and main flow first, details afterwards.
 - Public functions, orchestration, and main paths come before small helper
@@ -30,6 +37,17 @@ linter configurations.
   hide it, they belong in a separate module.
 - This ordering serves readability. Pure reordering without domain value is not
   a standalone refactoring task.
+
+### Fallbacks Do Not Hide Errors
+{: .policy-subtitle }
+
+- Fallbacks are separate program-path branches. They are only allowed when the
+  covered edge case is valid in domain terms, named, and tested.
+- Fallbacks must not hide missing required values, invalid states, or wrong
+  couplings. Such cases must become visible through validation, clear error
+  messages, or deliberate failure.
+- Silent legacy, convenience, or placeholder fallbacks are removed when they do
+  not represent a valid domain-level alternative path.
 
 ## Tests & Safety
 
