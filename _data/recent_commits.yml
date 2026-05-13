@@ -1,6 +1,30 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 923679136ff30732d833acc625e497cfa537a92d
+  short_sha: 9236791
+  datetime: "2026-05-13T10:26:01+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/923679136ff30732d833acc625e497cfa537a92d"
+  message: 'test(deploy): Python-Tests ergänzen und AdminDeployTest anpassen (J01-144)'
+- repo: lebenslauf-web-vorlage
+  sha: f722f1819a65d74a8a5fec8bd927bb8d392222ea
+  short_sha: f722f18
+  datetime: "2026-05-13T10:06:38+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f722f1819a65d74a8a5fec8bd927bb8d392222ea"
+  message: 'fixup! refactor(cli): PipelineCfg einfuehren, Fallbacks entfernen (J01-144)'
+- repo: lebenslauf-web-vorlage
+  sha: b955fe7d7eb2bec13b95660a0f0832ca608156de
+  short_sha: b955fe7
+  datetime: "2026-05-13T09:54:36+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b955fe7d7eb2bec13b95660a0f0832ca608156de"
+  message: 'feat(deploy): GITHUB_RUN_ID-Korrelation und Run-Marker einführen (J01-144)'
+- repo: lebenslauf-web-vorlage
+  sha: 5e776d8c5f5dc4694a0c9d59dd07c2155de07cab
+  short_sha: 5e776d8
+  datetime: "2026-05-13T09:53:20+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/5e776d8c5f5dc4694a0c9d59dd07c2155de07cab"
+  message: 'ci(workflows): gemeinsamen Preview-CD-Workflow extrahieren (J01-144)'
+- repo: lebenslauf-web-vorlage
   sha: 0732849d723752085fa724e12bb894446112fd59
   short_sha: 0732849
   datetime: "2026-05-12T15:29:52+02:00"
@@ -36,30 +60,12 @@
   datetime: "2026-05-12T01:03:03+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/700348ae97d4680217cc1c3091b0258f9927814f"
   message: 'chore(ci): Skriptmodi bereinigen (J01-139)'
-- repo: lebenslauf-web-vorlage
-  sha: 5c8a58ad77a93fd330cd86f55b7955827035cd47
-  short_sha: 5c8a58a
-  datetime: "2026-05-12T00:59:33+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/5c8a58ad77a93fd330cd86f55b7955827035cd47"
-  message: 'fix(ci): Pipeline-Argumente schaerfen (J01-139)'
-- repo: lebenslauf-web-vorlage
-  sha: fe945d70e725ffff6f7613bf05af6fbb483a5147
-  short_sha: fe945d7
-  datetime: "2026-05-12T00:10:18+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/fe945d70e725ffff6f7613bf05af6fbb483a5147"
-  message: 'refactor: CLI-Pipeline-Syntax vereinheitlichen (J01-34)'
-- repo: lebenslauf-web-vorlage
-  sha: e64c902a55a92379cebe250f618bcb176af1cd7c
-  short_sha: e64c902
-  datetime: "2026-05-11T23:20:23+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/e64c902a55a92379cebe250f618bcb176af1cd7c"
-  message: 'fix(ci): Config-Fehler und Test-Suite beheben (J01-139)'
-- repo: lebenslauf-web-vorlage
-  sha: 94c908801551f8f2893246393742e6aaf21935fa
-  short_sha: 94c9088
-  datetime: "2026-05-11T23:19:43+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/94c908801551f8f2893246393742e6aaf21935fa"
-  message: 'refactor(cli): PythonRunner TTY-Streaming und PHP-CLI-Refactoring (J01-139)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 4f131e9162ec2284a060194e1e60c212f7e552bb
+  short_sha: 4f131e9
+  datetime: "2026-05-12T16:19:49+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4f131e9162ec2284a060194e1e60c212f7e552bb"
+  message: 'fix: manuellen en-jira-sync schuetzen (J01-145)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 08054b4d6497769fc17bfc75347b16570de4d9e2
   short_sha: 08054b4
@@ -114,9 +120,3 @@
   datetime: "2026-05-11T16:02:27+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/25ecc099e7fa8a746f9cdb30d171a045dd589319"
   message: 'docs: laufende doku-wartung verankern (J01-145)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 6375f81c7fa330905531b35e1da2ca1ed7963441
-  short_sha: 6375f81
-  datetime: "2026-05-09T23:12:19+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6375f81c7fa330905531b35e1da2ca1ed7963441"
-  message: 'docs: Schritt-Nummern-Backfill nachziehen (J01-62)'

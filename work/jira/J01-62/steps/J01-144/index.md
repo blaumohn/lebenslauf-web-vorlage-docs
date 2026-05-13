@@ -51,6 +51,30 @@ präzisiert:
 Für Production ist damit noch nicht der Mail-Funktionsnachweis selbst offen,
 sondern der reale Preview-Nachweis mit den späteren Environment-Werten.
 
+## Nachtrag 2026-05-13: Deploy-Korrelation
+
+Der Zero-Downtime-Switch benötigt eine eindeutige `GITHUB_RUN_ID`, damit der
+SFTP-Deploy vorbereitete Slots und PHP-Admin-Switch demselben Lauf zuordnen
+kann.
+
+- Die GitHub-Workflows übergeben die Laufkennung explizit über `env:` aus
+  `github.run_id` und `github.run_attempt`.
+- Der gemeinsame Preview-CD-Teil liegt in einem wiederverwendbaren GitHub
+  Workflow, damit Preview-Deploy und Admin-Reset dieselben Setup-, Konfig- und
+  Deploy-Schritte nutzen.
+- Die lokale Preview-CI erzeugt pro Testfall eine eigene `GITHUB_RUN_ID` im
+  CI-Runner und reicht sie über Docker Compose an den `ci-preview`-Container
+  weiter.
+- Der SFTP-Swap schreibt Run-Marker für App- und Vendor-Slot, bevor der
+  `deploy_switch` ausgelöst wird.
+- Der HTTP-Auslöser des Python-Admin-Dispatch nutzt per GET die registrierte
+  PHP-Route `/admin/run`.
+- `composer test` bleibt der kurze PHPUnit-Einstieg; die Python-Unit-Tests
+  laufen explizit über `composer run test:python` oder gemeinsam mit PHPUnit
+  über `composer run test:all`.
+- Der Python-Unit-Testlauf puffert Ausgaben erfolgreicher Tests, damit
+  erwartete Test-Nebenausgaben nicht in den normalen Testbericht laufen.
+
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
@@ -58,7 +82,9 @@ sondern der reale Preview-Nachweis mit den späteren Environment-Werten.
 | CI-Smoke | `composer run ci:preview` läuft mit SFTP-, HTTP-, SMTP- und Kontakt-Smokes durch | App-Repo, PR zu `J01-144` | erledigt |
 | SMTP-Auth | Falsches SMTP-Passwort wird im CI-Smoke abgelehnt, richtiges Passwort sendet Testmail | `tests/ci/smtp-smoke.py` | erledigt |
 | SFTP-Hostkey | Preview-CI braucht kein dynamisches `ssh-keyscan` mehr | `docker-compose.ci.yml`, `bin/ci` | erledigt |
-| CI-Preview-Konfig | `CI_TEST_CASE`, `SMTP_PORT: 1025` und read-only Inline-Konfig sind stabil | App-Repo, Codex-Nachzug | offen |
+| CI-Preview-Konfig | `CI_TEST_CASE`, `SMTP_PORT: 1025`, `GITHUB_RUN_ID` und read-only Inline-Konfig sind stabil | App-Repo, Codex-Nachzug | teilweise umgesetzt |
+| Python-Testlauf | Python-Unit-Tests laufen über `.venv/bin/python` nur bei explizitem Aufruf mit | `composer.json`, `tests/py` | umgesetzt |
+| Admin-Auslöser | SFTP-Deploy stößt nach Task-Upload per GET die registrierte Admin-Route an | `src/cli/py/admin/dispatch.py`, `tests/py/test_admin_dispatch.py` | umgesetzt |
 | Preview-Mailtrap | Preview-Deployment versendet über Mailtrap mit echten Environment-Werten | ausstehender manueller Preview-Test | offen |
 | Nachkorrektur | Abweichungen aus Mailtrap-Test sind im selben Schritt oder Folge-PR behoben | PR / Nachweisnotiz | offen |
 

@@ -47,6 +47,27 @@ The later Codex sessions further clarified the local CI preview line:
 For production, the open item is therefore not the mail feature itself, but
 the real preview proof with the later environment values.
 
+## Follow-up 2026-05-13: Deploy Correlation
+
+The zero-downtime switch needs a unique `GITHUB_RUN_ID` so the SFTP deploy can
+tie prepared slots and the PHP admin switch to the same run.
+
+- The GitHub workflows pass the run identifier explicitly through `env:` from
+  `github.run_id` and `github.run_attempt`.
+- The shared preview CD part lives in a reusable GitHub workflow so preview
+  deploy and admin reset use the same setup, config, and deploy steps.
+- Local preview CI creates a dedicated `GITHUB_RUN_ID` per test case in the CI
+  runner and passes it through Docker Compose to the `ci-preview` container.
+- The SFTP swap writes run markers for the app and vendor slots before
+  triggering `deploy_switch`.
+- The Python admin dispatch HTTP trigger uses the registered PHP route
+  `/admin/run` via GET.
+- `composer test` stays the short PHPUnit entry point; Python unit tests run
+  explicitly through `composer run test:python` or together with PHPUnit
+  through `composer run test:all`.
+- The Python unit test run buffers output from successful tests so expected
+  side-output does not leak into the normal test report.
+
 ## Verification Plan
 
 | Checkpoint | Expectation | Evidence / Location | Status |
@@ -54,7 +75,9 @@ the real preview proof with the later environment values.
 | CI smoke | `composer run ci:preview` passes with SFTP, HTTP, SMTP, and contact smokes | app repo, PR for `J01-144` | done |
 | SMTP auth | wrong SMTP password is rejected in CI smoke, correct password sends test mail | `tests/ci/smtp-smoke.py` | done |
 | SFTP host key | preview CI no longer needs dynamic `ssh-keyscan` | `docker-compose.ci.yml`, `bin/ci` | done |
-| CI preview config | `CI_TEST_CASE`, `SMTP_PORT: 1025`, and read-only inline config are stable | app repo, Codex follow-up | open |
+| CI preview config | `CI_TEST_CASE`, `SMTP_PORT: 1025`, `GITHUB_RUN_ID`, and read-only inline config are stable | app repo, Codex follow-up | partially done |
+| Python test run | Python unit tests run through `.venv/bin/python` only when explicitly requested | `composer.json`, `tests/py` | done |
+| Admin trigger | SFTP deploy triggers the registered admin route via GET after task upload | `src/cli/py/admin/dispatch.py`, `tests/py/test_admin_dispatch.py` | done |
 | Preview Mailtrap | preview deployment sends through Mailtrap with real environment values | pending manual preview test | open |
 | Follow-up fix | deviations from the Mailtrap test are fixed in this step or a follow-up PR | PR / evidence note | open |
 
