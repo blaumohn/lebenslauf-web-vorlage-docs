@@ -43,6 +43,10 @@ CI/CD-/Runtime-Admin-Betrieb.
 - J01-141 bleibt der offene Härtungspunkt: feste Aktionsliste,
   Parametergrenzen, Zugriffsschutz und Fehler-/Auditpfade müssen vor
   Production nachvollziehbar geprüft sein.
+- Der CI/CD-Ablauf meldet seine Hauptphasen jetzt über ein eigenes
+  Shell-Ausgabemodul. `bin/ci`, `bin/cd` und `run_pipeline` zeigen dadurch
+  Setup, Build, Tests, Artefaktprüfung, Deploy und Smoke-Checks als klare
+  Schritte, ohne die fachliche Reihenfolge im Pipeline-Code zu verdecken.
 - Der Architektur-Nachtrag im `tagebuch` wurde in fünf prüfbare
   Untervorgänge zerlegt:
   - [J01-138]({{ "/de/jira/issues/J01-135/steps/J01-138/" | relative_url }})
@@ -91,6 +95,7 @@ CI/CD-/Runtime-Admin-Betrieb.
 | Begrenzung | Admin-Trigger führt nur feste, prüfbare Aktionen aus | [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | offen |
 | CV-Token-Erzeugung | Token-Rotation läuft als Runtime-Admin-Task und ist lokal reproduzierbar auslösbar | [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | teilweise umgesetzt |
 | Preview-Mail | Preview versendet mit echten SMTP-/Mailtrap-Werten und ohne stdout-Rückfall | [J01-144]({{ "/de/jira/issues/J01-62/steps/J01-144/" | relative_url }}) | offen |
+| CI/CD-Ausgabe | Pipeline-Hauptschritte sind in Log und GitHub-Step-Summary sichtbar, ohne Secrets auszugeben | `scripts/pipeline_output.sh`, `scripts/pipeline_lib.sh`, `bin/ci`, `bin/cd` | umgesetzt |
 | Sprint-Zuordnung | Vorgang liegt in `SCRUM Sprint 4` mit `sprint-goal` | Jira Sprint Board | erledigt |
 
 ## Abschlussbild oder offene Punkte

@@ -1,65 +1,77 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
-  sha: 923679136ff30732d833acc625e497cfa537a92d
-  short_sha: 9236791
-  datetime: "2026-05-13T10:26:01+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/923679136ff30732d833acc625e497cfa537a92d"
-  message: 'test(deploy): Python-Tests ergänzen und AdminDeployTest anpassen (J01-144)'
+  sha: ca53d363ea3ef0b084012380a4baea7ee8047644
+  short_sha: ca53d36
+  datetime: "2026-05-14T19:48:25+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ca53d363ea3ef0b084012380a4baea7ee8047644"
+  message: 'feat: mache CI/CD-Schritte sichtbar (J01-135)'
 - repo: lebenslauf-web-vorlage
-  sha: f722f1819a65d74a8a5fec8bd927bb8d392222ea
-  short_sha: f722f18
-  datetime: "2026-05-13T10:06:38+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f722f1819a65d74a8a5fec8bd927bb8d392222ea"
-  message: 'fixup! refactor(cli): PipelineCfg einfuehren, Fallbacks entfernen (J01-144)'
+  sha: 18fcf94280beb3516d6fcecb3cf0f7665e818c9b
+  short_sha: 18fcf94
+  datetime: "2026-05-14T15:19:55+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/18fcf94280beb3516d6fcecb3cf0f7665e818c9b"
+  message: 'ci(deploy): SFTP-Schreib-Smoke ergänzen (J01-144)'
 - repo: lebenslauf-web-vorlage
-  sha: b955fe7d7eb2bec13b95660a0f0832ca608156de
-  short_sha: b955fe7
-  datetime: "2026-05-13T09:54:36+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b955fe7d7eb2bec13b95660a0f0832ca608156de"
-  message: 'feat(deploy): GITHUB_RUN_ID-Korrelation und Run-Marker einführen (J01-144)'
+  sha: ca49cfe04bcd29c9ac9f713d1980f097d7d282e7
+  short_sha: ca49cfe
+  datetime: "2026-05-14T15:01:39+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ca49cfe04bcd29c9ac9f713d1980f097d7d282e7"
+  message: 'fix: korrigiere Preview-CD-Konfigurationswerte (J01-144)'
 - repo: lebenslauf-web-vorlage
-  sha: 5e776d8c5f5dc4694a0c9d59dd07c2155de07cab
-  short_sha: 5e776d8
-  datetime: "2026-05-13T09:53:20+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/5e776d8c5f5dc4694a0c9d59dd07c2155de07cab"
-  message: 'ci(workflows): gemeinsamen Preview-CD-Workflow extrahieren (J01-144)'
+  sha: 6ec0ae9e07600ccbbd9324288788f9d876fb3fa0
+  short_sha: 6ec0ae9
+  datetime: "2026-05-14T14:52:54+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/6ec0ae9e07600ccbbd9324288788f9d876fb3fa0"
+  message: 'chore: pipeline-config-spec/lib auf bd5be1e aktualisiert (J01-144)'
 - repo: lebenslauf-web-vorlage
-  sha: 0732849d723752085fa724e12bb894446112fd59
-  short_sha: 0732849
-  datetime: "2026-05-12T15:29:52+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/0732849d723752085fa724e12bb894446112fd59"
-  message: 'refactor(cli): CiCommand vereinfachen, StartCommand und getValuesByPhase einfuehren (J01-144)'
+  sha: 7c317e9f16c2287dd29ce0cd3fa2886c2f5004c2
+  short_sha: 7c317e9
+  datetime: "2026-05-14T14:48:26+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7c317e9f16c2287dd29ce0cd3fa2886c2f5004c2"
+  message: 'refactor: Umstieg auf pipeline-config-spec PipelineConfig-API (J01-144)'
+- repo: pipeline-config-spec-php
+  sha: bd5be1e4fa8fae379f6c3a6ebdea40230ad072eb
+  short_sha: bd5be1e
+  datetime: "2026-05-14T14:48:11+02:00"
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/bd5be1e4fa8fae379f6c3a6ebdea40230ad072eb"
+  message: 'docs(spec): SPEC.md und Spec-Tests ergänzt (J01-144)'
+- repo: pipeline-config-spec-php
+  sha: 80c20e6c863aea48e242de495a84d7898a0776ea
+  short_sha: 80c20e6
+  datetime: "2026-05-14T14:48:03+02:00"
+  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/80c20e6c863aea48e242de495a84d7898a0776ea"
+  message: 'refactor: Manifest, ConfigPolicy, ConfigCompiler, PipelineConfig neugestaltet (J01-144)'
 - repo: lebenslauf-web-vorlage
-  sha: c9b1a3c79d5b8f029584c58e61c7f3f1623a2569
-  short_sha: c9b1a3c
-  datetime: "2026-05-12T14:10:18+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c9b1a3c79d5b8f029584c58e61c7f3f1623a2569"
-  message: 'refactor(cli): PipelineCfg einfuehren, Fallbacks entfernen (J01-144)'
+  sha: 12f8d4da331c7e139b6ffb2c968bf614fbb8956f
+  short_sha: 12f8d4d
+  datetime: "2026-05-14T02:52:31+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/12f8d4da331c7e139b6ffb2c968bf614fbb8956f"
+  message: 'test(ci): artefakt-check schlägt vor upload fehl; post-deploy smoke gegen live-server (J01-144)'
 - repo: lebenslauf-web-vorlage
-  sha: f5950a1b6f42e35393bde871567791a03651c20d
-  short_sha: f5950a1
-  datetime: "2026-05-12T11:44:22+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f5950a1b6f42e35393bde871567791a03651c20d"
-  message: 'fix(ci): SFTP-Hostkey-Mismatch durch Dateirechte beheben (J01-139)'
+  sha: bad759da6b2abe89534fc0b50ba0c411a8185e7a
+  short_sha: bad759d
+  datetime: "2026-05-13T22:23:11+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/bad759da6b2abe89534fc0b50ba0c411a8185e7a"
+  message: 'ci(deploy): GitHub-Variablen als Fallback für nicht geheime Deploy-Werte erlauben (J01-144)'
 - repo: lebenslauf-web-vorlage
-  sha: bc24aa7e11bc119a571ee4582258ea845727cbdf
-  short_sha: bc24aa7
-  datetime: "2026-05-12T01:22:24+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/bc24aa7e11bc119a571ee4582258ea845727cbdf"
-  message: 'fix(ci): Contact-Smoke-Trap stabilisieren (J01-139)'
-- repo: lebenslauf-web-vorlage
-  sha: 3476cf30a933522b5a25c2d3ac79d6148c59f31a
-  short_sha: 3476cf3
-  datetime: "2026-05-12T01:14:41+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3476cf30a933522b5a25c2d3ac79d6148c59f31a"
-  message: 'chore(ci): ShellCheck-sh-Ausnahmen markieren (J01-139)'
-- repo: lebenslauf-web-vorlage
-  sha: 700348ae97d4680217cc1c3091b0258f9927814f
-  short_sha: 700348a
-  datetime: "2026-05-12T01:03:03+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/700348ae97d4680217cc1c3091b0258f9927814f"
-  message: 'chore(ci): Skriptmodi bereinigen (J01-139)'
+  sha: 7e79dd9760af81e49641d124861f442eb4595835
+  short_sha: 7e79dd9
+  datetime: "2026-05-13T18:44:51+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7e79dd9760af81e49641d124861f442eb4595835"
+  message: 'test(ci): Testausgabe für PHP und Python lesbarer machen (J01-144)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: f26361b26457f4a4cb0ec3116b90fc32bf5fd376
+  short_sha: f26361b
+  datetime: "2026-05-14T15:20:04+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f26361b26457f4a4cb0ec3116b90fc32bf5fd376"
+  message: 'docs: SFTP-Schreib-Smoke dokumentieren (J01-144)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 8529ecad4f3c0dea1ebca10a0b3aecbc2b6e625e
+  short_sha: 8529eca
+  datetime: "2026-05-13T13:21:03+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8529ecad4f3c0dea1ebca10a0b3aecbc2b6e625e"
+  message: 'docs: Testeinstiege zu J01-144 klären (J01-144)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 4f131e9162ec2284a060194e1e60c212f7e552bb
   short_sha: 4f131e9
@@ -108,15 +120,3 @@
   datetime: "2026-05-11T16:35:34+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/82d5592edef3cdffca4f34620d3bcf9828676a50"
   message: 'docs: recent-feed mit inhaltsliste erweitern (J01-145)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 74d3af711805c58a87901db721387765719ec024
-  short_sha: 74d3af7
-  datetime: "2026-05-11T16:27:39+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/74d3af711805c58a87901db721387765719ec024"
-  message: 'docs: doku-commits im recent-feed trennen (J01-145)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 25ecc099e7fa8a746f9cdb30d171a045dd589319
-  short_sha: 25ecc09
-  datetime: "2026-05-11T16:02:27+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/25ecc099e7fa8a746f9cdb30d171a045dd589319"
-  message: 'docs: laufende doku-wartung verankern (J01-145)'

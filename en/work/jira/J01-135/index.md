@@ -40,6 +40,10 @@ CI/CD/runtime-admin operations.
 - J01-141 remains the open hardening point: fixed action list, parameter
   boundaries, access protection, and error/audit paths must be checkable before
   production.
+- The CI/CD workflow now reports its main phases through a dedicated shell
+  output module. `bin/ci`, `bin/cd`, and `run_pipeline` show setup, build,
+  tests, artifact checks, deploy, and smoke checks as clear steps without
+  hiding the functional order in the pipeline code.
 - The architecture follow-up in `tagebuch` has been split into five
   verifiable subtasks:
   - [J01-138]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }})
@@ -88,6 +92,7 @@ CI/CD/runtime-admin operations.
 | Boundaries | The admin trigger runs only fixed, checkable actions | [J01-141]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | open |
 | CV-token generation | Token rotation runs as a runtime-admin task and can be triggered reproducibly locally | [J01-139]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | partly implemented |
 | Preview mail | Preview sends with real SMTP/Mailtrap values and without stdout fallback | [J01-144]({{ "/en/jira/issues/J01-62/steps/J01-144/" | relative_url }}) | open |
+| CI/CD output | Pipeline main steps are visible in logs and the GitHub step summary without printing secrets | `scripts/pipeline_output.sh`, `scripts/pipeline_lib.sh`, `bin/ci`, `bin/cd` | implemented |
 | Sprint assignment | Issue is in `SCRUM Sprint 4` with `sprint-goal` | Jira sprint board | done |
 
 ## Target State or Open Points
