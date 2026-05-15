@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 938758cd2a0e2e90bcb2d77ac8a139298800f790
+  short_sha: 938758c
+  datetime: "2026-05-15T13:36:03+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/938758cd2a0e2e90bcb2d77ac8a139298800f790"
+  message: 'feat: lokale SFTP-REPL ergänzen (J01-135)'
+- repo: lebenslauf-web-vorlage
   sha: ca53d363ea3ef0b084012380a4baea7ee8047644
   short_sha: ca53d36
   datetime: "2026-05-14T19:48:25+02:00"
@@ -54,12 +60,12 @@
   datetime: "2026-05-13T22:23:11+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/bad759da6b2abe89534fc0b50ba0c411a8185e7a"
   message: 'ci(deploy): GitHub-Variablen als Fallback für nicht geheime Deploy-Werte erlauben (J01-144)'
-- repo: lebenslauf-web-vorlage
-  sha: 7e79dd9760af81e49641d124861f442eb4595835
-  short_sha: 7e79dd9
-  datetime: "2026-05-13T18:44:51+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7e79dd9760af81e49641d124861f442eb4595835"
-  message: 'test(ci): Testausgabe für PHP und Python lesbarer machen (J01-144)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 38c82f1b0057b36b5e36d2226fdaecdc280f2118
+  short_sha: 38c82f1
+  datetime: "2026-05-14T19:48:25+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/38c82f1b0057b36b5e36d2226fdaecdc280f2118"
+  message: 'docs: dokumentiere CI/CD-Ausgabe (J01-135)'
 - repo: lebenslauf-web-vorlage-docs
   sha: f26361b26457f4a4cb0ec3116b90fc32bf5fd376
   short_sha: f26361b
@@ -114,9 +120,3 @@
   datetime: "2026-05-11T16:37:00+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/b54823df167e4f231543c436bcf91d6f00943c77"
   message: 'test: recent-feed-trennung absichern (J01-145)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 82d5592edef3cdffca4f34620d3bcf9828676a50
-  short_sha: 82d5592
-  datetime: "2026-05-11T16:35:34+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/82d5592edef3cdffca4f34620d3bcf9828676a50"
-  message: 'docs: recent-feed mit inhaltsliste erweitern (J01-145)'

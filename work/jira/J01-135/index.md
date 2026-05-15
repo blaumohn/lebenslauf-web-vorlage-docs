@@ -40,6 +40,10 @@ CI/CD-/Runtime-Admin-Betrieb.
   Preview-Admin-Befehl: `php bin/cli python ...` nimmt Admin-Betrieb plus
   Argumente entgegen, ergänzt per SFTP die Admin-Betrieb-Liste und löst die
   wartenden Betriebe per HTTP-GET aus.
+- Als kleine Betriebsstütze gibt es zusätzlich eine lokale SFTP-REPL für den
+  bestehenden Deploy-SFTP-Client. Sie dient der kontrollierten Einsicht und
+  manuellen Dateiarbeit im konfigurierten `SFTP_SERVER_DIR`; sie ersetzt den
+  noch offenen generischen Admin-Befehl nicht.
 - J01-141 bleibt der offene Härtungspunkt: feste Aktionsliste,
   Parametergrenzen, Zugriffsschutz und Fehler-/Auditpfade müssen vor
   Production nachvollziehbar geprüft sein.
@@ -95,6 +99,7 @@ CI/CD-/Runtime-Admin-Betrieb.
 | Begrenzung | Admin-Trigger führt nur feste, prüfbare Aktionen aus | [J01-141]({{ "/de/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | offen |
 | CV-Token-Erzeugung | Token-Rotation läuft als Runtime-Admin-Task und ist lokal reproduzierbar auslösbar | [J01-139]({{ "/de/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | teilweise umgesetzt |
 | Preview-Mail | Preview versendet mit echten SMTP-/Mailtrap-Werten und ohne stdout-Rückfall | [J01-144]({{ "/de/jira/issues/J01-62/steps/J01-144/" | relative_url }}) | offen |
+| SFTP-Bedienbarkeit | Deploy-SFTP kann lokal interaktiv inspiziert werden, ohne den Deploy-Root zu verlassen | `scripts/local/sftp-repl.py`, `src/cli/py/deploy/sftp_shell.py` | umgesetzt |
 | CI/CD-Ausgabe | Pipeline-Hauptschritte sind in Log und GitHub-Step-Summary sichtbar, ohne Secrets auszugeben | `scripts/pipeline_output.sh`, `scripts/pipeline_lib.sh`, `bin/ci`, `bin/cd` | umgesetzt |
 | Sprint-Zuordnung | Vorgang liegt in `SCRUM Sprint 4` mit `sprint-goal` | Jira Sprint Board | erledigt |
 

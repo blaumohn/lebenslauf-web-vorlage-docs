@@ -37,6 +37,10 @@ CI/CD/runtime-admin operations.
   command is still open: `php bin/cli python ...` receives the admin operation
   plus arguments, appends the admin-operation list by SFTP, and triggers the
   waiting operations by HTTP GET.
+- As a small operations aid, a local SFTP REPL now exists for the existing
+  deploy SFTP client. It is for controlled inspection and manual file work
+  inside the configured `SFTP_SERVER_DIR`; it does not replace the still-open
+  generic admin command.
 - J01-141 remains the open hardening point: fixed action list, parameter
   boundaries, access protection, and error/audit paths must be checkable before
   production.
@@ -92,6 +96,7 @@ CI/CD/runtime-admin operations.
 | Boundaries | The admin trigger runs only fixed, checkable actions | [J01-141]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}) | open |
 | CV-token generation | Token rotation runs as a runtime-admin task and can be triggered reproducibly locally | [J01-139]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}) | partly implemented |
 | Preview mail | Preview sends with real SMTP/Mailtrap values and without stdout fallback | [J01-144]({{ "/en/jira/issues/J01-62/steps/J01-144/" | relative_url }}) | open |
+| SFTP usability | Deploy SFTP can be inspected locally and interactively without leaving the deploy root | `scripts/local/sftp-repl.py`, `src/cli/py/deploy/sftp_shell.py` | implemented |
 | CI/CD output | Pipeline main steps are visible in logs and the GitHub step summary without printing secrets | `scripts/pipeline_output.sh`, `scripts/pipeline_lib.sh`, `bin/ci`, `bin/cd` | implemented |
 | Sprint assignment | Issue is in `SCRUM Sprint 4` with `sprint-goal` | Jira sprint board | done |
 
