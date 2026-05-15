@@ -1,65 +1,71 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
-  sha: 938758cd2a0e2e90bcb2d77ac8a139298800f790
-  short_sha: 938758c
-  datetime: "2026-05-15T13:36:03+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/938758cd2a0e2e90bcb2d77ac8a139298800f790"
-  message: 'feat: lokale SFTP-REPL ergänzen (J01-135)'
+  sha: dbf58f82ae6ee0d80f32b9ec7d4b8ae3e5c35fce
+  short_sha: dbf58f8
+  datetime: "2026-05-15T22:53:49+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dbf58f82ae6ee0d80f32b9ec7d4b8ae3e5c35fce"
+  message: 'test: kapsle TaskRunner-Testausgabe (J01-144)'
 - repo: lebenslauf-web-vorlage
-  sha: ca53d363ea3ef0b084012380a4baea7ee8047644
-  short_sha: ca53d36
-  datetime: "2026-05-14T19:48:25+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ca53d363ea3ef0b084012380a4baea7ee8047644"
-  message: 'feat: mache CI/CD-Schritte sichtbar (J01-135)'
+  sha: c97614edf644fca1dd7e97116798c68a12cbabde
+  short_sha: c97614e
+  datetime: "2026-05-15T22:33:33+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c97614edf644fca1dd7e97116798c68a12cbabde"
+  message: 'test(python): pytest als Test-Runner einrichten (J01-144)'
 - repo: lebenslauf-web-vorlage
-  sha: 18fcf94280beb3516d6fcecb3cf0f7665e818c9b
-  short_sha: 18fcf94
-  datetime: "2026-05-14T15:19:55+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/18fcf94280beb3516d6fcecb3cf0f7665e818c9b"
-  message: 'ci(deploy): SFTP-Schreib-Smoke ergänzen (J01-144)'
+  sha: dbd569fc4043fe4489e13811848952b5234dbc30
+  short_sha: dbd569f
+  datetime: "2026-05-15T22:33:17+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dbd569fc4043fe4489e13811848952b5234dbc30"
+  message: 'refactor(python): print-Logging auf stdlib-logging umstellen (J01-144)'
 - repo: lebenslauf-web-vorlage
-  sha: ca49cfe04bcd29c9ac9f713d1980f097d7d282e7
-  short_sha: ca49cfe
-  datetime: "2026-05-14T15:01:39+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ca49cfe04bcd29c9ac9f713d1980f097d7d282e7"
-  message: 'fix: korrigiere Preview-CD-Konfigurationswerte (J01-144)'
+  sha: 6586c02e5432c5dcff61567556b23d156516dc3f
+  short_sha: 6586c02
+  datetime: "2026-05-15T20:01:44+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/6586c02e5432c5dcff61567556b23d156516dc3f"
+  message: 'test(deploy): HTTP-Trigger und URL-Normalisierung testen (J01-144)'
 - repo: lebenslauf-web-vorlage
-  sha: 6ec0ae9e07600ccbbd9324288788f9d876fb3fa0
-  short_sha: 6ec0ae9
-  datetime: "2026-05-14T14:52:54+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/6ec0ae9e07600ccbbd9324288788f9d876fb3fa0"
-  message: 'chore: pipeline-config-spec/lib auf bd5be1e aktualisiert (J01-144)'
+  sha: d941f1193d836c28786ed437f019edb68b444757
+  short_sha: d941f11
+  datetime: "2026-05-15T20:00:56+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d941f1193d836c28786ed437f019edb68b444757"
+  message: 'refactor(deploy): urllib durch requests ersetzen (J01-144)'
 - repo: lebenslauf-web-vorlage
-  sha: 7c317e9f16c2287dd29ce0cd3fa2886c2f5004c2
-  short_sha: 7c317e9
-  datetime: "2026-05-14T14:48:26+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7c317e9f16c2287dd29ce0cd3fa2886c2f5004c2"
-  message: 'refactor: Umstieg auf pipeline-config-spec PipelineConfig-API (J01-144)'
-- repo: pipeline-config-spec-php
-  sha: bd5be1e4fa8fae379f6c3a6ebdea40230ad072eb
-  short_sha: bd5be1e
-  datetime: "2026-05-14T14:48:11+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/bd5be1e4fa8fae379f6c3a6ebdea40230ad072eb"
-  message: 'docs(spec): SPEC.md und Spec-Tests ergänzt (J01-144)'
-- repo: pipeline-config-spec-php
-  sha: 80c20e6c863aea48e242de495a84d7898a0776ea
-  short_sha: 80c20e6
-  datetime: "2026-05-14T14:48:03+02:00"
-  github_url: "https://github.com/blaumohn/pipeline-config-spec-php/commit/80c20e6c863aea48e242de495a84d7898a0776ea"
-  message: 'refactor: Manifest, ConfigPolicy, ConfigCompiler, PipelineConfig neugestaltet (J01-144)'
+  sha: f88c87b2960bfe36fa6767d13e5999ce855cdc89
+  short_sha: f88c87b
+  datetime: "2026-05-15T16:45:59+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f88c87b2960bfe36fa6767d13e5999ce855cdc89"
+  message: 'test(deploy): Szenario-Tests, URLError-Fallback, HTTPError-Propagation, Token-Migration (J01-144)'
 - repo: lebenslauf-web-vorlage
-  sha: 12f8d4da331c7e139b6ffb2c968bf614fbb8956f
-  short_sha: 12f8d4d
-  datetime: "2026-05-14T02:52:31+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/12f8d4da331c7e139b6ffb2c968bf614fbb8956f"
-  message: 'test(ci): artefakt-check schlägt vor upload fehl; post-deploy smoke gegen live-server (J01-144)'
+  sha: 1474a2d93f50e81a74f174e024f112a6c68b5f31
+  short_sha: 1474a2d
+  datetime: "2026-05-15T16:44:51+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1474a2d93f50e81a74f174e024f112a6c68b5f31"
+  message: 'fix(deploy): URLError-Fallback auf SFTP-Switch; HTTPError propagiert; Logger an TaskDispatch; Sentinel bei Erstdeploy (J01-144)'
 - repo: lebenslauf-web-vorlage
-  sha: bad759da6b2abe89534fc0b50ba0c411a8185e7a
-  short_sha: bad759d
-  datetime: "2026-05-13T22:23:11+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/bad759da6b2abe89534fc0b50ba0c411a8185e7a"
-  message: 'ci(deploy): GitHub-Variablen als Fallback für nicht geheime Deploy-Werte erlauben (J01-144)'
+  sha: 7c3fff4dd32581a1d10e7387eed7bb85ed44e444
+  short_sha: 7c3fff4
+  datetime: "2026-05-15T14:57:04+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7c3fff4dd32581a1d10e7387eed7bb85ed44e444"
+  message: 'fix(deploy): Vendor neu hochladen wenn Slot-Sentinel fehlt (J01-144)'
+- repo: lebenslauf-web-vorlage
+  sha: 60f6a03b1415a40006310223b2d737b7fad396bb
+  short_sha: 60f6a03
+  datetime: "2026-05-15T14:00:41+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/60f6a03b1415a40006310223b2d737b7fad396bb"
+  message: 'feat: smtp_lib extrahieren, lokale Smoke-Skripte ergänzen (J01-144)'
+- repo: lebenslauf-web-vorlage
+  sha: 815f3b07ae764d4543212ccee6b53c9572421475
+  short_sha: 815f3b0
+  datetime: "2026-05-15T14:00:15+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/815f3b07ae764d4543212ccee6b53c9572421475"
+  message: 'fix: Erstdeploy lädt Vendor immer; SFTP_INCLUDE_VENDOR → COMPOSER_LOCK_CHANGED (J01-144)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: dedcd9f23a3683bdead58b6cb336e14d89399f4b
+  short_sha: dedcd9f
+  datetime: "2026-05-15T13:36:12+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dedcd9f23a3683bdead58b6cb336e14d89399f4b"
+  message: 'docs: SFTP-REPL in J01-135 dokumentieren (J01-135)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 38c82f1b0057b36b5e36d2226fdaecdc280f2118
   short_sha: 38c82f1
@@ -114,9 +120,3 @@
   datetime: "2026-05-11T16:40:42+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7b51fae284e676068f221d061d4896da5f1d390a"
   message: 'fix: recent-anker auf abschnitte setzen (J01-145)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: b54823df167e4f231543c436bcf91d6f00943c77
-  short_sha: b54823d
-  datetime: "2026-05-11T16:37:00+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/b54823df167e4f231543c436bcf91d6f00943c77"
-  message: 'test: recent-feed-trennung absichern (J01-145)'

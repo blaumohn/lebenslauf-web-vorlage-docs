@@ -75,6 +75,19 @@ kann.
 - Der Python-Unit-Testlauf puffert Ausgaben erfolgreicher Tests, damit
   erwartete Test-Nebenausgaben nicht in den normalen Testbericht laufen.
 
+## Nachtrag 2026-05-15: Task-Testausgabe
+
+Der PHPUnit-Lauf hatte erfolgreiche Task-Fehlerpfadtests, deren erwartete
+`error_log()`-Meldungen dennoch in `composer test:php` sichtbar wurden.
+
+- Die betroffenen `TaskRunner`-Tests leiten erwartete Fehlerlogs nun in eine
+  temporäre Logdatei im Testverzeichnis um.
+- Die Mail-STDOUT-Ausgabe bleibt gezielt erfassbar, damit der Test für die
+  Fehlerbenachrichtigung weiter den Mailinhalt prüfen kann.
+- `composer test:php` läuft weiterhin durch; die gemeldeten
+  `[task] Fehler ...`- und `[task] Mailversand fehlgeschlagen ...`-Zeilen
+  erscheinen dabei nicht mehr.
+
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
@@ -84,6 +97,7 @@ kann.
 | SFTP-Hostkey | Preview-CI braucht kein dynamisches `ssh-keyscan` mehr | `docker-compose.ci.yml`, `bin/ci` | erledigt |
 | CI-Preview-Konfig | `CI_TEST_CASE`, `SMTP_PORT: 1025`, `GITHUB_RUN_ID` und read-only Inline-Konfig sind stabil | App-Repo, Codex-Nachzug | teilweise umgesetzt |
 | Python-Testlauf | Python-Unit-Tests laufen über `.venv/bin/python` nur bei explizitem Aufruf mit | `composer.json`, `tests/py` | umgesetzt |
+| PHP-Testausgabe | Erwartete Task-Fehlerpfade verschmutzen den erfolgreichen PHPUnit-Lauf nicht mit STDERR-Fehlerzeilen | `tests/php/TaskDeployTest.php`, `composer test:php` | umgesetzt |
 | Admin-Auslöser | SFTP-Deploy stößt nach Task-Upload per GET die registrierte Admin-Route an | `src/cli/py/admin/dispatch.py`, `tests/py/test_admin_dispatch.py` | umgesetzt |
 | Preview-Mailtrap | Preview-Deployment versendet über Mailtrap mit echten Environment-Werten | ausstehender manueller Preview-Test | offen |
 | Nachkorrektur | Abweichungen aus Mailtrap-Test sind im selben Schritt oder Folge-PR behoben | PR / Nachweisnotiz | offen |

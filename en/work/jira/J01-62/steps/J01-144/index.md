@@ -68,6 +68,18 @@ tie prepared slots and the PHP admin switch to the same run.
 - The Python unit test run buffers output from successful tests so expected
   side-output does not leak into the normal test report.
 
+## Follow-up 2026-05-15: Task Test Output
+
+The PHPUnit run had successful task error-path tests whose expected
+`error_log()` messages still appeared in `composer test:php`.
+
+- The affected `TaskRunner` tests now redirect expected error logs into a
+  temporary log file in the test directory.
+- Mail STDOUT output remains intentionally capturable so the error notification
+  test can still assert the mail body.
+- `composer test:php` still passes; the reported `[task] Fehler ...` and
+  `[task] Mailversand fehlgeschlagen ...` lines no longer appear.
+
 ## Verification Plan
 
 | Checkpoint | Expectation | Evidence / Location | Status |
@@ -77,6 +89,7 @@ tie prepared slots and the PHP admin switch to the same run.
 | SFTP host key | preview CI no longer needs dynamic `ssh-keyscan` | `docker-compose.ci.yml`, `bin/ci` | done |
 | CI preview config | `CI_TEST_CASE`, `SMTP_PORT: 1025`, `GITHUB_RUN_ID`, and read-only inline config are stable | app repo, Codex follow-up | partially done |
 | Python test run | Python unit tests run through `.venv/bin/python` only when explicitly requested | `composer.json`, `tests/py` | done |
+| PHP test output | Expected task error paths do not pollute the successful PHPUnit run with STDERR error lines | `tests/php/TaskDeployTest.php`, `composer test:php` | done |
 | Admin trigger | SFTP deploy triggers the registered admin route via GET after task upload | `src/cli/py/admin/dispatch.py`, `tests/py/test_admin_dispatch.py` | done |
 | Preview Mailtrap | preview deployment sends through Mailtrap with real environment values | pending manual preview test | open |
 | Follow-up fix | deviations from the Mailtrap test are fixed in this step or a follow-up PR | PR / evidence note | open |
