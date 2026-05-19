@@ -32,6 +32,8 @@ Das App-Repo enthält Quelltext, aber keine reguläre Projektdoku unter `docs/`.
 
 ## Leserpfade
 
+- **[Projekt einschätzen]({{ "/de/getting-started/projektprofil/" | relative_url }})**  
+  Für HR, Team-Leads und Product: Demo, Projektüberblick und Liefernachweis
 - **[fachlicher Einstieg]({{ "/de/specs/projekt/" | relative_url }})**  
   Projektzweck, Projektlandkarte und zentrale Eigenschaften
 - **[technischer Einstieg]({{ "/de/specs/" | relative_url }})**  
