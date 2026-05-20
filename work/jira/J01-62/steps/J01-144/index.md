@@ -88,6 +88,71 @@ Der PHPUnit-Lauf hatte erfolgreiche Task-Fehlerpfadtests, deren erwartete
   `[task] Fehler ...`- und `[task] Mailversand fehlgeschlagen ...`-Zeilen
   erscheinen dabei nicht mehr.
 
+## Nachtrag 2026-05-16: Kontakt-Smoke gegen deployte Preview
+
+Der bisherige Kontakt-Smoke startete im Post-Deploy-Check einen lokalen
+PHP-Server und verwendete `127.0.0.1`. Damit war der Formularpfad zwar lokal
+prüfbar, aber nicht als Nachweis für den deployten Preview-Webcontainer
+geeignet.
+
+- `run_contact_smoke` nutzt nun
+  `cli python "$PIPELINE" --phase deploy --phase runtime tests/ci/contact_smoke.py`.
+- Der Python-Smoke ruft das Kontaktformular über `APP_ROOT_URL` aus der
+  Deploy-Phase auf.
+- Die Captcha-Lösung wird per `SftpClient` aus dem deployten
+  `<aktiver-app-slot>/var/tmp/captcha/<captcha_id>.json` gelesen, nicht aus
+  dem lokalen Build-Artefakt.
+- Der erwartete Empfänger kommt aus der Runtime-Phase über `PipelineCfg`.
+- Der Preview-Webcontainer bindet die CI-Mailpit-CA ein und aktualisiert beim
+  Start die CA-Zertifikate, damit der reale App-Mailversand denselben
+  StartTLS-Pfad prüfen kann wie der direkte SMTP-Smoke.
+- Der Post-Deploy-Check prüft damit Webcontainer, deployten Runtime-State,
+  SFTP-Zugriff und Mailpit-Nachweis im selben Preview-Integrationspfad.
+
+## Nachtrag 2026-05-17: HTTP-Smoke protokolliert fehlgeschlagene URL
+
+Beim `test-push-deploy`-Nachweis brach der Post-Deploy-HTTP-Smoke mit einem
+`curl`-Fehler 500 ab, ohne im CI-Log die betroffene URL sichtbar zu machen.
+Der Shell-Smoke fängt fehlgeschlagene `curl`-Abrufe nun explizit ab und schreibt
+die geprüfte URL mit `[smoke] HTTP-Abruf fehlgeschlagen: ...` nach STDERR.
+Damit bleibt die ursprüngliche `curl`-Fehlerausgabe erhalten, erhält aber den
+für die Fehleranalyse nötigen Zielkontext.
+
+## Nachtrag 2026-05-18: Deploy-Switch und Webroot-Schutz abgesichert
+
+Der nachgelagerte Befund lag nicht im Upload der Testdatei selbst: Der neue
+App-Slot enthielt `public/ci-diff-test.html`, aber der sichtbare
+Deploy-State blieb auf dem alten Slot stehen. Ursache war der
+Deploy-Switch-Vertrag für App-Slot-Marker. App-Marker liegen unter
+`app-<slot>/.deploy-run`, Vendor-Marker unter `vendor-<slot>/.deploy-run`.
+Der Handler prüft fehlende Marker nun explizit und ohne PHP-Warning.
+
+Zusätzlich sichern Python-Tests die Shared-Hosting-Grenze des neuen Webroots:
+Der Webroot-Router liefert statische Dateien nur aus dem aktiven
+`app-<slot>/public/` aus. Die nicht öffentlichen App-Slot-Pfade
+`app-<slot>/`, `app-<slot>/src/` und `app-<slot>/var/` behalten
+`Require all denied`.
+
+## Nachtrag 2026-05-20: SFTP-REPL transparenter gemacht
+
+Die lokale SFTP-REPL ersetzt den separaten lokalen Löschhelfer
+`scripts/local/sftp-clear-dir.py` durch einen interaktiven `clear`-Befehl.
+`rmdir` folgt nun der SFTP-/POSIX-Bedeutung und entfernt nur leere
+Verzeichnisse.
+
+Zusätzlich zeigt die REPL bei nichttrivialen Operationen kurz, welche
+SFTP-Operation verwendet wurde:
+
+- `clear <pfad>` leert ein Remote-Verzeichnis rekursiv, ohne es selbst zu
+  löschen.
+- `rename <alt> <neu>` versucht zuerst `sftp.posix_rename`, danach
+  `sftp.rename` und fällt nur für reguläre Dateien auf Lesen/Schreiben/Löschen
+  zurück.
+- `mkdirp`, `stat`, `df`, `status` und `version` ergänzen die lokale Diagnose
+  und Dateiarbeit.
+- Nicht unterstützte Server-Erweiterungen wie `statvfs` werden sichtbar
+  gemeldet, statt still zu verschwinden.
+
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
@@ -98,7 +163,12 @@ Der PHPUnit-Lauf hatte erfolgreiche Task-Fehlerpfadtests, deren erwartete
 | CI-Preview-Konfig | `CI_TEST_CASE`, `SMTP_PORT: 1025`, `GITHUB_RUN_ID` und read-only Inline-Konfig sind stabil | App-Repo, Codex-Nachzug | teilweise umgesetzt |
 | Python-Testlauf | Python-Unit-Tests laufen über `.venv/bin/python` nur bei explizitem Aufruf mit | `composer.json`, `tests/py` | umgesetzt |
 | PHP-Testausgabe | Erwartete Task-Fehlerpfade verschmutzen den erfolgreichen PHPUnit-Lauf nicht mit STDERR-Fehlerzeilen | `tests/php/TaskDeployTest.php`, `composer test:php` | umgesetzt |
+| Kontakt-Smoke | Post-Deploy-Kontaktformular läuft über `APP_ROOT_URL` und liest Captcha-State per SFTP aus der deployten Preview | `tests/ci/contact_smoke.py`, `bin/ci`, `tests/py/test_contact_smoke.py` | umgesetzt |
 | Admin-Auslöser | SFTP-Deploy stößt nach Task-Upload per GET die registrierte Admin-Route an | `src/cli/py/admin/dispatch.py`, `tests/py/test_admin_dispatch.py` | umgesetzt |
+| HTTP-Smoke-Fehlerkontext | `curl`-Fehler nennen im CI-Log die geprüfte URL | `scripts/pipeline_lib.sh`, `tests/py/test_ci_workflows.py` | umgesetzt |
+| Deploy-Switch-Marker | `deploy_switch` prüft App- und Vendor-Slot-Marker über die deployten Slot-Verzeichnisse und schreibt `.deploy-state.ini` | `DeploySwitchTaskHandler.php`, `TaskDeployTest.php` | umgesetzt |
+| Webroot-Schutz | Nur `app-<slot>/public/` wird über den Router ausgeliefert; `src/` und `var/` bleiben gesperrt | `src/resources/deploy-root/`, `tests/py/test_sftp_deploy_state.py` | umgesetzt |
+| SFTP-REPL | Lokale SFTP-Befehle melden verwendete Operationen und ersetzen `sftp-clear-dir.py` | `src/cli/py/deploy/sftp_shell.py`, `tests/py/test_sftp_shell.py` | umgesetzt |
 | Preview-Mailtrap | Preview-Deployment versendet über Mailtrap mit echten Environment-Werten | ausstehender manueller Preview-Test | offen |
 | Nachkorrektur | Abweichungen aus Mailtrap-Test sind im selben Schritt oder Folge-PR behoben | PR / Nachweisnotiz | offen |
 

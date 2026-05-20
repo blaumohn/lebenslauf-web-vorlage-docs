@@ -1,6 +1,30 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 73e3ab3ca4eb51cdc3fd82d7dbc2bcb9ff73f1fa
+  short_sha: 73e3ab3
+  datetime: "2026-05-20T10:25:20+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/73e3ab3ca4eb51cdc3fd82d7dbc2bcb9ff73f1fa"
+  message: 'chore: totes SFTP-Clear-Modul entfernen (J01-144)'
+- repo: lebenslauf-web-vorlage
+  sha: 70795a134ba22e6e03817f4814103ba5def8edf4
+  short_sha: 70795a1
+  datetime: "2026-05-20T10:25:16+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/70795a134ba22e6e03817f4814103ba5def8edf4"
+  message: 'feat: SFTP-REPL-Befehle erweitern (J01-144)'
+- repo: lebenslauf-web-vorlage
+  sha: dc93351f3fce59ab2cbd00eb8b299538b505ac4e
+  short_sha: dc93351
+  datetime: "2026-05-19T15:02:12+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dc93351f3fce59ab2cbd00eb8b299538b505ac4e"
+  message: 'docs(readme): README aus Docs-Sync generieren (J01-145)'
+- repo: lebenslauf-web-vorlage
+  sha: 13c58f5e6993be15b6c7a52f6dc567c616d72a9a
+  short_sha: 13c58f5
+  datetime: "2026-05-19T15:02:05+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/13c58f5e6993be15b6c7a52f6dc567c616d72a9a"
+  message: 'feat(ci): lokalen Deploy-Runner ergänzen (J01-144)'
+- repo: lebenslauf-web-vorlage
   sha: cca4e2ef0aab69975c0f2ee52a7d12e184ad6891
   short_sha: cca4e2e
   datetime: "2026-05-18T14:08:45+02:00"
@@ -36,30 +60,12 @@
   datetime: "2026-05-18T13:46:27+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/e0383ea37d4f487e0a3efc63b95672a1433f0a85"
   message: 'refactor(deploy): DeployState und DeploySlot einführen (J01-144)'
-- repo: lebenslauf-web-vorlage
-  sha: 2f0f8c3c730f050c23773711d2e2575a3056da9c
-  short_sha: 2f0f8c3
-  datetime: "2026-05-18T13:46:15+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2f0f8c3c730f050c23773711d2e2575a3056da9c"
-  message: 'refactor(deploy): deploy-root einführen, bootstrap umstrukturieren (J01-144)'
-- repo: lebenslauf-web-vorlage
-  sha: 85d9fc917e9937218e110ec4ac91bd946c05e120
-  short_sha: 85d9fc9
-  datetime: "2026-05-16T17:21:36+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/85d9fc917e9937218e110ec4ac91bd946c05e120"
-  message: 'fix(deploy): Slot-Schutz verbessern und CI-CA-Zertifikat ergänzen (J01-144)'
-- repo: lebenslauf-web-vorlage
-  sha: 43c5a91034592d0573c2cbeb040e52c494d9dba0
-  short_sha: 43c5a91
-  datetime: "2026-05-16T17:21:12+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/43c5a91034592d0573c2cbeb040e52c494d9dba0"
-  message: 'refactor(ci): --phases zu --phase, Contact-Smoke auf Python migrieren (J01-144)'
-- repo: lebenslauf-web-vorlage
-  sha: bdfebef241a9ff784c28b9c1ee5e52f527dd95f9
-  short_sha: bdfebef
-  datetime: "2026-05-16T17:21:04+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/bdfebef241a9ff784c28b9c1ee5e52f527dd95f9"
-  message: 'feat(logging): Monolog-Logging, Shutdown-Trap und APP_LOG_CHANNEL einführen (J01-144)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 03a7d38ef82abfe82dc4c7deab4f6647c6fcc2bd
+  short_sha: 03a7d38
+  datetime: "2026-05-19T15:01:55+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/03a7d38ef82abfe82dc4c7deab4f6647c6fcc2bd"
+  message: 'feat(getting-started): README-Sync-Skript und Einstiegsseiten (J01-145)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 88a0df7035b29c94d213410737f189a12fb88dc6
   short_sha: 88a0df7
@@ -114,9 +120,3 @@
   datetime: "2026-05-12T00:10:29+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/1fafc5cbcae14e495fc30e1b7a2b71f318cc0d33"
   message: 'docs: CLI-Pipeline-Syntax dokumentieren (J01-144)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 16e2f6ef1aca32f077ee890170c41432a004d834
-  short_sha: 16e2f6e
-  datetime: "2026-05-11T16:43:27+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/16e2f6ef1aca32f077ee890170c41432a004d834"
-  message: 'fix: recent-ui-texte im include aufloesen (J01-145)'
