@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 915c26d7bd299223da8f455957e2bf3ddd8e4d20
+  short_sha: 915c26d
+  datetime: "2026-05-22T01:53:37+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/915c26d7bd299223da8f455957e2bf3ddd8e4d20"
+  message: 'feat: RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen (J01-149)'
+- repo: lebenslauf-web-vorlage
   sha: 8b3b5e420e5ec4802e9072a829ee9b86b6edea12
   short_sha: 8b3b5e4
   datetime: "2026-05-22T01:42:53+02:00"
@@ -54,12 +60,12 @@
   datetime: "2026-05-19T15:02:12+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dc93351f3fce59ab2cbd00eb8b299538b505ac4e"
   message: 'docs(readme): README aus Docs-Sync generieren (J01-145)'
-- repo: lebenslauf-web-vorlage
-  sha: 13c58f5e6993be15b6c7a52f6dc567c616d72a9a
-  short_sha: 13c58f5
-  datetime: "2026-05-19T15:02:05+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/13c58f5e6993be15b6c7a52f6dc567c616d72a9a"
-  message: 'feat(ci): lokalen Deploy-Runner ergänzen (J01-144)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: a27081e1f5c6e49395d83f58b2a932f92732802d
+  short_sha: a27081e
+  datetime: "2026-05-22T01:47:03+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a27081e1f5c6e49395d83f58b2a932f92732802d"
+  message: 'docs: Sprint-4-Closing nachziehen (J01-136)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 42ad67fbd90cf1bb6edbeaf1f0b301fe3c476a44
   short_sha: 42ad67f
@@ -114,9 +120,3 @@
   datetime: "2026-05-13T13:21:03+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8529ecad4f3c0dea1ebca10a0b3aecbc2b6e625e"
   message: 'docs: Testeinstiege zu J01-144 klären (J01-144)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 4f131e9162ec2284a060194e1e60c212f7e552bb
-  short_sha: 4f131e9
-  datetime: "2026-05-12T16:19:49+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4f131e9162ec2284a060194e1e60c212f7e552bb"
-  message: 'fix: manuellen en-jira-sync schuetzen (J01-145)'
