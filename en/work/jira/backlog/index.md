@@ -32,6 +32,7 @@ Public Jira area (without Jira Cloud links).
   - [**135-3 Mail-Rückkanal für Runtime-Admin-Ergebnisse festziehen**]({{ "/en/jira/issues/J01-135/steps/J01-140/" | relative_url }}) — Done
   - [**135-4 Admin-Aktionsliste und Zugriffsschutz begrenzen**]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}) — To Do
   - [**135-5 CV-Token-Rotation als Runtime-Admin-Aktion umsetzen**]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}) — In Progress
+- [J01-146 — src/cli/py kohärent ordnen und Python-CLI-Aliasse prüfen]({{ "/en/jira/issues/J01-146/" | relative_url }})
 - [J01-28 — Analyse: Risikomuster und Befundliste]({{ "/en/jira/issues/J01-28/" | relative_url }})
   - [**28-1 Befunde erfassen**]({{ "/en/jira/issues/J01-28/steps/J01-29/" | relative_url }}) — To Do
   - [**28-2 Priorisierung und Folge-Tickets**]({{ "/en/jira/issues/J01-28/steps/J01-30/" | relative_url }}) — To Do

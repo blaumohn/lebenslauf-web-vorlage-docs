@@ -153,6 +153,24 @@ SFTP-Operation verwendet wurde:
 - Nicht unterstützte Server-Erweiterungen wie `statvfs` werden sichtbar
   gemeldet, statt still zu verschwinden.
 
+## Nachtrag 2026-05-21: Vendor-Wiederverwendung formalisiert
+
+Der Vendor-Upload entscheidet nicht mehr über eine Checksumme der generierten
+`vendor/composer`-Dateien. Stattdessen ist der Vergleichszustand formal der im
+letzten Deploy-State gespeicherte `deploy_commit`; der aktive
+`vendor-<slot>/.meta`-Sentinel enthält denselben Commit.
+
+- `composer.lock` wird nicht geparst, sondern per
+  `git diff --quiet <deploy_commit> HEAD -- composer.lock` verglichen.
+- `composer.json` wird für den alten Stand per
+  `git show <deploy_commit>:composer.json` gelesen; verglichen werden nur
+  `autoload`, `scripts.install:ci` und `scripts.install:deploy`.
+- Wenn `deploy_commit` fehlt, lokal nicht auflösbar ist oder nicht zum
+  Vendor-Sentinel passt, wird `vendor/` konservativ neu hochgeladen oder der
+  Switch fällt auf den sicheren Pfad zurück.
+- `install:ci` und `install:deploy` kapseln die Composer-Installationsargumente;
+  irrelevante `composer.json`-Änderungen lösen keinen Vendor-Upload mehr aus.
+
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
@@ -169,6 +187,7 @@ SFTP-Operation verwendet wurde:
 | Deploy-Switch-Marker | `deploy_switch` prüft App- und Vendor-Slot-Marker über die deployten Slot-Verzeichnisse und schreibt `.deploy-state.ini` | `DeploySwitchTaskHandler.php`, `TaskDeployTest.php` | umgesetzt |
 | Webroot-Schutz | Nur `app-<slot>/public/` wird über den Router ausgeliefert; `src/` und `var/` bleiben gesperrt | `src/resources/deploy-root/`, `tests/py/test_sftp_deploy_state.py` | umgesetzt |
 | SFTP-REPL | Lokale SFTP-Befehle melden verwendete Operationen und ersetzen `sftp-clear-dir.py` | `src/cli/py/deploy/sftp_shell.py`, `tests/py/test_sftp_shell.py` | umgesetzt |
+| Vendor-Wiederverwendung | Vendor-Upload prüft `composer.lock` per `git diff` und `composer.json` per `git show` nur für `autoload`, `install:ci` und `install:deploy`; `vendor-<slot>/.meta` enthält denselben `deploy_commit` | `scripts/sftp-deploy.py`, `tests/py/test_sftp_deploy.py` | umgesetzt |
 | Preview-Mailtrap | Preview-Deployment versendet über Mailtrap mit echten Environment-Werten | ausstehender manueller Preview-Test | offen |
 | Nachkorrektur | Abweichungen aus Mailtrap-Test sind im selben Schritt oder Folge-PR behoben | PR / Nachweisnotiz | offen |
 
