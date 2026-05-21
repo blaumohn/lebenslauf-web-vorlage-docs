@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 8b3b5e420e5ec4802e9072a829ee9b86b6edea12
+  short_sha: 8b3b5e4
+  datetime: "2026-05-22T01:42:53+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8b3b5e420e5ec4802e9072a829ee9b86b6edea12"
+  message: 'feat: DeployPhase-Enum und DeployMachine-Skeleton hinzufuegen (J01-147)'
+- repo: lebenslauf-web-vorlage
   sha: d2162d54016a312ba8a47d086fe90182bcb2e182
   short_sha: d2162d5
   datetime: "2026-05-22T01:16:54+02:00"
@@ -54,12 +60,12 @@
   datetime: "2026-05-19T15:02:05+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/13c58f5e6993be15b6c7a52f6dc567c616d72a9a"
   message: 'feat(ci): lokalen Deploy-Runner ergänzen (J01-144)'
-- repo: lebenslauf-web-vorlage
-  sha: cca4e2ef0aab69975c0f2ee52a7d12e184ad6891
-  short_sha: cca4e2e
-  datetime: "2026-05-18T14:08:45+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/cca4e2ef0aab69975c0f2ee52a7d12e184ad6891"
-  message: 'fix(deploy): no_changes_since_deploy wiederherstellen und testen (J01-144)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 42ad67fbd90cf1bb6edbeaf1f0b301fe3c476a44
+  short_sha: 42ad67f
+  datetime: "2026-05-22T01:41:40+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/42ad67fbd90cf1bb6edbeaf1f0b301fe3c476a44"
+  message: 'docs: öffentlichen Jira-Spiegel nachziehen (J01-146)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 2224c4d27722e2175b0c2c6fa5a06dea2802c587
   short_sha: 2224c4d
@@ -114,9 +120,3 @@
   datetime: "2026-05-12T16:19:49+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4f131e9162ec2284a060194e1e60c212f7e552bb"
   message: 'fix: manuellen en-jira-sync schuetzen (J01-145)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 08054b4d6497769fc17bfc75347b16570de4d9e2
-  short_sha: 08054b4
-  datetime: "2026-05-12T15:03:31+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/08054b4d6497769fc17bfc75347b16570de4d9e2"
-  message: 'docs: programmierleitlinien zu fallbacks schärfen (J01-145)'

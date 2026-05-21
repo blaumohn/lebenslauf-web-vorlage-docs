@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "SCRUM Sprint 4: planning"
+title: "SCRUM Sprint 4: review, retro, and carry-over"
 permalink: /en/work/sprints/scrum-sprint-4/
 ---
 
 **Window:** 2026-04-28 to 2026-05-12  
-**Status:** active
+**Status:** closed on 2026-05-22
 
 ## Participants
 
@@ -38,6 +38,13 @@ open the production deployment path in practice.
 - [J01-136]({{ "/en/jira/issues/J01-136/" | relative_url }}) —
   plan Sprint 4, close Sprint 3, and update public artifacts
 
+### Unplanned
+
+- [J01-137]({{ "/en/jira/issues/J01-137/" | relative_url }}) —
+  ongoing CV UI adjustments Sprint 4
+- [J01-145]({{ "/en/jira/issues/J01-145/" | relative_url }}) —
+  ongoing documentation maintenance Sprint 4
+
 ## Planning decision
 
 - `J01-13` and `J01-31` stay outside the active sprint because their meaning
@@ -63,3 +70,54 @@ The concrete mail/token-admin remainder is tracked in
 [J01-135]({{ "/en/jira/issues/J01-135/" | relative_url }}). That issue remains
 the canonical checklist for preview mail, local token admin, admin hardening,
 and CI-preview follow-ups before production.
+
+## Review
+
+### Done
+
+- `SCRUM Sprint 4` was closed in Jira.
+- [J01-136]({{ "/en/jira/issues/J01-136/" | relative_url }}) was completed
+  as sprint-admin work.
+- The public Jira mirror was updated after the sprint close: `activeSprint` is
+  empty for the Sprint 4 issues, and the public sprint board no longer shows an
+  active sprint.
+
+### Started, but not completed
+
+- [J01-135]({{ "/en/jira/issues/J01-135/" | relative_url }}) remained
+  `In Progress`.
+- [J01-62]({{ "/en/jira/issues/J01-62/" | relative_url }}) remained
+  `In Progress`.
+- [J01-137]({{ "/en/jira/issues/J01-137/" | relative_url }}) and
+  [J01-145]({{ "/en/jira/issues/J01-145/" | relative_url }}) remained
+  unplanned sprint work `In Progress`.
+
+### Still open
+
+- [J01-65]({{ "/en/jira/issues/J01-65/" | relative_url }}) remained `To Do`.
+- [J01-68]({{ "/en/jira/issues/J01-68/" | relative_url }}) remained `To Do`.
+
+## Retro
+
+- Good: The production and runtime-admin focus became visible as the sprint
+  line, and the remaining work stayed traceable in Jira.
+- Missing: The sprint was publicly closed only after the planned end date; this
+  let the Jira sprint state and the public sprint history drift apart.
+- Next change: Sprint closing belongs directly after the Jira close as a
+  required flow: read the Jira state, sync the public Jira mirror, change the
+  sprint artifact to review/retro/carry-over, and record the work run in
+  `tagebuch`.
+
+## Carry-over
+
+- There is no active sprint in Jira after the close.
+- The open Sprint 4 issues are therefore not automatically assigned to a new
+  sprint.
+- Before the next sprint starts,
+  [J01-135]({{ "/en/jira/issues/J01-135/" | relative_url }}),
+  [J01-62]({{ "/en/jira/issues/J01-62/" | relative_url }}),
+  [J01-65]({{ "/en/jira/issues/J01-65/" | relative_url }}),
+  [J01-68]({{ "/en/jira/issues/J01-68/" | relative_url }}),
+  [J01-137]({{ "/en/jira/issues/J01-137/" | relative_url }}) and
+  [J01-145]({{ "/en/jira/issues/J01-145/" | relative_url }}) must be
+  deliberately reclassified.

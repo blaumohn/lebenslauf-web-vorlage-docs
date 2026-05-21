@@ -12,9 +12,9 @@ jira_key: J01-7
 
 ## Aufgaben
 
-- [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/de/jira/issues/J01-62/" | relative_url }})
-- [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/de/jira/issues/J01-65/" | relative_url }})
 - [J01-68 — Production: Betriebsdoku und Runbook]({{ "/de/jira/issues/J01-68/" | relative_url }})
+- [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/de/jira/issues/J01-65/" | relative_url }})
+- [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/de/jira/issues/J01-62/" | relative_url }})
 
 ## Links
 

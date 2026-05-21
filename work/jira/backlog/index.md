@@ -69,6 +69,7 @@ permalink: /de/jira/backlog/
   - [**62-1 Mail im Deployment aktivieren**]({{ "/de/jira/issues/J01-62/steps/J01-144/" | relative_url }}) — Zu erledigen
   - [**62-2 Branch-Mapping festlegen**]({{ "/de/jira/issues/J01-62/steps/J01-63/" | relative_url }}) — Zu erledigen
   - [**62-3 Environment aktivieren**]({{ "/de/jira/issues/J01-62/steps/J01-64/" | relative_url }}) — Zu erledigen
+  - Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1) — In Bearbeitung
 - [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/de/jira/issues/J01-65/" | relative_url }})
   - [**65-1 Artefaktliste festlegen**]({{ "/de/jira/issues/J01-65/steps/J01-66/" | relative_url }}) — Zu erledigen
   - [**65-2 Post-Deploy-Smoke definieren**]({{ "/de/jira/issues/J01-65/steps/J01-67/" | relative_url }}) — Zu erledigen
