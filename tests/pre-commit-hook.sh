@@ -17,6 +17,7 @@ setup_docs_repo() {
     DOCS="$BASE/lebenslauf-web-vorlage-docs"
     mkdir -p "$DOCS/scripts/hooks" "$DOCS/_data"
     cp "$REPO_ROOT/scripts/generate-recent-commits.sh" "$DOCS/scripts/"
+    cp "$REPO_ROOT/scripts/sync-jira-commits.py" "$DOCS/scripts/"
     cp "$REPO_ROOT/scripts/hooks/pre-commit" "$DOCS/scripts/hooks/"
     git init "$DOCS" --quiet
     git -C "$DOCS" config user.name "Test"
@@ -34,10 +35,18 @@ check_output() {
     [ -f "$OUT" ] || fail "_data/recent_commits.yml wurde nicht erzeugt"
     pass "_data/recent_commits.yml erzeugt"
 
+    JIRA_OUT="$DOCS/_data/jira_commits.json"
+    [ -f "$JIRA_OUT" ] || fail "_data/jira_commits.json wurde nicht erzeugt"
+    pass "_data/jira_commits.json erzeugt"
+
     staged=$(git -C "$DOCS" diff --cached --name-only 2>/dev/null || true)
     printf '%s\n' "$staged" | grep -q "_data/recent_commits.yml" \
         && pass "_data/recent_commits.yml ist gestagert" \
         || fail "_data/recent_commits.yml ist nicht gestagert"
+
+    printf '%s\n' "$staged" | grep -q "_data/jira_commits.json" \
+        && pass "_data/jira_commits.json ist gestagert" \
+        || fail "_data/jira_commits.json ist nicht gestagert"
 }
 
 setup_docs_repo

@@ -1,0 +1,17 @@
+#!/bin/sh
+# Commit-Msg-Hook: erzwingt Conventional Commits mit Jira-Key.
+set -eu
+
+HOOK_PATH="$0"
+if [ -L "$HOOK_PATH" ]; then
+    TARGET=$(readlink "$HOOK_PATH")
+    case "$TARGET" in
+        /*) HOOK_PATH="$TARGET" ;;
+        *) HOOK_PATH="$(CDPATH= cd -- "$(dirname "$HOOK_PATH")" && pwd)/$TARGET" ;;
+    esac
+fi
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname "$HOOK_PATH")" && pwd)
+REPO_ROOT=$(CDPATH= cd -- "$SCRIPT_DIR/../.." && pwd)
+
+sh "$REPO_ROOT/scripts/validate-commit-msg.sh" "$1"

@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/820ffe81787d0f71b8fcc78ad3727385b6e35733"
   message: 'refactor(deploy): entferne alte vendor-build-id-prüfung (J01-144)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: dd482addd257cd3711ada2450d8d18c680a16e5e
+  short_sha: dd482ad
+  datetime: "2026-05-22T23:57:51+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dd482addd257cd3711ada2450d8d18c680a16e5e"
+  message: 'docs: Pipeline-Spec-Commits in J01-144 ergänzen (J01-144)'
+- repo: lebenslauf-web-vorlage-docs
   sha: d327fb3baf6418d1c1bb25c10d0e11201fa07e83
   short_sha: d327fb3
   datetime: "2026-05-22T13:45:05+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-05-15T22:53:49+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/88a0df7035b29c94d213410737f189a12fb88dc6"
   message: 'docs: Task-Testausgabe dokumentieren (J01-144)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: dedcd9f23a3683bdead58b6cb336e14d89399f4b
-  short_sha: dedcd9f
-  datetime: "2026-05-15T13:36:12+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dedcd9f23a3683bdead58b6cb336e14d89399f4b"
-  message: 'docs: SFTP-REPL in J01-135 dokumentieren (J01-135)'

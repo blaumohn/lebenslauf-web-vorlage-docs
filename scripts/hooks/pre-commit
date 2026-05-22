@@ -7,4 +7,5 @@ SCRIPT_DIR=$(CDPATH= cd -- "$(dirname "$0")" && pwd)
 REPO_ROOT=$(CDPATH= cd -- "$SCRIPT_DIR/../.." && pwd)
 
 sh "$REPO_ROOT/scripts/generate-recent-commits.sh"
-git -C "$REPO_ROOT" add -- _data/recent_commits.yml
+python3 "$REPO_ROOT/scripts/sync-jira-commits.py" full
+git -C "$REPO_ROOT" add -- _data/recent_commits.yml _data/jira_commits.json

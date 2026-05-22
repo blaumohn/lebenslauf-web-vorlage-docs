@@ -1,0 +1,22 @@
+#!/bin/sh
+# Post-Commit-Hook: ergänzt den aktuellen Commit in der Jira-Commit-Datenquelle.
+set -eu
+
+HOOK_PATH="$0"
+if [ -L "$HOOK_PATH" ]; then
+    TARGET=$(readlink "$HOOK_PATH")
+    case "$TARGET" in
+        /*) HOOK_PATH="$TARGET" ;;
+        *) HOOK_PATH="$(CDPATH= cd -- "$(dirname "$HOOK_PATH")" && pwd)/$TARGET" ;;
+    esac
+fi
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname "$HOOK_PATH")" && pwd)
+DOCS_ROOT=$(CDPATH= cd -- "$SCRIPT_DIR/../.." && pwd)
+SOURCE_REPO=$(git rev-parse --show-toplevel)
+
+[ "$SOURCE_REPO" = "$DOCS_ROOT" ] && exit 0
+
+python3 "$DOCS_ROOT/scripts/sync-jira-commits.py" current \
+    --repo "$SOURCE_REPO" \
+    --commit HEAD

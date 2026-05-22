@@ -1,0 +1,3484 @@
+{
+  "J01-100": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "1d85ef516a8ee6309735a9ac88395c18a45b0ca3",
+      "short_sha": "1d85ef5",
+      "datetime": "2026-03-17T09:38:23+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/1d85ef516a8ee6309735a9ac88395c18a45b0ca3",
+      "subject": "docs: J01-98 auf Sprint-Scope begrenzen und J01-100 abspalten (J01-100)"
+    }
+  ],
+  "J01-103": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "3cb92cb7bc3bda69e4c4ade3034669796058363a",
+      "short_sha": "3cb92cb",
+      "datetime": "2026-03-18T12:43:51+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3cb92cb7bc3bda69e4c4ade3034669796058363a",
+      "subject": "docs: Mirror-Eintrag für J01-103 nachziehen (J01-103)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "bd0c6bbaf012396e9a078b07bfcb1e83116ceeb9",
+      "short_sha": "bd0c6bb",
+      "datetime": "2026-03-18T12:31:28+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/bd0c6bbaf012396e9a078b07bfcb1e83116ceeb9",
+      "subject": "docs: Startseitenprofil schärfen (J01-103)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "67e829e4e52b1bbc75a4b45fc88ce7b296ce27be",
+      "short_sha": "67e829e",
+      "datetime": "2026-03-18T11:48:19+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/67e829e4e52b1bbc75a4b45fc88ce7b296ce27be",
+      "subject": "docs: J01-91 Zielerfüllung über J01-103 nachziehen (J01-103)"
+    }
+  ],
+  "J01-104": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "50048dac982cf11ff47a8f50e9455284216af624",
+      "short_sha": "50048da",
+      "datetime": "2026-03-18T19:30:24+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/50048dac982cf11ff47a8f50e9455284216af624",
+      "subject": "docs: öffentliche Jira-Fläche als Primärmodell festziehen (J01-104)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "aed87bf10d325c963c323fbe4f9f8d7542b90adc",
+      "short_sha": "aed87bf",
+      "datetime": "2026-03-18T15:28:10+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/aed87bf10d325c963c323fbe4f9f8d7542b90adc",
+      "subject": "docs: Querpfade zwischen work und mirror verankern (J01-104)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "5c0ff538a6add3864bdd222f68a8d8976de84b99",
+      "short_sha": "5c0ff53",
+      "datetime": "2026-03-18T14:19:07+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5c0ff538a6add3864bdd222f68a8d8976de84b99",
+      "subject": "docs: Kontextleiste für Jira-Arbeitsdokus ergänzen (J01-104)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "e8cba96e9d3bd9c3ef3672668b86957696194ba7",
+      "short_sha": "e8cba96",
+      "datetime": "2026-03-18T13:40:15+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e8cba96e9d3bd9c3ef3672668b86957696194ba7",
+      "subject": "docs: J01-104 als echten Jira-Task nachziehen (J01-104)"
+    }
+  ],
+  "J01-105": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "ef1046a3437525e261c044c0c817ef5d3d48dfd1",
+      "short_sha": "ef1046a",
+      "datetime": "2026-05-06T13:21:25+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ef1046a3437525e261c044c0c817ef5d3d48dfd1",
+      "subject": "docs: Pipeline-Spec-Beispielwerte schaerfen (J01-105)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "fd402fb1a999c9c781aab29a7916442dc2ebc98c",
+      "short_sha": "fd402fb",
+      "datetime": "2026-05-06T13:21:17+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/fd402fb1a999c9c781aab29a7916442dc2ebc98c",
+      "subject": "docs: Beispielwerte in Config-Spec klaeren (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "aa0d9f3a5c686dff9a8f924388662b6036d77495",
+      "short_sha": "aa0d9f3",
+      "datetime": "2026-04-16T11:23:56+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/aa0d9f3a5c686dff9a8f924388662b6036d77495",
+      "subject": "chore: pipeline-config-spec-php auf aktuellen Stand ziehen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "dc4d0b71411747d0aa441782f5a55e61518d8b0c",
+      "short_sha": "dc4d0b7",
+      "datetime": "2026-04-15T15:59:07+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dc4d0b71411747d0aa441782f5a55e61518d8b0c",
+      "subject": "docs: J01-105 öffentlich abschließen und Mirror bereinigen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "871cb60ada54a824758a665369c7f79eb0f8ddec",
+      "short_sha": "871cb60",
+      "datetime": "2026-04-14T16:28:54+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/871cb60ada54a824758a665369c7f79eb0f8ddec",
+      "subject": "refactor: Runtime-Kompilat auf pipeline_phase umstellen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "f43c3738d016151ab62d20524d6ba2b0251fdd98",
+      "short_sha": "f43c373",
+      "datetime": "2026-04-14T16:16:34+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f43c3738d016151ab62d20524d6ba2b0251fdd98",
+      "subject": "refactor: Kontextpfad ohne Legacy-Fallback lesen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "0eb0fe12c5973ead133c2ce367fe3aff50db4293",
+      "short_sha": "0eb0fe1",
+      "datetime": "2026-04-14T15:57:33+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/0eb0fe12c5973ead133c2ce367fe3aff50db4293",
+      "subject": "refactor: Runtime-Kontext getrennt von Konfig lesen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "a166063fc5d8cf96c2effde382229b5323bbcc9c",
+      "short_sha": "a166063",
+      "datetime": "2026-04-10T12:28:51+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a166063fc5d8cf96c2effde382229b5323bbcc9c",
+      "subject": "docs: Umgebungsdoku entfernen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "a22258973f7b39920ec4a30605a036bddc60cfac",
+      "short_sha": "a222589",
+      "datetime": "2026-04-10T12:28:51+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a22258973f7b39920ec4a30605a036bddc60cfac",
+      "subject": "docs: Umgebungsdoku-Entfall spiegeln (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "6023d4bd20a388b6306811dc019ff7e4e5d90495",
+      "short_sha": "6023d4b",
+      "datetime": "2026-04-08T14:56:50+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6023d4bd20a388b6306811dc019ff7e4e5d90495",
+      "subject": "docs: J01-123 Anker und Vorbefunde nachziehen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "e4b2799a52604498bbd0251c588bbcc19314a55b",
+      "short_sha": "e4b2799",
+      "datetime": "2026-04-08T13:49:10+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/e4b2799a52604498bbd0251c588bbcc19314a55b",
+      "subject": "feat: Manifeststruktur und meta.notes nachziehen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "dc80b6aa36467592ee5f09e4d6b24e6fccee95f8",
+      "short_sha": "dc80b6a",
+      "datetime": "2026-04-08T13:49:10+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dc80b6aa36467592ee5f09e4d6b24e6fccee95f8",
+      "subject": "docs: J01-105 Arbeitsdokus und P0-Matrix nachziehen (J01-105)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "7242323aef2c4fc64a6230af5563b70af66860f0",
+      "short_sha": "7242323",
+      "datetime": "2026-04-08T13:49:10+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/7242323aef2c4fc64a6230af5563b70af66860f0",
+      "subject": "feat: Manifeststruktur auf variable-groups umstellen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "cd4ecfb36de8e53db2718e3fb37b654573e657ce",
+      "short_sha": "cd4ecfb",
+      "datetime": "2026-04-03T16:56:54+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/cd4ecfb36de8e53db2718e3fb37b654573e657ce",
+      "subject": "refactor(config): Leere Phasenmarker im Manifest entfernen (J01-105)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "4d45328609b6d691ae0397a31f7f59f65d421d9e",
+      "short_sha": "4d45328",
+      "datetime": "2026-04-03T16:56:54+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/4d45328609b6d691ae0397a31f7f59f65d421d9e",
+      "subject": "docs: Leere Phasenmarker aus README-Beispiel entfernen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "2654f927e754a595693b08857465a85a1fba34c3",
+      "short_sha": "2654f92",
+      "datetime": "2026-04-03T16:40:21+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2654f927e754a595693b08857465a85a1fba34c3",
+      "subject": "refactor(config): J01-105-Drift zu global im App-Repo korrigieren (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "d342a2924565f50cb6679d0452c90ddd36040dde",
+      "short_sha": "d342a29",
+      "datetime": "2026-04-03T16:40:21+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/d342a2924565f50cb6679d0452c90ddd36040dde",
+      "subject": "docs: J01-105-Drift im Zielmodell geradeziehen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "7b711a56f8e6e54a7f88e65982f47ba2333698ff",
+      "short_sha": "7b711a5",
+      "datetime": "2026-04-03T16:28:24+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7b711a56f8e6e54a7f88e65982f47ba2333698ff",
+      "subject": "refactor(config): Manifest-Gruppenschema im App-Repo nachziehen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "25329c16b6946e66e2137c61b315cf5a699e3cc2",
+      "short_sha": "25329c1",
+      "datetime": "2026-04-03T15:45:08+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/25329c16b6946e66e2137c61b315cf5a699e3cc2",
+      "subject": "docs: Geschwister-Schritte in J01-105 korrekt spiegeln (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "be12cabaf2aef44f013e226f6c0bcf6995c40a71",
+      "short_sha": "be12cab",
+      "datetime": "2026-04-03T15:38:26+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/be12cabaf2aef44f013e226f6c0bcf6995c40a71",
+      "subject": "docs: Jira-Status für J01-105-Schritte sichtbar nachziehen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "e46872fd1e09deb0dfc804c9bbe650155b75a4b6",
+      "short_sha": "e46872f",
+      "datetime": "2026-04-03T15:03:05+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e46872fd1e09deb0dfc804c9bbe650155b75a4b6",
+      "subject": "docs: J01-105-Vorhaben in Schrittseiten schneiden (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "8c981ad9bf687a43b7dc344a53abcef18c0f4dde",
+      "short_sha": "8c981ad",
+      "datetime": "2026-04-03T12:52:28+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8c981ad9bf687a43b7dc344a53abcef18c0f4dde",
+      "subject": "docs: Herleitung und Meta-Regel für J01-105 schärfen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "8ce2b0e5117f7e471de266a9d7d582af31ff7e1b",
+      "short_sha": "8ce2b0e",
+      "datetime": "2026-04-03T12:04:58+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8ce2b0e5117f7e471de266a9d7d582af31ff7e1b",
+      "subject": "refactor: Setup-Seed vom Build-Profil entkoppeln (J01-105)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "0e6bdf867a0b71e7698c45f66835cabb2e4432ea",
+      "short_sha": "0e6bdf8",
+      "datetime": "2026-04-03T12:04:58+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/0e6bdf867a0b71e7698c45f66835cabb2e4432ea",
+      "subject": "docs: Manifest-Schema im README klarziehen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "a5b0b05c1465dade387a8db827330a6c34ec4307",
+      "short_sha": "a5b0b05",
+      "datetime": "2026-04-01T16:38:07+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a5b0b05c1465dade387a8db827330a6c34ec4307",
+      "subject": "refactor(config): J01-105 auf J01-9-Basis neu aufsetzen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "8365c456c8d5133387d3fc923b80828737615b6f",
+      "short_sha": "8365c45",
+      "datetime": "2026-04-01T16:38:07+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8365c456c8d5133387d3fc923b80828737615b6f",
+      "subject": "docs: J01-105-Zielstand zu Pipeline-Phasen klären (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "8c4135fda3292019a2b08013d3ee0d7991f1e7f9",
+      "short_sha": "8c4135f",
+      "datetime": "2026-04-01T13:50:25+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8c4135fda3292019a2b08013d3ee0d7991f1e7f9",
+      "subject": "fix(config): SMTP-Absender klarziehen und CONTACT_FROM_EMAIL entfernen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "6e01ec1f92eaff874ac4dfce3d839ee26d592fd3",
+      "short_sha": "6e01ec1",
+      "datetime": "2026-04-01T13:50:25+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6e01ec1f92eaff874ac4dfce3d839ee26d592fd3",
+      "subject": "docs: J01-105 SMTP-Absenderpfad in Arbeitsdoku nachziehen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "e0dc39968783d90e2a735cfd09a4ae0a9a43199e",
+      "short_sha": "e0dc399",
+      "datetime": "2026-04-01T13:18:07+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/e0dc39968783d90e2a735cfd09a4ae0a9a43199e",
+      "subject": "docs(config): meta für SMTP_FROM_EMAIL und SMTP_FROM_NAME präzisieren (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "dc3c58dacedbba72b41cb76f163c19934b4a098c",
+      "short_sha": "dc3c58d",
+      "datetime": "2026-04-01T13:15:24+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dc3c58dacedbba72b41cb76f163c19934b4a098c",
+      "subject": "refactor(config): pipeline_phase-Gruppe aus variables entfernen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "bbfda46287e8659f2504b88f9f31177fb8ea8c88",
+      "short_sha": "bbfda46",
+      "datetime": "2026-04-01T13:11:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/bbfda46287e8659f2504b88f9f31177fb8ea8c88",
+      "subject": "docs(config): meta-Objekte für alle Manifest-Variablen ergänzen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "408d24083b342e788dee07dd11067a32f7e67c1b",
+      "short_sha": "408d240",
+      "datetime": "2026-04-01T13:03:22+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/408d24083b342e788dee07dd11067a32f7e67c1b",
+      "subject": "fix(config): meta-Objekte im Manifest wiederherstellen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "6f624ddf6935724d492ea3c2f4a016f98ef5e870",
+      "short_sha": "6f624dd",
+      "datetime": "2026-04-01T12:50:37+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/6f624ddf6935724d492ea3c2f4a016f98ef5e870",
+      "subject": "refactor(config): Config-YAML-Dateien auf Gruppen-Schema umstellen (J01-105)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "0e9829dc0529ad113b6792dcbf01b4212670d565",
+      "short_sha": "0e9829d",
+      "datetime": "2026-04-01T12:47:07+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/0e9829dc0529ad113b6792dcbf01b4212670d565",
+      "subject": "feat(loader): Config-YAML-Dateien mit Gruppen-Schema laden (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "103d4c20a0520660896e3adc51590751058cccd8",
+      "short_sha": "103d4c2",
+      "datetime": "2026-04-01T12:34:43+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/103d4c20a0520660896e3adc51590751058cccd8",
+      "subject": "refactor(config): Manifest auf dict-Schema umstellen (J01-105)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "be72debfe8ba03592132989156a750b2b5fd06b7",
+      "short_sha": "be72deb",
+      "datetime": "2026-04-01T12:29:17+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/be72debfe8ba03592132989156a750b2b5fd06b7",
+      "subject": "refactor(compiler): PIPELINE/PHASE als lib-intern behandeln (J01-105)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "15502c379a5191cc5191670e6ddf3126751d7682",
+      "short_sha": "15502c3",
+      "datetime": "2026-04-01T12:17:23+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/15502c379a5191cc5191670e6ddf3126751d7682",
+      "subject": "refactor(manifest): Phasen-Schlüsselliste auf dict-Schema umstellen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "45a7517f357c94f034214fac1b11a23f3688034f",
+      "short_sha": "45a7517",
+      "datetime": "2026-04-01T11:36:19+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/45a7517f357c94f034214fac1b11a23f3688034f",
+      "subject": "refactor(config): Code-Defaults aus src/ entfernen (J01-105)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "f63876097ee09e7482efd1d0708edbb91e464ba8",
+      "short_sha": "f638760",
+      "datetime": "2026-03-31T15:49:50+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/f63876097ee09e7482efd1d0708edbb91e464ba8",
+      "subject": "refactor(manifest): Manifest auf flache Phasen-Schlüsselliste umstellen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "367c4e1323f6ca445272c7303e7d2e86176bd04a",
+      "short_sha": "367c4e1",
+      "datetime": "2026-03-20T11:11:03+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/367c4e1323f6ca445272c7303e7d2e86176bd04a",
+      "subject": "docs: J01-105 Doku zum Manifestmodell schärfen (J01-105)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "90efd570c1fa9fa356add8bb734901ebbc94e46b",
+      "short_sha": "90efd57",
+      "datetime": "2026-03-19T16:06:08+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/90efd570c1fa9fa356add8bb734901ebbc94e46b",
+      "subject": "docs: ISS-003/ISS-007 nach J01-28/J01-37 übernehmen, J01-105 bereinigen (J01-105)"
+    }
+  ],
+  "J01-106": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "e6efa1f5bd0230c3e595564ce1878ec9bfc3ef53",
+      "short_sha": "e6efa1f",
+      "datetime": "2026-03-19T15:50:47+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e6efa1f5bd0230c3e595564ce1878ec9bfc3ef53",
+      "subject": "docs: Live-Betrieb für Jira-Seiten schärfen (J01-106)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "eb1982eca55c663a37472892b06711c15bff70a9",
+      "short_sha": "eb1982e",
+      "datetime": "2026-03-19T14:57:13+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/eb1982eca55c663a37472892b06711c15bff70a9",
+      "subject": "docs: Arbeitsdoku für Skill-Zusammenführung anlegen (J01-106)"
+    }
+  ],
+  "J01-107": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "065e5b4c3299d4e336afba47f82c39428d0566ca",
+      "short_sha": "065e5b4",
+      "datetime": "2026-03-19T16:35:01+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/065e5b4c3299d4e336afba47f82c39428d0566ca",
+      "subject": "docs: Jira-Metadaten für Migrationsvorgänge nachziehen (J01-107)"
+    }
+  ],
+  "J01-108": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "f167a3fb95bdbb7872af34c64e52ef4e4990b753",
+      "short_sha": "f167a3f",
+      "datetime": "2026-03-19T21:00:56+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f167a3fb95bdbb7872af34c64e52ef4e4990b753",
+      "subject": "docs: Übersichten-Kiste aus Jira-Kontext entfernen (J01-108)"
+    }
+  ],
+  "J01-109": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "9fbea7b41063ed0b9abcf685c2f44fdfa1751d63",
+      "short_sha": "9fbea7b",
+      "datetime": "2026-03-20T05:29:02+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/9fbea7b41063ed0b9abcf685c2f44fdfa1751d63",
+      "subject": "docs: GitHub-Pages-Permalink-Drift beheben (J01-109)"
+    }
+  ],
+  "J01-113": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "4902b1108cad1d751575e940e435259538eb9a77",
+      "short_sha": "4902b11",
+      "datetime": "2026-03-20T16:04:14+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4902b1108cad1d751575e940e435259538eb9a77",
+      "subject": "docs: J01-113 Umsetzungsplan und EN-Anlagen ergänzt (J01-113)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "bf9b8ce13f2f20914881434c74ca38101e6413a4",
+      "short_sha": "bf9b8ce",
+      "datetime": "2026-03-20T15:38:14+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/bf9b8ce13f2f20914881434c74ca38101e6413a4",
+      "subject": "docs: J01-113 Anlage Regelwerk-Bestandsübersicht ergänzt (J01-113)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "2c56432deb32580270f731e7937332f8a17caed4",
+      "short_sha": "2c56432",
+      "datetime": "2026-03-20T13:25:02+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2c56432deb32580270f731e7937332f8a17caed4",
+      "subject": "docs: J01-113 Scope um Architekturoptionen und Grenzprinzip erweitern (J01-113)"
+    }
+  ],
+  "J01-116": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "b2aa800aa0ad548be09d70509697ba353bc55617",
+      "short_sha": "b2aa800",
+      "datetime": "2026-03-24T14:00:44+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/b2aa800aa0ad548be09d70509697ba353bc55617",
+      "subject": "docs: öffentliche Jira-Issue-Seiten konsistent spiegeln (J01-116)"
+    }
+  ],
+  "J01-117": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "012a2e405936d06315de5357191fa58d6b0079c6",
+      "short_sha": "012a2e4",
+      "datetime": "2026-04-17T15:19:20+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/012a2e405936d06315de5357191fa58d6b0079c6",
+      "subject": "docs: Startseiten-Leserpfade, Umsetzungseinstieg und Projekts-Spec schärfen (J01-117)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "65d0be5d121a4612e6448b45b216347c698ac977",
+      "short_sha": "65d0be5",
+      "datetime": "2026-03-24T16:40:35+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/65d0be5d121a4612e6448b45b216347c698ac977",
+      "subject": "docs: Sprache der Spec-Landkarte schärfen (J01-117)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "6dd92a483c0ee8dd4458b1c1fe9f4ea5f31bbee6",
+      "short_sha": "6dd92a4",
+      "datetime": "2026-03-24T16:07:50+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6dd92a483c0ee8dd4458b1c1fe9f4ea5f31bbee6",
+      "subject": "docs: Spec-Landkarte für Projekt und Systeme aufbauen (J01-117)"
+    }
+  ],
+  "J01-118": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "39bbd12d288a915ad25e1a4c3d93f9911612572c",
+      "short_sha": "39bbd12",
+      "datetime": "2026-03-31T00:46:11+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/39bbd12d288a915ad25e1a4c3d93f9911612572c",
+      "subject": "docs: öffentlichen Jira-Abgleich mit J01-118 nachziehen (J01-118)"
+    }
+  ],
+  "J01-119": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "f22fcc788fbe6678d284288c28015ba7e5040e3b",
+      "short_sha": "f22fcc7",
+      "datetime": "2026-04-03T12:55:30+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f22fcc788fbe6678d284288c28015ba7e5040e3b",
+      "subject": "docs: Öffentlichen Jira-Mirror nachziehen (J01-119)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "8e6ef40e345e4fd589b48415e7bc7ada78eaf34e",
+      "short_sha": "8e6ef40",
+      "datetime": "2026-04-03T12:55:30+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8e6ef40e345e4fd589b48415e7bc7ada78eaf34e",
+      "subject": "docs: Jira-Sync-Folgearbeit und Runbook nachziehen (J01-119)"
+    }
+  ],
+  "J01-120": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "c5a11d1f16a6e70388fe0c58091aa0d63acbdf73",
+      "short_sha": "c5a11d1",
+      "datetime": "2026-04-03T12:55:30+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c5a11d1f16a6e70388fe0c58091aa0d63acbdf73",
+      "subject": "docs: Sprint-Abschluss und Sprint-2-Planung spiegeln (J01-120)"
+    }
+  ],
+  "J01-122": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "7a5bab2a4c82221e98338e7ba3385309fb0f4acd",
+      "short_sha": "7a5bab2",
+      "datetime": "2026-04-09T16:46:55+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7a5bab2a4c82221e98338e7ba3385309fb0f4acd",
+      "subject": "fix: Setup-Sample auf Public-Profil ausrichten (J01-122)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "7a30d9d4d4a6cac4d086a213f70c202835920e8d",
+      "short_sha": "7a30d9d",
+      "datetime": "2026-04-09T16:46:55+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7a30d9d4d4a6cac4d086a213f70c202835920e8d",
+      "subject": "docs: Setup-Seed-Profil korrigieren (J01-122)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "020cbfac507567f528f5aa424ba47f9072a90eee",
+      "short_sha": "020cbfa",
+      "datetime": "2026-04-03T17:07:06+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/020cbfac507567f528f5aa424ba47f9072a90eee",
+      "subject": "docs: J01-122 als erledigt in Jira-Spiegel melden (J01-122)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "7e36428f295815ce421cf16fa0dbf7cdb096a425",
+      "short_sha": "7e36428",
+      "datetime": "2026-04-03T16:25:32+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7e36428f295815ce421cf16fa0dbf7cdb096a425",
+      "subject": "docs: Setup-Seed-Pfad in README.en nachziehen (J01-122)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "e01f43caef25ecdfc7e3867248036addaca2a938",
+      "short_sha": "e01f43c",
+      "datetime": "2026-04-03T16:25:32+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e01f43caef25ecdfc7e3867248036addaca2a938",
+      "subject": "docs: J01-122 in öffentlicher Schritt-Doku abschließen (J01-122)"
+    }
+  ],
+  "J01-123": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "9168d4b02216c6ff7662a58e10738f8b732e8444",
+      "short_sha": "9168d4b",
+      "datetime": "2026-04-14T13:13:10+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9168d4b02216c6ff7662a58e10738f8b732e8444",
+      "subject": "refactor: Python-Pfad auf shared-Zuschnitt ziehen (J01-123)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "0af8ea61d195a354cc436bad8bf8ebe75af10a7c",
+      "short_sha": "0af8ea6",
+      "datetime": "2026-04-14T13:13:10+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/0af8ea61d195a354cc436bad8bf8ebe75af10a7c",
+      "subject": "docs: P_3-Stand in J01-123 aktualisieren (J01-123)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "cb4b4933ebd603e9df610a32cedd360fbb926ff2",
+      "short_sha": "cb4b493",
+      "datetime": "2026-04-13T13:58:43+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/cb4b4933ebd603e9df610a32cedd360fbb926ff2",
+      "subject": "fix(tests): starte Smoke-Server ueber composer dev (J01-123)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "9c4b54094904999bc58f8d451878182470b3b2dd",
+      "short_sha": "9c4b540",
+      "datetime": "2026-04-13T13:33:47+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/9c4b54094904999bc58f8d451878182470b3b2dd",
+      "subject": "docs: entferne run als Dev-Befehl aus P_3 (J01-123)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "936cf552fef55d97b026ff5b98a01fafcd9c64f6",
+      "short_sha": "936cf55",
+      "datetime": "2026-04-13T13:33:39+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/936cf552fef55d97b026ff5b98a01fafcd9c64f6",
+      "subject": "refactor(dev): verlagere Dev-Start auf Composer und Python-Phase (J01-123)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "c857bfae8a9ff50252660f9248ebf7fd0b113e32",
+      "short_sha": "c857bfa",
+      "datetime": "2026-04-13T12:36:19+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c857bfae8a9ff50252660f9248ebf7fd0b113e32",
+      "subject": "docs: schaerfe P_3 fuer fruehe Command-Config-Aufloesung (J01-123)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "3a26fa23d88ed3bfcb9e87bc8945c316a14a693d",
+      "short_sha": "3a26fa2",
+      "datetime": "2026-04-13T12:36:11+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3a26fa23d88ed3bfcb9e87bc8945c316a14a693d",
+      "subject": "fix(cli): loese Pipeline-Config frueh in BasePipelineCommand auf (J01-123)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "ce021d4d934fe7ca3c2d1c8af9ea4139a728f759",
+      "short_sha": "ce021d4",
+      "datetime": "2026-04-12T17:02:03+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ce021d4d934fe7ca3c2d1c8af9ea4139a728f759",
+      "subject": "docs: dokumentiere P_3 zur Python-Command-Basis (J01-123)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "2272963851f0a441e1bf612cd19612aab1a8bb55",
+      "short_sha": "2272963",
+      "datetime": "2026-04-12T17:01:53+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2272963851f0a441e1bf612cd19612aab1a8bb55",
+      "subject": "feat(cli): binde Python-Config an Pipeline-Command-Basis (J01-123)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "ec09700c7e637822d4cd46bd3d4dff193c8125b1",
+      "short_sha": "ec09700",
+      "datetime": "2026-04-10T11:58:46+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ec09700c7e637822d4cd46bd3d4dff193c8125b1",
+      "subject": "fix: Contact- und SMTP-Config trennen (J01-123)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "36c56f1a194e2d185d121a264ddc1d78b3305482",
+      "short_sha": "36c56f1",
+      "datetime": "2026-04-10T11:58:46+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/36c56f1a194e2d185d121a264ddc1d78b3305482",
+      "subject": "docs: Contact- und SMTP-Vertrag nachziehen (J01-123)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "991b48e38a45f4783f9c94afbe25a8489cfcf100",
+      "short_sha": "991b48e",
+      "datetime": "2026-04-08T15:31:18+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/991b48e38a45f4783f9c94afbe25a8489cfcf100",
+      "subject": "feat: APP_URL als P_2 aus dem Build-Vertrag entfernen (J01-123)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "c871ac0d589c656cf4d4a0c0e22a146eeaf3acbc",
+      "short_sha": "c871ac0",
+      "datetime": "2026-04-08T15:19:20+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c871ac0d589c656cf4d4a0c0e22a146eeaf3acbc",
+      "subject": "feat: P_1 für Mail-Vertrag und JSON-Rest nachziehen (J01-123)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "7512cec8a2a68dff479bf84733c2ba5ec624a3b2",
+      "short_sha": "7512cec",
+      "datetime": "2026-04-04T06:29:24+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7512cec8a2a68dff479bf84733c2ba5ec624a3b2",
+      "subject": "docs: P_0-Matrix für J01-123 auf technische Funde schärfen (J01-123)"
+    }
+  ],
+  "J01-125": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "3ae8a03dabfba006a43b61a04a6f0d1fc6784c15",
+      "short_sha": "3ae8a03",
+      "datetime": "2026-04-16T11:15:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3ae8a03dabfba006a43b61a04a6f0d1fc6784c15",
+      "subject": "test: PYTHON_PATHS an Umbenennung von origin zu source anpassen (J01-125)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "0c894ac3af60349d72a192296027ef985ea1b93e",
+      "short_sha": "0c894ac",
+      "datetime": "2026-04-15T13:46:32+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/0c894ac3af60349d72a192296027ef985ea1b93e",
+      "subject": "fix: filterSnapshot entfernen, Validierung greift vor Filter (J01-125)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "398bd94aa48c03d1cd05abbbdaf9fc80e8eb36e8",
+      "short_sha": "398bd94",
+      "datetime": "2026-04-15T13:44:16+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/398bd94aa48c03d1cd05abbbdaf9fc80e8eb36e8",
+      "subject": "refactor: origin in source umbenennen (J01-125)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "124f7f647fb437d4fa28f8f717d3bdb1f4da137c",
+      "short_sha": "124f7f6",
+      "datetime": "2026-04-14T16:28:54+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/124f7f647fb437d4fa28f8f717d3bdb1f4da137c",
+      "subject": "docs: Ein-Datei-Kompilat fuer J01-105 nachziehen (J01-125)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "64c1d411db04b4f96279758407313f1423b97ffc",
+      "short_sha": "64c1d41",
+      "datetime": "2026-04-14T16:28:54+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/64c1d411db04b4f96279758407313f1423b97ffc",
+      "subject": "refactor: Kompilat auf pipeline_phase und values umstellen (J01-125)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "73c2897a87e1b36244f33346a134b98a5f87d993",
+      "short_sha": "73c2897",
+      "datetime": "2026-04-14T16:16:34+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/73c2897a87e1b36244f33346a134b98a5f87d993",
+      "subject": "docs: Kontextpfad ohne Legacy fuer J01-105 festziehen (J01-125)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "a99f712db560ca86d6db71a1a2fa12bee0002454",
+      "short_sha": "a99f712",
+      "datetime": "2026-04-14T15:57:33+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a99f712db560ca86d6db71a1a2fa12bee0002454",
+      "subject": "docs: Kompilat und Kontext-Metadaten fuer J01-105 nachziehen (J01-125)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "6c540ad0b99e4707f489ff7885dc3cb0dcc67805",
+      "short_sha": "6c540ad",
+      "datetime": "2026-04-14T15:57:33+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/6c540ad0b99e4707f489ff7885dc3cb0dcc67805",
+      "subject": "refactor: Pipeline-Phase im Kompilat von Variablen trennen (J01-125)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "3f1eb51a00afc5c90e3309b9611daac98f467829",
+      "short_sha": "3f1eb51",
+      "datetime": "2026-04-14T12:15:12+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3f1eb51a00afc5c90e3309b9611daac98f467829",
+      "subject": "docs: Pipeline-Phase-Validierung in J01-125 erklären (J01-125)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "830ae4232adb4f0b4f51636177028b9e51e02e7e",
+      "short_sha": "830ae42",
+      "datetime": "2026-04-14T12:15:12+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/830ae4232adb4f0b4f51636177028b9e51e02e7e",
+      "subject": "refactor: pipeline-phase und origins klarziehen (J01-125)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "72d0bde179ada0642aceeb1309b074749a050ed2",
+      "short_sha": "72d0bde",
+      "datetime": "2026-04-10T12:28:51+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/72d0bde179ada0642aceeb1309b074749a050ed2",
+      "subject": "docs: Deutsche README auf Zielmodell nachziehen (J01-125)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "96aa46470cc18dd034f4b7bc4f843aa95ae34d26",
+      "short_sha": "96aa464",
+      "datetime": "2026-04-09T16:06:28+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/96aa46470cc18dd034f4b7bc4f843aa95ae34d26",
+      "subject": "docs: Phasen-Mapping-Zielmodell in J01-105 nachziehen (J01-125)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "45508d6686b1ea352876f13f3ecc7dc90d2414c9",
+      "short_sha": "45508d6",
+      "datetime": "2026-04-09T16:06:24+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/45508d6686b1ea352876f13f3ecc7dc90d2414c9",
+      "subject": "feat: App-Manifest auf Phasen-Mapping migrieren (J01-125)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "6f7ba37756928ada50d30d9d5ae2b3e8adea6144",
+      "short_sha": "6f7ba37",
+      "datetime": "2026-04-09T16:06:17+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/6f7ba37756928ada50d30d9d5ae2b3e8adea6144",
+      "subject": "feat: Manifest-Schema auf Phasen-Mappings umstellen (J01-125)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "ede54b46f6d1d7779ae6034e6410c44ff0c7a395",
+      "short_sha": "ede54b4",
+      "datetime": "2026-04-08T16:49:41+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ede54b46f6d1d7779ae6034e6410c44ff0c7a395",
+      "subject": "docs: Leere Phasen in J01-125 nachziehen (J01-125)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "28c5faf15a73608d9b26f1c8271bb6b136157ea4",
+      "short_sha": "28c5faf",
+      "datetime": "2026-04-08T16:49:38+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/28c5faf15a73608d9b26f1c8271bb6b136157ea4",
+      "subject": "fix: Leere Phasen ohne Manifest-Platzhalter zulassen (J01-125)"
+    }
+  ],
+  "J01-126": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "4b9032f71ea80f212948fef0d6ed78cbad1b9673",
+      "short_sha": "4b9032f",
+      "datetime": "2026-04-10T14:59:05+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4b9032f71ea80f212948fef0d6ed78cbad1b9673",
+      "subject": "chore: recent_commits.yml aktualisieren (J01-126)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "efc2ecfbd05cecca23d07526d4a6602b18271da4",
+      "short_sha": "efc2ecf",
+      "datetime": "2026-04-10T14:41:37+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/efc2ecfbd05cecca23d07526d4a6602b18271da4",
+      "subject": "feat: Seiten Letzte Änderungen DE/EN, Navbar und Runbook anlegen (J01-126)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "cb4ce97908f51cc1357b4f0b2fbaf7fa43a09260",
+      "short_sha": "cb4ce97",
+      "datetime": "2026-04-10T14:40:53+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/cb4ce97908f51cc1357b4f0b2fbaf7fa43a09260",
+      "subject": "feat: generate-recent-commits.sh und Pre-Push-Hook anlegen (J01-126)"
+    }
+  ],
+  "J01-127": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "71b8027054d017b047bb2ce470a2abc2ca69e085",
+      "short_sha": "71b8027",
+      "datetime": "2026-04-14T11:48:45+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/71b8027054d017b047bb2ce470a2abc2ca69e085",
+      "subject": "feat: Help-Text für bin/cli config ergänzen (J01-127)"
+    }
+  ],
+  "J01-128": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "2376bedbeb615124150b563544e1c11786f2f4f2",
+      "short_sha": "2376bed",
+      "datetime": "2026-04-14T16:38:09+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2376bedbeb615124150b563544e1c11786f2f4f2",
+      "subject": "docs: J01-128 im englischen Backlog eintragen (J01-128)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "bd553ae254f8a69d2c11c871e9c518f8c8117394",
+      "short_sha": "bd553ae",
+      "datetime": "2026-04-14T16:34:32+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/bd553ae254f8a69d2c11c871e9c518f8c8117394",
+      "subject": "docs: Jira-Kontext-Anker-IDs an Kramdown angleichen (J01-128)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "99a9f90f3740e663ab6f7a9019f7278be014d856",
+      "short_sha": "99a9f90",
+      "datetime": "2026-04-14T15:37:39+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/99a9f90f3740e663ab6f7a9019f7278be014d856",
+      "subject": "fix: Anker-IDs und Backtick-Reste im TOC korrigieren (J01-128)"
+    }
+  ],
+  "J01-129": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "208e2331fa58ac184cb72e92c6be03ed2728d716",
+      "short_sha": "208e233",
+      "datetime": "2026-04-14T14:58:40+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/208e2331fa58ac184cb72e92c6be03ed2728d716",
+      "subject": "docs: J01-129 als Folgevorgang nach J01-105 spiegeln (J01-129)"
+    }
+  ],
+  "J01-130": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "cdd477382f58ad226608e83985e919196fa09972",
+      "short_sha": "cdd4773",
+      "datetime": "2026-04-15T09:31:39+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/cdd477382f58ad226608e83985e919196fa09972",
+      "subject": "docs: J01-128 bereinigen und J01-130 anlegen (J01-130)"
+    }
+  ],
+  "J01-131": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "8dc6d8c69696b451d4299f66dd808acc612f2cc8",
+      "short_sha": "8dc6d8c",
+      "datetime": "2026-04-15T22:54:03+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8dc6d8c69696b451d4299f66dd808acc612f2cc8",
+      "subject": "docs: Recent-Feed nach Sprintwechsel aktualisieren (J01-131)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "aa3dda6ba5e391796646cb23c2b65ab05b0ac168",
+      "short_sha": "aa3dda6",
+      "datetime": "2026-04-15T22:53:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/aa3dda6ba5e391796646cb23c2b65ab05b0ac168",
+      "subject": "docs: Sprint 2 schließen und Sprint 3 eröffnen (J01-131)"
+    }
+  ],
+  "J01-132": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "378103b7bcafb3e2b49cec951d135856d5f1589c",
+      "short_sha": "378103b",
+      "datetime": "2026-04-17T16:50:25+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/378103b7bcafb3e2b49cec951d135856d5f1589c",
+      "subject": "fix(ci): Wert im GitHub-Workflow nur für das erste Preview-Deploy fest setzen (J01-132)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "13409574fc588b5b888c8bef3bd325387c9c3999",
+      "short_sha": "1340957",
+      "datetime": "2026-04-17T14:26:59+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/13409574fc588b5b888c8bef3bd325387c9c3999",
+      "subject": "fix: PHP-Basis auf 8.2 anheben (J01-132)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "793d081f0af1410c31e822ab478f43f244244649",
+      "short_sha": "793d081",
+      "datetime": "2026-04-17T14:26:59+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/793d081f0af1410c31e822ab478f43f244244649",
+      "subject": "docs: PHP-8.2-Basis in J01-132 nachziehen (J01-132)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "1375de5497b7bd4614c96cd84d64e431203fe684",
+      "short_sha": "1375de5",
+      "datetime": "2026-04-17T14:26:59+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/1375de5497b7bd4614c96cd84d64e431203fe684",
+      "subject": "fix: PHP-Basis der Config-Lib auf 8.2 anheben (J01-132)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "c54c83b97fef02701e45eb2850852f762e787771",
+      "short_sha": "c54c83b",
+      "datetime": "2026-04-17T14:04:31+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c54c83b97fef02701e45eb2850852f762e787771",
+      "subject": "chore: composer.lock aktualisieren (J01-132)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "f44fba5c948513fe83a8e49ee8a0ccbeee10ec03",
+      "short_sha": "f44fba5",
+      "datetime": "2026-04-17T14:02:13+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/f44fba5c948513fe83a8e49ee8a0ccbeee10ec03",
+      "subject": "chore: composer.lock aktualisieren (J01-132)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "5fd8c30d223935257242059561d6bfb1b924c62a",
+      "short_sha": "5fd8c30",
+      "datetime": "2026-04-17T13:51:16+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/5fd8c30d223935257242059561d6bfb1b924c62a",
+      "subject": "fix: Preview-Build-Pfad korrigieren (J01-132)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "91f838eee8a3b07a56a3229b8553e48b5ed0b9de",
+      "short_sha": "91f838e",
+      "datetime": "2026-04-17T13:51:16+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/91f838eee8a3b07a56a3229b8553e48b5ed0b9de",
+      "subject": "docs: Build-Blocker in J01-132 nachziehen (J01-132)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "928440b830c50b2339de75ca64c544479d2d8931",
+      "short_sha": "928440b",
+      "datetime": "2026-04-17T13:22:13+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/928440b830c50b2339de75ca64c544479d2d8931",
+      "subject": "feat: Deploy-Artefaktpfad konfigurierbar machen (J01-132)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "e396a8b277614c317e1ed842f7434c8033f287bb",
+      "short_sha": "e396a8b",
+      "datetime": "2026-04-17T13:22:13+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e396a8b277614c317e1ed842f7434c8033f287bb",
+      "subject": "docs: Var-Deploy-Pfad für J01-132 nachziehen (J01-132)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "9070918de03af8df89ebe543c0f92375a6d45995",
+      "short_sha": "9070918",
+      "datetime": "2026-04-17T13:04:43+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9070918de03af8df89ebe543c0f92375a6d45995",
+      "subject": "feat: Resolve-Deploy-Adapter nachziehen (J01-132)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "cef5c05453e75b509ba22a67d618ab380b92d7ad",
+      "short_sha": "cef5c05",
+      "datetime": "2026-04-17T13:04:43+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/cef5c05453e75b509ba22a67d618ab380b92d7ad",
+      "subject": "docs: Resolve-Deploy-Adapter dokumentieren (J01-132)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "dc972b5e2ecf26c2a36b347fff5d03ddcc3cca35",
+      "short_sha": "dc972b5",
+      "datetime": "2026-04-17T12:38:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dc972b5e2ecf26c2a36b347fff5d03ddcc3cca35",
+      "subject": "feat: Preview-Deploy-Auflösung nachziehen (J01-132)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "8007a3d32dd0ea477b1011aea5ca0a957174ac62",
+      "short_sha": "8007a3d",
+      "datetime": "2026-04-17T12:38:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8007a3d32dd0ea477b1011aea5ca0a957174ac62",
+      "subject": "docs: Testmatrix für J01-132 ergänzen (J01-132)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "868308e56496aad1a32c6df02c6c193e242ed987",
+      "short_sha": "868308e",
+      "datetime": "2026-04-17T12:38:36+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/868308e56496aad1a32c6df02c6c193e242ed987",
+      "subject": "test: Preview-Auflösungsmatrix ergänzen (J01-132)"
+    }
+  ],
+  "J01-133": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "3f02b449d15f3ef7661917d581c3af3dd5d0f1a4",
+      "short_sha": "3f02b44",
+      "datetime": "2026-04-28T12:53:07+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3f02b449d15f3ef7661917d581c3af3dd5d0f1a4",
+      "subject": "refactor: CD-Pipeline vereinfachen und CI-Teststruktur klären (J01-133)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "be571e0f165c67dc02d1290185144703db09fb82",
+      "short_sha": "be571e0",
+      "datetime": "2026-04-27T13:15:12+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/be571e0f165c67dc02d1290185144703db09fb82",
+      "subject": "feat(deploy): diff-basiertes SFTP-Deployment über DEPLOY_BEFORE (J01-133)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "3d4f69545ee1dd2dda9517924fed6fade2c85182",
+      "short_sha": "3d4f695",
+      "datetime": "2026-04-17T16:40:42+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3d4f69545ee1dd2dda9517924fed6fade2c85182",
+      "subject": "feat(ci): lokale Composer-CI-Prüfung via Docker ersetzt smoke.py (J01-133)"
+    }
+  ],
+  "J01-134": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "5275724c08059a311af94119a94b632564800f7f",
+      "short_sha": "5275724",
+      "datetime": "2026-04-22T14:57:53+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5275724c08059a311af94119a94b632564800f7f",
+      "subject": "docs: englische J01-134-Schrittseite korrigieren (J01-134)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "342f613eb2de25c2f939efef602752e356faab96",
+      "short_sha": "342f613",
+      "datetime": "2026-04-22T14:52:58+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/342f613eb2de25c2f939efef602752e356faab96",
+      "subject": "docs: Arbeitsdoku zu J01-134 aktualisieren (J01-134)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "a95ce3fed2143aa38fcdf20f9036b04581a32ed0",
+      "short_sha": "a95ce3f",
+      "datetime": "2026-04-22T14:52:53+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a95ce3fed2143aa38fcdf20f9036b04581a32ed0",
+      "subject": "refactor(build): alte Build-Validierung und zugehoerige Tests entfernen (J01-134)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "a931d25da919921c25c0493a012f7cda3b191a07",
+      "short_sha": "a931d25",
+      "datetime": "2026-04-22T14:52:49+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a931d25da919921c25c0493a012f7cda3b191a07",
+      "subject": "fix(preview): Build-Profil auf gueltig umstellen (J01-134)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "68e0a8abcc7665f739dc3e8b087845174b7d19e5",
+      "short_sha": "68e0a8a",
+      "datetime": "2026-04-22T14:52:43+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/68e0a8abcc7665f739dc3e8b087845174b7d19e5",
+      "subject": "feat(ci): Preview-Overrides und GitHub-Output zentralisieren (J01-134)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "c62f654c64bcdcaf4a6b24bf0b04bbb493408b3a",
+      "short_sha": "c62f654",
+      "datetime": "2026-04-22T12:08:39+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c62f654c64bcdcaf4a6b24bf0b04bbb493408b3a",
+      "subject": "fix(ci): Argumente für bin/ci ablehnen (J01-134)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "93752feef425afb2fd137db81923df1041adc8e0",
+      "short_sha": "93752fe",
+      "datetime": "2026-04-21T12:49:33+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/93752feef425afb2fd137db81923df1041adc8e0",
+      "subject": "docs: J01-134 in Jira-Spur und Schrittseiten nachziehen (J01-134)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "5b9d7dc5dea211bb14aa0c4f1e173c117fd4d4b9",
+      "short_sha": "5b9d7dc",
+      "datetime": "2026-04-21T12:31:06+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5b9d7dc5dea211bb14aa0c4f1e173c117fd4d4b9",
+      "subject": "docs: J01-134 um Jira-Lücke und Parallelspur ergänzen (J01-134)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "52b69b08204a0ce9ab2fd45af16fc3c51e696f3d",
+      "short_sha": "52b69b0",
+      "datetime": "2026-04-20T14:30:08+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/52b69b08204a0ce9ab2fd45af16fc3c51e696f3d",
+      "subject": "refactor(ci): CI/CD in bin/ci und bin/cd aufteilen, gemeinsame Logik in scripts/pipeline_lib.sh (J01-134)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "9ec274708bee78940218d848ef744114318d7dd0",
+      "short_sha": "9ec2747",
+      "datetime": "2026-04-19T20:56:54+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9ec274708bee78940218d848ef744114318d7dd0",
+      "subject": "fix(ci): PHP-Server auf 0.0.0.0 binden statt 127.0.0.1 (J01-134)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "280902821ea341aae9109f06ea28ea4d1da17dd0",
+      "short_sha": "2809028",
+      "datetime": "2026-04-18T09:38:48+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/280902821ea341aae9109f06ea28ea4d1da17dd0",
+      "subject": "feat(ci): Preview-CI auf Pipeline-Modell umstellen (J01-134)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "61f8da6fd145b63de149e6f12eef1c79b5f85446",
+      "short_sha": "61f8da6",
+      "datetime": "2026-04-18T09:38:48+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/61f8da6fd145b63de149e6f12eef1c79b5f85446",
+      "subject": "docs: J01-134 Arbeitsdoku für Preview-CI ergänzen (J01-134)"
+    }
+  ],
+  "J01-135": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "dedcd9f23a3683bdead58b6cb336e14d89399f4b",
+      "short_sha": "dedcd9f",
+      "datetime": "2026-05-15T13:36:12+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dedcd9f23a3683bdead58b6cb336e14d89399f4b",
+      "subject": "docs: SFTP-REPL in J01-135 dokumentieren (J01-135)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "938758cd2a0e2e90bcb2d77ac8a139298800f790",
+      "short_sha": "938758c",
+      "datetime": "2026-05-15T13:36:03+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/938758cd2a0e2e90bcb2d77ac8a139298800f790",
+      "subject": "feat: lokale SFTP-REPL ergänzen (J01-135)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "ca53d363ea3ef0b084012380a4baea7ee8047644",
+      "short_sha": "ca53d36",
+      "datetime": "2026-05-14T19:48:25+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ca53d363ea3ef0b084012380a4baea7ee8047644",
+      "subject": "feat: mache CI/CD-Schritte sichtbar (J01-135)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "38c82f1b0057b36b5e36d2226fdaecdc280f2118",
+      "short_sha": "38c82f1",
+      "datetime": "2026-05-14T19:48:25+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/38c82f1b0057b36b5e36d2226fdaecdc280f2118",
+      "subject": "docs: dokumentiere CI/CD-Ausgabe (J01-135)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "062f241a403e2fe3124cbd1c4d26774ccd79d569",
+      "short_sha": "062f241",
+      "datetime": "2026-05-09T15:21:46+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/062f241a403e2fe3124cbd1c4d26774ccd79d569",
+      "subject": "docs: Mail- und Token-Preview-Rest klären (J01-135)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "5044d5bfe9aeda6774f477253841e7c957e2e0fe",
+      "short_sha": "5044d5b",
+      "datetime": "2026-05-06T10:20:31+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5044d5bfe9aeda6774f477253841e7c957e2e0fe",
+      "subject": "docs: J01-135 Schritt-Backfill synchronisieren (J01-135)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "2cf5d4181c293be437c5d341c1dd0670bb218f93",
+      "short_sha": "2cf5d41",
+      "datetime": "2026-04-29T15:48:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2cf5d4181c293be437c5d341c1dd0670bb218f93",
+      "subject": "docs: ergänze Runtime-Admin-Untervorgänge (J01-135)"
+    }
+  ],
+  "J01-136": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "a27081e1f5c6e49395d83f58b2a932f92732802d",
+      "short_sha": "a27081e",
+      "datetime": "2026-05-22T01:47:03+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a27081e1f5c6e49395d83f58b2a932f92732802d",
+      "subject": "docs: Sprint-4-Closing nachziehen (J01-136)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "6c3f14de5d1b72a312e54465ee562fb698b77375",
+      "short_sha": "6c3f14d",
+      "datetime": "2026-04-28T13:45:38+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6c3f14de5d1b72a312e54465ee562fb698b77375",
+      "subject": "docs: Sprint 4 starten und Jira-Mirror nachziehen (J01-136)"
+    }
+  ],
+  "J01-137": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "f8e6ab0071644b77ee712e49e4cd80593f831898",
+      "short_sha": "f8e6ab0",
+      "datetime": "2026-04-29T14:39:50+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f8e6ab0071644b77ee712e49e4cd80593f831898",
+      "subject": "docs: J01-137 Druck-CSS-Commit dokumentieren (J01-137)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "49edc6ac8a8e693ea95648ff56a59b6b19d8c11d",
+      "short_sha": "49edc6a",
+      "datetime": "2026-04-29T14:38:56+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/49edc6ac8a8e693ea95648ff56a59b6b19d8c11d",
+      "subject": "fix: CV-Abschnittslinien im Druck zusammenhalten (J01-137)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "b649057952228d0086a9993f0816e81af5e7120e",
+      "short_sha": "b649057",
+      "datetime": "2026-04-29T13:20:27+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b649057952228d0086a9993f0816e81af5e7120e",
+      "subject": "fix: CV-Beispieldaten im Kopfbereich präzisieren (J01-137)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "f8c68c810663930272a51c2e52a0bd8255aade87",
+      "short_sha": "f8c68c8",
+      "datetime": "2026-04-29T13:19:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f8c68c810663930272a51c2e52a0bd8255aade87",
+      "subject": "docs: J01-137 als laufende UI-Anpassung dokumentieren (J01-137)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "fefc79eb098ace2eb400410d1ff40e01028e89f1",
+      "short_sha": "fefc79e",
+      "datetime": "2026-04-29T13:16:37+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/fefc79eb098ace2eb400410d1ff40e01028e89f1",
+      "subject": "fix: laufende CV-UI-Anpassungen fortführen (J01-137)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "cb4c846a62e0f1074b408012a8109cd46f1eaaed",
+      "short_sha": "cb4c846",
+      "datetime": "2026-04-29T13:16:25+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/cb4c846a62e0f1074b408012a8109cd46f1eaaed",
+      "subject": "fix: CV-Ausbildungsdaten und Tagbreiten stabilisieren (J01-137)"
+    }
+  ],
+  "J01-138": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "2687b5152ec3c6a7f9d36fd84af9a9aa6baa5884",
+      "short_sha": "2687b51",
+      "datetime": "2026-05-06T11:57:41+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2687b5152ec3c6a7f9d36fd84af9a9aa6baa5884",
+      "subject": "docs: J01-138-Abschluss in Runtime-Admin-Doku klären (J01-138)"
+    }
+  ],
+  "J01-139": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "915aab983914437232c5dae1ff2cf57896e6c902",
+      "short_sha": "915aab9",
+      "datetime": "2026-05-12T11:44:22+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/915aab983914437232c5dae1ff2cf57896e6c902",
+      "subject": "fix(ci): SFTP-Hostkey-Mismatch durch Dateirechte beheben (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "f5950a1b6f42e35393bde871567791a03651c20d",
+      "short_sha": "f5950a1",
+      "datetime": "2026-05-12T11:44:22+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f5950a1b6f42e35393bde871567791a03651c20d",
+      "subject": "fix(ci): SFTP-Hostkey-Mismatch durch Dateirechte beheben (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "4f55eb8997d9cc57a82b6a3f2b7211aa6a5ca0fb",
+      "short_sha": "4f55eb8",
+      "datetime": "2026-05-12T01:22:24+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4f55eb8997d9cc57a82b6a3f2b7211aa6a5ca0fb",
+      "subject": "fix(ci): Contact-Smoke-Trap stabilisieren (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "bc24aa7e11bc119a571ee4582258ea845727cbdf",
+      "short_sha": "bc24aa7",
+      "datetime": "2026-05-12T01:22:24+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/bc24aa7e11bc119a571ee4582258ea845727cbdf",
+      "subject": "fix(ci): Contact-Smoke-Trap stabilisieren (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "69aca03dc32f55c21ff24f3247bf10a93cc433f5",
+      "short_sha": "69aca03",
+      "datetime": "2026-05-12T01:14:41+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/69aca03dc32f55c21ff24f3247bf10a93cc433f5",
+      "subject": "chore(ci): ShellCheck-sh-Ausnahmen markieren (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "3476cf30a933522b5a25c2d3ac79d6148c59f31a",
+      "short_sha": "3476cf3",
+      "datetime": "2026-05-12T01:14:41+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3476cf30a933522b5a25c2d3ac79d6148c59f31a",
+      "subject": "chore(ci): ShellCheck-sh-Ausnahmen markieren (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "60eb1d2f5f5d9044833a502811c11cb887b8a4bb",
+      "short_sha": "60eb1d2",
+      "datetime": "2026-05-12T01:03:03+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/60eb1d2f5f5d9044833a502811c11cb887b8a4bb",
+      "subject": "chore(ci): Skriptmodi bereinigen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "700348ae97d4680217cc1c3091b0258f9927814f",
+      "short_sha": "700348a",
+      "datetime": "2026-05-12T01:03:03+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/700348ae97d4680217cc1c3091b0258f9927814f",
+      "subject": "chore(ci): Skriptmodi bereinigen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "433cf536d0956b1ef36a8633b7761c7d61cefb17",
+      "short_sha": "433cf53",
+      "datetime": "2026-05-12T00:59:33+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/433cf536d0956b1ef36a8633b7761c7d61cefb17",
+      "subject": "fix(ci): Pipeline-Argumente schaerfen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "5c8a58ad77a93fd330cd86f55b7955827035cd47",
+      "short_sha": "5c8a58a",
+      "datetime": "2026-05-12T00:59:33+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/5c8a58ad77a93fd330cd86f55b7955827035cd47",
+      "subject": "fix(ci): Pipeline-Argumente schaerfen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "1071f5cc54db638f51884bd21f7b4ca291e08a25",
+      "short_sha": "1071f5c",
+      "datetime": "2026-05-11T23:20:23+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1071f5cc54db638f51884bd21f7b4ca291e08a25",
+      "subject": "fix(ci): Config-Fehler und Test-Suite beheben (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "e64c902a55a92379cebe250f618bcb176af1cd7c",
+      "short_sha": "e64c902",
+      "datetime": "2026-05-11T23:20:23+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/e64c902a55a92379cebe250f618bcb176af1cd7c",
+      "subject": "fix(ci): Config-Fehler und Test-Suite beheben (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "a00054942dbe3b87278dc7f2793de755144b5131",
+      "short_sha": "a000549",
+      "datetime": "2026-05-11T23:19:43+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a00054942dbe3b87278dc7f2793de755144b5131",
+      "subject": "refactor(cli): PythonRunner TTY-Streaming und PHP-CLI-Refactoring (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "94c908801551f8f2893246393742e6aaf21935fa",
+      "short_sha": "94c9088",
+      "datetime": "2026-05-11T23:19:43+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/94c908801551f8f2893246393742e6aaf21935fa",
+      "subject": "refactor(cli): PythonRunner TTY-Streaming und PHP-CLI-Refactoring (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "684605602cb3d4f8cbf8a0081c46f52581bca7cb",
+      "short_sha": "6846056",
+      "datetime": "2026-05-11T22:35:14+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/684605602cb3d4f8cbf8a0081c46f52581bca7cb",
+      "subject": "refactor(ci): SMTP- und Kontakt-Smoke vereinfachen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "0f0663b1ff9071af4033a85129a98d2962f38ccb",
+      "short_sha": "0f0663b",
+      "datetime": "2026-05-11T22:35:14+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/0f0663b1ff9071af4033a85129a98d2962f38ccb",
+      "subject": "refactor(ci): SMTP- und Kontakt-Smoke vereinfachen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "d873a8cfecb298c87e78846bccb386f5c0c1231b",
+      "short_sha": "d873a8c",
+      "datetime": "2026-05-11T22:25:33+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d873a8cfecb298c87e78846bccb386f5c0c1231b",
+      "subject": "feat(ci): CI-Runner und CiCommand einführen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "192874a565600be9260a54ace04bc92d96062786",
+      "short_sha": "192874a",
+      "datetime": "2026-05-11T22:25:33+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/192874a565600be9260a54ace04bc92d96062786",
+      "subject": "feat(ci): CI-Runner und CiCommand einführen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "237adb20e1f074984051069b5c755d42ca86fe0e",
+      "short_sha": "237adb2",
+      "datetime": "2026-05-11T22:18:13+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/237adb20e1f074984051069b5c755d42ca86fe0e",
+      "subject": "refactor(deploy): SFTP-Bibliotheken nach src/cli/py/deploy/ verschieben (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "d18438758a2c0d95e7f22777981b66e68c9e601a",
+      "short_sha": "d184387",
+      "datetime": "2026-05-11T22:18:13+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d18438758a2c0d95e7f22777981b66e68c9e601a",
+      "subject": "refactor(deploy): SFTP-Bibliotheken nach src/cli/py/deploy/ verschieben (J01-139)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "659b3a2e8367788723049e1a9e3847589cb592ee",
+      "short_sha": "659b3a2",
+      "datetime": "2026-05-11T15:48:51+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/659b3a2e8367788723049e1a9e3847589cb592ee",
+      "subject": "feat(config): lokale Pipeline-Konfig nach .local/{pipeline}.yaml (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "c56c51f383a43736d1178a802efd5e1dce37968d",
+      "short_sha": "c56c51f",
+      "datetime": "2026-05-09T15:43:28+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c56c51f383a43736d1178a802efd5e1dce37968d",
+      "subject": "docs: Jira-Sync-Cache reparieren (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "995796d50028e52fe56bf2d8e1e9da2ffb786991",
+      "short_sha": "995796d",
+      "datetime": "2026-05-09T15:31:03+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/995796d50028e52fe56bf2d8e1e9da2ffb786991",
+      "subject": "docs: Lokalen Admin-Befehl präzisieren (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "ecb7c52dc21a8589c8f8297ac3721a5943a94a99",
+      "short_sha": "ecb7c52",
+      "datetime": "2026-05-09T10:32:54+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ecb7c52dc21a8589c8f8297ac3721a5943a94a99",
+      "subject": "chore(tooling): Linting-Konfiguration und Hilfswerkzeuge hinzufügen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "d817a9747b2a0c2842d3bd851a16159ff1e439bb",
+      "short_sha": "d817a97",
+      "datetime": "2026-05-09T10:32:54+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d817a9747b2a0c2842d3bd851a16159ff1e439bb",
+      "subject": "chore(tooling): Linting-Konfiguration und Hilfswerkzeuge hinzufügen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "a11641983ece06f69b831569ee701e926bf34e58",
+      "short_sha": "a116419",
+      "datetime": "2026-05-09T10:32:28+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a11641983ece06f69b831569ee701e926bf34e58",
+      "subject": "refactor(workflows): GitHub Actions auf sftp-Secrets und Heredoc-Config umstellen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "f4d6804069ec1ca895fb3f689ec1759b8e986e84",
+      "short_sha": "f4d6804",
+      "datetime": "2026-05-09T10:32:28+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f4d6804069ec1ca895fb3f689ec1759b8e986e84",
+      "subject": "refactor(workflows): GitHub Actions auf sftp-Secrets und Heredoc-Config umstellen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "dfb6fcf0d0279d67fedc4852ae890c36fee03328",
+      "short_sha": "dfb6fcf",
+      "datetime": "2026-05-09T10:31:58+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dfb6fcf0d0279d67fedc4852ae890c36fee03328",
+      "subject": "refactor(ci): CI/CD-Skripte auf stdin-Heredoc und sftp umstellen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "42bf5a4c4270a05a878570b5dff6da9a89afbeb8",
+      "short_sha": "42bf5a4",
+      "datetime": "2026-05-09T10:31:58+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/42bf5a4c4270a05a878570b5dff6da9a89afbeb8",
+      "subject": "refactor(ci): CI/CD-Skripte auf stdin-Heredoc und sftp umstellen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "a5a4b7633e80d89cc71e71643e91ee5872022c89",
+      "short_sha": "a5a4b76",
+      "datetime": "2026-05-09T10:31:11+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a5a4b7633e80d89cc71e71643e91ee5872022c89",
+      "subject": "test(php): Tests auf neue Config-Struktur und --overrides-Option anpassen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "1d514d37e58cb62c9c54dfe97c61c3f902a5b973",
+      "short_sha": "1d514d3",
+      "datetime": "2026-05-09T10:31:11+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1d514d37e58cb62c9c54dfe97c61c3f902a5b973",
+      "subject": "test(php): Tests auf neue Config-Struktur und --overrides-Option anpassen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "409c7ac2b20cbe173546fdc73da36130e4119960",
+      "short_sha": "409c7ac",
+      "datetime": "2026-05-09T10:30:05+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/409c7ac2b20cbe173546fdc73da36130e4119960",
+      "subject": "refactor(cli): PHP-Befehle auf --overrides-Option und initialize()-Hook umstellen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "4689eaaa1152ff41e03484cdeb9cdab0ce9cd00f",
+      "short_sha": "4689eaa",
+      "datetime": "2026-05-09T10:30:05+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4689eaaa1152ff41e03484cdeb9cdab0ce9cd00f",
+      "subject": "refactor(cli): PHP-Befehle auf --overrides-Option und initialize()-Hook umstellen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "fca2f092f9e1d67886c7fea2b22e020ae2818cfe",
+      "short_sha": "fca2f09",
+      "datetime": "2026-05-09T10:29:34+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/fca2f092f9e1d67886c7fea2b22e020ae2818cfe",
+      "subject": "refactor(config): Pipeline-Config-Format auf Gruppenstruktur umstellen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "df5ccbf382e016f87b0ee49c5de0a7bbdcd165ea",
+      "short_sha": "df5ccbf",
+      "datetime": "2026-05-09T10:29:34+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/df5ccbf382e016f87b0ee49c5de0a7bbdcd165ea",
+      "subject": "refactor(config): Pipeline-Config-Format auf Gruppenstruktur umstellen (J01-139)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "bb8559839550ca84aee1b8c101e42ad6ab497b16",
+      "short_sha": "bb85598",
+      "datetime": "2026-05-08T18:25:55+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/bb8559839550ca84aee1b8c101e42ad6ab497b16",
+      "subject": "refactor(config): gruppenbasiertes Pipeline-Config-Format (J01-139)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "279bc11397535fa422011e234fee4810eb66f1d3",
+      "short_sha": "279bc11",
+      "datetime": "2026-05-08T15:35:01+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/279bc11397535fa422011e234fee4810eb66f1d3",
+      "subject": "feat(config): cliVarsForPhase für env-basierte Overrides (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "39ae356fb82f6edc9f364e0b1a4fe2cf91614fbf",
+      "short_sha": "39ae356",
+      "datetime": "2026-05-06T14:13:54+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/39ae356fb82f6edc9f364e0b1a4fe2cf91614fbf",
+      "subject": "feat: CV-Token-Rotation als Runtime-Admin-Aktion einführen (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "638d169e28ddac01da1bc08b85c8877e6194feaf",
+      "short_sha": "638d169",
+      "datetime": "2026-04-29T15:56:28+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/638d169e28ddac01da1bc08b85c8877e6194feaf",
+      "subject": "docs: dokumentiere README-Schnellstart unter J01-139 (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "5d8733c8e2762b0d2345c69218507ff5b41b0341",
+      "short_sha": "5d8733c",
+      "datetime": "2026-04-29T15:56:19+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/5d8733c8e2762b0d2345c69218507ff5b41b0341",
+      "subject": "docs: korrigiere Setup-Schnellstart (J01-139)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "4107fe1253a1f90ca197b762e385e367a7983d36",
+      "short_sha": "4107fe1",
+      "datetime": "2026-04-29T15:48:22+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4107fe1253a1f90ca197b762e385e367a7983d36",
+      "subject": "fix: Token-Rotation auf vorhandene CV-Profile begrenzen (J01-139)"
+    }
+  ],
+  "J01-140": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "7e59cfc7aaff4e9596e497e73613839679f91222",
+      "short_sha": "7e59cfc",
+      "datetime": "2026-05-06T13:59:52+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7e59cfc7aaff4e9596e497e73613839679f91222",
+      "subject": "docs: J01-140 Abschluss in Jira nachziehen (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "15686cd57fa46865223e9945df389401bc20508e",
+      "short_sha": "15686cd",
+      "datetime": "2026-05-06T13:07:44+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/15686cd57fa46865223e9945df389401bc20508e",
+      "subject": "feat(mail): MailMessage/MailService verallgemeinern, MAIL_TO_EMAIL einführen (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "6223452f6a8e97a27216539531cc02422d8053a1",
+      "short_sha": "6223452",
+      "datetime": "2026-05-06T07:21:18+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6223452f6a8e97a27216539531cc02422d8053a1",
+      "subject": "docs: J01-140 Status im Jira-Dünnstand nachziehen (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "c7fa8e710b509dbb963129a996ebec7fe1b0f83b",
+      "short_sha": "c7fa8e7",
+      "datetime": "2026-05-04T16:12:44+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c7fa8e710b509dbb963129a996ebec7fe1b0f83b",
+      "subject": "docs: statische SFTP-Entry-Dateien dokumentieren (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "a4da21cbda85bea182f1c2d00bc5b3e42fa91211",
+      "short_sha": "a4da21c",
+      "datetime": "2026-05-04T16:12:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a4da21cbda85bea182f1c2d00bc5b3e42fa91211",
+      "subject": "refactor: statische SFTP-Entry-Dateien verwenden (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "93f9e646ec409d3d7e14db38f67bd568b80b5641",
+      "short_sha": "93f9e64",
+      "datetime": "2026-05-04T15:54:39+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/93f9e646ec409d3d7e14db38f67bd568b80b5641",
+      "subject": "docs: INI-Deploy-State dokumentieren (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "c0e45260af22dc5bfa5bbf90ddf5559150e769ff",
+      "short_sha": "c0e4526",
+      "datetime": "2026-05-04T15:54:32+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c0e45260af22dc5bfa5bbf90ddf5559150e769ff",
+      "subject": "refactor: Deploy-State als INI formatieren (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "456cd28b4653b1ab5d669c36a811355e63baa584",
+      "short_sha": "456cd28",
+      "datetime": "2026-05-04T12:28:56+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/456cd28b4653b1ab5d669c36a811355e63baa584",
+      "subject": "docs: JSON-Deploy-State als SSOT dokumentieren (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "0c1e53fdd0cc7a82127c9ef967112540c9d86974",
+      "short_sha": "0c1e53f",
+      "datetime": "2026-05-04T12:28:45+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/0c1e53fdd0cc7a82127c9ef967112540c9d86974",
+      "subject": "refactor: Deploy-State als JSON-SSOT verwenden (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "ef39b59db3d62bf190076b07f21eb41f9c510936",
+      "short_sha": "ef39b59",
+      "datetime": "2026-05-04T12:00:39+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ef39b59db3d62bf190076b07f21eb41f9c510936",
+      "subject": "docs: App-Slot-Ressource dokumentieren (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "81160ace3835a2f3fd3b16466b64860b354facdf",
+      "short_sha": "81160ac",
+      "datetime": "2026-05-04T12:00:33+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/81160ace3835a2f3fd3b16466b64860b354facdf",
+      "subject": "refactor: App-Slot-HTAccess klar benennen (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "a46054b9440e97ac71900d4e4e96bad25112ed1e",
+      "short_sha": "a46054b",
+      "datetime": "2026-05-04T11:45:06+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a46054b9440e97ac71900d4e4e96bad25112ed1e",
+      "subject": "docs: SFTP-Ressourcenpfad korrigieren (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "b1683a7df12b66df9d0ef6931123ffc82e46dc06",
+      "short_sha": "b1683a7",
+      "datetime": "2026-05-04T11:44:48+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b1683a7df12b66df9d0ef6931123ffc82e46dc06",
+      "subject": "refactor: SFTP-Ressourcen nach HTTP-Zielstruktur ordnen (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "c91b0900568fef482166c4b6a2d1c5684423b046",
+      "short_sha": "c91b090",
+      "datetime": "2026-05-04T11:13:18+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c91b0900568fef482166c4b6a2d1c5684423b046",
+      "subject": "docs: SFTP-Deploy-Ablauf dokumentieren (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "4c9f431fa87b585e0607ccff9c31b8f56041de43",
+      "short_sha": "4c9f431",
+      "datetime": "2026-05-04T11:13:11+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4c9f431fa87b585e0607ccff9c31b8f56041de43",
+      "subject": "refactor: SFTP-Deploy-Ablauf kapseln (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "cd13844cdcdcb79395298ad20bb495d264820d38",
+      "short_sha": "cd13844",
+      "datetime": "2026-05-04T10:42:26+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/cd13844cdcdcb79395298ad20bb495d264820d38",
+      "subject": "refactor: SFTP-Dateischreibzugriff glätten (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "da7362756b70dd9e9da862ad37db6af08479f39e",
+      "short_sha": "da73627",
+      "datetime": "2026-05-04T10:11:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/da7362756b70dd9e9da862ad37db6af08479f39e",
+      "subject": "docs: SFTP-Deploy-Kohärenz nachziehen (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "924aeba015ba8c7cdf09c0947ab7bd84175b93b7",
+      "short_sha": "924aeba",
+      "datetime": "2026-05-04T10:11:26+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/924aeba015ba8c7cdf09c0947ab7bd84175b93b7",
+      "subject": "refactor: SFTP-Deploy-Zustand trennen (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "b6870633fa08a32cdd15799ec5420d093881e458",
+      "short_sha": "b687063",
+      "datetime": "2026-05-03T22:04:00+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b6870633fa08a32cdd15799ec5420d093881e458",
+      "subject": "fix: Preview-Switch über Fallback-Routing staffeln (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "675e1d619266ef61bd9f13f51949b548b4b6ceaf",
+      "short_sha": "675e1d6",
+      "datetime": "2026-05-03T22:04:00+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/675e1d619266ef61bd9f13f51949b548b4b6ceaf",
+      "subject": "fix: stage preview switch through fallback routing (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "95e0d0abaf8c3b6773dcfa0b3fd68dd1647ddb49",
+      "short_sha": "95e0d0a",
+      "datetime": "2026-05-03T21:58:18+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/95e0d0abaf8c3b6773dcfa0b3fd68dd1647ddb49",
+      "subject": "fix: Preview-Slot-Routing und Container-Benutzer angleichen (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "81899f0dadb4d53013d432f8c736c28d7485ed9e",
+      "short_sha": "81899f0",
+      "datetime": "2026-05-03T21:58:18+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/81899f0dadb4d53013d432f8c736c28d7485ed9e",
+      "subject": "fix: align preview slot routing and container users (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "fe51d896d1e1fbca78530c55a7685d485f73a46d",
+      "short_sha": "fe51d89",
+      "datetime": "2026-05-03T21:58:03+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/fe51d896d1e1fbca78530c55a7685d485f73a46d",
+      "subject": "feat: Preview-Deployment-Laufzeit vorbereiten (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "05cf205de6342a65db5ed97f6729f3817beb5832",
+      "short_sha": "05cf205",
+      "datetime": "2026-05-03T21:58:03+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/05cf205de6342a65db5ed97f6729f3817beb5832",
+      "subject": "feat: handle preview deploy runtime transitions (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "ff9d0ac4bda010144a5c1a72dcf869e5eaf71a8e",
+      "short_sha": "ff9d0ac",
+      "datetime": "2026-05-01T12:55:18+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ff9d0ac4bda010144a5c1a72dcf869e5eaf71a8e",
+      "subject": "refactor(ci): CI-Preview auf run-basierte Testausführung umstellen (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "aa2ccf2117d975415b540dfd4918a3424138c8ec",
+      "short_sha": "aa2ccf2",
+      "datetime": "2026-04-30T16:42:25+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/aa2ccf2117d975415b540dfd4918a3424138c8ec",
+      "subject": "test(ci): Kontaktformular-Smoke-Test einbinden (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "656c2783314b5c8d1ccaf0a6cbfc616086c9969b",
+      "short_sha": "656c278",
+      "datetime": "2026-04-30T13:16:46+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/656c2783314b5c8d1ccaf0a6cbfc616086c9969b",
+      "subject": "feat: SMTP-CI-Test mit TLS und Zertifikatsprüfung (J01-140)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "9bb2af2699878acaccd998435870030e9d2f97c3",
+      "short_sha": "9bb2af2",
+      "datetime": "2026-04-30T12:47:28+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9bb2af2699878acaccd998435870030e9d2f97c3",
+      "subject": "feat: SMTP-CI-Test mit Mailpit für Mail-Rückkanal (J01-140)"
+    }
+  ],
+  "J01-142": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "a967e0f4d409cc4f5f2e6a530937d5b5ae615d2d",
+      "short_sha": "a967e0f",
+      "datetime": "2026-05-06T09:18:58+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a967e0f4d409cc4f5f2e6a530937d5b5ae615d2d",
+      "subject": "docs: J01-135 Schrittordnung schärfen (J01-142)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "c01fb87428d1b036cdb04efdaf00cb3d2c4bc51d",
+      "short_sha": "c01fb87",
+      "datetime": "2026-05-06T06:57:07+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c01fb87428d1b036cdb04efdaf00cb3d2c4bc51d",
+      "subject": "docs: J01-142 Admin-Deploy-Nachzug ergänzen (J01-142)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "211091f22637bd135c04f6b61380cbc6b32107aa",
+      "short_sha": "211091f",
+      "datetime": "2026-05-06T06:05:09+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/211091f22637bd135c04f6b61380cbc6b32107aa",
+      "subject": "refactor: clarify preview ci env flow (J01-142)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "a971aa5021d9bdf33c43bf4743dc4678194be2a0",
+      "short_sha": "a971aa5",
+      "datetime": "2026-05-06T06:04:28+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a971aa5021d9bdf33c43bf4743dc4678194be2a0",
+      "subject": "feat: Admin-Task-System und Deploy-Switcher aufbauen (J01-142)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "57e814b60c3acc475d03c87061cad5abf9703d04",
+      "short_sha": "57e814b",
+      "datetime": "2026-05-05T10:04:44+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/57e814b60c3acc475d03c87061cad5abf9703d04",
+      "subject": "refactor: inline preview ci compose service (J01-142)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "2849d07cea2e5db4b193b23ebc9ebf62b3263ea6",
+      "short_sha": "2849d07",
+      "datetime": "2026-05-04T23:44:21+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2849d07cea2e5db4b193b23ebc9ebf62b3263ea6",
+      "subject": "docs: Zero-Downtime-Deploy-Schritt ergänzen (J01-142)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "9cc573b5aea197b0222c536060767e49fe3da973",
+      "short_sha": "9cc573b",
+      "datetime": "2026-05-04T23:41:51+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9cc573b5aea197b0222c536060767e49fe3da973",
+      "subject": "test: Swap-Deploy-Tests temporär deaktivieren (J01-142)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "e0881527f336ed16d353691ff9fddde684d1bf83",
+      "short_sha": "e088152",
+      "datetime": "2026-05-04T23:40:51+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/e0881527f336ed16d353691ff9fddde684d1bf83",
+      "subject": "feat: Swap-Deploy auf Vorbereitung begrenzen (J01-142)"
+    }
+  ],
+  "J01-143": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "477c7fb013fa6a2615f7c2878e137d707b1debed",
+      "short_sha": "477c7fb",
+      "datetime": "2026-05-06T12:08:41+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/477c7fb013fa6a2615f7c2878e137d707b1debed",
+      "subject": "docs: Doku-GitHub-Einbau als Backlog-Vorgang anlegen (J01-143)"
+    }
+  ],
+  "J01-144": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "dd482addd257cd3711ada2450d8d18c680a16e5e",
+      "short_sha": "dd482ad",
+      "datetime": "2026-05-22T23:57:51+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dd482addd257cd3711ada2450d8d18c680a16e5e",
+      "subject": "docs: Pipeline-Spec-Commits in J01-144 ergänzen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "d2162d54016a312ba8a47d086fe90182bcb2e182",
+      "short_sha": "d2162d5",
+      "datetime": "2026-05-22T01:16:54+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d2162d54016a312ba8a47d086fe90182bcb2e182",
+      "subject": "feat(sftp-deploy): Zielslot vor Upload bereinigen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "1d3739a3c66c5bbd89bf75d9281fd0aca292b6a3",
+      "short_sha": "1d3739a",
+      "datetime": "2026-05-22T00:52:41+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1d3739a3c66c5bbd89bf75d9281fd0aca292b6a3",
+      "subject": "fix(deploy): stabilisiere Vendor-Checksum (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "820ffe81787d0f71b8fcc78ad3727385b6e35733",
+      "short_sha": "820ffe8",
+      "datetime": "2026-05-21T15:55:30+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/820ffe81787d0f71b8fcc78ad3727385b6e35733",
+      "subject": "refactor(deploy): entferne alte vendor-build-id-prüfung (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "9b4c862f93d36cd4f1975260c056c981e14e9704",
+      "short_sha": "9b4c862",
+      "datetime": "2026-05-21T15:52:53+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9b4c862f93d36cd4f1975260c056c981e14e9704",
+      "subject": "test(ci): prüfe vendor-checksum-determinismus (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "f9356877f610879ada424816da7e7b64879f3b94",
+      "short_sha": "f935687",
+      "datetime": "2026-05-21T15:51:30+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f9356877f610879ada424816da7e7b64879f3b94",
+      "subject": "fix(deploy): sichere vendor-slot-verifikation (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "0e3ed05a2ecfb6db51d4229336e254c76419f681",
+      "short_sha": "0e3ed05",
+      "datetime": "2026-05-20T10:25:26+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/0e3ed05a2ecfb6db51d4229336e254c76419f681",
+      "subject": "docs: SFTP-REPL-Nachtrag ergänzen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "ccbbcb3760bbca1a231937c5dc8be39cba50d03f",
+      "short_sha": "ccbbcb3",
+      "datetime": "2026-05-20T10:25:20+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ccbbcb3760bbca1a231937c5dc8be39cba50d03f",
+      "subject": "chore: totes SFTP-Clear-Modul entfernen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "70795a134ba22e6e03817f4814103ba5def8edf4",
+      "short_sha": "70795a1",
+      "datetime": "2026-05-20T10:25:16+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/70795a134ba22e6e03817f4814103ba5def8edf4",
+      "subject": "feat: SFTP-REPL-Befehle erweitern (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "13c58f5e6993be15b6c7a52f6dc567c616d72a9a",
+      "short_sha": "13c58f5",
+      "datetime": "2026-05-19T15:02:05+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/13c58f5e6993be15b6c7a52f6dc567c616d72a9a",
+      "subject": "feat(ci): lokalen Deploy-Runner ergänzen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "cca4e2ef0aab69975c0f2ee52a7d12e184ad6891",
+      "short_sha": "cca4e2e",
+      "datetime": "2026-05-18T14:08:45+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/cca4e2ef0aab69975c0f2ee52a7d12e184ad6891",
+      "subject": "fix(deploy): no_changes_since_deploy wiederherstellen und testen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "1840ffb1ae68b245b1c9ed3f0811fb38c4bc1875",
+      "short_sha": "1840ffb",
+      "datetime": "2026-05-18T13:47:57+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1840ffb1ae68b245b1c9ed3f0811fb38c4bc1875",
+      "subject": "refactor(dev): dev.py auf dev-index.php umstellen, Imports sortieren (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "995e8f45608bfdabed5bfb6ca678b4528a48541e",
+      "short_sha": "995e8f4",
+      "datetime": "2026-05-18T13:47:14+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/995e8f45608bfdabed5bfb6ca678b4528a48541e",
+      "subject": "test: Deploy-, Lint- und Smoke-Tests ausbauen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "a8b1d88e2717f820d897e1e76265d19005a39a28",
+      "short_sha": "a8b1d88",
+      "datetime": "2026-05-18T13:47:03+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a8b1d88e2717f820d897e1e76265d19005a39a28",
+      "subject": "feat(lint): Zeilenlängen- und Strukturlint einführen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "d9ef7f8b6fa4147a4eef82ab8d1efa2eadc4ff35",
+      "short_sha": "d9ef7f8",
+      "datetime": "2026-05-18T13:46:43+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d9ef7f8b6fa4147a4eef82ab8d1efa2eadc4ff35",
+      "subject": "feat(deploy): SFTP-Webroot und APACHE_WEBROOT trennen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "e0383ea37d4f487e0a3efc63b95672a1433f0a85",
+      "short_sha": "e0383ea",
+      "datetime": "2026-05-18T13:46:27+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/e0383ea37d4f487e0a3efc63b95672a1433f0a85",
+      "subject": "refactor(deploy): DeployState und DeploySlot einführen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "2f0f8c3c730f050c23773711d2e2575a3056da9c",
+      "short_sha": "2f0f8c3",
+      "datetime": "2026-05-18T13:46:15+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2f0f8c3c730f050c23773711d2e2575a3056da9c",
+      "subject": "refactor(deploy): deploy-root einführen, bootstrap umstrukturieren (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "85d9fc917e9937218e110ec4ac91bd946c05e120",
+      "short_sha": "85d9fc9",
+      "datetime": "2026-05-16T17:21:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/85d9fc917e9937218e110ec4ac91bd946c05e120",
+      "subject": "fix(deploy): Slot-Schutz verbessern und CI-CA-Zertifikat ergänzen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "43c5a91034592d0573c2cbeb040e52c494d9dba0",
+      "short_sha": "43c5a91",
+      "datetime": "2026-05-16T17:21:12+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/43c5a91034592d0573c2cbeb040e52c494d9dba0",
+      "subject": "refactor(ci): --phases zu --phase, Contact-Smoke auf Python migrieren (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "bdfebef241a9ff784c28b9c1ee5e52f527dd95f9",
+      "short_sha": "bdfebef",
+      "datetime": "2026-05-16T17:21:04+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/bdfebef241a9ff784c28b9c1ee5e52f527dd95f9",
+      "subject": "feat(logging): Monolog-Logging, Shutdown-Trap und APP_LOG_CHANNEL einführen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "df234cd4fd5a5cac57e74ea15cd5ad8c51aedacf",
+      "short_sha": "df234cd",
+      "datetime": "2026-05-15T23:14:19+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/df234cd4fd5a5cac57e74ea15cd5ad8c51aedacf",
+      "subject": "fix(task-dispatch): logger-parameter ergänzen und tests nachrüsten (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "dbf58f82ae6ee0d80f32b9ec7d4b8ae3e5c35fce",
+      "short_sha": "dbf58f8",
+      "datetime": "2026-05-15T22:53:49+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dbf58f82ae6ee0d80f32b9ec7d4b8ae3e5c35fce",
+      "subject": "test: kapsle TaskRunner-Testausgabe (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "88a0df7035b29c94d213410737f189a12fb88dc6",
+      "short_sha": "88a0df7",
+      "datetime": "2026-05-15T22:53:49+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/88a0df7035b29c94d213410737f189a12fb88dc6",
+      "subject": "docs: Task-Testausgabe dokumentieren (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "c97614edf644fca1dd7e97116798c68a12cbabde",
+      "short_sha": "c97614e",
+      "datetime": "2026-05-15T22:33:33+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c97614edf644fca1dd7e97116798c68a12cbabde",
+      "subject": "test(python): pytest als Test-Runner einrichten (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "dbd569fc4043fe4489e13811848952b5234dbc30",
+      "short_sha": "dbd569f",
+      "datetime": "2026-05-15T22:33:17+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dbd569fc4043fe4489e13811848952b5234dbc30",
+      "subject": "refactor(python): print-Logging auf stdlib-logging umstellen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "6586c02e5432c5dcff61567556b23d156516dc3f",
+      "short_sha": "6586c02",
+      "datetime": "2026-05-15T20:01:44+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/6586c02e5432c5dcff61567556b23d156516dc3f",
+      "subject": "test(deploy): HTTP-Trigger und URL-Normalisierung testen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "d941f1193d836c28786ed437f019edb68b444757",
+      "short_sha": "d941f11",
+      "datetime": "2026-05-15T20:00:56+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d941f1193d836c28786ed437f019edb68b444757",
+      "subject": "refactor(deploy): urllib durch requests ersetzen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "f88c87b2960bfe36fa6767d13e5999ce855cdc89",
+      "short_sha": "f88c87b",
+      "datetime": "2026-05-15T16:45:59+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f88c87b2960bfe36fa6767d13e5999ce855cdc89",
+      "subject": "test(deploy): Szenario-Tests, URLError-Fallback, HTTPError-Propagation, Token-Migration (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "1474a2d93f50e81a74f174e024f112a6c68b5f31",
+      "short_sha": "1474a2d",
+      "datetime": "2026-05-15T16:44:51+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1474a2d93f50e81a74f174e024f112a6c68b5f31",
+      "subject": "fix(deploy): URLError-Fallback auf SFTP-Switch; HTTPError propagiert; Logger an TaskDispatch; Sentinel bei Erstdeploy (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "7c3fff4dd32581a1d10e7387eed7bb85ed44e444",
+      "short_sha": "7c3fff4",
+      "datetime": "2026-05-15T14:57:04+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7c3fff4dd32581a1d10e7387eed7bb85ed44e444",
+      "subject": "fix(deploy): Vendor neu hochladen wenn Slot-Sentinel fehlt (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "60f6a03b1415a40006310223b2d737b7fad396bb",
+      "short_sha": "60f6a03",
+      "datetime": "2026-05-15T14:00:41+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/60f6a03b1415a40006310223b2d737b7fad396bb",
+      "subject": "feat: smtp_lib extrahieren, lokale Smoke-Skripte ergänzen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "815f3b07ae764d4543212ccee6b53c9572421475",
+      "short_sha": "815f3b0",
+      "datetime": "2026-05-15T14:00:15+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/815f3b07ae764d4543212ccee6b53c9572421475",
+      "subject": "fix: Erstdeploy lädt Vendor immer; SFTP_INCLUDE_VENDOR → COMPOSER_LOCK_CHANGED (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "107c3baed3871a07996fcc7b704064f20d1f6001",
+      "short_sha": "107c3ba",
+      "datetime": "2026-05-15T13:59:55+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/107c3baed3871a07996fcc7b704064f20d1f6001",
+      "subject": "refactor: ci_note/run_step umbenennen, GITHUB_RUN_ID → PIPELINE_RUN_ID (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "f26361b26457f4a4cb0ec3116b90fc32bf5fd376",
+      "short_sha": "f26361b",
+      "datetime": "2026-05-14T15:20:04+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f26361b26457f4a4cb0ec3116b90fc32bf5fd376",
+      "subject": "docs: SFTP-Schreib-Smoke dokumentieren (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "18fcf94280beb3516d6fcecb3cf0f7665e818c9b",
+      "short_sha": "18fcf94",
+      "datetime": "2026-05-14T15:19:55+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/18fcf94280beb3516d6fcecb3cf0f7665e818c9b",
+      "subject": "ci(deploy): SFTP-Schreib-Smoke ergänzen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "ca49cfe04bcd29c9ac9f713d1980f097d7d282e7",
+      "short_sha": "ca49cfe",
+      "datetime": "2026-05-14T15:01:39+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ca49cfe04bcd29c9ac9f713d1980f097d7d282e7",
+      "subject": "fix: korrigiere Preview-CD-Konfigurationswerte (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "6ec0ae9e07600ccbbd9324288788f9d876fb3fa0",
+      "short_sha": "6ec0ae9",
+      "datetime": "2026-05-14T14:52:54+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/6ec0ae9e07600ccbbd9324288788f9d876fb3fa0",
+      "subject": "chore: pipeline-config-spec/lib auf bd5be1e aktualisiert (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "7c317e9f16c2287dd29ce0cd3fa2886c2f5004c2",
+      "short_sha": "7c317e9",
+      "datetime": "2026-05-14T14:48:26+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7c317e9f16c2287dd29ce0cd3fa2886c2f5004c2",
+      "subject": "refactor: Umstieg auf pipeline-config-spec PipelineConfig-API (J01-144)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "bd5be1e4fa8fae379f6c3a6ebdea40230ad072eb",
+      "short_sha": "bd5be1e",
+      "datetime": "2026-05-14T14:48:11+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/bd5be1e4fa8fae379f6c3a6ebdea40230ad072eb",
+      "subject": "docs(spec): SPEC.md und Spec-Tests ergänzt (J01-144)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "80c20e6c863aea48e242de495a84d7898a0776ea",
+      "short_sha": "80c20e6",
+      "datetime": "2026-05-14T14:48:03+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/80c20e6c863aea48e242de495a84d7898a0776ea",
+      "subject": "refactor: Manifest, ConfigPolicy, ConfigCompiler, PipelineConfig neugestaltet (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "12f8d4da331c7e139b6ffb2c968bf614fbb8956f",
+      "short_sha": "12f8d4d",
+      "datetime": "2026-05-14T02:52:31+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/12f8d4da331c7e139b6ffb2c968bf614fbb8956f",
+      "subject": "test(ci): artefakt-check schlägt vor upload fehl; post-deploy smoke gegen live-server (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "bad759da6b2abe89534fc0b50ba0c411a8185e7a",
+      "short_sha": "bad759d",
+      "datetime": "2026-05-13T22:23:11+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/bad759da6b2abe89534fc0b50ba0c411a8185e7a",
+      "subject": "ci(deploy): GitHub-Variablen als Fallback für nicht geheime Deploy-Werte erlauben (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "45876dfd9ba2e83123e9ddaa8e05cc0352ed994a",
+      "short_sha": "45876df",
+      "datetime": "2026-05-13T22:23:11+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/45876dfd9ba2e83123e9ddaa8e05cc0352ed994a",
+      "subject": "ci(deploy): GitHub-Variablen als Fallback für nicht geheime Deploy-Werte erlauben (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "7e79dd9760af81e49641d124861f442eb4595835",
+      "short_sha": "7e79dd9",
+      "datetime": "2026-05-13T18:44:51+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7e79dd9760af81e49641d124861f442eb4595835",
+      "subject": "test(ci): Testausgabe für PHP und Python lesbarer machen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "92f9261fc2beb2a78cd6f728e4d991de63b72541",
+      "short_sha": "92f9261",
+      "datetime": "2026-05-13T18:44:51+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/92f9261fc2beb2a78cd6f728e4d991de63b72541",
+      "subject": "test(ci): Testausgabe für PHP und Python lesbarer machen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "6b03f0cba2aec25abfa0d53e3397fca8a240753c",
+      "short_sha": "6b03f0c",
+      "datetime": "2026-05-13T18:39:07+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/6b03f0cba2aec25abfa0d53e3397fca8a240753c",
+      "subject": "refactor(task): AdminDispatch → TaskDispatch, zentralisierte Benachrichtigung (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "6a48613169be9f629e936d950c22d70b8809d648",
+      "short_sha": "6a48613",
+      "datetime": "2026-05-13T18:39:07+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/6a48613169be9f629e936d950c22d70b8809d648",
+      "subject": "refactor(task): AdminDispatch → TaskDispatch, zentralisierte Benachrichtigung (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "2aa5f1d0da9ec19edce31facda31fb6afe41cd5a",
+      "short_sha": "2aa5f1d",
+      "datetime": "2026-05-13T14:56:50+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2aa5f1d0da9ec19edce31facda31fb6afe41cd5a",
+      "subject": "fix(ci): APP_ROOT_URL als App-Konfiguration übergeben (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "be34098a6231e565565a2466f696db5364313167",
+      "short_sha": "be34098",
+      "datetime": "2026-05-13T14:56:50+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/be34098a6231e565565a2466f696db5364313167",
+      "subject": "fix(ci): APP_ROOT_URL als App-Konfiguration übergeben (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "4da671f2cad2f09f3a3bf974d966d268b613ccd5",
+      "short_sha": "4da671f",
+      "datetime": "2026-05-13T14:01:04+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4da671f2cad2f09f3a3bf974d966d268b613ccd5",
+      "subject": "fix(ci): Python-Tests im Pipeline-Testlauf einschließen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "20c5a5dca1ae7421ef9d8219ef101491f8907d75",
+      "short_sha": "20c5a5d",
+      "datetime": "2026-05-13T14:01:04+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/20c5a5dca1ae7421ef9d8219ef101491f8907d75",
+      "subject": "fix(ci): Python-Tests im Pipeline-Testlauf einschließen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "a78fc22ebd2b78025a3e8fe4520dfce07a5ea31c",
+      "short_sha": "a78fc22",
+      "datetime": "2026-05-13T13:21:03+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a78fc22ebd2b78025a3e8fe4520dfce07a5ea31c",
+      "subject": "test: Python-Tests explizit ausführen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "1f1dac238e5169f5897b4a5e902e2e2beda0c393",
+      "short_sha": "1f1dac2",
+      "datetime": "2026-05-13T13:21:03+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1f1dac238e5169f5897b4a5e902e2e2beda0c393",
+      "subject": "test: Python-Tests explizit ausführen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "8529ecad4f3c0dea1ebca10a0b3aecbc2b6e625e",
+      "short_sha": "8529eca",
+      "datetime": "2026-05-13T13:21:03+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8529ecad4f3c0dea1ebca10a0b3aecbc2b6e625e",
+      "subject": "docs: Testeinstiege zu J01-144 klären (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "1507d8a23d68f78f79ea897fa51333e979d4be35",
+      "short_sha": "1507d8a",
+      "datetime": "2026-05-13T10:26:01+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1507d8a23d68f78f79ea897fa51333e979d4be35",
+      "subject": "test(deploy): Python-Tests ergänzen und AdminDeployTest anpassen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "923679136ff30732d833acc625e497cfa537a92d",
+      "short_sha": "9236791",
+      "datetime": "2026-05-13T10:26:01+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/923679136ff30732d833acc625e497cfa537a92d",
+      "subject": "test(deploy): Python-Tests ergänzen und AdminDeployTest anpassen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "9d6ab2a5a76e031fb75a163df03f6bfe63d204f6",
+      "short_sha": "9d6ab2a",
+      "datetime": "2026-05-13T10:06:38+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9d6ab2a5a76e031fb75a163df03f6bfe63d204f6",
+      "subject": "fixup! refactor(cli): PipelineCfg einfuehren, Fallbacks entfernen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "f722f1819a65d74a8a5fec8bd927bb8d392222ea",
+      "short_sha": "f722f18",
+      "datetime": "2026-05-13T10:06:38+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f722f1819a65d74a8a5fec8bd927bb8d392222ea",
+      "subject": "fixup! refactor(cli): PipelineCfg einfuehren, Fallbacks entfernen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "fe12a38b8b8a73e0880f5e3841543b89e1b6bab2",
+      "short_sha": "fe12a38",
+      "datetime": "2026-05-13T09:54:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/fe12a38b8b8a73e0880f5e3841543b89e1b6bab2",
+      "subject": "feat(deploy): GITHUB_RUN_ID-Korrelation und Run-Marker einführen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "b955fe7d7eb2bec13b95660a0f0832ca608156de",
+      "short_sha": "b955fe7",
+      "datetime": "2026-05-13T09:54:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b955fe7d7eb2bec13b95660a0f0832ca608156de",
+      "subject": "feat(deploy): GITHUB_RUN_ID-Korrelation und Run-Marker einführen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "bbcea295236425a52c0fbb612ed3ede72567a76e",
+      "short_sha": "bbcea29",
+      "datetime": "2026-05-13T09:53:20+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/bbcea295236425a52c0fbb612ed3ede72567a76e",
+      "subject": "ci(workflows): gemeinsamen Preview-CD-Workflow extrahieren (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "5e776d8c5f5dc4694a0c9d59dd07c2155de07cab",
+      "short_sha": "5e776d8",
+      "datetime": "2026-05-13T09:53:20+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/5e776d8c5f5dc4694a0c9d59dd07c2155de07cab",
+      "subject": "ci(workflows): gemeinsamen Preview-CD-Workflow extrahieren (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "1bd636cb5788a34a1f12a09bcd910da1a81e9c57",
+      "short_sha": "1bd636c",
+      "datetime": "2026-05-12T15:29:52+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1bd636cb5788a34a1f12a09bcd910da1a81e9c57",
+      "subject": "refactor(cli): CiCommand vereinfachen, StartCommand und getValuesByPhase einfuehren (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "0732849d723752085fa724e12bb894446112fd59",
+      "short_sha": "0732849",
+      "datetime": "2026-05-12T15:29:52+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/0732849d723752085fa724e12bb894446112fd59",
+      "subject": "refactor(cli): CiCommand vereinfachen, StartCommand und getValuesByPhase einfuehren (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "1f479ebb86e27cea2affc316626c289cd425f664",
+      "short_sha": "1f479eb",
+      "datetime": "2026-05-12T14:10:18+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1f479ebb86e27cea2affc316626c289cd425f664",
+      "subject": "refactor(cli): PipelineCfg einfuehren, Fallbacks entfernen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "c9b1a3c79d5b8f029584c58e61c7f3f1623a2569",
+      "short_sha": "c9b1a3c",
+      "datetime": "2026-05-12T14:10:18+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c9b1a3c79d5b8f029584c58e61c7f3f1623a2569",
+      "subject": "refactor(cli): PipelineCfg einfuehren, Fallbacks entfernen (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "1fafc5cbcae14e495fc30e1b7a2b71f318cc0d33",
+      "short_sha": "1fafc5c",
+      "datetime": "2026-05-12T00:10:29+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/1fafc5cbcae14e495fc30e1b7a2b71f318cc0d33",
+      "subject": "docs: CLI-Pipeline-Syntax dokumentieren (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "18b26c761d68e0a2b020976d6a60726ce4918550",
+      "short_sha": "18b26c7",
+      "datetime": "2026-05-07T13:05:38+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/18b26c761d68e0a2b020976d6a60726ce4918550",
+      "subject": "docs: Mail im Deployment dokumentieren (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "aace9a893ae41be867912f949baba3b0bf128f62",
+      "short_sha": "aace9a8",
+      "datetime": "2026-05-07T13:03:27+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/aace9a893ae41be867912f949baba3b0bf128f62",
+      "subject": "test: Deployment-Mail-Smoke vorbereiten (J01-144)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "b4b3c8251166a83db2e8339b98d6d2c18dad99eb",
+      "short_sha": "b4b3c82",
+      "datetime": "2026-05-07T13:03:27+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b4b3c8251166a83db2e8339b98d6d2c18dad99eb",
+      "subject": "test: Deployment-Mail-Smoke vorbereiten (J01-144)"
+    }
+  ],
+  "J01-145": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "dc93351f3fce59ab2cbd00eb8b299538b505ac4e",
+      "short_sha": "dc93351",
+      "datetime": "2026-05-19T15:02:12+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dc93351f3fce59ab2cbd00eb8b299538b505ac4e",
+      "subject": "docs(readme): README aus Docs-Sync generieren (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "03a7d38ef82abfe82dc4c7deab4f6647c6fcc2bd",
+      "short_sha": "03a7d38",
+      "datetime": "2026-05-19T15:01:55+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/03a7d38ef82abfe82dc4c7deab4f6647c6fcc2bd",
+      "subject": "feat(getting-started): README-Sync-Skript und Einstiegsseiten (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "4f131e9162ec2284a060194e1e60c212f7e552bb",
+      "short_sha": "4f131e9",
+      "datetime": "2026-05-12T16:19:49+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4f131e9162ec2284a060194e1e60c212f7e552bb",
+      "subject": "fix: manuellen en-jira-sync schuetzen (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "08054b4d6497769fc17bfc75347b16570de4d9e2",
+      "short_sha": "08054b4",
+      "datetime": "2026-05-12T15:03:31+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/08054b4d6497769fc17bfc75347b16570de4d9e2",
+      "subject": "docs: programmierleitlinien zu fallbacks schärfen (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "16e2f6ef1aca32f077ee890170c41432a004d834",
+      "short_sha": "16e2f6e",
+      "datetime": "2026-05-11T16:43:27+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/16e2f6ef1aca32f077ee890170c41432a004d834",
+      "subject": "fix: recent-ui-texte im include aufloesen (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "7b51fae284e676068f221d061d4896da5f1d390a",
+      "short_sha": "7b51fae",
+      "datetime": "2026-05-11T16:40:42+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7b51fae284e676068f221d061d4896da5f1d390a",
+      "subject": "fix: recent-anker auf abschnitte setzen (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "b54823df167e4f231543c436bcf91d6f00943c77",
+      "short_sha": "b54823d",
+      "datetime": "2026-05-11T16:37:00+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/b54823df167e4f231543c436bcf91d6f00943c77",
+      "subject": "test: recent-feed-trennung absichern (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "82d5592edef3cdffca4f34620d3bcf9828676a50",
+      "short_sha": "82d5592",
+      "datetime": "2026-05-11T16:35:34+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/82d5592edef3cdffca4f34620d3bcf9828676a50",
+      "subject": "docs: recent-feed mit inhaltsliste erweitern (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "dca39cca6e72d88ff712500b7b1f062c88a6236c",
+      "short_sha": "dca39cc",
+      "datetime": "2026-05-11T16:28:28+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dca39cca6e72d88ff712500b7b1f062c88a6236c",
+      "subject": "docs: recent-feed nach darstellungstrennung nachziehen (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "74d3af711805c58a87901db721387765719ec024",
+      "short_sha": "74d3af7",
+      "datetime": "2026-05-11T16:27:39+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/74d3af711805c58a87901db721387765719ec024",
+      "subject": "docs: doku-commits im recent-feed trennen (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "25ecc099e7fa8a746f9cdb30d171a045dd589319",
+      "short_sha": "25ecc09",
+      "datetime": "2026-05-11T16:02:27+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/25ecc099e7fa8a746f9cdb30d171a045dd589319",
+      "subject": "docs: laufende doku-wartung verankern (J01-145)"
+    }
+  ],
+  "J01-146": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "42ad67fbd90cf1bb6edbeaf1f0b301fe3c476a44",
+      "short_sha": "42ad67f",
+      "datetime": "2026-05-22T01:41:40+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/42ad67fbd90cf1bb6edbeaf1f0b301fe3c476a44",
+      "subject": "docs: öffentlichen Jira-Spiegel nachziehen (J01-146)"
+    }
+  ],
+  "J01-147": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "8b3b5e420e5ec4802e9072a829ee9b86b6edea12",
+      "short_sha": "8b3b5e4",
+      "datetime": "2026-05-22T01:42:53+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8b3b5e420e5ec4802e9072a829ee9b86b6edea12",
+      "subject": "feat: DeployPhase-Enum und DeployMachine-Skeleton hinzufuegen (J01-147)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "2224c4d27722e2175b0c2c6fa5a06dea2802c587",
+      "short_sha": "2224c4d",
+      "datetime": "2026-05-22T01:37:05+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2224c4d27722e2175b0c2c6fa5a06dea2802c587",
+      "subject": "docs: deploy-contract als spec anlegen (J01-147)"
+    }
+  ],
+  "J01-149": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "dcbdff6e301b5072a5a3778bfc38f252d5ec819a",
+      "short_sha": "dcbdff6",
+      "datetime": "2026-05-22T13:45:05+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dcbdff6e301b5072a5a3778bfc38f252d5ec819a",
+      "subject": "refactor: DeployPlan in Machine modellieren (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "d327fb3baf6418d1c1bb25c10d0e11201fa07e83",
+      "short_sha": "d327fb3",
+      "datetime": "2026-05-22T13:45:05+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/d327fb3baf6418d1c1bb25c10d0e11201fa07e83",
+      "subject": "docs: DeployPlan-Machine-Modell dokumentieren (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "78a6a4923bcbe341538653d4f2cd0a38752c4ac6",
+      "short_sha": "78a6a49",
+      "datetime": "2026-05-22T12:49:46+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/78a6a4923bcbe341538653d4f2cd0a38752c4ac6",
+      "subject": "test: DeployMachine-Invarianten erweitern (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "2ff677211d1c3fc7496744601e71ef2397510800",
+      "short_sha": "2ff6772",
+      "datetime": "2026-05-22T12:49:46+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2ff677211d1c3fc7496744601e71ef2397510800",
+      "subject": "docs: DeployMachine-Invarianten nachziehen (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "4e94961b836c3f9be7a29626f1737d5038652b07",
+      "short_sha": "4e94961",
+      "datetime": "2026-05-22T10:42:19+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4e94961b836c3f9be7a29626f1737d5038652b07",
+      "subject": "feat: smoke-check, rollback und phasen-logging implementieren (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "1529d0af79563a6a7584444469f651a1adf7ae86",
+      "short_sha": "1529d0a",
+      "datetime": "2026-05-22T02:13:25+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1529d0af79563a6a7584444469f651a1adf7ae86",
+      "subject": "feat: SftpDeployOps und DeployMachine in deploy-ablauf einbauen (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "80bed2a29e98cf8ff1d382b761b464254f3bd60f",
+      "short_sha": "80bed2a",
+      "datetime": "2026-05-22T02:00:39+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/80bed2a29e98cf8ff1d382b761b464254f3bd60f",
+      "subject": "test: recovery-matrix und stateful-test-fix hinzufuegen (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "915c26d7bd299223da8f455957e2bf3ddd8e4d20",
+      "short_sha": "915c26d",
+      "datetime": "2026-05-22T01:53:37+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/915c26d7bd299223da8f455957e2bf3ddd8e4d20",
+      "subject": "feat: RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen (J01-149)"
+    }
+  ],
+  "J01-16": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "87c1f7f5b37b367653ae5fa22e027fc05dbd529e",
+      "short_sha": "87c1f7f",
+      "datetime": "2026-03-20T15:41:27+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/87c1f7f5b37b367653ae5fa22e027fc05dbd529e",
+      "subject": "docs: J01-16-Schrittdokus nach Commit-Nachzug schärfen (J01-16)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "3e59d1e78c24c181dad2e4e42bb7b329d9eea9c4",
+      "short_sha": "3e59d1e",
+      "datetime": "2026-03-20T13:07:38+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3e59d1e78c24c181dad2e4e42bb7b329d9eea9c4",
+      "subject": "feat: Jira-Metadaten und J01-16-Sync nachziehen (J01-16)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "6a66b2611219a9fd5baf41fbb6aac89e996d6e87",
+      "short_sha": "6a66b26",
+      "datetime": "2026-03-18T12:43:47+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6a66b2611219a9fd5baf41fbb6aac89e996d6e87",
+      "subject": "docs: Mirror-Schrittseite für 16-1 nachziehen (J01-16)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "33a8e33808f023a03aec4839beba66915bd3654a",
+      "short_sha": "33a8e33",
+      "datetime": "2026-03-18T12:31:21+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/33a8e33808f023a03aec4839beba66915bd3654a",
+      "subject": "docs: 16-1 Arbeitsdoku und Rahmen nachziehen (J01-16)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "8eceab80a1a348986075bf5b57bae8fee81b1a88",
+      "short_sha": "8eceab8",
+      "datetime": "2026-03-18T12:00:26+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8eceab80a1a348986075bf5b57bae8fee81b1a88",
+      "subject": "docs: J01-16 und J01-21 als Vorbildpfad nachziehen (J01-16)"
+    }
+  ],
+  "J01-17": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "ee45a621ad7b25f01a8735d802e286bd718fa7e2",
+      "short_sha": "ee45a62",
+      "datetime": "2026-03-20T15:37:52+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ee45a621ad7b25f01a8735d802e286bd718fa7e2",
+      "subject": "feat(locking): RateLimiter und CAPTCHA-Locking vervollständigen (J01-17)"
+    }
+  ],
+  "J01-18": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "8ab08e466499ee087cf33fc8814f7343af9ebf17",
+      "short_sha": "8ab08e4",
+      "datetime": "2026-03-20T15:38:00+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8ab08e466499ee087cf33fc8814f7343af9ebf17",
+      "subject": "feat(locking): Token-Rotation unter Lock nachziehen (J01-18)"
+    }
+  ],
+  "J01-19": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "12e25d32b9f1f11b3f37ae4dbf67a81b896ca7ba",
+      "short_sha": "12e25d3",
+      "datetime": "2026-03-18T16:25:12+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/12e25d32b9f1f11b3f37ae4dbf67a81b896ca7ba",
+      "subject": "docs: Arbeitsdoku und Mirror für 16-3 Race-nahe Tests anlegen (J01-19)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "3fdb008e62aae4d91fd706050939b78fc2015385",
+      "short_sha": "3fdb008",
+      "datetime": "2026-03-18T16:06:31+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3fdb008e62aae4d91fd706050939b78fc2015385",
+      "subject": "test(concurrency): race-nahe Tests für RateLimiter, CaptchaService, TokenService (J01-19)"
+    }
+  ],
+  "J01-34": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "a0e0133d2c75dfccec47bf97b2d65a3623e9b39d",
+      "short_sha": "a0e0133",
+      "datetime": "2026-05-12T00:10:29+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a0e0133d2c75dfccec47bf97b2d65a3623e9b39d",
+      "subject": "docs: CLI-Pipeline-Syntax dokumentieren (J01-34)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "9568960e23f0d0d7f0895d9b0bcaffdec367a9a4",
+      "short_sha": "9568960",
+      "datetime": "2026-05-12T00:10:18+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9568960e23f0d0d7f0895d9b0bcaffdec367a9a4",
+      "subject": "refactor: CLI-Pipeline-Syntax vereinheitlichen (J01-34)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "fe945d70e725ffff6f7613bf05af6fbb483a5147",
+      "short_sha": "fe945d7",
+      "datetime": "2026-05-12T00:10:18+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/fe945d70e725ffff6f7613bf05af6fbb483a5147",
+      "subject": "refactor: CLI-Pipeline-Syntax vereinheitlichen (J01-34)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "3deb974e5ca1967b4b25e60f0d733c1756c7f947",
+      "short_sha": "3deb974",
+      "datetime": "2026-04-14T15:36:32+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3deb974e5ca1967b4b25e60f0d733c1756c7f947",
+      "subject": "docs: J01-34 EN-Spiegel – Subtask-Prüfsumme und J01-127-Schritt nachziehen (J01-34)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "5aea0b13ec855a42e900184fafe85cb94d4165c3",
+      "short_sha": "5aea0b1",
+      "datetime": "2026-04-14T11:33:43+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5aea0b13ec855a42e900184fafe85cb94d4165c3",
+      "subject": "docs: J01-34 Subtask-Liste um J01-127 ergänzen (J01-34)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "55c704b6f39730be7d68de78391bed9a5d889dc0",
+      "short_sha": "55c704b",
+      "datetime": "2026-04-14T10:54:05+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/55c704b6f39730be7d68de78391bed9a5d889dc0",
+      "subject": "docs: Schrittseite J01-127 anlegen (J01-34)"
+    }
+  ],
+  "J01-62": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "6375f81c7fa330905531b35e1da2ca1ed7963441",
+      "short_sha": "6375f81",
+      "datetime": "2026-05-09T23:12:19+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6375f81c7fa330905531b35e1da2ca1ed7963441",
+      "subject": "docs: Schritt-Nummern-Backfill nachziehen (J01-62)"
+    }
+  ],
+  "J01-72": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "fc80a92c16b9846fc6f5e2d83806464e79c8f98d",
+      "short_sha": "fc80a92",
+      "datetime": "2026-03-17T13:57:54+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/fc80a92c16b9846fc6f5e2d83806464e79c8f98d",
+      "subject": "docs: J01-72 Arbeitsdokus und Vorlage ergänzen (J01-72)"
+    }
+  ],
+  "J01-83": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "b315b772f16eda7e62dbe2e6ae2737c0eed84c0a",
+      "short_sha": "b315b77",
+      "datetime": "2026-03-17T12:42:12+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/b315b772f16eda7e62dbe2e6ae2737c0eed84c0a",
+      "subject": "docs: Cache-Ziel für J01-83 korrigieren (J01-83)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "c0f8efd54cc241dd695537cea71d8fbfd8a36ddd",
+      "short_sha": "c0f8efd",
+      "datetime": "2026-03-17T12:28:04+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c0f8efd54cc241dd695537cea71d8fbfd8a36ddd",
+      "subject": "docs: Arbeitsdoku für Referenzrezept schärfen (J01-83)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "7fc4e15d42b61af754a3be7c59a31ea76d13df93",
+      "short_sha": "7fc4e15",
+      "datetime": "2026-03-17T11:47:35+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7fc4e15d42b61af754a3be7c59a31ea76d13df93",
+      "subject": "docs: J01-83 Cache-V1 und J01-101 vorbereiten (J01-83)"
+    }
+  ],
+  "J01-9": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "01ae0997a624c64bf0f4d65dd3db3c1f094fb764",
+      "short_sha": "01ae099",
+      "datetime": "2026-04-24T02:26:47+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/01ae0997a624c64bf0f4d65dd3db3c1f094fb764",
+      "subject": "docs: Preview-Runtime-Layer dokumentieren (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "38a177ba0cdfbf5c789e7f09731a61f13e495241",
+      "short_sha": "38a177b",
+      "datetime": "2026-04-24T02:26:39+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/38a177ba0cdfbf5c789e7f09731a61f13e495241",
+      "subject": "chore: Preview-Runtime-Layer ergänzen (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "9002a7510c025eddc305c2576af276e213d49616",
+      "short_sha": "9002a75",
+      "datetime": "2026-04-24T02:16:40+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9002a7510c025eddc305c2576af276e213d49616",
+      "subject": "chore: Preview-Debug und Smoke-Checks nachschärfen (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "9c36e7bdbd488c73f3892b3e68932e1d689d81b0",
+      "short_sha": "9c36e7b",
+      "datetime": "2026-04-24T01:40:50+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/9c36e7bdbd488c73f3892b3e68932e1d689d81b0",
+      "subject": "docs: Preview-Web-Smokes dokumentieren (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "86c2b6c4e4b2cf19e99aa31f3e12918db86e1fa5",
+      "short_sha": "86c2b6c",
+      "datetime": "2026-04-24T01:40:45+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/86c2b6c4e4b2cf19e99aa31f3e12918db86e1fa5",
+      "subject": "chore: Preview-Smokes über preview-web führen (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "72369b4b359cfbbaa7b9bda63c7290817b9fbe60",
+      "short_sha": "72369b4",
+      "datetime": "2026-04-24T01:25:46+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/72369b4b359cfbbaa7b9bda63c7290817b9fbe60",
+      "subject": "docs: Preview-CI und Deploy-JSON dokumentieren (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "3b7e0dbaff32a6e4f998fee0698db7f2cbda3229",
+      "short_sha": "3b7e0db",
+      "datetime": "2026-04-24T01:25:35+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3b7e0dbaff32a6e4f998fee0698db7f2cbda3229",
+      "subject": "chore: Preview-CI und SFTP-Upload nachschärfen (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "00127d8402b2d21d78254f5c5437238a3f2ad88b",
+      "short_sha": "00127d8",
+      "datetime": "2026-04-23T23:30:02+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/00127d8402b2d21d78254f5c5437238a3f2ad88b",
+      "subject": "refactor(deploy): deploy-Schritt konsolidieren, github-output-Format entfernen (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "c6ba6493a60df46778d47dccf9478b781a481e8a",
+      "short_sha": "c6ba649",
+      "datetime": "2026-04-23T18:00:57+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c6ba6493a60df46778d47dccf9478b781a481e8a",
+      "subject": "fix(deploy): sshpass durch paramiko ersetzen (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "9cddff0666bed8c200c1ff2b7b88c8047569309d",
+      "short_sha": "9cddff0",
+      "datetime": "2026-04-23T16:22:39+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9cddff0666bed8c200c1ff2b7b88c8047569309d",
+      "subject": "fix(deploy): sshpass-Passwort-Auth zuverlässig einleiten (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "b60cddf1faa16b6b7db33b9a28bc087930d9c747",
+      "short_sha": "b60cddf",
+      "datetime": "2026-04-23T15:54:39+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b60cddf1faa16b6b7db33b9a28bc087930d9c747",
+      "subject": "feat(deploy): FTP-Deploy durch SFTP-Deploy ersetzen (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "15062854c865b87812601bdf4bb8e6275beac647",
+      "short_sha": "1506285",
+      "datetime": "2026-04-22T15:38:34+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/15062854c865b87812601bdf4bb8e6275beac647",
+      "subject": "fix(ci): Broken-Pipe-Falle im HTTP-Smoke-Check vermeiden (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "c0a347bef7a851a112c7dbadb62c9980d3eb31f8",
+      "short_sha": "c0a347b",
+      "datetime": "2026-04-22T15:17:53+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c0a347bef7a851a112c7dbadb62c9980d3eb31f8",
+      "subject": "config: entferne SMTP aus preview (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "f77f337f7f74113725aed182415ed6f8c9fc91fd",
+      "short_sha": "f77f337",
+      "datetime": "2026-04-22T15:17:53+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f77f337f7f74113725aed182415ed6f8c9fc91fd",
+      "subject": "docs: update J01-9 config command test matrix (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "9ec9227a8cbf83819835a6684a893fd7d24cf8d7",
+      "short_sha": "9ec9227",
+      "datetime": "2026-04-22T12:13:38+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9ec9227a8cbf83819835a6684a893fd7d24cf8d7",
+      "subject": "refactor(cli): phase-fallback und AppConfigValidator entfernen und overrides parsen (J01-9)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "6d7c00580f2e077a5db862338357e0dc491d80c4",
+      "short_sha": "6d7c005",
+      "datetime": "2026-04-21T14:41:04+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/6d7c00580f2e077a5db862338357e0dc491d80c4",
+      "subject": "refactor: Verschachtelte Overrides mit Phasen-Spezifität laden (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "a665be4dd3de15bef40a90bcffd0f0bf5728b9e2",
+      "short_sha": "a665be4",
+      "datetime": "2026-04-21T13:35:03+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a665be4dd3de15bef40a90bcffd0f0bf5728b9e2",
+      "subject": "refactor(cli): requireOverrides nach BaseCommand verschieben, CiCommandTest bereinigen (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "d501e533a3f7922a06357db433ea0c6f136e8c2b",
+      "short_sha": "d501e53",
+      "datetime": "2026-04-21T12:54:38+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d501e533a3f7922a06357db433ea0c6f136e8c2b",
+      "subject": "feat(overrides): system-Quelle entfernen, --overrides JSON einführen (J01-9)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "eb968882989d6baed8c792914c01061dede0b8a5",
+      "short_sha": "eb96888",
+      "datetime": "2026-04-21T12:45:56+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/eb968882989d6baed8c792914c01061dede0b8a5",
+      "subject": "feat(overrides): system-Quelle entfernen, Dot-Notation-Overrides einführen (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "ed31ca3b793aeaf24d48f3d826be3ebca43b1532",
+      "short_sha": "ed31ca3",
+      "datetime": "2026-04-21T11:54:00+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ed31ca3b793aeaf24d48f3d826be3ebca43b1532",
+      "subject": "docs: J01-134 um Phasen-Dateimodell ergänzt (J01-9)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "0ff318dad02e3e62c7b9499dbd3de15c9cf76741",
+      "short_sha": "0ff318d",
+      "datetime": "2026-04-21T11:53:29+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/0ff318dad02e3e62c7b9499dbd3de15c9cf76741",
+      "subject": "fix: Loader auf Phasen-Dateimodell umstellen (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "872c6c22001e5ec86b11daec1096b8828776c867",
+      "short_sha": "872c6c2",
+      "datetime": "2026-04-21T11:36:06+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/872c6c22001e5ec86b11daec1096b8828776c867",
+      "subject": "docs: J01-134 um Loader-Stil ergänzt (J01-9)"
+    },
+    {
+      "repo": "pipeline-config-spec-php",
+      "sha": "23fcf4c18b8ec32d8642b4ca52461d7f9480f223",
+      "short_sha": "23fcf4c",
+      "datetime": "2026-04-21T11:34:49+02:00",
+      "github_url": "https://github.com/blaumohn/pipeline-config-spec-php/commit/23fcf4c18b8ec32d8642b4ca52461d7f9480f223",
+      "subject": "refactor: ConfigLoader-Ladepfad entflechten (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "ddea90479920b5fe4190d4c724ca3da69caec3da",
+      "short_sha": "ddea904",
+      "datetime": "2026-04-17T12:34:57+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ddea90479920b5fe4190d4c724ca3da69caec3da",
+      "subject": "docs: Jira-Cache erneuern und öffentliche Seiten neu sortieren (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "8f466fbf94229cd21ef0ea98bd58714ccf9eda4d",
+      "short_sha": "8f466fb",
+      "datetime": "2026-04-16T11:13:06+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8f466fbf94229cd21ef0ea98bd58714ccf9eda4d",
+      "subject": "fix: Symfony-Process-Timeout für lang laufende Python-Skripte deaktivieren (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "a3c18a9ed236f7ee2e463f88d97b6cbd7311ce4d",
+      "short_sha": "a3c18a9",
+      "datetime": "2026-04-15T16:34:10+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a3c18a9ed236f7ee2e463f88d97b6cbd7311ce4d",
+      "subject": "docs: J01-9 Unteraufgabe für Preview-Deploy in Arbeit setzen (J01-9)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "7eeb36063aa7a28d212ac22b42cfc072ec9d6fa8",
+      "short_sha": "7eeb360",
+      "datetime": "2026-04-15T16:31:18+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7eeb36063aa7a28d212ac22b42cfc072ec9d6fa8",
+      "subject": "docs: J01-9 auf Preview-Deployment im Bearbeitungsstand zuschneiden (J01-9)"
+    }
+  ],
+  "J01-91": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "d68e609fa2f95ca7696257dec0eea025de22b3a4",
+      "short_sha": "d68e609",
+      "datetime": "2026-04-15T15:43:57+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d68e609fa2f95ca7696257dec0eea025de22b3a4",
+      "subject": "docs: README auf Kurzstart und Doku-Verweis eindampfen (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "6c11bc288401a636c1ef6bf9afb130dd075204ab",
+      "short_sha": "6c11bc2",
+      "datetime": "2026-03-31T00:02:54+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6c11bc288401a636c1ef6bf9afb130dd075204ab",
+      "subject": "docs: README-Kurzverweis in Startseite und J01-91 spiegeln (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "72f4cedef95ad6478d6e36dc8145920a1292c861",
+      "short_sha": "72f4ced",
+      "datetime": "2026-03-30T23:29:27+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/72f4cedef95ad6478d6e36dc8145920a1292c861",
+      "subject": "docs: README-Entwicklungssicht ergänzen (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "4382d977811f7936ab03ab1d6ec09f5cf1374cd0",
+      "short_sha": "4382d97",
+      "datetime": "2026-03-30T23:29:27+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4382d977811f7936ab03ab1d6ec09f5cf1374cd0",
+      "subject": "docs: README-Entwicklungssicht in J01-91 notieren (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "49db73c3cfb95dd8f29c56de10d0be05c2cd0de1",
+      "short_sha": "49db73c",
+      "datetime": "2026-03-20T15:41:34+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/49db73c3cfb95dd8f29c56de10d0be05c2cd0de1",
+      "subject": "docs: README-Branch-Nachzug in J01-91 ergänzen (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "ea86afab3e0dd8e9c8bfe6d247659f5bf304e79f",
+      "short_sha": "ea86afa",
+      "datetime": "2026-03-20T15:37:15+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ea86afab3e0dd8e9c8bfe6d247659f5bf304e79f",
+      "subject": "docs: README-Kurzstart auf GitHub Pages ausrichten (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "d1b1de0c29b324613fa2a039859f3c2b37136022",
+      "short_sha": "d1b1de0",
+      "datetime": "2026-03-17T14:02:25+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d1b1de0c29b324613fa2a039859f3c2b37136022",
+      "subject": "docs: README-Umlaute korrigieren (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "e5138899989b5cd5bcfb758705486085d48aba6c",
+      "short_sha": "e513889",
+      "datetime": "2026-03-16T16:08:55+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e5138899989b5cd5bcfb758705486085d48aba6c",
+      "subject": "docs: schliesse J01-91 in Richtlinie und Arbeitsdoku ab (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "9117308d9c81ba5773f6ff5fb3a30226aeae4d8b",
+      "short_sha": "9117308",
+      "datetime": "2026-03-16T15:31:09+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/9117308d9c81ba5773f6ff5fb3a30226aeae4d8b",
+      "subject": "docs: J01-91 um Branch-Flow-Reste ergaenzen (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "a0a4399d15707678f98ae1d081b791f855931914",
+      "short_sha": "a0a4399",
+      "datetime": "2026-03-14T08:02:38+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a0a4399d15707678f98ae1d081b791f855931914",
+      "subject": "docs: Start-Anker und Mirror-Links schärfen (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "a573beaf30ac846d499e87e45a59c6e987af06bd",
+      "short_sha": "a573bea",
+      "datetime": "2026-03-14T07:36:04+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a573beaf30ac846d499e87e45a59c6e987af06bd",
+      "subject": "docs: GitHub-Pages-Einstieg schärfen (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "3267dca125a083c2cdffe3eef3eea4ff2f524f0e",
+      "short_sha": "3267dca",
+      "datetime": "2026-03-14T07:35:53+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3267dca125a083c2cdffe3eef3eea4ff2f524f0e",
+      "subject": "docs: README auf GitHub Pages umstellen (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "f43dcfc5eeaff59e515c198e72c3ae18a97c48e6",
+      "short_sha": "f43dcfc",
+      "datetime": "2026-03-09T16:49:28+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f43dcfc5eeaff59e515c198e72c3ae18a97c48e6",
+      "subject": "docs: ergänze agile-dateilisten und präzisiere dokutyp-regeln (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "8a7626f9cafa1d6842cd050adc11c0214931b867",
+      "short_sha": "8a7626f",
+      "datetime": "2026-03-09T15:21:08+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8a7626f9cafa1d6842cd050adc11c0214931b867",
+      "subject": "chore(skills): workspace-tauglichen Mirror-Skill ergänzen (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "af5b708963736ea1be7d916e925c492a17e7cbc7",
+      "short_sha": "af5b708",
+      "datetime": "2026-03-09T15:00:38+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/af5b708963736ea1be7d916e925c492a17e7cbc7",
+      "subject": "chore(mirror): regeneriere Jira-Übersicht nach Generator-Update (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "0e759eb8ee23d80ba7b54fed905a2f86061b5348",
+      "short_sha": "0e759eb",
+      "datetime": "2026-03-09T14:54:45+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/0e759eb8ee23d80ba7b54fed905a2f86061b5348",
+      "subject": "chore(mirror): inkrementell ohne Stand-Zeitstempel (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "2bbf5784b4e84ddfb90d63e23124537d96250ca8",
+      "short_sha": "2bbf578",
+      "datetime": "2026-03-09T11:05:24+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2bbf5784b4e84ddfb90d63e23124537d96250ca8",
+      "subject": "chore(mirror): normalisiere SSOT-Titel und regeneriere Mirror (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "eab0f127416a695a91b055b4abfe09b31c6d29e2",
+      "short_sha": "eab0f12",
+      "datetime": "2026-03-09T11:04:41+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/eab0f127416a695a91b055b4abfe09b31c6d29e2",
+      "subject": "docs: kläre SSOT (Doku vs. Vorgänge) und konsolidiere J01-91 (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "30473bff1671e91885730e47e89fc1071e4495d9",
+      "short_sha": "30473bf",
+      "datetime": "2026-03-09T10:29:11+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/30473bff1671e91885730e47e89fc1071e4495d9",
+      "subject": "docs: ergänze Phase-1-Status und Entscheidungen (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "e1776b1b62f07718a12e5f08ec19b180b9125c3a",
+      "short_sha": "e1776b1",
+      "datetime": "2026-03-06T22:50:48+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e1776b1b62f07718a12e5f08ec19b180b9125c3a",
+      "subject": "docs: verschiebe J01-91 Zustand nach work/jira (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "6e4f2124c3bffda71b50974fc91662ebad02e03e",
+      "short_sha": "6e4f212",
+      "datetime": "2026-03-06T21:44:31+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6e4f2124c3bffda71b50974fc91662ebad02e03e",
+      "subject": "docs: setze Phase 1 um und stabilisiere Jira-Mirror (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "77ede28fb15d6b1484baa54f418de3b75559dfd4",
+      "short_sha": "77ede28",
+      "datetime": "2026-03-06T13:04:42+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/77ede28fb15d6b1484baa54f418de3b75559dfd4",
+      "subject": "docs: synchronisiere jira remote-links in mirror (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "7e71348db1773980a0b66c5fc1bfbd56590f9068",
+      "short_sha": "7e71348",
+      "datetime": "2026-03-06T12:53:26+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7e71348db1773980a0b66c5fc1bfbd56590f9068",
+      "subject": "docs: regeneriere jira-uebersicht nach jira-update (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "da3d19ab00f6e69be7eb1a966b6ef6ae26b1cacc",
+      "short_sha": "da3d19a",
+      "datetime": "2026-03-06T12:38:02+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/da3d19ab00f6e69be7eb1a966b6ef6ae26b1cacc",
+      "subject": "docs: ordne phase-1 berichte nach jira und update mirror (J01-91)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "827d7b0725fd5b432fe75086203a1a6e5079af76",
+      "short_sha": "827d7b0",
+      "datetime": "2026-03-06T12:28:52+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/827d7b0725fd5b432fe75086203a1a6e5079af76",
+      "subject": "docs: drift-report vorlage und erster report (J01-91)"
+    }
+  ],
+  "J01-92": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "c32e84c381d187a91ab7e21613832df572c12cd8",
+      "short_sha": "c32e84c",
+      "datetime": "2026-05-06T09:43:10+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c32e84c381d187a91ab7e21613832df572c12cd8",
+      "subject": "docs: Schritt-Backfill-Grenze klarstellen (J01-92)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "5236fe58bb480b79425f14de5cefabea7c634657",
+      "short_sha": "5236fe5",
+      "datetime": "2026-03-16T14:35:36+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5236fe58bb480b79425f14de5cefabea7c634657",
+      "subject": "docs: ziehe jira-status und mirror nach (J01-92)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "835bd7164b75f3f2cf9c313cef6ebc6bd3e0f72a",
+      "short_sha": "835bd71",
+      "datetime": "2026-03-16T14:28:57+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/835bd7164b75f3f2cf9c313cef6ebc6bd3e0f72a",
+      "subject": "docs: feature-matrix und skill-heimat schärfen (J01-92)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "1fa3417b291ef67450ab823472cab1ea9bf0e422",
+      "short_sha": "1fa3417",
+      "datetime": "2026-03-14T07:36:10+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/1fa3417b291ef67450ab823472cab1ea9bf0e422",
+      "subject": "docs: Skill-Heimat in Arbeitsdoku schärfen (J01-92)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "eaed43be92ba6a903a1df05e804a2567d870e305",
+      "short_sha": "eaed43b",
+      "datetime": "2026-03-12T18:03:35+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/eaed43be92ba6a903a1df05e804a2567d870e305",
+      "subject": "docs: Shared-Regeln dokumentieren (J01-92)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "61e529854fd1843288b019644d0bf03a0c0502ca",
+      "short_sha": "61e5298",
+      "datetime": "2026-03-12T15:32:12+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/61e529854fd1843288b019644d0bf03a0c0502ca",
+      "subject": "chore(mirror): spiegele neuen skill-schritt in jira-uebersicht (J01-92)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "e8ae3dbd607daf9fb01d8dc2994bd97953d5ddd0",
+      "short_sha": "e8ae3db",
+      "datetime": "2026-03-12T15:32:03+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e8ae3dbd607daf9fb01d8dc2994bd97953d5ddd0",
+      "subject": "chore(skills): entferne lokalen mirror-skill zugunsten des skill-repos (J01-92)"
+    }
+  ],
+  "J01-93": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "8393467facfa39629e59ad9082ac3c5fdebbed6e",
+      "short_sha": "8393467",
+      "datetime": "2026-03-14T08:38:11+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8393467facfa39629e59ad9082ac3c5fdebbed6e",
+      "subject": "docs: Jira-GitHub-Pages-Links prüfen (J01-93)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "6297b9c1044a8f5a9f4ccb6a80ba42a98e108812",
+      "short_sha": "6297b9c",
+      "datetime": "2026-03-12T18:11:58+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/6297b9c1044a8f5a9f4ccb6a80ba42a98e108812",
+      "subject": "style: Site-Titel-Umbruch kompakter machen (J01-93)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "3d7edc7a1c7ae2d7de9a0848efa62648153e181c",
+      "short_sha": "3d7edc7",
+      "datetime": "2026-03-12T18:08:19+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3d7edc7a1c7ae2d7de9a0848efa62648153e181c",
+      "subject": "style: Header-Sprachwahl klarer trennen (J01-93)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "8cb8421478bb189ab89fea932af7f4b183d94726",
+      "short_sha": "8cb8421",
+      "datetime": "2026-03-12T18:04:02+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8cb8421478bb189ab89fea932af7f4b183d94726",
+      "subject": "docs: GitHub-Pages-i18n und Sprachwahl aufbauen (J01-93)"
+    }
+  ],
+  "J01-94": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "836ccdfeb580207893cbd77df4d5ccb2dbd54a4c",
+      "short_sha": "836ccdf",
+      "datetime": "2026-03-13T13:31:33+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/836ccdfeb580207893cbd77df4d5ccb2dbd54a4c",
+      "subject": "docs: Sprint-Board an Jira angleichen (J01-94)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "092db4e79d7910aaf47acf44b233a15d726d6db7",
+      "short_sha": "092db4e",
+      "datetime": "2026-03-13T13:21:19+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/092db4e79d7910aaf47acf44b233a15d726d6db7",
+      "subject": "docs: Sprint-Historie öffentlich machen (J01-94)"
+    }
+  ],
+  "J01-95": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "b475faf242f3cf6a1b8358db9fdbd193fc1558d9",
+      "short_sha": "b475faf",
+      "datetime": "2026-03-14T10:44:51+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/b475faf242f3cf6a1b8358db9fdbd193fc1558d9",
+      "subject": "docs: Abschlussstand für J01-93/94/95 nachziehen (J01-95)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "11c61d9bbc9de6bd29e49aab5f8adbf01f5dca9f",
+      "short_sha": "11c61d9",
+      "datetime": "2026-03-14T10:37:39+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/11c61d9bbc9de6bd29e49aab5f8adbf01f5dca9f",
+      "subject": "feat: journalisierten Jira-Pages-Sync ergänzen (J01-95)"
+    }
+  ],
+  "J01-96": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "3a938cf84bdb4f9543391ea0d19102b3c86b8f9a",
+      "short_sha": "3a938cf",
+      "datetime": "2026-03-16T12:36:57+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3a938cf84bdb4f9543391ea0d19102b3c86b8f9a",
+      "subject": "docs: schärfe J01-96-link-regel für jira und mirror (J01-96)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "36938d41d09a6a166baf1b658283da86c6eb4d42",
+      "short_sha": "36938d4",
+      "datetime": "2026-03-16T12:20:32+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/36938d41d09a6a166baf1b658283da86c6eb4d42",
+      "subject": "docs: aktualisiere J01-96-spiegel nach remote-link-sync (J01-96)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "5beb34a1bcc73acec7b6b625922b1f9faf81a105",
+      "short_sha": "5beb34a",
+      "datetime": "2026-03-16T12:19:20+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/5beb34a1bcc73acec7b6b625922b1f9faf81a105",
+      "subject": "docs: schärfe J01-96 und bereinige mirror-links (J01-96)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "3e5b30f2aafaf85b75ddc9c994e82d548e27bf75",
+      "short_sha": "3e5b30f",
+      "datetime": "2026-03-16T11:00:59+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3e5b30f2aafaf85b75ddc9c994e82d548e27bf75",
+      "subject": "docs: ergänze arbeitsdoku und spiegel für J01-96 (J01-96)"
+    }
+  ],
+  "J01-97": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "a968fb56372dafa6b783fdf9e0c3189210b43a1b",
+      "short_sha": "a968fb5",
+      "datetime": "2026-03-16T14:48:01+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a968fb56372dafa6b783fdf9e0c3189210b43a1b",
+      "subject": "docs: ergänze backlog-schritt fuer feature-matrix (J01-97)"
+    }
+  ],
+  "J01-98": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "7d1005497a355b17d8bc34ba182cc56a5e35e7dc",
+      "short_sha": "7d10054",
+      "datetime": "2026-03-17T14:01:50+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7d1005497a355b17d8bc34ba182cc56a5e35e7dc",
+      "subject": "docs: J01-98 Zielseiten und Richtlinie schärfen (J01-98)"
+    }
+  ],
+  "J01-99": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "66d9e051a5aece4ace6cb328575ae6669b54d34e",
+      "short_sha": "66d9e05",
+      "datetime": "2026-03-16T16:54:07+01:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/66d9e051a5aece4ace6cb328575ae6669b54d34e",
+      "subject": "docs: J01-91 abschliessen und J01-98/J01-99 nachziehen (J01-99)"
+    }
+  ]
+}

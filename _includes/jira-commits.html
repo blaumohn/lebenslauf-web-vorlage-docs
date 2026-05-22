@@ -1,0 +1,51 @@
+{% assign current_lang = "de" %}
+{% if page.url contains "/en/" %}
+  {% assign current_lang = "en" %}
+{% endif %}
+
+{% assign current_key = page.jira_key | default: "" %}
+{% if current_key == "" and page.url contains "/jira/issues/" %}
+  {% assign url_parts = page.url | split: "/" %}
+  {% if page.url contains "/steps/" %}
+    {% assign current_key = url_parts[6] %}
+  {% else %}
+    {% assign current_key = url_parts[4] %}
+  {% endif %}
+{% endif %}
+
+{% assign commit_entries = site.data.jira_commits[current_key] %}
+{% if commit_entries and commit_entries.size > 0 %}
+  {% assign heading = "Commits" %}
+  {% assign label_repo = "Repo" %}
+  {% assign label_commit = "Commit" %}
+  {% assign label_date = "Datum" %}
+  {% assign label_subject = "Titel" %}
+  {% if current_lang == "en" %}
+    {% assign label_date = "Date" %}
+    {% assign label_subject = "Title" %}
+  {% endif %}
+
+<section class="jira-commits" aria-labelledby="jira-commits-{{ current_key }}">
+  <h2 id="jira-commits-{{ current_key }}">{{ heading }}</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>{{ label_repo }}</th>
+        <th>{{ label_commit }}</th>
+        <th>{{ label_date }}</th>
+        <th>{{ label_subject }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for commit in commit_entries %}
+        <tr>
+          <td>{{ commit.repo }}</td>
+          <td><a href="{{ commit.github_url }}">{{ commit.short_sha }}</a></td>
+          <td>{{ commit.datetime | date: "%Y-%m-%d" }}</td>
+          <td>{{ commit.subject }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endif %}
