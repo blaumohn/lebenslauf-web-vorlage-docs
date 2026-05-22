@@ -1,6 +1,24 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 4e94961b836c3f9be7a29626f1737d5038652b07
+  short_sha: 4e94961
+  datetime: "2026-05-22T10:42:19+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4e94961b836c3f9be7a29626f1737d5038652b07"
+  message: 'feat: smoke-check, rollback und phasen-logging implementieren (J01-149)'
+- repo: lebenslauf-web-vorlage
+  sha: 1529d0af79563a6a7584444469f651a1adf7ae86
+  short_sha: 1529d0a
+  datetime: "2026-05-22T02:13:25+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1529d0af79563a6a7584444469f651a1adf7ae86"
+  message: 'feat: SftpDeployOps und DeployMachine in deploy-ablauf einbauen (J01-149)'
+- repo: lebenslauf-web-vorlage
+  sha: 80bed2a29e98cf8ff1d382b761b464254f3bd60f
+  short_sha: 80bed2a
+  datetime: "2026-05-22T02:00:39+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/80bed2a29e98cf8ff1d382b761b464254f3bd60f"
+  message: 'test: recovery-matrix und stateful-test-fix hinzufuegen (J01-149)'
+- repo: lebenslauf-web-vorlage
   sha: 915c26d7bd299223da8f455957e2bf3ddd8e4d20
   short_sha: 915c26d
   datetime: "2026-05-22T01:53:37+02:00"
@@ -42,24 +60,12 @@
   datetime: "2026-05-21T15:51:30+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f9356877f610879ada424816da7e7b64879f3b94"
   message: 'fix(deploy): sichere vendor-slot-verifikation (J01-144)'
-- repo: lebenslauf-web-vorlage
-  sha: ccbbcb3760bbca1a231937c5dc8be39cba50d03f
-  short_sha: ccbbcb3
-  datetime: "2026-05-20T10:25:20+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ccbbcb3760bbca1a231937c5dc8be39cba50d03f"
-  message: 'chore: totes SFTP-Clear-Modul entfernen (J01-144)'
-- repo: lebenslauf-web-vorlage
-  sha: 70795a134ba22e6e03817f4814103ba5def8edf4
-  short_sha: 70795a1
-  datetime: "2026-05-20T10:25:16+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/70795a134ba22e6e03817f4814103ba5def8edf4"
-  message: 'feat: SFTP-REPL-Befehle erweitern (J01-144)'
-- repo: lebenslauf-web-vorlage
-  sha: dc93351f3fce59ab2cbd00eb8b299538b505ac4e
-  short_sha: dc93351
-  datetime: "2026-05-19T15:02:12+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dc93351f3fce59ab2cbd00eb8b299538b505ac4e"
-  message: 'docs(readme): README aus Docs-Sync generieren (J01-145)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 4ca2e75d8d91239269e7916f6e1f1ef5f395e530
+  short_sha: 4ca2e75
+  datetime: "2026-05-22T01:53:41+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4ca2e75d8d91239269e7916f6e1f1ef5f395e530"
+  message: 'docs: arbeitsdoku fuer J01-148 und J01-149 anlegen'
 - repo: lebenslauf-web-vorlage-docs
   sha: a27081e1f5c6e49395d83f58b2a932f92732802d
   short_sha: a27081e
@@ -114,9 +120,3 @@
   datetime: "2026-05-14T15:20:04+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f26361b26457f4a4cb0ec3116b90fc32bf5fd376"
   message: 'docs: SFTP-Schreib-Smoke dokumentieren (J01-144)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 8529ecad4f3c0dea1ebca10a0b3aecbc2b6e625e
-  short_sha: 8529eca
-  datetime: "2026-05-13T13:21:03+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8529ecad4f3c0dea1ebca10a0b3aecbc2b6e625e"
-  message: 'docs: Testeinstiege zu J01-144 klären (J01-144)'
