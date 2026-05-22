@@ -4,7 +4,7 @@ title: "J01-84 — Atlassian-System vorbereiten (SSOT: Jira)"
 permalink: /en/jira/issues/J01-84/
 jira_key: J01-84
 ---
-<!-- generated:jira:child_tasks_cksum=124250725 -->
+<!-- generated:jira:child_tasks_cksum=2942577392 -->
 
 {% include jira-state-head.html %}
 
@@ -12,6 +12,7 @@ jira_key: J01-84
 
 ## Aufgaben
 
+- [J01-150 — SCRUM Sprint 5 planen und Produktion live bringen]({{ "/en/jira/issues/J01-150/" | relative_url }})
 - [J01-143 — Doku-GitHub-Einbau für automatische Aktualisierung bewerten]({{ "/en/jira/issues/J01-143/" | relative_url }})
 - [J01-136 — SCRUM Sprint 4 planen und Produktionsstart vorbereiten]({{ "/en/jira/issues/J01-136/" | relative_url }})
 - [J01-131 — SCRUM Sprint 3 planen und Preview-Betrieb fortsetzen]({{ "/en/jira/issues/J01-131/" | relative_url }})

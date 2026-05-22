@@ -1940,6 +1940,14 @@
   "J01-143": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "c4249266ca992f9124505f1c78148868e63bb567",
+      "short_sha": "c424926",
+      "datetime": "2026-05-23T00:53:17+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c4249266ca992f9124505f1c78148868e63bb567",
+      "subject": "feat(jira-docs): Commit-Sync für Vorgangsseiten ergänzen (J01-143)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "477c7fb013fa6a2615f7c2878e137d707b1debed",
       "short_sha": "477c7fb",
       "datetime": "2026-05-06T12:08:41+02:00",

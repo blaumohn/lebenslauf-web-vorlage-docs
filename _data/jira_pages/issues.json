@@ -1,4 +1,23 @@
 {
+  "J01-150": {
+    "summary": "SCRUM Sprint 5 planen und Produktion live bringen",
+    "issuetype": "Task",
+    "status": "Zu erledigen",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-05-23T00:58:12.939+0200",
+    "parent": "J01-84",
+    "sprint": "SCRUM Sprint 5",
+    "activeSprint": "SCRUM Sprint 5",
+    "sprintRole": "Sprint-Admin",
+    "labels": [
+      "atlassian-tools",
+      "sprint-admin",
+      "tooling"
+    ],
+    "issueLinks": []
+  },
   "J01-146": {
     "summary": "src/cli/py kohärent ordnen und Python-CLI-Aliasse prüfen",
     "issuetype": "Task",
@@ -25,14 +44,15 @@
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-05-11T15:34:48.017+0200",
+    "updated": "2026-05-23T00:58:12.464+0200",
     "parent": null,
-    "sprint": "SCRUM Sprint 4",
-    "activeSprint": "-",
-    "sprintRole": "Sprint-Ungeplant",
+    "sprint": "SCRUM Sprint 4, SCRUM Sprint 5",
+    "activeSprint": "SCRUM Sprint 5",
+    "sprintRole": "Sprint-Admin",
     "labels": [
       "docs",
       "policy",
+      "sprint-admin",
       "sprint-unplanned"
     ],
     "issueLinks": []
@@ -63,10 +83,10 @@
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-04-29T13:17:22.080+0200",
+    "updated": "2026-05-23T00:58:12.708+0200",
     "parent": "J01-6",
-    "sprint": "SCRUM Sprint 4",
-    "activeSprint": "-",
+    "sprint": "SCRUM Sprint 4, SCRUM Sprint 5",
+    "activeSprint": "SCRUM Sprint 5",
     "sprintRole": "Sprint-Ungeplant",
     "labels": [
       "cv",
@@ -101,10 +121,10 @@
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-05-09T15:11:12.654+0200",
+    "updated": "2026-05-23T00:58:12.084+0200",
     "parent": "J01-5",
-    "sprint": "SCRUM Sprint 4",
-    "activeSprint": "-",
+    "sprint": "SCRUM Sprint 4, SCRUM Sprint 5",
+    "activeSprint": "SCRUM Sprint 5",
     "sprintRole": "Sprint-Ziel",
     "labels": [
       "ci-cd",
@@ -937,10 +957,10 @@
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-04-28T13:07:43.634+0200",
+    "updated": "2026-05-23T00:58:12.287+0200",
     "parent": "J01-7",
-    "sprint": "SCRUM Sprint 4",
-    "activeSprint": "-",
+    "sprint": "SCRUM Sprint 4, SCRUM Sprint 5",
+    "activeSprint": "SCRUM Sprint 5",
     "sprintRole": "Sprint-Support",
     "labels": [
       "production",
@@ -955,10 +975,10 @@
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-04-28T13:07:43.419+0200",
+    "updated": "2026-05-23T00:58:11.904+0200",
     "parent": "J01-7",
-    "sprint": "SCRUM Sprint 4",
-    "activeSprint": "-",
+    "sprint": "SCRUM Sprint 4, SCRUM Sprint 5",
+    "activeSprint": "SCRUM Sprint 5",
     "sprintRole": "Sprint-Ziel",
     "labels": [
       "production",
@@ -973,10 +993,10 @@
     "resolution": "-",
     "assignee": "-",
     "priority": "Medium",
-    "updated": "2026-04-28T13:07:58.853+0200",
+    "updated": "2026-05-23T00:58:11.678+0200",
     "parent": "J01-7",
-    "sprint": "SCRUM Sprint 4",
-    "activeSprint": "-",
+    "sprint": "SCRUM Sprint 4, SCRUM Sprint 5",
+    "activeSprint": "SCRUM Sprint 5",
     "sprintRole": "Sprint-Ziel",
     "labels": [
       "production",
@@ -1591,6 +1611,42 @@
     "activeSprint": "-",
     "sprintRole": "-",
     "labels": [],
+    "issueLinks": []
+  },
+  "J01-149": {
+    "summary": "62-3 RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen",
+    "issuetype": "Subtask",
+    "status": "In Bearbeitung",
+    "resolution": "-",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-05-22T01:51:35.461+0200",
+    "parent": "J01-62",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [
+      "deploy",
+      "sprint-unplanned"
+    ],
+    "issueLinks": []
+  },
+  "J01-148": {
+    "summary": "62-2 DeployPhase-Enum und DeployMachine-Skeleton implementieren",
+    "issuetype": "Subtask",
+    "status": "Erledigt",
+    "resolution": "Fertig",
+    "assignee": "-",
+    "priority": "Medium",
+    "updated": "2026-05-22T01:51:34.775+0200",
+    "parent": "J01-62",
+    "sprint": "-",
+    "activeSprint": "-",
+    "sprintRole": "-",
+    "labels": [
+      "deploy",
+      "sprint-unplanned"
+    ],
     "issueLinks": []
   },
   "J01-147": {

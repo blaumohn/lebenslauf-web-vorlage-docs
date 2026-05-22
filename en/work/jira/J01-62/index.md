@@ -5,7 +5,7 @@ permalink: /en/jira/issues/J01-62/
 jira_key: J01-62
 
 ---
-<!-- generated:jira:subtasks_cksum=3809414616 -->
+<!-- generated:jira:subtasks_cksum=916066180 -->
 
 {% include jira-state-head.html %}
 
@@ -26,5 +26,7 @@ Ziel: Production-Branch und Environment-Regeln verbindlich setzen.
 
 - [**62-1 Mail im Deployment aktivieren**]({{ "/en/jira/issues/J01-62/steps/J01-144/" | relative_url }}) — To Do
 - **62-2 Branch-Mapping festlegen** — To Do
+- [**62-2 DeployPhase-Enum und DeployMachine-Skeleton implementieren**]({{ "/en/jira/issues/J01-62/steps/J01-148/" | relative_url }}) — Done
 - **62-3 Environment aktivieren** — To Do
+- [**62-3 RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen**]({{ "/en/jira/issues/J01-62/steps/J01-149/" | relative_url }}) — In Progress
 - **Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1)** — In Progress

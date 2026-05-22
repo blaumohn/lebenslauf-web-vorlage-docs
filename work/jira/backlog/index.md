@@ -68,7 +68,9 @@ permalink: /de/jira/backlog/
 - [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/de/jira/issues/J01-62/" | relative_url }})
   - [**62-1 Mail im Deployment aktivieren**]({{ "/de/jira/issues/J01-62/steps/J01-144/" | relative_url }}) — Zu erledigen
   - [**62-2 Branch-Mapping festlegen**]({{ "/de/jira/issues/J01-62/steps/J01-63/" | relative_url }}) — Zu erledigen
+  - [**62-2 DeployPhase-Enum und DeployMachine-Skeleton implementieren**]({{ "/de/jira/issues/J01-62/steps/J01-148/" | relative_url }}) — Erledigt
   - [**62-3 Environment aktivieren**]({{ "/de/jira/issues/J01-62/steps/J01-64/" | relative_url }}) — Zu erledigen
+  - [**62-3 RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen**]({{ "/de/jira/issues/J01-62/steps/J01-149/" | relative_url }}) — In Bearbeitung
   - Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1) — In Bearbeitung
 - [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/de/jira/issues/J01-65/" | relative_url }})
   - [**65-1 Artefaktliste festlegen**]({{ "/de/jira/issues/J01-65/steps/J01-66/" | relative_url }}) — Zu erledigen
@@ -96,6 +98,7 @@ permalink: /de/jira/backlog/
 - [J01-116 — Öffentliche Jira-Issue-Seiten: Metadaten und Unteraufgaben konsistent spiegeln]({{ "/de/jira/issues/J01-116/" | relative_url }})
 - [J01-130 — GitHub Pages: Backlog, Recent-Feed und Jira-UI bewerten]({{ "/de/jira/issues/J01-130/" | relative_url }})
 - [J01-143 — Doku-GitHub-Einbau für automatische Aktualisierung bewerten]({{ "/de/jira/issues/J01-143/" | relative_url }})
+- [J01-150 — SCRUM Sprint 5 planen und Produktion live bringen]({{ "/de/jira/issues/J01-150/" | relative_url }})
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/de/jira/issues/J01-85/" | relative_url }})
   - [**85-1 Refactor: Coding-Standards durchgehend umsetzen**]({{ "/de/jira/issues/J01-85/steps/J01-81/" | relative_url }}) — Zu erledigen
   - [**85-2 API-Betriebe (Wrapper), http als Escape-Hatch**]({{ "/de/jira/issues/J01-85/steps/J01-82/" | relative_url }}) — Zu erledigen

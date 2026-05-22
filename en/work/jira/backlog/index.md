@@ -68,7 +68,9 @@ Public Jira area (without Jira Cloud links).
 - [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/en/jira/issues/J01-62/" | relative_url }})
   - [**62-1 Mail im Deployment aktivieren**]({{ "/en/jira/issues/J01-62/steps/J01-144/" | relative_url }}) — To Do
   - [**62-2 Branch-Mapping festlegen**]({{ "/en/jira/issues/J01-62/steps/J01-63/" | relative_url }}) — To Do
+  - [**62-2 DeployPhase-Enum und DeployMachine-Skeleton implementieren**]({{ "/en/jira/issues/J01-62/steps/J01-148/" | relative_url }}) — Done
   - [**62-3 Environment aktivieren**]({{ "/en/jira/issues/J01-62/steps/J01-64/" | relative_url }}) — To Do
+  - [**62-3 RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen**]({{ "/en/jira/issues/J01-62/steps/J01-149/" | relative_url }}) — In Progress
   - Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1) — In Progress
 - [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/en/jira/issues/J01-65/" | relative_url }})
   - [**65-1 Artefaktliste festlegen**]({{ "/en/jira/issues/J01-65/steps/J01-66/" | relative_url }}) — To Do
@@ -96,6 +98,7 @@ Public Jira area (without Jira Cloud links).
 - [J01-116 — Öffentliche Jira-Issue-Seiten: Metadaten und Unteraufgaben konsistent spiegeln]({{ "/en/jira/issues/J01-116/" | relative_url }})
 - [J01-130 — GitHub Pages: Backlog, Recent-Feed und Jira-UI bewerten]({{ "/en/jira/issues/J01-130/" | relative_url }})
 - [J01-143 — Doku-GitHub-Einbau für automatische Aktualisierung bewerten]({{ "/en/jira/issues/J01-143/" | relative_url }})
+- [J01-150 — SCRUM Sprint 5 planen und Produktion live bringen]({{ "/en/jira/issues/J01-150/" | relative_url }})
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/en/jira/issues/J01-85/" | relative_url }})
   - [**85-1 Refactor: Coding-Standards durchgehend umsetzen**]({{ "/en/jira/issues/J01-85/steps/J01-81/" | relative_url }}) — To Do
   - [**85-2 API-Betriebe (Wrapper), http als Escape-Hatch**]({{ "/en/jira/issues/J01-85/steps/J01-82/" | relative_url }}) — To Do

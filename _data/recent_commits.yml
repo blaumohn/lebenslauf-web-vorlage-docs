@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/820ffe81787d0f71b8fcc78ad3727385b6e35733"
   message: 'refactor(deploy): entferne alte vendor-build-id-prüfung (J01-144)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: c4249266ca992f9124505f1c78148868e63bb567
+  short_sha: c424926
+  datetime: "2026-05-23T00:53:17+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c4249266ca992f9124505f1c78148868e63bb567"
+  message: 'feat(jira-docs): Commit-Sync für Vorgangsseiten ergänzen (J01-143)'
+- repo: lebenslauf-web-vorlage-docs
   sha: dd482addd257cd3711ada2450d8d18c680a16e5e
   short_sha: dd482ad
   datetime: "2026-05-22T23:57:51+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-05-19T15:01:55+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/03a7d38ef82abfe82dc4c7deab4f6647c6fcc2bd"
   message: 'feat(getting-started): README-Sync-Skript und Einstiegsseiten (J01-145)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 88a0df7035b29c94d213410737f189a12fb88dc6
-  short_sha: 88a0df7
-  datetime: "2026-05-15T22:53:49+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/88a0df7035b29c94d213410737f189a12fb88dc6"
-  message: 'docs: Task-Testausgabe dokumentieren (J01-144)'
