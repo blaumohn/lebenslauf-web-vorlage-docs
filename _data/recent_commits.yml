@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 78a6a4923bcbe341538653d4f2cd0a38752c4ac6
+  short_sha: 78a6a49
+  datetime: "2026-05-22T12:49:46+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/78a6a4923bcbe341538653d4f2cd0a38752c4ac6"
+  message: 'test: DeployMachine-Invarianten erweitern (J01-149)'
+- repo: lebenslauf-web-vorlage
   sha: 4e94961b836c3f9be7a29626f1737d5038652b07
   short_sha: 4e94961
   datetime: "2026-05-22T10:42:19+02:00"
@@ -54,12 +60,12 @@
   datetime: "2026-05-21T15:52:53+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9b4c862f93d36cd4f1975260c056c981e14e9704"
   message: 'test(ci): prüfe vendor-checksum-determinismus (J01-144)'
-- repo: lebenslauf-web-vorlage
-  sha: f9356877f610879ada424816da7e7b64879f3b94
-  short_sha: f935687
-  datetime: "2026-05-21T15:51:30+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f9356877f610879ada424816da7e7b64879f3b94"
-  message: 'fix(deploy): sichere vendor-slot-verifikation (J01-144)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 2ff677211d1c3fc7496744601e71ef2397510800
+  short_sha: 2ff6772
+  datetime: "2026-05-22T12:49:46+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2ff677211d1c3fc7496744601e71ef2397510800"
+  message: 'docs: DeployMachine-Invarianten nachziehen (J01-149)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 4ca2e75d8d91239269e7916f6e1f1ef5f395e530
   short_sha: 4ca2e75
@@ -114,9 +120,3 @@
   datetime: "2026-05-14T19:48:25+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/38c82f1b0057b36b5e36d2226fdaecdc280f2118"
   message: 'docs: dokumentiere CI/CD-Ausgabe (J01-135)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: f26361b26457f4a4cb0ec3116b90fc32bf5fd376
-  short_sha: f26361b
-  datetime: "2026-05-14T15:20:04+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f26361b26457f4a4cb0ec3116b90fc32bf5fd376"
-  message: 'docs: SFTP-Schreib-Smoke dokumentieren (J01-144)'

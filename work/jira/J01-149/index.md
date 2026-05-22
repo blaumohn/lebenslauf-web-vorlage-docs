@@ -23,6 +23,11 @@ Fehlerpunkte über alle Deploy-Schritte von `load_state` bis `switch`.
 Zusätzlich gibt es eine deterministische Matrix für Runtime-Fehler und
 `DeployConflictError` je Schritt.
 
+Die Deploy-Strategie wurde zusätzlich in die Machine gezogen:
+`DeployMachine` entscheidet jetzt `DeploymentPlan.fresh()` oder
+`DeploymentPlan.swap(...)`, den Konfliktfall bei fehlendem State und
+belegten App-Slots sowie die Vendor-Wiederverwendung.
+
 Neue Abhängigkeit `hypothesis>=6.0,<7` in `requirements.txt`
 (Installation via `composer setup`).
 
@@ -36,8 +41,15 @@ Einzelläufe.
 
 **`ControllableOps` als injizierter Fake**
 Gleiche Injektionsgrenze wie in `test_deploy_machine.py`, aber mit
-steuerbarem `fail_at` und `smoke`-Flag. Kein Zustand außerhalb der
-Maschine nötig.
+steuerbarem `state`, `both_slots`, `include_vendor`, `fail_at` und
+`smoke`-Flag. Dadurch testet Hypothesis nicht nur Fehlerpunkte,
+sondern auch fachliche Planvarianten.
+
+**`DeploymentPlan` in der Machine**
+`SftpDeployOps` liest Zustand und führt I/O aus. Die Machine
+entscheidet, ob ein Fresh-Deploy oder Swap-Deploy läuft und ob der
+Vendor-Slot wechseln muss. Damit liegen die fachlichen Wenn-dann-Regeln
+im Ablaufmodell.
 
 **Generierte Regeln statt vier Beispielszenarien**
 Die `run_generated`-Regel variiert Fehlerpunkt, Fehlerart und
@@ -64,6 +76,8 @@ Rollback-Schreiben.
   `smoke_nur_nach_erfolgreichem_switch`.
 - `rollback` läuft nur nach fehlgeschlagenem Smoke:
   `rollback_nur_nach_smoke_fehler`.
+- Der erzeugte `DeploymentPlan` passt zu State und Vendor-Entscheidung:
+  `plan_passt_zu_state_und_vendor`.
 
 ## Überprüfungsplan
 
@@ -73,9 +87,9 @@ Rollback-Schreiben.
 - SFTP-Seiteneffekte:
   Integration bleibt grün; Nachweis ist `.venv/bin/pytest` für die
   SFTP-Deploy-Tests. Status: erledigt.
-- Stil neue Datei:
-  Ruff, Pylint und Zeilenlänge passen; Nachweis ist die gezielte
-  Prüfung der Stateful-Testdatei. Status: erledigt.
+- Stil geänderte Python-Dateien:
+  Ruff und Zeilenlänge passen; Pylint wurde gezielt für Machine und
+  Stateful-Testdatei geprüft. Status: erledigt.
 
 ## Abhängigkeit
 
