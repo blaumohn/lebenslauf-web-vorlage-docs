@@ -32,6 +32,24 @@ Der erste PR bereitet den CI-Pfad vor:
 Der echte Preview-Nachweis mit Mailtrap bleibt offen und kann weitere
 Korrekturen an Environment- oder Workflow-Werten auslösen.
 
+## Nachtrag 2026-05-14: Pipeline-Spec-Validierung
+
+Die Claude-Sitzung vom 14.05.2026 klärte nach dem Vergleich von
+`cli ci preview`, Docker Compose und GitHub-Workflows die Validierungslücken
+im Pipeline-Config-Datenfluss. Das Detailprotokoll liegt im `tagebuch`; diese
+Seite hält nur die öffentlichen Commit-Spuren und den Vorgangsbezug.
+
+| Repo | Commit | Beitrag |
+| --- | --- | --- |
+| `pipeline-config-spec-php` | `80c20e6` | Manifest-, Policy-, Compiler- und `PipelineConfig`-API für vollständige Pipeline-Validierung neugestaltet |
+| `pipeline-config-spec-php` | `bd5be1e` | `SPEC.md`, `SPEC.en.md` und Spec-Tests ergänzt |
+| `lebenslauf-web-vorlage` | `7c317e9` | Hauptrepo auf die neue `PipelineConfig`-API umgestellt |
+| `lebenslauf-web-vorlage` | `6ec0ae9` | Vendor-Kopie der Pipeline-Spec-Lib auf `bd5be1e` nachgezogen |
+
+Die Lib-Commits sind auf `origin/main` vorhanden. Damit ist der in der Sitzung
+offene Remote-Lib-Push nachgezogen; die weitere Preview-Arbeit läuft auf den
+späteren J01-144-App-Commits.
+
 ## Nachtrag 2026-05-09: Rest vor Preview-Nachweis
 
 Die nachträglichen Codex-Sitzungen haben die lokale CI-Preview-Linie weiter
@@ -179,6 +197,7 @@ letzten Deploy-State gespeicherte `deploy_commit`; der aktive
 | SMTP-Auth | Falsches SMTP-Passwort wird im CI-Smoke abgelehnt, richtiges Passwort sendet Testmail | `tests/ci/smtp-smoke.py` | erledigt |
 | SFTP-Hostkey | Preview-CI braucht kein dynamisches `ssh-keyscan` mehr | `docker-compose.ci.yml`, `bin/ci` | erledigt |
 | CI-Preview-Konfig | `CI_TEST_CASE`, `SMTP_PORT: 1025`, `GITHUB_RUN_ID` und read-only Inline-Konfig sind stabil | App-Repo, Codex-Nachzug | teilweise umgesetzt |
+| Pipeline-Spec-Validierung | Pipeline-Config wird vor Phasenauflösung vollständig validiert; Spec-Dokument und Spec-Tests sind vorhanden | `pipeline-config-spec-php` Commits `80c20e6`, `bd5be1e`; App-Commits `7c317e9`, `6ec0ae9` | umgesetzt |
 | Python-Testlauf | Python-Unit-Tests laufen über `.venv/bin/python` nur bei explizitem Aufruf mit | `composer.json`, `tests/py` | umgesetzt |
 | PHP-Testausgabe | Erwartete Task-Fehlerpfade verschmutzen den erfolgreichen PHPUnit-Lauf nicht mit STDERR-Fehlerzeilen | `tests/php/TaskDeployTest.php`, `composer test:php` | umgesetzt |
 | Kontakt-Smoke | Post-Deploy-Kontaktformular läuft über `APP_ROOT_URL` und liest Captcha-State per SFTP aus der deployten Preview | `tests/ci/contact_smoke.py`, `bin/ci`, `tests/py/test_contact_smoke.py` | umgesetzt |

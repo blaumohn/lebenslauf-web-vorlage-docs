@@ -32,6 +32,24 @@ The first PR prepares the CI path:
 The real preview proof with Mailtrap remains open and may trigger further
 corrections to environment or workflow values.
 
+## Follow-up 2026-05-14: Pipeline Spec Validation
+
+The Claude session on 2026-05-14 clarified the validation gaps in the
+pipeline-config data flow after comparing `cli ci preview`, Docker Compose,
+and GitHub workflows. The detailed protocol lives in `tagebuch`; this page
+keeps only the public commit trace and issue link.
+
+| Repo | Commit | Contribution |
+| --- | --- | --- |
+| `pipeline-config-spec-php` | `80c20e6` | reshaped manifest, policy, compiler, and `PipelineConfig` API for full pipeline validation |
+| `pipeline-config-spec-php` | `bd5be1e` | added `SPEC.md`, `SPEC.en.md`, and spec tests |
+| `lebenslauf-web-vorlage` | `7c317e9` | moved the main repo to the new `PipelineConfig` API |
+| `lebenslauf-web-vorlage` | `6ec0ae9` | updated the vendored pipeline-spec lib copy to `bd5be1e` |
+
+The library commits are present on `origin/main`. The remote library push that
+was still open in the session is therefore caught up; later preview work
+continues in the subsequent J01-144 app commits.
+
 ## Follow-up 2026-05-09: Remaining Work Before Preview Proof
 
 The later Codex sessions further clarified the local CI preview line:
@@ -150,6 +168,7 @@ used:
 | SMTP auth | wrong SMTP password is rejected in CI smoke, correct password sends test mail | `tests/ci/smtp-smoke.py` | done |
 | SFTP host key | preview CI no longer needs dynamic `ssh-keyscan` | `docker-compose.ci.yml`, `bin/ci` | done |
 | CI preview config | `CI_TEST_CASE`, `SMTP_PORT: 1025`, `GITHUB_RUN_ID`, and read-only inline config are stable | app repo, Codex follow-up | partially done |
+| Pipeline spec validation | pipeline config is fully validated before phase resolution; spec document and spec tests exist | `pipeline-config-spec-php` commits `80c20e6`, `bd5be1e`; app commits `7c317e9`, `6ec0ae9` | done |
 | Python test run | Python unit tests run through `.venv/bin/python` only when explicitly requested | `composer.json`, `tests/py` | done |
 | PHP test output | Expected task error paths do not pollute the successful PHPUnit run with STDERR error lines | `tests/php/TaskDeployTest.php`, `composer test:php` | done |
 | Contact smoke | post-deploy contact form runs through `APP_ROOT_URL` and reads Captcha state from the deployed preview through SFTP | `tests/ci/contact_smoke.py`, `bin/ci`, `tests/py/test_contact_smoke.py` | done |
