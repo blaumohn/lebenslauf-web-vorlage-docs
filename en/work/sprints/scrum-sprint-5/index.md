@@ -4,7 +4,8 @@ title: "SCRUM Sprint 5: Planning — Production Live"
 permalink: /en/work/sprints/scrum-sprint-5/
 ---
 
-**Time window:** 2026-05-23 to 2026-06-05  
+**Time window:** 2026-05-23 to 2026-06-05
+
 **Status:** active
 
 ## Participants

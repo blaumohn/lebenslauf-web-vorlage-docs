@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/820ffe81787d0f71b8fcc78ad3727385b6e35733"
   message: 'refactor(deploy): entferne alte vendor-build-id-prüfung (J01-144)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: 1ef62d52f0d1371fc4f017eb397846aa9fddef00
+  short_sha: 1ef62d5
+  datetime: "2026-05-23T01:08:13+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/1ef62d52f0d1371fc4f017eb397846aa9fddef00"
+  message: 'docs(sprint): Sprint 5 Produktion live starten (J01-150)'
+- repo: lebenslauf-web-vorlage-docs
   sha: c4249266ca992f9124505f1c78148868e63bb567
   short_sha: c424926
   datetime: "2026-05-23T00:53:17+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-05-20T10:25:26+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/0e3ed05a2ecfb6db51d4229336e254c76419f681"
   message: 'docs: SFTP-REPL-Nachtrag ergänzen (J01-144)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 03a7d38ef82abfe82dc4c7deab4f6647c6fcc2bd
-  short_sha: 03a7d38
-  datetime: "2026-05-19T15:01:55+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/03a7d38ef82abfe82dc4c7deab4f6647c6fcc2bd"
-  message: 'feat(getting-started): README-Sync-Skript und Einstiegsseiten (J01-145)'
