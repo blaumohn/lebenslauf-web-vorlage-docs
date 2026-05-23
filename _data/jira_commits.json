@@ -2638,6 +2638,30 @@
   "J01-149": [
     {
       "repo": "lebenslauf-web-vorlage",
+      "sha": "bf2a6ab2a0bad4a126b983e93e315455cc770c07",
+      "short_sha": "bf2a6ab",
+      "datetime": "2026-05-23T23:29:18+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/bf2a6ab2a0bad4a126b983e93e315455cc770c07",
+      "subject": "feat(deploy-state): vollständigen SFTP-Zustand lesen und verifizieren (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "8bb41d30d1686f5dc4be84513288c88e9c8f6623",
+      "short_sha": "8bb41d3",
+      "datetime": "2026-05-23T23:28:48+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8bb41d30d1686f5dc4be84513288c88e9c8f6623",
+      "subject": "feat(deploy-machine): cleanup, rollback und smoke_ok als Phasen absichern (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "545c9e04d9ba33ac802f1de3c6b2f8371f2d7655",
+      "short_sha": "545c9e0",
+      "datetime": "2026-05-23T23:28:33+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/545c9e04d9ba33ac802f1de3c6b2f8371f2d7655",
+      "subject": "feat(deploy): .htaccess als einziger Deploy-Schalter einrichten (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
       "sha": "dcbdff6e301b5072a5a3778bfc38f252d5ec819a",
       "short_sha": "dcbdff6",
       "datetime": "2026-05-22T13:45:05+02:00",
@@ -2702,6 +2726,14 @@
     }
   ],
   "J01-150": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "77df982aee72e02eaefe9c73688e63de376f56cd",
+      "short_sha": "77df982",
+      "datetime": "2026-05-23T01:08:51+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/77df982aee72e02eaefe9c73688e63de376f56cd",
+      "subject": "docs(sprint): Sprint-5-Markdown bereinigen (J01-150)"
+    },
     {
       "repo": "lebenslauf-web-vorlage-docs",
       "sha": "1ef62d52f0d1371fc4f017eb397846aa9fddef00",

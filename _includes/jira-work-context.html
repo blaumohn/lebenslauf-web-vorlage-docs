@@ -43,6 +43,8 @@
 {% assign section_count = 0 %}
 {% assign related_issue_links = "" %}
 {% assign related_issue_count = 0 %}
+{% assign commit_entries = "" %}
+{% assign has_commit_entries = false %}
 
 {% if page_path contains work_prefix and page.url contains "/jira/issues/" %}
   {% assign is_work_jira_page = true %}
@@ -123,6 +125,14 @@
 {% endif %}
 
 {% if is_work_jira_page and family_key != "" %}
+  {% assign commit_entries = site.data.jira_commits[current_key] %}
+  {% if commit_entries and commit_entries.size > 0 %}
+    {% assign has_commit_entries = true %}
+    {% assign section_count = section_count | plus: 1 %}
+    {% assign outline_count = outline_count | plus: 1 %}
+    {% capture section_links %}{{ section_links }}<li><a href="#jira-commits-{{ current_key }}">Commits</a></li>{% endcapture %}
+  {% endif %}
+
   {% capture family_dir %}{{ work_prefix }}{{ family_key }}/{% endcapture %}
   {% capture family_steps_dir %}{{ family_dir }}steps/{% endcapture %}
   {% capture family_index_path %}{{ family_dir }}index.md{% endcapture %}
@@ -226,4 +236,8 @@
   {% endfor %}
 </ul>
 {% endif %}
+{% endif %}
+
+{% if is_work_jira_page and has_commit_entries %}
+{% include jira-commits.html %}
 {% endif %}

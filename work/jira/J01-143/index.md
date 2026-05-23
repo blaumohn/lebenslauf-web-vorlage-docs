@@ -47,6 +47,9 @@ Die erste Zielvariante ist ein lokaler Git-Hook- und Full-Sync-Weg:
   `<typ>(<scope>): <titel> (J01-123)` mit anerkannter Conventional-Commit-Art.
 - `_includes/jira-commits.html` blendet die gefundenen Commits automatisch auf
   Jira-Vorgangsseiten ein.
+- Nach der ersten Einbindung hängt die Commit-Tabelle am
+  Arbeitskontext-Include, damit der Inhalts-Schlüssel am Seitenanfang bleibt
+  und den generierten Commit-Abschnitt mit verlinkt.
 
 Damit ist keine direkte GitHub-API-Abhängigkeit nötig; die lokale Git-Historie
 bleibt die robuste Quelle.
@@ -60,6 +63,7 @@ bleibt die robuste Quelle.
 | Workflow-Variante | GitHub-Workflow als Alternative ist bewertet | Analyse oder Entscheidungsnotiz | offen |
 | Entscheidung | Zielvariante ist begründet gewählt | Abschnitt „Entscheidung“ | erledigt |
 | Umsetzung | Gewählter Weg ist umgesetzt oder als Folgeauftrag klar abgegrenzt | `sync-jira-commits.py`, Hooks, Include, Runbook | erledigt |
+| Inhalts-Schlüssel | Commit-Tabelle verdrängt die Seiten-Navigation nicht | `_includes/jira-work-context.html`, `tests/jira-context-commits.sh` | erledigt |
 
 ## Links
 

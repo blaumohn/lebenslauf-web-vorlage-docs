@@ -1,6 +1,24 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: bf2a6ab2a0bad4a126b983e93e315455cc770c07
+  short_sha: bf2a6ab
+  datetime: "2026-05-23T23:29:18+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/bf2a6ab2a0bad4a126b983e93e315455cc770c07"
+  message: 'feat(deploy-state): vollständigen SFTP-Zustand lesen und verifizieren (J01-149)'
+- repo: lebenslauf-web-vorlage
+  sha: 8bb41d30d1686f5dc4be84513288c88e9c8f6623
+  short_sha: 8bb41d3
+  datetime: "2026-05-23T23:28:48+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8bb41d30d1686f5dc4be84513288c88e9c8f6623"
+  message: 'feat(deploy-machine): cleanup, rollback und smoke_ok als Phasen absichern (J01-149)'
+- repo: lebenslauf-web-vorlage
+  sha: 545c9e04d9ba33ac802f1de3c6b2f8371f2d7655
+  short_sha: 545c9e0
+  datetime: "2026-05-23T23:28:33+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/545c9e04d9ba33ac802f1de3c6b2f8371f2d7655"
+  message: 'feat(deploy): .htaccess als einziger Deploy-Schalter einrichten (J01-149)'
+- repo: lebenslauf-web-vorlage
   sha: dcbdff6e301b5072a5a3778bfc38f252d5ec819a
   short_sha: dcbdff6
   datetime: "2026-05-22T13:45:05+02:00"
@@ -42,24 +60,12 @@
   datetime: "2026-05-22T01:42:53+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8b3b5e420e5ec4802e9072a829ee9b86b6edea12"
   message: 'feat: DeployPhase-Enum und DeployMachine-Skeleton hinzufuegen (J01-147)'
-- repo: lebenslauf-web-vorlage
-  sha: d2162d54016a312ba8a47d086fe90182bcb2e182
-  short_sha: d2162d5
-  datetime: "2026-05-22T01:16:54+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d2162d54016a312ba8a47d086fe90182bcb2e182"
-  message: 'feat(sftp-deploy): Zielslot vor Upload bereinigen (J01-144)'
-- repo: lebenslauf-web-vorlage
-  sha: 1d3739a3c66c5bbd89bf75d9281fd0aca292b6a3
-  short_sha: 1d3739a
-  datetime: "2026-05-22T00:52:41+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/1d3739a3c66c5bbd89bf75d9281fd0aca292b6a3"
-  message: 'fix(deploy): stabilisiere Vendor-Checksum (J01-144)'
-- repo: lebenslauf-web-vorlage
-  sha: 820ffe81787d0f71b8fcc78ad3727385b6e35733
-  short_sha: 820ffe8
-  datetime: "2026-05-21T15:55:30+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/820ffe81787d0f71b8fcc78ad3727385b6e35733"
-  message: 'refactor(deploy): entferne alte vendor-build-id-prüfung (J01-144)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 77df982aee72e02eaefe9c73688e63de376f56cd
+  short_sha: 77df982
+  datetime: "2026-05-23T01:08:51+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/77df982aee72e02eaefe9c73688e63de376f56cd"
+  message: 'docs(sprint): Sprint-5-Markdown bereinigen (J01-150)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 1ef62d52f0d1371fc4f017eb397846aa9fddef00
   short_sha: 1ef62d5
@@ -114,9 +120,3 @@
   datetime: "2026-05-22T01:37:05+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2224c4d27722e2175b0c2c6fa5a06dea2802c587"
   message: 'docs: deploy-contract als spec anlegen (J01-147)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 0e3ed05a2ecfb6db51d4229336e254c76419f681
-  short_sha: 0e3ed05
-  datetime: "2026-05-20T10:25:26+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/0e3ed05a2ecfb6db51d4229336e254c76419f681"
-  message: 'docs: SFTP-REPL-Nachtrag ergänzen (J01-144)'
