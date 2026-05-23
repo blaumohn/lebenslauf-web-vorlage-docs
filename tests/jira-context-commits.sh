@@ -7,6 +7,7 @@ SCRIPT_DIR=$(CDPATH= cd -- "$(dirname "$0")" && pwd)
 REPO_ROOT=$(CDPATH= cd -- "$SCRIPT_DIR/.." && pwd)
 STATE_HEAD="$REPO_ROOT/_includes/jira-state-head.html"
 WORK_CONTEXT="$REPO_ROOT/_includes/jira-work-context.html"
+PAGE_LAYOUT="$REPO_ROOT/_layouts/page.html"
 
 fail() { printf 'FAIL: %s\n' "$1" >&2; exit 1; }
 pass() { printf 'PASS: %s\n' "$1"; }
@@ -23,18 +24,21 @@ check_work_context() {
         && pass "Inhalts-Schlüssel verlinkt Commit-Abschnitt" \
         || fail "Commit-Link fehlt im Inhalts-Schlüssel"
 
-    grep -q '{% include jira-commits.html %}' "$WORK_CONTEXT" \
-        && pass "Arbeitskontext rendert Commit-Tabelle" \
-        || fail "Commit-Tabelle fehlt im Arbeitskontext"
+    if grep -q '{% include jira-commits.html %}' "$WORK_CONTEXT"; then
+        fail "Arbeitskontext rendert weiterhin die Commit-Tabelle"
+    fi
+    pass "Arbeitskontext bleibt ohne Commit-Tabelle"
 }
 
 check_order() {
     link_line=$(grep -n 'href="#jira-commits-{{ current_key }}"' "$WORK_CONTEXT" | cut -d: -f1)
-    include_line=$(grep -n '{% include jira-commits.html %}' "$WORK_CONTEXT" | cut -d: -f1)
+    content_line=$(grep -n '{{ content }}' "$PAGE_LAYOUT" | cut -d: -f1)
+    include_line=$(grep -n '{% include jira-commits.html %}' "$PAGE_LAYOUT" | cut -d: -f1)
 
-    [ "$link_line" -lt "$include_line" ] \
-        && pass "Commit-Link steht vor Commit-Ausgabe" \
-        || fail "Commit-Ausgabe steht vor dem Inhalts-Schlüssel"
+    [ -n "$link_line" ] || fail "Commit-Link wurde nicht gefunden"
+    [ "$content_line" -lt "$include_line" ] \
+        && pass "Commit-Ausgabe steht nach Seiteninhalt" \
+        || fail "Commit-Ausgabe steht vor dem Seiteninhalt"
 }
 
 check_state_head

@@ -48,9 +48,10 @@ The first target variant is a local Git hook and full-sync path:
   type.
 - `_includes/jira-commits.html` renders matching commits automatically on Jira
   issue pages.
-- After the initial integration, the commit table is attached to the work
-  context include so the contents key stays at the top of the page and links
-  the generated commit section.
+- After the initial integration, the work context only links the commit
+  section in the contents key. The commit table itself is attached to the page
+  layout after the actual content because it is a detail section, not an
+  overview block.
 
 This avoids a direct GitHub API dependency; the local Git history remains the
 robust source.
@@ -64,7 +65,7 @@ robust source.
 | Workflow variant | GitHub workflow alternative is evaluated | Analysis or decision note | open |
 | Decision | Target variant is selected with rationale | “Decision” section | done |
 | Implementation | Chosen path is implemented or clearly bounded as follow-up work | `sync-jira-commits.py`, hooks, include, runbook | done |
-| Contents key | Commit table does not displace the page navigation | `_includes/jira-work-context.html`, `tests/jira-context-commits.sh` | done |
+| Contents key | Commit table does not displace the page navigation and remains a detail section | `_includes/jira-work-context.html`, `_layouts/page.html`, `tests/jira-context-commits.sh` | done |
 
 ## Links
 

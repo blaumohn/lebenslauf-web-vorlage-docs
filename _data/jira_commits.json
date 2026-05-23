@@ -1940,6 +1940,14 @@
   "J01-143": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "d3279dde84034ec243980b21fdb039014dd29eed",
+      "short_sha": "d3279dd",
+      "datetime": "2026-05-23T23:32:00+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/d3279dde84034ec243980b21fdb039014dd29eed",
+      "subject": "fix(jira-docs): Inhalts-Schlüssel vor Commit-Tabelle halten (J01-143)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "c4249266ca992f9124505f1c78148868e63bb567",
       "short_sha": "c424926",
       "datetime": "2026-05-23T00:53:17+02:00",

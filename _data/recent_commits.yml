@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8b3b5e420e5ec4802e9072a829ee9b86b6edea12"
   message: 'feat: DeployPhase-Enum und DeployMachine-Skeleton hinzufuegen (J01-147)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: d3279dde84034ec243980b21fdb039014dd29eed
+  short_sha: d3279dd
+  datetime: "2026-05-23T23:32:00+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/d3279dde84034ec243980b21fdb039014dd29eed"
+  message: 'fix(jira-docs): Inhalts-Schlüssel vor Commit-Tabelle halten (J01-143)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 77df982aee72e02eaefe9c73688e63de376f56cd
   short_sha: 77df982
   datetime: "2026-05-23T01:08:51+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-05-22T01:41:40+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/42ad67fbd90cf1bb6edbeaf1f0b301fe3c476a44"
   message: 'docs: öffentlichen Jira-Spiegel nachziehen (J01-146)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 2224c4d27722e2175b0c2c6fa5a06dea2802c587
-  short_sha: 2224c4d
-  datetime: "2026-05-22T01:37:05+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/2224c4d27722e2175b0c2c6fa5a06dea2802c587"
-  message: 'docs: deploy-contract als spec anlegen (J01-147)'
