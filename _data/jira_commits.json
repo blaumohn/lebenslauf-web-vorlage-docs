@@ -1940,6 +1940,14 @@
   "J01-143": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "cbfb77c6ec7257ae5af9055d04cdcd93ecffe441",
+      "short_sha": "cbfb77c",
+      "datetime": "2026-05-23T23:44:53+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/cbfb77c6ec7257ae5af9055d04cdcd93ecffe441",
+      "subject": "fix(jira-docs): Commit-Tabelle als Detailsektion rendern (J01-143)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "d3279dde84034ec243980b21fdb039014dd29eed",
       "short_sha": "d3279dd",
       "datetime": "2026-05-23T23:32:00+02:00",
@@ -2644,6 +2652,102 @@
     }
   ],
   "J01-149": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "9051b0beea8f6c0d6f61b303bd3e582b42d869ad",
+      "short_sha": "9051b0b",
+      "datetime": "2026-05-27T01:10:30+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9051b0beea8f6c0d6f61b303bd3e582b42d869ad",
+      "subject": "refactor: SFTP-Deploy-Modulgrenzen schaerfen (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "dfaf398cb40db594bf0774e81d0ee431d6e264f4",
+      "short_sha": "dfaf398",
+      "datetime": "2026-05-26T19:04:12+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dfaf398cb40db594bf0774e81d0ee431d6e264f4",
+      "subject": "refactor(deploy): DeployMachine mit Idempotenz und getrenntem Rollback (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "f2b443dafc6bc24a7e5fc5f2f17660d5dfd1f5dc",
+      "short_sha": "f2b443d",
+      "datetime": "2026-05-26T13:21:24+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f2b443dafc6bc24a7e5fc5f2f17660d5dfd1f5dc",
+      "subject": "chore(deploy): Slot-Muster von INI nach JSON, History-Leseskript ergänzen (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "2b1e6cd971950e245203c0a01598aefda6782e2c",
+      "short_sha": "2b1e6cd",
+      "datetime": "2026-05-26T13:21:02+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2b1e6cd971950e245203c0a01598aefda6782e2c",
+      "subject": "refactor(ci): Vendor-Slot-Variable durch Deploy-History-Auslesen ersetzen (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "08ca05bfba981f75c23cdb8f3fc98547e4882ec3",
+      "short_sha": "08ca05b",
+      "datetime": "2026-05-26T13:20:42+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/08ca05bfba981f75c23cdb8f3fc98547e4882ec3",
+      "subject": "feat(deploy): Deploy-History beim Switch schreiben, pipeline_run_id als Bezeichner (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "9091231d41575e4d995afbd3bb7b1ad6678008e6",
+      "short_sha": "9091231",
+      "datetime": "2026-05-26T13:17:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9091231d41575e4d995afbd3bb7b1ad6678008e6",
+      "subject": "refactor(deploy): Maschine selbststeuernd umstrukturieren, Slot-Konfliktprüfung in SlotStore (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "21208250c4a303389c5e6c9538bdce7ee1729781",
+      "short_sha": "2120825",
+      "datetime": "2026-05-25T11:01:49+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/21208250c4a303389c5e6c9538bdce7ee1729781",
+      "subject": "refactor(deploy): SlotEntry/SlotMap/SlotStore einführen, Task-Adapter trennen (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "0dcfddb96b49f795c2223494cb3480574d3ebe17",
+      "short_sha": "0dcfddb",
+      "datetime": "2026-05-25T02:17:56+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/0dcfddb96b49f795c2223494cb3480574d3ebe17",
+      "subject": "refactor(deploy): Zustandsmaschine vereinfachen und Konflikterkennung verbessern (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "69268d40af97802f914cc8d1e344bd336bf0d4b1",
+      "short_sha": "69268d4",
+      "datetime": "2026-05-25T02:05:44+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/69268d40af97802f914cc8d1e344bd336bf0d4b1",
+      "subject": "chore(ci): Ausgaben von Install-Befehlen unterdrücken (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "e6de8a729b6e7c9b7887d589c8f6bcf1b0a2046c",
+      "short_sha": "e6de8a7",
+      "datetime": "2026-05-24T09:56:58+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/e6de8a729b6e7c9b7887d589c8f6bcf1b0a2046c",
+      "subject": "refactor(deploy): Entscheidungslogik aus Ops in DeployMachine verschieben (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "7eb67525bcd11cd370c26792b9302a101e165be9",
+      "short_sha": "7eb6752",
+      "datetime": "2026-05-24T01:28:13+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7eb67525bcd11cd370c26792b9302a101e165be9",
+      "subject": "feat(deploy): versteckte Planauswahl-Zustände in DeployMachine sichtbar machen (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "25b2eb412f9387fa66123daac520f734a4d558a7",
+      "short_sha": "25b2eb4",
+      "datetime": "2026-05-24T01:24:01+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/25b2eb412f9387fa66123daac520f734a4d558a7",
+      "subject": "refactor(deploy): DeployMachine auf python-statemachine migrieren (J01-149)"
+    },
     {
       "repo": "lebenslauf-web-vorlage",
       "sha": "bf2a6ab2a0bad4a126b983e93e315455cc770c07",

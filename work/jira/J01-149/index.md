@@ -28,6 +28,14 @@ Die Deploy-Strategie wurde zusätzlich in die Machine gezogen:
 `DeploymentPlan.swap(...)`, den Konfliktfall bei fehlendem State und
 belegten App-Slots sowie die Vendor-Wiederverwendung.
 
+Die SFTP-Deploy-Implementierung wurde nach der State-Machine-Arbeit in
+fachliche Module getrennt. Das alte Mischmodul `sftp_deploy_state.py`
+wurde ersetzt durch `slots.py`, `slot_store.py`, `tree_uploader.py`,
+`token_migrator.py`, `slot_switch.py` und `sftp_deploy_ops.py`.
+`scripts/sftp-deploy.py` bleibt damit Runner und Zusammensetzung der
+Bausteine, nicht mehr Träger von Slot-, Upload-, Token- und
+Dispatch-Details.
+
 Neue Abhängigkeit `hypothesis>=6.0,<7` in `requirements.txt`
 (Installation via `composer setup`).
 
@@ -62,6 +70,19 @@ Aufrufverträge. SFTP-Tests bleiben für konkrete Seiteneffekte
 zuständig: State-Datei, Sentinels, Slot-Bereinigung, Dispatch und
 Rollback-Schreiben.
 
+**SlotMap und SlotStore getrennt**
+`SlotMap` beschreibt nur die aktuell publizierten App- und Vendor-Slots
+mit Label und Verzeichnisname. `SlotStore` kapselt dagegen die
+persistierten SFTP-Dateien inklusive `.htaccess`, `.deploy-run`,
+Metadaten und Vendor-Checksum. Die frühere doppelte Vendor-Checksum-Logik
+ist auf `SlotStore.vendor_checksum_for_slot(...)` zusammengeführt.
+
+**Deploy-Operationen als Adapter**
+`SftpDeployOps` ist die I/O-Grenze der Machine. Upload, Token-Migration,
+Slot-Umschaltung und Slot-Persistenz liegen in eigenen Klassen; die
+Machine sieht nur fachliche Operationen wie State laden, Plan deployen,
+umschalten, prüfen und zurückrollen.
+
 ## Geprüfte Invarianten
 
 - Jeder Lauf endet im erwarteten Terminalzustand:
@@ -90,6 +111,10 @@ Rollback-Schreiben.
 - Stil geänderte Python-Dateien:
   Ruff und Zeilenlänge passen; Pylint wurde gezielt für Machine und
   Stateful-Testdatei geprüft. Status: erledigt.
+- SFTP-Deploy-Modultrennung:
+  `.venv/bin/python -m pytest tests/py` läuft grün mit `177 passed`.
+  Ruff wurde für die geänderten Deploy- und Testdateien geprüft. Status:
+  erledigt.
 
 ## Abhängigkeit
 
