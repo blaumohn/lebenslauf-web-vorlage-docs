@@ -74,4 +74,4 @@ AI work in the workspace.
 - `skills/docs-i18n/SKILL.md`
 - `skills/jira-state-sync/SKILL.md`
 - [J01-111]({{ "/en/jira/issues/J01-111/" | relative_url }})
-- [J01-113: rule inventory appendix]({{ "/en/jira/issues/J01-113/anlage-regelwerk-bestand/" | relative_url }})
+- [J01-113: rule inventory appendix]({{ "/en/jira/issues/J01-113/appendix-rule-inventory/" | relative_url }})

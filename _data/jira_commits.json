@@ -476,6 +476,22 @@
   "J01-116": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "dd9d9f3759f51e8bf811e9e443766f6516891c60",
+      "short_sha": "dd9d9f3",
+      "datetime": "2026-05-28T05:15:57+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dd9d9f3759f51e8bf811e9e443766f6516891c60",
+      "subject": "fix(jira-docs): fehlende en-linkziele automatisiert entlinken (J01-116)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "cddb3b41cf987c59a30b9ccc32ea7f0c2d2a2be3",
+      "short_sha": "cddb3b4",
+      "datetime": "2026-05-27T19:54:51+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/cddb3b41cf987c59a30b9ccc32ea7f0c2d2a2be3",
+      "subject": "fix(jira-docs): defekte Links lokal und öffentlich lesbar machen (J01-116)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "b2aa800aa0ad548be09d70509697ba353bc55617",
       "short_sha": "b2aa800",
       "datetime": "2026-03-24T14:00:44+01:00",
@@ -2653,6 +2669,38 @@
   ],
   "J01-149": [
     {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "8274af802a13d2c7e847ca99bd219fe61b631a03",
+      "short_sha": "8274af8",
+      "datetime": "2026-05-28T06:50:10+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8274af802a13d2c7e847ca99bd219fe61b631a03",
+      "subject": "fix(deploy): Smoke-Semantik korrigiert, Logging verbessert, History nach log/ verschoben (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "8cd1291342753c699f104e59d2d5e1df5bc37ef9",
+      "short_sha": "8cd1291",
+      "datetime": "2026-05-27T20:01:22+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8cd1291342753c699f104e59d2d5e1df5bc37ef9",
+      "subject": "refactor(bootstrap): AppHttpClassLoader einführen, deploy-inject nach index.php verschieben (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "b46298998f2f8bcd3b0424cc09a4686a6b01019b",
+      "short_sha": "b462989",
+      "datetime": "2026-05-27T02:54:51+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b46298998f2f8bcd3b0424cc09a4686a6b01019b",
+      "subject": "feat(deploy): differenzierter Rollback und CI-Testfall für Recovery (J01-149)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "7e17638b5422de50f7d89fbe82f14fe9b02f486b",
+      "short_sha": "7e17638",
+      "datetime": "2026-05-27T02:49:19+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7e17638b5422de50f7d89fbe82f14fe9b02f486b",
+      "subject": "docs(deploy): EN-Arbeitsdoku fuer J01-149 ergaenzen (J01-149)"
+    },
+    {
       "repo": "lebenslauf-web-vorlage-docs",
       "sha": "95225613516f248997a659867c3c8d8a99bf2570",
       "short_sha": "9522561",
@@ -2944,14 +2992,6 @@
     }
   ],
   "J01-34": [
-    {
-      "repo": "lebenslauf-web-vorlage-docs",
-      "sha": "a0e0133d2c75dfccec47bf97b2d65a3623e9b39d",
-      "short_sha": "a0e0133",
-      "datetime": "2026-05-12T00:10:29+02:00",
-      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a0e0133d2c75dfccec47bf97b2d65a3623e9b39d",
-      "subject": "docs: CLI-Pipeline-Syntax dokumentieren (J01-34)"
-    },
     {
       "repo": "lebenslauf-web-vorlage",
       "sha": "9568960e23f0d0d7f0895d9b0bcaffdec367a9a4",

@@ -51,6 +51,8 @@ docker compose run --rm ghpages-shell
 
 - The preview server runs on `http://localhost:4000/`.
 - Before startup, derived EN pages are synchronized from the DE base.
+- Absolute links to `https://docs.template.ysdani.com/...` are rewritten to
+  the current local origin only in the local preview.
 - Internal links should use `relative_url` so `baseurl` is handled correctly
   (empty in this site).
 - The local preview checks content, navigation, and link paths.

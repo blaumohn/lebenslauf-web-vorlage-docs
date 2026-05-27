@@ -73,4 +73,4 @@ frame and not the domain home of the rule.
 - [Runbook: Jira-Übersicht aktualisieren]({{ "/en/operations/runbook/" | relative_url }})
 - [Jira- und Doku-Tooling: Jira-Übersicht (öffentlich)]({{ "/en/areas/proj-doku-tooling/jira-uebersicht/" | relative_url }})
 - [Jira work docs]({{ "/en/jira/" | relative_url }})
-- [Jira: History]({{ "/en/jira/history/" | relative_url }})
+- [Jira: History]({{ "/en/jira/historie/" | relative_url }})

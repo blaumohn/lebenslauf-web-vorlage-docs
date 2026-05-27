@@ -1,0 +1,17 @@
+<script>
+(function () {
+  var publicOrigin = "https://docs.template.ysdani.com";
+  var localOrigin = window.location.origin;
+
+  function localizeLink(link) {
+    var href = link.getAttribute("href");
+    if (!href || href.indexOf(publicOrigin + "/") !== 0) {
+      return;
+    }
+
+    link.setAttribute("href", localOrigin + href.slice(publicOrigin.length));
+  }
+
+  document.querySelectorAll("a[href]").forEach(localizeLink);
+}());
+</script>

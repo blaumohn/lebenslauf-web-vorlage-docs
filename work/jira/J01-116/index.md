@@ -53,6 +53,9 @@ Arbeitsteilung zwischen Jira und GitHub Pages zu verwischen.
   aus Jira in Cache und öffentliche Projektion nach.
 - Parent-Seiten verlinken Unteraufgaben nur noch dann, wenn eine echte
   öffentliche Schrittseite vorhanden ist.
+- Generierte Übersichten und Vorgangsseiten verweisen bei öffentlichen
+  Subtask-Arbeitsdokus auf die tatsächlich vorhandene öffentliche Seite;
+  fehlende Detailseiten bleiben lesbarer Text ohne Link.
 - Die öffentliche Projektion enthält jetzt zusätzlich aktiven Sprint,
   Sprint-Rolle, Labels und normierte Jira-Verknüpfungen.
 - Vorgangsseiten bündeln Jira-Metadaten und Jira-Beziehungen jetzt in einem
@@ -64,7 +67,7 @@ Arbeitsteilung zwischen Jira und GitHub Pages zu verwischen.
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Tote Subtask-Links entfernt | `J01-31`, `J01-9` und `J01-13` zeigen unverlinkte Subtasks ohne Detailseite | öffentliche Jira-Vorgangsseiten | offen |
+| Tote Subtask-Links entfernt | `J01-31`, `J01-9`, `J01-13` und generierte Übersichten zeigen unverlinkte Subtasks ohne Detailseite | öffentliche Jira-Vorgangsseiten + `tests/public-jira-links.sh` | erledigt |
 | Metadaten sichtbar | Bearbeitung, Priorität, aktiver Sprint und Sprint-Rolle sind sichtbar | `_includes/jira-state-head.html` und generierte Vorgangsseiten | offen |
 | Verknüpfungen sichtbar | Vorgangsseiten zeigen Jira-Issue-Links im oberen Zustands- und Beziehungsblock | `_data/jira_pages/issues.json`, `_includes/jira-state-head.html`, Vorgangsseiten | offen |
 | Beschreibung gespiegelt | Jira-Description erscheint auf generierten Parent-Seiten | öffentliche Jira-Vorgangsseiten | offen |

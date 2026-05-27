@@ -21,4 +21,4 @@ Eigene Lebenslauf-Daten liegen unter `.local/lebenslauf/`.
 E-Mail, SMTP und Deployment-Ziel werden in `.local/dev.yaml` bzw. `.local/preview.yaml` gesetzt.
 
 - [Private Ansicht einrichten]({{ "/de/getting-started/private-ansicht/" | relative_url }})
-- [CI lokal prüfen]({{ "/de/getting-started/ci-lokal/" | relative_url }})
+- CI lokal prüfen

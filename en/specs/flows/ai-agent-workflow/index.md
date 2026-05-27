@@ -59,4 +59,4 @@ This flow describes the recurring workflow for project-bound AI work.
 - `skills/koordination/SKILL.md`
 - `skills/docs-i18n/SKILL.md`
 - `skills/jira-state-sync/SKILL.md`
-- [J01-113: rule inventory appendix]({{ "/en/jira/issues/J01-113/anlage-regelwerk-bestand/" | relative_url }})
+- [J01-113: rule inventory appendix]({{ "/en/jira/issues/J01-113/appendix-rule-inventory/" | relative_url }})

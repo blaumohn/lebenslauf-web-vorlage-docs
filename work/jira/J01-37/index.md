@@ -50,7 +50,7 @@ Konkretes Beispiel: `SMTP_FROM_NAME` ist required nur wenn `MAIL_STDOUT=0`.
 
 ## Links
 
-- [J01-38: 37-1 Schema um Bedingungen erweitern]({{ "/de/jira/issues/J01-38/" | relative_url }})
-- [J01-39: 37-2 Validierung + Doku ergänzen]({{ "/de/jira/issues/J01-39/" | relative_url }})
+- J01-38: 37-1 Schema um Bedingungen erweitern
+- J01-39: 37-2 Validierung + Doku ergänzen
 - [J01-105: Pipeline-Spec: Manifest vereinfachen]({{ "/de/jira/issues/J01-105/" | relative_url }})
 - [Jira-Arbeitsdokus]({{ "/de/jira/" | relative_url }})

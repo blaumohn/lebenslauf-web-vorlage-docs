@@ -12,7 +12,7 @@ area via GitHub Pages:
 - [Jira]({{ "/en/jira/" | relative_url }})
 - [Sprint Board]({{ "/en/jira/sprint/" | relative_url }})
 - [Backlog]({{ "/en/jira/backlog/" | relative_url }})
-- [History]({{ "/en/jira/history/" | relative_url }})
+- [History]({{ "/en/jira/historie/" | relative_url }})
 - [Sprint History]({{ "/en/work/sprints/" | relative_url }})
 
 ## Public rules

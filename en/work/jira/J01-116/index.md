@@ -49,6 +49,9 @@ clearly again without blurring the split between Jira and GitHub Pages.
 - The public generator now pulls `description` and `issuelinks` from Jira
   into the cache and public projection.
 - Parent pages only link subtasks when a real public step page exists.
+- Generated overviews and issue pages point public subtask work docs to the
+  public page that actually exists; missing detail pages remain readable text
+  without a link.
 - The public projection now also contains active sprint, sprint role, labels
   and normalized Jira links.
 - Issue pages now bundle Jira metadata and Jira relations in a single top
@@ -60,7 +63,7 @@ clearly again without blurring the split between Jira and GitHub Pages.
 
 | Check | Expectation | Proof / place | Status |
 | --- | --- | --- | --- |
-| Dead subtask links removed | `J01-31`, `J01-9` and `J01-13` show unlinked subtasks without a detail page | public Jira issue pages | open |
+| Dead subtask links removed | `J01-31`, `J01-9`, `J01-13` and generated overviews show unlinked subtasks without a detail page | public Jira issue pages + `tests/public-jira-links.sh` | done |
 | Metadata visible | Assignee, priority, active sprint and sprint role are visible | `_includes/jira-state-head.html` and generated issue pages | open |
 | Relations visible | Issue pages show Jira issue links in the top state and relations block | `_data/jira_pages/issues.json`, `_includes/jira-state-head.html`, issue pages | open |
 | Description mirrored | Jira description appears on generated parent pages | public Jira issue pages | open |

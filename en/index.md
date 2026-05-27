@@ -34,7 +34,7 @@ The app repo contains source code, but no regular project docs under `docs/`.
 
 - **[Assess the project]({{ "/en/getting-started/project-profile/" | relative_url }})**  
   For HR, team leads and product: demo, project overview and delivery evidence
-- **[organisational entry]({{ "/en/specs/projekt/" | relative_url }})**  
+- **[organisational entry]({{ "/en/specs/project/" | relative_url }})**  
   project purpose, project map, and defining characteristics
 - **[technical entry]({{ "/en/specs/" | relative_url }})**  
   system boundaries, system design, and stable processes

@@ -21,4 +21,4 @@ Own CV data lives under `.local/lebenslauf/`.
 Email, SMTP and deployment target are set in `.local/dev.yaml` or `.local/preview.yaml`.
 
 - [Set up private view]({{ "/en/getting-started/private-view/" | relative_url }})
-- [Run CI locally]({{ "/en/getting-started/ci-local/" | relative_url }})
+- Run CI locally

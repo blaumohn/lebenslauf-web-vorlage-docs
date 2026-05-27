@@ -51,4 +51,4 @@ Status 2026-05-12:
 
 - **34-1 Pipeline-Phase-Syntax festlegen** — To Do
 - **34-2 Missing-Config-Befehl definieren** — To Do
-- [**34-3 CLI: Help-Text für bin/cli config ergänzen**]({{ "/en/jira/issues/J01-34/steps/J01-127/" | relative_url }}) — To Do
+- **34-3 CLI: Help-Text für bin/cli config ergänzen** — To Do

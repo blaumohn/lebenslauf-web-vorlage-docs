@@ -262,6 +262,6 @@ Follow-up on 2026-05-06:
 ## Links
 
 - [J01-9: Preview — reactivate workflow]({{ "/en/jira/issues/J01-9/" | relative_url }})
-- [J01-28: Analysis: Risk patterns and findings list]({{ "/en/jira/issues/J01-28/" | relative_url }})
+- J01-28: Analysis: Risk patterns and findings list
 - [J01-31: Preview Readiness — system source processing]({{ "/en/jira/issues/J01-31/" | relative_url }})
 - [Jira work docs]({{ "/en/jira/" | relative_url }})
