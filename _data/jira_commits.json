@@ -2653,6 +2653,14 @@
   ],
   "J01-149": [
     {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "95225613516f248997a659867c3c8d8a99bf2570",
+      "short_sha": "9522561",
+      "datetime": "2026-05-27T01:12:57+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/95225613516f248997a659867c3c8d8a99bf2570",
+      "subject": "docs(deploy): SFTP-Deploy-Modultrennung dokumentieren (J01-149)"
+    },
+    {
       "repo": "lebenslauf-web-vorlage",
       "sha": "9051b0beea8f6c0d6f61b303bd3e582b42d869ad",
       "short_sha": "9051b0b",

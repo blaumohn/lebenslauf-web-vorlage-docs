@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/e6de8a729b6e7c9b7887d589c8f6bcf1b0a2046c"
   message: 'refactor(deploy): Entscheidungslogik aus Ops in DeployMachine verschieben (J01-149)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: 95225613516f248997a659867c3c8d8a99bf2570
+  short_sha: 9522561
+  datetime: "2026-05-27T01:12:57+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/95225613516f248997a659867c3c8d8a99bf2570"
+  message: 'docs(deploy): SFTP-Deploy-Modultrennung dokumentieren (J01-149)'
+- repo: lebenslauf-web-vorlage-docs
   sha: cbfb77c6ec7257ae5af9055d04cdcd93ecffe441
   short_sha: cbfb77c
   datetime: "2026-05-23T23:44:53+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-05-22T01:53:41+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4ca2e75d8d91239269e7916f6e1f1ef5f395e530"
   message: 'docs: arbeitsdoku fuer J01-148 und J01-149 anlegen'
-- repo: lebenslauf-web-vorlage-docs
-  sha: a27081e1f5c6e49395d83f58b2a932f92732802d
-  short_sha: a27081e
-  datetime: "2026-05-22T01:47:03+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a27081e1f5c6e49395d83f58b2a932f92732802d"
-  message: 'docs: Sprint-4-Closing nachziehen (J01-136)'
