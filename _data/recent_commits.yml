@@ -1,6 +1,24 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 11231901e16705bbc53d0a65c8803ce36cf71bc9
+  short_sha: 1123190
+  datetime: "2026-05-28T15:55:27+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/11231901e16705bbc53d0a65c8803ce36cf71bc9"
+  message: 'fix(deps): twig/twig auf v3.27.0 angehoben (J01-151)'
+- repo: lebenslauf-web-vorlage
+  sha: c0fe6360e580bc61c2fcb602651086a9d6517414
+  short_sha: c0fe636
+  datetime: "2026-05-28T15:39:37+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c0fe6360e580bc61c2fcb602651086a9d6517414"
+  message: 'chore(deploy): SFTP_WEBROOT entfernt (J01-64)'
+- repo: lebenslauf-web-vorlage
+  sha: 7b755a6e5cdb489e4e2536319383a5fadf64c9b2
+  short_sha: 7b755a6
+  datetime: "2026-05-28T14:35:11+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7b755a6e5cdb489e4e2536319383a5fadf64c9b2"
+  message: 'feat(ci): DNS-Fehler im Rollback-Testfall unterdrücken (J01-149)'
+- repo: lebenslauf-web-vorlage
   sha: 8274af802a13d2c7e847ca99bd219fe61b631a03
   short_sha: 8274af8
   datetime: "2026-05-28T06:50:10+02:00"
@@ -42,24 +60,12 @@
   datetime: "2026-05-26T13:21:02+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2b1e6cd971950e245203c0a01598aefda6782e2c"
   message: 'refactor(ci): Vendor-Slot-Variable durch Deploy-History-Auslesen ersetzen (J01-149)'
-- repo: lebenslauf-web-vorlage
-  sha: 08ca05bfba981f75c23cdb8f3fc98547e4882ec3
-  short_sha: 08ca05b
-  datetime: "2026-05-26T13:20:42+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/08ca05bfba981f75c23cdb8f3fc98547e4882ec3"
-  message: 'feat(deploy): Deploy-History beim Switch schreiben, pipeline_run_id als Bezeichner (J01-149)'
-- repo: lebenslauf-web-vorlage
-  sha: 9091231d41575e4d995afbd3bb7b1ad6678008e6
-  short_sha: 9091231
-  datetime: "2026-05-26T13:17:36+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9091231d41575e4d995afbd3bb7b1ad6678008e6"
-  message: 'refactor(deploy): Maschine selbststeuernd umstrukturieren, Slot-Konfliktprüfung in SlotStore (J01-149)'
-- repo: lebenslauf-web-vorlage
-  sha: 21208250c4a303389c5e6c9538bdce7ee1729781
-  short_sha: 2120825
-  datetime: "2026-05-25T11:01:49+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/21208250c4a303389c5e6c9538bdce7ee1729781"
-  message: 'refactor(deploy): SlotEntry/SlotMap/SlotStore einführen, Task-Adapter trennen (J01-149)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 206ca2b712a1a0dd5fc902ec14e9e4b8244e8cde
+  short_sha: 206ca2b
+  datetime: "2026-05-28T12:47:02+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/206ca2b712a1a0dd5fc902ec14e9e4b8244e8cde"
+  message: 'docs(jira): skill-markdown-reduktion nachziehen (J01-145)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 804676f9493e4328f4280f3741ed1e5ea667f8bd
   short_sha: 804676f
@@ -114,9 +120,3 @@
   datetime: "2026-05-23T23:32:00+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/d3279dde84034ec243980b21fdb039014dd29eed"
   message: 'fix(jira-docs): Inhalts-Schlüssel vor Commit-Tabelle halten (J01-143)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 77df982aee72e02eaefe9c73688e63de376f56cd
-  short_sha: 77df982
-  datetime: "2026-05-23T01:08:51+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/77df982aee72e02eaefe9c73688e63de376f56cd"
-  message: 'docs(sprint): Sprint-5-Markdown bereinigen (J01-150)'

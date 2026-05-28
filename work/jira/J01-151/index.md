@@ -1,0 +1,51 @@
+---
+layout: page
+title: "J01-151 — Laufende technische Chores Sprint 5"
+permalink: /de/jira/issues/J01-151/
+jira_key: J01-151
+jira_parent_key: J01-5
+---
+
+{% include jira-state-head.html %}
+
+{% include jira-work-context.html %}
+
+## Angaben
+
+Ziel: Kleine technische Wartungsarbeiten in Sprint 5 nachvollziehbar bündeln,
+wenn sie weder laufende Doku-Wartung noch laufende CV-UI-Arbeit sind.
+
+Der Vorgang ist ein laufender Sammelvorgang für begrenzte Chores, zum Beispiel
+GitHub-/Dependabot-Vorschläge, kleine Dependency-Nachzüge und eng geschnittene
+Tooling-Korrekturen.
+
+Nicht enthalten sind fachliche Feature-Arbeit, größere Refactorings oder
+Änderungen mit eigenem Risiko-/Abnahmeschnitt. Dafür wird ein eigener Vorgang
+genutzt.
+
+## Jira-Stand
+
+- `J01-151` ist als `Task` unter
+  [J01-5]({{ "/de/jira/issues/J01-5/" | relative_url }}) angelegt.
+- Status: `In Bearbeitung`.
+- Sprint: `SCRUM Sprint 5`.
+- Labels: `chore`, `dependencies`, `github`, `sprint-unplanned`.
+
+## Arbeitsliste
+
+| Datum | Änderung | Bezug | Bereich | Ergebnis |
+| --- | --- | --- | --- | --- |
+| 2026-05-28 | offen | `J01-151` | Technische Chores | Sammelvorgang für Sprint-5-Chores angelegt; konkrete Chore-Commits tragen künftig `(J01-151)`. |
+
+## Überprüfungsplan
+
+| Prüfpunkt | Erwartung | Nachweis / Ort | Status |
+| --- | --- | --- | --- |
+| Laufender Vorgang | Technische Chores laufen nicht über Doku- oder UI-Sammelvorgänge | `J01-151` | erledigt |
+| Sprint-Zuordnung | Vorgang ist in `SCRUM Sprint 5` sichtbar | Jira Sprint `134` | erledigt |
+| Commit-Zuordnung | Zugehörige Chore-Commits tragen `(J01-151)` | Commit-Titel | offen |
+
+## Links
+
+- [SCRUM Sprint 5]({{ "/de/work/sprints/scrum-sprint-5/" | relative_url }})
+- [J01-5]({{ "/de/jira/issues/J01-5/" | relative_url }})

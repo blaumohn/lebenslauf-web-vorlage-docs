@@ -24,8 +24,8 @@ Public Jira area (without Jira Cloud links).
 ### [J01-5 — Qualitätsrahmen für App und Config-Lib]({{ "/en/jira/issues/J01-5/" | relative_url }})
 
 - [J01-13 — Preview: Testmatrix und Entscheidungen finalisieren]({{ "/en/jira/issues/J01-13/" | relative_url }})
-  - **13-1 Entscheidungstabelle finalisieren** — To Do
-  - **13-2 Testmatrix-Nachweise verlinken** — To Do
+  - 13-1 Entscheidungstabelle finalisieren — To Do
+  - 13-2 Testmatrix-Nachweise verlinken — To Do
 - [J01-135 — CI/CD-Tools: CV-Token-Erzeugung und Runtime-Admin-Betrieb]({{ "/en/jira/issues/J01-135/" | relative_url }})
   - [**135-1 Runtime-Admin-Auslösung über SFTP-Fahne und HTTP-Trigger modellieren**]({{ "/en/jira/issues/J01-135/steps/J01-138/" | relative_url }}) — Done
   - [**135-2 Laufzeit-Admin-Betriebe-Gerüst und Zero-Downtime-Deploy-Switch festziehen**]({{ "/en/jira/issues/J01-135/steps/J01-142/" | relative_url }}) — Done
@@ -33,64 +33,65 @@ Public Jira area (without Jira Cloud links).
   - [**135-4 Admin-Aktionsliste und Zugriffsschutz begrenzen**]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}) — To Do
   - [**135-5 CV-Token-Rotation als Runtime-Admin-Aktion umsetzen**]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}) — In Progress
 - [J01-146 — src/cli/py kohärent ordnen und Python-CLI-Aliasse prüfen]({{ "/en/jira/issues/J01-146/" | relative_url }})
+- [J01-151 — Laufende technische Chores Sprint 5]({{ "/en/jira/issues/J01-151/" | relative_url }})
 - J01-28 — Analyse: Risikomuster und Befundliste
-  - **28-1 Befunde erfassen** — To Do
-  - **28-2 Priorisierung und Folge-Tickets** — To Do
+  - 28-1 Befunde erfassen — To Do
+  - 28-2 Priorisierung und Folge-Tickets — To Do
 - [J01-31 — Preview Readiness: System-Source-Verarbeitung]({{ "/en/jira/issues/J01-31/" | relative_url }})
-  - **31-1 Guard-Strategie finalisieren** — To Do
-  - **31-2 Produktions-Pattern Vergleich dokumentieren** — To Do
+  - 31-1 Guard-Strategie finalisieren — To Do
+  - 31-2 Produktions-Pattern Vergleich dokumentieren — To Do
 - [J01-34 — CLI-UX: Missing-Config und Pipeline-Phase]({{ "/en/jira/issues/J01-34/" | relative_url }})
-  - **34-1 Pipeline-Phase-Syntax festlegen** — To Do
-  - **34-2 Missing-Config-Befehl definieren** — To Do
+  - 34-1 Pipeline-Phase-Syntax festlegen — To Do
+  - 34-2 Missing-Config-Befehl definieren — To Do
   - **34-3 CLI: Help-Text für bin/cli config ergänzen** — To Do
 - J01-37 — Config: Konditionelle Validierung
-  - **37-1 Schema um Bedingungen erweitern** — To Do
-  - **37-2 Validierung + Doku ergänzen** — To Do
+  - 37-1 Schema um Bedingungen erweitern — To Do
+  - 37-2 Validierung + Doku ergänzen — To Do
 - [J01-40 — Runtime: Technische Konstanten vereinheitlichen]({{ "/en/jira/issues/J01-40/" | relative_url }})
-  - **40-1 Konstanten-Schnitt definieren** — To Do
-  - **40-2 Pfad/Key-Duplikate entfernen** — To Do
+  - 40-1 Konstanten-Schnitt definieren — To Do
+  - 40-2 Pfad/Key-Duplikate entfernen — To Do
 - [J01-43 — Preview: FTP/FTPS-Verwaltungsskripte]({{ "/en/jira/issues/J01-43/" | relative_url }})
-  - **43-1 Marker/Signaldatei-Flow definieren** — To Do
-  - **43-2 Doku + Tests ergänzen** — To Do
+  - 43-1 Marker/Signaldatei-Flow definieren — To Do
+  - 43-2 Doku + Tests ergänzen — To Do
 
 ### [J01-6 — i18n für Seitenvorlagen und Templates]({{ "/en/jira/issues/J01-6/" | relative_url }})
 
 - [J01-137 — Laufende CV-UI-Anpassungen Sprint 4]({{ "/en/jira/issues/J01-137/" | relative_url }})
 - [J01-46 — i18n: CLI- und Runtime-Nachrichten]({{ "/en/jira/issues/J01-46/" | relative_url }})
-  - **46-1 Message-IDs und Format definieren** — To Do
-  - **46-2 Ausgaben in App + Config-Lib umstellen** — To Do
+  - 46-1 Message-IDs und Format definieren — To Do
+  - 46-2 Ausgaben in App + Config-Lib umstellen — To Do
 - [J01-49 — i18n: Template-Texte i18n-fähig machen]({{ "/en/jira/issues/J01-49/" | relative_url }})
-  - **49-1 Template-Text-Keys definieren** — To Do
-  - **49-2 DE/EN Mindestumfang liefern** — To Do
+  - 49-1 Template-Text-Keys definieren — To Do
+  - 49-2 DE/EN Mindestumfang liefern — To Do
 
 ### [J01-7 — Production Deployment]({{ "/en/jira/issues/J01-7/" | relative_url }})
 
 - [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/en/jira/issues/J01-62/" | relative_url }})
   - [**62-1 Mail im Deployment aktivieren**]({{ "/en/jira/issues/J01-62/steps/J01-144/" | relative_url }}) — To Do
-  - **62-2 Branch-Mapping festlegen** — To Do
+  - 62-2 Branch-Mapping festlegen — To Do
   - **62-2 DeployPhase-Enum und DeployMachine-Skeleton implementieren** — Done
-  - **62-3 Environment aktivieren** — To Do
+  - 62-3 Environment aktivieren — To Do
   - [**62-3 RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen**]({{ "/en/jira/issues/J01-149/" | relative_url }}) — In Progress
   - Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1) — In Progress
 - [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/en/jira/issues/J01-65/" | relative_url }})
-  - **65-1 Artefaktliste festlegen** — To Do
-  - **65-2 Post-Deploy-Smoke definieren** — To Do
+  - 65-1 Artefaktliste festlegen — To Do
+  - 65-2 Post-Deploy-Smoke definieren — To Do
 - [J01-68 — Production: Betriebsdoku und Runbook]({{ "/en/jira/issues/J01-68/" | relative_url }})
-  - **68-1 Betriebsdoku erstellen** — To Do
-  - **68-2 Rollback/Notfallpfad skizzieren** — To Do
+  - 68-1 Betriebsdoku erstellen — To Do
+  - 68-2 Rollback/Notfallpfad skizzieren — To Do
 
 ### [J01-8 — Backlog-Kandidaten]({{ "/en/jira/issues/J01-8/" | relative_url }})
 
 - [J01-52 — Backlog: Typensicherheit statt Guards]({{ "/en/jira/issues/J01-52/" | relative_url }})
-  - **52-1 Scope skizzieren** — To Do
+  - 52-1 Scope skizzieren — To Do
 - [J01-54 — Backlog: Zentrales Fehlerkonzept]({{ "/en/jira/issues/J01-54/" | relative_url }})
-  - **54-1 Scope skizzieren** — To Do
+  - 54-1 Scope skizzieren — To Do
 - [J01-56 — Backlog: Bibliotheks-APIs konsequent ausschoepfen]({{ "/en/jira/issues/J01-56/" | relative_url }})
-  - **56-1 Scope skizzieren** — To Do
+  - 56-1 Scope skizzieren — To Do
 - [J01-58 — Backlog: Pipeline-Phase Terminologie repo-weit]({{ "/en/jira/issues/J01-58/" | relative_url }})
-  - **58-1 Scope skizzieren** — To Do
+  - 58-1 Scope skizzieren — To Do
 - [J01-60 — Backlog: SMTP-Empfangsnachweis mit Konto-Beteiligung]({{ "/en/jira/issues/J01-60/" | relative_url }})
-  - **60-1 Scope skizzieren** — To Do
+  - 60-1 Scope skizzieren — To Do
 
 ### [J01-84 — Atlassian-System vorbereiten (SSOT: Jira)]({{ "/en/jira/issues/J01-84/" | relative_url }})
 

@@ -46,6 +46,8 @@ practically usable.
 
 - [J01-137]({{ "/en/jira/issues/J01-137/" | relative_url }}) —
   ongoing CV UI adjustments
+- [J01-151]({{ "/en/jira/issues/J01-151/" | relative_url }}) —
+  ongoing technical chores
 
 ## Planning Decision
 
@@ -55,6 +57,9 @@ practically usable.
   carries the public Jira/docs mirror and sprint artifacts.
 - Ongoing CV UI work stays visible as additional ongoing work, but is not part
   of the sprint goal.
+- Ongoing technical chores get their own Sprint 5 container issue so
+  Dependabot and similar maintenance work does not land in documentation or UI
+  issues.
 
 ## Risks
 
@@ -67,6 +72,7 @@ practically usable.
 ## Scope Changes
 
 - 2026-05-23: Sprint started; ongoing docs/CV issues deliberately included.
+- 2026-05-28: Added `J01-151` as the ongoing technical chore container issue.
 
 ## Review
 

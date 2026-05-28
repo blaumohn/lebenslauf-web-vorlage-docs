@@ -45,6 +45,8 @@ Sprint 4 und führt laufende Begleitarbeit sichtbar weiter.
 
 - [J01-137]({{ "/de/jira/issues/J01-137/" | relative_url }}) —
   laufende CV-UI-Anpassungen
+- [J01-151]({{ "/de/jira/issues/J01-151/" | relative_url }}) —
+  laufende technische Chores
 
 ## Jira-Stand
 
@@ -60,6 +62,7 @@ Sprint 4 und führt laufende Begleitarbeit sichtbar weiter.
 | Sprint aktiv | Jira zeigt `SCRUM Sprint 5` als aktiv | Jira Board `1`, Sprint `134` | erledigt |
 | Sprint-Board gefüllt | Öffentliche Sprint-Ansicht enthält Ziel-, Support-, Admin- und ungeplante Arbeit | `/de/jira/sprint/` | erledigt |
 | Sprint-Doku vorhanden | Öffentliches Sprint-Artefakt beschreibt Ziel und Zuschnitt | `/de/work/sprints/scrum-sprint-5/` | erledigt |
+| Chore-Sammelvorgang | Laufende technische Chores haben einen eigenen Sprint-5-Vorgang | [J01-151]({{ "/de/jira/issues/J01-151/" | relative_url }}) | erledigt |
 
 ## Links
 

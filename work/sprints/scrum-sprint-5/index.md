@@ -46,6 +46,8 @@ Production-Pfad praktisch nutzbar wird.
 
 - [J01-137]({{ "/de/jira/issues/J01-137/" | relative_url }}) —
   Laufende CV-UI-Anpassungen
+- [J01-151]({{ "/de/jira/issues/J01-151/" | relative_url }}) —
+  Laufende technische Chores
 
 ## Planning-Entscheidung
 
@@ -55,6 +57,9 @@ Production-Pfad praktisch nutzbar wird.
   Jira-/Doku-Spiegel und Sprint-Artefakte trägt.
 - Laufende CV-UI-Arbeit bleibt sichtbar als zusätzliche laufende Arbeit, ist
   aber nicht Teil des Sprint-Ziels.
+- Laufende technische Chores bekommen einen eigenen Sprint-5-Sammelvorgang,
+  damit Dependabot- und ähnliche Wartungsarbeiten nicht in Doku- oder
+  UI-Vorgängen landen.
 
 ## Risiken
 
@@ -68,6 +73,7 @@ Production-Pfad praktisch nutzbar wird.
 ## Scope-Änderungen
 
 - 2026-05-23: Sprint gestartet, Doku-/CV-Laufvorgänge bewusst mit aufgenommen.
+- 2026-05-28: `J01-151` als laufenden technischen Chore-Sammelvorgang ergänzt.
 
 ## Review
 

@@ -1,0 +1,50 @@
+---
+layout: page
+title: "J01-151 — Ongoing technical chores Sprint 5"
+permalink: /en/jira/issues/J01-151/
+jira_key: J01-151
+jira_parent_key: J01-5
+---
+
+{% include jira-state-head.html %}
+
+{% include jira-work-context.html %}
+
+## Details
+
+Goal: Bundle small technical maintenance work in Sprint 5 when it is neither
+ongoing documentation maintenance nor ongoing CV UI work.
+
+This issue is an ongoing container for limited chores, for example
+GitHub/Dependabot suggestions, small dependency follow-ups, and narrowly scoped
+tooling corrections.
+
+Feature work, larger refactorings, or changes with their own risk and
+acceptance scope are excluded. Those need their own issue.
+
+## Jira State
+
+- `J01-151` exists as a `Task` under
+  [J01-5]({{ "/en/jira/issues/J01-5/" | relative_url }}).
+- Status: `In Bearbeitung`.
+- Sprint: `SCRUM Sprint 5`.
+- Labels: `chore`, `dependencies`, `github`, `sprint-unplanned`.
+
+## Work List
+
+| Date | Change | Reference | Area | Result |
+| --- | --- | --- | --- | --- |
+| 2026-05-28 | open | `J01-151` | Technical chores | Sprint 5 chore container created; future related chore commits carry `(J01-151)`. |
+
+## Verification Plan
+
+| Checkpoint | Expectation | Evidence / Location | Status |
+| --- | --- | --- | --- |
+| Ongoing issue | Technical chores do not run through documentation or UI container issues | `J01-151` | done |
+| Sprint assignment | Issue is visible in `SCRUM Sprint 5` | Jira sprint `134` | done |
+| Commit assignment | Related chore commits carry `(J01-151)` | Commit titles | open |
+
+## Links
+
+- [SCRUM Sprint 5]({{ "/en/work/sprints/scrum-sprint-5/" | relative_url }})
+- [J01-5]({{ "/en/jira/issues/J01-5/" | relative_url }})

@@ -45,6 +45,8 @@ Sprint 4 and keeps ongoing support work visible.
 
 - [J01-137]({{ "/en/jira/issues/J01-137/" | relative_url }}) —
   ongoing CV UI adjustments
+- [J01-151]({{ "/en/jira/issues/J01-151/" | relative_url }}) —
+  ongoing technical chores
 
 ## Jira State
 
@@ -60,6 +62,7 @@ Sprint 4 and keeps ongoing support work visible.
 | Sprint active | Jira shows `SCRUM Sprint 5` as active | Jira board `1`, sprint `134` | done |
 | Sprint board populated | Public sprint view contains goal, support, admin, and unplanned work | `/en/jira/sprint/` | done |
 | Sprint docs present | Public sprint artifact describes goal and scope | `/en/work/sprints/scrum-sprint-5/` | done |
+| Chore container issue | Ongoing technical chores have their own Sprint 5 issue | [J01-151]({{ "/en/jira/issues/J01-151/" | relative_url }}) | done |
 
 ## Links
 
