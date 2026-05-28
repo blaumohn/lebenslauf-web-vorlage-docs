@@ -43,6 +43,7 @@ Kanonischer öffentlicher Arbeitsstand für laufende Doku-Wartung in
 | 2026-05-11 | `fix: recent-ui-texte im include aufloesen (J01-145)` | `J01-145` | Letzte Änderungen | Das Include löst die Sprache vor dem Zugriff auf `_data/ui.yml` auf, damit Inhaltslinks und Abschnittstitel nicht leer bleiben. |
 | 2026-05-12 | offen | `J01-145` | Programmierleitlinien | Fachliche Stilregeln sind in prüfbare Unterbereiche gegliedert; Fallbacks werden als eigene Programmpfad-Zweige beschrieben, die Fehler nicht verdecken dürfen. |
 | 2026-05-12 | offen | `J01-145`, `J01-34` | Jira-Seiten-Sync | Der EN-Sync überschreibt manuell gepflegte englische Jira-Seiten nicht mehr mit generierten DE-Seiten; `J01-34` bleibt nach `prepare-site.sh` englisch. |
+| 2026-05-28 | offen | `J01-145` | Skills / Doku-Hygiene | Lokale Skills werden inventarisiert; Skill-Markdown verweist knapper auf kanonische Quellen und automatisierte Prüfungen; Pre-Commit-Hooks prüfen Skill-Links, Skriptverweise, `tools-python` und Shared-/Projekt-Trennung. |
 
 ## Überprüfung
 
@@ -54,6 +55,9 @@ Kanonischer öffentlicher Arbeitsstand für laufende Doku-Wartung in
 | Fallback-Regel | Fallbacks sind nur als gültige, benannte und getestete Programmpfad-Zweige zulässig | Abschnitt `Fallbacks verdecken keine Fehler` | erledigt |
 | EN-Sync schützt manuelle Seiten | Manuell gepflegte EN-Jira-Seiten behalten ihre Übersetzung nach `prepare-site.sh` | `scripts/sync-en-jira-pages.sh`, `en/work/jira/J01-34/index.md` | erledigt |
 | Remote-Link | Jira verweist auf die kanonische öffentliche Arbeitsdoku | Jira-Remote-Link auf `/de/jira/issues/J01-145/` | erledigt |
+| Skill-Inventar | Lokale Skills sind maschinenlesbar inventarisiert und reproduzierbar erzeugbar | `.agents/skills/lebenslauf-web-vorlage/skills/README.md`, `scripts/verify-skills.sh --check-index` | erledigt |
+| Pre-Commit-Hook | Hook-Template ist versioniert und per Installationsskript einrichtbar | `.agents/skills/lebenslauf-web-vorlage/scripts/hooks/pre-commit`, `scripts/install-hooks.sh` | erledigt |
+| Skill-Hygiene | Frontmatter, eindeutige Namen, Links, Skriptverweise, `tools-python` und projektfreie Shared-Regeln werden automatisiert geprüft | `.agents/skills/lebenslauf-web-vorlage/scripts/verify-skills.sh` | erledigt |
 
 ## Offene Punkte
 

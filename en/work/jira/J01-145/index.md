@@ -42,6 +42,7 @@ Canonical public working note for ongoing documentation maintenance in
 | 2026-05-11 | `fix: recent-ui-texte im include aufloesen (J01-145)` | `J01-145` | Recent changes | The include resolves the language before reading `_data/ui.yml` so contents links and section titles do not stay empty. |
 | 2026-05-12 | open | `J01-145` | Programming guidelines | Domain style rules are split into reviewable subsections; fallbacks are described as separate program-path branches that must not hide errors. |
 | 2026-05-12 | open | `J01-145`, `J01-34` | Jira page sync | The EN sync no longer overwrites manually maintained English Jira pages with generated DE pages; `J01-34` stays English after `prepare-site.sh`. |
+| 2026-05-28 | open | `J01-145` | Skills / documentation hygiene | Local skills are inventoried; skill Markdown points more compactly to canonical sources and automated checks; pre-commit hooks check skill links, script references, `tools-python`, and shared/project separation. |
 
 ## Verification
 
@@ -53,6 +54,9 @@ Canonical public working note for ongoing documentation maintenance in
 | Fallback rule | Fallbacks are only allowed as valid, named, and tested program-path branches | `Fallbacks Do Not Hide Errors` section | done |
 | EN sync protects manual pages | Manually maintained EN Jira pages keep their translation after `prepare-site.sh` | `scripts/sync-en-jira-pages.sh`, `en/work/jira/J01-34/index.md` | done |
 | Remote link | Jira points to the canonical public work doc | Jira remote link to `/de/jira/issues/J01-145/` | done |
+| Skill inventory | Local skills are machine-readable and reproducibly generated | `.agents/skills/lebenslauf-web-vorlage/skills/README.md`, `scripts/verify-skills.sh --check-index` | done |
+| Pre-commit hook | Hook template is versioned and installable through a setup script | `.agents/skills/lebenslauf-web-vorlage/scripts/hooks/pre-commit`, `scripts/install-hooks.sh` | done |
+| Skill hygiene | Frontmatter, unique names, links, script references, `tools-python`, and project-free shared rules are checked automatically | `.agents/skills/lebenslauf-web-vorlage/scripts/verify-skills.sh` | done |
 
 ## Open Points
 

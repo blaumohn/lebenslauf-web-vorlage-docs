@@ -2536,6 +2536,14 @@
   "J01-145": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "fc9b398a06b3973ee1b240f4cf8196c35d6199b7",
+      "short_sha": "fc9b398",
+      "datetime": "2026-05-28T05:15:57+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/fc9b398a06b3973ee1b240f4cf8196c35d6199b7",
+      "subject": "fix(jira-docs): fehlende en-linkziele automatisiert entlinken (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "f21bdfb5be4a3644a9b9468fc7902d03c6ba2b0a",
       "short_sha": "f21bdfb",
       "datetime": "2026-05-28T05:15:57+02:00",
