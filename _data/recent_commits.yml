@@ -61,17 +61,17 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/21208250c4a303389c5e6c9538bdce7ee1729781"
   message: 'refactor(deploy): SlotEntry/SlotMap/SlotStore einführen, Task-Adapter trennen (J01-149)'
 - repo: lebenslauf-web-vorlage-docs
-  sha: dd9d9f3759f51e8bf811e9e443766f6516891c60
-  short_sha: dd9d9f3
+  sha: f21bdfb5be4a3644a9b9468fc7902d03c6ba2b0a
+  short_sha: f21bdfb
   datetime: "2026-05-28T05:15:57+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dd9d9f3759f51e8bf811e9e443766f6516891c60"
-  message: 'fix(jira-docs): fehlende en-linkziele automatisiert entlinken (J01-116)'
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f21bdfb5be4a3644a9b9468fc7902d03c6ba2b0a"
+  message: 'fix(jira-docs): fehlende en-linkziele automatisiert entlinken (J01-145)'
 - repo: lebenslauf-web-vorlage-docs
-  sha: cddb3b41cf987c59a30b9ccc32ea7f0c2d2a2be3
-  short_sha: cddb3b4
+  sha: 4189bc444b25c3f6392a63df901fd092a422a856
+  short_sha: 4189bc4
   datetime: "2026-05-27T19:54:51+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/cddb3b41cf987c59a30b9ccc32ea7f0c2d2a2be3"
-  message: 'fix(jira-docs): defekte Links lokal und öffentlich lesbar machen (J01-116)'
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4189bc444b25c3f6392a63df901fd092a422a856"
+  message: 'fix(jira-docs): defekte Links lokal und öffentlich lesbar machen (J01-145)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 7e17638b5422de50f7d89fbe82f14fe9b02f486b
   short_sha: 7e17638

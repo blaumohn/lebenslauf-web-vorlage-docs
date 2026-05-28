@@ -16,10 +16,10 @@ jira_key: J01-5
 - [J01-135 — CI/CD-Tools: CV-Token-Erzeugung und Runtime-Admin-Betrieb]({{ "/en/jira/issues/J01-135/" | relative_url }})
 - [J01-43 — Preview: FTP/FTPS-Verwaltungsskripte]({{ "/en/jira/issues/J01-43/" | relative_url }})
 - [J01-40 — Runtime: Technische Konstanten vereinheitlichen]({{ "/en/jira/issues/J01-40/" | relative_url }})
-- [J01-37 — Config: Konditionelle Validierung]({{ "/en/jira/issues/J01-37/" | relative_url }})
+- J01-37 — Config: Konditionelle Validierung
 - [J01-34 — CLI-UX: Missing-Config und Pipeline-Phase]({{ "/en/jira/issues/J01-34/" | relative_url }})
 - [J01-31 — Preview Readiness: System-Source-Verarbeitung]({{ "/en/jira/issues/J01-31/" | relative_url }})
-- [J01-28 — Analyse: Risikomuster und Befundliste]({{ "/en/jira/issues/J01-28/" | relative_url }})
+- J01-28 — Analyse: Risikomuster und Befundliste
 - [J01-25 — Dev-Branch Baseline und Repo-Hygiene]({{ "/en/jira/issues/J01-25/" | relative_url }})
 - [J01-21 — Runtime: IP_SALT-Verwaltung und Guardrails]({{ "/en/jira/issues/J01-21/" | relative_url }})
 - [J01-16 — Runtime: Concurrency, Locking und atomare Zugriffe]({{ "/en/jira/issues/J01-16/" | relative_url }})

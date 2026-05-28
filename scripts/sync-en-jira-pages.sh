@@ -12,6 +12,33 @@ is_managed_en_file() {
   [ ! -f "$1" ] || is_generated_file "$1"
 }
 
+is_container_environment() {
+  if [ -f /.dockerenv ]; then
+    return 0
+  fi
+
+  if [ -r /proc/1/cgroup ] && grep -E 'docker|containerd|kubepods' /proc/1/cgroup >/dev/null 2>&1; then
+    return 0
+  fi
+
+  return 1
+}
+
+python_for_sync() {
+  if is_container_environment && command -v python3 >/dev/null 2>&1; then
+    printf '%s\n' python3
+    return
+  fi
+
+  if command -v tools-python >/dev/null 2>&1; then
+    printf '%s\n' tools-python
+    return
+  fi
+
+  printf '%s\n' "Lokal tools-python oder im Container python3 erwartet" >&2
+  return 1
+}
+
 delete_generated_en_pages() {
   find en/work/jira -name '*.md' 2>/dev/null | while read -r file; do
     if is_generated_file "$file"; then
@@ -89,9 +116,76 @@ sync_generated_pages() {
   done
 }
 
+sanitize_generated_en_links() {
+  "$(python_for_sync)" - <<'PY'
+from pathlib import Path
+import re
+
+root = Path(".")
+frontmatter_pattern = re.compile(r"^---\n(.*?)\n---\n", re.S)
+link_pattern = re.compile(r'\[([^\]]+)\]\(\{\{ "(/en/[^"]+)" \| relative_url \}\}\)')
+
+
+def permalink_from(text):
+    match = frontmatter_pattern.match(text)
+    if not match:
+        return None
+
+    for line in match.group(1).splitlines():
+        if line.startswith("permalink:"):
+            value = line.split(":", 1)[1].strip().strip("\"'")
+            return value if value.startswith("/") else "/" + value
+
+    return None
+
+
+def is_generated_jira_page(text):
+    return "generated:jira:" in text[:300]
+
+
+def collect_permalinks():
+    permalinks = set()
+    for path in root.rglob("*.md"):
+        if ".local" in path.parts or "_site" in path.parts:
+            continue
+
+        permalink = permalink_from(path.read_text(encoding="utf-8"))
+        if permalink:
+            permalinks.add(permalink)
+
+    return permalinks
+
+
+def sanitize_text(text, permalinks):
+    sanitized = text
+    matches = list(link_pattern.finditer(text))
+    for match in reversed(matches):
+        label = match.group(1)
+        target = match.group(2)
+        if target in permalinks:
+            continue
+
+        sanitized = sanitized[:match.start()] + label + sanitized[match.end():]
+
+    return sanitized
+
+
+permalinks = collect_permalinks()
+for path in Path("en/work/jira").rglob("*.md"):
+    text = path.read_text(encoding="utf-8")
+    if not is_generated_jira_page(text):
+        continue
+
+    sanitized = sanitize_text(text, permalinks)
+    if sanitized != text:
+        path.write_text(sanitized, encoding="utf-8")
+PY
+}
+
 main() {
   delete_generated_en_pages
   sync_generated_pages
+  sanitize_generated_en_links
 }
 
 main "$@"

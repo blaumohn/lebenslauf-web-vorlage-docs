@@ -17,6 +17,6 @@ SOURCE_REPO=$(git rev-parse --show-toplevel)
 
 [ "$SOURCE_REPO" = "$DOCS_ROOT" ] && exit 0
 
-python3 "$DOCS_ROOT/scripts/sync-jira-commits.py" current \
+tools-python "$DOCS_ROOT/scripts/sync-jira-commits.py" current \
     --repo "$SOURCE_REPO" \
     --commit HEAD

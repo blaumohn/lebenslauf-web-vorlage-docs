@@ -6,7 +6,7 @@ set -eu
 SCRIPT_DIR=$(CDPATH= cd -- "$(dirname "$0")" && pwd)
 REPO_ROOT=$(CDPATH= cd -- "$SCRIPT_DIR/.." && pwd)
 
-python3 - "$REPO_ROOT" <<'PY'
+tools-python - "$REPO_ROOT" <<'PY'
 from pathlib import Path
 import re
 import sys

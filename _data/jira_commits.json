@@ -476,22 +476,6 @@
   "J01-116": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
-      "sha": "dd9d9f3759f51e8bf811e9e443766f6516891c60",
-      "short_sha": "dd9d9f3",
-      "datetime": "2026-05-28T05:15:57+02:00",
-      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dd9d9f3759f51e8bf811e9e443766f6516891c60",
-      "subject": "fix(jira-docs): fehlende en-linkziele automatisiert entlinken (J01-116)"
-    },
-    {
-      "repo": "lebenslauf-web-vorlage-docs",
-      "sha": "cddb3b41cf987c59a30b9ccc32ea7f0c2d2a2be3",
-      "short_sha": "cddb3b4",
-      "datetime": "2026-05-27T19:54:51+02:00",
-      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/cddb3b41cf987c59a30b9ccc32ea7f0c2d2a2be3",
-      "subject": "fix(jira-docs): defekte Links lokal und öffentlich lesbar machen (J01-116)"
-    },
-    {
-      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "b2aa800aa0ad548be09d70509697ba353bc55617",
       "short_sha": "b2aa800",
       "datetime": "2026-03-24T14:00:44+01:00",
@@ -2550,6 +2534,22 @@
     }
   ],
   "J01-145": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "f21bdfb5be4a3644a9b9468fc7902d03c6ba2b0a",
+      "short_sha": "f21bdfb",
+      "datetime": "2026-05-28T05:15:57+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f21bdfb5be4a3644a9b9468fc7902d03c6ba2b0a",
+      "subject": "fix(jira-docs): fehlende en-linkziele automatisiert entlinken (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "4189bc444b25c3f6392a63df901fd092a422a856",
+      "short_sha": "4189bc4",
+      "datetime": "2026-05-27T19:54:51+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4189bc444b25c3f6392a63df901fd092a422a856",
+      "subject": "fix(jira-docs): defekte Links lokal und öffentlich lesbar machen (J01-145)"
+    },
     {
       "repo": "lebenslauf-web-vorlage",
       "sha": "dc93351f3fce59ab2cbd00eb8b299538b505ac4e",
