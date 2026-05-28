@@ -2536,6 +2536,14 @@
   "J01-145": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "804676f9493e4328f4280f3741ed1e5ea667f8bd",
+      "short_sha": "804676f",
+      "datetime": "2026-05-28T11:32:55+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/804676f9493e4328f4280f3741ed1e5ea667f8bd",
+      "subject": "docs(jira): shellcheck-nachweis ergaenzen (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "a46cd7c3e0683d04d6f03d12c43be1f29cf86a32",
       "short_sha": "a46cd7c",
       "datetime": "2026-05-28T11:25:02+02:00",

@@ -9,8 +9,8 @@ jira_key: J01-145
 
 {% include jira-work-context.html %}
 
-Canonical public working note for ongoing documentation maintenance in
-`SCRUM Sprint 4`.
+Canonical public working note for ongoing documentation maintenance in the
+current sprint context.
 
 ## Goal
 
@@ -22,11 +22,11 @@ Canonical public working note for ongoing documentation maintenance in
 
 ## Current Status
 
-- `J01-145` exists as an ongoing Sprint 4 issue.
+- `J01-145` exists as an ongoing documentation maintenance issue.
 - Jira metadata:
   - Status: `In Bearbeitung`
-  - Sprint: `SCRUM Sprint 4`
-  - Labels: `sprint-unplanned`, `docs`, `policy`
+  - Sprints: `SCRUM Sprint 4` (closed), `SCRUM Sprint 5` (active)
+  - Labels: `docs`, `policy`, `sprint-admin`, `sprint-unplanned`
 - The first change sharpens the programming guidelines under
   `policies/programmierleitlinien/#fachliche-stilregeln`.
 - `J01-113` remains the general rule and architecture context; this concrete
@@ -44,6 +44,7 @@ Canonical public working note for ongoing documentation maintenance in
 | 2026-05-12 | open | `J01-145`, `J01-34` | Jira page sync | The EN sync no longer overwrites manually maintained English Jira pages with generated DE pages; `J01-34` stays English after `prepare-site.sh`. |
 | 2026-05-28 | open | `J01-145` | Skills / documentation hygiene | Local skills are inventoried; skill Markdown points more compactly to canonical sources and automated checks; pre-commit hooks check skill links, script references, `tools-python`, and shared/project separation. |
 | 2026-05-28 | open | `J01-145` | Skill tooling / linting | Shellcheck is now a mandatory hook step in the skill repo; active shell scripts were updated to pass linting instead of hiding findings. |
+| 2026-05-28 | open | `J01-145` | Skills / Markdown reduction | The second reduction pass removes hook-checkable detailed checklists from shared and project skills; the skills keep scope, canonical flows, authoritative sources, and decisions that cannot be automated. |
 
 ## Verification
 
@@ -59,6 +60,7 @@ Canonical public working note for ongoing documentation maintenance in
 | Pre-commit hook | Hook template is versioned and installable through a setup script | `.agents/skills/lebenslauf-web-vorlage/scripts/hooks/pre-commit`, `scripts/install-hooks.sh` | done |
 | Skill hygiene | Frontmatter, unique names, links, script references, `tools-python`, and project-free shared rules are checked automatically | `.agents/skills/lebenslauf-web-vorlage/scripts/verify-skills.sh` | done |
 | Shellcheck | Active shell scripts pass Shellcheck and the hook blocks new findings | `.agents/skills/lebenslauf-web-vorlage/scripts/hooks/pre-commit` | done |
+| Skill Markdown reduction | Hook-checkable detailed rules no longer appear as operational checklists in the affected skills | `.agents/skills/shared/`, `.agents/skills/lebenslauf-web-vorlage/skills/`, `scripts/verify-skills.sh --check-index` | done |
 
 ## Open Points
 
@@ -71,3 +73,4 @@ Canonical public working note for ongoing documentation maintenance in
 - [Programming guidelines]({{ "/en/policies/programmierleitlinien/" | relative_url }})
 - [J01-113 — Rule cleanup]({{ "/en/jira/issues/J01-113/" | relative_url }})
 - [SCRUM Sprint 4]({{ "/en/work/sprints/scrum-sprint-4/" | relative_url }})
+- [SCRUM Sprint 5]({{ "/en/work/sprints/scrum-sprint-5/" | relative_url }})

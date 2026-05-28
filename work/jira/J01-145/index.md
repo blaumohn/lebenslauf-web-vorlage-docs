@@ -9,8 +9,8 @@ jira_key: J01-145
 
 {% include jira-work-context.html %}
 
-Kanonischer öffentlicher Arbeitsstand für laufende Doku-Wartung in
-`SCRUM Sprint 4`.
+Kanonischer öffentlicher Arbeitsstand für laufende Doku-Wartung im aktuellen
+Sprint-Kontext.
 
 ## Ziel
 
@@ -23,11 +23,11 @@ Kanonischer öffentlicher Arbeitsstand für laufende Doku-Wartung in
 
 ## Aktueller Stand
 
-- `J01-145` ist als laufender Sprint-4-Vorgang angelegt.
+- `J01-145` ist als laufender Doku-Wartungsvorgang angelegt.
 - Jira-Metadaten:
   - Status: `In Bearbeitung`
-  - Sprint: `SCRUM Sprint 4`
-  - Labels: `sprint-unplanned`, `docs`, `policy`
+  - Sprints: `SCRUM Sprint 4` (geschlossen), `SCRUM Sprint 5` (aktiv)
+  - Labels: `docs`, `policy`, `sprint-admin`, `sprint-unplanned`
 - Die erste Änderung schärft die Programmierleitlinien unter
   `policies/programmierleitlinien/#fachliche-stilregeln`.
 - `J01-113` bleibt der allgemeine Regelwerks- und Architekturkontext; diese
@@ -45,6 +45,7 @@ Kanonischer öffentlicher Arbeitsstand für laufende Doku-Wartung in
 | 2026-05-12 | offen | `J01-145`, `J01-34` | Jira-Seiten-Sync | Der EN-Sync überschreibt manuell gepflegte englische Jira-Seiten nicht mehr mit generierten DE-Seiten; `J01-34` bleibt nach `prepare-site.sh` englisch. |
 | 2026-05-28 | offen | `J01-145` | Skills / Doku-Hygiene | Lokale Skills werden inventarisiert; Skill-Markdown verweist knapper auf kanonische Quellen und automatisierte Prüfungen; Pre-Commit-Hooks prüfen Skill-Links, Skriptverweise, `tools-python` und Shared-/Projekt-Trennung. |
 | 2026-05-28 | offen | `J01-145` | Skill-Tooling / Linting | Shellcheck ist im Skill-Repo verpflichtender Hook-Bestandteil; aktive Shell-Skripte wurden lintkonform aktualisiert, statt Befunde auszublenden. |
+| 2026-05-28 | offen | `J01-145` | Skills / Markdown-Reduktion | Die zweite Kürzungsrunde entfernt Hook-prüfbare Detailchecklisten aus Shared- und Projekt-Skills; die Skills behalten Geltung, kanonische Abläufe, maßgebliche Quellen und nicht automatisierbare Entscheidungen. |
 
 ## Überprüfung
 
@@ -60,6 +61,7 @@ Kanonischer öffentlicher Arbeitsstand für laufende Doku-Wartung in
 | Pre-Commit-Hook | Hook-Template ist versioniert und per Installationsskript einrichtbar | `.agents/skills/lebenslauf-web-vorlage/scripts/hooks/pre-commit`, `scripts/install-hooks.sh` | erledigt |
 | Skill-Hygiene | Frontmatter, eindeutige Namen, Links, Skriptverweise, `tools-python` und projektfreie Shared-Regeln werden automatisiert geprüft | `.agents/skills/lebenslauf-web-vorlage/scripts/verify-skills.sh` | erledigt |
 | Shellcheck | Aktive Shell-Skripte bestehen Shellcheck und der Hook blockiert neue Befunde | `.agents/skills/lebenslauf-web-vorlage/scripts/hooks/pre-commit` | erledigt |
+| Skill-Markdown-Reduktion | Hook-prüfbare Detailregeln stehen nicht mehr als operative Checklisten in den betroffenen Skills | `.agents/skills/shared/`, `.agents/skills/lebenslauf-web-vorlage/skills/`, `scripts/verify-skills.sh --check-index` | erledigt |
 
 ## Offene Punkte
 
@@ -72,3 +74,4 @@ Kanonischer öffentlicher Arbeitsstand für laufende Doku-Wartung in
 - [Programmierleitlinien]({{ "/de/policies/programmierleitlinien/" | relative_url }})
 - [J01-113 — Regelwerk-Bereinigung]({{ "/de/jira/issues/J01-113/" | relative_url }})
 - [SCRUM Sprint 4]({{ "/de/work/sprints/scrum-sprint-4/" | relative_url }})
+- [SCRUM Sprint 5]({{ "/de/work/sprints/scrum-sprint-5/" | relative_url }})
