@@ -43,6 +43,7 @@ Canonical public working note for ongoing documentation maintenance in
 | 2026-05-12 | open | `J01-145` | Programming guidelines | Domain style rules are split into reviewable subsections; fallbacks are described as separate program-path branches that must not hide errors. |
 | 2026-05-12 | open | `J01-145`, `J01-34` | Jira page sync | The EN sync no longer overwrites manually maintained English Jira pages with generated DE pages; `J01-34` stays English after `prepare-site.sh`. |
 | 2026-05-28 | open | `J01-145` | Skills / documentation hygiene | Local skills are inventoried; skill Markdown points more compactly to canonical sources and automated checks; pre-commit hooks check skill links, script references, `tools-python`, and shared/project separation. |
+| 2026-05-28 | open | `J01-145` | Skill tooling / linting | Shellcheck is now a mandatory hook step in the skill repo; active shell scripts were updated to pass linting instead of hiding findings. |
 
 ## Verification
 
@@ -57,6 +58,7 @@ Canonical public working note for ongoing documentation maintenance in
 | Skill inventory | Local skills are machine-readable and reproducibly generated | `.agents/skills/lebenslauf-web-vorlage/skills/README.md`, `scripts/verify-skills.sh --check-index` | done |
 | Pre-commit hook | Hook template is versioned and installable through a setup script | `.agents/skills/lebenslauf-web-vorlage/scripts/hooks/pre-commit`, `scripts/install-hooks.sh` | done |
 | Skill hygiene | Frontmatter, unique names, links, script references, `tools-python`, and project-free shared rules are checked automatically | `.agents/skills/lebenslauf-web-vorlage/scripts/verify-skills.sh` | done |
+| Shellcheck | Active shell scripts pass Shellcheck and the hook blocks new findings | `.agents/skills/lebenslauf-web-vorlage/scripts/hooks/pre-commit` | done |
 
 ## Open Points
 

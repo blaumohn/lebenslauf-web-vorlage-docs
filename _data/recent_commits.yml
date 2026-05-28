@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/21208250c4a303389c5e6c9538bdce7ee1729781"
   message: 'refactor(deploy): SlotEntry/SlotMap/SlotStore einführen, Task-Adapter trennen (J01-149)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: a46cd7c3e0683d04d6f03d12c43be1f29cf86a32
+  short_sha: a46cd7c
+  datetime: "2026-05-28T11:25:02+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a46cd7c3e0683d04d6f03d12c43be1f29cf86a32"
+  message: 'docs(jira): skill-inventar in wartungsdoku nachziehen (J01-145)'
+- repo: lebenslauf-web-vorlage-docs
   sha: fc9b398a06b3973ee1b240f4cf8196c35d6199b7
   short_sha: fc9b398
   datetime: "2026-05-28T05:15:57+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-05-23T01:08:13+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/1ef62d52f0d1371fc4f017eb397846aa9fddef00"
   message: 'docs(sprint): Sprint 5 Produktion live starten (J01-150)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: c4249266ca992f9124505f1c78148868e63bb567
-  short_sha: c424926
-  datetime: "2026-05-23T00:53:17+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c4249266ca992f9124505f1c78148868e63bb567"
-  message: 'feat(jira-docs): Commit-Sync für Vorgangsseiten ergänzen (J01-143)'

@@ -44,6 +44,7 @@ Kanonischer öffentlicher Arbeitsstand für laufende Doku-Wartung in
 | 2026-05-12 | offen | `J01-145` | Programmierleitlinien | Fachliche Stilregeln sind in prüfbare Unterbereiche gegliedert; Fallbacks werden als eigene Programmpfad-Zweige beschrieben, die Fehler nicht verdecken dürfen. |
 | 2026-05-12 | offen | `J01-145`, `J01-34` | Jira-Seiten-Sync | Der EN-Sync überschreibt manuell gepflegte englische Jira-Seiten nicht mehr mit generierten DE-Seiten; `J01-34` bleibt nach `prepare-site.sh` englisch. |
 | 2026-05-28 | offen | `J01-145` | Skills / Doku-Hygiene | Lokale Skills werden inventarisiert; Skill-Markdown verweist knapper auf kanonische Quellen und automatisierte Prüfungen; Pre-Commit-Hooks prüfen Skill-Links, Skriptverweise, `tools-python` und Shared-/Projekt-Trennung. |
+| 2026-05-28 | offen | `J01-145` | Skill-Tooling / Linting | Shellcheck ist im Skill-Repo verpflichtender Hook-Bestandteil; aktive Shell-Skripte wurden lintkonform aktualisiert, statt Befunde auszublenden. |
 
 ## Überprüfung
 
@@ -58,6 +59,7 @@ Kanonischer öffentlicher Arbeitsstand für laufende Doku-Wartung in
 | Skill-Inventar | Lokale Skills sind maschinenlesbar inventarisiert und reproduzierbar erzeugbar | `.agents/skills/lebenslauf-web-vorlage/skills/README.md`, `scripts/verify-skills.sh --check-index` | erledigt |
 | Pre-Commit-Hook | Hook-Template ist versioniert und per Installationsskript einrichtbar | `.agents/skills/lebenslauf-web-vorlage/scripts/hooks/pre-commit`, `scripts/install-hooks.sh` | erledigt |
 | Skill-Hygiene | Frontmatter, eindeutige Namen, Links, Skriptverweise, `tools-python` und projektfreie Shared-Regeln werden automatisiert geprüft | `.agents/skills/lebenslauf-web-vorlage/scripts/verify-skills.sh` | erledigt |
+| Shellcheck | Aktive Shell-Skripte bestehen Shellcheck und der Hook blockiert neue Befunde | `.agents/skills/lebenslauf-web-vorlage/scripts/hooks/pre-commit` | erledigt |
 
 ## Offene Punkte
 

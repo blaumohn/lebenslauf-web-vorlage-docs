@@ -2536,6 +2536,14 @@
   "J01-145": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "a46cd7c3e0683d04d6f03d12c43be1f29cf86a32",
+      "short_sha": "a46cd7c",
+      "datetime": "2026-05-28T11:25:02+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a46cd7c3e0683d04d6f03d12c43be1f29cf86a32",
+      "subject": "docs(jira): skill-inventar in wartungsdoku nachziehen (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "fc9b398a06b3973ee1b240f4cf8196c35d6199b7",
       "short_sha": "fc9b398",
       "datetime": "2026-05-28T05:15:57+02:00",
