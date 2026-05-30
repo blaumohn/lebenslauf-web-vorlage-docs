@@ -36,6 +36,7 @@ genutzt.
 | Datum | Änderung | Bezug | Bereich | Ergebnis |
 | --- | --- | --- | --- | --- |
 | 2026-05-28 | offen | `J01-151` | Technische Chores | Sammelvorgang für Sprint-5-Chores angelegt; konkrete Chore-Commits tragen künftig `(J01-151)`. |
+| 2026-05-30 | Sitzungsabgleich | `J01-151` | Hauptrepo / Tooling | Codex- und Claude-Sitzungen seit dem letzten Nachtrag zeigen laufende kleine Chores zu Config-Casts, Pfadauflösung, Task-Dispatch, lokaler CI-Dev-Ausgabe und Deploy-Injektion. Die Detailherleitung liegt im `tagebuch`. |
 
 ## Überprüfungsplan
 
@@ -44,6 +45,7 @@ genutzt.
 | Laufender Vorgang | Technische Chores laufen nicht über Doku- oder UI-Sammelvorgänge | `J01-151` | erledigt |
 | Sprint-Zuordnung | Vorgang ist in `SCRUM Sprint 5` sichtbar | Jira Sprint `134` | erledigt |
 | Commit-Zuordnung | Zugehörige Chore-Commits tragen `(J01-151)` | Commit-Titel | offen |
+| Sitzungsprovenienz | Laufende Chores sind gegen Agent-Sitzungen nachvollziehbar | `tagebuch`-Notiz vom 2026-05-30 | erledigt |
 
 ## Links
 

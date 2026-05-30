@@ -1,65 +1,71 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
-  sha: 11231901e16705bbc53d0a65c8803ce36cf71bc9
-  short_sha: 1123190
-  datetime: "2026-05-28T15:55:27+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/11231901e16705bbc53d0a65c8803ce36cf71bc9"
-  message: 'fix(deps): twig/twig auf v3.27.0 angehoben (J01-151)'
+  sha: 89e773e850181d7ef1cd846663e9595ad6b73a27
+  short_sha: 89e773e
+  datetime: "2026-05-30T15:53:47+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/89e773e850181d7ef1cd846663e9595ad6b73a27"
+  message: 'fix(deploy): Inject-Marker auf genau einen Treffer prüfen (J01-64)'
 - repo: lebenslauf-web-vorlage
-  sha: c0fe6360e580bc61c2fcb602651086a9d6517414
-  short_sha: c0fe636
-  datetime: "2026-05-28T15:39:37+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c0fe6360e580bc61c2fcb602651086a9d6517414"
-  message: 'chore(deploy): SFTP_WEBROOT entfernt (J01-64)'
+  sha: ef472e80b2d64b93731b2bb839fe26294503e027
+  short_sha: ef472e8
+  datetime: "2026-05-30T11:37:24+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ef472e80b2d64b93731b2bb839fe26294503e027"
+  message: 'refactor(ci): Klon-Logik in ci_clone_lib auslagern, README-Dev-UX-Test ergänzen (J01-64)'
 - repo: lebenslauf-web-vorlage
-  sha: 7b755a6e5cdb489e4e2536319383a5fadf64c9b2
-  short_sha: 7b755a6
-  datetime: "2026-05-28T14:35:11+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7b755a6e5cdb489e4e2536319383a5fadf64c9b2"
-  message: 'feat(ci): DNS-Fehler im Rollback-Testfall unterdrücken (J01-149)'
+  sha: c8c3d1168d354a14d015d2509939046df69ab096
+  short_sha: c8c3d11
+  datetime: "2026-05-30T00:07:55+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c8c3d1168d354a14d015d2509939046df69ab096"
+  message: 'fix(ci): Arbeitsstand vor Pipeline-Start committen (J01-64)'
 - repo: lebenslauf-web-vorlage
-  sha: 8274af802a13d2c7e847ca99bd219fe61b631a03
-  short_sha: 8274af8
-  datetime: "2026-05-28T06:50:10+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8274af802a13d2c7e847ca99bd219fe61b631a03"
-  message: 'fix(deploy): Smoke-Semantik korrigiert, Logging verbessert, History nach log/ verschoben (J01-149)'
+  sha: f62a4fdea952a99596b47f83c769f734beb6c8a7
+  short_sha: f62a4fd
+  datetime: "2026-05-29T15:00:37+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f62a4fdea952a99596b47f83c769f734beb6c8a7"
+  message: 'refactor(cv): entferne ContentSourceResolver (J01-64)'
 - repo: lebenslauf-web-vorlage
-  sha: 8cd1291342753c699f104e59d2d5e1df5bc37ef9
-  short_sha: 8cd1291
-  datetime: "2026-05-27T20:01:22+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/8cd1291342753c699f104e59d2d5e1df5bc37ef9"
-  message: 'refactor(bootstrap): AppHttpClassLoader einführen, deploy-inject nach index.php verschieben (J01-149)'
+  sha: ae20afed8e919a7943f51c2bd5b03ac79f23065c
+  short_sha: ae20afe
+  datetime: "2026-05-29T14:52:04+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ae20afed8e919a7943f51c2bd5b03ac79f23065c"
+  message: 'test(ci): Token-Smoke für preview-Pipeline ergänzt (J01-64)'
 - repo: lebenslauf-web-vorlage
-  sha: b46298998f2f8bcd3b0424cc09a4686a6b01019b
-  short_sha: b462989
-  datetime: "2026-05-27T02:54:51+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/b46298998f2f8bcd3b0424cc09a4686a6b01019b"
-  message: 'feat(deploy): differenzierter Rollback und CI-Testfall für Recovery (J01-149)'
+  sha: ad8842c20214aead4af409d17b6c20c744636dea
+  short_sha: ad8842c
+  datetime: "2026-05-29T14:22:46+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ad8842c20214aead4af409d17b6c20c744636dea"
+  message: 'fix(task): Fehler-Result bei Handler-Exception schreiben (J01-64)'
 - repo: lebenslauf-web-vorlage
-  sha: 9051b0beea8f6c0d6f61b303bd3e582b42d869ad
-  short_sha: 9051b0b
-  datetime: "2026-05-27T01:10:30+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/9051b0beea8f6c0d6f61b303bd3e582b42d869ad"
-  message: 'refactor: SFTP-Deploy-Modulgrenzen schaerfen (J01-149)'
+  sha: fd31af8b43cf22762fa00f4453f438573f7d99de
+  short_sha: fd31af8
+  datetime: "2026-05-29T12:18:19+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/fd31af8b43cf22762fa00f4453f438573f7d99de"
+  message: 'feat(token): lokale Rotation für Dev-Pipeline ohne Deploy-Phase (J01-64)'
 - repo: lebenslauf-web-vorlage
-  sha: dfaf398cb40db594bf0774e81d0ee431d6e264f4
-  short_sha: dfaf398
-  datetime: "2026-05-26T19:04:12+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dfaf398cb40db594bf0774e81d0ee431d6e264f4"
-  message: 'refactor(deploy): DeployMachine mit Idempotenz und getrenntem Rollback (J01-149)'
+  sha: d6d27f890b13d8d2a0ca84a8662a816e6cdfab28
+  short_sha: d6d27f8
+  datetime: "2026-05-29T12:16:53+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d6d27f890b13d8d2a0ca84a8662a816e6cdfab28"
+  message: 'docs(config): Manifest-Beschreibungen und Standardwerte ergänzen (J01-64)'
 - repo: lebenslauf-web-vorlage
-  sha: f2b443dafc6bc24a7e5fc5f2f17660d5dfd1f5dc
-  short_sha: f2b443d
-  datetime: "2026-05-26T13:21:24+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f2b443dafc6bc24a7e5fc5f2f17660d5dfd1f5dc"
-  message: 'chore(deploy): Slot-Muster von INI nach JSON, History-Leseskript ergänzen (J01-149)'
+  sha: c97be40652c7496673097eb29a2f2b8550e26440
+  short_sha: c97be40
+  datetime: "2026-05-29T12:16:37+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c97be40652c7496673097eb29a2f2b8550e26440"
+  message: 'refactor(task): Dispatch-Ablauf mit SlotStore und app-root verbinden (J01-64)'
 - repo: lebenslauf-web-vorlage
-  sha: 2b1e6cd971950e245203c0a01598aefda6782e2c
-  short_sha: 2b1e6cd
-  datetime: "2026-05-26T13:21:02+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/2b1e6cd971950e245203c0a01598aefda6782e2c"
-  message: 'refactor(ci): Vendor-Slot-Variable durch Deploy-History-Auslesen ersetzen (J01-149)'
+  sha: 487436db803db8802d892b1eea90c4dcd35562f4
+  short_sha: 487436d
+  datetime: "2026-05-29T12:15:20+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/487436db803db8802d892b1eea90c4dcd35562f4"
+  message: 'refactor(cli): appRoot durch Befehl-Kontext aus Application ersetzt (J01-64)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: e9dde9e2b8543903a30d6d0bbd48d3af7e825c6b
+  short_sha: e9dde9e
+  datetime: "2026-05-29T00:33:54+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e9dde9e2b8543903a30d6d0bbd48d3af7e825c6b"
+  message: 'docs(jira): technische chores fuer sprint 5 anlegen (J01-151)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 206ca2b712a1a0dd5fc902ec14e9e4b8244e8cde
   short_sha: 206ca2b
@@ -114,9 +120,3 @@
   datetime: "2026-05-23T23:44:53+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/cbfb77c6ec7257ae5af9055d04cdcd93ecffe441"
   message: 'fix(jira-docs): Commit-Tabelle als Detailsektion rendern (J01-143)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: d3279dde84034ec243980b21fdb039014dd29eed
-  short_sha: d3279dd
-  datetime: "2026-05-23T23:32:00+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/d3279dde84034ec243980b21fdb039014dd29eed"
-  message: 'fix(jira-docs): Inhalts-Schlüssel vor Commit-Tabelle halten (J01-143)'

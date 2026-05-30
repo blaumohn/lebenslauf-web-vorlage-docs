@@ -35,6 +35,7 @@ acceptance scope are excluded. Those need their own issue.
 | Date | Change | Reference | Area | Result |
 | --- | --- | --- | --- | --- |
 | 2026-05-28 | open | `J01-151` | Technical chores | Sprint 5 chore container created; future related chore commits carry `(J01-151)`. |
+| 2026-05-30 | session reconciliation | `J01-151` | main repo / tooling | Codex and Claude sessions since the last follow-up show ongoing small chores for config casts, path resolution, task dispatch, local CI dev output, and deploy injection. The detailed derivation lives in the `tagebuch`. |
 
 ## Verification Plan
 
@@ -43,6 +44,7 @@ acceptance scope are excluded. Those need their own issue.
 | Ongoing issue | Technical chores do not run through documentation or UI container issues | `J01-151` | done |
 | Sprint assignment | Issue is visible in `SCRUM Sprint 5` | Jira sprint `134` | done |
 | Commit assignment | Related chore commits carry `(J01-151)` | Commit titles | open |
+| Session provenance | Ongoing chores are traceable against agent sessions | `tagebuch` note from 2026-05-30 | done |
 
 ## Links
 
