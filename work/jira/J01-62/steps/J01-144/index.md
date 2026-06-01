@@ -19,18 +19,21 @@ Parent: [J01-62]({{ "/de/jira/issues/J01-62/" | relative_url }}).
 
 ## Aktueller Stand
 
-Der erste PR bereitet den CI-Pfad vor:
+Der Deployment-Mail-Pfad ist abgeschlossen.
 
-- statische CI-Infrastrukturwerte für SMTP und SFTP liegen in
-  `docker-compose.ci.yml`
-- der lokale SFTP-Smoke nutzt einen festen CI-Testhostkey und eine feste
-  `SSH_KNOWN_HOST_LINE`
-- der SMTP-Smoke liest Runtime-Konfig über `pipeline_config runtime`
-- der SMTP-Smoke prüft Mailpit direkt mit Auth und TLS, ohne Kopplung an
-  `src/Http`
+Der reale Preview-/Deploy-Betrieb sendet Task-Mails mit Preview-Absender und
+Deploy-Kontext. Ein belegter Empfang zeigt unter anderem:
 
-Der echte Preview-Nachweis mit Mailtrap bleibt offen und kann weitere
-Korrekturen an Environment- oder Workflow-Werten auslösen.
+- Empfänger: `admin@example.test`
+- Absender: `Lebenslauf Seite Preview <noreply@preview.example.test>`
+- Betreff:
+  `[Lebenslauf Seite Preview/Task] Task abgeschlossen:
+  20260528T142343Z-deploy_switch`
+- Inhalt mit App-/Vendor-Slot und `pipeline_run_id`
+
+Damit ist der frühere offene Preview-Mailtrap-Nachweis fachlich erledigt. Die
+nachfolgenden Go-live-Restpunkte liegen nicht mehr in diesem Schritt, sondern
+in `J01-152`, `J01-153` und `J01-154`.
 
 ## Nachtrag 2026-05-14: Pipeline-Spec-Validierung
 
@@ -207,8 +210,8 @@ letzten Deploy-State gespeicherte `deploy_commit`; der aktive
 | Webroot-Schutz | Nur `app-<slot>/public/` wird über den Router ausgeliefert; `src/` und `var/` bleiben gesperrt | `src/resources/deploy-root/`, `tests/py/test_sftp_deploy_state.py` | umgesetzt |
 | SFTP-REPL | Lokale SFTP-Befehle melden verwendete Operationen und ersetzen `sftp-clear-dir.py` | `src/cli/py/deploy/sftp_shell.py`, `tests/py/test_sftp_shell.py` | umgesetzt |
 | Vendor-Wiederverwendung | Vendor-Upload prüft `composer.lock` per `git diff` und `composer.json` per `git show` nur für `autoload`, `install:ci` und `install:deploy`; `vendor-<slot>/.meta` enthält denselben `deploy_commit` | `scripts/sftp-deploy.py`, `tests/py/test_sftp_deploy.py` | umgesetzt |
-| Preview-Mailtrap | Preview-Deployment versendet über Mailtrap mit echten Environment-Werten | ausstehender manueller Preview-Test | offen |
-| Nachkorrektur | Abweichungen aus Mailtrap-Test sind im selben Schritt oder Folge-PR behoben | PR / Nachweisnotiz | offen |
+| Preview-Mailtrap | Preview-Deployment versendet über Mailtrap mit echten Environment-Werten | Empfangene Task-Mail mit Preview-Absender und `deploy_switch`-Kontext | erledigt |
+| Nachkorrektur | Abweichungen aus Mailtrap-Test sind im selben Schritt oder Folge-PR behoben | Keine offene Abweichung aus dem Mailnachweis; neue Go-live-Restpunkte in `J01-152`, `J01-153`, `J01-154` | erledigt |
 
 ## Links
 

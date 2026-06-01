@@ -2954,6 +2954,14 @@
   "J01-151": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "3b7b9edfe6d8c4bebaf5f0d467b11bf8c8f0034c",
+      "short_sha": "3b7b9ed",
+      "datetime": "2026-05-30T22:45:15+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3b7b9edfe6d8c4bebaf5f0d467b11bf8c8f0034c",
+      "subject": "docs(jira): Sitzungsabgleich fuer Chores dokumentieren (J01-151)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "e9dde9e2b8543903a30d6d0bbd48d3af7e825c6b",
       "short_sha": "e9dde9e",
       "datetime": "2026-05-29T00:33:54+02:00",
@@ -3102,6 +3110,38 @@
     }
   ],
   "J01-64": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "40836f550493271c8a28e6456273a75e3f87450d",
+      "short_sha": "40836f5",
+      "datetime": "2026-06-01T12:09:08+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/40836f550493271c8a28e6456273a75e3f87450d",
+      "subject": "refactor(ci): CI-Dienste und Runner nach Rolle umbenennen (J01-64)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "6967361464e61eedec814ce00b05737a895e464c",
+      "short_sha": "6967361",
+      "datetime": "2026-06-01T03:04:12+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/6967361464e61eedec814ce00b05737a895e464c",
+      "subject": "feat(ci): SMTP-Auth-Prüfung als CD-Schritt, CI/CD-Kohärenz bereinigt (J01-64)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "639f1ca43c9b21873b15cb291a1e3e6b710895df",
+      "short_sha": "639f1ca",
+      "datetime": "2026-05-31T00:22:04+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/639f1ca43c9b21873b15cb291a1e3e6b710895df",
+      "subject": "refactor(deploy): PIPELINE aus Branch-Name ableiten statt vars.PIPELINE (J01-64)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "559eb9251c0242db7075e4ec85d36cccde989553",
+      "short_sha": "559eb92",
+      "datetime": "2026-05-31T00:07:47+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/559eb9251c0242db7075e4ec85d36cccde989553",
+      "subject": "feat(deploy): Prod-Pipeline-Config und einheitlicher Deploy-Workflow (J01-64)"
+    },
     {
       "repo": "lebenslauf-web-vorlage",
       "sha": "89e773e850181d7ef1cd846663e9595ad6b73a27",

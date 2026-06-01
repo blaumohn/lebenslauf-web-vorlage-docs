@@ -19,18 +19,21 @@ Parent: [J01-62]({{ "/en/jira/issues/J01-62/" | relative_url }}).
 
 ## Current State
 
-The first PR prepares the CI path:
+The deployment mail path is complete.
 
-- static CI infrastructure values for SMTP and SFTP live in
-  `docker-compose.ci.yml`
-- the local SFTP smoke uses a fixed CI test host key and a fixed
-  `SSH_KNOWN_HOST_LINE`
-- the SMTP smoke reads runtime config through `pipeline_config runtime`
-- the SMTP smoke checks Mailpit directly with auth and TLS, without coupling
-  to `src/Http`
+The real preview/deploy operation sends task mails with the preview sender and
+deploy context. One received mail shows:
 
-The real preview proof with Mailtrap remains open and may trigger further
-corrections to environment or workflow values.
+- recipient: `admin@example.test`
+- sender: `Lebenslauf Seite Preview <noreply@preview.example.test>`
+- subject:
+  `[Lebenslauf Seite Preview/Task] Task abgeschlossen:
+  20260528T142343Z-deploy_switch`
+- body with app/vendor slot and `pipeline_run_id`
+
+The earlier open preview Mailtrap proof is therefore complete. The remaining
+go-live work no longer belongs to this step, but to `J01-152`, `J01-153`, and
+`J01-154`.
 
 ## Follow-up 2026-05-14: Pipeline Spec Validation
 
@@ -177,8 +180,8 @@ used:
 | Deploy switch markers | `deploy_switch` checks app and vendor slot markers through the deployed slot directories and writes `.deploy-state.ini` | `DeploySwitchTaskHandler.php`, `TaskDeployTest.php` | done |
 | Webroot protection | only `app-<slot>/public/` is served through the router; `src/` and `var/` stay denied | `src/resources/deploy-root/`, `tests/py/test_sftp_deploy_state.py` | done |
 | SFTP REPL | local SFTP commands report used operations and replace `sftp-clear-dir.py` | `src/cli/py/deploy/sftp_shell.py`, `tests/py/test_sftp_shell.py` | done |
-| Preview Mailtrap | preview deployment sends through Mailtrap with real environment values | pending manual preview test | open |
-| Follow-up fix | deviations from the Mailtrap test are fixed in this step or a follow-up PR | PR / evidence note | open |
+| Preview Mailtrap | preview deployment sends through Mailtrap with real environment values | Received task mail with preview sender and `deploy_switch` context | done |
+| Follow-up fix | deviations from the Mailtrap test are fixed in this step or a follow-up PR | No open difference from the mail proof; new go-live follow-ups in `J01-152`, `J01-153`, `J01-154` | done |
 
 ## Links
 

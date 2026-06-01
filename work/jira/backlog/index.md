@@ -67,11 +67,14 @@ permalink: /de/jira/backlog/
 ### [J01-7 — Production Deployment]({{ "/de/jira/issues/J01-7/" | relative_url }})
 
 - [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/de/jira/issues/J01-62/" | relative_url }})
-  - [**62-1 Mail im Deployment aktivieren**]({{ "/de/jira/issues/J01-62/steps/J01-144/" | relative_url }}) — Zu erledigen
-  - 62-2 Branch-Mapping festlegen — Zu erledigen
+  - [**62-1 Mail im Deployment aktivieren**]({{ "/de/jira/issues/J01-62/steps/J01-144/" | relative_url }}) — Erledigt
+  - 62-2 Branch-Mapping festlegen — Erledigt
   - [**62-2 DeployPhase-Enum und DeployMachine-Skeleton implementieren**]({{ "/de/jira/issues/J01-148/" | relative_url }}) — Erledigt
-  - 62-3 Environment aktivieren — Zu erledigen
+  - 62-3 Environment aktivieren — Erledigt
   - [**62-3 RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen**]({{ "/de/jira/issues/J01-149/" | relative_url }}) — In Bearbeitung
+  - 62-7 CI-Inhalts-YAML fuer Prod-Build bereitstellen — Zu erledigen
+  - 62-8 Home- und Index-Inhalt aus Seitendaten ableiten — Zu erledigen
+  - 62-9 Publish-Pfad und laufende Inhaltsaenderungen bewerten — Zu erledigen
   - Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1) — In Bearbeitung
 - [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/de/jira/issues/J01-65/" | relative_url }})
   - 65-1 Artefaktliste festlegen — Zu erledigen
