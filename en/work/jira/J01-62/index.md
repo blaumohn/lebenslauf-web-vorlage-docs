@@ -51,8 +51,8 @@ Smoke and runbook topics remain in the existing production lines `J01-65` and
 - [**62-1 Mail im Deployment aktivieren**]({{ "/en/jira/issues/J01-62/steps/J01-144/" | relative_url }}) — Done
 - **62-2 Branch-Mapping festlegen** — Done
 - **62-3 Environment aktivieren** — Done
-- **62-4 Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1)** — In Progress
-- **62-5 DeployPhase-Enum und DeployMachine-Skeleton implementieren** — Done
+- [**62-4 Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1)**]({{ "/en/jira/issues/J01-147/" | relative_url }}) — In Progress
+- [**62-5 DeployPhase-Enum und DeployMachine-Skeleton implementieren**]({{ "/en/jira/issues/J01-148/" | relative_url }}) — Done
 - [**62-6 RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen**]({{ "/en/jira/issues/J01-149/" | relative_url }}) — In Progress
 - **62-7 CI-Inhalts-YAML fuer Prod-Build bereitstellen** — To Do
 - **62-8 Home- und Index-Inhalt aus Seitendaten ableiten** — To Do
