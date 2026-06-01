@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ad8842c20214aead4af409d17b6c20c744636dea"
   message: 'fix(task): Fehler-Result bei Handler-Exception schreiben (J01-64)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: 53af2a498270ea7a8c05396f44fa65427bf38131
+  short_sha: 53af2a4
+  datetime: "2026-06-01T15:58:27+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/53af2a498270ea7a8c05396f44fa65427bf38131"
+  message: 'docs(jira): EN-Schrittseiten fuer J01-62 ergaenzen (J01-62)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 193f6df6cf51eae1ac2093d692d175b299768893
   short_sha: 193f6df
   datetime: "2026-06-01T15:52:26+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-05-28T05:15:57+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f21bdfb5be4a3644a9b9468fc7902d03c6ba2b0a"
   message: 'fix(jira-docs): fehlende en-linkziele automatisiert entlinken (J01-145)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 4189bc444b25c3f6392a63df901fd092a422a856
-  short_sha: 4189bc4
-  datetime: "2026-05-27T19:54:51+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/4189bc444b25c3f6392a63df901fd092a422a856"
-  message: 'fix(jira-docs): defekte Links lokal und öffentlich lesbar machen (J01-145)'

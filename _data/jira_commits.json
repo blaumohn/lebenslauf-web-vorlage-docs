@@ -3102,6 +3102,14 @@
   "J01-62": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "53af2a498270ea7a8c05396f44fa65427bf38131",
+      "short_sha": "53af2a4",
+      "datetime": "2026-06-01T15:58:27+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/53af2a498270ea7a8c05396f44fa65427bf38131",
+      "subject": "docs(jira): EN-Schrittseiten fuer J01-62 ergaenzen (J01-62)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "193f6df6cf51eae1ac2093d692d175b299768893",
       "short_sha": "193f6df",
       "datetime": "2026-06-01T15:52:26+02:00",

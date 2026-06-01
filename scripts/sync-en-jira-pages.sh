@@ -39,15 +39,9 @@ python_for_sync() {
   return 1
 }
 
-delete_generated_en_pages() {
-  find en/work/jira -name '*.md' 2>/dev/null | while read -r file; do
-    if is_generated_file "$file"; then
-      rm -f "$file"
-    fi
-  done
-}
-
 sync_generated_pages() {
+  expected_file=$1
+
   find work/jira -name '*.md' | while read -r src; do
     if ! is_generated_file "$src"; then
       continue
@@ -69,9 +63,16 @@ sync_generated_pages() {
         ;;
     esac
 
+    printf '%s\n' "$dest" >>"$expected_file"
     mkdir -p "$(dirname "$dest")"
     if ! is_managed_en_file "$dest"; then
       continue
+    fi
+
+    old_file=''
+    if [ -f "$dest" ]; then
+      old_file=$(mktemp)
+      cp "$dest" "$old_file"
     fi
 
     cp "$src" "$dest"
@@ -93,6 +94,8 @@ sync_generated_pages() {
       s/Unklassifiziert/Unclassified/g;
       s/Admin \/ Rahmen/Admin \/ Framework/g;
       s/Historie/History/g;
+      s/## Aktueller Stand/## Current State/g;
+      s/## Überprüfungsplan/## Verification Plan/g;
       s/## Angaben/## Details/g;
       s/## Beschreibung/## Description/g;
       s/## Jira-Zustandsbild/## Jira state snapshot/g;
@@ -113,6 +116,77 @@ sync_generated_pages() {
       s/Keine E-Mail-Adressen\./No email addresses\./g;
       s/Keine Jira-Cloud-Links\./No Jira Cloud links\./g;
     ' "$dest"
+
+    if [ -n "$old_file" ]; then
+      restore_preserved_en_sections "$old_file" "$dest"
+      rm -f "$old_file"
+    fi
+  done
+}
+
+restore_preserved_en_sections() {
+  old_file=$1
+  dest=$2
+
+  "$(python_for_sync)" - "$old_file" "$dest" <<'PY'
+from pathlib import Path
+import re
+import sys
+
+old_path = Path(sys.argv[1])
+dest_path = Path(sys.argv[2])
+old_text = old_path.read_text(encoding="utf-8")
+dest_text = dest_path.read_text(encoding="utf-8")
+
+
+def section_pattern(headings):
+    names = "|".join(re.escape(heading) for heading in headings)
+    return re.compile(rf"^## ({names})\n.*?(?=^## |\Z)", re.M | re.S)
+
+
+def first_section(text, headings):
+    match = section_pattern(headings).search(text)
+    return match.group(0) if match else None
+
+
+def replace_section(text, headings, replacement):
+    pattern = section_pattern(headings)
+    if pattern.search(text):
+        return pattern.sub(replacement.rstrip() + "\n\n", text, count=1)
+
+    marker = re.search(r"^## Subtasks\n", text, re.M)
+    if marker:
+        return text[:marker.start()] + replacement.rstrip() + "\n\n" + text[marker.start():]
+
+    return text.rstrip() + "\n\n" + replacement.rstrip() + "\n"
+
+
+sections = [
+    (["Description", "Beschreibung"], ["Description"]),
+    (["Current State", "Aktueller Stand"], ["Current State"]),
+    (["Verification Plan", "Überprüfungsplan"], ["Verification Plan"]),
+]
+
+for target_headings, source_headings in sections:
+    old_section = first_section(old_text, source_headings)
+    if old_section:
+        dest_text = replace_section(dest_text, target_headings, old_section)
+
+dest_path.write_text(dest_text, encoding="utf-8")
+PY
+}
+
+cleanup_stale_generated_en_pages() {
+  expected_file=$1
+
+  find en/work/jira -name '*.md' 2>/dev/null | while read -r file; do
+    if ! is_generated_file "$file"; then
+      continue
+    fi
+
+    if ! grep -Fxq "$file" "$expected_file"; then
+      rm -f "$file"
+    fi
   done
 }
 
@@ -183,8 +257,11 @@ PY
 }
 
 main() {
-  delete_generated_en_pages
-  sync_generated_pages
+  expected_file=$(mktemp)
+  trap 'rm -f "$expected_file"' EXIT
+
+  sync_generated_pages "$expected_file"
+  cleanup_stale_generated_en_pages "$expected_file"
   sanitize_generated_en_links
 }
 
