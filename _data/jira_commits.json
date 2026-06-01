@@ -3102,6 +3102,14 @@
   "J01-62": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "23542deeb8d77826d7ec60cf08c06bdd468092d8",
+      "short_sha": "23542de",
+      "datetime": "2026-06-01T14:29:46+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/23542deeb8d77826d7ec60cf08c06bdd468092d8",
+      "subject": "docs(jira): J01-62-Go-live-Stand nachziehen (J01-62)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "6375f81c7fa330905531b35e1da2ca1ed7963441",
       "short_sha": "6375f81",
       "datetime": "2026-05-09T23:12:19+02:00",

@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ad8842c20214aead4af409d17b6c20c744636dea"
   message: 'fix(task): Fehler-Result bei Handler-Exception schreiben (J01-64)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: 23542deeb8d77826d7ec60cf08c06bdd468092d8
+  short_sha: 23542de
+  datetime: "2026-06-01T14:29:46+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/23542deeb8d77826d7ec60cf08c06bdd468092d8"
+  message: 'docs(jira): J01-62-Go-live-Stand nachziehen (J01-62)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 3b7b9edfe6d8c4bebaf5f0d467b11bf8c8f0034c
   short_sha: 3b7b9ed
   datetime: "2026-05-30T22:45:15+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-05-27T02:49:19+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7e17638b5422de50f7d89fbe82f14fe9b02f486b"
   message: 'docs(deploy): EN-Arbeitsdoku fuer J01-149 ergaenzen (J01-149)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 95225613516f248997a659867c3c8d8a99bf2570
-  short_sha: 9522561
-  datetime: "2026-05-27T01:12:57+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/95225613516f248997a659867c3c8d8a99bf2570"
-  message: 'docs(deploy): SFTP-Deploy-Modultrennung dokumentieren (J01-149)'

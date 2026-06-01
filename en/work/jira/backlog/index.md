@@ -69,13 +69,13 @@ Public Jira area (without Jira Cloud links).
 - [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/en/jira/issues/J01-62/" | relative_url }})
   - [**62-1 Mail im Deployment aktivieren**]({{ "/en/jira/issues/J01-62/steps/J01-144/" | relative_url }}) — Done
   - 62-2 Branch-Mapping festlegen — Done
-  - **62-2 DeployPhase-Enum und DeployMachine-Skeleton implementieren** — Done
   - 62-3 Environment aktivieren — Done
-  - [**62-3 RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen**]({{ "/en/jira/issues/J01-149/" | relative_url }}) — In Progress
+  - **62-4 Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1)** — In Progress
+  - **62-5 DeployPhase-Enum und DeployMachine-Skeleton implementieren** — Done
+  - [**62-6 RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen**]({{ "/en/jira/issues/J01-149/" | relative_url }}) — In Progress
   - 62-7 CI-Inhalts-YAML fuer Prod-Build bereitstellen — To Do
   - 62-8 Home- und Index-Inhalt aus Seitendaten ableiten — To Do
   - 62-9 Publish-Pfad und laufende Inhaltsaenderungen bewerten — To Do
-  - Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1) — In Progress
 - [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/en/jira/issues/J01-65/" | relative_url }})
   - 65-1 Artefaktliste festlegen — To Do
   - 65-2 Post-Deploy-Smoke definieren — To Do

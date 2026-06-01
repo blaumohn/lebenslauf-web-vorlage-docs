@@ -5,7 +5,7 @@ permalink: /en/jira/issues/J01-62/
 jira_key: J01-62
 
 ---
-<!-- generated:jira:subtasks_cksum=1051345241 -->
+<!-- generated:jira:subtasks_cksum=337646038 -->
 
 {% include jira-state-head.html %}
 
@@ -50,13 +50,13 @@ Smoke and runbook topics remain in the existing production lines `J01-65` and
 
 - [**62-1 Mail im Deployment aktivieren**]({{ "/en/jira/issues/J01-62/steps/J01-144/" | relative_url }}) — Done
 - **62-2 Branch-Mapping festlegen** — Done
-- **62-2 DeployPhase-Enum und DeployMachine-Skeleton implementieren** — Done
 - **62-3 Environment aktivieren** — Done
-- [**62-3 RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen**]({{ "/en/jira/issues/J01-149/" | relative_url }}) — In Progress
+- **62-4 Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1)** — In Progress
+- **62-5 DeployPhase-Enum und DeployMachine-Skeleton implementieren** — Done
+- [**62-6 RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen**]({{ "/en/jira/issues/J01-149/" | relative_url }}) — In Progress
 - **62-7 CI-Inhalts-YAML fuer Prod-Build bereitstellen** — To Do
 - **62-8 Home- und Index-Inhalt aus Seitendaten ableiten** — To Do
 - **62-9 Publish-Pfad und laufende Inhaltsaenderungen bewerten** — To Do
-- **Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1)** — In Progress
 
 ## Verification Plan
 
