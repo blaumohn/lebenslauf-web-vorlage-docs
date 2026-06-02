@@ -69,6 +69,10 @@ Arbeitsteilung zwischen Jira und GitHub Pages zu verwischen.
   einen validierten JSON-Vorgangsentwurf über einen `npx codex`-Adapter. Der
   Betrieb nutzt KI nur für Formulierungsvorschläge und schreibt nicht nach
   Jira.
+- `project-admin.sh page-draft --assist --issue <KEY>` erzeugt jetzt einen
+  validierten JSON-Seitenentwurf für bestehende Jira-Vorgänge. Der Betrieb
+  nutzt Jira-Cache oder Jira Cloud als Quelle und schreibt nicht nach Jira
+  oder in die öffentliche Doku.
 - `project-admin.sh install-user-bin` kann den Einstieg als `j01-admin` nach
   `~/.local/bin` verlinken; der Einstieg löst Symlinks auf und findet dadurch
   weiterhin das Skill-Repo.
@@ -86,6 +90,7 @@ Arbeitsteilung zwischen Jira und GitHub Pages zu verwischen.
 | DE/EN konsistent | EN-Ableitung übernimmt dieselbe Struktur und Begriffe | `/en/jira/issues/...` | offen |
 | Lokale Skill-Erzwingung | KI-Agenten, Hooks und manuelle Checks nutzen denselben Docker-Compose-Prüfweg | `.agents/skills/*/docker-compose.yml`, `scripts/project-admin.sh check` | erledigt |
 | KI-Assistenz für Vorgangsentwürfe | Der Assist-Befehl erzeugt nur validierte JSON-Entwürfe und keine Jira-Schreiboperationen | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/issue-draft.sh` | erledigt |
+| KI-Assistenz für Seitenentwürfe | Der Assist-Befehl erzeugt nur validierte JSON-Seitenentwürfe und keine Jira- oder Doku-Schreiboperationen | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/page-draft.sh` | erledigt |
 
 ## Links
 

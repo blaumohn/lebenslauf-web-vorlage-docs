@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 318d77ead5efc495b96fe6661c4847be32dd7c01
+  short_sha: 318d77e
+  datetime: "2026-06-02T23:26:00+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/318d77ead5efc495b96fe6661c4847be32dd7c01"
+  message: 'feat(ci): Lebenslauf-SFTP-Fetch in CI-Pipeline testen (J01-152)'
+- repo: lebenslauf-web-vorlage
   sha: 40836f550493271c8a28e6456273a75e3f87450d
   short_sha: 40836f5
   datetime: "2026-06-01T12:09:08+02:00"
@@ -54,12 +60,12 @@
   datetime: "2026-05-29T14:52:04+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ae20afed8e919a7943f51c2bd5b03ac79f23065c"
   message: 'test(ci): Token-Smoke für preview-Pipeline ergänzt (J01-64)'
-- repo: lebenslauf-web-vorlage
-  sha: ad8842c20214aead4af409d17b6c20c744636dea
-  short_sha: ad8842c
-  datetime: "2026-05-29T14:22:46+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ad8842c20214aead4af409d17b6c20c744636dea"
-  message: 'fix(task): Fehler-Result bei Handler-Exception schreiben (J01-64)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: c6f23b9c1d5a28a57c5dd73ff389762f96882b21
+  short_sha: c6f23b9
+  datetime: "2026-06-02T12:29:01+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c6f23b9c1d5a28a57c5dd73ff389762f96882b21"
+  message: 'docs(jira): Benutzerbefehl fuer Skill-Admin dokumentieren (J01-116)'
 - repo: lebenslauf-web-vorlage-docs
   sha: f3db394fd406dc1728b9a6fd3c9434200b9c5c98
   short_sha: f3db394
@@ -114,9 +120,3 @@
   datetime: "2026-05-28T12:47:02+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/206ca2b712a1a0dd5fc902ec14e9e4b8244e8cde"
   message: 'docs(jira): skill-markdown-reduktion nachziehen (J01-145)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 804676f9493e4328f4280f3741ed1e5ea667f8bd
-  short_sha: 804676f
-  datetime: "2026-05-28T11:32:55+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/804676f9493e4328f4280f3741ed1e5ea667f8bd"
-  message: 'docs(jira): shellcheck-nachweis ergaenzen (J01-145)'
