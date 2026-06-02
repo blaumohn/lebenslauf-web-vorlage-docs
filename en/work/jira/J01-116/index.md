@@ -61,6 +61,9 @@ clearly again without blurring the split between Jira and GitHub Pages.
 - The project-management skills now use local Docker Compose checks as the
   canonical agent verification path. `project-admin.sh check` runs the same
   Compose path as the skill pre-commit hooks.
+- `project-admin.sh issue-draft --assist --from-note <file>` now creates a
+  validated JSON issue draft through an `npx codex` adapter. The operation uses
+  AI only for wording suggestions and does not write to Jira.
 - Regressions for EN sync and targeted EN language-drift verification are now
   covered by docs and skill tests.
 
@@ -74,6 +77,7 @@ clearly again without blurring the split between Jira and GitHub Pages.
 | Description mirrored | Jira description appears on generated parent pages | public Jira issue pages | open |
 | DE/EN consistent | EN derivation keeps the same structure and terms | `/en/jira/issues/...` | open |
 | Local skill enforcement | KI agents, hooks and manual checks use the same Docker Compose verification path | `.agents/skills/*/docker-compose.yml`, `scripts/project-admin.sh check` | done |
+| AI assistance for issue drafts | The assist command creates only validated JSON drafts and no Jira write operations | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/issue-draft.sh` | done |
 
 ## Links
 

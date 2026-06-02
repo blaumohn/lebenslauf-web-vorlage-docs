@@ -476,6 +476,14 @@
   "J01-116": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "a60eb2869e65cd297819e747a06177f68377bd5c",
+      "short_sha": "a60eb28",
+      "datetime": "2026-06-02T10:36:08+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a60eb2869e65cd297819e747a06177f68377bd5c",
+      "subject": "docs(jira): lokale Skill-Erzwingung dokumentieren (J01-116)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "61e5419fd64c903e7f94399f889496ffd74ead63",
       "short_sha": "61e5419",
       "datetime": "2026-06-01T16:57:05+02:00",

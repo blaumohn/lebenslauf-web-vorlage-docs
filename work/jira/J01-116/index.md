@@ -65,6 +65,10 @@ Arbeitsteilung zwischen Jira und GitHub Pages zu verwischen.
 - Die Projektverwaltungs-Skills haben jetzt lokale Docker-Compose-Checks als
   kanonischen Agenten-Prüfweg. `project-admin.sh check` ruft denselben
   Compose-Pfad auf wie die Skill-Pre-Commit-Hooks.
+- `project-admin.sh issue-draft --assist --from-note <datei>` erzeugt jetzt
+  einen validierten JSON-Vorgangsentwurf über einen `npx codex`-Adapter. Der
+  Betrieb nutzt KI nur für Formulierungsvorschläge und schreibt nicht nach
+  Jira.
 - Regressionen für EN-Sync und gezielte EN-Sprachdrift-Prüfung sind in Docs-
   und Skill-Tests abgesichert.
 
@@ -78,6 +82,7 @@ Arbeitsteilung zwischen Jira und GitHub Pages zu verwischen.
 | Beschreibung gespiegelt | Jira-Description erscheint auf generierten Parent-Seiten | öffentliche Jira-Vorgangsseiten | offen |
 | DE/EN konsistent | EN-Ableitung übernimmt dieselbe Struktur und Begriffe | `/en/jira/issues/...` | offen |
 | Lokale Skill-Erzwingung | KI-Agenten, Hooks und manuelle Checks nutzen denselben Docker-Compose-Prüfweg | `.agents/skills/*/docker-compose.yml`, `scripts/project-admin.sh check` | erledigt |
+| KI-Assistenz für Vorgangsentwürfe | Der Assist-Befehl erzeugt nur validierte JSON-Entwürfe und keine Jira-Schreiboperationen | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/issue-draft.sh` | erledigt |
 
 ## Links
 
