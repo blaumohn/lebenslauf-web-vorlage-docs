@@ -64,6 +64,9 @@ clearly again without blurring the split between Jira and GitHub Pages.
 - `project-admin.sh issue-draft --assist --from-note <file>` now creates a
   validated JSON issue draft through an `npx codex` adapter. The operation uses
   AI only for wording suggestions and does not write to Jira.
+- `project-admin.sh install-user-bin` can link the entry point as `j01-admin`
+  into `~/.local/bin`; the entry point resolves symlinks and still finds the
+  skill repository.
 - Regressions for EN sync and targeted EN language-drift verification are now
   covered by docs and skill tests.
 

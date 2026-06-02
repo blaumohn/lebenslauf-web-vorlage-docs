@@ -69,6 +69,9 @@ Arbeitsteilung zwischen Jira und GitHub Pages zu verwischen.
   einen validierten JSON-Vorgangsentwurf über einen `npx codex`-Adapter. Der
   Betrieb nutzt KI nur für Formulierungsvorschläge und schreibt nicht nach
   Jira.
+- `project-admin.sh install-user-bin` kann den Einstieg als `j01-admin` nach
+  `~/.local/bin` verlinken; der Einstieg löst Symlinks auf und findet dadurch
+  weiterhin das Skill-Repo.
 - Regressionen für EN-Sync und gezielte EN-Sprachdrift-Prüfung sind in Docs-
   und Skill-Tests abgesichert.
 
