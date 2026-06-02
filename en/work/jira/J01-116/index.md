@@ -58,6 +58,11 @@ clearly again without blurring the split between Jira and GitHub Pages.
   state and relations block.
 - The separate context block below that is now reserved for real page
   navigation such as public steps.
+- The project-management skills now use local Docker Compose checks as the
+  canonical agent verification path. `project-admin.sh check` runs the same
+  Compose path as the skill pre-commit hooks.
+- Regressions for EN sync and targeted EN language-drift verification are now
+  covered by docs and skill tests.
 
 ## Verification plan
 
@@ -68,6 +73,7 @@ clearly again without blurring the split between Jira and GitHub Pages.
 | Relations visible | Issue pages show Jira issue links in the top state and relations block | `_data/jira_pages/issues.json`, `_includes/jira-state-head.html`, issue pages | open |
 | Description mirrored | Jira description appears on generated parent pages | public Jira issue pages | open |
 | DE/EN consistent | EN derivation keeps the same structure and terms | `/en/jira/issues/...` | open |
+| Local skill enforcement | KI agents, hooks and manual checks use the same Docker Compose verification path | `.agents/skills/*/docker-compose.yml`, `scripts/project-admin.sh check` | done |
 
 ## Links
 

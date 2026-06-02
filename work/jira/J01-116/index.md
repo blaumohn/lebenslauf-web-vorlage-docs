@@ -62,6 +62,11 @@ Arbeitsteilung zwischen Jira und GitHub Pages zu verwischen.
   einzigen oberen Zustands- und Beziehungsblock.
 - Der separate Kontextblock unterhalb davon zeigt nur noch echte
   Seiten-Navigation wie öffentliche Schritte.
+- Die Projektverwaltungs-Skills haben jetzt lokale Docker-Compose-Checks als
+  kanonischen Agenten-Prüfweg. `project-admin.sh check` ruft denselben
+  Compose-Pfad auf wie die Skill-Pre-Commit-Hooks.
+- Regressionen für EN-Sync und gezielte EN-Sprachdrift-Prüfung sind in Docs-
+  und Skill-Tests abgesichert.
 
 ## Überprüfungsplan
 
@@ -72,6 +77,7 @@ Arbeitsteilung zwischen Jira und GitHub Pages zu verwischen.
 | Verknüpfungen sichtbar | Vorgangsseiten zeigen Jira-Issue-Links im oberen Zustands- und Beziehungsblock | `_data/jira_pages/issues.json`, `_includes/jira-state-head.html`, Vorgangsseiten | offen |
 | Beschreibung gespiegelt | Jira-Description erscheint auf generierten Parent-Seiten | öffentliche Jira-Vorgangsseiten | offen |
 | DE/EN konsistent | EN-Ableitung übernimmt dieselbe Struktur und Begriffe | `/en/jira/issues/...` | offen |
+| Lokale Skill-Erzwingung | KI-Agenten, Hooks und manuelle Checks nutzen denselben Docker-Compose-Prüfweg | `.agents/skills/*/docker-compose.yml`, `scripts/project-admin.sh check` | erledigt |
 
 ## Links
 

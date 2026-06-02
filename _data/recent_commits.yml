@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ad8842c20214aead4af409d17b6c20c744636dea"
   message: 'fix(task): Fehler-Result bei Handler-Exception schreiben (J01-64)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: 61e5419fd64c903e7f94399f889496ffd74ead63
+  short_sha: 61e5419
+  datetime: "2026-06-01T16:57:05+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/61e5419fd64c903e7f94399f889496ffd74ead63"
+  message: 'test(jira): EN-Sync-Regression absichern (J01-116)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 53af2a498270ea7a8c05396f44fa65427bf38131
   short_sha: 53af2a4
   datetime: "2026-06-01T15:58:27+02:00"
@@ -113,10 +119,4 @@
   short_sha: fc9b398
   datetime: "2026-05-28T05:15:57+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/fc9b398a06b3973ee1b240f4cf8196c35d6199b7"
-  message: 'fix(jira-docs): fehlende en-linkziele automatisiert entlinken (J01-145)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: f21bdfb5be4a3644a9b9468fc7902d03c6ba2b0a
-  short_sha: f21bdfb
-  datetime: "2026-05-28T05:15:57+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f21bdfb5be4a3644a9b9468fc7902d03c6ba2b0a"
   message: 'fix(jira-docs): fehlende en-linkziele automatisiert entlinken (J01-145)'

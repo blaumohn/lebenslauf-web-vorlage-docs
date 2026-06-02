@@ -476,6 +476,14 @@
   "J01-116": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "61e5419fd64c903e7f94399f889496ffd74ead63",
+      "short_sha": "61e5419",
+      "datetime": "2026-06-01T16:57:05+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/61e5419fd64c903e7f94399f889496ffd74ead63",
+      "subject": "test(jira): EN-Sync-Regression absichern (J01-116)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "b2aa800aa0ad548be09d70509697ba353bc55617",
       "short_sha": "b2aa800",
       "datetime": "2026-03-24T14:00:44+01:00",
