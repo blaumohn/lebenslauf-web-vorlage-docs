@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ae20afed8e919a7943f51c2bd5b03ac79f23065c"
   message: 'test(ci): Token-Smoke für preview-Pipeline ergänzt (J01-64)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: 3859b000fd622e28aabc6479cbd1dc3098e00c09
+  short_sha: 3859b00
+  datetime: "2026-06-03T00:36:10+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3859b000fd622e28aabc6479cbd1dc3098e00c09"
+  message: 'docs(jira): Seitenentwurf-Befehl dokumentieren (J01-116)'
+- repo: lebenslauf-web-vorlage-docs
   sha: c6f23b9c1d5a28a57c5dd73ff389762f96882b21
   short_sha: c6f23b9
   datetime: "2026-06-02T12:29:01+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-05-29T00:33:54+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e9dde9e2b8543903a30d6d0bbd48d3af7e825c6b"
   message: 'docs(jira): technische chores fuer sprint 5 anlegen (J01-151)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 206ca2b712a1a0dd5fc902ec14e9e4b8244e8cde
-  short_sha: 206ca2b
-  datetime: "2026-05-28T12:47:02+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/206ca2b712a1a0dd5fc902ec14e9e4b8244e8cde"
-  message: 'docs(jira): skill-markdown-reduktion nachziehen (J01-145)'

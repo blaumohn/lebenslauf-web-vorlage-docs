@@ -73,6 +73,10 @@ Arbeitsteilung zwischen Jira und GitHub Pages zu verwischen.
   validierten JSON-Seitenentwurf für bestehende Jira-Vorgänge. Der Betrieb
   nutzt Jira-Cache oder Jira Cloud als Quelle und schreibt nicht nach Jira
   oder in die öffentliche Doku.
+- `project-admin.sh page-apply --draft <datei>` wendet einen geprüften
+  Seitenentwurf kontrolliert an: Der Befehl validiert JSON, Zielpfad und
+  Permalink, schreibt nur fehlende Zielseiten und startet danach Sync und
+  gezielte Verifikation für Vorgang und Parent.
 - `project-admin.sh install-user-bin` kann den Einstieg als `j01-admin` nach
   `~/.local/bin` verlinken; der Einstieg löst Symlinks auf und findet dadurch
   weiterhin das Skill-Repo.
@@ -91,6 +95,7 @@ Arbeitsteilung zwischen Jira und GitHub Pages zu verwischen.
 | Lokale Skill-Erzwingung | KI-Agenten, Hooks und manuelle Checks nutzen denselben Docker-Compose-Prüfweg | `.agents/skills/*/docker-compose.yml`, `scripts/project-admin.sh check` | erledigt |
 | KI-Assistenz für Vorgangsentwürfe | Der Assist-Befehl erzeugt nur validierte JSON-Entwürfe und keine Jira-Schreiboperationen | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/issue-draft.sh` | erledigt |
 | KI-Assistenz für Seitenentwürfe | Der Assist-Befehl erzeugt nur validierte JSON-Seitenentwürfe und keine Jira- oder Doku-Schreiboperationen | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/page-draft.sh` | erledigt |
+| Apply-Schritt für Seitenentwürfe | Geprüfte Seitenentwürfe werden nur auf sichere, fehlende Zielpfade geschrieben; Sync und Verifikation laufen anschließend für Vorgang und Parent | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/page-apply.sh` | erledigt |
 
 ## Links
 

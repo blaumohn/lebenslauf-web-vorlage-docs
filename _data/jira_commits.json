@@ -476,6 +476,14 @@
   "J01-116": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "3859b000fd622e28aabc6479cbd1dc3098e00c09",
+      "short_sha": "3859b00",
+      "datetime": "2026-06-03T00:36:10+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3859b000fd622e28aabc6479cbd1dc3098e00c09",
+      "subject": "docs(jira): Seitenentwurf-Befehl dokumentieren (J01-116)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "c6f23b9c1d5a28a57c5dd73ff389762f96882b21",
       "short_sha": "c6f23b9",
       "datetime": "2026-06-02T12:29:01+02:00",

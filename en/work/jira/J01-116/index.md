@@ -67,6 +67,10 @@ clearly again without blurring the split between Jira and GitHub Pages.
 - `project-admin.sh page-draft --assist --issue <KEY>` now creates a validated
   JSON page draft for existing Jira issues. The operation uses the Jira cache
   or Jira Cloud as source and does not write to Jira or public docs.
+- `project-admin.sh page-apply --draft <file>` now applies a reviewed page
+  draft in a controlled way: it validates JSON, target path and permalink,
+  writes only missing target pages, then starts sync and targeted verification
+  for the issue and its parent.
 - `project-admin.sh install-user-bin` can link the entry point as `j01-admin`
   into `~/.local/bin`; the entry point resolves symlinks and still finds the
   skill repository.
@@ -85,6 +89,7 @@ clearly again without blurring the split between Jira and GitHub Pages.
 | Local skill enforcement | KI agents, hooks and manual checks use the same Docker Compose verification path | `.agents/skills/*/docker-compose.yml`, `scripts/project-admin.sh check` | done |
 | AI assistance for issue drafts | The assist command creates only validated JSON drafts and no Jira write operations | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/issue-draft.sh` | done |
 | AI assistance for page drafts | The assist command creates only validated JSON page drafts and no Jira or docs write operations | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/page-draft.sh` | done |
+| Apply step for page drafts | Reviewed page drafts are written only to safe, missing target paths; sync and verification then run for the issue and parent | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/page-apply.sh` | done |
 
 ## Links
 
