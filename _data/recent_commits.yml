@@ -1,6 +1,18 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: 5ad711f576cb0ce2a826a97d6661020e772f10bc
+  short_sha: 5ad711f
+  datetime: "2026-06-03T02:05:25+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/5ad711f576cb0ce2a826a97d6661020e772f10bc"
+  message: 'feat(publish): publish-Befehl mit Task-Dispatcher und atomarem HTML-Schreiben (J01-153)'
+- repo: lebenslauf-web-vorlage
+  sha: 33768cf5885eb2965169d66a58050b5d8c9b342e
+  short_sha: 33768cf
+  datetime: "2026-06-03T02:05:15+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/33768cf5885eb2965169d66a58050b5d8c9b342e"
+  message: 'refactor(deploy): SftpTreeUploader in generisch und SftpDeployUploader aufteilen (J01-153)'
+- repo: lebenslauf-web-vorlage
   sha: 318d77ead5efc495b96fe6661c4847be32dd7c01
   short_sha: 318d77e
   datetime: "2026-06-02T23:26:00+02:00"
@@ -48,18 +60,12 @@
   datetime: "2026-05-30T00:07:55+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c8c3d1168d354a14d015d2509939046df69ab096"
   message: 'fix(ci): Arbeitsstand vor Pipeline-Start committen (J01-64)'
-- repo: lebenslauf-web-vorlage
-  sha: f62a4fdea952a99596b47f83c769f734beb6c8a7
-  short_sha: f62a4fd
-  datetime: "2026-05-29T15:00:37+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/f62a4fdea952a99596b47f83c769f734beb6c8a7"
-  message: 'refactor(cv): entferne ContentSourceResolver (J01-64)'
-- repo: lebenslauf-web-vorlage
-  sha: ae20afed8e919a7943f51c2bd5b03ac79f23065c
-  short_sha: ae20afe
-  datetime: "2026-05-29T14:52:04+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ae20afed8e919a7943f51c2bd5b03ac79f23065c"
-  message: 'test(ci): Token-Smoke für preview-Pipeline ergänzt (J01-64)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 35912af29857d19c93c5d3985d78ef50ee1938a4
+  short_sha: 35912af
+  datetime: "2026-06-03T01:47:14+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/35912af29857d19c93c5d3985d78ef50ee1938a4"
+  message: 'docs(jira): Page-Apply-Befehl dokumentieren (J01-116)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 3859b000fd622e28aabc6479cbd1dc3098e00c09
   short_sha: 3859b00
@@ -114,9 +120,3 @@
   datetime: "2026-05-30T22:45:15+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3b7b9edfe6d8c4bebaf5f0d467b11bf8c8f0034c"
   message: 'docs(jira): Sitzungsabgleich fuer Chores dokumentieren (J01-151)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: e9dde9e2b8543903a30d6d0bbd48d3af7e825c6b
-  short_sha: e9dde9e
-  datetime: "2026-05-29T00:33:54+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/e9dde9e2b8543903a30d6d0bbd48d3af7e825c6b"
-  message: 'docs(jira): technische chores fuer sprint 5 anlegen (J01-151)'

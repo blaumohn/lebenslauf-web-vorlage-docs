@@ -77,6 +77,10 @@ Arbeitsteilung zwischen Jira und GitHub Pages zu verwischen.
   Seitenentwurf kontrolliert an: Der Befehl validiert JSON, Zielpfad und
   Permalink, schreibt nur fehlende Zielseiten und startet danach Sync und
   gezielte Verifikation für Vorgang und Parent.
+- Einzelne Jira-Cache-Updates übernehmen Fehlerantworten wie `401 Unauthorized`
+  nicht mehr als Vorgangsdaten. Eine Einzelantwort muss den angeforderten
+  Jira-Key und einen Issue-Typ enthalten, bevor `issues.json` oder
+  `subtasks.json` verändert werden.
 - `project-admin.sh install-user-bin` kann den Einstieg als `j01-admin` nach
   `~/.local/bin` verlinken; der Einstieg löst Symlinks auf und findet dadurch
   weiterhin das Skill-Repo.
@@ -96,6 +100,7 @@ Arbeitsteilung zwischen Jira und GitHub Pages zu verwischen.
 | KI-Assistenz für Vorgangsentwürfe | Der Assist-Befehl erzeugt nur validierte JSON-Entwürfe und keine Jira-Schreiboperationen | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/issue-draft.sh` | erledigt |
 | KI-Assistenz für Seitenentwürfe | Der Assist-Befehl erzeugt nur validierte JSON-Seitenentwürfe und keine Jira- oder Doku-Schreiboperationen | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/page-draft.sh` | erledigt |
 | Apply-Schritt für Seitenentwürfe | Geprüfte Seitenentwürfe werden nur auf sichere, fehlende Zielpfade geschrieben; Sync und Verifikation laufen anschließend für Vorgang und Parent | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/page-apply.sh` | erledigt |
+| Cache-Fehlerantworten | Jira-Fehlerantworten werden bei Einzel-Updates blockiert und nicht in den lokalen Sync-Cache geschrieben | `.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-jira-sync-cache.sh`, `tests/update-jira-sync-cache.sh` | erledigt |
 
 ## Links
 

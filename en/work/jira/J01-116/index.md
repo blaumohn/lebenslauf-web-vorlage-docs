@@ -71,6 +71,10 @@ clearly again without blurring the split between Jira and GitHub Pages.
   draft in a controlled way: it validates JSON, target path and permalink,
   writes only missing target pages, then starts sync and targeted verification
   for the issue and its parent.
+- Individual Jira cache updates no longer accept error responses such as
+  `401 Unauthorized` as issue data. A single response must contain the
+  requested Jira key and an issue type before `issues.json` or `subtasks.json`
+  is changed.
 - `project-admin.sh install-user-bin` can link the entry point as `j01-admin`
   into `~/.local/bin`; the entry point resolves symlinks and still finds the
   skill repository.
@@ -90,6 +94,7 @@ clearly again without blurring the split between Jira and GitHub Pages.
 | AI assistance for issue drafts | The assist command creates only validated JSON drafts and no Jira write operations | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/issue-draft.sh` | done |
 | AI assistance for page drafts | The assist command creates only validated JSON page drafts and no Jira or docs write operations | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/page-draft.sh` | done |
 | Apply step for page drafts | Reviewed page drafts are written only to safe, missing target paths; sync and verification then run for the issue and parent | `.agents/skills/lebenslauf-web-vorlage/scripts/project-admin.sh`, `tests/page-apply.sh` | done |
+| Cache error responses | Jira error responses are blocked during single updates and are not written into the local sync cache | `.agents/skills/lebenslauf-web-vorlage/shared-tooling/jira-pages/update-jira-sync-cache.sh`, `tests/update-jira-sync-cache.sh` | done |
 
 ## Links
 

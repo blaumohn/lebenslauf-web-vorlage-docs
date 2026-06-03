@@ -476,6 +476,14 @@
   "J01-116": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "35912af29857d19c93c5d3985d78ef50ee1938a4",
+      "short_sha": "35912af",
+      "datetime": "2026-06-03T01:47:14+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/35912af29857d19c93c5d3985d78ef50ee1938a4",
+      "subject": "docs(jira): Page-Apply-Befehl dokumentieren (J01-116)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "3859b000fd622e28aabc6479cbd1dc3098e00c09",
       "short_sha": "3859b00",
       "datetime": "2026-06-03T00:36:10+02:00",
@@ -2793,6 +2801,24 @@
       "datetime": "2026-06-02T23:26:00+02:00",
       "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/318d77ead5efc495b96fe6661c4847be32dd7c01",
       "subject": "feat(ci): Lebenslauf-SFTP-Fetch in CI-Pipeline testen (J01-152)"
+    }
+  ],
+  "J01-153": [
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "5ad711f576cb0ce2a826a97d6661020e772f10bc",
+      "short_sha": "5ad711f",
+      "datetime": "2026-06-03T02:05:25+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/5ad711f576cb0ce2a826a97d6661020e772f10bc",
+      "subject": "feat(publish): publish-Befehl mit Task-Dispatcher und atomarem HTML-Schreiben (J01-153)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "33768cf5885eb2965169d66a58050b5d8c9b342e",
+      "short_sha": "33768cf",
+      "datetime": "2026-06-03T02:05:15+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/33768cf5885eb2965169d66a58050b5d8c9b342e",
+      "subject": "refactor(deploy): SftpTreeUploader in generisch und SftpDeployUploader aufteilen (J01-153)"
     }
   ],
   "J01-16": [
