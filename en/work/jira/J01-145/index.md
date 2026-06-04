@@ -46,6 +46,7 @@ current sprint context.
 | 2026-05-28 | open | `J01-145` | Skill tooling / linting | Shellcheck is now a mandatory hook step in the skill repo; active shell scripts were updated to pass linting instead of hiding findings. |
 | 2026-05-28 | open | `J01-145` | Skills / Markdown reduction | The second reduction pass removes hook-checkable detailed checklists from shared and project skills; the skills keep scope, canonical flows, authoritative sources, and decisions that cannot be automated. |
 | 2026-06-04 | open | `J01-145` | README/docs sync | The docs repo now installs a `pre-commit` hook in the main repo that checks `README.md` and `README.en.md` against the tagged public docs sections. |
+| 2026-06-04 | open | `J01-145` | README UX source | Quickstart and private view sections in README and public docs are copied from `tests/ci/readme-dev-user-flow.sh`; missing source functions block the generator. |
 
 ## Verification
 
@@ -63,6 +64,7 @@ current sprint context.
 | Shellcheck | Active shell scripts pass Shellcheck and the hook blocks new findings | `.agents/skills/lebenslauf-web-vorlage/scripts/hooks/pre-commit` | done |
 | Skill Markdown reduction | Hook-checkable detailed rules no longer appear as operational checklists in the affected skills | `.agents/skills/shared/`, `.agents/skills/lebenslauf-web-vorlage/skills/`, `scripts/verify-skills.sh --check-index` | done |
 | README sync hook | Main-repo READMEs are checked against the public docs before commit | `scripts/hooks/project-pre-commit`, `scripts/sync-readme.py --check`, `tests/project-pre-commit-hook.sh` | done |
+| README UX source | README program paths come from the executable README UX test | `tests/ci/readme-dev-user-flow.sh`, `scripts/sync-readme.py`, `tests/project-pre-commit-hook.sh` | done |
 
 ## Open Points
 

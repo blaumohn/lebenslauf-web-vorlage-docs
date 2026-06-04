@@ -5,15 +5,23 @@ permalink: /de/getting-started/schnellstart/
 readme_order: 1
 ---
 
+**`schnellstart()`**
+
 ```bash
-composer install
-php bin/cli setup dev --with-sample-content
-php bin/cli build dev
-composer run dev
+schnellstart() {
+  git clone https://github.com/blaumohn/lebenslauf-web-vorlage lebenslauf-web-vorlage
+  cd lebenslauf-web-vorlage
+  export PATH="$PWD/bin:$PATH"  # statt export: php bin/cli …
+  composer install
+  cli setup dev --with-sample-content
+  cli build dev
+  cli start dev > /tmp/readme-dev-ux-server.log 2>&1 &
+  dev_server_pid="$!"
+  wait_for_dev_server
+}
 ```
 
-`--with-sample-content` legt Beispieldaten an, ohne bestehende Daten zu überschreiben.
-`composer run dev` kompiliert die Runtime-Konfiguration und startet den Entwicklungsserver.
+Quelle: `tests/ci/readme-dev-user-flow.sh`. Der Clone-Befehl nutzt hier die öffentliche GitHub-URL.
 
 ## Eigene Daten und Konfiguration
 
