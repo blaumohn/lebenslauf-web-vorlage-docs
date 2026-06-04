@@ -1,0 +1,27 @@
+#!/bin/sh
+# Projekt-Pre-Commit-Hook: prüft App-READMEs gegen die öffentliche Doku.
+set -eu
+
+HOOK_PATH="$0"
+if [ -L "$HOOK_PATH" ]; then
+    TARGET=$(readlink "$HOOK_PATH")
+    case "$TARGET" in
+        /*) HOOK_PATH="$TARGET" ;;
+        *) HOOK_PATH="$(CDPATH= cd -- "$(dirname "$HOOK_PATH")" && pwd)/$TARGET" ;;
+    esac
+fi
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname "$HOOK_PATH")" && pwd)
+DOCS_ROOT=$(CDPATH= cd -- "$SCRIPT_DIR/../.." && pwd)
+SOURCE_REPO=$(git rev-parse --show-toplevel)
+
+if ! tools-python "$DOCS_ROOT/scripts/sync-readme.py" \
+    --check \
+    --app-repo "$SOURCE_REPO"; then
+    printf '%s\n' \
+        "README-Dateien sind nicht mit der öffentlichen Doku synchron." \
+        "Aktualisierung:" \
+        "  cd $DOCS_ROOT" \
+        "  tools-python scripts/sync-readme.py" >&2
+    exit 1
+fi

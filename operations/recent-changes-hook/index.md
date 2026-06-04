@@ -22,6 +22,9 @@ Zusätzlich gibt es zwei Hooks für die Projekt-Repos:
 - `post-commit` ergänzt den gerade erzeugten Commit in
   `_data/jira_commits.json`, wenn der Commit-Titel am Ende einen Jira-Key in
   Klammern enthält.
+- Im Hauptrepo `lebenslauf-web-vorlage` prüft ein zusätzlicher `pre-commit`-
+  Hook, ob `README.md` und `README.en.md` mit den markierten Abschnitten der
+  öffentlichen Doku synchron sind.
 
 ## Ablauf
 
@@ -36,6 +39,8 @@ git commit (im Doku-Repo)
 
 ```
 git commit (in Projekt-Repos)
+ └─ pre-commit-Hook (nur lebenslauf-web-vorlage)
+     └─ sync-readme.py --check → README.md / README.en.md prüfen
  └─ commit-msg-Hook
      └─ validate-commit-msg.sh
  └─ post-commit-Hook
@@ -96,7 +101,8 @@ sh scripts/install-hooks.sh
 Das Skript legt Symlinks aus `.git/hooks/` auf die versionierten Hooks unter
 `scripts/hooks/` an. Für das Doku-Repo werden `pre-commit` und `commit-msg`
 eingerichtet. Für die Projekt-Repos auf derselben Ebene werden `commit-msg`
-und `post-commit` eingerichtet.
+und `post-commit` eingerichtet. Im Hauptrepo `lebenslauf-web-vorlage` wird
+zusätzlich `pre-commit` aus `project-pre-commit` eingerichtet.
 
 Der `.git/`-Ordner ist nicht versioniert, daher muss dieser Schritt nach jedem
 frischen Clone wiederholt werden.
@@ -118,6 +124,7 @@ Die Commit-Daten sollten Einträge mit den Feldern `repo`, `sha`, `short_sha`,
 ```sh
 sh tests/generate-recent-commits.sh
 sh tests/pre-commit-hook.sh
+sh tests/project-pre-commit-hook.sh
 sh tests/sync-jira-commits.sh
 sh tests/validate-commit-msg.sh
 ```

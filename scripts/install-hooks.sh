@@ -16,6 +16,7 @@ main() {
 
 check_sources() {
     check_source "pre-commit"
+    check_source "project-pre-commit"
     check_source "commit-msg"
     check_source "post-commit"
 }
@@ -38,14 +39,23 @@ install_project_hooks() {
         [ -d "$repo_path/.git" ] || continue
         install_hook "$repo_path" "commit-msg"
         install_hook "$repo_path" "post-commit"
+        [ "$repo" = "lebenslauf-web-vorlage" ] || continue
+        install_named_hook "$repo_path" "project-pre-commit" "pre-commit"
     done
 }
 
 install_hook() {
     repo_path="$1"
     hook="$2"
-    src="$SCRIPT_DIR/hooks/$hook"
-    dst="$repo_path/.git/hooks/$hook"
+    install_named_hook "$repo_path" "$hook" "$hook"
+}
+
+install_named_hook() {
+    repo_path="$1"
+    source_hook="$2"
+    target_hook="$3"
+    src="$SCRIPT_DIR/hooks/$source_hook"
+    dst="$repo_path/.git/hooks/$target_hook"
     ln -sf "$src" "$dst"
     printf 'Hook eingerichtet: %s\n' "$dst"
 }

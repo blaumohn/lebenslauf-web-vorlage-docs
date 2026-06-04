@@ -46,6 +46,7 @@ Sprint-Kontext.
 | 2026-05-28 | offen | `J01-145` | Skills / Doku-Hygiene | Lokale Skills werden inventarisiert; Skill-Markdown verweist knapper auf kanonische Quellen und automatisierte Prüfungen; Pre-Commit-Hooks prüfen Skill-Links, Skriptverweise, `tools-python` und Shared-/Projekt-Trennung. |
 | 2026-05-28 | offen | `J01-145` | Skill-Tooling / Linting | Shellcheck ist im Skill-Repo verpflichtender Hook-Bestandteil; aktive Shell-Skripte wurden lintkonform aktualisiert, statt Befunde auszublenden. |
 | 2026-05-28 | offen | `J01-145` | Skills / Markdown-Reduktion | Die zweite Kürzungsrunde entfernt Hook-prüfbare Detailchecklisten aus Shared- und Projekt-Skills; die Skills behalten Geltung, kanonische Abläufe, maßgebliche Quellen und nicht automatisierbare Entscheidungen. |
+| 2026-06-04 | offen | `J01-145` | README-/Doku-Sync | Das Doku-Repo richtet im Hauptrepo einen `pre-commit`-Hook ein, der `README.md` und `README.en.md` gegen die markierten Public-Doku-Abschnitte prüft. |
 
 ## Überprüfung
 
@@ -62,6 +63,7 @@ Sprint-Kontext.
 | Skill-Hygiene | Frontmatter, eindeutige Namen, Links, Skriptverweise, `tools-python` und projektfreie Shared-Regeln werden automatisiert geprüft | `.agents/skills/lebenslauf-web-vorlage/scripts/verify-skills.sh` | erledigt |
 | Shellcheck | Aktive Shell-Skripte bestehen Shellcheck und der Hook blockiert neue Befunde | `.agents/skills/lebenslauf-web-vorlage/scripts/hooks/pre-commit` | erledigt |
 | Skill-Markdown-Reduktion | Hook-prüfbare Detailregeln stehen nicht mehr als operative Checklisten in den betroffenen Skills | `.agents/skills/shared/`, `.agents/skills/lebenslauf-web-vorlage/skills/`, `scripts/verify-skills.sh --check-index` | erledigt |
+| README-Sync-Hook | Hauptrepo-READMEs werden vor dem Commit gegen die Public-Doku geprüft | `scripts/hooks/project-pre-commit`, `scripts/sync-readme.py --check`, `tests/project-pre-commit-hook.sh` | erledigt |
 
 ## Offene Punkte
 

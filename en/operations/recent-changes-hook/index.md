@@ -20,6 +20,9 @@ Two hooks are also installed for the project repos:
   `<type>(<scope>): <title> (J01-123)`.
 - `post-commit` adds the current commit to `_data/jira_commits.json` if the
   commit title ends with a Jira key in parentheses.
+- In the main repo `lebenslauf-web-vorlage`, an additional `pre-commit` hook
+  checks whether `README.md` and `README.en.md` are in sync with the tagged
+  sections in the public docs.
 
 ## Flow
 
@@ -34,6 +37,8 @@ git commit (in docs repo)
 
 ```
 git commit (in project repos)
+ └─ pre-commit hook (lebenslauf-web-vorlage only)
+     └─ sync-readme.py --check → validate README.md / README.en.md
  └─ commit-msg hook
      └─ validate-commit-msg.sh
  └─ post-commit hook
@@ -95,7 +100,8 @@ sh scripts/install-hooks.sh
 The script creates symlinks from `.git/hooks/` to the versioned hooks under
 `scripts/hooks/`. For the docs repo it installs `pre-commit` and
 `commit-msg`. For project repos on the same directory level it installs
-`commit-msg` and `post-commit`.
+`commit-msg` and `post-commit`. In the main repo `lebenslauf-web-vorlage`, it
+also installs `pre-commit` from `project-pre-commit`.
 
 The `.git/` directory is not versioned, so this step must be repeated after
 every fresh clone.
@@ -117,6 +123,7 @@ The commit data should contain entries with the fields `repo`, `sha`,
 ```sh
 sh tests/generate-recent-commits.sh
 sh tests/pre-commit-hook.sh
+sh tests/project-pre-commit-hook.sh
 sh tests/sync-jira-commits.sh
 sh tests/validate-commit-msg.sh
 ```
