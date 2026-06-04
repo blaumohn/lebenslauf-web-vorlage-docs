@@ -76,7 +76,7 @@ EOF
 write_flow_script() {
     cat > "$APP/tests/ci/readme-dev-user-flow.sh" <<'EOF'
 schnellstart() {
-  git clone "$LEBENSLAUF_WEB_VORLAGE_REPO" lebenslauf-web-vorlage
+  git clone "$REPLACE_WITH_REPOSITORY_URL" lebenslauf-web-vorlage
   cd lebenslauf-web-vorlage
   export PATH="$PWD/bin:$PATH"  # statt export: php bin/cli …
   composer install
@@ -113,8 +113,8 @@ check_flow_functions_copied() {
     if grep -q 'schnellstart() {' "$APP/README.md"; then
         fail "Funktionshülle wurde in README kopiert"
     fi
-    grep -q 'https://github.com/blaumohn/lebenslauf-web-vorlage' "$APP/README.md" \
-        || fail "öffentliche Clone-URL fehlt im README"
+    grep -q 'REPLACE_WITH_REPOSITORY_URL' "$APP/README.md" \
+        || fail "REPLACE_WITH_REPOSITORY_URL fehlt im README"
     pass "Flow-Funktionen wurden in README übernommen"
 }
 

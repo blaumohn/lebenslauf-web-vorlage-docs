@@ -10,7 +10,10 @@ DOCS_BASE = "https://docs.template.ysdani.com"
 DOCS_ROOT = Path(__file__).parent.parent
 DEFAULT_APP_REPO = DOCS_ROOT.parent / "lebenslauf-web-vorlage"
 FLOW_SCRIPT = "tests/ci/readme-dev-user-flow.sh"
-CLONE_URL = "https://github.com/blaumohn/lebenslauf-web-vorlage"
+FLOW_SOURCE_URL = (
+    "https://github.com/blaumohn/lebenslauf-web-vorlage/blob/main/"
+    "tests/ci/readme-dev-user-flow.sh"
+)
 
 README_HEADER_DE = (
     "# Lebenslauf-Web-Vorlage (PHP)\n\n"
@@ -112,8 +115,7 @@ def read_section_commands(flow_script: Path) -> dict[str, list[str]]:
 
 def read_function_commands(flow_script: Path, name: str) -> list[str]:
     lines = extract_function_body(flow_script, name)
-    commands = [replace_clone_command(line) for line in lines]
-    return dedent_lines(commands)
+    return dedent_lines(lines)
 
 
 def extract_function_body(path: Path, name: str) -> list[str]:
@@ -132,14 +134,6 @@ def collect_function_body(lines: list[str]) -> list[str]:
             return body
         body.append(line)
     raise SystemExit("Funktionsende nicht gefunden")
-
-
-def replace_clone_command(line: str) -> str:
-    command = line.strip()
-    if not command.startswith("git clone "):
-        return line
-    indent = line[: len(line) - len(line.lstrip())]
-    return f"{indent}git clone {CLONE_URL} lebenslauf-web-vorlage"
 
 
 def dedent_lines(lines: list[str]) -> list[str]:
@@ -192,7 +186,8 @@ def build_generated_intro(
 def build_source_line(name: str, lang: str) -> str:
     label = SOURCE_LABEL[lang]
     return (
-        f"<small>*{label}: `tests/ci/readme-dev-user-flow.sh` "
+        f"<small>*{label}: "
+        f"[tests/ci/readme-dev-user-flow.sh]({FLOW_SOURCE_URL}) "
         f"> `{name}()`*</small>"
     )
 
@@ -251,8 +246,21 @@ def build_attribution_and_intro(
     intro = resolve_links(extract_intro(post.content))
     lines = intro.splitlines()
     if lines and lines[0].startswith("<small>*"):
-        return lines[0], "\n".join(lines[1:]).strip()
+        return make_readme_source_line(lines[0]), "\n".join(lines[1:]).strip()
     return build_docs_attribution(post, lang), intro
+
+
+def make_readme_source_line(line: str) -> str:
+    match = re.search(r"`([\w_]+)\(\)`", line)
+    if not match:
+        return line
+    name = match.group(1)
+    label = "Source" if "Source:" in line else "Quelle"
+    return (
+        f"<small>*{label}: "
+        "[tests/ci/readme-dev-user-flow.sh](tests/ci/readme-dev-user-flow.sh) "
+        f"> `{name}()`*</small>"
+    )
 
 
 def build_docs_attribution(post: ReadmePage, lang: str) -> str:
