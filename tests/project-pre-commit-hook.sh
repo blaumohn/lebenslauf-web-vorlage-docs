@@ -110,6 +110,9 @@ check_flow_functions_copied() {
         || fail "schnellstart() fehlt im README"
     grep -q 'private_ansicht_einrichten()' "$APP/README.md" \
         || fail "private_ansicht_einrichten() fehlt im README"
+    if grep -q 'schnellstart() {' "$APP/README.md"; then
+        fail "Funktionshülle wurde in README kopiert"
+    fi
     grep -q 'https://github.com/blaumohn/lebenslauf-web-vorlage' "$APP/README.md" \
         || fail "öffentliche Clone-URL fehlt im README"
     pass "Flow-Funktionen wurden in README übernommen"

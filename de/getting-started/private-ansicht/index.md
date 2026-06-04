@@ -5,18 +5,14 @@ permalink: /de/getting-started/private-ansicht/
 readme_order: 3
 ---
 
-**`private_ansicht_einrichten()`**
+<small>*Quelle: `tests/ci/readme-dev-user-flow.sh` > `private_ansicht_einrichten()`*</small>
 
 ```bash
-private_ansicht_einrichten() {
-  local token
-  token="$(cli token dev rotate default)"
-  curl --fail --silent --show-error "http://127.0.0.1:8080/cv?token=${token}" \
-    | grep -q '</html>'
-}
+local token
+token="$(cli token dev rotate default)"
+curl --fail --silent --show-error "http://127.0.0.1:8080/cv?token=${token}" \
+  | grep -q '</html>'
 ```
-
-Quelle: `tests/ci/readme-dev-user-flow.sh`.
 
 ## Sicherheitsmodell
 

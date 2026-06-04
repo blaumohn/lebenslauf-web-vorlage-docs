@@ -37,36 +37,9 @@ SECTION_PAGE = {
     },
 }
 
-SECTION_TITLE = {
-    "schnellstart": {
-        "de": "`schnellstart()`",
-        "en": "`schnellstart()`",
-    },
-    "private_ansicht_einrichten": {
-        "de": "`private_ansicht_einrichten()`",
-        "en": "`private_ansicht_einrichten()`",
-    },
-}
-
-SECTION_NOTE = {
-    "schnellstart": {
-        "de": (
-            "Quelle: `tests/ci/readme-dev-user-flow.sh`. Der Clone-Befehl "
-            "nutzt hier die öffentliche GitHub-URL."
-        ),
-        "en": (
-            "Source: `tests/ci/readme-dev-user-flow.sh`. The clone command "
-            "uses the public GitHub URL here."
-        ),
-    },
-    "private_ansicht_einrichten": {
-        "de": (
-            "Quelle: `tests/ci/readme-dev-user-flow.sh`."
-        ),
-        "en": (
-            "Source: `tests/ci/readme-dev-user-flow.sh`."
-        ),
-    },
+SOURCE_LABEL = {
+    "de": "Quelle",
+    "en": "Source",
 }
 
 
@@ -138,25 +111,26 @@ def read_section_commands(flow_script: Path) -> dict[str, list[str]]:
 
 
 def read_function_commands(flow_script: Path, name: str) -> list[str]:
-    lines = extract_function_block(flow_script, name)
-    return [replace_clone_command(line) for line in lines]
+    lines = extract_function_body(flow_script, name)
+    commands = [replace_clone_command(line) for line in lines]
+    return dedent_lines(commands)
 
 
-def extract_function_block(path: Path, name: str) -> list[str]:
+def extract_function_body(path: Path, name: str) -> list[str]:
     lines = path.read_text(encoding="utf-8").splitlines()
     start = f"{name}() {{"
     for index, line in enumerate(lines):
         if line.strip() == start:
-            return collect_function_block(lines[index:])
+            return collect_function_body(lines[index + 1 :])
     raise SystemExit(f"Funktion nicht gefunden: {name} in {path}")
 
 
-def collect_function_block(lines: list[str]) -> list[str]:
-    block = []
+def collect_function_body(lines: list[str]) -> list[str]:
+    body = []
     for line in lines:
-        block.append(line)
         if line.strip() == "}":
-            return block
+            return body
+        body.append(line)
     raise SystemExit("Funktionsende nicht gefunden")
 
 
@@ -166,6 +140,20 @@ def replace_clone_command(line: str) -> str:
         return line
     indent = line[: len(line) - len(line.lstrip())]
     return f"{indent}git clone {CLONE_URL} lebenslauf-web-vorlage"
+
+
+def dedent_lines(lines: list[str]) -> list[str]:
+    indent = common_indent(lines)
+    if indent == 0:
+        return lines
+    return [line[indent:] if line.strip() else line for line in lines]
+
+
+def common_indent(lines: list[str]) -> int:
+    indents = [len(line) - len(line.lstrip()) for line in lines if line.strip()]
+    if not indents:
+        return 0
+    return min(indents)
 
 
 def build_section_docs(
@@ -196,9 +184,16 @@ def build_generated_intro(
 ) -> str:
     block = "\n".join(commands)
     return (
-        f"**{SECTION_TITLE[name][lang]}**\n\n"
-        f"```bash\n{block}\n```\n\n"
-        f"{SECTION_NOTE[name][lang]}"
+        f"{build_source_line(name, lang)}\n\n"
+        f"```bash\n{block}\n```"
+    )
+
+
+def build_source_line(name: str, lang: str) -> str:
+    label = SOURCE_LABEL[lang]
+    return (
+        f"<small>*{label}: `tests/ci/readme-dev-user-flow.sh` "
+        f"> `{name}()`*</small>"
     )
 
 
@@ -245,14 +240,26 @@ def build_index(posts: list[ReadmePage]) -> str:
 def build_section(
     post: ReadmePage, lang: str
 ) -> str:
+    attribution, intro = build_attribution_and_intro(post, lang)
+    title = post.get("title", "")
+    return f"## {title}\n{attribution}\n\n{as_blockquote(intro)}\n\n---"
+
+
+def build_attribution_and_intro(
+    post: ReadmePage, lang: str
+) -> tuple[str, str]:
     intro = resolve_links(extract_intro(post.content))
+    lines = intro.splitlines()
+    if lines and lines[0].startswith("<small>*"):
+        return lines[0], "\n".join(lines[1:]).strip()
+    return build_docs_attribution(post, lang), intro
+
+
+def build_docs_attribution(post: ReadmePage, lang: str) -> str:
     title = post.get("title", "")
     permalink = post.get("permalink", "")
     label = DOCS_LINK[lang]
-    attribution = (
-        f"<small>*{label}: [{title}]({DOCS_BASE}{permalink})*</small>"
-    )
-    return f"## {title}\n{attribution}\n\n{as_blockquote(intro)}\n\n---"
+    return f"<small>*{label}: [{title}]({DOCS_BASE}{permalink})*</small>"
 
 
 def to_anchor(title: str) -> str:

@@ -5,23 +5,19 @@ permalink: /en/getting-started/quickstart/
 readme_order: 1
 ---
 
-**`schnellstart()`**
+<small>*Source: `tests/ci/readme-dev-user-flow.sh` > `schnellstart()`*</small>
 
 ```bash
-schnellstart() {
-  git clone https://github.com/blaumohn/lebenslauf-web-vorlage lebenslauf-web-vorlage
-  cd lebenslauf-web-vorlage
-  export PATH="$PWD/bin:$PATH"  # statt export: php bin/cli …
-  composer install
-  cli setup dev --with-sample-content
-  cli build dev
-  cli start dev > /tmp/readme-dev-ux-server.log 2>&1 &
-  dev_server_pid="$!"
-  wait_for_dev_server
-}
+git clone https://github.com/blaumohn/lebenslauf-web-vorlage lebenslauf-web-vorlage
+cd lebenslauf-web-vorlage
+export PATH="$PWD/bin:$PATH"  # statt export: php bin/cli …
+composer install
+cli setup dev --with-sample-content
+cli build dev
+cli start dev > /tmp/readme-dev-ux-server.log 2>&1 &
+dev_server_pid="$!"
+wait_for_dev_server
 ```
-
-Source: `tests/ci/readme-dev-user-flow.sh`. The clone command uses the public GitHub URL here.
 
 ## Own data and configuration
 
