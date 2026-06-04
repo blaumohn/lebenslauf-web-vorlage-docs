@@ -48,6 +48,7 @@ Sprint-Kontext.
 | 2026-05-28 | offen | `J01-145` | Skills / Markdown-Reduktion | Die zweite Kürzungsrunde entfernt Hook-prüfbare Detailchecklisten aus Shared- und Projekt-Skills; die Skills behalten Geltung, kanonische Abläufe, maßgebliche Quellen und nicht automatisierbare Entscheidungen. |
 | 2026-06-04 | offen | `J01-145` | README-/Doku-Sync | Das Doku-Repo richtet im Hauptrepo einen `pre-commit`-Hook ein, der `README.md` und `README.en.md` gegen die markierten Public-Doku-Abschnitte prüft. |
 | 2026-06-04 | offen | `J01-145` | README-UX-Quelle | Schnellstart und private Ansicht in README und Public-Doku werden aus `tests/ci/readme-dev-user-flow.sh` übernommen; fehlende Quellfunktionen blockieren den Generator. |
+| 2026-06-04 | offen | `J01-145` | README-/Doku-Einstieg | `getting-started/` ist als sichtbarer Hub nachgezogen; README-Abschnitte verweisen auf Doku und belegende Quell-/Fachseiten, inklusive berechneter Zeilenanker für getestete Abläufe. |
 
 ## Überprüfung
 
@@ -66,6 +67,9 @@ Sprint-Kontext.
 | Skill-Markdown-Reduktion | Hook-prüfbare Detailregeln stehen nicht mehr als operative Checklisten in den betroffenen Skills | `.agents/skills/shared/`, `.agents/skills/lebenslauf-web-vorlage/skills/`, `scripts/verify-skills.sh --check-index` | erledigt |
 | README-Sync-Hook | Hauptrepo-READMEs werden vor dem Commit gegen die Public-Doku geprüft | `scripts/hooks/project-pre-commit`, `scripts/sync-readme.py --check`, `tests/project-pre-commit-hook.sh` | erledigt |
 | README-UX-Quelle | Die README-Programmpfade kommen aus dem ausführbaren README-UX-Test | `tests/ci/readme-dev-user-flow.sh`, `scripts/sync-readme.py`, `tests/project-pre-commit-hook.sh` | erledigt |
+| README-/Doku-Hub | `getting-started/` verlinkt die README-nahen Einstiegsperspektiven direkt | `getting-started/index.md`, `en/getting-started/index.md` | erledigt |
+| Beleglinks | Überblick und technische Besonderheiten stützen zentrale Aussagen mit Links auf Specs, Bereiche oder Arbeitsdoku | `de/getting-started/*`, `en/getting-started/*`, `README.md`, `README.en.md` | erledigt |
+| Zeilenanker | Quellverweise für getestete README-Abläufe enthalten berechnete GitHub- bzw. lokale Zeilenbereiche | `scripts/sync-readme.py`, `tests/ci/readme-dev-user-flow.sh` | erledigt |
 
 ## Offene Punkte
 

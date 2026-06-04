@@ -5,7 +5,7 @@ permalink: /en/getting-started/private-view/
 readme_order: 3
 ---
 
-<small>*Source: [tests/ci/readme-dev-user-flow.sh](https://github.com/blaumohn/lebenslauf-web-vorlage/blob/main/tests/ci/readme-dev-user-flow.sh) > `private_ansicht_einrichten()`*</small>
+<small>*[tests/ci/readme-dev-user-flow.sh](https://github.com/blaumohn/lebenslauf-web-vorlage/blob/dev/tests/ci/readme-dev-user-flow.sh#L44-L49)*</small>
 
 ```bash
 local token

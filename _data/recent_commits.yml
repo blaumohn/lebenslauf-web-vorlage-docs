@@ -1,65 +1,101 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
-  sha: 5ad711f576cb0ce2a826a97d6661020e772f10bc
-  short_sha: 5ad711f
-  datetime: "2026-06-03T02:05:25+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/5ad711f576cb0ce2a826a97d6661020e772f10bc"
-  message: 'feat(publish): publish-Befehl mit Task-Dispatcher und atomarem HTML-Schreiben (J01-153)'
+  sha: 92cd52be91f2378ca9a28aa560811a9ca557c433
+  short_sha: 92cd52b
+  datetime: "2026-06-04T13:40:37+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/92cd52be91f2378ca9a28aa560811a9ca557c433"
+  message: 'docs(readme): doku- und quellverweise schaerfen (J01-145)'
 - repo: lebenslauf-web-vorlage
-  sha: 33768cf5885eb2965169d66a58050b5d8c9b342e
-  short_sha: 33768cf
-  datetime: "2026-06-03T02:05:15+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/33768cf5885eb2965169d66a58050b5d8c9b342e"
-  message: 'refactor(deploy): SftpTreeUploader in generisch und SftpDeployUploader aufteilen (J01-153)'
+  sha: 7bb5a01e669b29e73366feef9f6f3b7873568bdf
+  short_sha: 7bb5a01
+  datetime: "2026-06-04T13:38:44+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7bb5a01e669b29e73366feef9f6f3b7873568bdf"
+  message: 'refactor(deploy): Machine-States verified→smoke_passed, failed_safe→deploy_failed umbenennen'
 - repo: lebenslauf-web-vorlage
-  sha: 318d77ead5efc495b96fe6661c4847be32dd7c01
-  short_sha: 318d77e
-  datetime: "2026-06-02T23:26:00+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/318d77ead5efc495b96fe6661c4847be32dd7c01"
-  message: 'feat(ci): Lebenslauf-SFTP-Fetch in CI-Pipeline testen (J01-152)'
+  sha: 666ae7f770639665baeb575fc2246666a08c5144
+  short_sha: 666ae7f
+  datetime: "2026-06-04T11:41:46+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/666ae7f770639665baeb575fc2246666a08c5144"
+  message: 'docs(readme): README-UX-Quelle verlinken (J01-145)'
 - repo: lebenslauf-web-vorlage
-  sha: 40836f550493271c8a28e6456273a75e3f87450d
-  short_sha: 40836f5
-  datetime: "2026-06-01T12:09:08+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/40836f550493271c8a28e6456273a75e3f87450d"
-  message: 'refactor(ci): CI-Dienste und Runner nach Rolle umbenennen (J01-64)'
+  sha: 7e465495b6848aa6d987e2bab25604da68d66afb
+  short_sha: 7e46549
+  datetime: "2026-06-04T11:18:53+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7e465495b6848aa6d987e2bab25604da68d66afb"
+  message: 'docs(readme): README-UX-Abschnitte vereinfachen (J01-145)'
 - repo: lebenslauf-web-vorlage
-  sha: 6967361464e61eedec814ce00b05737a895e464c
-  short_sha: 6967361
-  datetime: "2026-06-01T03:04:12+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/6967361464e61eedec814ce00b05737a895e464c"
-  message: 'feat(ci): SMTP-Auth-Prüfung als CD-Schritt, CI/CD-Kohärenz bereinigt (J01-64)'
+  sha: 3b4a770425634b9b56e5f18dd870618ee0bc2f07
+  short_sha: 3b4a770
+  datetime: "2026-06-04T11:07:26+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3b4a770425634b9b56e5f18dd870618ee0bc2f07"
+  message: 'docs(readme): README-UX-Funktionen übernehmen (J01-145)'
 - repo: lebenslauf-web-vorlage
-  sha: 639f1ca43c9b21873b15cb291a1e3e6b710895df
-  short_sha: 639f1ca
-  datetime: "2026-05-31T00:22:04+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/639f1ca43c9b21873b15cb291a1e3e6b710895df"
-  message: 'refactor(deploy): PIPELINE aus Branch-Name ableiten statt vars.PIPELINE (J01-64)'
+  sha: 4c5f63c9c2f77f9171ebd9498735c933cebdbd5c
+  short_sha: 4c5f63c
+  datetime: "2026-06-03T14:17:50+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4c5f63c9c2f77f9171ebd9498735c933cebdbd5c"
+  message: 'fix(smoke): CV-Namen dynamisch aus Inhalt-YAML lesen statt hartcodiert (J01-62)'
 - repo: lebenslauf-web-vorlage
-  sha: 559eb9251c0242db7075e4ec85d36cccde989553
-  short_sha: 559eb92
-  datetime: "2026-05-31T00:07:47+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/559eb9251c0242db7075e4ec85d36cccde989553"
-  message: 'feat(deploy): Prod-Pipeline-Config und einheitlicher Deploy-Workflow (J01-64)'
+  sha: 4498f3c4752a10c44972b7596831484b7c8734ce
+  short_sha: 4498f3c
+  datetime: "2026-06-03T14:17:50+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4498f3c4752a10c44972b7596831484b7c8734ce"
+  message: 'fix(smoke): CV-Namen dynamisch aus Inhalt-YAML lesen statt hartcodiert (J01-62)'
 - repo: lebenslauf-web-vorlage
-  sha: 89e773e850181d7ef1cd846663e9595ad6b73a27
-  short_sha: 89e773e
-  datetime: "2026-05-30T15:53:47+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/89e773e850181d7ef1cd846663e9595ad6b73a27"
-  message: 'fix(deploy): Inject-Marker auf genau einen Treffer prüfen (J01-64)'
+  sha: 3cbdbaec90f316d4ff34194a989e658d226153f9
+  short_sha: 3cbdbae
+  datetime: "2026-06-03T13:35:45+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3cbdbaec90f316d4ff34194a989e658d226153f9"
+  message: 'fix(deploy): alle Pipeline-Variablen im Workflow ergänzen, leere Werte filtern (J01-64)'
 - repo: lebenslauf-web-vorlage
-  sha: ef472e80b2d64b93731b2bb839fe26294503e027
-  short_sha: ef472e8
-  datetime: "2026-05-30T11:37:24+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/ef472e80b2d64b93731b2bb839fe26294503e027"
-  message: 'refactor(ci): Klon-Logik in ci_clone_lib auslagern, README-Dev-UX-Test ergänzen (J01-64)'
+  sha: 7341f105c09b6e21e9cf795cabdf961d4e83bb69
+  short_sha: 7341f10
+  datetime: "2026-06-03T03:03:38+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7341f105c09b6e21e9cf795cabdf961d4e83bb69"
+  message: 'fix(publish): cli publish korrekt auf PIPELINE_CFG_JSON umstellen (J01-153)'
 - repo: lebenslauf-web-vorlage
-  sha: c8c3d1168d354a14d015d2509939046df69ab096
-  short_sha: c8c3d11
-  datetime: "2026-05-30T00:07:55+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/c8c3d1168d354a14d015d2509939046df69ab096"
-  message: 'fix(ci): Arbeitsstand vor Pipeline-Start committen (J01-64)'
+  sha: 97a3cdbb27de35176732b39ff3e6368354284074
+  short_sha: 97a3cdb
+  datetime: "2026-06-03T02:26:23+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/97a3cdbb27de35176732b39ff3e6368354284074"
+  message: 'test(publish): CI-Tests für publish-Task ergänzen (J01-153)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 9c7e06df64fee8bffb784febcf1d2a9294fa4274
+  short_sha: 9c7e06d
+  datetime: "2026-06-04T12:04:32+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/9c7e06df64fee8bffb784febcf1d2a9294fa4274"
+  message: 'docs(jira): J01-62-Schrittseiten nachziehen (J01-64)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 7f246ae055ad427dbb4a4c1fa6f5158684c527b6
+  short_sha: 7f246ae
+  datetime: "2026-06-04T11:41:46+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7f246ae055ad427dbb4a4c1fa6f5158684c527b6"
+  message: 'docs(readme): README-UX-Quelle verlinken (J01-145)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: dc3e72b7fa41e7608115f6c67d71036ec3384294
+  short_sha: dc3e72b
+  datetime: "2026-06-04T11:18:40+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dc3e72b7fa41e7608115f6c67d71036ec3384294"
+  message: 'docs(readme): README-UX-Abschnitte vereinfachen (J01-145)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 89f76fed9223d44a7a81b4c268c89d177212954a
+  short_sha: 89f76fe
+  datetime: "2026-06-04T11:07:12+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/89f76fed9223d44a7a81b4c268c89d177212954a"
+  message: 'docs(readme): README-UX-Funktionen spiegeln (J01-145)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: ab4514ea6dd3d90b8a18c6fbd3c40ce070123b9a
+  short_sha: ab4514e
+  datetime: "2026-06-04T10:34:39+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ab4514ea6dd3d90b8a18c6fbd3c40ce070123b9a"
+  message: 'chore(readme): README-Sync-Hook einrichten (J01-145)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 44038f33ee7fc4b12de5976c7d79dc33774c7f6d
+  short_sha: 44038f3
+  datetime: "2026-06-03T02:22:02+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/44038f33ee7fc4b12de5976c7d79dc33774c7f6d"
+  message: 'docs(jira): Cache-Fehlerantworten dokumentieren (J01-116)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 35912af29857d19c93c5d3985d78ef50ee1938a4
   short_sha: 35912af
@@ -84,39 +120,3 @@
   datetime: "2026-06-02T11:57:07+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f3db394fd406dc1728b9a6fd3c9434200b9c5c98"
   message: 'docs(jira): KI-Assistenz fuer Vorgangsentwuerfe dokumentieren (J01-116)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: a60eb2869e65cd297819e747a06177f68377bd5c
-  short_sha: a60eb28
-  datetime: "2026-06-02T10:36:08+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/a60eb2869e65cd297819e747a06177f68377bd5c"
-  message: 'docs(jira): lokale Skill-Erzwingung dokumentieren (J01-116)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 61e5419fd64c903e7f94399f889496ffd74ead63
-  short_sha: 61e5419
-  datetime: "2026-06-01T16:57:05+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/61e5419fd64c903e7f94399f889496ffd74ead63"
-  message: 'test(jira): EN-Sync-Regression absichern (J01-116)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 53af2a498270ea7a8c05396f44fa65427bf38131
-  short_sha: 53af2a4
-  datetime: "2026-06-01T15:58:27+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/53af2a498270ea7a8c05396f44fa65427bf38131"
-  message: 'docs(jira): EN-Schrittseiten fuer J01-62 ergaenzen (J01-62)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 193f6df6cf51eae1ac2093d692d175b299768893
-  short_sha: 193f6df
-  datetime: "2026-06-01T15:52:26+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/193f6df6cf51eae1ac2093d692d175b299768893"
-  message: 'docs(jira): J01-62-Schrittfolge korrigieren (J01-62)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 23542deeb8d77826d7ec60cf08c06bdd468092d8
-  short_sha: 23542de
-  datetime: "2026-06-01T14:29:46+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/23542deeb8d77826d7ec60cf08c06bdd468092d8"
-  message: 'docs(jira): J01-62-Go-live-Stand nachziehen (J01-62)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 3b7b9edfe6d8c4bebaf5f0d467b11bf8c8f0034c
-  short_sha: 3b7b9ed
-  datetime: "2026-05-30T22:45:15+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3b7b9edfe6d8c4bebaf5f0d467b11bf8c8f0034c"
-  message: 'docs(jira): Sitzungsabgleich fuer Chores dokumentieren (J01-151)'

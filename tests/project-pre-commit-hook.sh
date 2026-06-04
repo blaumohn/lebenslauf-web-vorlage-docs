@@ -78,7 +78,7 @@ write_flow_script() {
 schnellstart() {
   git clone "$REPLACE_WITH_REPOSITORY_URL" lebenslauf-web-vorlage
   cd lebenslauf-web-vorlage
-  export PATH="$PWD/bin:$PATH"  # statt export: php bin/cli …
+  PATH="$PWD/bin:$PATH"  # Hinweis: alternativ `php bin/cli ...` verwenden.
   composer install
   cli setup dev --with-sample-content
   cli build dev
@@ -105,16 +105,18 @@ check_clean_readme_passes() {
     pass "synchrone README-Dateien akzeptiert"
 }
 
-check_flow_functions_copied() {
-    grep -q 'schnellstart()' "$APP/README.md" \
-        || fail "schnellstart() fehlt im README"
-    grep -q 'private_ansicht_einrichten()' "$APP/README.md" \
-        || fail "private_ansicht_einrichten() fehlt im README"
+check_flow_sections_copied() {
+    grep -q 'Doku: \[Schnellstart\]' "$APP/README.md" \
+        || fail "Doku-Link für Schnellstart fehlt im README"
+    grep -q 'Doku: \[Private Ansicht einrichten\]' "$APP/README.md" \
+        || fail "Doku-Link für private Ansicht fehlt im README"
     if grep -q 'schnellstart() {' "$APP/README.md"; then
         fail "Funktionshülle wurde in README kopiert"
     fi
     grep -q 'REPLACE_WITH_REPOSITORY_URL' "$APP/README.md" \
         || fail "REPLACE_WITH_REPOSITORY_URL fehlt im README"
+    grep -q 'readme-dev-user-flow.sh#L1-L11' "$APP/README.md" \
+        || fail "Zeilenanker für Schnellstart fehlt im README"
     pass "Flow-Funktionen wurden in README übernommen"
 }
 
@@ -142,6 +144,6 @@ check_missing_flow_function_fails() {
 setup_repos
 run_sync
 check_clean_readme_passes
-check_flow_functions_copied
+check_flow_sections_copied
 check_stale_readme_fails
 check_missing_flow_function_fails

@@ -4,10 +4,22 @@ title: Getting started / quickstart
 permalink: /en/getting-started/
 ---
 
-## Start
+## Entry Paths
 
-The quickstart commands stay in the app repository `README.md`.
-This page explains the public docs location and the SSOT context.
+This page groups the short entry perspectives that the main-repo README also
+links to. The README stays the compact overview; the pages here place purpose,
+flow, and technical context in the public documentation.
+
+- [Assess the project]({{ "/en/getting-started/project-profile/" | relative_url }})
+  Demo, project profile, and delivery evidence.
+- [Understand the feature set]({{ "/en/getting-started/overview/" | relative_url }})
+  Public view, private view, content, pipelines, and security.
+- [Start locally]({{ "/en/getting-started/quickstart/" | relative_url }})
+  Tested flow for cloning, setup, build, and dev server.
+- [Check the private view]({{ "/en/getting-started/private-view/" | relative_url }})
+  Create a token and request the private view locally.
+- [Place the technical model]({{ "/en/getting-started/technical-highlights/" | relative_url }})
+  Deployment model, pipeline spec, and phase model.
 
 ## Repositories and docs location
 
@@ -34,7 +46,7 @@ Not public:
 
 - Internal working notes: private notes repo.
 
-## Practical entry points
+## Further Entry Points
 
 - [Areas (CLI/Build, HTTP-Runtime)]({{ "/en/areas/" | relative_url }})
 - [Coding guidelines]({{ "/en/policies/programmierleitlinien/" | relative_url }})

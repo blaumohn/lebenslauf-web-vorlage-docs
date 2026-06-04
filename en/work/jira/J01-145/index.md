@@ -47,6 +47,7 @@ current sprint context.
 | 2026-05-28 | open | `J01-145` | Skills / Markdown reduction | The second reduction pass removes hook-checkable detailed checklists from shared and project skills; the skills keep scope, canonical flows, authoritative sources, and decisions that cannot be automated. |
 | 2026-06-04 | open | `J01-145` | README/docs sync | The docs repo now installs a `pre-commit` hook in the main repo that checks `README.md` and `README.en.md` against the tagged public docs sections. |
 | 2026-06-04 | open | `J01-145` | README UX source | Quickstart and private view sections in README and public docs are copied from `tests/ci/readme-dev-user-flow.sh`; missing source functions block the generator. |
+| 2026-06-04 | open | `J01-145` | README/docs entry | `getting-started/` is updated as a visible hub; README sections point to docs and supporting source/domain pages, including computed line anchors for tested flows. |
 
 ## Verification
 
@@ -65,6 +66,9 @@ current sprint context.
 | Skill Markdown reduction | Hook-checkable detailed rules no longer appear as operational checklists in the affected skills | `.agents/skills/shared/`, `.agents/skills/lebenslauf-web-vorlage/skills/`, `scripts/verify-skills.sh --check-index` | done |
 | README sync hook | Main-repo READMEs are checked against the public docs before commit | `scripts/hooks/project-pre-commit`, `scripts/sync-readme.py --check`, `tests/project-pre-commit-hook.sh` | done |
 | README UX source | README program paths come from the executable README UX test | `tests/ci/readme-dev-user-flow.sh`, `scripts/sync-readme.py`, `tests/project-pre-commit-hook.sh` | done |
+| README/docs hub | `getting-started/` links the README-adjacent entry perspectives directly | `getting-started/index.md`, `en/getting-started/index.md` | done |
+| Evidence links | Overview and technical highlights support central claims with links to specs, areas, or work docs | `de/getting-started/*`, `en/getting-started/*`, `README.md`, `README.en.md` | done |
+| Line anchors | Source references for tested README flows include computed GitHub or local line ranges | `scripts/sync-readme.py`, `tests/ci/readme-dev-user-flow.sh` | done |
 
 ## Open Points
 

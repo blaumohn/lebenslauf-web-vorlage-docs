@@ -5,15 +5,16 @@ permalink: /en/getting-started/quickstart/
 readme_order: 1
 ---
 
-<small>*Source: [tests/ci/readme-dev-user-flow.sh](https://github.com/blaumohn/lebenslauf-web-vorlage/blob/main/tests/ci/readme-dev-user-flow.sh) > `schnellstart()`*</small>
+<small>*[tests/ci/readme-dev-user-flow.sh](https://github.com/blaumohn/lebenslauf-web-vorlage/blob/dev/tests/ci/readme-dev-user-flow.sh#L32-L42)*</small>
 
 ```bash
 git clone "$REPLACE_WITH_REPOSITORY_URL" lebenslauf-web-vorlage
 cd lebenslauf-web-vorlage
+PATH="$PWD/bin:$PATH"  # Hinweis: alternativ `php bin/cli ...` verwenden.
 composer install
-php bin/cli setup dev --with-sample-content
-php bin/cli build dev
-php bin/cli start dev > /tmp/readme-dev-ux-server.log 2>&1 &
+cli setup dev --with-sample-content
+cli build dev
+cli start dev > /tmp/readme-dev-ux-server.log 2>&1 &
 dev_server_pid="$!"
 wait_for_dev_server
 ```

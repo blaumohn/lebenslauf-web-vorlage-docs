@@ -476,6 +476,14 @@
   "J01-116": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "44038f33ee7fc4b12de5976c7d79dc33774c7f6d",
+      "short_sha": "44038f3",
+      "datetime": "2026-06-03T02:22:02+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/44038f33ee7fc4b12de5976c7d79dc33774c7f6d",
+      "subject": "docs(jira): Cache-Fehlerantworten dokumentieren (J01-116)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "35912af29857d19c93c5d3985d78ef50ee1938a4",
       "short_sha": "35912af",
       "datetime": "2026-06-03T01:47:14+02:00",
@@ -2351,6 +2359,70 @@
   ],
   "J01-145": [
     {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "92cd52be91f2378ca9a28aa560811a9ca557c433",
+      "short_sha": "92cd52b",
+      "datetime": "2026-06-04T13:40:37+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/92cd52be91f2378ca9a28aa560811a9ca557c433",
+      "subject": "docs(readme): doku- und quellverweise schaerfen (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "666ae7f770639665baeb575fc2246666a08c5144",
+      "short_sha": "666ae7f",
+      "datetime": "2026-06-04T11:41:46+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/666ae7f770639665baeb575fc2246666a08c5144",
+      "subject": "docs(readme): README-UX-Quelle verlinken (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "7f246ae055ad427dbb4a4c1fa6f5158684c527b6",
+      "short_sha": "7f246ae",
+      "datetime": "2026-06-04T11:41:46+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7f246ae055ad427dbb4a4c1fa6f5158684c527b6",
+      "subject": "docs(readme): README-UX-Quelle verlinken (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "7e465495b6848aa6d987e2bab25604da68d66afb",
+      "short_sha": "7e46549",
+      "datetime": "2026-06-04T11:18:53+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7e465495b6848aa6d987e2bab25604da68d66afb",
+      "subject": "docs(readme): README-UX-Abschnitte vereinfachen (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "dc3e72b7fa41e7608115f6c67d71036ec3384294",
+      "short_sha": "dc3e72b",
+      "datetime": "2026-06-04T11:18:40+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dc3e72b7fa41e7608115f6c67d71036ec3384294",
+      "subject": "docs(readme): README-UX-Abschnitte vereinfachen (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "3b4a770425634b9b56e5f18dd870618ee0bc2f07",
+      "short_sha": "3b4a770",
+      "datetime": "2026-06-04T11:07:26+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3b4a770425634b9b56e5f18dd870618ee0bc2f07",
+      "subject": "docs(readme): README-UX-Funktionen übernehmen (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "89f76fed9223d44a7a81b4c268c89d177212954a",
+      "short_sha": "89f76fe",
+      "datetime": "2026-06-04T11:07:12+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/89f76fed9223d44a7a81b4c268c89d177212954a",
+      "subject": "docs(readme): README-UX-Funktionen spiegeln (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "ab4514ea6dd3d90b8a18c6fbd3c40ce070123b9a",
+      "short_sha": "ab4514e",
+      "datetime": "2026-06-04T10:34:39+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ab4514ea6dd3d90b8a18c6fbd3c40ce070123b9a",
+      "subject": "chore(readme): README-Sync-Hook einrichten (J01-145)"
+    },
+    {
       "repo": "lebenslauf-web-vorlage-docs",
       "sha": "206ca2b712a1a0dd5fc902ec14e9e4b8244e8cde",
       "short_sha": "206ca2b",
@@ -2806,6 +2878,22 @@
   "J01-153": [
     {
       "repo": "lebenslauf-web-vorlage",
+      "sha": "7341f105c09b6e21e9cf795cabdf961d4e83bb69",
+      "short_sha": "7341f10",
+      "datetime": "2026-06-03T03:03:38+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7341f105c09b6e21e9cf795cabdf961d4e83bb69",
+      "subject": "fix(publish): cli publish korrekt auf PIPELINE_CFG_JSON umstellen (J01-153)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "97a3cdbb27de35176732b39ff3e6368354284074",
+      "short_sha": "97a3cdb",
+      "datetime": "2026-06-03T02:26:23+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/97a3cdbb27de35176732b39ff3e6368354284074",
+      "subject": "test(publish): CI-Tests für publish-Task ergänzen (J01-153)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
       "sha": "5ad711f576cb0ce2a826a97d6661020e772f10bc",
       "short_sha": "5ad711f",
       "datetime": "2026-06-03T02:05:25+02:00",
@@ -2937,6 +3025,22 @@
   ],
   "J01-62": [
     {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "4c5f63c9c2f77f9171ebd9498735c933cebdbd5c",
+      "short_sha": "4c5f63c",
+      "datetime": "2026-06-03T14:17:50+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4c5f63c9c2f77f9171ebd9498735c933cebdbd5c",
+      "subject": "fix(smoke): CV-Namen dynamisch aus Inhalt-YAML lesen statt hartcodiert (J01-62)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "4498f3c4752a10c44972b7596831484b7c8734ce",
+      "short_sha": "4498f3c",
+      "datetime": "2026-06-03T14:17:50+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4498f3c4752a10c44972b7596831484b7c8734ce",
+      "subject": "fix(smoke): CV-Namen dynamisch aus Inhalt-YAML lesen statt hartcodiert (J01-62)"
+    },
+    {
       "repo": "lebenslauf-web-vorlage-docs",
       "sha": "53af2a498270ea7a8c05396f44fa65427bf38131",
       "short_sha": "53af2a4",
@@ -2970,6 +3074,14 @@
     }
   ],
   "J01-64": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "9c7e06df64fee8bffb784febcf1d2a9294fa4274",
+      "short_sha": "9c7e06d",
+      "datetime": "2026-06-04T12:04:32+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/9c7e06df64fee8bffb784febcf1d2a9294fa4274",
+      "subject": "docs(jira): J01-62-Schrittseiten nachziehen (J01-64)"
+    },
     {
       "repo": "lebenslauf-web-vorlage",
       "sha": "3cbdbaec90f316d4ff34194a989e658d226153f9",

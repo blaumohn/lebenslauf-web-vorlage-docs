@@ -11,7 +11,7 @@ DOCS_ROOT = Path(__file__).parent.parent
 DEFAULT_APP_REPO = DOCS_ROOT.parent / "lebenslauf-web-vorlage"
 FLOW_SCRIPT = "tests/ci/readme-dev-user-flow.sh"
 FLOW_SOURCE_URL = (
-    "https://github.com/blaumohn/lebenslauf-web-vorlage/blob/main/"
+    "https://github.com/blaumohn/lebenslauf-web-vorlage/blob/dev/"
     "tests/ci/readme-dev-user-flow.sh"
 )
 
@@ -24,11 +24,6 @@ README_HEADER_EN = (
     "[Deutsch](README.md) | English"
 )
 
-DOCS_LINK = {
-    "de": "Vollständiger Abschnitt",
-    "en": "Full section",
-}
-
 SECTION_PAGE = {
     "schnellstart": {
         "de": DOCS_ROOT / "de/getting-started/schnellstart/index.md",
@@ -40,21 +35,23 @@ SECTION_PAGE = {
     },
 }
 
-SOURCE_LABEL = {
-    "de": "Quelle",
-    "en": "Source",
-}
-
-
 @dataclass
 class ReadmePage:
     metadata: dict[str, str | int]
     content: str
     frontmatter: str
+    path: Path
 
     def get(self, key: str, default: str = "") -> str:
         value = self.metadata.get(key, default)
         return str(value)
+
+
+@dataclass
+class FunctionExcerpt:
+    commands: list[str]
+    start_line: int
+    end_line: int
 
 
 def main() -> None:
@@ -70,9 +67,16 @@ def main() -> None:
 
 
 def refresh_readme_targets(app_repo: Path) -> list[tuple[Path, str]]:
+    section_excerpts = read_section_commands(app_repo / FLOW_SCRIPT)
     return [
-        (app_repo / "README.md", build_readme("de", README_HEADER_DE)),
-        (app_repo / "README.en.md", build_readme("en", README_HEADER_EN)),
+        (
+            app_repo / "README.md",
+            build_readme("de", README_HEADER_DE, section_excerpts),
+        ),
+        (
+            app_repo / "README.en.md",
+            build_readme("en", README_HEADER_EN, section_excerpts),
+        ),
     ]
 
 
@@ -106,32 +110,33 @@ def parse_args() -> Namespace:
     return args
 
 
-def read_section_commands(flow_script: Path) -> dict[str, list[str]]:
+def read_section_commands(flow_script: Path) -> dict[str, FunctionExcerpt]:
     return {
-        name: read_function_commands(flow_script, name)
+        name: read_function_excerpt(flow_script, name)
         for name in SECTION_PAGE
     }
 
 
-def read_function_commands(flow_script: Path, name: str) -> list[str]:
-    lines = extract_function_body(flow_script, name)
-    return dedent_lines(lines)
+def read_function_excerpt(flow_script: Path, name: str) -> FunctionExcerpt:
+    body, start_line, end_line = extract_function_body(flow_script, name)
+    return FunctionExcerpt(dedent_lines(body), start_line, end_line)
 
 
-def extract_function_body(path: Path, name: str) -> list[str]:
+def extract_function_body(path: Path, name: str) -> tuple[list[str], int, int]:
     lines = path.read_text(encoding="utf-8").splitlines()
     start = f"{name}() {{"
     for index, line in enumerate(lines):
         if line.strip() == start:
-            return collect_function_body(lines[index + 1 :])
+            body, end_index = collect_function_body(lines[index + 1 :])
+            return body, index + 1, index + end_index + 2
     raise SystemExit(f"Funktion nicht gefunden: {name} in {path}")
 
 
-def collect_function_body(lines: list[str]) -> list[str]:
+def collect_function_body(lines: list[str]) -> tuple[list[str], int]:
     body = []
-    for line in lines:
+    for index, line in enumerate(lines):
         if line.strip() == "}":
-            return body
+            return body, index
         body.append(line)
     raise SystemExit("Funktionsende nicht gefunden")
 
@@ -151,7 +156,7 @@ def common_indent(lines: list[str]) -> int:
 
 
 def build_section_docs(
-    section_commands: dict[str, list[str]]
+    section_commands: dict[str, FunctionExcerpt]
 ) -> list[tuple[Path, str]]:
     targets = []
     for name, pages in SECTION_PAGE.items():
@@ -165,31 +170,31 @@ def build_section_page(
     path: Path,
     name: str,
     lang: str,
-    section_commands: dict[str, list[str]],
+    section_commands: dict[str, FunctionExcerpt],
 ) -> str:
     post = load_page(path)
-    intro = build_generated_intro(name, lang, section_commands[name])
+    intro = build_generated_intro(section_commands[name])
     tail = extract_tail(post.content)
     return f"{post.frontmatter}\n\n{intro}\n\n{tail}\n"
 
 
-def build_generated_intro(
-    name: str, lang: str, commands: list[str]
-) -> str:
-    block = "\n".join(commands)
+def build_generated_intro(excerpt: FunctionExcerpt) -> str:
+    block = "\n".join(excerpt.commands)
     return (
-        f"{build_source_line(name, lang)}\n\n"
+        f"{build_source_line(excerpt)}\n\n"
         f"```bash\n{block}\n```"
     )
 
 
-def build_source_line(name: str, lang: str) -> str:
-    label = SOURCE_LABEL[lang]
+def build_source_line(excerpt: FunctionExcerpt) -> str:
+    source_url = make_source_url(excerpt)
     return (
-        f"<small>*{label}: "
-        f"[tests/ci/readme-dev-user-flow.sh]({FLOW_SOURCE_URL}) "
-        f"> `{name}()`*</small>"
+        f"<small>*[tests/ci/readme-dev-user-flow.sh]({source_url})*</small>"
     )
+
+
+def make_source_url(excerpt: FunctionExcerpt) -> str:
+    return f"{FLOW_SOURCE_URL}#L{excerpt.start_line}-L{excerpt.end_line}"
 
 
 def extract_tail(body: str) -> str:
@@ -216,10 +221,14 @@ def read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
-def build_readme(lang: str, header: str) -> str:
+def build_readme(
+    lang: str,
+    header: str,
+    section_excerpts: dict[str, FunctionExcerpt],
+) -> str:
     posts = [load_page(p) for p in find_readme_pages(lang)]
     index = build_index(posts)
-    sections = [build_section(p, lang) for p in posts]
+    sections = [build_section(p, lang, section_excerpts) for p in posts]
     body = "\n\n".join(sections)
     return f"{header}\n\n{index}\n\n---\n\n{body}\n"
 
@@ -233,40 +242,52 @@ def build_index(posts: list[ReadmePage]) -> str:
 
 
 def build_section(
-    post: ReadmePage, lang: str
+    post: ReadmePage,
+    lang: str,
+    section_excerpts: dict[str, FunctionExcerpt],
 ) -> str:
-    attribution, intro = build_attribution_and_intro(post, lang)
+    attribution, intro = build_attribution_and_intro(
+        post,
+        lang,
+        section_excerpts,
+    )
     title = post.get("title", "")
     return f"## {title}\n{attribution}\n\n{as_blockquote(intro)}\n\n---"
 
 
 def build_attribution_and_intro(
-    post: ReadmePage, lang: str
+    post: ReadmePage,
+    lang: str,
+    section_excerpts: dict[str, FunctionExcerpt],
 ) -> tuple[str, str]:
     intro = resolve_links(extract_intro(post.content))
     lines = intro.splitlines()
-    if lines and lines[0].startswith("<small>*"):
-        return make_readme_source_line(lines[0]), "\n".join(lines[1:]).strip()
+    section_name = find_section_name(post.path, lang)
+    if section_name is not None:
+        source = make_readme_source_line(section_excerpts[section_name])
+        docs = build_docs_attribution(post, lang)
+        return f"{source}\n{docs}", "\n".join(lines[1:]).strip()
     return build_docs_attribution(post, lang), intro
 
 
-def make_readme_source_line(line: str) -> str:
-    match = re.search(r"`([\w_]+)\(\)`", line)
-    if not match:
-        return line
-    name = match.group(1)
-    label = "Source" if "Source:" in line else "Quelle"
+def find_section_name(path: Path, lang: str) -> str | None:
+    for name, pages in SECTION_PAGE.items():
+        if pages[lang] == path:
+            return name
+    return None
+
+
+def make_readme_source_line(excerpt: FunctionExcerpt) -> str:
     return (
-        f"<small>*{label}: "
-        "[tests/ci/readme-dev-user-flow.sh](tests/ci/readme-dev-user-flow.sh) "
-        f"> `{name}()`*</small>"
+        f"<small>*[tests/ci/readme-dev-user-flow.sh]"
+        f"({make_source_url(excerpt)})*</small>"
     )
 
 
 def build_docs_attribution(post: ReadmePage, lang: str) -> str:
     title = post.get("title", "")
     permalink = post.get("permalink", "")
-    label = DOCS_LINK[lang]
+    label = "Docs" if lang == "en" else "Doku"
     return f"<small>*{label}: [{title}]({DOCS_BASE}{permalink})*</small>"
 
 
@@ -294,7 +315,7 @@ def find_readme_pages(lang: str) -> list[Path]:
 def load_page(path: Path) -> ReadmePage:
     text = path.read_text(encoding="utf-8")
     metadata, content, frontmatter = split_frontmatter(text)
-    return ReadmePage(metadata, content, frontmatter)
+    return ReadmePage(metadata, content, frontmatter, path)
 
 
 def split_frontmatter(text: str) -> tuple[dict[str, str | int], str, str]:
