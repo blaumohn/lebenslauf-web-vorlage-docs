@@ -2972,6 +2972,14 @@
   "J01-64": [
     {
       "repo": "lebenslauf-web-vorlage",
+      "sha": "3cbdbaec90f316d4ff34194a989e658d226153f9",
+      "short_sha": "3cbdbae",
+      "datetime": "2026-06-03T13:35:45+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3cbdbaec90f316d4ff34194a989e658d226153f9",
+      "subject": "fix(deploy): alle Pipeline-Variablen im Workflow ergänzen, leere Werte filtern (J01-64)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage",
       "sha": "40836f550493271c8a28e6456273a75e3f87450d",
       "short_sha": "40836f5",
       "datetime": "2026-06-01T12:09:08+02:00",
