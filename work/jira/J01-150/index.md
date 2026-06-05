@@ -48,21 +48,31 @@ Sprint 4 und führt laufende Begleitarbeit sichtbar weiter.
 - [J01-151]({{ "/de/jira/issues/J01-151/" | relative_url }}) —
   laufende technische Chores
 
-## Jira-Stand
+## Abschlussstand
 
-- `SCRUM Sprint 5` ist in Jira aktiv.
+- `SCRUM Sprint 5` wurde am 2026-06-04 geschlossen.
 - Sprint-Ziel: „Produktion live!“
-- Zeitraum: 2026-05-23 bis 2026-06-05.
-- Der öffentliche Jira-Spiegel zeigt wieder ein gefülltes Sprint-Board.
+- Tatsächlicher Zeitraum: 2026-05-23 bis 2026-06-04.
+- Das Sprint-Ziel wurde erreicht; der Vorgang ist als Sprint-Admin-Arbeit
+  abgeschlossen.
+- Der öffentliche Jira-Spiegel und die Sprint-Doku werden mit diesem
+  Abschlusslauf nachgezogen.
 
 ## Überprüfungsplan
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Sprint aktiv | Jira zeigt `SCRUM Sprint 5` als aktiv | Jira Board `1`, Sprint `134` | erledigt |
-| Sprint-Board gefüllt | Öffentliche Sprint-Ansicht enthält Ziel-, Support-, Admin- und ungeplante Arbeit | `/de/jira/sprint/` | erledigt |
-| Sprint-Doku vorhanden | Öffentliches Sprint-Artefakt beschreibt Ziel und Zuschnitt | `/de/work/sprints/scrum-sprint-5/` | erledigt |
+| Sprintabschluss | Jira zeigt `SCRUM Sprint 5` als geschlossen | Jira Board `1`, Sprint `134` | durch Mensch bestätigt; Jira-Nachzug erforderlich |
+| Sprint-Ziel | Produktion ist live | Sprint-Review und Hauptrepo-Commit-Historie | erledigt |
+| Sprint-Doku vorhanden | Öffentliches Sprint-Artefakt beschreibt Planning, Review, Retro und Carry-over | `/de/work/sprints/scrum-sprint-5/` | erledigt |
 | Chore-Sammelvorgang | Laufende technische Chores haben einen eigenen Sprint-5-Vorgang | [J01-151]({{ "/de/jira/issues/J01-151/" | relative_url }}) | erledigt |
+
+## Quellenprüfung
+
+Die Angaben, der Sprint-Zuschnitt und der Jira-Stand wurden vollständig gegen
+Sprint-Doku, Tagebuch, Codex-/Claude-Sitzungsregister und Commit-Historie
+geprüft. Die frühere Aussage „Sprint 5 ist aktiv“ war nach dem 2026-06-04
+nicht mehr aktuell und wurde durch den Abschlussstand ersetzt.
 
 ## Links
 

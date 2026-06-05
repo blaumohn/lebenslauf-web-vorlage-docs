@@ -31,6 +31,10 @@ genutzt.
 - Sprint: `SCRUM Sprint 5`.
 - Labels: `chore`, `dependencies`, `github`, `sprint-unplanned`.
 
+Sprint 5 ist seit 2026-06-04 geschlossen. Der Vorgang ist damit kein laufender
+Sprint-Sammelvorgang mehr; der Jira-Abschluss oder ein bewusster Folgezuschnitt
+ist noch nachzuziehen.
+
 ## Arbeitsliste
 
 | Datum | Änderung | Bezug | Bereich | Ergebnis |
@@ -46,6 +50,14 @@ genutzt.
 | Sprint-Zuordnung | Vorgang ist in `SCRUM Sprint 5` sichtbar | Jira Sprint `134` | erledigt |
 | Commit-Zuordnung | Zugehörige Chore-Commits tragen `(J01-151)` | Commit-Titel | offen |
 | Sitzungsprovenienz | Laufende Chores sind gegen Agent-Sitzungen nachvollziehbar | `tagebuch`-Notiz vom 2026-05-30 | erledigt |
+| Sprintabschluss | Sammelvorgang wird nach Sprint 5 nicht als aktiv beschrieben | Sprint-5-Review | erledigt |
+| Jira-Zustand | Jira zeigt Abschluss oder bewussten Folgezuschnitt | `J01-151` | offen |
+
+## Quellenprüfung
+
+Die Arbeitsliste und Sitzungsprovenienz bleiben gültig. Die Bezeichnung als
+laufender Sprint-5-Vorgang war nach dem Sprintabschluss nicht mehr aktuell und
+wurde eingeordnet.
 
 ## Links
 

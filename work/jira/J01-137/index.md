@@ -55,10 +55,16 @@ Kanonischer öffentlicher Arbeitsstand für laufende CV-UI-Anpassungen in
 
 ## Offene Punkte
 
-- Der Vorgang bleibt offen, solange weitere zusammengehörige Sprint-4-UI-
-  Anpassungen unter `J01-137` laufen.
+- Der Vorgang ist nach Sprint 4 und Sprint 5 kein aktiver Sprint-Sammelvorgang
+  mehr. Weitere UI-Anpassungen brauchen einen bewussten Folgezuschnitt.
 - Die Commit-Liste kann künftig aus Commit-Titeln mit `(J01-137)` erzeugt
   werden.
+
+## Quellenprüfung
+
+Die dokumentierten UI-Änderungen und Nachweise bleiben gültig. Die Aussage,
+der Vorgang bleibe wegen laufender Sprint-4-Arbeit offen, war bereits vor dem
+Ende von Sprint 5 überholt und wurde korrigiert.
 
 ## Links
 

@@ -30,6 +30,10 @@ acceptance scope are excluded. Those need their own issue.
 - Sprint: `SCRUM Sprint 5`.
 - Labels: `chore`, `dependencies`, `github`, `sprint-unplanned`.
 
+Sprint 5 has been closed since 2026-06-04. This issue is therefore no longer
+an ongoing sprint container; Jira completion or a deliberate follow-up scope
+still needs to be applied.
+
 ## Work List
 
 | Date | Change | Reference | Area | Result |
@@ -45,6 +49,14 @@ acceptance scope are excluded. Those need their own issue.
 | Sprint assignment | Issue is visible in `SCRUM Sprint 5` | Jira sprint `134` | done |
 | Commit assignment | Related chore commits carry `(J01-151)` | Commit titles | open |
 | Session provenance | Ongoing chores are traceable against agent sessions | `tagebuch` note from 2026-05-30 | done |
+| Sprint close | Container is no longer described as active after Sprint 5 | Sprint 5 review | done |
+| Jira state | Jira shows completion or a deliberate follow-up scope | `J01-151` | open |
+
+## Source Review
+
+The work list and session provenance remain valid. The description as an
+ongoing Sprint 5 issue was no longer current after sprint close and was
+clarified.
 
 ## Links
 

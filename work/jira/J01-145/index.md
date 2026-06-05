@@ -26,7 +26,7 @@ Sprint-Kontext.
 - `J01-145` ist als laufender Doku-Wartungsvorgang angelegt.
 - Jira-Metadaten:
   - Status: `In Bearbeitung`
-  - Sprints: `SCRUM Sprint 4` (geschlossen), `SCRUM Sprint 5` (aktiv)
+  - Sprints: `SCRUM Sprint 4` und `SCRUM Sprint 5` (beide geschlossen)
   - Labels: `docs`, `policy`, `sprint-admin`, `sprint-unplanned`
 - Die erste Änderung schärft die Programmierleitlinien unter
   `policies/programmierleitlinien/#fachliche-stilregeln`.
@@ -73,9 +73,16 @@ Sprint-Kontext.
 
 ## Offene Punkte
 
-- Der Vorgang bleibt offen, solange kleinere zusammengehörige
-  Doku-Wartungen im Sprint keinen eigenen spezifischen Vorgang brauchen.
+- Der Vorgang ist nach Sprint 5 kein aktiver Sprint-Vorgang mehr. Vor weiterer
+  Nutzung braucht er einen bewussten Folgezuschnitt oder einen neuen
+  Wartungsvorgang.
 - Größere fachliche Änderungen bekommen weiterhin einen eigenen Vorgang.
+
+## Quellenprüfung
+
+Alle Abschnitte wurden gegen Tagebuch und Commit-Historie geprüft. Die
+Änderungs- und Prüflisten bleiben aktuell; nur die Aussage zum aktiven Sprint
+war nach dem 2026-06-04 überholt.
 
 ## Links
 

@@ -17,10 +17,32 @@ jira_key: J01-68
 
 ## Description
 
-Ziel: Production-Deployment dokumentieren und absichern.
+Goal: document and safeguard production deployment.
 
-- Betriebsdoku erstellen
-- Rollback-/Notfallpfad skizzieren
+- Create operating documentation.
+- Outline rollback and emergency paths.
+
+## Current State
+
+Go-live has been achieved, but there is no reliable issue-specific completion
+evidence for `J01-68`. Rollback behavior and deploy history are technically
+implemented; canonical production operating documentation with an emergency
+path remains open.
+
+## Verification Plan
+
+| Checkpoint | Expectation | Evidence / Location | Status |
+| --- | --- | --- | --- |
+| Rollback behavior | Deploy and smoke failures enter defined fallback states | DeployMachine and recovery tests | technically present |
+| Deploy history | Operating states are recorded traceably | Commit `a6c88e0`, `scripts/sftp-read-deploy-history.py` | technically present |
+| Production runbook | Canonical operating and emergency docs are public | `J01-68` | open |
+| Jira close | Issue closes only with complete evidence | Jira | open |
+
+## Source Review
+
+The original goal remains valid. It is no longer a go-live blocker; technical
+operating mechanisms exist while canonical operating documentation remains
+open.
 
 ## Subtasks
 

@@ -2359,6 +2359,14 @@
   ],
   "J01-145": [
     {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "73ffee0c0d06999accfe4ff9740c118d12d08812",
+      "short_sha": "73ffee0",
+      "datetime": "2026-06-04T13:41:14+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/73ffee0c0d06999accfe4ff9740c118d12d08812",
+      "subject": "docs(getting-started): readme-nahe einstiege vernetzen (J01-145)"
+    },
+    {
       "repo": "lebenslauf-web-vorlage",
       "sha": "92cd52be91f2378ca9a28aa560811a9ca557c433",
       "short_sha": "92cd52b",
@@ -2452,14 +2460,6 @@
       "short_sha": "fc9b398",
       "datetime": "2026-05-28T05:15:57+02:00",
       "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/fc9b398a06b3973ee1b240f4cf8196c35d6199b7",
-      "subject": "fix(jira-docs): fehlende en-linkziele automatisiert entlinken (J01-145)"
-    },
-    {
-      "repo": "lebenslauf-web-vorlage-docs",
-      "sha": "f21bdfb5be4a3644a9b9468fc7902d03c6ba2b0a",
-      "short_sha": "f21bdfb",
-      "datetime": "2026-05-28T05:15:57+02:00",
-      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f21bdfb5be4a3644a9b9468fc7902d03c6ba2b0a",
       "subject": "fix(jira-docs): fehlende en-linkziele automatisiert entlinken (J01-145)"
     },
     {
@@ -3030,14 +3030,6 @@
       "short_sha": "4c5f63c",
       "datetime": "2026-06-03T14:17:50+02:00",
       "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4c5f63c9c2f77f9171ebd9498735c933cebdbd5c",
-      "subject": "fix(smoke): CV-Namen dynamisch aus Inhalt-YAML lesen statt hartcodiert (J01-62)"
-    },
-    {
-      "repo": "lebenslauf-web-vorlage",
-      "sha": "4498f3c4752a10c44972b7596831484b7c8734ce",
-      "short_sha": "4498f3c",
-      "datetime": "2026-06-03T14:17:50+02:00",
-      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4498f3c4752a10c44972b7596831484b7c8734ce",
       "subject": "fix(smoke): CV-Namen dynamisch aus Inhalt-YAML lesen statt hartcodiert (J01-62)"
     },
     {

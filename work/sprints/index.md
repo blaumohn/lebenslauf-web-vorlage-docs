@@ -7,7 +7,7 @@ permalink: /de/work/sprints/
 Öffentliche Sprint-Dokumentation als geglättete Sicht auf Ziel,
 Scope-Änderungen, Review und Retro.
 
-- [SCRUM Sprint 5: Planung — Produktion live (2026-05-23 bis 2026-06-05)]({{ "/de/work/sprints/scrum-sprint-5/" | relative_url }})
+- [SCRUM Sprint 5: Review, Retro und Carry-over — Produktion live (2026-05-23 bis 2026-06-04)]({{ "/de/work/sprints/scrum-sprint-5/" | relative_url }})
 - [SCRUM Sprint 4: Review, Retro und Carry-over (2026-04-28 bis 2026-05-12)]({{ "/de/work/sprints/scrum-sprint-4/" | relative_url }})
 - [SCRUM Sprint 3: Review, Retro und Carry-over (2026-04-15 bis 2026-04-28)]({{ "/de/work/sprints/scrum-sprint-3/" | relative_url }})
 - [SCRUM Sprint 2: Review, Retro und Carry-over (2026-04-01 bis 2026-04-15)]({{ "/de/work/sprints/scrum-sprint-2/" | relative_url }})

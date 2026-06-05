@@ -25,7 +25,7 @@ current sprint context.
 - `J01-145` exists as an ongoing documentation maintenance issue.
 - Jira metadata:
   - Status: `In Bearbeitung`
-  - Sprints: `SCRUM Sprint 4` (closed), `SCRUM Sprint 5` (active)
+  - Sprints: `SCRUM Sprint 4` and `SCRUM Sprint 5` (both closed)
   - Labels: `docs`, `policy`, `sprint-admin`, `sprint-unplanned`
 - The first change sharpens the programming guidelines under
   `policies/programmierleitlinien/#fachliche-stilregeln`.
@@ -72,9 +72,15 @@ current sprint context.
 
 ## Open Points
 
-- The issue stays open while smaller related documentation maintenance items
-  in the sprint do not need their own specific issue.
+- The issue is no longer an active sprint issue after Sprint 5. Further use
+  needs a deliberate follow-up scope or a new maintenance issue.
 - Larger domain changes still get their own issue.
+
+## Source Review
+
+All sections were checked against `tagebuch` and commit history. The change
+and verification lists remain current; only the active-sprint statement was
+outdated after 2026-06-04.
 
 ## Links
 

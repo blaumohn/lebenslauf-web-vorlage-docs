@@ -8,10 +8,12 @@ permalink: /en/jira/sprint/
 
 Sprint board of the public Jira area (without Jira Cloud links).
 
-| Kategorie | To Do | In Progress | In Review | Done |
+No active sprint is evidenced. `SCRUM Sprint 5` was closed on 2026-06-04.
+
+| Category | To Do | In Progress | In Review | Done |
 |---|---|---|---|---|
-| Sprint Goal | - [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/en/jira/issues/J01-65/" | relative_url }}) | - [J01-135 — CI/CD-Tools: CV-Token-Erzeugung und Runtime-Admin-Betrieb]({{ "/en/jira/issues/J01-135/" | relative_url }})<br>- [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/en/jira/issues/J01-62/" | relative_url }}) | - | - |
-| Support | - [J01-68 — Production: Betriebsdoku und Runbook]({{ "/en/jira/issues/J01-68/" | relative_url }}) | - | - | - |
-| Admin / Framework | - [J01-150 — SCRUM Sprint 5 planen und Produktion live bringen]({{ "/en/jira/issues/J01-150/" | relative_url }}) | - [J01-145 — Laufende Doku-Wartung Sprint 4]({{ "/en/jira/issues/J01-145/" | relative_url }}) | - | - |
-| Unplanned | - | - [J01-137 — Laufende CV-UI-Anpassungen Sprint 4]({{ "/en/jira/issues/J01-137/" | relative_url }})<br>- [J01-151 — Laufende technische Chores Sprint 5]({{ "/en/jira/issues/J01-151/" | relative_url }}) | - | - |
+| Sprint Goal | - | - | - | - |
+| Support | - | - | - | - |
+| Admin / Framework | - | - | - | - |
+| Unplanned | - | - | - | - |
 | Unclassified | - | - | - | - |

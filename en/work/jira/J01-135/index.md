@@ -23,6 +23,9 @@ CI/CD/runtime-admin operations.
 
 ## Current State
 
+- Go-live has been achieved. Statements on this page that describe remaining
+  work as required “before production” are historical preparation state and
+  no longer current go-live blockers.
 - The issue was created for `SCRUM Sprint 4` and classified as `sprint-goal`.
 - Work has started; J01-138 and J01-142 are complete as one connected
   trigger/switch foundation.
@@ -102,7 +105,8 @@ CI/CD/runtime-admin operations.
 
 ## Target State or Open Points
 
-The last preparation before production consists of four concrete points:
+The production path is live. The following points remain as separate
+hardening and usability work, not as go-live prerequisites:
 
 - Run preview mail with real Mailtrap/environment values and track deviations
   in `J01-144`.
@@ -113,6 +117,12 @@ The last preparation before production consists of four concrete points:
   access protection/auditability.
 - Stabilize preview-CI config for mail in
   [J01-144]({{ "/en/jira/issues/J01-62/steps/J01-144/" | relative_url }}).
+
+## Source Review
+
+The page was checked against `tagebuch`, session registers, and commit
+history. Most technical descriptions remain current; the timing as the last
+preparation “before production” was outdated after go-live and was corrected.
 
 ## Links
 

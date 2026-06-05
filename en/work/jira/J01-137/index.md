@@ -53,10 +53,16 @@ Canonical public working note for ongoing CV UI adjustments in
 
 ## Open Points
 
-- The issue stays open while further related Sprint 4 UI adjustments continue
-  under `J01-137`.
+- The issue is no longer an active sprint container after Sprint 4 and
+  Sprint 5. Further UI adjustments need a deliberate follow-up scope.
 - The commit list can later be generated from commit titles containing
   `(J01-137)`.
+
+## Source Review
+
+The documented UI changes and evidence remain valid. The statement that the
+issue stayed open because Sprint 4 UI work was ongoing was already outdated
+before Sprint 5 ended and was corrected.
 
 ## Links
 

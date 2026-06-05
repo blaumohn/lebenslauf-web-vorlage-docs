@@ -36,15 +36,17 @@ The following items are now complete:
 - Environment activation (`J01-64`): `origin/preview` and `origin/prod` point
   to the activated deploy state with the generic deploy workflow.
 
-The remaining go-live work is no longer the original branch/environment
-foundation, but three concrete follow-up steps:
+The three concrete follow-up steps identified on 2026-06-01 are now
+functionally complete:
 
-- Provide CI content YAML for the production build (`J01-152`).
-- Derive home and index content from real site data (`J01-154`).
-- Evaluate the publish path and live content changes (`J01-153`).
+- CI loads the production content source through SFTP (`J01-152`).
+- Production uses real public profile data instead of the dev profile
+  (`J01-154`).
+- The publish path builds, uploads, publishes, and smoke-checks CV HTML
+  (`J01-153`).
 
-Smoke and runbook topics remain in the existing production lines `J01-65` and
-`J01-68`.
+Go-live is confirmed as achieved. Deploy-contract and DeployMachine work
+remains visible as technical follow-up and does not invalidate the live state.
 
 ## Verification Plan
 
@@ -53,10 +55,17 @@ Smoke and runbook topics remain in the existing production lines `J01-65` and
 | Deployment mail path | Preview deploy sends task mail with preview sender and deploy context | Received task mail for `deploy_switch`, `J01-144` | done |
 | Branch mapping | `preview` and `prod` trigger the same deploy workflow with branch-based environment selection | `.github/workflows/deploy.yml`, `origin/preview`, `origin/prod` | done |
 | Environment activation | GitHub environment and `PIPELINE` come from `github.ref_name`; production and preview branches exist remotely | `.github/workflows/deploy.yml`, Git remote branches | done |
-| CI content YAML | Production build receives non-versioned content YAML through the CI driver | `J01-152` | open |
-| Home/index content | Home page shows real site data instead of only minimal placeholders | `J01-154` | open |
-| Publish/content changes | Live content changes are assessed; operating path is clear | `J01-153` | open |
-| Smoke/runbook boundary | Production smoke and operating procedures are linked outside `J01-62` | `J01-65`, `J01-68` | open |
+| CI content source | Production CI can load content through SFTP | Main-repository commit `318d77e`, `J01-152` | functionally done; Jira update open |
+| Home/index content | Production uses a valid public profile instead of the dev profile | Main-repository commit `d5202b6`, `J01-154` | functionally done; Jira update open |
+| Publish/content changes | CV HTML is published atomically and checked through HTTP | Main-repository commits `33768cf`, `5ad711f`, `97a3cdb`, `7341f10` | functionally done; Jira update open |
+| Go-live | Production is live | Human confirmation on 2026-06-04, Sprint 5 review | done |
+
+## Source Review
+
+Every section was checked against `tagebuch`, Codex/Claude session registers,
+and commit history. The earlier remaining-work description was no longer
+complete after the implementations from 2026-06-02 through 2026-06-04 and
+was replaced by the completion state.
 
 ## Subtasks
 
@@ -66,6 +75,6 @@ Smoke and runbook topics remain in the existing production lines `J01-65` and
 - [**62-4 Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1)**]({{ "/en/jira/issues/J01-147/" | relative_url }}) — In Progress
 - [**62-5 DeployPhase-Enum und DeployMachine-Skeleton implementieren**]({{ "/en/jira/issues/J01-148/" | relative_url }}) — Done
 - [**62-6 RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen**]({{ "/en/jira/issues/J01-149/" | relative_url }}) — In Progress
-- **62-7 CI-Inhalts-YAML fuer Prod-Build bereitstellen** — To Do
-- **62-8 Home- und Index-Inhalt aus Seitendaten ableiten** — To Do
-- **62-9 Publish-Pfad und laufende Inhaltsaenderungen bewerten** — To Do
+- [**62-7 CI-Inhalts-YAML fuer Prod-Build bereitstellen**]({{ "/en/jira/issues/J01-62/steps/J01-152/" | relative_url }}) — functionally done; Jira update open
+- [**62-8 Home- und Index-Inhalt aus Seitendaten ableiten**]({{ "/en/jira/issues/J01-62/steps/J01-154/" | relative_url }}) — functionally done; Jira update open
+- [**62-9 Publish-Pfad und laufende Inhaltsaenderungen bewerten**]({{ "/en/jira/issues/J01-62/steps/J01-153/" | relative_url }}) — functionally done; Jira update open

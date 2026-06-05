@@ -24,6 +24,9 @@ CI/CD-/Runtime-Admin-Betrieb.
 
 ## Aktueller Stand
 
+- Der Go-live ist erreicht. Aussagen auf dieser Seite, die Restarbeit als
+  Voraussetzung „vor Production“ beschreiben, sind historischer
+  Vorbereitungsstand und keine aktuelle Go-live-Blockade mehr.
 - Der Vorgang wurde für `SCRUM Sprint 4` angelegt und als `sprint-goal`
   eingeordnet.
 - Die Arbeit ist gestartet; J01-138 und J01-142 sind als zusammenhängender
@@ -105,7 +108,8 @@ CI/CD-/Runtime-Admin-Betrieb.
 
 ## Abschlussbild oder offene Punkte
 
-Die letzte Vorbereitung vor Production besteht aus vier konkreten Punkten:
+Der Production-Pfad ist live. Die folgenden Punkte bleiben als eigenständige
+Härtungs- und Bedienbarkeitsarbeit sichtbar, nicht als Go-live-Voraussetzung:
 
 - Preview-Mail mit echten Mailtrap-/Environment-Werten ausführen und
   Abweichungen in `J01-144` nachziehen.
@@ -117,6 +121,13 @@ Die letzte Vorbereitung vor Production besteht aus vier konkreten Punkten:
 - CI-Preview-Konfiguration für Mail in
   [J01-144]({{ "/de/jira/issues/J01-62/steps/J01-144/" | relative_url }})
   stabilisieren.
+
+## Quellenprüfung
+
+Die Seite wurde gegen Tagebuch, Sitzungsregister und Commit-Historie geprüft.
+Die technische Beschreibung bleibt überwiegend aktuell; die zeitliche
+Einordnung als letzte Vorbereitung „vor Production“ war nach dem Go-live
+überholt und wurde korrigiert.
 
 ## Links
 

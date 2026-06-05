@@ -1,6 +1,18 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: d5202b6709714dc38fb249866fc556e929fb4ca0
+  short_sha: d5202b6
+  datetime: "2026-06-04T13:43:47+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/d5202b6709714dc38fb249866fc556e929fb4ca0"
+  message: 'fix(config): LEBENSLAUF_PUBLIC_PROFILE in prod von dev auf gueltig korrigieren'
+- repo: lebenslauf-web-vorlage
+  sha: a6c88e0a0ddca8c3d75ed0386b254b0f202db044
+  short_sha: a6c88e0
+  datetime: "2026-06-04T13:43:24+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/a6c88e0a0ddca8c3d75ed0386b254b0f202db044"
+  message: 'feat(deploy): Deploy-History-Observability als strukturiertes NDJSON-Log'
+- repo: lebenslauf-web-vorlage
   sha: 92cd52be91f2378ca9a28aa560811a9ca557c433
   short_sha: 92cd52b
   datetime: "2026-06-04T13:40:37+02:00"
@@ -37,12 +49,6 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4c5f63c9c2f77f9171ebd9498735c933cebdbd5c"
   message: 'fix(smoke): CV-Namen dynamisch aus Inhalt-YAML lesen statt hartcodiert (J01-62)'
 - repo: lebenslauf-web-vorlage
-  sha: 4498f3c4752a10c44972b7596831484b7c8734ce
-  short_sha: 4498f3c
-  datetime: "2026-06-03T14:17:50+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/4498f3c4752a10c44972b7596831484b7c8734ce"
-  message: 'fix(smoke): CV-Namen dynamisch aus Inhalt-YAML lesen statt hartcodiert (J01-62)'
-- repo: lebenslauf-web-vorlage
   sha: 3cbdbaec90f316d4ff34194a989e658d226153f9
   short_sha: 3cbdbae
   datetime: "2026-06-03T13:35:45+02:00"
@@ -54,12 +60,12 @@
   datetime: "2026-06-03T03:03:38+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7341f105c09b6e21e9cf795cabdf961d4e83bb69"
   message: 'fix(publish): cli publish korrekt auf PIPELINE_CFG_JSON umstellen (J01-153)'
-- repo: lebenslauf-web-vorlage
-  sha: 97a3cdbb27de35176732b39ff3e6368354284074
-  short_sha: 97a3cdb
-  datetime: "2026-06-03T02:26:23+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/97a3cdbb27de35176732b39ff3e6368354284074"
-  message: 'test(publish): CI-Tests für publish-Task ergänzen (J01-153)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 73ffee0c0d06999accfe4ff9740c118d12d08812
+  short_sha: 73ffee0
+  datetime: "2026-06-04T13:41:14+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/73ffee0c0d06999accfe4ff9740c118d12d08812"
+  message: 'docs(getting-started): readme-nahe einstiege vernetzen (J01-145)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 9c7e06df64fee8bffb784febcf1d2a9294fa4274
   short_sha: 9c7e06d
@@ -114,9 +120,3 @@
   datetime: "2026-06-02T12:29:01+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c6f23b9c1d5a28a57c5dd73ff389762f96882b21"
   message: 'docs(jira): Benutzerbefehl fuer Skill-Admin dokumentieren (J01-116)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: f3db394fd406dc1728b9a6fd3c9434200b9c5c98
-  short_sha: f3db394
-  datetime: "2026-06-02T11:57:07+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f3db394fd406dc1728b9a6fd3c9434200b9c5c98"
-  message: 'docs(jira): KI-Assistenz fuer Vorgangsentwuerfe dokumentieren (J01-116)'
