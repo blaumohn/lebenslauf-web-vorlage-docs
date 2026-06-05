@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7341f105c09b6e21e9cf795cabdf961d4e83bb69"
   message: 'fix(publish): cli publish korrekt auf PIPELINE_CFG_JSON umstellen (J01-153)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: 53401c39f35ee4b1e2725377257e5b6dc1117923
+  short_sha: 53401c3
+  datetime: "2026-06-05T13:59:44+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/53401c39f35ee4b1e2725377257e5b6dc1117923"
+  message: 'docs(projektprofil): Highlights und Nachweise ergänzen, Einstiegsseite anreichern (J01-145)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 3b3598676ea4a2b0ca0e5f169b9b0d043ea5d689
   short_sha: 3b35986
   datetime: "2026-06-05T13:58:33+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-06-04T11:07:12+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/89f76fed9223d44a7a81b4c268c89d177212954a"
   message: 'docs(readme): README-UX-Funktionen spiegeln (J01-145)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: ab4514ea6dd3d90b8a18c6fbd3c40ce070123b9a
-  short_sha: ab4514e
-  datetime: "2026-06-04T10:34:39+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ab4514ea6dd3d90b8a18c6fbd3c40ce070123b9a"
-  message: 'chore(readme): README-Sync-Hook einrichten (J01-145)'
