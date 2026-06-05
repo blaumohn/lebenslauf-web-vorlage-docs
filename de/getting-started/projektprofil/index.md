@@ -19,6 +19,19 @@ Das Projekt entstand als konkreter Liefernachweis: von der Anforderung
 Die öffentliche Dokumentation macht Entscheidungen, Abläufe und
 Qualitätsnachweise transparent nachvollziehbar.
 
+## Was das Projekt zeigt
+
+- Öffentliche Ansicht mit geschwärzten Kontaktdaten; token-gesicherte private Vollansicht ohne Login
+- Lebenslauf-Daten in YAML, zweisprachig (DE/EN), durch Build-Pipeline validiert
+- SFTP-Deployment auf Shared Hosting ohne Blue-Green-Infrastruktur (Zwei-Baum-Deploy)
+- Sicherheitsschicht für das Kontaktformular: Rate-Limit, CAPTCHA, IP-Salt-Rotation
+
+## Nachweise
+
+- [Sprint-Historie]({{ "/de/work/sprints/" | relative_url }}) — öffentliche Liefernachweise je Sprint
+- [Entscheidungen (ADRs)]({{ "/de/decisions/" | relative_url }}) — Architekturentscheidungen mit Kontext
+- [Testmatrix]({{ "/de/quality/testmatrix/" | relative_url }}) — Testabdeckung und Qualitätsstand
+
 ## Einstiegspunkte
 
 - [Projektüberblick]({{ "/de/getting-started/ueberblick/" | relative_url }})

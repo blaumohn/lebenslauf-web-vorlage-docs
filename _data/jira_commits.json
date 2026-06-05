@@ -2360,6 +2360,14 @@
   "J01-145": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "3b3598676ea4a2b0ca0e5f169b9b0d043ea5d689",
+      "short_sha": "3b35986",
+      "datetime": "2026-06-05T13:58:33+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3b3598676ea4a2b0ca0e5f169b9b0d043ea5d689",
+      "subject": "refactor(de): Root-Stubs nach de/ verschieben, Dateiort gleich URL-Struktur (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "82e4f675c097c7a0795cf2023e8c12d82499f3c6",
       "short_sha": "82e4f67",
       "datetime": "2026-06-05T13:50:36+02:00",

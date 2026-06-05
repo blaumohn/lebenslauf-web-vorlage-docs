@@ -19,6 +19,19 @@ through architecture decisions to production deployment.
 The public documentation makes decisions, processes and
 quality records transparently traceable.
 
+## What the project demonstrates
+
+- Public view with redacted contact details; token-gated private full view without login
+- CV content in YAML, bilingual (DE/EN), validated through the build pipeline
+- SFTP deployment on shared hosting without Blue-Green infrastructure (dual-tree deploy)
+- Contact form security layer: rate limiting, CAPTCHA, IP-salt rotation
+
+## Evidence
+
+- [Sprint history]({{ "/en/work/sprints/" | relative_url }}) — public delivery records per sprint
+- [Decisions (ADRs)]({{ "/en/decisions/" | relative_url }}) — architecture decisions with context
+- [Test matrix]({{ "/en/quality/testmatrix/" | relative_url }}) — test coverage and quality status
+
 ## Entry points
 
 - [Project overview]({{ "/en/getting-started/overview/" | relative_url }})
