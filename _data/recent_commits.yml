@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7341f105c09b6e21e9cf795cabdf961d4e83bb69"
   message: 'fix(publish): cli publish korrekt auf PIPELINE_CFG_JSON umstellen (J01-153)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: f282acb60b2211a5afb9d3762e5d58787f4eec07
+  short_sha: f282acb
+  datetime: "2026-06-05T14:21:19+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f282acb60b2211a5afb9d3762e5d58787f4eec07"
+  message: 'docs(sprint): Sprint 6 mit laufender Arbeit starten (J01-155)'
+- repo: lebenslauf-web-vorlage-docs
   sha: ed9c42853e075b6fc9aecb0fd2e356c6519985d6
   short_sha: ed9c428
   datetime: "2026-06-05T14:13:12+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-06-04T11:41:46+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7f246ae055ad427dbb4a4c1fa6f5158684c527b6"
   message: 'docs(readme): README-UX-Quelle verlinken (J01-145)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: dc3e72b7fa41e7608115f6c67d71036ec3384294
-  short_sha: dc3e72b
-  datetime: "2026-06-04T11:18:40+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dc3e72b7fa41e7608115f6c67d71036ec3384294"
-  message: 'docs(readme): README-UX-Abschnitte vereinfachen (J01-145)'

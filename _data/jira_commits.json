@@ -2957,6 +2957,16 @@
       "subject": "refactor(deploy): SftpTreeUploader in generisch und SftpDeployUploader aufteilen (J01-153)"
     }
   ],
+  "J01-155": [
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "f282acb60b2211a5afb9d3762e5d58787f4eec07",
+      "short_sha": "f282acb",
+      "datetime": "2026-06-05T14:21:19+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/f282acb60b2211a5afb9d3762e5d58787f4eec07",
+      "subject": "docs(sprint): Sprint 6 mit laufender Arbeit starten (J01-155)"
+    }
+  ],
   "J01-16": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
