@@ -7,6 +7,7 @@ permalink: /en/work/sprints/
 Public sprint documentation as a smoothed view of goal, scope changes, review,
 and retro.
 
+- [SCRUM Sprint 6: Keep ongoing work visible (2026-06-05 to 2026-06-19)]({{ "/en/work/sprints/scrum-sprint-6/" | relative_url }})
 - [SCRUM Sprint 5: review, retro, and carry-over — production live (2026-05-23 to 2026-06-04)]({{ "/en/work/sprints/scrum-sprint-5/" | relative_url }})
 - [SCRUM Sprint 4: review, retro, and carry-over (2026-04-28 to 2026-05-12)]({{ "/en/work/sprints/scrum-sprint-4/" | relative_url }})
 - [SCRUM Sprint 3: review, retro, and carry-over (2026-04-15 to 2026-04-28)]({{ "/en/work/sprints/scrum-sprint-3/" | relative_url }})

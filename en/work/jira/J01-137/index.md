@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "J01-137 — Ongoing CV UI adjustments Sprint 4"
+title: "J01-137 — Ongoing CV UI adjustments"
 permalink: /en/jira/issues/J01-137/
 jira_key: J01-137
 jira_parent_key: J01-6
@@ -23,10 +23,10 @@ Canonical public working note for ongoing CV UI adjustments in
 
 ## Current Status
 
-- `J01-137` exists as a completed container issue under `J01-6`.
+- `J01-137` exists as an ongoing container issue under `J01-6`.
 - Jira metadata:
-  - Status: `Erledigt`
-  - Sprints: `SCRUM Sprint 4` and `SCRUM Sprint 5` (both closed)
+  - Status: `In Bearbeitung`
+  - Sprints: `SCRUM Sprint 4`, `SCRUM Sprint 5`, and active `SCRUM Sprint 6`
   - Labels: `sprint-unplanned`, `cv`, `twig`
 - The previous education rendering fix remains part of the issue.
 - The current UI adjustments to header, meta area, entry layout, fixture data,
@@ -53,8 +53,8 @@ Canonical public working note for ongoing CV UI adjustments in
 
 ## Open Points
 
-- The issue is no longer an active sprint container after Sprint 4 and
-  Sprint 5. Further UI adjustments need a deliberate follow-up scope.
+- Sprint 6 provides the deliberate follow-up scope. Small ongoing CV UI
+  adjustments can continue here.
 - The commit list can later be generated from commit titles containing
   `(J01-137)`.
 

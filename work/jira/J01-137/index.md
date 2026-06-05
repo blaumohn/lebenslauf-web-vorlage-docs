@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "J01-137 — Laufende CV-UI-Anpassungen Sprint 4"
+title: "J01-137 — Laufende CV-UI-Anpassungen"
 permalink: /de/jira/issues/J01-137/
 jira_key: J01-137
 jira_parent_key: J01-6
@@ -24,10 +24,10 @@ Kanonischer öffentlicher Arbeitsstand für laufende CV-UI-Anpassungen in
 
 ## Aktueller Stand
 
-- `J01-137` ist als abgeschlossener Sammelvorgang unter `J01-6` angelegt.
+- `J01-137` ist als laufender Sammelvorgang unter `J01-6` angelegt.
 - Jira-Metadaten:
-  - Status: `Erledigt`
-  - Sprints: `SCRUM Sprint 4` und `SCRUM Sprint 5` (beide geschlossen)
+  - Status: `In Bearbeitung`
+  - Sprints: `SCRUM Sprint 4`, `SCRUM Sprint 5` und aktiver `SCRUM Sprint 6`
   - Labels: `sprint-unplanned`, `cv`, `twig`
 - Die bisherige Ausbildungskorrektur bleibt Teil des Vorgangs.
 - Die aktuellen UI-Anpassungen an Header, Meta-Bereich, Eintragslayout,
@@ -55,8 +55,8 @@ Kanonischer öffentlicher Arbeitsstand für laufende CV-UI-Anpassungen in
 
 ## Offene Punkte
 
-- Der Vorgang ist nach Sprint 4 und Sprint 5 kein aktiver Sprint-Sammelvorgang
-  mehr. Weitere UI-Anpassungen brauchen einen bewussten Folgezuschnitt.
+- Der bewusste Folgezuschnitt ist mit Sprint 6 erfolgt. Kleine laufende
+  CV-UI-Anpassungen können hier weitergeführt werden.
 - Die Commit-Liste kann künftig aus Commit-Titeln mit `(J01-137)` erzeugt
   werden.
 

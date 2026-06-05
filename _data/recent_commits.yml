@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7341f105c09b6e21e9cf795cabdf961d4e83bb69"
   message: 'fix(publish): cli publish korrekt auf PIPELINE_CFG_JSON umstellen (J01-153)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: ed9c42853e075b6fc9aecb0fd2e356c6519985d6
+  short_sha: ed9c428
+  datetime: "2026-06-05T14:13:12+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ed9c42853e075b6fc9aecb0fd2e356c6519985d6"
+  message: 'refactor(de): alle Root-Level DE-Unterseiten nach de/ verschieben (J01-145)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 53401c39f35ee4b1e2725377257e5b6dc1117923
   short_sha: 53401c3
   datetime: "2026-06-05T13:59:44+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-06-04T11:18:40+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/dc3e72b7fa41e7608115f6c67d71036ec3384294"
   message: 'docs(readme): README-UX-Abschnitte vereinfachen (J01-145)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 89f76fed9223d44a7a81b4c268c89d177212954a
-  short_sha: 89f76fe
-  datetime: "2026-06-04T11:07:12+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/89f76fed9223d44a7a81b4c268c89d177212954a"
-  message: 'docs(readme): README-UX-Funktionen spiegeln (J01-145)'

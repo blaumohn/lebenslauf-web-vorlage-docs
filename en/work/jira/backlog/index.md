@@ -55,6 +55,7 @@ Public Jira area (without Jira Cloud links).
 
 ### [J01-6 — i18n für Seitenvorlagen und Templates]({{ "/en/jira/issues/J01-6/" | relative_url }})
 
+- [J01-137 — Laufende CV-UI-Anpassungen]({{ "/en/jira/issues/J01-137/" | relative_url }})
 - [J01-46 — i18n: CLI- und Runtime-Nachrichten]({{ "/en/jira/issues/J01-46/" | relative_url }})
   - 46-1 Message-IDs und Format definieren — To Do
   - 46-2 Ausgaben in App + Config-Lib umstellen — To Do
@@ -100,6 +101,7 @@ Public Jira area (without Jira Cloud links).
 - [J01-116 — Öffentliche Jira-Issue-Seiten: Metadaten und Unteraufgaben konsistent spiegeln]({{ "/en/jira/issues/J01-116/" | relative_url }})
 - [J01-130 — GitHub Pages: Backlog, Recent-Feed und Jira-UI bewerten]({{ "/en/jira/issues/J01-130/" | relative_url }})
 - [J01-143 — Doku-GitHub-Einbau für automatische Aktualisierung bewerten]({{ "/en/jira/issues/J01-143/" | relative_url }})
+- [J01-155 — SCRUM Sprint 6 starten und laufende Arbeit sichtbar halten]({{ "/en/jira/issues/J01-155/" | relative_url }})
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/en/jira/issues/J01-85/" | relative_url }})
   - [**85-1 Refactor: Coding-Standards durchgehend umsetzen**]({{ "/en/jira/issues/J01-85/steps/J01-81/" | relative_url }}) — To Do
   - [**85-2 API-Betriebe (Wrapper), http als Escape-Hatch**]({{ "/en/jira/issues/J01-85/steps/J01-82/" | relative_url }}) — To Do
@@ -115,3 +117,4 @@ Public Jira area (without Jira Cloud links).
 - [J01-109 — GitHub-Pages-Permalinks für öffentliche Jira-Doku angleichen]({{ "/en/jira/issues/J01-109/" | relative_url }})
 - [J01-117 — Projekt-Doku: Spec-Landkarte für Projekt, Systeme und Abläufe]({{ "/en/jira/issues/J01-117/" | relative_url }})
 - [J01-129 — BasePipelineCommand-Konfig als Objekt konsolidieren]({{ "/en/jira/issues/J01-129/" | relative_url }})
+- [J01-145 — Laufende Doku-Wartung]({{ "/en/jira/issues/J01-145/" | relative_url }})

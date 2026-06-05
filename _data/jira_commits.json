@@ -2360,6 +2360,14 @@
   "J01-145": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "ed9c42853e075b6fc9aecb0fd2e356c6519985d6",
+      "short_sha": "ed9c428",
+      "datetime": "2026-06-05T14:13:12+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/ed9c42853e075b6fc9aecb0fd2e356c6519985d6",
+      "subject": "refactor(de): alle Root-Level DE-Unterseiten nach de/ verschieben (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "53401c39f35ee4b1e2725377257e5b6dc1117923",
       "short_sha": "53401c3",
       "datetime": "2026-06-05T13:59:44+02:00",

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "J01-145 — Ongoing documentation maintenance Sprint 4"
+title: "J01-145 — Ongoing documentation maintenance"
 permalink: /en/jira/issues/J01-145/
 jira_key: J01-145
 ---
@@ -22,10 +22,10 @@ current sprint context.
 
 ## Current Status
 
-- `J01-145` exists as a completed documentation maintenance issue.
+- `J01-145` exists as an ongoing documentation maintenance issue.
 - Jira metadata:
-  - Status: `Erledigt`
-  - Sprints: `SCRUM Sprint 4` and `SCRUM Sprint 5` (both closed)
+  - Status: `In Bearbeitung`
+  - Sprints: `SCRUM Sprint 4`, `SCRUM Sprint 5`, and active `SCRUM Sprint 6`
   - Labels: `docs`, `policy`, `sprint-admin`, `sprint-unplanned`
 - The first change sharpens the programming guidelines under
   `policies/programmierleitlinien/#fachliche-stilregeln`.
@@ -72,8 +72,8 @@ current sprint context.
 
 ## Open Points
 
-- The issue is no longer an active sprint issue after Sprint 5. Further use
-  needs a deliberate follow-up scope or a new maintenance issue.
+- Sprint 6 provides the deliberate follow-up scope. Small ongoing
+  documentation maintenance can continue here.
 - Larger domain changes still get their own issue.
 
 ## Source Review
