@@ -4,26 +4,18 @@ title: Testmatrix
 permalink: /de/quality/testmatrix/
 ---
 
-Testmatrix und zugehörige Nachweise.
+Testabdeckung und Qualitätsnachweise des Projekts.
 
-Zielbild:
+Jira-Issues verlinken auf konkrete Testmatrix-Abschnitte oder Nachweisseiten;
+der öffentliche Mirror zeigt diese Links als Referenz (ohne Jira-Cloud-Links).
 
-- Jira-Issues verlinken auf konkrete Testmatrix-Seiten oder Nachweisabschnitte
-  in dieser Doku.
-- Der öffentliche Mirror zeigt diese Links als Referenz an (ohne Jira-Cloud-Links).
+Leitplanke: Feingranulare Checks bleiben Teil der Testmatrix oder der
+vorgangsgenauen Arbeitsdoku. Es gibt keinen eigenen Dokutyp `Abnahmecheck`.
 
-Leitplanke:
+## Preview-Pfad (Sprint 1, Stand 2026-03)
 
-- Es gibt aktuell keinen eigenen Dokutyp `Abnahmecheck`.
-- Feingranulare Checks bleiben Teil der Testmatrix oder der vorgangsgenauen
-  Arbeitsdoku.
-
-## Sprint-Bezug
-
-Für `J01-98` ist diese Seite der kanonische Zielort für die öffentlich
-sichtbaren Nachweise zum Preview-Pfad.
-Sie hält nur die Checks, die den Schritt `feature/* -> dev -> preview`
-unmittelbar absichern.
+Kanonischer Zielort für die Nachweise zum Sprint-1-Preview-Pfad (`J01-98`).
+Hält die Checks für den Schritt `feature/* → dev → preview`.
 
 ## Sprintmatrix für den Preview-Pfad
 

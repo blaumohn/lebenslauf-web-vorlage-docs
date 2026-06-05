@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7341f105c09b6e21e9cf795cabdf961d4e83bb69"
   message: 'fix(publish): cli publish korrekt auf PIPELINE_CFG_JSON umstellen (J01-153)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: 3ad225cfb8a1b5345a5223495e2f8dba568937d4
+  short_sha: 3ad225c
+  datetime: "2026-06-05T14:26:08+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3ad225cfb8a1b5345a5223495e2f8dba568937d4"
+  message: 'chore(docs): generierte Jira-Daten nachziehen (J01-145)'
+- repo: lebenslauf-web-vorlage-docs
   sha: f282acb60b2211a5afb9d3762e5d58787f4eec07
   short_sha: f282acb
   datetime: "2026-06-05T14:21:19+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-06-04T12:04:32+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/9c7e06df64fee8bffb784febcf1d2a9294fa4274"
   message: 'docs(jira): J01-62-Schrittseiten nachziehen (J01-64)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 7f246ae055ad427dbb4a4c1fa6f5158684c527b6
-  short_sha: 7f246ae
-  datetime: "2026-06-04T11:41:46+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/7f246ae055ad427dbb4a4c1fa6f5158684c527b6"
-  message: 'docs(readme): README-UX-Quelle verlinken (J01-145)'

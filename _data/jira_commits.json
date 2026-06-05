@@ -2360,6 +2360,14 @@
   "J01-145": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "3ad225cfb8a1b5345a5223495e2f8dba568937d4",
+      "short_sha": "3ad225c",
+      "datetime": "2026-06-05T14:26:08+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3ad225cfb8a1b5345a5223495e2f8dba568937d4",
+      "subject": "chore(docs): generierte Jira-Daten nachziehen (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "ed9c42853e075b6fc9aecb0fd2e356c6519985d6",
       "short_sha": "ed9c428",
       "datetime": "2026-06-05T14:13:12+02:00",

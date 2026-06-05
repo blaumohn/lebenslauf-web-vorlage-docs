@@ -4,10 +4,8 @@ title: "Bereich: CLI / Build"
 permalink: /de/areas/cli-build/
 ---
 
-Dieser Bereich hält für `J01-98` die preview-relevante Source- und
-Manifest-Herleitung fest.
-Er beschreibt nur den schmalen Pfad, den `SCRUM Sprint 1` für die
-öffentliche Preview-Migration braucht.
+Dieser Bereich dokumentiert die CLI-/Build-Schicht der App:
+Pipeline-Phasenmodell, Manifest-Regeln und Config-Ladereihenfolge.
 
 ## Pipeline- und Phasenmodell
 
@@ -61,13 +59,10 @@ Der schmale Preview-Pfad für `J01-98` lautet:
 
 ## Abgrenzung
 
-- Diese Seite erklärt den technischen Zuschnitt für `J01-31`.
-- Ausführliche Betriebsregeln für die lokale Pages-Vorschau bleiben im
+- Ausführliche Betriebsregeln für die lokale Pages-Vorschau:
   [Preview-Runbook]({{ "/de/operations/ghpages-preview/" | relative_url }}).
-- Laufzeitnahe Stabilitätsaspekte bleiben im
+- Laufzeitnahe Stabilitätsaspekte:
   [Bereich: HTTP-Runtime]({{ "/de/areas/http-runtime/" | relative_url }}).
-- Alles, was über den aktiven Preview-Sprint hinausgeht, bleibt außerhalb
-  von `J01-98`.
 
 ## Links
 

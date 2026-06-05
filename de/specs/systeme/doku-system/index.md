@@ -28,12 +28,12 @@ veröffentlicht.
 
 ## Aufbau
 
-- `areas/`
-- `policies/`
-- `operations/`
-- `decisions/`
-- `work/`
-- `specs/`
+- [Bereiche]({{ "/de/areas/" | relative_url }})
+- [Richtlinien]({{ "/de/policies/" | relative_url }})
+- [Betrieb]({{ "/de/operations/" | relative_url }})
+- [Entscheidungen]({{ "/de/decisions/" | relative_url }})
+- [Jira-Arbeitsdoku und Sprint-Artefakte]({{ "/de/jira/" | relative_url }}) (`work/`)
+- [Specs]({{ "/de/specs/" | relative_url }})
 
 ## Rollen
 
