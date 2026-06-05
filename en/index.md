@@ -33,31 +33,13 @@ The app repo contains source code, but no regular project docs under `docs/`.
 ## Reader paths
 
 - **[Assess the project]({{ "/en/getting-started/project-profile/" | relative_url }})**  
-  For HR, team leads and product: demo, project overview and delivery evidence
+  Demo, project overview and delivery evidence
 - **[organisational entry]({{ "/en/specs/project/" | relative_url }})**  
   project purpose, project map, and defining characteristics
 - **[technical entry]({{ "/en/specs/" | relative_url }})**  
   system boundaries, system design, and stable processes
 - **[implementation entry]({{ "/en/getting-started/" | relative_url }})**  
   repos, doc locations, and SSOT context
-
-## Areas
-
-The documentation is grouped by project area so that runbooks, decisions, and
-other pages are easy to place and navigate.
-
-- [Areas overview]({{ "/en/areas/" | relative_url }})
-
-## Decisions / Operations / Status
-
-- [Decisions (ADRs)]({{ "/en/decisions/" | relative_url }})
-- [Operations (runbook)]({{ "/en/operations/" | relative_url }})
-- [Sprint history (public)]({{ "/en/work/sprints/" | relative_url }})
-- [Jira (public)]({{ "/en/jira/" | relative_url }})
-- [Policies]({{ "/en/policies/" | relative_url }})
-- [Specs]({{ "/en/specs/" | relative_url }})
-- [Templates]({{ "/en/templates/" | relative_url }})
-- [Quality]({{ "/en/quality/" | relative_url }})
 
 ## Principle
 

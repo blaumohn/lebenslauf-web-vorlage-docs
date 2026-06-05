@@ -33,31 +33,13 @@ Das App-Repo enthält Quelltext, aber keine reguläre Projektdoku unter `docs/`.
 ## Leserpfade
 
 - **[Projekt einschätzen]({{ "/de/getting-started/projektprofil/" | relative_url }})**  
-  Für HR, Team-Leads und Product: Demo, Projektüberblick und Liefernachweis
+  Demo, Projektüberblick und Liefernachweis
 - **[fachlicher Einstieg]({{ "/de/specs/projekt/" | relative_url }})**  
   Projektzweck, Projektlandkarte und zentrale Eigenschaften
 - **[technischer Einstieg]({{ "/de/specs/" | relative_url }})**  
   Systemgrenzen, Systemzuschnitt und stabile Abläufe
 - **[Umsetzungseinstieg]({{ "/de/getting-started/" | relative_url }})**  
   Repos, Doku-Orte und SSOT-Kontext
-
-## Bereiche
-
-Die Dokumentation ist nach Projektbereichen strukturiert, damit Seiten
-wie z. B. Runbooks oder Entscheidungen sofort einordbar sind.
-
-- [Bereiche (Überblick)]({{ "/de/areas/" | relative_url }})
-
-## Entscheidungen / Betrieb / Zustand
-
-- [Entscheidungen (ADRs)]({{ "/de/decisions/" | relative_url }})
-- [Betrieb (Runbook)]({{ "/de/operations/" | relative_url }})
-- [Sprint-Historie (öffentlich)]({{ "/de/work/sprints/" | relative_url }})
-- [Jira‑Übersicht (öffentlich)]({{ "/de/jira/" | relative_url }})
-- [Richtlinien]({{ "/de/policies/" | relative_url }})
-- [Specs]({{ "/de/specs/" | relative_url }})
-- [Vorlagen]({{ "/de/templates/" | relative_url }})
-- [Qualität]({{ "/de/quality/" | relative_url }})
 
 ## Grundsatz
 

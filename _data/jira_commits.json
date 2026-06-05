@@ -2824,6 +2824,14 @@
   "J01-150": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "8ee1b8fcf6aa8d657590b1180602307245249d37",
+      "short_sha": "8ee1b8f",
+      "datetime": "2026-06-05T12:53:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8ee1b8fcf6aa8d657590b1180602307245249d37",
+      "subject": "docs(jira): Sprint-5-Abschluss nach Jira-Nachzug synchronisieren (J01-150)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "eb77f208d6ab62c31f310caa76d908f37fd3e17f",
       "short_sha": "eb77f20",
       "datetime": "2026-06-05T10:36:17+02:00",

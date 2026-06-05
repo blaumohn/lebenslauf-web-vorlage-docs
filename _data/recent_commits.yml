@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7341f105c09b6e21e9cf795cabdf961d4e83bb69"
   message: 'fix(publish): cli publish korrekt auf PIPELINE_CFG_JSON umstellen (J01-153)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: 8ee1b8fcf6aa8d657590b1180602307245249d37
+  short_sha: 8ee1b8f
+  datetime: "2026-06-05T12:53:36+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/8ee1b8fcf6aa8d657590b1180602307245249d37"
+  message: 'docs(jira): Sprint-5-Abschluss nach Jira-Nachzug synchronisieren (J01-150)'
+- repo: lebenslauf-web-vorlage-docs
   sha: eb77f208d6ab62c31f310caa76d908f37fd3e17f
   short_sha: eb77f20
   datetime: "2026-06-05T10:36:17+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-06-03T01:47:14+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/35912af29857d19c93c5d3985d78ef50ee1938a4"
   message: 'docs(jira): Page-Apply-Befehl dokumentieren (J01-116)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 3859b000fd622e28aabc6479cbd1dc3098e00c09
-  short_sha: 3859b00
-  datetime: "2026-06-03T00:36:10+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3859b000fd622e28aabc6479cbd1dc3098e00c09"
-  message: 'docs(jira): Seitenentwurf-Befehl dokumentieren (J01-116)'
