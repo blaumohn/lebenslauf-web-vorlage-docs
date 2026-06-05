@@ -19,6 +19,10 @@ Das Projekt entstand als konkreter Liefernachweis: von der Anforderung
 Die öffentliche Dokumentation macht Entscheidungen, Abläufe und
 Qualitätsnachweise transparent nachvollziehbar.
 
+## Links
+
+{% include project-links.html %}
+
 ## Was das Projekt zeigt
 
 - Öffentliche Ansicht mit geschwärzten Kontaktdaten; token-gesicherte private Vollansicht ohne Login

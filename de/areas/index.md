@@ -10,3 +10,4 @@ kohärent bleibt.
 - [Jira- und Doku-Tooling]({{ "/de/areas/proj-doku-tooling/" | relative_url }})
 - [CLI / Build]({{ "/de/areas/cli-build/" | relative_url }})
 - [HTTP-Runtime]({{ "/de/areas/http-runtime/" | relative_url }})
+- [pipeline-config-spec-php]({{ "/de/areas/pipeline-config-spec-php/" | relative_url }})

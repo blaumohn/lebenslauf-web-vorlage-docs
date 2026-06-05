@@ -2359,6 +2359,22 @@
   ],
   "J01-145": [
     {
+      "repo": "lebenslauf-web-vorlage",
+      "sha": "dc3b8789ce542ae4e749f798c88f5e1d30e0a9a4",
+      "short_sha": "dc3b878",
+      "datetime": "2026-06-05T16:15:54+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dc3b8789ce542ae4e749f798c88f5e1d30e0a9a4",
+      "subject": "fix: Projektverweis im Site-Footer und Lebenslauf-Fixture korrigieren (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "3375fda7ebb03a56f0683c1f7e74a7990143ca07",
+      "short_sha": "3375fda",
+      "datetime": "2026-06-05T14:33:44+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3375fda7ebb03a56f0683c1f7e74a7990143ca07",
+      "subject": "docs(de): Sprint-Kontext bereinigen, Testmatrix umrahmen, doku-system-Pfade aktualisieren (J01-145)"
+    },
+    {
       "repo": "lebenslauf-web-vorlage-docs",
       "sha": "3ad225cfb8a1b5345a5223495e2f8dba568937d4",
       "short_sha": "3ad225c",

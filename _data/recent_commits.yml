@@ -1,6 +1,12 @@
 # Generiert von scripts/generate-recent-commits.sh
 # Nicht manuell bearbeiten.
 - repo: lebenslauf-web-vorlage
+  sha: dc3b8789ce542ae4e749f798c88f5e1d30e0a9a4
+  short_sha: dc3b878
+  datetime: "2026-06-05T16:15:54+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/dc3b8789ce542ae4e749f798c88f5e1d30e0a9a4"
+  message: 'fix: Projektverweis im Site-Footer und Lebenslauf-Fixture korrigieren (J01-145)'
+- repo: lebenslauf-web-vorlage
   sha: d5202b6709714dc38fb249866fc556e929fb4ca0
   short_sha: d5202b6
   datetime: "2026-06-04T13:43:47+02:00"
@@ -54,12 +60,12 @@
   datetime: "2026-06-03T13:35:45+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/3cbdbaec90f316d4ff34194a989e658d226153f9"
   message: 'fix(deploy): alle Pipeline-Variablen im Workflow ergänzen, leere Werte filtern (J01-64)'
-- repo: lebenslauf-web-vorlage
-  sha: 7341f105c09b6e21e9cf795cabdf961d4e83bb69
-  short_sha: 7341f10
-  datetime: "2026-06-03T03:03:38+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7341f105c09b6e21e9cf795cabdf961d4e83bb69"
-  message: 'fix(publish): cli publish korrekt auf PIPELINE_CFG_JSON umstellen (J01-153)'
+- repo: lebenslauf-web-vorlage-docs
+  sha: 3375fda7ebb03a56f0683c1f7e74a7990143ca07
+  short_sha: 3375fda
+  datetime: "2026-06-05T14:33:44+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3375fda7ebb03a56f0683c1f7e74a7990143ca07"
+  message: 'docs(de): Sprint-Kontext bereinigen, Testmatrix umrahmen, doku-system-Pfade aktualisieren (J01-145)'
 - repo: lebenslauf-web-vorlage-docs
   sha: 3ad225cfb8a1b5345a5223495e2f8dba568937d4
   short_sha: 3ad225c
@@ -114,9 +120,3 @@
   datetime: "2026-06-04T13:41:14+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/73ffee0c0d06999accfe4ff9740c118d12d08812"
   message: 'docs(getting-started): readme-nahe einstiege vernetzen (J01-145)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: 9c7e06df64fee8bffb784febcf1d2a9294fa4274
-  short_sha: 9c7e06d
-  datetime: "2026-06-04T12:04:32+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/9c7e06df64fee8bffb784febcf1d2a9294fa4274"
-  message: 'docs(jira): J01-62-Schrittseiten nachziehen (J01-64)'
