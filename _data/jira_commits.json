@@ -2360,6 +2360,14 @@
   "J01-145": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "82e4f675c097c7a0795cf2023e8c12d82499f3c6",
+      "short_sha": "82e4f67",
+      "datetime": "2026-06-05T13:50:36+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/82e4f675c097c7a0795cf2023e8c12d82499f3c6",
+      "subject": "docs(de/en/index): Rollen-Etiketten entfernen, Hauptseiten straffen (J01-145)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "73ffee0c0d06999accfe4ff9740c118d12d08812",
       "short_sha": "73ffee0",
       "datetime": "2026-06-04T13:41:14+02:00",
