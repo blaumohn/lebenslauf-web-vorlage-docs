@@ -23,9 +23,9 @@ Sprint-Kontext.
 
 ## Aktueller Stand
 
-- `J01-145` ist als laufender Doku-Wartungsvorgang angelegt.
+- `J01-145` ist als abgeschlossener Doku-Wartungsvorgang angelegt.
 - Jira-Metadaten:
-  - Status: `In Bearbeitung`
+  - Status: `Erledigt`
   - Sprints: `SCRUM Sprint 4` und `SCRUM Sprint 5` (beide geschlossen)
   - Labels: `docs`, `policy`, `sprint-admin`, `sprint-unplanned`
 - Die erste Änderung schärft die Programmierleitlinien unter

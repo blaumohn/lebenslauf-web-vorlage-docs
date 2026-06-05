@@ -24,10 +24,10 @@ Kanonischer öffentlicher Arbeitsstand für laufende CV-UI-Anpassungen in
 
 ## Aktueller Stand
 
-- `J01-137` ist als laufender Sprint-4-Vorgang unter `J01-6` angelegt.
+- `J01-137` ist als abgeschlossener Sammelvorgang unter `J01-6` angelegt.
 - Jira-Metadaten:
-  - Status: `In Bearbeitung`
-  - Sprint: `SCRUM Sprint 4`
+  - Status: `Erledigt`
+  - Sprints: `SCRUM Sprint 4` und `SCRUM Sprint 5` (beide geschlossen)
   - Labels: `sprint-unplanned`, `cv`, `twig`
 - Die bisherige Ausbildungskorrektur bleibt Teil des Vorgangs.
 - Die aktuellen UI-Anpassungen an Header, Meta-Bereich, Eintragslayout,

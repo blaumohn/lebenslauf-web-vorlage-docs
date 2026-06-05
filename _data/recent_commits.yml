@@ -61,6 +61,12 @@
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage/commit/7341f105c09b6e21e9cf795cabdf961d4e83bb69"
   message: 'fix(publish): cli publish korrekt auf PIPELINE_CFG_JSON umstellen (J01-153)'
 - repo: lebenslauf-web-vorlage-docs
+  sha: eb77f208d6ab62c31f310caa76d908f37fd3e17f
+  short_sha: eb77f20
+  datetime: "2026-06-05T10:36:17+02:00"
+  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/eb77f208d6ab62c31f310caa76d908f37fd3e17f"
+  message: 'docs(sprint): Sprint 5 Abschluss quellenbasiert nachziehen (J01-150)'
+- repo: lebenslauf-web-vorlage-docs
   sha: 73ffee0c0d06999accfe4ff9740c118d12d08812
   short_sha: 73ffee0
   datetime: "2026-06-04T13:41:14+02:00"
@@ -114,9 +120,3 @@
   datetime: "2026-06-03T00:36:10+02:00"
   github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/3859b000fd622e28aabc6479cbd1dc3098e00c09"
   message: 'docs(jira): Seitenentwurf-Befehl dokumentieren (J01-116)'
-- repo: lebenslauf-web-vorlage-docs
-  sha: c6f23b9c1d5a28a57c5dd73ff389762f96882b21
-  short_sha: c6f23b9
-  datetime: "2026-06-02T12:29:01+02:00"
-  github_url: "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/c6f23b9c1d5a28a57c5dd73ff389762f96882b21"
-  message: 'docs(jira): Benutzerbefehl fuer Skill-Admin dokumentieren (J01-116)'

@@ -22,9 +22,9 @@ current sprint context.
 
 ## Current Status
 
-- `J01-145` exists as an ongoing documentation maintenance issue.
+- `J01-145` exists as a completed documentation maintenance issue.
 - Jira metadata:
-  - Status: `In Bearbeitung`
+  - Status: `Erledigt`
   - Sprints: `SCRUM Sprint 4` and `SCRUM Sprint 5` (both closed)
   - Labels: `docs`, `policy`, `sprint-admin`, `sprint-unplanned`
 - The first change sharpens the programming guidelines under

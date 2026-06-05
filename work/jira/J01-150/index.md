@@ -50,7 +50,8 @@ Sprint 4 und führt laufende Begleitarbeit sichtbar weiter.
 
 ## Abschlussstand
 
-- `SCRUM Sprint 5` wurde am 2026-06-04 geschlossen.
+- `SCRUM Sprint 5` wurde fachlich am 2026-06-04 beendet und am 2026-06-05
+  operativ in Jira geschlossen.
 - Sprint-Ziel: „Produktion live!“
 - Tatsächlicher Zeitraum: 2026-05-23 bis 2026-06-04.
 - Das Sprint-Ziel wurde erreicht; der Vorgang ist als Sprint-Admin-Arbeit
@@ -62,7 +63,7 @@ Sprint 4 und führt laufende Begleitarbeit sichtbar weiter.
 
 | Prüfpunkt | Erwartung | Nachweis / Ort | Status |
 | --- | --- | --- | --- |
-| Sprintabschluss | Jira zeigt `SCRUM Sprint 5` als geschlossen | Jira Board `1`, Sprint `134` | durch Mensch bestätigt; Jira-Nachzug erforderlich |
+| Sprintabschluss | Jira zeigt `SCRUM Sprint 5` als geschlossen | Jira Board `1`, Sprint `134`, `completeDate` 2026-06-05 | erledigt |
 | Sprint-Ziel | Produktion ist live | Sprint-Review und Hauptrepo-Commit-Historie | erledigt |
 | Sprint-Doku vorhanden | Öffentliches Sprint-Artefakt beschreibt Planning, Review, Retro und Carry-over | `/de/work/sprints/scrum-sprint-5/` | erledigt |
 | Chore-Sammelvorgang | Laufende technische Chores haben einen eigenen Sprint-5-Vorgang | [J01-151]({{ "/de/jira/issues/J01-151/" | relative_url }}) | erledigt |

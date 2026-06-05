@@ -27,13 +27,12 @@ genutzt.
 
 - `J01-151` ist als `Task` unter
   [J01-5]({{ "/de/jira/issues/J01-5/" | relative_url }}) angelegt.
-- Status: `In Bearbeitung`.
+- Status: `Erledigt`.
 - Sprint: `SCRUM Sprint 5`.
 - Labels: `chore`, `dependencies`, `github`, `sprint-unplanned`.
 
-Sprint 5 ist seit 2026-06-04 geschlossen. Der Vorgang ist damit kein laufender
-Sprint-Sammelvorgang mehr; der Jira-Abschluss oder ein bewusster Folgezuschnitt
-ist noch nachzuziehen.
+Sprint 5 wurde fachlich am 2026-06-04 beendet und am 2026-06-05 operativ in
+Jira geschlossen. Der Sammelvorgang ist ebenfalls abgeschlossen.
 
 ## Arbeitsliste
 
@@ -51,7 +50,7 @@ ist noch nachzuziehen.
 | Commit-Zuordnung | Zugehörige Chore-Commits tragen `(J01-151)` | Commit-Titel | offen |
 | Sitzungsprovenienz | Laufende Chores sind gegen Agent-Sitzungen nachvollziehbar | `tagebuch`-Notiz vom 2026-05-30 | erledigt |
 | Sprintabschluss | Sammelvorgang wird nach Sprint 5 nicht als aktiv beschrieben | Sprint-5-Review | erledigt |
-| Jira-Zustand | Jira zeigt Abschluss oder bewussten Folgezuschnitt | `J01-151` | offen |
+| Jira-Zustand | Jira zeigt Abschluss oder bewussten Folgezuschnitt | `J01-151` | erledigt |
 
 ## Quellenprüfung
 

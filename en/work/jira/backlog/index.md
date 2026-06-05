@@ -33,7 +33,6 @@ Public Jira area (without Jira Cloud links).
   - [**135-4 Admin-Aktionsliste und Zugriffsschutz begrenzen**]({{ "/en/jira/issues/J01-135/steps/J01-141/" | relative_url }}) — To Do
   - [**135-5 CV-Token-Rotation als Runtime-Admin-Aktion umsetzen**]({{ "/en/jira/issues/J01-135/steps/J01-139/" | relative_url }}) — In Progress
 - [J01-146 — src/cli/py kohärent ordnen und Python-CLI-Aliasse prüfen]({{ "/en/jira/issues/J01-146/" | relative_url }})
-- [J01-151 — Laufende technische Chores Sprint 5]({{ "/en/jira/issues/J01-151/" | relative_url }})
 - J01-28 — Analyse: Risikomuster und Befundliste
   - 28-1 Befunde erfassen — To Do
   - 28-2 Priorisierung und Folge-Tickets — To Do
@@ -56,7 +55,6 @@ Public Jira area (without Jira Cloud links).
 
 ### [J01-6 — i18n für Seitenvorlagen und Templates]({{ "/en/jira/issues/J01-6/" | relative_url }})
 
-- [J01-137 — Laufende CV-UI-Anpassungen Sprint 4]({{ "/en/jira/issues/J01-137/" | relative_url }})
 - [J01-46 — i18n: CLI- und Runtime-Nachrichten]({{ "/en/jira/issues/J01-46/" | relative_url }})
   - 46-1 Message-IDs und Format definieren — To Do
   - 46-2 Ausgaben in App + Config-Lib umstellen — To Do
@@ -69,13 +67,13 @@ Public Jira area (without Jira Cloud links).
 - [J01-62 — Production: Branch- und Environment-Regeln aktivieren]({{ "/en/jira/issues/J01-62/" | relative_url }})
   - [**62-1 Mail im Deployment aktivieren**]({{ "/en/jira/issues/J01-62/steps/J01-144/" | relative_url }}) — Done
   - 62-2 Branch-Mapping festlegen — Done
-  - 62-3 Environment aktivieren — Done
+  - [**62-3 Environment aktivieren**]({{ "/en/jira/issues/J01-62/steps/J01-64/" | relative_url }}) — Done
   - [**62-4 Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1)**]({{ "/en/jira/issues/J01-147/" | relative_url }}) — In Progress
   - [**62-5 DeployPhase-Enum und DeployMachine-Skeleton implementieren**]({{ "/en/jira/issues/J01-148/" | relative_url }}) — Done
   - [**62-6 RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen**]({{ "/en/jira/issues/J01-149/" | relative_url }}) — In Progress
-  - 62-7 CI-Inhalts-YAML fuer Prod-Build bereitstellen — To Do
-  - 62-8 Home- und Index-Inhalt aus Seitendaten ableiten — To Do
-  - 62-9 Publish-Pfad und laufende Inhaltsaenderungen bewerten — To Do
+  - [**62-7 CI-Inhalts-YAML fuer Prod-Build bereitstellen**]({{ "/en/jira/issues/J01-62/steps/J01-152/" | relative_url }}) — Done
+  - [**62-8 Home- und Index-Inhalt aus Seitendaten ableiten**]({{ "/en/jira/issues/J01-62/steps/J01-154/" | relative_url }}) — Done
+  - [**62-9 Publish-Pfad und laufende Inhaltsaenderungen bewerten**]({{ "/en/jira/issues/J01-62/steps/J01-153/" | relative_url }}) — Done
 - [J01-65 — Production: Artefakt- und Smoke-Checks definieren]({{ "/en/jira/issues/J01-65/" | relative_url }})
   - 65-1 Artefaktliste festlegen — To Do
   - 65-2 Post-Deploy-Smoke definieren — To Do
@@ -102,7 +100,6 @@ Public Jira area (without Jira Cloud links).
 - [J01-116 — Öffentliche Jira-Issue-Seiten: Metadaten und Unteraufgaben konsistent spiegeln]({{ "/en/jira/issues/J01-116/" | relative_url }})
 - [J01-130 — GitHub Pages: Backlog, Recent-Feed und Jira-UI bewerten]({{ "/en/jira/issues/J01-130/" | relative_url }})
 - [J01-143 — Doku-GitHub-Einbau für automatische Aktualisierung bewerten]({{ "/en/jira/issues/J01-143/" | relative_url }})
-- [J01-150 — SCRUM Sprint 5 planen und Produktion live bringen]({{ "/en/jira/issues/J01-150/" | relative_url }})
 - [J01-85 — Atlassian-System vorbereiten (SSOT: Jira) – Tooling-Backlog-Container]({{ "/en/jira/issues/J01-85/" | relative_url }})
   - [**85-1 Refactor: Coding-Standards durchgehend umsetzen**]({{ "/en/jira/issues/J01-85/steps/J01-81/" | relative_url }}) — To Do
   - [**85-2 API-Betriebe (Wrapper), http als Escape-Hatch**]({{ "/en/jira/issues/J01-85/steps/J01-82/" | relative_url }}) — To Do
@@ -118,4 +115,3 @@ Public Jira area (without Jira Cloud links).
 - [J01-109 — GitHub-Pages-Permalinks für öffentliche Jira-Doku angleichen]({{ "/en/jira/issues/J01-109/" | relative_url }})
 - [J01-117 — Projekt-Doku: Spec-Landkarte für Projekt, Systeme und Abläufe]({{ "/en/jira/issues/J01-117/" | relative_url }})
 - [J01-129 — BasePipelineCommand-Konfig als Objekt konsolidieren]({{ "/en/jira/issues/J01-129/" | relative_url }})
-- [J01-145 — Laufende Doku-Wartung Sprint 4]({{ "/en/jira/issues/J01-145/" | relative_url }})

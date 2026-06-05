@@ -40,7 +40,7 @@ Für den Production-Pfad liegt eine prüfbare Inhalts-YAML vor, die im CI-Build 
 
 ## Abschlussstand
 
-Fachlich umgesetzt; Jira-Nachzug offen.
+Fachlich umgesetzt und in Jira auf `Erledigt` gesetzt.
 
 Der CI-Pfad lädt die Lebenslauf-Inhaltsquelle per SFTP und prüft diesen Ablauf
 in der Pipeline. Hauptnachweis ist der Commit `318d77e`.
@@ -51,7 +51,7 @@ in der Pipeline. Hauptnachweis ist der Commit `318d77e`.
 | --- | --- | --- | --- |
 | Inhaltsquelle | CI lädt die Production-Inhaltsquelle per SFTP | Hauptrepo-Commit `318d77e` | erledigt |
 | Pipeline-Test | Der Fetch ist im CI-Pfad prüfbar | Hauptrepo-Tests zum Commit `318d77e` | erledigt |
-| Jira-Status | Jira zeigt den fachlichen Abschluss | `J01-152` | offen |
+| Jira-Status | Jira zeigt den fachlichen Abschluss | `J01-152` | erledigt |
 
 ## Öffentliche Hinweise
 

@@ -17,7 +17,7 @@ betreiben.
 
 ## Abschlussstand
 
-Fachlich umgesetzt; Jira-Nachzug offen.
+Fachlich umgesetzt und in Jira auf `Erledigt` gesetzt.
 
 Die Production-Pipeline-Konfiguration verwendet `LEBENSLAUF_PUBLIC_PROFILE:
 gueltig` statt des Dev-Profils. Die HTTP-Smokes lesen den erwarteten CV-Namen
@@ -29,7 +29,7 @@ dynamisch aus der Inhalts-YAML.
 | --- | --- | --- | --- |
 | Production-Profil | Production verwendet ein vorhandenes öffentliches Profil | Commit `d5202b6`, `src/resources/pipeline-config/prod.yaml` | erledigt |
 | Inhalts-Smoke | Smoke-Erwartungen stammen aus der Inhalts-YAML | Commits `4498f3c`, `4c5f63c` | erledigt |
-| Jira-Status | Jira zeigt den fachlichen Abschluss | `J01-154` | offen |
+| Jira-Status | Jira zeigt den fachlichen Abschluss | `J01-154` | erledigt |
 
 ## Links
 

@@ -23,10 +23,10 @@ Canonical public working note for ongoing CV UI adjustments in
 
 ## Current Status
 
-- `J01-137` exists as an ongoing Sprint 4 issue under `J01-6`.
+- `J01-137` exists as a completed container issue under `J01-6`.
 - Jira metadata:
-  - Status: `In Bearbeitung`
-  - Sprint: `SCRUM Sprint 4`
+  - Status: `Erledigt`
+  - Sprints: `SCRUM Sprint 4` and `SCRUM Sprint 5` (both closed)
   - Labels: `sprint-unplanned`, `cv`, `twig`
 - The previous education rendering fix remains part of the issue.
 - The current UI adjustments to header, meta area, entry layout, fixture data,

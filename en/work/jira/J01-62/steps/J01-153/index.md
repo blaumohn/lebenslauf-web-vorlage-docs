@@ -17,7 +17,7 @@ full deployment for every content update.
 
 ## Completion State
 
-Functionally implemented; Jira update remains open.
+Functionally implemented and set to `Erledigt` in Jira.
 
 The publish command builds CV HTML, uploads it to a staging path, submits the
 bounded `cv_publish` task, writes files atomically, and then checks the public
@@ -31,7 +31,7 @@ URL through HTTP smoke.
 | Atomic writes | Published HTML files are replaced atomically | Commit `5ad711f`, PHP feature tests | done |
 | Tests | Publish path and failures are covered | Commit `97a3cdb` | done |
 | Configuration | Publish uses `PIPELINE_CFG_JSON` correctly | Commit `7341f10` | done |
-| Jira status | Jira shows the functional completion | `J01-153` | open |
+| Jira status | Jira shows the functional completion | `J01-153` | done |
 
 ## Links
 

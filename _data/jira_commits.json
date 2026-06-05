@@ -2824,6 +2824,14 @@
   "J01-150": [
     {
       "repo": "lebenslauf-web-vorlage-docs",
+      "sha": "eb77f208d6ab62c31f310caa76d908f37fd3e17f",
+      "short_sha": "eb77f20",
+      "datetime": "2026-06-05T10:36:17+02:00",
+      "github_url": "https://github.com/blaumohn/lebenslauf-web-vorlage-docs/commit/eb77f208d6ab62c31f310caa76d908f37fd3e17f",
+      "subject": "docs(sprint): Sprint 5 Abschluss quellenbasiert nachziehen (J01-150)"
+    },
+    {
+      "repo": "lebenslauf-web-vorlage-docs",
       "sha": "77df982aee72e02eaefe9c73688e63de376f56cd",
       "short_sha": "77df982",
       "datetime": "2026-05-23T01:08:51+02:00",

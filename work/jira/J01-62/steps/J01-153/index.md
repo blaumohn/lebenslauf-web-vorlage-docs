@@ -17,7 +17,7 @@ jede Inhaltsänderung ein vollständiges Deployment zu benötigen.
 
 ## Abschlussstand
 
-Fachlich umgesetzt; Jira-Nachzug offen.
+Fachlich umgesetzt und in Jira auf `Erledigt` gesetzt.
 
 Der Publish-Befehl baut CV-HTML, lädt es in einen Staging-Pfad, löst den
 begrenzten `cv_publish`-Task aus, schreibt die Dateien atomar und prüft danach
@@ -31,7 +31,7 @@ die öffentliche URL per HTTP-Smoke.
 | Atomisches Schreiben | Veröffentlichte HTML-Dateien werden atomar ersetzt | Commit `5ad711f`, PHP-Feature-Tests | erledigt |
 | Tests | Publish-Ablauf und Fehlerfälle sind geprüft | Commit `97a3cdb` | erledigt |
 | Konfiguration | Publish nutzt `PIPELINE_CFG_JSON` korrekt | Commit `7341f10` | erledigt |
-| Jira-Status | Jira zeigt den fachlichen Abschluss | `J01-153` | offen |
+| Jira-Status | Jira zeigt den fachlichen Abschluss | `J01-153` | erledigt |
 
 ## Links
 

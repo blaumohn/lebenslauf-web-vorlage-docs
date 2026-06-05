@@ -8,7 +8,8 @@ permalink: /en/jira/sprint/
 
 Sprint board of the public Jira area (without Jira Cloud links).
 
-No active sprint is evidenced. `SCRUM Sprint 5` was closed on 2026-06-04.
+No active sprint is evidenced. `SCRUM Sprint 5` was functionally completed on
+2026-06-04 and operationally closed in Jira on 2026-06-05.
 
 | Category | To Do | In Progress | In Review | Done |
 |---|---|---|---|---|

@@ -50,7 +50,8 @@ Sprint 4 and keeps ongoing support work visible.
 
 ## Completion State
 
-- `SCRUM Sprint 5` was closed on 2026-06-04.
+- `SCRUM Sprint 5` was functionally completed on 2026-06-04 and operationally
+  closed in Jira on 2026-06-05.
 - Sprint goal: “Produktion live!”
 - Actual time window: 2026-05-23 to 2026-06-04.
 - The sprint goal was achieved; this issue is complete as sprint-admin work.
@@ -61,7 +62,7 @@ Sprint 4 and keeps ongoing support work visible.
 
 | Checkpoint | Expectation | Evidence / Location | Status |
 | --- | --- | --- | --- |
-| Sprint close | Jira shows `SCRUM Sprint 5` as closed | Jira board `1`, sprint `134` | confirmed by the human; Jira update required |
+| Sprint close | Jira shows `SCRUM Sprint 5` as closed | Jira board `1`, sprint `134`, `completeDate` 2026-06-05 | done |
 | Sprint goal | Production is live | Sprint review and main-repository commit history | done |
 | Sprint docs present | Public sprint artifact describes planning, review, retro, and carry-over | `/en/work/sprints/scrum-sprint-5/` | done |
 | Chore container issue | Ongoing technical chores have their own Sprint 5 issue | [J01-151]({{ "/en/jira/issues/J01-151/" | relative_url }}) | done |

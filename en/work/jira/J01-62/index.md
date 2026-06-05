@@ -5,7 +5,7 @@ permalink: /en/jira/issues/J01-62/
 jira_key: J01-62
 
 ---
-<!-- generated:jira:subtasks_cksum=337646038 -->
+<!-- generated:jira:subtasks_cksum=3561034151 -->
 
 {% include jira-state-head.html %}
 
@@ -75,6 +75,6 @@ was replaced by the completion state.
 - [**62-4 Deploy-Contract: Zustandsmaschine formal dokumentieren (Schritt 1)**]({{ "/en/jira/issues/J01-147/" | relative_url }}) — In Progress
 - [**62-5 DeployPhase-Enum und DeployMachine-Skeleton implementieren**]({{ "/en/jira/issues/J01-148/" | relative_url }}) — Done
 - [**62-6 RuleBasedStateMachine-Grundgeruest fuer DeployMachine hinzufuegen**]({{ "/en/jira/issues/J01-149/" | relative_url }}) — In Progress
-- [**62-7 CI-Inhalts-YAML fuer Prod-Build bereitstellen**]({{ "/en/jira/issues/J01-62/steps/J01-152/" | relative_url }}) — functionally done; Jira update open
-- [**62-8 Home- und Index-Inhalt aus Seitendaten ableiten**]({{ "/en/jira/issues/J01-62/steps/J01-154/" | relative_url }}) — functionally done; Jira update open
-- [**62-9 Publish-Pfad und laufende Inhaltsaenderungen bewerten**]({{ "/en/jira/issues/J01-62/steps/J01-153/" | relative_url }}) — functionally done; Jira update open
+- [**62-7 CI-Inhalts-YAML fuer Prod-Build bereitstellen**]({{ "/en/jira/issues/J01-62/steps/J01-152/" | relative_url }}) — Done
+- [**62-8 Home- und Index-Inhalt aus Seitendaten ableiten**]({{ "/en/jira/issues/J01-62/steps/J01-154/" | relative_url }}) — Done
+- [**62-9 Publish-Pfad und laufende Inhaltsaenderungen bewerten**]({{ "/en/jira/issues/J01-62/steps/J01-153/" | relative_url }}) — Done

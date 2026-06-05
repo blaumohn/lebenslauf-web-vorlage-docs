@@ -26,13 +26,12 @@ acceptance scope are excluded. Those need their own issue.
 
 - `J01-151` exists as a `Task` under
   [J01-5]({{ "/en/jira/issues/J01-5/" | relative_url }}).
-- Status: `In Bearbeitung`.
+- Status: `Erledigt`.
 - Sprint: `SCRUM Sprint 5`.
 - Labels: `chore`, `dependencies`, `github`, `sprint-unplanned`.
 
-Sprint 5 has been closed since 2026-06-04. This issue is therefore no longer
-an ongoing sprint container; Jira completion or a deliberate follow-up scope
-still needs to be applied.
+Sprint 5 was functionally completed on 2026-06-04 and operationally closed in
+Jira on 2026-06-05. The container issue is complete as well.
 
 ## Work List
 
@@ -50,7 +49,7 @@ still needs to be applied.
 | Commit assignment | Related chore commits carry `(J01-151)` | Commit titles | open |
 | Session provenance | Ongoing chores are traceable against agent sessions | `tagebuch` note from 2026-05-30 | done |
 | Sprint close | Container is no longer described as active after Sprint 5 | Sprint 5 review | done |
-| Jira state | Jira shows completion or a deliberate follow-up scope | `J01-151` | open |
+| Jira state | Jira shows completion or a deliberate follow-up scope | `J01-151` | done |
 
 ## Source Review
 
